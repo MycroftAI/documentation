@@ -9,18 +9,9 @@ published: false
 ### [Contributing](/01.about-mycroft/02.contributing.md)
 ### [Release notes](/01.about-mycroft/03.release-notes.md)
 ### [Roadmap](/01.about-mycroft/04.roadmap.md)
+### [Glossary](/01.about-mycroft/05.glossary.md)
 
-### Roadmap
-
-This section will provide a product roadmap, or link off to a product roadmap. This section will be divided into sub-sections for the different product offerings.
-
-## Glossary of Mycroft terms
-
-This section will cover the key terms such as Enclosure, Utterance etc
-
-## Getting Mycroft
-
-This section will cover a lot of the information at https://mycroft.ai/get-mycroft/ - about the different platforms someone can get Mycroft for.
+## [Getting Mycroft](/02.getting-mycroft/02.getting-mycroft.md)
 
 ## Your home.mycroft.ai account
 

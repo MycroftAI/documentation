@@ -38,4 +38,4 @@ If a Pull Request satisfies review criteria, it will be merged to the appropriat
 
 ### Dispute resolution
 
-If at any time you believe the Documentation Team has acted unfairly, you may [contact Mycroft] (https://mycroft.ai/contact) and request review and/or dispute resolution at any time. This process will be conducted in a professional manner.
+If at any time you believe the Documentation Team has acted unfairly, you may [contact Mycroft](https://mycroft.ai/contact) and request review and/or dispute resolution at any time. This process will be conducted in a professional manner.
