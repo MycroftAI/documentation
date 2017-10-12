@@ -25,6 +25,14 @@ The following conventions are observed in Mycroft documentation:
 * Human-written documentation is done in Markdown, on GitHub
 * Documentation of code is done through Google DocStrings format https://google.github.io/styleguide/pyguide.html#Comments and this then passed to documentation generators.
 
+### Tone of voice
+
+Mycroft documentation is written with the following tone of voice:
+
+* Knowledgeable but never arrogant
+* Helpful but encouraging of self-discovery
+* Easily readable, but not dumbed down
+
 ## Contributing
 [See the Contributing Guide for Mycroft Documentation](CONTRIBUTING.md)
 

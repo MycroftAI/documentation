@@ -1,5 +1,5 @@
 ---
-post_title: 'Documentation Home'
+post_title: 'Mycroft Documentation'
 layout: page
 published: false
 ---
