@@ -5,30 +5,10 @@ published: false
 ---
 # Documentation Home
 
-
-# About Mycroft
-
-## What is Mycroft?
-
-### Why use Mycroft?
-
-#### Lightweight
-
-#### Open Source
-
-This section will include the *why* you should use open source
-
-#### Community
-
-#### Contributing
-
-This section will cover how to contribute to Mycroft - my intent is that this page will replace the individual CONTRIBUTING.md files on each repo - or generalise them as much as possible.
-
-### Overview
-
-### Release notes
-
-This section will provide release notes
+## [About Mycroft](/01.about-mycroft/01.about-mycroft.md)
+### [Contributing](/01.about-mycroft/02.contributing.md)
+### [Release notes](/01.about-mycroft/03.release-notes.md)
+### [Roadmap](/01.about-mycroft/04.roadmap.md)
 
 ### Roadmap
 
