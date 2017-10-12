@@ -6,7 +6,7 @@ published: false
 # Documentation Home
 
 
-# Structure
+# About Mycroft
 
 ## What is Mycroft?
 
@@ -80,7 +80,7 @@ This section will be about getting the Mark 1 up and running, covering
 
 This section will talk about Phonemes and Thresholds and the CMU Sphinx English dictionary
 
-## Mark 1
+## [Mark 1]()
 
 ### Overview
 
@@ -286,6 +286,8 @@ This section will talk about how Mycroft logging works, and the sort of errors t
 
 ### Troubleshooting Mycroft Skills Manager
 
+### Mycroft Bus Messages
+
 ### Known errors and workarounds
 
 This section will document known errors and workarounds
@@ -293,7 +295,3 @@ This section will document known errors and workarounds
 ## Getting help and support
 
 This section will cover the different support mechanisms for getting help - such as the forums, chat, Contact Us and raising Issues on GitHub.
-
-## Glossary
-
-This section will be the comprehensive listing of Mycroft terms
