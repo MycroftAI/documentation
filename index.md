@@ -13,9 +13,8 @@ published: false
 
 ## [Getting Mycroft](/02.getting-mycroft/02.getting-mycroft.md)
 
-## Your home.mycroft.ai account
-
-This section will cover
+## [Your home.mycroft.ai account](/03.your-home.mycoft.ai-account/01.your-home.mycroft-account.md)
+### [Basic commands](/03.your-home.mycoft.ai-account/02.basic-commands.md)
 
 ## Mycroft core
 
@@ -24,76 +23,7 @@ This section will cover
 This section will list prerequisites like
 * knowledge of Linux command line and shell commands
 
-## Mark 1
-
-### Prerequisites
-
-This section will list prerequisites like having a Mark 1
-
-### Getting Started
-
-This section will be about getting the Mark 1 up and running, covering
-
-* unboxing
-* connecting to Wifi
-* Pairing
-* Simple commands
-
-## Mycroft Home and your home.mycroft.ai account
-
-### Overview
-
-#### Devices
-
-#### Settings
-
-##### Changing your Wake Word
-
-This section will talk about Phonemes and Thresholds and the CMU Sphinx English dictionary
-
-## [Mark 1]()
-
-### Overview
-
-This section will also include a link to the PDF Getting Started guide
-
-### Mark 1 menu options
-
-This section will go through each of the Mark 1 menu options and what they each do, including their different configuration states
-
-### Hardware information
-
-### Common tasks performed on the Mark 1
-
-#### Installing Skills on the Mark 1
-
-#### Connecting to the Mark 1 via SSH
-
-#### Changing the password for the default user via SSH
-
-#### Setting up SSH to the Mark 1 using SSH keys
-
-#### Accessing the command line interface (CLI) of the Mark 1
-
-#### Enabling the LEARN function on your Mark 1 Device
-
-This section covers how to enable the LEARN function, and more importantly, why you should - ie to allow more data for machine learning.
-
-#### How to reimage a Mark 1 Device
-
-This section will be a guide on how to reimage a Mark 1 Device
-
-#### Keeping your Mark 1 Device updated
-
-This section will be a guide on how to keep the Mark 1 updated with the latest software
-
-### Common issues on Mark 1 Devices
-
-This section will link to Troubleshooting
-
-### Hardware Hacking your Mark 1 Device
-
-This section is for
+## [Mark 1](/05.mark-1/01.mark-1-overview.md)
 
 ## Picroft
 
