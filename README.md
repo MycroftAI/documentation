@@ -25,6 +25,16 @@ The following conventions are observed in Mycroft documentation:
 * Human-written documentation is done in Markdown, on GitHub
 * Documentation of code is done through Google DocStrings format https://google.github.io/styleguide/pyguide.html#Comments and this then passed to documentation generators.
 
+
+#### Styling conventions
+
+The following conventions are used for styling technical terms and related phrases.
+
+* **internet** is always written in lowercase, never as Internet unless at the start of a sentence.
+* **Mark 1** is always styled as such
+* **Micro SD card** is always styled as such, not as micro sd card, micro SD card or alternatives
+* **Picroft** is always styled as such
+
 ### Tone of voice
 
 Mycroft documentation is written with the following tone of voice:
