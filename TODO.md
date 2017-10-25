@@ -19,6 +19,10 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 - [ ] Mark 1 - what are the limitations around what type of WiFi networks Mark 1 can connect to - for instance, can Mycroft connect to WEP networks, enterprise WPA2-PSK with Radius authentication etc.
 - [ ] Mark 1 - how to reimage the Device
 - [ ] Mark 1 - how to keep the Device updated - I've put something in there, but I'm not sure how accurate it is - needs Dev Team to give it the once over.
+- [ ] Mark 1 - should the information on how to control the display for the Mark 1 Enclosure go under the Skills section instead?
+- [ ] Mark 1 - how many characters can the Mark 1 display show before text has to scroll?
+- [ ] Mark 1 - the mouth_display_png() optional parameters need to be checked - I've guess what each of them mean, but this needs to be checked.
+- [ ] Mark 1 - the pieces about how to draw to the **Enclosure** - I think this needs an explanatory graphic. 
 
 ### Picroft
 
