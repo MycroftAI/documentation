@@ -16,120 +16,19 @@ published: false
 ## [Your home.mycroft.ai account](/03.your-home.mycoft.ai-account/01.your-home.mycroft-account.md)
 ### [Basic commands](/03.your-home.mycoft.ai-account/02.basic-commands.md)
 
-## Mycroft core
-
-### Prerequisites
-
-This section will list prerequisites like
-* knowledge of Linux command line and shell commands
-
 ## [Mark 1](/05.mark-1/01.mark-1-overview.md)
 
-## Picroft
+## [Picroft](/06.picroft/01.picroft-overview.md)
 
-This section will subsume the information on the Picroft Wiki
+## [Mycroft for Linux platforms](/07.mycroft-for-linux/01.linux-overview.md)
 
-### Prequisites
+## [Mycroft for Android](/08.mycroft-for-android/01.android-overview.md)
 
-### Getting started and pairing your Device
+## [Mycroft Skills](/09.mycroft-skills/01.skills-overview.md)
+### [Developing Skills for Mycroft](/09.mycroft-skills/02.developing-skills.md)
+### [Common issues in Skills development](/09.mycroft-skills/03.common-issues-skills-development.md)
+### [Repurposing Skills developed for other platforms](/09.mycroft-skills/04.repurposing-skills-from-other-platforms.md)
 
-### Common tasks performed on the Picroft
-
-#### How to reimage a Picroft
-
-#### Keeping your Picroft updated
-
-### Common issues on Picroft Devices
-
-This section will link to Troubleshooting
-
-## Mycroft for Linux platforms
-
-### Prerequisites
-
-### Different methods to install Mycroft for Linux
-
-### Dependencies
-
-### Installing from shell script
-
-### Installing from package
-
-### Installing KDE widget
-
-### Installing from Docker
-
-### Getting started and pairing your Device
-
-### Interacting with Mycroft in Linux
-
-#### Starting and stopping services
-
-#### Other interaction commands
-
-This section will cover things like `say` and `test_microphone`
-
-#### Mycroft Skills Manager
-
-### Common issues on Mycroft for Linux installs
-
-This section will link to Troubleshooting
-
-## Mycroft for Android
-
-### Prerequisites
-
-### Common tasks performed on Mycroft for Android
-
-## Other platforms
-
-This section will cover things like the Plasmoid distributions.
-
-## Mycroft Skills and Skills Development
-
-### Overview
-
-This will be an overview on how skills work
-
-### Available Skills
-
-This will subsume the Skills Wiki
-
-### Writing your own Skills
-
-#### Pre-requisites
-
-This will be prerequisites for being able to write your own skills
-
-### What makes a good Skill
-
-This section will explain the components of a good skill such as
-* fulfilling a need the user has
-* having an easy to use voice interface
-
-Also think a primer on Conversational UI / Voice UI would be useful in this section.
-
-### Skill development process
-
-This section is an overview of the skill development process, and explains how skills get promoted from being in development to published, and how they are retired.
-
-IMAGE: skill development process lifecycle
-
-Process overview
-
-### Skill template
-
-### Building your first skill
-
-This is likely a candidate for a 'tutorial', but I'm not sure how well a tutorial sits in this structure.
-
-### Using Skills you've developed for Alexa with Mycroft
-
-This section will cover how to rapidly transfer Skills developed for Alexa to Mycroft.
-
-### Common issues in Skill development
-
-This section covers the key areas where people trip up in development new Skills.
 
 ## Language support in Mycroft
 
@@ -151,9 +50,7 @@ Information on Precise Intent parser
 
 Information on Persona
 
-## Padatious
-
-Information on Padatious
+## [Padatious](/15.padatious/01.padatious-overview.md)
 
 ## FAQ
 

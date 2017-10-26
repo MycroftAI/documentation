@@ -37,7 +37,12 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 
 ### Mycroft for Android
 
-
 ### Padatious
 
 - [ ] Why is having Intents independent of each other a benefit - what does this mean - need to explain it in a bit more detail
+
+### Mycroft Skills
+
+- [ ] Need more documentation on `msm` - what it does, what commands are available, what **Skills** developers need to know about it.
+- [ ] What are the common issues in **Skills** development - ie the common problems that Developers encounter - so we can address them.
+- [ ] How are Skills developed for platforms like Alexa repurposed for Mycroft?
