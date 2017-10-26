@@ -36,3 +36,8 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 - [ ] What are the common issues with Mycroft for Linux?
 
 ### Mycroft for Android
+
+
+### Padatious
+
+- [ ] Why is having Intents independent of each other a benefit - what does this mean - need to explain it in a bit more detail
