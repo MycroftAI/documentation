@@ -46,3 +46,4 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 - [ ] Need more documentation on `msm` - what it does, what commands are available, what **Skills** developers need to know about it.
 - [ ] What are the common issues in **Skills** development - ie the common problems that Developers encounter - so we can address them.
 - [ ] How are Skills developed for platforms like Alexa repurposed for Mycroft?
+- [ ] We need a guide or similar for `__init__.py` - that covers items like how to inherit from the `MycroftSkill` class, and the sorts of functions that are used. How are APIs used? What if your **Skill** needs to use another service?
