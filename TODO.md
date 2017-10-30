@@ -47,3 +47,9 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 - [ ] What are the common issues in **Skills** development - ie the common problems that Developers encounter - so we can address them.
 - [ ] How are Skills developed for platforms like Alexa repurposed for Mycroft?
 - [ ] We need a guide or similar for `__init__.py` - that covers items like how to inherit from the `MycroftSkill` class, and the sorts of functions that are used. How are APIs used? What if your **Skill** needs to use another service?
+
+### Mycroft language support
+
+- [ ] The introductory text is available in multiple languages - are there any key languages that I'm missing?
+- [ ] If I find a STT engine in the language I want to support, what do I do with it? The documentation on the Languages wiki isn't clear how all the elements come together.
+- [ ] 
