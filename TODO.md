@@ -5,13 +5,14 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 ### About Mycroft
 
 - [ ] Release note - need to find a way to aggregate them from GitHub. This will need the GitHub API.
+- [ ] Overview - put in a link to the Precise documentation when it is done. 
 
 
 ### Your home.mycroft.ai account
 
 - [ ] Advanced settings - need to get someone to review what I've written about things like the Threshold and Dynamic Energy Ratio.
 - [ ] Registration code for Android - not sure how this works or how Android provides a Registration Code
-- [ ]
+- [ ] How to do multiple **Wake Words**
 
 ### Mark 1
 
@@ -52,4 +53,4 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 
 - [ ] The introductory text is available in multiple languages - are there any key languages that I'm missing?
 - [ ] If I find a STT engine in the language I want to support, what do I do with it? The documentation on the Languages wiki isn't clear how all the elements come together.
-- [ ] 
+- [ ]
