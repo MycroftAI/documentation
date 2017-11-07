@@ -24,7 +24,7 @@ Going back to our earlier two examples, the phonemic version of "daughter" is "/
 So text to speech/phoneme software really has to understand the language it is working with in order to get it right. It also can fall back to some basic rules, just like when we learned to "sound out" words when we were learning to read. And mixing languages in the same text gets really tricky. That can result in the sentence "Like they say, c est la vie" sounding like it's being spoken by Slim Pickens.
 
 Things also get a bit tricky in Chinese where tones change meanings. And then there are a few clicking languages like Khosian (check out <a href="https://youtu.be/W6WO5XabD-s">https://youtu.be/W6WO5XabD-s</a>) or the whistling language Sylbo (see <a href="https://youtu.be/C0CIRCjoICA">https://youtu.be/C0CIRCjoICA</a>). But we'll leave those alone for today.
-<h1>Inflection</h1>
+<h2>Inflection</h2>
 But even in English there's more that just the phonemic translation. We naturally use different inflections to convey additional meaning. Think of the various ways the word "what" is spoken by people. It can have a rising inflection when you don't understand something ... "What?" Or it can be a flat pronunciation ... "he didn't know what he was reading". Or it can be short and sharp like after telling your mom you just wrecked her car ... "What!"
 
 Some inflection can be inferred from punctuation as I showed above. But normal written language really can't express the fullness of spoken language. That's why computers traditionally read "I don't know what I was thinking" in a flat, robotic manner.
