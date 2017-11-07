@@ -15,13 +15,13 @@ post_date: 2016-02-22 13:32:14
 
 <strong>Techstars</strong>
 
-Mycroft A.I., Inc. is excited to announce its participation in the 2016 <a href="http://techstars.com" target="_blank">Techstars</a> class at the <a href="http://sprintaccel.com" target="_blank">Sprint Accelerator</a>. Mycroft is one of ten companies invited to join the 2016 cohort. Company founders <a href="https://mycroft.ai/about/" target="_blank">Joshua Montgomery, Kris Adair, and Ryan Sipes</a> will begin working full time at the Sprint Accelerator in downtown Kansas City where they will collaborate with mentors from leading venture capital and technology firms.
+Mycroft A.I., Inc. is excited to announce its participation in the 2016 <a href="http://techstars.com" target="_blank" rel="noopener">Techstars</a> class at the <a href="http://sprintaccel.com" target="_blank" rel="noopener">Sprint Accelerator</a>. Mycroft is one of ten companies invited to join the 2016 cohort. Company founders <a href="https://mycroft.ai/about/" target="_blank" rel="noopener">Joshua Montgomery, Kris Adair, and Ryan Sipes</a> will begin working full time at the Sprint Accelerator in downtown Kansas City where they will collaborate with mentors from leading venture capital and technology firms.
 
 [caption id="attachment_1438" align="aligncenter" width="300"]<a href="https://mycroft.ai/wp-content/uploads/2016/02/techstars_initiation_pic.jpg" rel="attachment wp-att-1438"><img class="size-medium wp-image-1438" src="https://mycroft.ai/wp-content/uploads/2016/02/techstars_initiation_pic-300x213.jpg" alt="Mycroft Founders Ryan Sipes, Kris Adair, and Joshua Montgomery" width="300" height="213" /></a> Mycroft Founders Ryan Sipes, Kris Adair, and Joshua Montgomery[/caption]
 
-The Sprint Accelerator program starts today (February 22) and runs through an investor demo day on May 24. With a focus on mentorship and networking the Techstars program <a href="http://www.techstars.com/companies/" target="_blank">has helped more than 650 million companies raise an average of $3.2 million in capital</a>.
+The Sprint Accelerator program starts today (February 22) and runs through an investor demo day on May 24. With a focus on mentorship and networking the Techstars program <a href="http://www.techstars.com/companies/" target="_blank" rel="noopener">has helped more than 650 million companies raise an average of $3.2 million in capital</a>.
 
-<a href="https://mycroft.ai/wp-content/uploads/2016/02/Mycroft-Joins-2016-Techstars-Class-at-the-Sprint-Accelerator.pdf" target="_blank" rel="">Download the Press Release</a>
+<a href="https://mycroft.ai/wp-content/uploads/2016/02/Mycroft-Joins-2016-Techstars-Class-at-the-Sprint-Accelerator.pdf" target="_blank" rel="noopener">Download the Press Release</a>
 
 &nbsp;
 
