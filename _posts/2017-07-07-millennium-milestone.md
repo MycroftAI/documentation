@@ -1,0 +1,22 @@
+---
+ID: 30439
+post_title: >
+  Millennium Milestone | We shipped 1,000
+  Units
+author: Alyx Horace
+post_excerpt: ""
+layout: post
+permalink: >
+  http://mycroft.ai/blog/millennium-milestone/
+published: true
+post_date: 2017-07-07 13:18:53
+---
+[vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]<span style="font-weight: 400;">Shipping out 1,000 units of an artificially intelligent vocal assistant sounds pretty dreamy, especially when a small team handled the process from the very beginning. It feels pretty dreamy too. All this talk of dreams is reminding us of our sleep deprivation--but we would do it all over again for our backers.</span>[/vc_column_text][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][image_with_animation image_url="30452" alignment="" animation="Fade In" box_shadow="none" max_width="100%"][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h3><span style="font-weight: 400;">Again, 1,000 units? Dreamy.</span></h3>
+[/vc_column_text][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_gallery type="nectarslider_style" images="30444,30443,30445" hide_arrow_navigation="true" bullet_navigation_style="see_through" onclick="link_no"][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h3><span style="font-weight: 400;">Where We’re At, And What Is To Come</span></h3>
+<span style="font-weight: 400;">The Mycroft team is still working hard to produce and ship units. We dropped off 200 international units at the post office this morning, and we're continuing to assemble, test, package, and wrap. </span>
+
+<span style="font-weight: 400;">We’re also fulfilling orders with add ons, of which some some fit in the Mark 1 box, and some will be sent separate. </span>[/vc_column_text][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h3>Look for an update in the coming days. Thanks again to those who have supported the Mycroft vision, we couldn't have done it without you.</h3>
+[/vc_column_text][/vc_column][/vc_row]
