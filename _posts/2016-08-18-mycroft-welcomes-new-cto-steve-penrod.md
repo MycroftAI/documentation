@@ -10,7 +10,7 @@ published: true
 post_date: 2016-08-18 11:16:41
 ---
 Things have been busy behind the scenes at Mycroft this summer.  We are happy to announce that Steve Penrod is joining the organization as CTO!  He brings years of experience in technology development and startups to the team, as well as some interesting voice technology (more on that in a future post).  You can read about how this came about in his intro letter below.  Meanwhile, Ryan Sipes has decided to move on to other open source projects.  Thank you for all you've done, Ryan, and best of luck!
-<h1>Intro Letter from Steve</h1>
+<h2>Intro Letter from Steve</h2>
 <blockquote>I'd like to introduce myself to the Mycroft community. My name is Steve Penrod, and as of last week I've come into the Mycroft organization as the CTO via a merger between my company and Mycroft. Now that I've given you the tl;dr version, let me back up a little...
 
 After wrapping up my run at my previous startup, during the summer of 2014 I was struck by the maturation of several key technologies. After prototyping and validating some of my beliefs I began developing a natural-language, conversational voice interface built using single-board computers (sound familiar?). I've been doing this in Kansas City and operating in stealth mode until this spring. At that time I began reaching out to potential partners and was asked how I was related to Mycroft, since surely we know each other given the geographic and technological coincidence. But before April we'd never heard of the other.
