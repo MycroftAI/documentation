@@ -14,7 +14,7 @@ post_date: 2017-10-09 21:08:36
 [vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
 
 <em>The full-time team here at Mycroft has been underwater while we’ve been focusing on shipping the Mark I and our first alpha - 17.08a. Now that we’ve shipped, I think it is time for us to regroup and look at our strategy. Thanks to the faith of a number of great investors, we now have time to come up for air. In this document I’m going to lay out the full-time team’s thinking on Mycroft’s direction, then I’m going to make some time to discuss this strategy with our community both <a href="https://www.eventbrite.com/e/listening-session-with-mycroft-ceo-joshua-montgomery-tickets-38744569049?aff=eac2">in-person and online.</a></em>[/vc_column_text][divider line_type="No Line"][vc_column_text]
-<h1>Introduction</h1>
+<h2>Introduction</h2>
 I’ve recently been reading Walter Isaacson’s “<a href="http://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706">The Innovators</a>” which traces the digital revolution from Babbage’s analog computer to the modern day. I’ve also been giving a lot of thought to how open communities, machine learning and strong AI fit into our society’s narrative of progress.
 
 I’ve been asking myself the question: “How do we organize an open community to solve the problem of strong AI.” Implied in this question is another question “How do we organize the work in a way that the broader community can help?” This is a tough question to answer, but it turns out there are some very high profile examples that we can learn from. I’m most intrigued by the examples of Wikipedia and Google.
@@ -32,7 +32,7 @@ By implementing these two ideas in software Google was able to grow exponentiall
 The community at Wikipedia lead by Jimmy Wales had a different insight. By eschewing academic expertise in favor of the wisdom of the crowd they could produce an encyclopedia that is more comprehensive (and hence more useful) than encyclopedias produced using an academic process. Users were encouraged to collaborate on content, standards and governance. By taking this approach Wikipedia was able to grow extremely fast. It quickly became the global destination for long form queries.
 
 One key insight the Wikipedia community had was that the project would benefit if they made it dead simple to contribute. Users didn’t need to provide their references, they didn’t need to have their work reviewed, they didn’t even need an account. The tool for contributing was, and remains, easy for anyone to use. This simplicity makes Wikipedia editing accessible to nearly everyone on the web and allowed Wikipedia to grow a large community of editors around the site.
-<h1>Strategic Overview</h1>
+<h2>Strategic Overview</h2>
 We can learn from both of these examples here at Mycroft. We can leverage the power of an open community to create useful software that is has an algorithmic feedback loop which automatically improves the technology over time. This is a first. The open source community has a long history of producing software collaboratively, but that software is generally stand alone. Though many companies use open software to create feedback loops for themselves, the community that created the software seldom benefits from algorithmically generated improvements. The software is open source, but the data remains proprietary.
 
 Let me unpack that with an example. LibreOffice Writer is great. The community behind it gets feedback in the form of bug reports and user surveys, but the software doesn’t communicate back to the developers. The software is not set up to tell developers “80% of users who eventually selected ‘Footnotes and Endnotes’ first selected the ‘File’ menu”. Even if the software did communicate use data like this it won’t automatically move the ‘Footnotes and Endnotes’ option into the ‘File’ menu. That move requires human intervention.
@@ -43,7 +43,7 @@ We will build software that has a programmatic feedback loop.
 We make the software simple enough so that anyone can contribute.
 
 Now that we have a strategy, let’s look at how we implement it operationally.
-<h1>Moving from the ‘what’ (strategy) to the ‘how’ (implementation)</h1>
+<h2>Moving from the ‘what’ (strategy) to the ‘how’ (implementation)</h2>
 We have a number of options for creating algorithmic feedback loops here at Mycroft. At their base level, all of these loops start out the same:
 <ol>
  	<li>Users use the technology because it is useful.</li>
@@ -74,7 +74,7 @@ There are open source communities out there that have built this type of feedbac
 Up until now, our community hasn’t been using any of the data that is flowing through the Mycroft servers, but that changed last week. We now have an “Opt In” feature and permission from generous community members to make use of their data to improve the system.
 
 Let’s start now.
-<h1>Operational Planning</h1>
+<h2>Operational Planning</h2>
 To achieve our strategic goals we need to implement an operational plan. A quick look at the Mycroft stack provides four components that will benefit from a community guided feedback loop.
 <h4>Wake Word Spotting – Mycroft Precise</h4>
 This is the simplest one which is why I personally was able to code it. (Don’t expect too much more of this, I’m a hacker, not a professional developer). We started this effort a few weeks ago by developing and deploying (to users who explicitly installed the software) an audio capture feature that allows us to both capture Wake Word triggers and failed attempts.
@@ -171,7 +171,7 @@ To which the AI would say:
 Response: “Funny. Now I’ve got one for you. Knock, knock”
 
 This is a socially appropriate response to someone initiating a joke in a playful manner.
-<h1>Conclusion</h1>
+<h2>Conclusion</h2>
 Admittedly, classifying Wake Words, speech samples, command phrases and interactions like this one-at-a-time will be a TON of work, but so was drafting an Encyclopedia with 43,000,000 individual entries. The innovation here is that we are applying the same approach to AI that Jimmy Wales applied to Wikipedia – anyone can contribute without an account and, unlike Wikipedia where users had to do research and create entries that fit the standard, all Mycroft contributors need to do is speak the appropriate language.
 
 As time goes on we’ll use the data generated through this innovation to train the AI to classify most interactions on its own. Contributors will only be asked to classify Wake Words, speech samples, phrases or conversations that the AI wasn’t able to assign a high probability to. This is the same way humans learn. Even I ask questions of my peers sometimes when I don’t understand the point of a conversation. I learn by interacting with other people and I react to others based on the context of our conversations.
