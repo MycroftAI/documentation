@@ -1,9 +1,12 @@
 ---
-post_title: 'Troubleshooting and known errors'
+ID: 32456
+post_title: Troubleshooting and known errors
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32456
 published: false
 ---
-
 # Troubleshooting and known errors
 
 This section is grouped by Device to help you quickly find the information you need.

@@ -1,9 +1,12 @@
 ---
-post_title: 'Adding a new language to Mycroft'
+ID: 32452
+post_title: Adding a new language to Mycroft
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32452
 published: false
 ---
-
 # Adding a new language to Mycroft
 
 ## Introduction

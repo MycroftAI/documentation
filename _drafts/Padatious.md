@@ -1,9 +1,12 @@
 ---
-post_title: 'Padatious'
+ID: 32454
+post_title: Padatious
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32454
 published: false
 ---
-
 # Padatious
 
 Padatious is a [machine-learning](https://en.wikipedia.org/wiki/Machine_learning), [neural-network](https://en.wikipedia.org/wiki/Artificial_neural_network) based *intent parser*.

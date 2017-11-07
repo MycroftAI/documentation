@@ -1,9 +1,12 @@
 ---
-post_title: 'Display control'
+ID: 32432
+post_title: Display control
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32432
 published: false
 ---
-
 # Enclosure display control
 
 @TODO does this page need to move under Section 09.mycroft-skills? It seems more relevant to Skills development.

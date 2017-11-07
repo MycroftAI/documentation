@@ -1,9 +1,14 @@
 ---
-post_title: 'Basic commands to get started with Mycroft'
+ID: 32428
+post_title: >
+  Basic commands to get started with
+  Mycroft
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32428
 published: false
 ---
-
 # Basic commands to get started with your Mycroft
 
 Now that your Mycroft is now **Paired** with home.mycroft.ai, you can begin issuing commands. Try these to get started.

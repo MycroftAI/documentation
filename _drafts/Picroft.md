@@ -1,9 +1,12 @@
 ---
-post_title: 'Picroft'
+ID: 32434
+post_title: Picroft
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32434
 published: false
 ---
-
 # Picroft
 
 Picroft is an **Enclosure** for Mycroft, designed to the run on Raspberry Pi 3 or newer models. Mycroft provides the software for Picroft, in the form of a disk image, but you will need to burn this to an SD card.

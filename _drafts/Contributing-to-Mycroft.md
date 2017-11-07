@@ -1,9 +1,12 @@
 ---
-post_title: 'Contributing to Mycroft'
+ID: 32414
+post_title: Contributing to Mycroft
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32414
 published: false
 ---
-
 # Contributing to Mycroft
 
 We value and recognise your contributions. Mycroft is artificial intelligence for _everyone_ and we warmly welcome both non-technical and technical contributions.
@@ -34,7 +37,7 @@ Object-deviation format is a very specific way of describing faults. The more sp
 
 For example:
 
-* "When my Mycroft Mark 1 device (**object**) powers on, the color of his eyes is red instead of blue (**deviation - red - from expected condition - blue**)\
+* "When my Mycroft Mark 1 device (**object**) powers on, the color of his eyes is red instead of blue (**deviation - red - from expected condition - blue**)
 * "When I ask Mycroft about the weather (**object**), Mycroft reports the low temperature correctly, but the high temperature is incorrectly reported as the low temperature (**deviation - incorrect temperature - from expected condition - correct temperature**
 
 #### The Enclosure or Device you are using, and the version of Mycroft you are using

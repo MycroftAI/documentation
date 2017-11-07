@@ -1,9 +1,12 @@
 ---
-post_title: 'Developing Skills for Mycroft'
+ID: 32442
+post_title: Developing Skills for Mycroft
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32442
 published: false
 ---
-
 # Developing Skills for Mycroft
 
 Are you looking for the [system-generated documentation for the Mycroft Skills API?](http://mycroft-core.readthedocs.io/en/stable/)

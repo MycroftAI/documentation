@@ -1,9 +1,12 @@
 ---
-post_title: 'Mycroft Glossary'
+ID: 32420
+post_title: Mycroft Glossary
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32420
 published: false
 ---
-
 # Mycroft Glossary
 
 * **Device** - the platform you have Mycroft installed on. This might be using an **Enclosure**, like the Mark 1, or on a Raspberry Pi, or it might be on a Linux desktop. Each **Device**  needs to be **Paired** with your Mycroft Home account before it can be used.

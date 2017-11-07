@@ -1,9 +1,12 @@
 ---
-post_title: 'Mycroft for Android'
+ID: 32438
+post_title: Mycroft for Android
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32438
 published: false
 ---
-
 # Mycroft for Android
 
 There are two components to Mycroft for Android:

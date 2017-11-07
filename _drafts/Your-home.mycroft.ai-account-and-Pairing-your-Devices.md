@@ -1,9 +1,14 @@
 ---
-post_title: 'Your home.mycroft.ai account and Pairing your Device(s)'
+ID: 32426
+post_title: >
+  Your home.mycroft.ai account and Pairing
+  your Device(s)
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32426
 published: false
 ---
-
 # Your home.mycroft.ai account
 
 Each of your Mycroft **Device(s)** must be **Paired** with your [home.mycroft.ai](https://home.mycroft.ai) account.

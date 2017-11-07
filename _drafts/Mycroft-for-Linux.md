@@ -1,9 +1,12 @@
 ---
-post_title: 'Mycroft for Linux'
+ID: 32436
+post_title: Mycroft for Linux
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32436
 published: false
 ---
-
 # Mycroft for Linux
 
 Mycroft is available for Linux, and can be installed via several methods.

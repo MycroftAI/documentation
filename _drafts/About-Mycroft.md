@@ -1,9 +1,12 @@
 ---
-post_title: 'About Mycroft'
+ID: 32412
+post_title: About Mycroft
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32412
 published: false
 ---
-
 # About Mycroft
 
 Welcome to Mycroft.

@@ -1,9 +1,12 @@
 ---
-post_title: 'Introduction to developing Skills'
+ID: 32444
+post_title: Introduction to developing Skills
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32444
 published: false
 ---
-
 ## Developing a new **Skill**
 
 ### Step 1 Make a new repo using the Skill Repo Template
@@ -162,4 +165,4 @@ This requirements.txt file would look like this:
 ```
 gensim
 ```
-That's it!  
+That's it!

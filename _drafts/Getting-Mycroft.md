@@ -1,9 +1,12 @@
 ---
-post_title: 'Getting Mycroft'
+ID: 32424
+post_title: Getting Mycroft
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32424
 published: false
 ---
-
 # Getting Mycroft
 
 To get started, choose one of the platforms below

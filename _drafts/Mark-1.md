@@ -1,9 +1,12 @@
 ---
-post_title: 'Mark 1'
+ID: 32430
+post_title: Mark 1
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32430
 published: false
 ---
-
 # Mark 1
 
 The Mark 1 device is an **Enclosure** for Mycroft, based on Raspberry Pi. It is designed as a reference hardware device, and is able to be easily modified, hacked and extended.

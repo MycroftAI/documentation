@@ -1,9 +1,12 @@
 ---
-post_title: 'Language support in Mycroft'
+ID: 32450
+post_title: Language support in Mycroft
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32450
 published: false
 ---
-
 # Language support for Mycroft
 
 ## In English

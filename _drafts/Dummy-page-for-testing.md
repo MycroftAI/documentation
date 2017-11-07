@@ -1,9 +1,12 @@
 ---
-post_title: 'Dummy page for testing'
+ID: 32422
+post_title: Dummy page for testing
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32422
 published: false
 ---
-
 # Page h1 level
 
 ## This is a test page to test documentation integration
