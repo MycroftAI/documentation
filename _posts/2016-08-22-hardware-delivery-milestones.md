@@ -10,7 +10,7 @@ published: true
 post_date: 2016-08-22 22:04:25
 ---
 Things are getting exciting around Mycroft HQ as the pieces are starting to come together for our production run. We are expecting to ship the first devices out the door at the end of September. We thought you'd be interested in knowing what leads up to loading the first packaged unit on the delivery truck.
-<h1>Milestones</h1>
+<h2>Milestones</h2>
 There are several key milestones remaining in our hardware production. A few of these milestones can be shifted around, but most are dependent on at least one earlier milestone, so we are watching these closely to make sure everything comes together at the right time.
 
 <i>1) Final circuitry design review and Bill of Materials.
