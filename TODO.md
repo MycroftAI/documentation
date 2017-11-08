@@ -5,7 +5,7 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 ### About Mycroft
 
 - [ ] Release note - need to find a way to aggregate them from GitHub. This will need the GitHub API.
-- [ ] Overview - put in a link to the Precise documentation when it is done. 
+- [ ] Overview - put in a link to the Precise documentation when it is done.
 
 
 ### Your home.mycroft.ai account
@@ -48,6 +48,7 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 - [ ] What are the common issues in **Skills** development - ie the common problems that Developers encounter - so we can address them.
 - [ ] How are Skills developed for platforms like Alexa repurposed for Mycroft?
 - [ ] We need a guide or similar for `__init__.py` - that covers items like how to inherit from the `MycroftSkill` class, and the sorts of functions that are used. How are APIs used? What if your **Skill** needs to use another service?
+- [ ] Is the copyright notice that's in `__init__.py` legally required, or can a Community Developer release a **Skill** using a different license?
 
 ### Mycroft language support
 
