@@ -24,5 +24,5 @@ post_date: 2017-02-28 15:30:05
 <div><span style="color: #000000;">Everyone here at Mycroft is excited by the opportunity to work with a company with such a storied history.  We are looking forward to bringing open source solutions to Jaguar and other GENIVI members.</span></div>
 <div></div>
 <div></div>
-<div><img class="alignleft size-full wp-image-29360" src="https://mycroft.ai/wp-content/uploads/2017/02/jlr-plus-mycroft-green.png" alt="" width="1800" height="1200" /></div>
+<div><img class="alignleft size-full wp-image-29360" src="https://mycroft.ai/wp-content/uploads/2017/02/jlr-plus-mycroft-green.png" alt="mycroft jaguar land rover" width="1800" height="1200" /></div>
 <div></div>
