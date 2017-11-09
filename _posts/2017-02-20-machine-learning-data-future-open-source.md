@@ -15,7 +15,7 @@ I'm not saying traditional software development is dead.  There will continue t
 
 Machine learning is a programming technique where data is used to train an algorithm.  For example, a large set of images might be tagged with a text description of what is in them.  These images and the associated tags are then processed by a neural network.  The resulting software is then capable of processing a single image and – if the data set was comprehensive enough – providing a text description of what is in it.
 
-<img class="alignleft size-full wp-image-29182" src="https://mycroft.ai/wp-content/uploads/2017/02/machine-learning_skiing.png" alt="" width="1800" height="1200" />
+<img class="alignleft size-full wp-image-29182" src="https://mycroft.ai/wp-content/uploads/2017/02/machine-learning_skiing.png" alt="machine learning image recognition" width="1800" height="1200" />
 
 &nbsp;
 
