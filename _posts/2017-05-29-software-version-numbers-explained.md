@@ -13,13 +13,13 @@ Mycroft will be moving to a new release system in August of 2017. Our system wil
 
 &nbsp;
 
-<img class="aligncenter wp-image-30023 size-full" src="https://mycroft.ai/wp-content/uploads/2017/05/Untitled-1-2.png" alt="" width="833" height="758" />
+<img class="aligncenter wp-image-30023 size-full" src="https://mycroft.ai/wp-content/uploads/2017/05/Untitled-1-2.png" alt="beta test warning" width="833" height="758" />
 
 &nbsp;
 
 When we began shipping the Mark 1 to our Kickstarter backers this past week. We included an insert card in the package that tells backers looking for a consumer quality experience: “Put the unit on a shelf until February 2018 when we will release Mycroft Core v 18.02b”. Our team got a lot of questions about this, so we thought it would be a good idea to clarify our thinking on release versions and release schedules. This notice pertains to the software releases, not updated hardware. The Mark 1 we are shipping will be able to be updated to a more consumer friendly version with software updates.
 
-<img class="aligncenter size-full wp-image-30010" src="https://mycroft.ai/wp-content/uploads/2017/05/yoda_mark1.png" alt="" width="376" height="597" />
+<img class="aligncenter size-full wp-image-30010" src="https://mycroft.ai/wp-content/uploads/2017/05/yoda_mark1.png" alt="there is no try" width="376" height="597" />
 
 &nbsp;
 
