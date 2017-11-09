@@ -43,7 +43,14 @@ You'll notice some new terms as you start to develop **Skills**.
 First, `git clone` the [Mycroft Skills repo](https://github.com/MycroftAI/mycroft-skills/) to your local machine.
 
 ```bash
-$ git clone https://github.com/MycroftAI/mycroft-skills/
+$ git clone https://github.com/MycroftAI/mycroft-skills.git
+Cloning into 'mycroft-skills'...
+remote: Counting objects: 1529, done.
+remote: Compressing objects: 100% (60/60), done.
+remote: Total 1529 (delta 42), reused 46 (delta 15), pack-reused 1451
+Receiving objects: 100% (1529/1529), 7.44 MiB | 565.00 KiB/s, done.
+Resolving deltas: 100% (709/709), done.
+Checking connectivity... done.
 ```
 
 Now, we'll made a new repository for your **Skill**. The new repository has to follow a strict file structure. A **Template Skill** is available to clone from. If you're new to GitHub, you might find this guide on [how to make a repo](https://help.github.com/articles/create-a-repo/) useful.
@@ -169,81 +176,69 @@ __author__ = 'eward'
 This section defines the _author_ of the **Skill**. This value is usually set to the GitHub username of the author.
 
 
-
-
-
-
-
-### Step 2 Clone Repo
-Clone the `mycroft-skills` repo to a local directory. If you're new to GitHub, you might find this guide on [how to clone](https://help.github.com/articles/cloning-a-repository) useful.
-
-```bash
-$ git clone https://github.com/MycroftAI/mycroft-skills.git
-Cloning into 'mycroft-skills'...
-remote: Counting objects: 1529, done.
-remote: Compressing objects: 100% (60/60), done.
-remote: Total 1529 (delta 42), reused 46 (delta 15), pack-reused 1451
-Receiving objects: 100% (1529/1529), 7.44 MiB | 565.00 KiB/s, done.
-Resolving deltas: 100% (709/709), done.
-Checking connectivity... done.
-
+```python
+LOGGER = getLogger(__name__)
 ```
 
-### Step 3 Generate README.md
-To get your **Skill** added, generate the README.md file for your **Skill** using the [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html). Fill out all the relative fields, and it will generate the Markdown to put into your README.md file.
+This section starts logging of the **Skill** in the `mycroft-skills.log` file. If you remove this line, your **Skill** will not log any errors, and you will have difficulty debugging.
 
-### Step 4 Add Submodule
-Next we need to add the Submodule for your **Skill**. For more help on Submodules in GitHub, feel free to check out [this guide](https://github.com/blog/2104-working-with-submodules)
+The `class` definition extends the `MycroftSkill` class:
 
-Or, type the following in the terminal, assuming you are in the directory where you cloned `mycroft-skills`:
-
-```bash
-git submodule add $remote $name-your-skill
-```
-where ``$remote` is the git address for your repo [example] (https://github.com/mycroftai/skill-configuration) and ``$name-your-skill` is the name you have given to your **Skill**. In general, we normally use BLANK-skill as a format for **Skill** names.
-
-This should have edited the ``.gitmodule` file and added something similar to the bottom of the file:
-```
-+[submodule "NAME OF YOUR SKILL"]
- +	path = name-of-your-skill-skill
- +	url = URL.FOR.YOUR.SKILL.git
+```python
+class HelloWorldSkill(MycroftSkill):
 ```
 
-### Step 5 Modify Skills Repo README.md
-Modify the table section in the `README.md` file of the `mycroft-skills` repo to include the file direct link to your repo like the following example. Include the `<br>` tag and the phrase to trigger your skill:
+The class should be named logically, for example `TimeSkill`, `WeatherSkill`, `NewsSkill`, `IPaddressSkill`. If you would like guidance on what to call your **Skill**, please join the [~skills Channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
 
+Inside the class, methods are then defined.
+
+```python
+def __init__(self):
+        super(HelloWorldSkill, self).__init__(name="HelloWorldSkill")
 ```
-| :heavy_check_mark:  | [home-assistant](https://github.com/btotharye/mycroft-homeassistant#readme)| Control your devices in home-assistant<br>```turn on office
+
+This method is the _constructor_, and the key function it has is to define the name of the **Skill**.
+
+```python    
+def initialize(self):
+        thank_you_intent = IntentBuilder("ThankYouIntent"). \
+            require("ThankYouKeyword").build()
+        self.register_intent(thank_you_intent, self.handle_thank_you_intent)
+
+        how_are_you_intent = IntentBuilder("HowAreYouIntent"). \
+            require("HowAreYouKeyword").build()
+        self.register_intent(how_are_you_intent,
+                             self.handle_how_are_you_intent)
+
+        hello_world_intent = IntentBuilder("HelloWorldIntent"). \
+            require("HelloWorldKeyword").build()
+        self.register_intent(hello_world_intent,
+                             self.handle_hello_world_intent)
 ```
 
-Ensure to put a proper status as well from the list below:
+The `initialize()` function defines each of the **Intents** of the **Skill**. Note that there are three **Intents** defined in `initialize()`, and there were three **Intents** defined in **vocab** files.
 
-**Status meaning:**  
-:heavy_check_mark: good working order  
-:construction:     still being developed and not ready for general use (for reference/collaboration)  
-:question:         untested (by us)  
-:skull:            Broken, but good for ideas!
+Next, there are methods that handle each of the **Intents**.
+@TODO are they called methods or functions in Python? IDK. It's a `class` so I'm guessing they're `class methods`?
 
-### Step 6 Submit PR (Pull Request) to have your **Skill** listed
-Once you've got your repo organized properly, submit the PR consisting of the following:
-* Ensure you use [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html) to create your standardized README.md file
-* The URL of your repo
-* A short name for the skill
-* A one sentence description of what it does
-* The development status of the skill (under construction or working)  
-
-### MSM Compliance
-To make your skill capable of being installed via MSM (the Mycroft Skill Manager) you need two additional files.
-* `requirements.txt`
-* `requirements.sh`
-
-requirements.txt is a list of all `pip` libraries your skill needs (if any).
-
-requirements.sh is a shell script that executes and installs package dependancies  your **Skill** needs (if any).
-So, if you need a specific `pip` library installed, like `gensim`, you can have it automatically installed in the correct vm using `msm`.
-
-This requirements.txt file would look like this:
+```python
+def handle_hello_world_intent(self, message):
+        self.speak_dialog("hello.world")
 ```
-gensim
+
+In the `handle_hello_world_intent()` method above, the method receives two _parameters_, `self` and `message`. `self` is the reference to the object itself, and `message` is an incoming message from the `messagebus`. This method then calls the `speak_dialog()` method, passing to it the `hello.world` dialog. Remember, this is defined in the file `hello.world.dialog`. Can you guess what Mycroft will Speak?
+
+@TODO is this correct - is this what `message` is here? This was just totally an educated guess.
+
+You will usually also have a `stop()` method. This method tells Mycroft what to do if a `stop` **intent** is detected.
+
+```python
+def stop(self):
+    pass
 ```
-That's it!
+
+In the above code block, the [`pass` statement](https://docs.python.org/2/reference/simple_stmts.html#the-pass-statement) is used as a placeholder; it doesn't actually have any function. However, if the **Skill** had any active functionality, the `stop()` method would terminate the functionality, leaving the *Skill** in a known good state.
+
+## How do I find more information on Mycroft functions?
+
+You can find documentation on Mycroft functions and helper methods at the [Mycroft Core API documentation](http://mycroft-core.readthedocs.io/en/stable)
