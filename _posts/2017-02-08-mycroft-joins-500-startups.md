@@ -21,7 +21,7 @@ Mycroft was selected from thousands of potential applicants because the company 
 
 The team is already getting mentorship from the 500 cadre and has been privileged to work with incredible people like Chris Neumann, Aaron Blumenthal, Mike Sigal and Chandini Ammineni.
 
-<a href="https://mycroft.ai/wp-content/uploads/2017/02/500-mentors.png"><img class="size-full wp-image-29112 alignleft" src="https://mycroft.ai/wp-content/uploads/2017/02/500-mentors.png" alt="" width="600" height="165" /></a>
+<a href="https://mycroft.ai/wp-content/uploads/2017/02/500-mentors.png"><img class="size-full wp-image-29112 alignleft" src="https://mycroft.ai/wp-content/uploads/2017/02/500-mentors.png" alt="500 startups mentors" width="600" height="165" /></a>
 
 &nbsp;
 

@@ -15,4 +15,4 @@ This is the moment! The entire Mycroft team has assembled from around the globeÂ
 
 <strong><a href="https://techcrunch.com/2017/05/11/watch-500-startups-batch-20-demo-day-here/">Tune into the Batch 20 Demo Day Livestream now!</a></strong>
 
-<a href="https://techcrunch.com/2017/05/11/watch-500-startups-batch-20-demo-day-here/"><img class="alignnone wp-image-29907" src="https://mycroft.ai/wp-content/uploads/2017/05/mycroft_demo_day.jpg" alt="" width="800" height="450" /></a>
+<a href="https://techcrunch.com/2017/05/11/watch-500-startups-batch-20-demo-day-here/"><img class="alignnone wp-image-29907" src="https://mycroft.ai/wp-content/uploads/2017/05/mycroft_demo_day.jpg" alt="mycroft demo day" width="800" height="450" /></a>
