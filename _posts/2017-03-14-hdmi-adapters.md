@@ -12,4 +12,4 @@ Finally, we are receiving parts that will make the Mark 1 and allow us to fulfil
 
 We have received our HDMI adapters. We had these custom built because of the required positioning of the Raspberry Pi. As you can see, we needed these in order to bring the HDMI port to the rear of Mycroft.
 
-<a href="https://mycroft.ai/wp-content/uploads/2017/03/Hdmi-adapters.jpg"><img class="alignnone size-full wp-image-29419" src="https://mycroft.ai/wp-content/uploads/2017/03/Hdmi-adapters.jpg" alt="" width="3384" height="2256" /></a>
+<a href="https://mycroft.ai/wp-content/uploads/2017/03/Hdmi-adapters.jpg"><img class="alignnone size-full wp-image-29419" src="https://mycroft.ai/wp-content/uploads/2017/03/Hdmi-adapters.jpg" alt="hdmi adapters" width="3384" height="2256" /></a>
