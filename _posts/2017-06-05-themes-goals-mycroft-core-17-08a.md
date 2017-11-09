@@ -11,7 +11,7 @@ post_date: 2017-06-05 21:01:16
 ---
 One of the things I often hear in Silicon Valley when I talk about Mycroft is this: “The technology is so broad, the problem so difficult, the goal so distant, what is the Mycroft team going to work on first?” This is a common problem with both ambitious projects and open communities. Founders, developers, and community members want to move fast, build great new features, expanding their technology to fully inhabit the vision.
 
-[caption id="attachment_30066" align="aligncenter" width="594"]<img class="size-full wp-image-30066" src="https://mycroft.ai/wp-content/uploads/2017/06/JonoBaconEngadgetExpandNYDay3wEW1J_BMkcPl.png" alt="" width="594" height="401" /> Jono Bacon, an all around awesome guy.[/caption]
+[caption id="attachment_30066" align="aligncenter" width="594"]<img class="size-full wp-image-30066" src="https://mycroft.ai/wp-content/uploads/2017/06/JonoBaconEngadgetExpandNYDay3wEW1J_BMkcPl.png" alt="Jono Bacon" width="594" height="401" /> Jono Bacon, an all around awesome guy.[/caption]
 
 &nbsp;
 
@@ -24,7 +24,7 @@ With that in mind, the leadership team sat down and gave some careful thought to
  	<li>Make it easier for developers to work with Mycroft</li>
  	<li>Polish the core user interaction and skills</li>
 </ol>
-<h2><strong><img class="aligncenter size-full wp-image-30079" src="https://mycroft.ai/wp-content/uploads/2017/06/diagram.001.jpeg" alt="" width="1920" height="1080" /></strong></h2>
+<h2><strong><img class="aligncenter size-full wp-image-30079" src="https://mycroft.ai/wp-content/uploads/2017/06/diagram.001.jpeg" alt="themes and goals" width="1920" height="1080" /></strong></h2>
 &nbsp;
 <h2><strong>Make it easier for developers to work with Mycroft</strong></h2>
 Before the release of the Mycroft Raspberry Pi image in January, it was very difficult to get Mycroft running. There is a variety of services, processes, and data sources that interact to create the Mycroft user experience – figuring out how to integrate them, start them, and deploy them, was a bit of a nightmare.
