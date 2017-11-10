@@ -9,4 +9,8 @@ published: false
 ---
 # Common issues in **Skills** development
 
-@TODO I don't have enough information to fill in this page yet
+## I've added new phrases in the .voc file, but Mycroft isn't recognizing them
+
+Compound words like "don't", "won't", "shouldn't" etc. are normalized by Mycroft - so they become "do not", "will not", "should not". You should use the normalized words in your `.voc` files.
+
+@TODO I need more information on issues that Skill developers have
