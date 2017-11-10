@@ -1,9 +1,14 @@
 ---
-post_title: 'Preparing your Skill for submission to the Mycroft Skills Repo'
+ID: 32646
+post_title: >
+  Preparing your Skill for submission to
+  the Mycroft Skills Repo
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32646
 published: false
 ---
-
 # Preparing your Skill for submission to the Mycroft Skills Repo
 @TODO should this be a separate page of content? I think it probably should, because the **intent** of the developer is different. One one page, the key task is to learn more about Skills to be able to create a new Skill, but the key task is different - it's about submitting a complete Skill to the Mycroft Skills Repo. The task is different, it should be a different page.
 

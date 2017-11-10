@@ -35,6 +35,6 @@ It is going to be a fun collaboration.
 
 If you have not had the chance to pre-order a Mycroft yet head over to <a href="http://igg.me/at/mycroftai/x/1728487" target="_blank" rel="noopener">Indiegogo</a> to get one of your own. We also have multipacks and software development kits.
 
-Make sure to sign up for our <a href="http://eepurl.com/buf2Wb" target="_blank" rel="noopener">weekly newsletter</a> to receive updates about the progress of Mycroft and information about the team.
+Make sure to sign up for our weekly newsletter in the footer form below to receive updates about the progress of Mycroft and information about the team.
 
 To get involved with the Mycroft discussion and to find out how to get involved head over to the <a href="https://community.mycroft.ai/" target="_blank" rel="noopener">community page</a> and create an account.
