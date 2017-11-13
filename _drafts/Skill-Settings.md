@@ -1,7 +1,10 @@
 ---
+ID: 32919
 post_title: Skill Settings
 author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32919
 published: false
 ---
 # Skill Settings
