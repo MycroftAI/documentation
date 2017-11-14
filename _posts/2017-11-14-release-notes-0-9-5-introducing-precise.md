@@ -3,7 +3,7 @@ ID: 32926
 post_title: >
   Release Notes 0.9.5 | Introducing
   Precise
-author: Alyx Horace
+author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
