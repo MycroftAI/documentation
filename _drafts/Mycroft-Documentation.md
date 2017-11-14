@@ -9,91 +9,117 @@ published: false
 ---
 # Documentation Home
 
+Welcome to the documentation for all elements of the Mycroft - the open source voice assistant.
+
+Our documentation, just like our source code, is open source, [and you can contribute to improving it here](https://github.com/MycroftAI/docs-rewrite). Alternatively, please rate our documentation and leave comments on how we can improve.
+
 ## [About Mycroft](/01.about-mycroft/01.about-mycroft.md)
+
+This is a useful starting point, and provides an overview of all the elements of the Mycroft ecosystem.
+
 ### [Contributing](/01.about-mycroft/02.contributing.md)
+
+Aimed at developers, our Contributing section provides detailed instructions on how to contribute to Mycroft.
+
 ### [Release notes](/01.about-mycroft/03.release-notes.md)
+
+Release notes for all major **Devices**, such as Mark 1 and Picroft.
+
 ### [Roadmap](/01.about-mycroft/04.roadmap.md)
+
+Aimed at developers and investors, our Roadmap illustrates our key development effort and goals.
+
 ### [Glossary](/01.about-mycroft/05.glossary.md)
+
+A handy reference of all new terms you might come across while working with Mycroft.
 
 ## [Getting Mycroft](/02.getting-mycroft/02.getting-mycroft.md)
 
+How to download and install Mycroft for your preferred **Device** or platform.
+
 ## [Your home.mycroft.ai account](/03.your-home.mycoft.ai-account/01.your-home.mycroft-account.md)
+
+How to pair your **Device** with home.mycroft.ai, and set basic configuration fields such as location.
+
 ### [Basic commands](/03.your-home.mycoft.ai-account/02.basic-commands.md)
+
+Getting started using Mycroft Skills.
 
 ## [Mark 1](/05.mark-1/01.mark-1-overview.md)
 
+In depth information about the Mark 1 reference hardware **Device**.
+
 ## [Picroft](/06.picroft/01.picroft-overview.md)
+
+In depth information about the Picroft build of Mycroft for Raspberry Pi.
 
 ## [Mycroft for Linux platforms](/07.mycroft-for-linux/01.linux-overview.md)
 
+In depth information on how to build Mycroft for common Linux distributions.
+
 ## [Mycroft for Android](/08.mycroft-for-android/01.android-overview.md)
 
+In depth information on the Mycroft companion app for Android.
+
 ## [Mycroft Skills](/09.mycroft-skills/01.skills-overview.md)
-### [Developing Skills for Mycroft](/09.mycroft-skills/02.developing-skills.md)
+
+An overview of the Skills that can be installed on your Mycroft **Device**.
+
+### [Introduction to developing Skills for Mycroft](Introduction-to-developing-Skills.md)
+
+Aimed at developers, this section is an introduction to developing new Skills for Mycroft
+
+### [Preparing your Skill for submission to the Mycroft Skills Repo](Preparing-your-Skill-for-submission-to-theMycroft-Skills-Repo.md)
+
+Aimed at developers, this is a step by step guide to submitting a new Skill you've developed to the Mycroft Skills Repo.
+
+### [Skill Settings](Skill-Settings.md)
+
+Aimed at Developers, this is a step by step guide to storing and retrieving persistent settings that your Skill needs.
+
 ### [Common issues in Skills development](/09.mycroft-skills/03.common-issues-skills-development.md)
+
+TBA
+
 ### [Repurposing Skills developed for other platforms](/09.mycroft-skills/04.repurposing-skills-from-other-platforms.md)
 
+Already develop for another voice assistant? Learn how to transfer those skills to Mycroft.
 
-## Language support in Mycroft
+## [Language support in Mycroft](Language-support-in-Mycroft.md)
 
 This section will pick up the languages doco that Jarbas has written
 
 ## Adapt
 
-Information on Adapt - this will subsume the doco at https://adapt.mycroft.ai
+TBA
 
 ## Mimic
 
-Information on Mimic - this will subsume the Mimic Wiki
+TBA
 
 ## Precise
 
-Information on Precise Intent parser
+TBA
 
 ## Persona
 
-Information on Persona
+TBA
 
-## [Padatious](/15.padatious/01.padatious-overview.md)
+## Padatious
+
+TBA
 
 ## FAQ
 
-The section will be a "top 10" list of questions about Mycroft, with the intent of reducing these questions from being asked either in the forums, in chat etc. These will likely be updated frequently, and will be things like "Is Mycroft available in $LANGUAGE?"
+TBA
 
-## Troubleshooting and known errors
+## [Troubleshooting and known errors](Troubleshooting-and-known-errors.md)
 
-### General approach to troubleshooting
-
-This section will provide an overview to troubleshooting - ie what to check first, using a "stack" approach - ie. identifying where in the stack the issue is occurring.
-
-### Log files and what they tell you
-
-This section will talk about how Mycroft logging works, and the sort of errors the logs can provide guidance on. This section will cover where the log files are on the various products.
-
-#### Skills log
-
-#### Voice log
-
-#### Audio log
-
-#### Mycroft service log
-
-### Troubleshooting Mark 1
-
-### Troubleshooting Mycroft for Linux
-
-### Troubleshooting Picroft
-
-### Troubleshooting Mycroft for Android
-
-### Troubleshooting Mycroft Skills Manager
-
-### Mycroft Bus Messages
+Stuck? Learn common tricks and techniques for resolving common errors. 
 
 ### Known errors and workarounds
 
-This section will document known errors and workarounds
-
+TBA
 ## Getting help and support
 
-This section will cover the different support mechanisms for getting help - such as the forums, chat, Contact Us and raising Issues on GitHub.
+TBA
