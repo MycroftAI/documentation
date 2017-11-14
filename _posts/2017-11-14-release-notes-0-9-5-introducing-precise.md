@@ -11,7 +11,7 @@ permalink: >
 published: true
 post_date: 2017-11-14 00:49:43
 ---
-V0.9.5 Is Here - and we're rolling out Precise.
+V0.9.5 is here - and we're rolling out Precise.
 <h2>Precise wake word engine <a class="issue-link js-issue-link tooltipped tooltipped-ne" href="https://github.com/MycroftAI/mycroft-core/pull/1199" data-error-text="Failed to load issue title" data-id="271107162" data-permission-text="Issue title is private" aria-label="#1199, Precise Wake Word Listener">#1199</a>, <a class="issue-link js-issue-link" href="https://github.com/MycroftAI/mycroft-core/pull/1207" data-error-text="Failed to load issue title" data-id="272050566" data-permission-text="Issue title is private" data-url="https://github.com/MycroftAI/mycroft-core/issues/1207">#1207</a></h2>
 New machine-learning based wake word listener. This system includes a feedback loop, allowing user-contributed information to be incorporated into the training database, improving the wake-word performance. This happens when Opt In has been chosen at home.mycroft.ai.
 
