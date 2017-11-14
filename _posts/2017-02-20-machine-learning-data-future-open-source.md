@@ -7,7 +7,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/machine-learning-data-future-open-source/
+  https://mycroft.ai/blog/machine-learning-data-future-open-source/
 published: true
 post_date: 2017-02-20 16:33:51
 ---

@@ -4,7 +4,7 @@ post_title: Arduino Headers
 author: Kris Adair
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/arduino-headers/
+permalink: https://mycroft.ai/blog/arduino-headers/
 published: true
 post_date: 2017-04-11 07:59:07
 ---

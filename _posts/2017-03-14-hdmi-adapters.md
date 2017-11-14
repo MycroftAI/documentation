@@ -4,7 +4,7 @@ post_title: HDMI Adapters
 author: Kris Adair
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/hdmi-adapters/
+permalink: https://mycroft.ai/blog/hdmi-adapters/
 published: true
 post_date: 2017-03-14 11:35:29
 ---

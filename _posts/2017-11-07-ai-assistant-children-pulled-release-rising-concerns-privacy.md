@@ -8,7 +8,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/ai-assistant-children-pulled-release-rising-concerns-privacy/
+  https://mycroft.ai/blog/ai-assistant-children-pulled-release-rising-concerns-privacy/
 published: true
 post_date: 2017-11-07 05:22:21
 ---

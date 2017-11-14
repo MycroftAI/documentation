@@ -7,7 +7,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-welcomes-jaguar-land-rover-new-investor/
+  https://mycroft.ai/blog/mycroft-welcomes-jaguar-land-rover-new-investor/
 published: true
 post_date: 2017-02-28 15:30:05
 ---

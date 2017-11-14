@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/maker-faire-bay-area-2017/
+  https://mycroft.ai/blog/maker-faire-bay-area-2017/
 published: true
 post_date: 2017-05-17 17:03:36
 ---

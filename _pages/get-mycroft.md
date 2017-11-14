@@ -4,7 +4,7 @@ post_title: Get Mycroft
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/get-mycroft/
+permalink: https://mycroft.ai/get-mycroft/
 published: true
 post_date: 2017-09-08 04:30:19
 ---

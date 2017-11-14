@@ -7,7 +7,7 @@ author: Ryan Sipes
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/production-prototype-adapt-2/
+  https://mycroft.ai/blog/production-prototype-adapt-2/
 published: true
 post_date: 2016-01-20 15:05:31
 ---

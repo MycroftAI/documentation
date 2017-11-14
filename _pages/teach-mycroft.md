@@ -4,7 +4,7 @@ post_title: Teach Mycroft
 author: senseid23@7h4r
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/teach-mycroft/
+permalink: https://mycroft.ai/teach-mycroft/
 published: true
 post_date: 2017-02-01 18:53:10
 ---

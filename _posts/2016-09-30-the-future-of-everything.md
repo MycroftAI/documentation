@@ -1,11 +1,11 @@
 ---
 ID: 2047
-post_title: 'The Future of &#8230; Everything!'
+post_title: The Future of ... Everything!
 author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/the-future-of-everything/
+  https://mycroft.ai/blog/the-future-of-everything/
 published: true
 post_date: 2016-09-30 00:03:15
 ---

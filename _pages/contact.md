@@ -4,7 +4,7 @@ post_title: Contact
 author: senseid23@7h4r
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/contact/
+permalink: https://mycroft.ai/contact/
 published: true
 post_date: 2017-02-01 19:29:42
 ---

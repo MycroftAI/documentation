@@ -5,7 +5,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/will-ai-take-world/
+  https://mycroft.ai/blog/will-ai-take-world/
 published: true
 post_date: 2017-10-18 17:26:40
 ---

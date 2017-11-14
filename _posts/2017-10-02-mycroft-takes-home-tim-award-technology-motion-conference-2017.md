@@ -7,7 +7,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-takes-home-tim-award-technology-motion-conference-2017/
+  https://mycroft.ai/blog/mycroft-takes-home-tim-award-technology-motion-conference-2017/
 published: true
 post_date: 2017-10-02 22:58:04
 ---

@@ -7,7 +7,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/techstars-week-two-stereo-lithography/
+  https://mycroft.ai/blog/techstars-week-two-stereo-lithography/
 published: true
 post_date: 2016-03-07 16:54:35
 ---

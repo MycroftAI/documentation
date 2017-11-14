@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-ceo-visits-zero-tolerance/
+  https://mycroft.ai/blog/mycroft-ceo-visits-zero-tolerance/
 published: true
 post_date: 2016-07-18 14:59:16
 ---

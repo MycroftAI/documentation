@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/crowdfunding-path-success/
+  https://mycroft.ai/blog/crowdfunding-path-success/
 published: true
 post_date: 2017-05-08 11:03:17
 ---

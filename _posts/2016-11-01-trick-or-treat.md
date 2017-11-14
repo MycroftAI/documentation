@@ -4,7 +4,7 @@ post_title: 'Halloween Update: Trick or Treat'
 author: Steve Penrod
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/trick-or-treat/
+permalink: https://mycroft.ai/blog/trick-or-treat/
 published: true
 post_date: 2016-11-01 15:38:59
 ---

@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/500-startups-demo-day/
+  https://mycroft.ai/blog/500-startups-demo-day/
 published: true
 post_date: 2017-05-11 14:07:37
 ---

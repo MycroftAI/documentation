@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/opening-mycroft-mark-1-box/
+  https://mycroft.ai/blog/opening-mycroft-mark-1-box/
 published: true
 post_date: 2017-05-22 12:38:02
 ---

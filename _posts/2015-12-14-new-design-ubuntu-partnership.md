@@ -5,7 +5,7 @@ author: Ryan Sipes
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/new-design-ubuntu-partnership/
+  https://mycroft.ai/blog/new-design-ubuntu-partnership/
 published: true
 post_date: 2015-12-14 09:00:11
 ---

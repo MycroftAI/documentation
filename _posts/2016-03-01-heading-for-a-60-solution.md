@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/heading-for-a-60-solution/
+  https://mycroft.ai/blog/heading-for-a-60-solution/
 published: true
 post_date: 2016-03-01 08:57:25
 ---

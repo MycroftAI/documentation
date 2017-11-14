@@ -4,7 +4,7 @@ post_title: Number 1 in China
 author: Andrew Vavrek
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/number-1-china/
+permalink: https://mycroft.ai/blog/number-1-china/
 published: true
 post_date: 2017-06-01 11:25:41
 ---

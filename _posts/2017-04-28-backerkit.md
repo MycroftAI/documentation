@@ -4,7 +4,7 @@ post_title: Backerkit
 author: Kris Adair
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/backerkit/
+permalink: https://mycroft.ai/blog/backerkit/
 published: true
 post_date: 2017-04-28 12:26:15
 ---

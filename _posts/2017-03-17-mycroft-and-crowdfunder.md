@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-and-crowdfunder/
+  https://mycroft.ai/blog/mycroft-and-crowdfunder/
 published: true
 post_date: 2017-03-17 15:37:37
 ---

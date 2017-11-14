@@ -7,7 +7,7 @@ author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/shipping-update-and-launchkc/
+  https://mycroft.ai/blog/shipping-update-and-launchkc/
 published: true
 post_date: 2016-09-22 11:20:11
 ---

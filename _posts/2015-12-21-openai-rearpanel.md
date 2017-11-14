@@ -4,7 +4,8 @@ post_title: 'Weekly Update: Open Source AI, New Advisor, and Updated Panel'
 author: Ryan Sipes
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/openai-rearpanel/
+permalink: >
+  https://mycroft.ai/blog/openai-rearpanel/
 published: true
 post_date: 2015-12-21 18:18:23
 ---

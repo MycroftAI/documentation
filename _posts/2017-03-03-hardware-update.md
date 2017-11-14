@@ -4,7 +4,7 @@ post_title: Hardware Update
 author: Kris Adair
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/hardware-update/
+permalink: https://mycroft.ai/blog/hardware-update/
 published: true
 post_date: 2017-03-03 15:07:43
 ---

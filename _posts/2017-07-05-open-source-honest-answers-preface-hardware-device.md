@@ -5,7 +5,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/open-source-honest-answers-preface-hardware-device/
+  https://mycroft.ai/blog/open-source-honest-answers-preface-hardware-device/
 published: true
 post_date: 2017-07-05 14:51:15
 ---

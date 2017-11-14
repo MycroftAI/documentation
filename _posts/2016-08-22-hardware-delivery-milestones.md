@@ -5,7 +5,7 @@ author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/hardware-delivery-milestones/
+  https://mycroft.ai/blog/hardware-delivery-milestones/
 published: true
 post_date: 2016-08-22 22:04:25
 ---

@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-world-congress-17/
+  https://mycroft.ai/blog/mycroft-world-congress-17/
 published: true
 post_date: 2017-01-29 19:03:12
 ---

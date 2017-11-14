@@ -8,7 +8,7 @@ post_excerpt: >
   formed.
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-origin-story/
+  https://mycroft.ai/blog/mycroft-origin-story/
 published: true
 post_date: 2017-04-14 15:05:05
 ---

@@ -4,7 +4,7 @@ post_title: Mycroft Offices
 author: Joshua Montgomery
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/mycroft-offices/
+permalink: https://mycroft.ai/blog/mycroft-offices/
 published: true
 post_date: 2017-04-10 08:37:22
 ---

@@ -4,7 +4,7 @@ post_title: Mycroft Team
 author: Kris Adair
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/mycroft-team/
+permalink: https://mycroft.ai/blog/mycroft-team/
 published: true
 post_date: 2017-04-24 12:10:01
 ---

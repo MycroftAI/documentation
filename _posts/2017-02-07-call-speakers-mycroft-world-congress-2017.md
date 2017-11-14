@@ -7,7 +7,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/call-speakers-mycroft-world-congress-2017/
+  https://mycroft.ai/blog/call-speakers-mycroft-world-congress-2017/
 published: true
 post_date: 2017-02-07 11:51:40
 ---

@@ -1,11 +1,11 @@
 ---
 ID: 1409
-post_title: 'Startup Challenges – It&#8217;s not all Rainbows and Unicorns'
+post_title: "Startup Challenges – It's not all Rainbows and Unicorns"
 author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/startup-challenges-its-not-all-rainbows-and-unicorns/
+  https://mycroft.ai/blog/startup-challenges-its-not-all-rainbows-and-unicorns/
 published: true
 post_date: 2016-02-08 13:27:17
 ---

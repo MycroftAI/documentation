@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/techstars-graduates-demo-day/
+  https://mycroft.ai/blog/techstars-graduates-demo-day/
 published: true
 post_date: 2016-06-01 04:36:11
 ---

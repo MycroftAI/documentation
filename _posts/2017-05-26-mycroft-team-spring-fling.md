@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-team-spring-fling/
+  https://mycroft.ai/blog/mycroft-team-spring-fling/
 published: true
 post_date: 2017-05-26 13:06:52
 ---

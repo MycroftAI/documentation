@@ -1,11 +1,11 @@
 ---
 ID: 30964
-post_title: 'Why AI it isn&#8217;t Something to Fear; Emotions are the True Culprit'
+post_title: "Why AI it isn't Something to Fear; Emotions are the True Culprit"
 author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/ai-isnt-something-fear-emotions-true-culprit/
+  https://mycroft.ai/blog/ai-isnt-something-fear-emotions-true-culprit/
 published: true
 post_date: 2017-08-24 22:03:20
 ---

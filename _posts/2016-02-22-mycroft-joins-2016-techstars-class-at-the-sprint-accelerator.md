@@ -7,7 +7,7 @@ author: Ryan Sipes
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-joins-2016-techstars-class-at-the-sprint-accelerator/
+  https://mycroft.ai/blog/mycroft-joins-2016-techstars-class-at-the-sprint-accelerator/
 published: true
 post_date: 2016-02-22 13:32:14
 ---

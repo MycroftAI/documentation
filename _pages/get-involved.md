@@ -4,7 +4,7 @@ post_title: Get Involved
 author: Steve Penrod
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/get-involved/
+permalink: https://mycroft.ai/get-involved/
 published: true
 post_date: 2017-07-27 12:33:00
 ---

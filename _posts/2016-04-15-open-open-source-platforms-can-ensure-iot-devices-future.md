@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/open-open-source-platforms-can-ensure-iot-devices-future/
+  https://mycroft.ai/blog/open-open-source-platforms-can-ensure-iot-devices-future/
 published: true
 post_date: 2016-04-15 08:50:22
 ---

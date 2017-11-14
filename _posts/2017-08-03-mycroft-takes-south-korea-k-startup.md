@@ -7,7 +7,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-takes-south-korea-k-startup/
+  https://mycroft.ai/blog/mycroft-takes-south-korea-k-startup/
 published: true
 post_date: 2017-08-03 23:02:38
 ---

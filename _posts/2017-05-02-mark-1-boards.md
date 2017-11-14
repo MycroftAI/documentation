@@ -4,7 +4,7 @@ post_title: Mark 1 Boards Update
 author: Andrew Vavrek
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/mark-1-boards/
+permalink: https://mycroft.ai/blog/mark-1-boards/
 published: true
 post_date: 2017-05-02 12:28:39
 ---

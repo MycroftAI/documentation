@@ -1,10 +1,10 @@
 ---
 ID: 31664
-post_title: 'Mycroft &#8211; Open Source Artificial Intelligence for Everyone &#8211; Kickstarter 2 Coming Soon'
+post_title: 'Mycroft &ndash; Open Source Artificial Intelligence for Everyone &ndash; Kickstarter 2 Coming Soon'
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/
+permalink: https://mycroft.ai/
 published: true
 post_date: 2017-10-18 05:37:28
 ---

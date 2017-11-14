@@ -7,7 +7,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-wins-data-ai-track-hello-tomorrow/
+  https://mycroft.ai/blog/mycroft-wins-data-ai-track-hello-tomorrow/
 published: true
 post_date: 2017-11-08 23:19:41
 ---

@@ -5,7 +5,7 @@ author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/phonemes-visemes-pairs/
+  https://mycroft.ai/blog/phonemes-visemes-pairs/
 published: true
 post_date: 2016-09-08 11:55:59
 ---

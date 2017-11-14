@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/software-version-numbers-explained/
+  https://mycroft.ai/blog/software-version-numbers-explained/
 published: true
 post_date: 2017-05-29 15:22:44
 ---

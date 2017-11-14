@@ -9,7 +9,7 @@ post_excerpt: >
   smarter every day!
 layout: post
 permalink: >
-  http://mycroft.ai/blog/kickstarter-delivery-update/
+  https://mycroft.ai/blog/kickstarter-delivery-update/
 published: true
 post_date: 2016-07-15 12:08:59
 ---

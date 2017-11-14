@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/shipping-advance-prototype/
+  https://mycroft.ai/blog/shipping-advance-prototype/
 published: true
 post_date: 2017-05-15 17:52:50
 ---

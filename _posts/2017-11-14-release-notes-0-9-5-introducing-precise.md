@@ -7,7 +7,7 @@ author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/release-notes-0-9-5-introducing-precise/
+  https://mycroft.ai/blog/release-notes-0-9-5-introducing-precise/
 published: true
 post_date: 2017-11-14 00:49:43
 ---

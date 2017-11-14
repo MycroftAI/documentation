@@ -4,7 +4,8 @@ post_title: How Can I Help Mycroft?
 author: Kris Adair
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/can-help-mycroft/
+permalink: >
+  https://mycroft.ai/blog/can-help-mycroft/
 published: true
 post_date: 2017-02-24 10:53:20
 ---

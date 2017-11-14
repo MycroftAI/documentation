@@ -1,0 +1,24 @@
+---
+ID: 30469
+post_title: >
+  International Shipments | Mark 1 Goes
+  Overseas
+author: Alyx Horace
+post_excerpt: ""
+layout: post
+permalink: >
+  https://mycroft.ai/blog/international-shipments/
+published: true
+post_date: 2017-07-11 11:27:50
+---
+[vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h3><span style="font-weight: 400;">Hey, International Backers!</span></h3>
+<span style="font-weight: 400;">One more time, thanks for supporting the Mycroft vision, project, and community. If you’re an international backer, congrats! Your Mark 1 and any add-ons are on their way. We’re shipping to over 90 countries, and can’t wait to add all that diversity to our community.</span>[/vc_column_text][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h3><span style="font-weight: 400;">Have your Mark 1 set up and running? </span></h3>
+<span style="font-weight: 400;">Show us how you’re interacting! <a href="https://twitter.com/mycroft_ai">Tweet</a> us, post to our <a href="https://www.facebook.com/aiforeveryone/">Facebook Page</a>, or send us a video for <a href="https://www.youtube.com/channel/UC1dlmB1lup9RwFQBSGnhA-g">Youtube</a>! </span>
+
+Also, did you catch our <a href="https://mycroft.ai/millennium-milestone/">last blog post</a> about how we shipped 1,000 units? <a href="https://youtu.be/qXDFE-xB5Nk">Check out our new video</a> to see how we did it![/vc_column_text][nectar_video_lightbox link_style="play_button_2" nectar_play_button_color="Default-Accent-Color" image_url="30452" hover_effect="defaut" box_shadow="none" video_url="https://www.youtube.com/watch?v=qXDFE-xB5Nk"][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h3>Still waiting on your order?</h3>
+<span style="font-weight: 400;">Just a gentle reminder, we can only ship to backers whose surveys we’ve received. These surveys clear up any additional shipping costs, verify your address one last time, and allow you to add more to the order (things like colored feet, screwdrivers, and fun stuff!) These surveys are individualized links, sent to the email that you used to back the project. If you have questions or can’t find your survey, </span><a href="https://mycroft.ai/contact/"><span style="font-weight: 400;">shoot us an email</span></a><span style="font-weight: 400;"> and we’ll help!</span>[/vc_column_text][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h3><span style="font-weight: 400;">One last thing for international shipments:</span></h3>
+<span style="font-weight: 400;">Any import duties, tariffs, taxes, handling charges, etc. due at the time of delivery are the sole responsibility of the receiving customer. We do not collect these fees beforehand and can’t give an estimate of the cost, as it varies widely around the world. </span>[/vc_column_text][/vc_column][/vc_row]

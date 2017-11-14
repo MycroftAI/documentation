@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-joins-500-startups/
+  https://mycroft.ai/blog/mycroft-joins-500-startups/
 published: true
 post_date: 2017-02-08 15:58:49
 ---

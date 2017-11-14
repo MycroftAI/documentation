@@ -4,7 +4,7 @@ post_title: Get Started
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/get-started/
+permalink: https://mycroft.ai/get-started/
 published: true
 post_date: 2017-10-05 10:22:36
 ---

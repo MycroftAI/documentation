@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/maker-faire-kansas-city/
+  https://mycroft.ai/blog/maker-faire-kansas-city/
 published: true
 post_date: 2016-06-25 10:51:05
 ---

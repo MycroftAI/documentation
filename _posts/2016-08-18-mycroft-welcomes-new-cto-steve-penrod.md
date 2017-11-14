@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-welcomes-new-cto-steve-penrod/
+  https://mycroft.ai/blog/mycroft-welcomes-new-cto-steve-penrod/
 published: true
 post_date: 2016-08-18 11:16:41
 ---

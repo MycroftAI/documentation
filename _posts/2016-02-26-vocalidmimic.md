@@ -6,7 +6,7 @@ post_title: >
 author: Kris Adair
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/vocalidmimic/
+permalink: https://mycroft.ai/blog/vocalidmimic/
 published: true
 post_date: 2016-02-26 09:53:18
 ---

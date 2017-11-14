@@ -7,7 +7,7 @@ author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/the-good-the-bad-and-the-ugly-shipping-update/
+  https://mycroft.ai/blog/the-good-the-bad-and-the-ugly-shipping-update/
 published: true
 post_date: 2016-12-21 20:13:17
 ---

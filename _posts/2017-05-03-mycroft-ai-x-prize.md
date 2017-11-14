@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-ai-x-prize/
+  https://mycroft.ai/blog/mycroft-ai-x-prize/
 published: true
 post_date: 2017-05-03 19:01:16
 ---

@@ -17,7 +17,7 @@ post_excerpt: >
   smarter the platform will become.
 layout: post
 permalink: >
-  http://mycroft.ai/blog/how-mycroft-plans-to-make-building-skills-accessible/
+  https://mycroft.ai/blog/how-mycroft-plans-to-make-building-skills-accessible/
 published: true
 post_date: 2015-12-27 17:37:05
 ---

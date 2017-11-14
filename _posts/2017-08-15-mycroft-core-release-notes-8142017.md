@@ -5,7 +5,7 @@ author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mycroft-core-release-notes-8142017/
+  https://mycroft.ai/blog/mycroft-core-release-notes-8142017/
 published: true
 post_date: 2017-08-15 13:50:51
 ---

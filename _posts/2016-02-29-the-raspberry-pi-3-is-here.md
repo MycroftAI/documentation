@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/the-raspberry-pi-3-is-here/
+  https://mycroft.ai/blog/the-raspberry-pi-3-is-here/
 published: true
 post_date: 2016-02-29 19:09:23
 ---

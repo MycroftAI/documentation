@@ -7,7 +7,7 @@ author: Ryan Sipes
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/first-open-source-intent-parser-adapt-released-mycroft/
+  https://mycroft.ai/blog/first-open-source-intent-parser-adapt-released-mycroft/
 published: true
 post_date: 2016-01-12 13:23:16
 ---

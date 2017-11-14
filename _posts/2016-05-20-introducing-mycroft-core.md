@@ -5,7 +5,7 @@ author: Ryan Sipes
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/introducing-mycroft-core/
+  https://mycroft.ai/blog/introducing-mycroft-core/
 published: true
 post_date: 2016-05-20 10:15:27
 ---

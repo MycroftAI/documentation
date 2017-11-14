@@ -6,7 +6,7 @@ post_title: >
 author: Steve Penrod
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/giving-thanks/
+permalink: https://mycroft.ai/blog/giving-thanks/
 published: true
 post_date: 2016-11-29 00:27:01
 ---
