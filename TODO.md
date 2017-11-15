@@ -2,6 +2,10 @@
 
 The objective of this file is to document the items flagged as @TODO as I go through the documentation so I come back to them and ensure they're resolved before the documentation is put live.
 
+## General things
+
+- [ ] Regenerated ToC for each file using `markdown-toc` when ready to do final import to GitHub
+
 ### About Mycroft
 
 - [ ] Release note - need to find a way to aggregate them from GitHub. This will need the GitHub API.
@@ -54,4 +58,7 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 
 - [ ] The introductory text is available in multiple languages - are there any key languages that I'm missing?
 - [ ] If I find a STT engine in the language I want to support, what do I do with it? The documentation on the Languages wiki isn't clear how all the elements come together.
-- [ ]
+
+### Precise
+
+- [ ] How do I tell whether my **Device** is using Precise or PocketSphinx?

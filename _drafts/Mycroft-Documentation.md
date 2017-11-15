@@ -99,14 +99,15 @@ TBA
 
 ## Precise
 
-TBA
+Precise 
 
 ## Persona
 
 TBA
 
 ## [Padatious](Padatious.md)
-Padatious is an **Intent parser**. Unlike [Adapt](Adapt.md), which is based on Speech to Text, Padatious is trained on sounds. 
+
+Padatious is an **Intent parser**. Unlike [Adapt](Adapt.md), which is based on Speech to Text, Padatious is trained on sounds.
 
 ## FAQ
 
