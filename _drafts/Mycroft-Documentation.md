@@ -105,9 +105,8 @@ TBA
 
 TBA
 
-## Padatious
-
-TBA
+## [Padatious](Padatious.md)
+Padatious is an **Intent parser**. Unlike [Adapt](Adapt.md), which is based on Speech to Text, Padatious is trained on sounds. 
 
 ## FAQ
 
@@ -115,7 +114,7 @@ TBA
 
 ## [Troubleshooting and known errors](Troubleshooting-and-known-errors.md)
 
-Stuck? Learn common tricks and techniques for resolving common errors. 
+Stuck? Learn common tricks and techniques for resolving common errors.
 
 ### Known errors and workarounds
 

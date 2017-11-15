@@ -9,8 +9,33 @@ published: false
 ---
 # Troubleshooting and known errors
 
-This section is grouped by Device to help you quickly find the information you need.
+- [Troubleshooting and known errors](#troubleshooting-and-known-errors)
+  * [Help us to help you](#help-us-to-help-you)
+  * [About the Mycroft logs](#about-the-mycroft-logs)
+    + [How to find the Mycroft logs](#how-to-find-the-mycroft-logs)
+      - [Mark 1](#mark-1)
+      - [Picroft](#picroft)
+      - [Linux](#linux)
+      - [Android](#android)
+  * [Log file descriptions](#log-file-descriptions)
+    + [mycroft-audio.log](#mycroft-audiolog)
+    + [mycroft-cli.log](#mycroft-clilog)
+    + [mycroft-enclosure-client.log](#mycroft-enclosure-clientlog)
+    + [mycroft-messagebus.log](#mycroft-messagebuslog)
+    + [mycroft-skills.log](#mycroft-skillslog)
+    + [mycroft-speech-client.log](#mycroft-speech-clientlog)
+    + [mycroft-update.log](#mycroft-updatelog)
+    + [mycroft-wifi-setup-client.log](#mycroft-wifi-setup-clientlog)
+  * [General troubleshooting (all Devices)](#general-troubleshooting-all-devices)
+      - [I've made changes to my settings on home.mycroft.ai, but these are not reflected on my **Device**](#ive-made-changes-to-my-settings-on-homemycroftai-but-these-are-not-reflected-on-my-device)
+  * [Troubleshooting Mark 1](#troubleshooting-mark-1)
+      - [Not connected to the internet](#not-connected-to-the-internet)
+        * [If your Mark 1 loses internet connectivity](#if-your-mark-1-loses-internet-connectivity)
+  * [Troubleshooting Picroft](#troubleshooting-picroft)
+  * [Troubleshooting Linux](#troubleshooting-linux)
+      - [Logs state that Python packages are not installed](#logs-state-that-python-packages-are-not-installed)
 
+This section is grouped by Device to help you quickly find the information you need.
 
 ## Help us to help you
 
@@ -155,6 +180,21 @@ Some **Enclosures**, like the Mark 1, will automatically try to update their sof
 
 Some **Enclosures**, like the Mark 1, will create a WiFi hotspot when they are first set up. This log contains messages related to the creation and tear-down of the WiFi hotspot, as well as errors and information related to clients connecting to the WiFi hotspot.
 
+## General troubleshooting (all Devices)
+
+#### I've made changes to my settings on home.mycroft.ai, but these are not reflected on my **Device**
+
+Have you recently updated your _Location_ or your measurement preferences (ie. kilometers vs miles) in home.mycroft.ai, but these are not reflected on your **Device**?
+
+All **Devices** pull down a local copy of configuration settings from home.mycroft.ai. You may need to instruct your **Device** to pull down your configuration again. To do this, Speak
+
+`hey Mycroft, configuration update`
+
+Mycroft will respond in one of two ways:
+
+* If your configuration was out of date, and has been pulled down again, Mycroft will respond `Your device has been configured`.
+* If your configuration was the same on your **Device** as on home.mycroft.ai, Mycroft will respond `Updated configuration`.
+
 ## Troubleshooting Mark 1
 
 #### Not connected to the internet
@@ -164,3 +204,17 @@ Some **Enclosures**, like the Mark 1, will create a WiFi hotspot when they are f
 If your Mark 1 has previously been connected to the internet, and loses internet connectivity, it will Speak
 
 `I have lost connection to the internet`
+
+## Troubleshooting Picroft
+
+## Troubleshooting Linux
+
+#### Logs state that Python packages are not installed
+
+If your logs have entries like
+@TODO example of Python package not being installed
+
+then you may need to reinstall your `virtualenv`. To do this,
+
+* `sudo rm -R ~/.virtualenv/mycroft`
+* From the directory where you have cloned `mycroft-core`, run `./dev-setup.sh`. This shell script will re-install any `virtualenv` dependencies that you may be missing.
