@@ -1,9 +1,12 @@
 ---
+ID: 32976
 post_title: Precise
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32976
 published: false
 ---
-
 # Precise
 
 Precise is a **Wake Word Listener**. Like its name suggests, a **Wake Word Listener**'s job is to continually listen to sounds and speech around the **Device**, and activate when the sounds or speech match a **Wake Word**.
