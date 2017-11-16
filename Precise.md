@@ -6,6 +6,11 @@ published: false
 
 # Precise
 
+- [Precise](#precise)
+  * [How do I install Precise as my **Wake Word Listener**?](#how-do-i-install-precise-as-my-wake-word-listener)
+  * [What's the difference between PocketSphinx and Precise?](#whats-the-difference-between-pocketsphinx-and-precise)
+  * [How can I tell on my Device if Precise is the Wake Word Listener?](#how-can-i-tell-on-my-device-if-precise-is-the-wake-word-listener)
+
 Precise is a **Wake Word Listener**. Like its name suggests, a **Wake Word Listener**'s job is to continually listen to sounds and speech around the **Device**, and activate when the sounds or speech match a **Wake Word**.
 
 By default, Mycroft uses [PocketSphinx](https://github.com/cmusphinx/pocketsphinx) as the **Wake Word Listener** for each Mycroft **Device**. Precise is an alternative to PocketSphinx.

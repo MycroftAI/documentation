@@ -97,9 +97,9 @@ TBA
 
 TBA
 
-## Precise
+## [Precise](Precise.md)
 
-Precise 
+Precise is a **Wake Word Listener** that listens and then 'wakes up' Mycroft, ready to hear your commands and questions.
 
 ## Persona
 
