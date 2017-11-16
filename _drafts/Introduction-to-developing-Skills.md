@@ -40,10 +40,18 @@ You'll notice some new terms as you start to develop **Skills**.
 
 ### Make a new repo using the Template Skill
 
-First, `git clone` the [Mycroft Skills repo](https://github.com/MycroftAI/mycroft-skills/) to your local machine.
+In GitHub, `fork` the [Mycroft Skills repo](https://github.com/MycroftAI/mycroft-skills/) into your own GitHub account.
+
+Do this by clicking the 'Fork' button.
+
+![Forking the Mycroft Skills Repo](../img/skills-forking-mycroft-skills-repo.png "Forking the Mycroft Skills Repo")
+
+Then, `git clone` the repo you've just forked to your local machine.
+
+For example, if your GitHub username is `JaneBloggs` then you will need to `git clone` from [https://github.com/JaneBloggs/mycroft-skills.git](https://github.com/JaneBloggs/mycroft-skills.git)
 
 ```bash
-$ git clone https://github.com/MycroftAI/mycroft-skills.git
+$ git clone https://github.com/JaneBloggs/mycroft-skills.git
 Cloning into 'mycroft-skills'...
 remote: Counting objects: 1529, done.
 remote: Compressing objects: 100% (60/60), done.
