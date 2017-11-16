@@ -1,9 +1,12 @@
 ---
+ID: 32976
 post_title: Precise
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=32976
 published: false
 ---
-
 # Precise
 
 - [Precise](#precise)

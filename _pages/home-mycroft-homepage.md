@@ -1,6 +1,6 @@
 ---
 ID: 32712
-post_title: 'Home.mycroft: Homepage'
+post_title: 'Home.mycroft: Homepage NON MEMBER'
 author: David Smehlik
 post_excerpt: ""
 layout: page
