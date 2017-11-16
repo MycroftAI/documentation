@@ -1,6 +1,10 @@
 ---
+ID: 33029
 post_title: Mimic
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=33029
 published: false
 ---
 # Mimic
@@ -257,4 +261,4 @@ To print Mimic help information:
 
 ## How do I create my own custom voice to use with Mimic?
 
-Creating a custom Voice is a large undertaking, and requires recording a large _corpora_ of audio material. We recommend contacting [VocaliD](https://www.vocalid.co/) if you are interested in a custom Voice for Mimic. 
+Creating a custom Voice is a large undertaking, and requires recording a large _corpora_ of audio material. We recommend contacting [VocaliD](https://www.vocalid.co/) if you are interested in a custom Voice for Mimic.
