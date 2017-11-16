@@ -16,7 +16,7 @@ post_date: 2017-11-14 13:27:13
 <ul>
  	<li><b>Refining </b><a href="https://mycroft.ai/blog/release-notes-0-9-5-introducing-precise/" target="_blank" rel="noopener"><b>Precise</b></a><span style="font-weight: 400;"> to reduce false activations. Precise is our new machine-learning based wake word listener. This system includes a feedback loop, allowing user-contributed information to be incorporated into the training database, improving the wake-word performance. </span></li>
 </ul>
-[/vc_column_text][nectar_btn size="small" button_style="regular" button_color_2="Accent-Color" icon_family="none" text="HELP WITH PADATIOUS" margin_left="55" url="https://home.mycroft.ai/#/setting/basic?_k=830hxt"][vc_column_text css=".vc_custom_1510864122556{padding-top: 5% !important;padding-right: 5% !important;padding-bottom: 5% !important;padding-left: 5% !important;}"]
+[/vc_column_text][nectar_btn size="small" button_style="regular" button_color_2="Accent-Color" icon_family="none" text="Help Train Precise" margin_left="55" url="https://home.mycroft.ai/#/setting/basic?_k=830hxt"][vc_column_text css=".vc_custom_1510864122556{padding-top: 5% !important;padding-right: 5% !important;padding-bottom: 5% !important;padding-left: 5% !important;}"]
 <ul>
  	<li><strong>Skill Revamp:</strong>  The alarm skill is getting a revamp to use our machine learning intent engine Padatious, as well as leveraging the converse method from mycroft-core. The goal is to improve the user experience by making the users feel as though they are having a more natural language interaction</li>
 </ul>
