@@ -1,6 +1,10 @@
 ---
+ID: 33104
 post_title: Adapt
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=33104
 published: false
 ---
 # Adapt
