@@ -26,14 +26,24 @@ To install Precise instead of PocketSphinx as your **Wake Word**, Speak to your 
 
 Mycroft will respond
 
-`The download has begun. This may take anywhere from between 20 seconds to 2 minutes`
+`Downloading the new listener, this will take a bit and you won't be able to use me until it completes. Give me a minute before attempting to activate me again. `
 
 _NOTE: As Precise is installing, it will download a 70Mb file to your **Device**. During this initial download period, your **Device** will not be able to respond to a **Wake Word**._
+
+## How do I tell which **Wake Word Listener** my Mycroft **Device** is using?
+
+To find out which **Wake Word Listener** is active for the Mycroft **Device** you are using, simply Speak:
+
+`hey Mycroft, what is the listener`
+
+or
+
+`hey Mycroft, tell me what listener you are using`
+
+If you are using Precise, Mycroft will respond:
+
+`The current listener is Precise`
 
 ## What's the difference between PocketSphinx and Precise?
 
 PocketSphinx recognizes **Wake Words** based on the [CMU Flite dictionary of sounds](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). In contrast, Precise is based on a neural network that is trained on _sound patterns_ rather than _word patterns_. This reduces the dependence it has on particular languages or accents.
-
-## How can I tell on my Device if Precise is the Wake Word Listener?
-
-@TODO not sure how to do this
