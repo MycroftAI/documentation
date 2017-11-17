@@ -28,7 +28,7 @@ Mycroft will respond
 
 `Downloading the new listener, this will take a bit and you won't be able to use me until it completes. Give me a minute before attempting to activate me again. `
 
-_NOTE: As Precise is installing, it will download a 70Mb file to your **Device**. During this initial download period, your **Device** will not be able to respond to a **Wake Word**._
+_NOTE: As Precise is installing, it will download a 40Mb file to your **Device**. During this initial download period, your **Device** will not be able to respond to a **Wake Word**._
 
 ## How do I tell which **Wake Word Listener** my Mycroft **Device** is using?
 
