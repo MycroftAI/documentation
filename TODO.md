@@ -61,4 +61,8 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 
 ### Precise
 
-- [ ] How do I tell whether my **Device** is using Precise or PocketSphinx?
+NIL
+
+### Adapt
+
+- [ ] are there minimum requirements for installing Adapt - both software and hardware? 
