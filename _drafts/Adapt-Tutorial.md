@@ -1,6 +1,10 @@
 ---
+ID: 33102
 post_title: Adapt Tutorial
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=33102
 published: false
 ---
 # Adapt Tutorial
@@ -20,6 +24,7 @@ A sample intent that uses a fixed vocabulary to extract entities for an intent
 
 try with the following:
 PYTHONPATH=. python examples/single_intent_parser.py "what's the weather like in tokyo"
+<<<<<<< HEAD
 ```
 
 ## Step 2 - Import Libraries
@@ -132,3 +137,6 @@ print(json.dumps(intent, indent=4))
 ```
 
 Of course, you don't just have to output the **Intent** to `stdout` - you can use it to build all sorts of tools. 
+=======
+```
+>>>>>>> 2a13cf7af59726242d4a0b02e9c0e223b8e804ac
