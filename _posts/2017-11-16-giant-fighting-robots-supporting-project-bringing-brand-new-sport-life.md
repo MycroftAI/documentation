@@ -13,7 +13,6 @@ published: true
 post_date: 2017-11-16 10:56:25
 ---
 [vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]<span style="font-weight: 400;">Here’s the coolest thing we’ve read in awhile.</span>
-<h3></h3>
 <h3><span style="font-weight: 400;">Megabots, a company responsible for initiating, and then winning the first ever </span><a href="https://www.youtube.com/watch?v=Z-ouLX8Q9UM"><span style="font-weight: 400;">giant robots duel</span></a><span style="font-weight: 400;"> is back at it again. </span></h3>
 <h3><span style="font-weight: 400;">They’re working to bring a brand new sport to life; giant robot fighting. </span></h3>
 <h4></h4>
@@ -27,7 +26,9 @@ post_date: 2017-11-16 10:56:25
 <div class="layoutArea">
 <div class="column">
 
-The MegaBots team standing in front of their Iron Glory (left) and Eagle Prime (right) robots at Fortress One in Hayward, CA.</div>
+The MegaBots team standing in front of their Iron Glory (left) and Eagle Prime (right) robots at Fortress One in Hayward, CA.
+
+</div>
 </div>
 </div>
 [/vc_column_text][divider line_type="No Line"][divider line_type="No Line"][vc_column_text]
@@ -43,7 +44,9 @@ If the campaign is successful, MegaBots will release the design of one of its ro
 
 Looking out of Eagle Prime’s Cockpit over the Driver’s shoulder.
 
-Photo Credit: Greg Munson</div>
+Photo Credit: Greg Munson
+
+</div>
 </div>
 </div>
 [/vc_column_text][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][divider line_type="No Line"][divider line_type="No Line"][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/4" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
