@@ -137,6 +137,3 @@ print(json.dumps(intent, indent=4))
 ```
 
 Of course, you don't just have to output the **Intent** to `stdout` - you can use it to build all sorts of tools. 
-=======
-```
->>>>>>> 2a13cf7af59726242d4a0b02e9c0e223b8e804ac
