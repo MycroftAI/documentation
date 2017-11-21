@@ -85,6 +85,10 @@ TBA
 
 Already develop for another voice assistant? Learn how to transfer those skills to Mycroft.
 
+### [Conversational Context](Skill-Conversational-Context.md)
+
+Want to add more natural interaction to Mycroft? Conversational context allows a **Skill** to add context to the **Intent Parser** to create a more natural interaction style. 
+
 ## [Language support in Mycroft](Language-support-in-Mycroft.md)
 
 This section will pick up the languages doco that Jarbas has written
