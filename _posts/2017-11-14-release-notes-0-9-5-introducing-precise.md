@@ -41,7 +41,7 @@ You can also switch to Precise via voice by saying "Hey Mycroft, set the listene
  	<li>Padations 0.3.7, fixing several minor bugs (<a class="issue-link js-issue-link" href="https://github.com/MycroftAI/mycroft-core/pull/1198" data-error-text="Failed to load issue title" data-id="270794854" data-permission-text="Issue title is private" data-url="https://github.com/MycroftAI/mycroft-core/issues/1198">#1198</a>)</li>
  	<li>The remote configuration file was prematurely loaded at import time. Now it is loaded when the Session is created. (<a class="issue-link js-issue-link tooltipped tooltipped-ne" href="https://github.com/MycroftAI/mycroft-core/pull/1204" data-error-text="Failed to load issue title" data-id="271826099" data-permission-text="Issue title is private" aria-label="#1204, Move session config from global scope">#1204</a>)</li>
 </ul>
-And onto v0.9.6
+<h2>And onto v0.9.6</h2>
 <ul>
  	<li>We pushed a 0.9.6 version right after 0.9.5 that fixed a minor packaging bug. So technically we are now on 0.9.6.</li>
 </ul>
