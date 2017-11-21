@@ -9,7 +9,18 @@ published: false
 ---
 # Enclosure display control
 
-@TODO does this page need to move under Section 09.mycroft-skills? It seems more relevant to Skills development.
+- [Enclosure display control](#enclosure-display-control)
+  * [About **Enclosures**](#about-enclosures)
+  * [The Mark 1 Enclosure capabilities](#the-mark-1-enclosure-capabilities)
+    + [Drawing to the *mouth* display](#drawing-to-the-mouth-display)
+      - [Drawing text to the *mouth* display](#drawing-text-to-the-mouth-display)
+      - [Drawing images to the *mouth* display](#drawing-images-to-the-mouth-display)
+        * [Clearing an existing image from the *mouth* display](#clearing-an-existing-image-from-the-mouth-display)
+      - [How images are drawn on the *mouth* display](#how-images-are-drawn-on-the-mouth-display)
+        * [Addressing each pixel using a string encoding](#addressing-each-pixel-using-a-string-encoding)
+        * [Sending a PNG image to the *mouth* display](#sending-a-png-image-to-the-mouth-display)
+        * [Tools for converting PNG image representations to string representations](#tools-for-converting-png-image-representations-to-string-representations)
+      - [Resetting the display to the default state](#resetting-the-display-to-the-default-state)
 
 This information is of most benefit to **Skills** developers who want to control the Mark 1 **Enclosure**.
 

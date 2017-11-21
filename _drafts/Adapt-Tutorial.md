@@ -24,7 +24,6 @@ A sample intent that uses a fixed vocabulary to extract entities for an intent
 
 try with the following:
 PYTHONPATH=. python examples/single_intent_parser.py "what's the weather like in tokyo"
-<<<<<<< HEAD
 ```
 
 ## Step 2 - Import Libraries
@@ -136,4 +135,4 @@ Next, serialize the **Intent** and print it to `stdout`.
 print(json.dumps(intent, indent=4))
 ```
 
-Of course, you don't just have to output the **Intent** to `stdout` - you can use it to build all sorts of tools. 
+Of course, you don't just have to output the **Intent** to `stdout` - you can use it to build all sorts of tools.
