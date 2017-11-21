@@ -93,6 +93,14 @@ Want to add more natural interaction to Mycroft? Conversational context allows a
 
 The Audio Service handles playback of audio files within a **Skill**. If your **Skill** deals with audio files, you'll want to know about the Audio Service.
 
+### [Display Control](Skill-Display-Control.md)
+
+Display Control manages features of the **Enclosure**, such as the _mouth_ and _eyes_ on the Mark 1.
+
+### [Fallback Skills](Skill-Fallback-Skill.md)
+
+Fallback **Skills** handle an **Intent** if one can't be matched with an **Utterance** and are a useful catch-all. This documentation shows how to write a new Fallback **Skill** and set its order of precedence. 
+
 ## [Language support in Mycroft](Language-support-in-Mycroft.md)
 
 This section will pick up the languages doco that Jarbas has written
