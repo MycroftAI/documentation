@@ -65,4 +65,14 @@ NIL
 
 ### Adapt
 
-- [ ] are there minimum requirements for installing Adapt - both software and hardware? 
+- [ ] are there minimum requirements for installing Adapt - both software and hardware?
+
+### Audio service
+
+- [ ] what URI schemas are supported by the Playback **Skill**?
+- [ ] have the audio service backends been tested on Mark 1 yet?
+- [ ]
+
+### Configuration
+
+There is a need for documentation on `mycroft.conf`, but I'm not sure where to start with this, possibly a conversation with Steve to bring me across how it works - precedence, why the file lives in different locations etc. 

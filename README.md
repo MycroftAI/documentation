@@ -35,7 +35,6 @@ The following conventions are used for styling technical terms and related phras
 * **Metadata** is always styled as one word
 * **Micro SD card** is always styled as such, not as micro sd card, micro SD card or alternatives
 * **Picroft** is always styled as such
-*
 
 ### Tone of voice
 
