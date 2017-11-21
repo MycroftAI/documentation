@@ -1,6 +1,10 @@
 ---
+ID: 33179
 post_title: Conversational Context
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=33179
 published: false
 ---
 # Conversational Context

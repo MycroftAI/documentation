@@ -1,6 +1,10 @@
 ---
+ID: 33177
 post_title: Audio Service
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=33177
 published: false
 ---
 # Audio Service

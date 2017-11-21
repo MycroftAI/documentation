@@ -1,9 +1,12 @@
 ---
+ID: 33182
 post_title: Fallback Skill
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=33182
 published: false
 ---
-
 # Fallback Skill
 
 - [Fallback Skill](#fallback-skill)
@@ -60,10 +63,10 @@ Implement the fallback handler (the method that will be called to potentially ha
             and everything.
         """
         utterance = message.data.get("utterance")
-        if 'what' in utterance \
-            and 'meaning' in utterance \
-            and ('life' in utterance \
-                or 'universe' in utterance \
+        if 'what' in utterance 
+            and 'meaning' in utterance 
+            and ('life' in utterance 
+                or 'universe' in utterance 
                 or 'everything' in utterance):
             self.speak('42')
             return True
