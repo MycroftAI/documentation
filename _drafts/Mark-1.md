@@ -9,6 +9,29 @@ published: false
 ---
 # Mark 1
 
+- [Mark 1](#mark-1)
+    + [Prerequisites](#prerequisites)
+    + [Getting Started](#getting-started)
+      - [Getting Mark 1 connected to the internet using a network cable](#getting-mark-1-connected-to-the-internet-using-a-network-cable)
+      - [Getting Mark 1 connected to the internet using Wifi](#getting-mark-1-connected-to-the-internet-using-wifi)
+    + [Pairing the Mark 1](#pairing-the-mark-1)
+    + [Mark 1 menu options](#mark-1-menu-options)
+    + [Hardware information](#hardware-information)
+    + [Common tasks performed on the Mark 1](#common-tasks-performed-on-the-mark-1)
+      - [Installing Skills on the Mark 1](#installing-skills-on-the-mark-1)
+      - [Connecting to the Mark 1 via SSH](#connecting-to-the-mark-1-via-ssh)
+      - [Changing the password for the default user via SSH](#changing-the-password-for-the-default-user-via-ssh)
+      - [Setting up SSH to the Mark 1 using SSH keys](#setting-up-ssh-to-the-mark-1-using-ssh-keys)
+      - [Accessing the command line interface (CLI) of the Mark 1](#accessing-the-command-line-interface-cli-of-the-mark-1)
+      - [Enabling the LEARN function](#enabling-the-learn-function)
+      - [How to reimage a Mark 1 Device](#how-to-reimage-a-mark-1-device)
+        * [Prerequisites](#prerequisites-1)
+        * [Reimaging steps](#reimaging-steps)
+        * [What should I do if reimaging doesn't work?](#what-should-i-do-if-reimaging-doesnt-work)
+      - [Keeping your Mark 1 Device updated](#keeping-your-mark-1-device-updated)
+    + [Common issues on Mark 1 Devices](#common-issues-on-mark-1-devices)
+    + [Hardware Hacking your Mark 1 Device](#hardware-hacking-your-mark-1-device)
+
 The Mark 1 device is an **Enclosure** for Mycroft, based on Raspberry Pi. It is designed as a reference hardware device, and is able to be easily modified, hacked and extended.
 
 [Mark 1 devices are available in the Mycroft Shop](https://mycroft.ai/shop/?add-to-cart=31440).
@@ -152,7 +175,37 @@ To enable the Learn functionality:
 
 #### How to reimage a Mark 1 Device
 
-@TODO Not sure how to do this
+##### Prerequisites
+
+To reimage a Mark 1 **Device**, you will need:
+
+* A MicroSD card reader - whether this is built in to your computer or works via USB adapter.
+* You will need [Etcher](https://etcher.io/), a disk image writer, or equivalent software that writes disk images to a MicroSD card
+* A torque screwdriver to unscrew the torque screws on the Mark 1 **Device**
+
+##### Reimaging steps
+
+* Download the software image. Save it to your computer. [The Mark 1 disk image is available here](https://mycroft.ai/to/mark-1-image)
+* Disconnect your Mark 1 from the power supply.
+* Using your torque screwdriver, take apart your Mark 1. If you need help, [this video from Geeked Out Solutions may be of assistance](https://www.youtube.com/watch?v=r76ObbB2EsA).
+* Remove the Micro SD card from the Raspberry Pi board on the back of the Mark 1 unit. It should come out easily, and should not need to be forced.
+* Insert the Micro SD card into the SD card slot on your computer. If your computer doesn't have a Micro SD card slot, you will need an external Micro SD card reader, or a SDHC card reader with a converter.
+* Open Etcher, and follow the steps to burn the Mark 1 disk image that you downloaded in the first step onto the Micro SD card.
+* Remove the Micro SD card from your computer / adapter and insert it into the Micro SD slot on the Raspberry Pi. Then, put the Mark 1 unit back together using the torque screws and screwdriver.
+* Connect the Mark 1 unit back to the power supply.
+* The Mark 1 unit should reboot and now be functioning correctly.
+
+For more information, [see the original forum post by Barney Woodrow](https://community.mycroft.ai/t/how-to-re-image-mark1s-sd-card/2106).
+
+##### What should I do if reimaging doesn't work?
+
+Micro SD cards have a finite lifespan. It is possible that the Micro SD card inside the Raspberry Pi inside the Mark 1 unit has suffered hardware failure. If this occurs, you will see symptoms such as:
+
+* Mark 1 not booting successfully
+* Strange appearance of _eyes_ and _mouth_
+* Mark 1 will be unresponsive to voice commands
+
+If you believe your Micro SD card might have failed, [please make contact with us so we can look into the issue further with you](https://mycroft.ai/contact/), and if warranted, provide a replacement.   
 
 #### Keeping your Mark 1 Device updated
 

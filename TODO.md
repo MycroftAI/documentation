@@ -11,7 +11,6 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 - [ ] Release note - need to find a way to aggregate them from GitHub. This will need the GitHub API.
 - [ ] Overview - put in a link to the Precise documentation when it is done.
 
-
 ### Your home.mycroft.ai account
 
 - [ ] Advanced settings - need to get someone to review what I've written about things like the Threshold and Dynamic Energy Ratio.
@@ -22,7 +21,6 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 
 - [ ] Mark 1 - how to connect using an ethernet cable
 - [ ] Mark 1 - what are the limitations around what type of WiFi networks Mark 1 can connect to - for instance, can Mycroft connect to WEP networks, enterprise WPA2-PSK with Radius authentication etc.
-- [ ] Mark 1 - how to reimage the Device
 - [ ] Mark 1 - how to keep the Device updated - I've put something in there, but I'm not sure how accurate it is - needs Dev Team to give it the once over.
 - [ ] Mark 1 - should the information on how to control the display for the Mark 1 Enclosure go under the Skills section instead?
 - [ ] Mark 1 - how many characters can the Mark 1 display show before text has to scroll?
@@ -75,4 +73,4 @@ NIL
 
 ### Configuration
 
-There is a need for documentation on `mycroft.conf`, but I'm not sure where to start with this, possibly a conversation with Steve to bring me across how it works - precedence, why the file lives in different locations etc. 
+There is a need for documentation on `mycroft.conf`, but I'm not sure where to start with this, possibly a conversation with Steve to bring me across how it works - precedence, why the file lives in different locations etc.
