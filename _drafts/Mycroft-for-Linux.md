@@ -9,6 +9,23 @@ published: false
 ---
 # Mycroft for Linux
 
+- [Mycroft for Linux](#mycroft-for-linux)
+    + [Prerequisites](#prerequisites)
+    + [Getting Started](#getting-started)
+      - [Installing via git clone](#installing-via-git-clone)
+      - [Other installation options](#other-installation-options)
+    + [Running Mycroft for Linux](#running-mycroft-for-linux)
+      - [start-mycroft.sh](#start-mycroftsh)
+        * [To start all Mycroft services at once](#to-start-all-mycroft-services-at-once)
+        * [To start individual Mycroft services](#to-start-individual-mycroft-services)
+      - [Stopping Mycroft services](#stopping-mycroft-services)
+    + [Pairing Mycroft for Linux](#pairing-mycroft-for-linux)
+    + [Using Mycroft behind a proxy](#using-mycroft-behind-a-proxy)
+    + [Using Mycroft behind a proxy without authentication](#using-mycroft-behind-a-proxy-without-authentication)
+    + [Using Mycroft behind an authenticated proxy](#using-mycroft-behind-an-authenticated-proxy)
+      - [Keeping Mycroft for Linux updated](#keeping-mycroft-for-linux-updated)
+    + [Common issues with Mycroft for Linux](#common-issues-with-mycroft-for-linux)
+
 Mycroft is available for Linux, and can be installed via several methods.
 
 Currently, there are builds and/or instructions for installing Mycroft on:
@@ -149,6 +166,34 @@ Use the **Registration Code** to pair your Mycroft for Linux **Device** with hom
 [View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](/03.your-home.mycroft.ai-account/01.your-home.mycroft-account.md).
 
 Once paired, you can then use [basic **skills**](../03.your-home.mycroft.ai-account/02.basic-commands.md).
+
+### Using Mycroft behind a proxy
+
+Many schools, universities and workplaces run a `proxy` on their network. If you need to type in a username and password to access the external internet, then you are likely behind a `proxy`.
+
+If you plan to use Mycroft behind a proxy, then you will need to do an additional configuration step.
+
+_NOTE: In order to complete this step, you will need to know the `hostname` and `port` for the proxy server. Your network administrator will be able to provide these details. Your network administrator may want information on what type of traffic Mycroft will be using. We use `https` traffic on port `443`, primarily for accessing ReST-based APIs._
+
+### Using Mycroft behind a proxy without authentication
+
+If you are using Mycroft behind a proxy without authentication, add the following environment variables, changing the `proxy_hostname.com` and `proxy_port` for the values for your network. These commands are executed from the Linux command line interface (CLI).
+
+```bash
+$ export http_proxy=http://proxy_hostname.com:proxy_port
+$ export https_port=http://proxy_hostname.com:proxy_port
+$ export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,0.0.0.0,::1"
+```
+
+### Using Mycroft behind an authenticated proxy
+
+If  you are behind a proxy which requires authentication, add the following environment variables, changing the `proxy_hostname.com` and `proxy_port` for the values for your network. These commands are executed from the Linux command line interface (CLI).
+
+```bash
+$ export http_proxy=http://user:password@proxy_hostname.com:proxy_port
+$ export https_port=http://user:password@proxy_hostname.com:proxy_port
+$  export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,0.0.0.0,::1"
+```
 
 #### Keeping Mycroft for Linux updated
 
