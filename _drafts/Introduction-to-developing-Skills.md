@@ -7,11 +7,22 @@ layout: page
 permalink: http://mycroft.ai/?page_id=32444
 published: false
 ---
-## Developing a new **Skill**
+# Developing a new **Skill**
+
+- [Developing a new **Skill**](#developing-a-new-skill)
+  * [Prerequisites](#prerequisites)
+  * [Skill terminology](#skill-terminology)
+  * [Make a new repo using the Template Skill](#make-a-new-repo-using-the-template-skill)
+    + [Structure of the **Skill** repo](#structure-of-the-skill-repo)
+      - [`dialog` directory](#dialog-directory)
+      - [vocab directory and defining Intents](#vocab-directory-and-defining-intents)
+      - [`__init__.py`](#__init__py)
+  * [Simplifying your Skill code with intent handler decorators (preferred)](#simplifying-your-skill-code-with-intent-handler-decorators-preferred)
+  * [How do I find more information on Mycroft functions?](#how-do-i-find-more-information-on-mycroft-functions)
 
 This page will walk you through developing a new Mycroft **Skill**. It assumes you have read through the [basic skills information](skills.md)
 
-### Prerequisites
+## Prerequisites
 
 It's a good idea to get prepared before writing your new **Skill**, as this will make your skill-writing experience go much smoother.
 
@@ -30,7 +41,7 @@ It's a good idea to get prepared before writing your new **Skill**, as this will
 
 Once you've given these some thought, you can get started.
 
-### Skill terminology
+## Skill terminology
 
 You'll notice some new terms as you start to develop **Skills**.
 
@@ -38,7 +49,7 @@ You'll notice some new terms as you start to develop **Skills**.
 * **intent** - Mycroft matches **utterances** that a User speaks with a **Skill** by determining an **intent** from the **utterance**. For example, if a User speaks `Hey Mycroft, what's the weather like in Toronto?` then the **intent** will be identified as _weather_ and matched with the _Weather Skill_. When you develop new **Skills**, you need to define new **intents**.
 * **utterance** - An **utterance** is a phrase spoken by the User, after the User says the **Wake Word**. `what's the weather like in Toronto?` is an **utterance**.
 
-### Make a new repo using the Template Skill
+## Make a new repo using the Template Skill
 
 In GitHub, `fork` the [Mycroft Skills repo](https://github.com/MycroftAI/mycroft-skills/) into your own GitHub account.
 
@@ -71,7 +82,7 @@ Copy the Template Skill into a new directory. Here, we've called the new Skill `
 $ cp -R 00__skill_template skill-hello-worldls -las
 ```
 
-#### Structure of the **Skill** repo
+### Structure of the **Skill** repo
 
 The structure of the **Template Skill** directory looks like this:
 
@@ -90,7 +101,7 @@ total 128
  8 drwxrwxr-x   3 kathyreid kathyreid  4096 Oct 27 00:22 vocab
  ```
 
-##### `dialog` directory
+#### `dialog` directory
 
 The `dialog` directory contains subdirectories for each spoken language the skill supports.  Each subdirectory has `.dialog` files which specify what Mycroft should say when a **Skill** is executed.
 
@@ -133,7 +144,7 @@ For example, how do you say 'goodbye' to someone?
 * Goodbye
 * See ya!
 
-##### vocab directory and defining Intents
+#### vocab directory and defining Intents
 
 Each **Skill** defines one or more **Intents**. Intents are defined in the `vocab` directory.The `vocab` directory is organized by language, just like the `dialog` directory.  
 
@@ -207,6 +218,18 @@ def __init__(self):
 
 This method is the _constructor_, and the key function it has is to define the name of the **Skill**.
 
+_NOTE: You don't have to include the constructor unless you plan to declare state variables for the Skill object. If you plan to declare state variables, then they should be defined in this block. If you don't include the constructor, the name of the **Skill** will be taken from the name of the `class`, in this case 'HelloWorldSkill'._
+
+Example:
+
+```python
+def __init__(self):
+        super(HelloWorldSkill, self).__init__(name="HelloWorldSkill")
+        self.already_said_hello = False
+        self.be_friendly = True
+        self.hello_phrases = ['Hello', 'Hallå', 'Olá']
+```
+
 ```python    
 def initialize(self):
         thank_you_intent = IntentBuilder("ThankYouIntent"). \
@@ -246,6 +269,49 @@ def stop(self):
 ```
 
 In the above code block, the [`pass` statement](https://docs.python.org/2/reference/simple_stmts.html#the-pass-statement) is used as a placeholder; it doesn't actually have any function. However, if the **Skill** had any active functionality, the `stop()` method would terminate the functionality, leaving the *Skill** in a known good state.
+
+## Simplifying your Skill code with `intent_handler` _decorators_ (preferred)
+
+Your **Skill** code can be simpliied using the `intent_handler()` _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
+
+[Learn more about what _decorators_ are in Python at this link](https://en.wikipedia.org/wiki/Python_syntax_and_semantics#Decorators).
+
+The `intent_handler()` _decorator_ tags a method to be an intent handler for the intent, removing the need for separate registration.
+
+```python
+    @intent_handler(IntentBuilder('IntentName').require('Keyword'))
+    def handler_method(self):
+        # [...]
+```
+
+Using these _decorators_ the **Skill** becomes:
+
+```python
+class HelloWorldSkill(MycroftSkill):
+    def __init__(self):
+        super(HelloWorldSkill, self).__init__(name="HelloWorldSkill")
+
+    @intent_handler(IntentBuilder("ThankYouIntent").require("ThankYouKeyword"))
+    def handle_thank_you_intent(self, message):
+        self.speak_dialog("welcome")
+
+    @intent_handler(IntentBuilder("HowAreYouIntent") \
+                    .require("HowAreYouKeyword"))
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("how.are.you")
+
+    @intent_handler(IntentBuilder("HelloWorldIntent") \
+                    .require("HelloWorldKeyword"))
+    def handle_hello_world_intent(self, message):
+        self.speak_dialog("hello.world")
+
+    def stop(self):
+        pass
+```
+
+As seen above the entire `initialize()` method is removed and the **Intent** registration is moved to the the method declaration.
+
+Ideally, you should use approach to **Intent** registration.
 
 ## How do I find more information on Mycroft functions?
 
