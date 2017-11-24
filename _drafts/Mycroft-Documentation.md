@@ -13,55 +13,91 @@ Welcome to the documentation for all elements of the Mycroft - the open source v
 
 Our documentation, just like our source code, is open source, [and you can contribute to improving it here](https://github.com/MycroftAI/docs-rewrite). Alternatively, please rate our documentation and leave comments on how we can improve.
 
-## [About Mycroft](/01.about-mycroft/01.about-mycroft.md)
+- [Documentation Home](#documentation-home)
+  * [About Mycroft](#about-mycroft)
+    + [Contributing](#contributing)
+    + [Release notes](#release-notes)
+    + [Roadmap](#roadmap)
+    + [Glossary](#glossary)
+  * [Getting Mycroft](#getting-mycroft)
+  * [Your home.mycroft.ai account](#your-homemycroftai-account)
+    + [Basic commands](#basic-commands)
+  * [Mark 1](#mark-1)
+  * [Picroft](#picroft)
+  * [Mycroft for Linux platforms](#mycroft-for-linux-platforms)
+  * [Mycroft for Android](#mycroft-for-android)
+  * [Mycroft Skills](#mycroft-skills)
+    + [Introduction to developing Skills for Mycroft](#introduction-to-developing-skills-for-mycroft)
+    + [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
+    + [Skill Settings](#skill-settings)
+    + [Common issues in Skills development](#common-issues-in-skills-development)
+    + [Repurposing Skills developed for other platforms](#repurposing-skills-developed-for-other-platforms)
+    + [Conversational Context](#conversational-context)
+    + [Audio Service](#audio-service)
+    + [Display Control](#display-control)
+    + [Fallback Skills](#fallback-skills)
+  * [Language support in Mycroft](#language-support-in-mycroft)
+    + [Configuring Mycroft for French language support](#configuring-mycroft-for-french-language-support)
+  * [Adapt](#adapt)
+    + [Adapt examples](#adapt-examples)
+    + [Adapt tutorial](#adapt-tutorial)
+  * [Mimic](#mimic)
+  * [Precise](#precise)
+  * [Padatious](#padatious)
+  * [FAQ](#faq)
+  * [Troubleshooting and known errors](#troubleshooting-and-known-errors)
+    + [Known errors and workarounds](#known-errors-and-workarounds)
+  * [Getting help and support](#getting-help-and-support)
+
+## [About Mycroft](About-Mycroft.md)
 
 This is a useful starting point, and provides an overview of all the elements of the Mycroft ecosystem.
 
-### [Contributing](/01.about-mycroft/02.contributing.md)
+### [Contributing](Contributing-to-Mycroft.md)
 
 Aimed at developers, our Contributing section provides detailed instructions on how to contribute to Mycroft.
 
-### [Release notes](/01.about-mycroft/03.release-notes.md)
+### [Release notes](Release-Notes.md)
 
 Release notes for all major **Devices**, such as Mark 1 and Picroft.
 
-### [Roadmap](/01.about-mycroft/04.roadmap.md)
+### [Roadmap](Mycroft-Roadmap.md)
 
 Aimed at developers and investors, our Roadmap illustrates our key development effort and goals.
 
-### [Glossary](/01.about-mycroft/05.glossary.md)
+### [Glossary](Mycroft-Glossary.md)
 
 A handy reference of all new terms you might come across while working with Mycroft.
 
-## [Getting Mycroft](/02.getting-mycroft/02.getting-mycroft.md)
+## [Getting Mycroft](Getting-Mycroft.md)
 
 How to download and install Mycroft for your preferred **Device** or platform.
 
-## [Your home.mycroft.ai account](/03.your-home.mycoft.ai-account/01.your-home.mycroft-account.md)
+## [Your home.mycroft.ai account](Your-home.mycroft.ai-account.md)
 
 How to pair your **Device** with home.mycroft.ai, and set basic configuration fields such as location.
 
-### [Basic commands](/03.your-home.mycoft.ai-account/02.basic-commands.md)
+### [Basic commands](Basic-commands-to-get-started.md)
 
 Getting started using Mycroft Skills.
 
-## [Mark 1](/05.mark-1/01.mark-1-overview.md)
+## [Mark 1](Mark-1.md)
 
 In depth information about the Mark 1 reference hardware **Device**.
 
-## [Picroft](/06.picroft/01.picroft-overview.md)
+## [Picroft](Picroft.md)
 
 In depth information about the Picroft build of Mycroft for Raspberry Pi.
 
-## [Mycroft for Linux platforms](/07.mycroft-for-linux/01.linux-overview.md)
+## [Mycroft for Linux platforms](Mycroft-for-Linux.md)
 
 In depth information on how to build Mycroft for common Linux distributions.
 
-## [Mycroft for Android](/08.mycroft-for-android/01.android-overview.md)
+## [Mycroft for Android](Mycroft-for-Android.md)
 
 In depth information on the Mycroft companion app for Android.
 
-## [Mycroft Skills](/09.mycroft-skills/01.skills-overview.md)
+## [Mycroft Skills](Skills.md)
 
 An overview of the Skills that can be installed on your Mycroft **Device**.
 
@@ -69,7 +105,7 @@ An overview of the Skills that can be installed on your Mycroft **Device**.
 
 Aimed at developers, this section is an introduction to developing new Skills for Mycroft
 
-### [Preparing your Skill for submission to the Mycroft Skills Repo](Preparing-your-Skill-for-submission-to-theMycroft-Skills-Repo.md)
+### [Preparing your Skill for submission to the Mycroft Skills Repo](Preparing-your-Skill-for-submission-to-the-Mycroft-Skills-Repo.md)
 
 Aimed at developers, this is a step by step guide to submitting a new Skill you've developed to the Mycroft Skills Repo.
 
@@ -77,11 +113,11 @@ Aimed at developers, this is a step by step guide to submitting a new Skill you'
 
 Aimed at Developers, this is a step by step guide to storing and retrieving persistent settings that your Skill needs.
 
-### [Common issues in Skills development](/09.mycroft-skills/03.common-issues-skills-development.md)
+### [Common issues in Skills development](Common-issues-in-Skills-development.md)
 
-TBA
+Explanations of common issues developers encounter in building new **Skills**, and helpful advice for overcoming them.
 
-### [Repurposing Skills developed for other platforms](/09.mycroft-skills/04.repurposing-skills-from-other-platforms.md)
+### [Repurposing Skills developed for other platforms](Repurposing-Skills-developed-for-other-platforms.md)
 
 Already develop for another voice assistant? Learn how to transfer those skills to Mycroft.
 
@@ -99,27 +135,35 @@ Display Control manages features of the **Enclosure**, such as the _mouth_ and _
 
 ### [Fallback Skills](Skill-Fallback-Skill.md)
 
-Fallback **Skills** handle an **Intent** if one can't be matched with an **Utterance** and are a useful catch-all. This documentation shows how to write a new Fallback **Skill** and set its order of precedence. 
+Fallback **Skills** handle an **Intent** if one can't be matched with an **Utterance** and are a useful catch-all. This documentation shows how to write a new Fallback **Skill** and set its order of precedence.
 
 ## [Language support in Mycroft](Language-support-in-Mycroft.md)
 
-This section will pick up the languages doco that Jarbas has written
+Learn more about languages support in Mycroft.
 
-## Adapt
+### [Configuring Mycroft for French language support](Language-support-francais.md)
 
-TBA
+Parlez-vous français? Follow these steps to change Mycroft's language to French (BCP 47: `fr`)
 
-## Mimic
+## [Adapt](Adapt.md)
 
-TBA
+Learn more about the Adapt Intent Parser, which matches spoken words with **Intents**.
+
+### [Adapt examples](Adapt-Examples.md)
+
+Examples of the different types of **Intent Parsing** supported by Adapt.
+
+### [Adapt tutorial](Adapt-Tutorial.md)
+
+A tutorial on writing **Intent Parsers** using Adapt.
+
+## [Mimic](Mimic.md)
+
+Learn about the Mimic Text to Speech (TTS) tool.
 
 ## [Precise](Precise.md)
 
 Precise is a **Wake Word Listener** that listens and then 'wakes up' Mycroft, ready to hear your commands and questions.
-
-## Persona
-
-TBA
 
 ## [Padatious](Padatious.md)
 
