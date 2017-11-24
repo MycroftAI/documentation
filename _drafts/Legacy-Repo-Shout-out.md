@@ -1,9 +1,12 @@
 ---
+ID: 33224
 post_title: Legacy Repo Shout-out
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=33224
 published: false
 ---
-
 # Legacy repo shout-out
 
 Prior to open-sourcing Mycroft in the mycroft-core.git repo, a number of folks were working on the mycroft.git repo. The commit history was messy, there were some API keys checked in, and we felt it was time for a fresh start. The biggest drawback is the loss of commit/contributor history. This page will at least resolve the latter. Thank you to everyone who helped us get this far!
