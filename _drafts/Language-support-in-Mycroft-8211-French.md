@@ -1,9 +1,12 @@
 ---
-post_title: Language support in Mycroft - French
+ID: 33222
+post_title: 'Language support in Mycroft &#8211; French'
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=33222
 published: false
 ---
-
 # Language support in Mycroft - French - français
 
 - [Language support in Mycroft - French - français](#language-support-in-mycroft---french---francais)
