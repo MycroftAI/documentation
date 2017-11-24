@@ -1,6 +1,6 @@
 ---
 ID: 33222
-post_title: 'Language support in Mycroft &#8211; French'
+post_title: 'Language support in Mycroft - French'
 author: Kathy Reid
 post_excerpt: ""
 layout: page

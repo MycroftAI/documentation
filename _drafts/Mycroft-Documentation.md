@@ -38,6 +38,7 @@ Our documentation, just like our source code, is open source, [and you can contr
     + [Fallback Skills](#fallback-skills)
   * [Language support in Mycroft](#language-support-in-mycroft)
     + [Configuring Mycroft for French language support](#configuring-mycroft-for-french-language-support)
+    + [Configuring Mycroft for Italian language support](#configuring-mycroft-for-italian-language-support)
   * [Adapt](#adapt)
     + [Adapt examples](#adapt-examples)
     + [Adapt tutorial](#adapt-tutorial)
@@ -144,6 +145,10 @@ Learn more about languages support in Mycroft.
 ### [Configuring Mycroft for French language support](Language-support-francais.md)
 
 Parlez-vous français? Follow these steps to change Mycroft's language to French (BCP 47: `fr`)
+
+### [Configuring Mycroft for Italian language support](Language-support-italiano.md)
+
+Parli italiano? Follow these steps to change Mycroft's language to Italian (BCP 47: `it`)
 
 ## [Adapt](Adapt.md)
 
