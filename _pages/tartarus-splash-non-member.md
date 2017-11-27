@@ -31,3 +31,9 @@ post_date: 2017-11-14 13:27:13
 <p style="text-align: center;"><span style="font-weight: 400;">Thanks for dropping by and supporting open source!</span></p>
 <p style="text-align: center;">The Mycroft AI Team</p>
 <a href="https://mycroft.ai/wp-content/uploads/2017/11/mycroft-team.png"><img class="size-full wp-image-32954 aligncenter" src="https://mycroft.ai/wp-content/uploads/2017/11/mycroft-team.png" alt="" width="1850" height="1500" /></a>[/vc_column_text][/vc_column][/vc_row]
+
+<style>
+#wpadminbar {<br />
+  display: none;<br />
+}<br />
+</style>
