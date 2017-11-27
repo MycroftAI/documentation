@@ -209,7 +209,7 @@ If your Mark 1 has previously been connected to the internet, and loses internet
 
 ## Troubleshooting Linux
 
-#### Logs state that Python packages are not installed
+### Logs state that Python packages are not installed
 
 If your logs have entries like
 @TODO example of Python package not being installed
@@ -218,3 +218,42 @@ then you may need to reinstall your `virtualenv`. To do this,
 
 * `sudo rm -R ~/.virtualenv/mycroft`
 * From the directory where you have cloned `mycroft-core`, run `./dev-setup.sh`. This shell script will re-install any `virtualenv` dependencies that you may be missing.
+
+## Troubleshooting Skills development
+
+### Skill fails on first run with `ERROR - Failed to load skill`
+
+If you're developing a **Skill**, and run it for the first time, you may encounter an error similar to the below:
+
+```bash
+12:30:32.158 - mycroft.skills.core:load_skill:142 - INFO - First run of mycroft-skill-cat-facts
+12:30:32.164 - mycroft.skills.core:load_skill:156 - ERROR - Failed to load skill: mycroft-skill-cat-facts
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/mycroft_core-0.9.7-py2.7.egg/mycroft/skills/core.py", line 144, in load_skill
+    skill.settings.store()
+  File "/usr/local/lib/python2.7/site-packages/mycroft_core-0.9.7-py2.7.egg/mycroft/skills/settings.py", line 323, in store
+    with open(self._settings_path, 'w') as f:
+IOError: [Errno 13] Permission denied: '/opt/mycroft/skills/mycroft-skill-cat-facts/settings.json'
+```
+
+The error here is that the file system permission on the **Skill**'s directory are incorrect. The directory should have owner and group permissions of `mycroft:mycroft` as per the below.
+
+```bash
+4 drwxr-xr-x  4 mycroft mycroft  4096 Nov 24 14:34 .
+4 drwxrwxrwx 38 mycroft mycroft  4096 Nov 27 12:50 ..
+4 drwxr-xr-x  3 mycroft mycroft  4096 Nov 23 16:57 dialog
+4 drwxr-xr-x  8 mycroft mycroft  4096 Nov 27 12:36 .git
+4 -rw-r--r--  1 mycroft mycroft    20 Nov 23 16:57 .gitignore
+8 -rw-r--r--  1 mycroft mycroft  6265 Nov 23 16:57 init.py
+8 -rw-r--r--  1 mycroft mycroft  7509 Nov 24 14:34 init.pyc
+12 -rw-r--r--  1 mycroft mycroft 11357 Nov 23 16:57 LICENSE
+4 -rw-r--r--  1 mycroft mycroft   695 Nov 24 14:33 README.md
+4 -rw-r--r--  1 mycroft mycroft    35 Nov 25 19:28 settings.json
+```
+
+If your permissions are different to those shown above, change them by running the following commands:
+
+```bash
+cd /opt/mycroft/skills/
+sudo chown mycroft:mycroft -R your-skill-name
+```
