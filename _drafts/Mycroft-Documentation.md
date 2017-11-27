@@ -39,6 +39,7 @@ Our documentation, just like our source code, is open source, [and you can contr
   * [Language support in Mycroft](#language-support-in-mycroft)
     + [Configuring Mycroft for French language support](#configuring-mycroft-for-french-language-support)
     + [Configuring Mycroft for Italian language support](#configuring-mycroft-for-italian-language-support)
+    + [Configuring Mycroft for German language support](#configuring-mycroft-for-german-language-support)
   * [Adapt](#adapt)
     + [Adapt examples](#adapt-examples)
     + [Adapt tutorial](#adapt-tutorial)
@@ -142,13 +143,17 @@ Fallback **Skills** handle an **Intent** if one can't be matched with an **Utter
 
 Learn more about languages support in Mycroft.
 
-### [Configuring Mycroft for French language support](Language-support-francais.md)
+### [Configuring Mycroft for French language support](Language-support-in-Mycroft-8211-French.md)
 
 Parlez-vous français? Follow these steps to change Mycroft's language to French (BCP 47: `fr`)
 
-### [Configuring Mycroft for Italian language support](Language-support-italiano.md)
+### [Configuring Mycroft for Italian language support](Language-support-in-Mycroft-8211-Italian.md)
 
 Parli italiano? Follow these steps to change Mycroft's language to Italian (BCP 47: `it`)
+
+### [Configuring Mycroft for German language support](Language-support-in-Mycroft-8211-German.md)
+
+Sprechen Sie Deutsch? Follow these steps to change Mycroft's language to German (BCP 47: `de`)
 
 ## [Adapt](Adapt.md)
 

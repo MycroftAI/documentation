@@ -120,7 +120,6 @@ total 24
 8 drwxrwxr-x 3 kathyreid kathyreid 4096 Nov 24 00:08 .
 8 drwxrwxr-x 3 kathyreid kathyreid 4096 Nov 24 00:08 ..
 8 drwxrwxr-x 3 kathyreid kathyreid 4096 Nov 24 00:08 en-us
-kathyreid@kathyreid-N76VZ:~/Dropbox/PHPworkspace/mycroft-core/mycroft/client/speech/recognizer/model$
 ```
 
 _NOTE: Note that there is only one model folder - `en-us` for American English_
