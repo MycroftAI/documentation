@@ -19,7 +19,7 @@ published: false
   * [Configure Mycroft source code to handle German](#configure-mycroft-source-code-to-handle-German)
   * [Getting involved](#getting-involved)
 
-Bonjour. Parlez-vous français? Follow these steps to change Mycroft's language to German (BCP 47: `de`).
+Guten tag. Sprechen sie Deutsch? Follow these steps to change Mycroft's language to German (BCP 47: `de`).
 
 If you speak German and wish to enable German language support for Mycroft, this is possible. However, this requires some technical knowledge such as:
 

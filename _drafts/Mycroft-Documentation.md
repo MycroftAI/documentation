@@ -40,6 +40,7 @@ Our documentation, just like our source code, is open source, [and you can contr
     + [Configuring Mycroft for French language support](#configuring-mycroft-for-french-language-support)
     + [Configuring Mycroft for Italian language support](#configuring-mycroft-for-italian-language-support)
     + [Configuring Mycroft for German language support](#configuring-mycroft-for-german-language-support)
+    + [Configuring Mycroft for Spanish language support](#configuring-mycroft-for-spanish-language-support)
   * [Adapt](#adapt)
     + [Adapt examples](#adapt-examples)
     + [Adapt tutorial](#adapt-tutorial)
@@ -154,6 +155,10 @@ Parli italiano? Follow these steps to change Mycroft's language to Italian (BCP 
 ### [Configuring Mycroft for German language support](Language-support-in-Mycroft-8211-German.md)
 
 Sprechen Sie Deutsch? Follow these steps to change Mycroft's language to German (BCP 47: `de`)
+
+### [Configuring Mycroft for Spanish language support](Language-support-in-Mycroft-8211-Spanish.md)
+
+Puedes hablar español? Follow these steps to change Mycroft's language to Spanish (BCP 47: `es`)
 
 ## [Adapt](Adapt.md)
 
