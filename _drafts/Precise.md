@@ -22,27 +22,41 @@ By default, Mycroft uses [PocketSphinx](https://github.com/cmusphinx/pocketsphin
 
 To install Precise instead of PocketSphinx as your **Wake Word**, Speak to your **Device**:
 
-`hey mycroft, set the Listener to precise`
+> `Hey Mycroft, set the Listener to Precise`
 
 Mycroft will respond
 
-`Downloading the new listener, this will take a bit and you won't be able to use me until it completes. Give me a minute before attempting to activate me again. `
+`"Downloading the new listener, this will take a bit and you won't be able to use me until it completes. Give me a minute before attempting to activate me again."`
 
 _NOTE: As Precise is installing, it will download a 40Mb file to your **Device**. During this initial download period, your **Device** will not be able to respond to a **Wake Word**._
+
+## How do I change the **Wake Word Listener** back to PocketSphinx
+
+To change the **Wake Word Listener** back to PocketSphinx if it has been set to Precise, Speak:
+
+> Hey Mycroft, set the Listener to default
+
+or
+
+> Hey Mycroft, set the listener to PocketSphinx
+
+Mycroft will respond
+
+`"I've set the Listener to PocketSphinx"`
 
 ## How do I tell which **Wake Word Listener** my Mycroft **Device** is using?
 
 To find out which **Wake Word Listener** is active for the Mycroft **Device** you are using, simply Speak:
 
-`hey Mycroft, what is the listener`
+> Hey Mycroft, what is the Listener?
 
 or
 
-`hey Mycroft, tell me what listener you are using`
+> Hey Mycroft, tell me what Listener you are using
 
 If you are using Precise, Mycroft will respond:
 
-`The current listener is Precise`
+`"The current Listener is Precise"`
 
 ## What's the difference between PocketSphinx and Precise?
 
