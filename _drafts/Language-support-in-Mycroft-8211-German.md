@@ -1,6 +1,10 @@
 ---
-post_title: 'Language support in Mycroft - German'
+ID: 33364
+post_title: 'Language support in Mycroft &#8211; German'
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=33364
 published: false
 ---
 # Language support in Mycroft - German - Deutsch
