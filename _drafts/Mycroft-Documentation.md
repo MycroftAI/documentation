@@ -76,11 +76,11 @@ A handy reference of all new terms you might come across while working with Mycr
 
 How to download and install Mycroft for your preferred **Device** or platform.
 
-## [Your home.mycroft.ai account](Your-home.mycroft.ai-account.md)
+## [Your home.mycroft.ai account](Your-home.mycroft.ai-account-and-Pairing-your-Devices.md)
 
 How to pair your **Device** with home.mycroft.ai, and set basic configuration fields such as location.
 
-### [Basic commands](Basic-commands-to-get-started.md)
+### [Basic commands](Basic-commands-to-get-started-with-Mycroft.md)
 
 Getting started using Mycroft Skills.
 
@@ -124,11 +124,11 @@ Explanations of common issues developers encounter in building new **Skills**, a
 
 Already develop for another voice assistant? Learn how to transfer those skills to Mycroft.
 
-### [Conversational Context](Skill-Conversational-Context.md)
+### [Conversational Context](Conversational-Context.md)
 
 Want to add more natural interaction to Mycroft? Conversational context allows a **Skill** to add context to the **Intent Parser** to create a more natural interaction style.
 
-### [Audio Service](Skill-Audio-Service.md)
+### [Audio Service](Audio-Service.md)
 
 The Audio Service handles playback of audio files within a **Skill**. If your **Skill** deals with audio files, you'll want to know about the Audio Service.
 
@@ -136,7 +136,7 @@ The Audio Service handles playback of audio files within a **Skill**. If your **
 
 Display Control manages features of the **Enclosure**, such as the _mouth_ and _eyes_ on the Mark 1.
 
-### [Fallback Skills](Skill-Fallback-Skill.md)
+### [Fallback Skills](Fallback-Skill.md)
 
 Fallback **Skills** handle an **Intent** if one can't be matched with an **Utterance** and are a useful catch-all. This documentation shows how to write a new Fallback **Skill** and set its order of precedence.
 
