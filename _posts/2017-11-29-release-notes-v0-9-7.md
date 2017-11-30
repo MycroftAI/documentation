@@ -30,7 +30,7 @@ The skills API now includes a <code>self.send_email()</code> method, allowing 
 &nbsp;
 <div class="markdown-body">
 <h2>Metrics <a class="issue-link js-issue-link" href="https://github.com/MycroftAI/mycroft-core/pull/1247" data-error-text="Failed to load issue title" data-id="276136116" data-permission-text="Issue title is private" data-url="https://github.com/MycroftAI/mycroft-core/issues/1247">#1247</a></h2>
-The <code>DeviceApi</code> now includes a <code>metrics</code> method, allowing skills and core to upload information to the Mycroft server should the user allow it. The method is very general purpose and can take any method as long as it can be serialized to json.
+The Device API now includes a <code>metrics</code> method, allowing skills and core to upload information to the Mycroft server should the user allow it. The method is very general purpose and can take any method as long as it can be serialized to json.
 
 Skills developer can easily access this functionality using the <code>self.report_metric</code> method in the Skill API.
 
