@@ -66,7 +66,7 @@ We then  unpack the gzipped file into a temporary directory.
 Then we copy it to the PocketSphinx directory
 
 ```bash
-cd cmusphinx-de-ptm-voxforge-5.2.tar.gz
+cd cmusphinx-de-ptm-voxforge-5.2
 cp * /usr/local/share/pocketsphinx/model/de/de
 cd ..
 ```
