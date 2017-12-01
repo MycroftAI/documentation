@@ -9,18 +9,18 @@ published: false
 ---
 # Language support in Mycroft - German - Deutsch
 
-- [Language support in Mycroft - German - français](#language-support-in-mycroft---German---francais)
-  * [Change the **Wake Word** to German](#change-the-wake-word-to-German)
-    + [Download and install the German dictionary](#download-and-install-the-German-dictionary)
+- [Language support in Mycroft - German - français](#language-support-in-mycroft---german---francais)
+  * [Change the **Wake Word** to German](#change-the-wake-word-to-german)
+    + [Download and install the German dictionary](#download-and-install-the-german-dictionary)
     + [Download and install acoustic model](#download-and-install-acoustic-model)
-    + [Download and install German language model](#download-and-install-German-language-model)
+    + [Download and install German language model](#download-and-install-german-language-model)
     + [Verify the installed files](#verify-the-installed-files)
     + [Install language in Mycroft directories](#install-language-in-mycroft-directories)
-    + [Choosing a German **Wake Word**](#choosing-a-German-wake-word)
-    + [Configure Mycroft to use German language and the chosen **Wake Word**](#configure-mycroft-to-use-German-language-and-the-chosen-wake-word)
-  * [Select and configure a Speech to Text (STT) engine with German support](#select-and-configure-a-speech-to-text-stt-engine-with-German-support)
-  * [Select and configure a Text to Speech (TTS) engine with German support](#select-and-configure-a-text-to-speech-tts-engine-with-German-support)
-  * [Configure Mycroft source code to handle German](#configure-mycroft-source-code-to-handle-German)
+    + [Choosing a German **Wake Word**](#choosing-a-german-wake-word)
+    + [Configure Mycroft to use German language and the chosen **Wake Word**](#configure-mycroft-to-use-german-language-and-the-chosen-wake-word)
+  * [Select and configure a Speech to Text (STT) engine with German support](#select-and-configure-a-speech-to-text-stt-engine-with-german-support)
+  * [Select and configure a Text to Speech (TTS) engine with German support](#select-and-configure-a-text-to-speech-tts-engine-with-german-support)
+  * [Configure Mycroft source code to handle German](#configure-mycroft-source-code-to-handle-german)
   * [Getting involved](#getting-involved)
 
 Guten tag. Sprechen sie Deutsch? Follow these steps to change Mycroft's language to German (BCP 47: `de`).
