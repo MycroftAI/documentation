@@ -185,7 +185,7 @@ Edit the configuration file with following changes:
 
 ## Select and configure a Speech to Text (STT) engine with German support
 
-If the Speech to Text engine you are using already supports German, you don't need to do anything.
+If the Speech to Text engine you are using already supports German, you don't need to do anything - this is the case with the default mycroft hosted engine for example.
 
 As an alternative, you can use PocketSphinx, running on your local machine. To use PocketSphinx as your STT engine, add the following to your `mycroft.conf` file:
 
