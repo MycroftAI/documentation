@@ -6,8 +6,10 @@ post_title: >
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32426
-published: false
+permalink: >
+  http://mycroft.ai/documentation/home-mycroft-ai-pairing/
+published: true
+post_date: 2017-12-02 01:40:53
 ---
 # Your home.mycroft.ai account
 
