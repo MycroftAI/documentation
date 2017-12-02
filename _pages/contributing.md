@@ -4,8 +4,10 @@ post_title: Contributing to Mycroft
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32414
-published: false
+permalink: >
+  http://mycroft.ai/documentation/contributing/
+published: true
+post_date: 2017-12-02 00:34:24
 ---
 # Contributing to Mycroft
 
