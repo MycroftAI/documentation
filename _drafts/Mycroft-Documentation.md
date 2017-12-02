@@ -13,6 +13,8 @@ Welcome to the documentation for all elements of the Mycroft - the open source v
 
 Our documentation, just like our source code, is open source, [and you can contribute to improving it here](https://github.com/MycroftAI/docs-rewrite). Alternatively, please rate our documentation and leave comments on how we can improve.
 
+@TODO The links here won't work yet because they're linking to GitHub; fixing them will be one of the steps of the documentation implementation plan.
+
 - [Documentation Home](#documentation-home)
   * [About Mycroft](#about-mycroft)
     + [Contributing](#contributing)
@@ -146,19 +148,19 @@ Learn more about languages support in Mycroft.
 
 ### [Configuring Mycroft for French language support](Language-support-in-Mycroft-8211-French.md)
 
-Parlez-vous français? Follow these steps to change Mycroft's language to French (BCP 47: `fr`)
+Parlez-vous français? Follow these steps to change Mycroft's language to French (BCP 47: fr)
 
 ### [Configuring Mycroft for Italian language support](Language-support-in-Mycroft-8211-Italian.md)
 
-Parli italiano? Follow these steps to change Mycroft's language to Italian (BCP 47: `it`)
+Parli italiano? Follow these steps to change Mycroft's language to Italian (BCP 47: it)
 
 ### [Configuring Mycroft for German language support](Language-support-in-Mycroft-8211-German.md)
 
-Sprechen Sie Deutsch? Follow these steps to change Mycroft's language to German (BCP 47: `de`)
+Sprechen Sie Deutsch? Follow these steps to change Mycroft's language to German (BCP 47: de)
 
 ### [Configuring Mycroft for Spanish language support](Language-support-in-Mycroft-8211-Spanish.md)
 
-Puedes hablar español? Follow these steps to change Mycroft's language to Spanish (BCP 47: `es`)
+Puedes hablar español? Follow these steps to change Mycroft's language to Spanish (BCP 47: es)
 
 ## [Adapt](Adapt.md)
 
@@ -184,17 +186,14 @@ Precise is a **Wake Word Listener** that listens and then 'wakes up' Mycroft, re
 
 Padatious is an **Intent parser**. Unlike [Adapt](Adapt.md), which is based on Speech to Text, Padatious is trained on sounds.
 
-## FAQ
+## [FAQ](FAQ.md)
 
-TBA
+Our most frequently asked questions
 
 ## [Troubleshooting and known errors](Troubleshooting-and-known-errors.md)
 
 Stuck? Learn common tricks and techniques for resolving common errors.
 
-### Known errors and workarounds
-
-TBA
 ## Getting help and support
 
-TBA
+Need to chat things over with a human? No problem. You can join our [Chat](https://chat.mycroft.ai), [Forum](https://community.mycroft.ai) or [make contact via this web form](https://mycroft.ai/contact).

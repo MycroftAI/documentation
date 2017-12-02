@@ -50,20 +50,19 @@ This section of documentation assumes the following:
 
 When you received your Mark 1, you would have received a [blue-colored Getting Started guide (PDF, 290Kb)]().
 
-Connect the Mark 1 power supply to a power outlet, and to the Mark 1 device. _NOTE: If you are in a country other than the USA, you will need a power adapter to fit the power outlets in your country_
+Connect the Mark 1 power supply to a power outlet, and to the Mark 1 device. _NOTE: If you are in a country other than the USA, you will need a power adapter to convert from the US power supply the Mark 1 ships with. Alternatively, use a 12V, 1A power supply for your country's power outlets._
 
 The Mark 1 will boot up. It will then Speak:
 
-`I need to be connected to the internet. Plug in a network cable, or connect to the SSID Mycroft with the password 12345678 and go to http://start.mycroft.ai`
+`"I need to be connected to the internet. Plug in a network cable, or connect to the SSID Mycroft with the password 12345678 and go to http://start.mycroft.ai"`
 
 #### Getting Mark 1 connected to the internet using a network cable
 
-Plug the Mark 1 into your router using an ethernet cable.
-@TODO This didn't work on my Mark 1, so I'm not sure what should happen when the Mark 1 is connected to the router via network cable.
+Plug the Mark 1 into your router using an ethernet cable. The network should be automatically detected.
 
 #### Getting Mark 1 connected to the internet using Wifi
 
-Using your computer or a mobile device, connect to the Wifi SSID `MYCROFT` using the password `123456787`. Once you are connected to this SSID, go to the web page [http://start.mycroft.ai](https://start.mycroft.ai). A list of available WiFi networks will be presented. Select the WiFi network that you wish to connect the Mark 1 to, and enter the WiFi password. Mark 1 will attempt to connect to the WiFi network.
+Using your computer or a mobile device, connect to the Wifi SSID `MYCROFT` using the password "12345678". Once you are connected to this SSID, go to the web page [http://start.mycroft.ai](https://start.mycroft.ai). A list of available WiFi networks will be presented. Select the WiFi network that you wish to connect the Mark 1 to, and enter the WiFi password. Mark 1 will attempt to connect to the WiFi network.
 
 _NOTE: Mark 1 cannot connect to WiFi networks that operate in the 5GHz band. You must select a WiFi network that operates in the 2.4GHz band._
 
@@ -73,9 +72,9 @@ _NOTE: Mark 1 cannot connect to WiFi networks that operate in the 5GHz band. You
 
 Once the Mark 1 is connected to the internet, a **Registration Code** will be Spoken, and displayed on the Mark 1's LED panel.
 
-[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](/03.your-home.mycroft.ai-account/01.your-home.mycroft-account.md).
+[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](@TODO link to Home documentation).
 
-Once paired, you can then use [basic **skills**](../03.your-home.mycroft.ai-account/02.basic-commands.md).
+Once paired, you can then use [basic **Skills**](@TODO link to basic skills).
 
 ### Mark 1 menu options
 
@@ -107,16 +106,16 @@ The available menu options are:
 
 #### Installing Skills on the Mark 1
 
-[Please refer to the information here](/03.your-home.mycroft.ai-account/02.basic-commands.md#installing-new-skills)
+[Please refer to the information here](@TODO link to adding new skills)
 
 #### Connecting to the Mark 1 via SSH
 
 * First, ensure that you've enabled SSH access.
 * Ensure you know the IP address of your Mark 1 Device on your network. A handy way to do this is to install the IP Address **Skill**, and then Speak:
 
-`hey mycroft, what's your IP address?`
+> Hey Mycroft, what's your IP address?
 
-`here are my available IP addresses: wlan IP address ... Those are all my available IP addresses`
+`"here are my available IP addresses: wlan IP address ... Those are all my available IP addresses"`
 
 * Open up your favorite terminal program, like PuTTy on Windows, or a new terminal on Linux
 * `ssh pi@IPADDRESS`
@@ -171,7 +170,7 @@ To enable the Learn functionality:
 
 2. Next press the top button on your Mark 1. Turn the button to LEARN. Press the top button again. Turn the button to ALLOW. Mycroft will Speak:
 
-`I will now upload interaction data to help make me smarter`
+`"I will now upload interaction data to help make me smarter"`
 
 #### How to reimage a Mark 1 Device
 

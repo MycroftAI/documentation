@@ -17,85 +17,85 @@ Now that your Mycroft is now **Paired** with home.mycroft.ai, you can begin issu
 
 ### Alarms
 
-* `hey mycroft, set an alarm for two hours`
-* `hey mycroft, set an alarm for 3pm`
+> Hey Mycroft, set an alarm for two hours
+> Hey Mycroft, set an alarm for 3pm
 
 ### Audio record
 
-* `hey mycroft, record`
+> Hey Mycroft, record
 
 ### Configuration
 
-* `hey mycroft, configuration update`
+> Hey Mycroft, configuration update
 
 ### DuckDuckGo
 
-* `hey mycroft, what is Frankenstein?`
-* `hey mycroft, who is Kathryn Johnson?`
+> Hey Mycroft, what is Frankenstein?
+> Hey Mycroft, who is Kathryn Johnson?
 
 ### Hello World
 
-* `hey mycroft, how are you?`
+> Hey Mycroft, how are you?
 
 ### IP address
 
-* `hey mycroft, what is your IP address?`
+> Hey Mycroft, what is your IP address?
 
 ### Jokes
 
-* `hey mycroft, tell me a joke!`
+> Hey Mycroft, tell me a joke!
 
 ### Naptime
 
-* `hey mycroft, go to sleep`
+> Hey Mycroft, go to sleep
 
 ### News from NPR
 
-* `hey mycroft, news`
+> Hey Mycroft, news
 
 ### Pairing
 
-* `hey mycroft, pair my Device`
+> Hey Mycroft, pair my Device
 
 ### Personal
 
-* `hey mycroft, what are you`
+> Hey Mycroft, what are you
 
 ### Reminders
 
-* `hey mycroft, remind me to turn off the oven in 5 minutes`
+> Hey Mycroft, remind me to turn off the oven in 5 minutes
 
 ### Version checker
 
-* `hey mycroft, check version`
+> Hey Mycroft, check version
 
 ### Volume
 
-* `hey mycroft, increase volume`
-* `hey mycroft, decrease volume`
+> Hey Mycroft, increase volume
+> Hey Mycroft, decrease volume
 
 ### Weather
 
-* `hey mycroft, what is the weather?`
+> Hey Mycroft, what is the weather?
 
 ### Wikipedia
 
-* `hey mycroft, tell me about artificial intelligence`
-* `hey mycroft, tell me about Grace Hopper`
+> Hey Mycroft, tell me about artificial intelligence
+> Hey Mycroft, tell me about Grace Hopper
 
 
 ## Installing new **Skills**
 
 To install new **Skills** onto Mycroft, speak:
 
-`install skill [skillname]`
+> install skill [skillname]
 
 For example:
 
-* `install skill coinflip`
-* `install skill easter eggs`
-* `install skill home assistant`
+> install skill coinflip
+> install skill easter eggs
+> install skill home assistant
 
 ## More information on Skills
 
-For more information on Skills, please see the [Skills section](../09.mycroft-skills/)
+For more information on Skills, please see the [Skills section](@TODO link to Skill)

@@ -14,12 +14,13 @@ published: false
 
 A **Skill** can add context to the **Intent Parser** to create more natural interaction with Mycroft.
 
-```
-User: How tall is John Cleese?
-Mycroft: John Cleese is 196 centimeters
-User: Where's he from?
-Mycroft: He's from England
-```
+> How tall is John Cleese?
+
+`"John Cleese is 196 centimeters"`
+
+> Where's he from?
+
+'"Mycroft: He's from England"`
 
 Context is added manually by the **Skill** creator using either the `self.set_context()` method or the `@adds_context()` decorator.
 

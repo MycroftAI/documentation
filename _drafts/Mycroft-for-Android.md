@@ -9,6 +9,14 @@ published: false
 ---
 # Mycroft for Android
 
+- [Mycroft for Android](#mycroft-for-android)
+    + [Prerequisites](#prerequisites)
+    + [Getting Started](#getting-started)
+    + [Connecting to a `mycroft-core` instance](#connecting-to-a-mycroft-core-instance)
+    + [Pairing Mycroft for Android](#pairing-mycroft-for-android)
+      - [Keeping Mycroft for Android updated](#keeping-mycroft-for-android-updated)
+    + [Common issues with Mycroft for Android](#common-issues-with-mycroft-for-android)
+
 There are two components to Mycroft for Android:
 
 1. The Android companion app. The app works by opening a websocket connection to the `mycroft-core` messagebus, and sending and receiving messages from there. It implements voice recognition and Text to Speech (TTS) via Google APIs at the moment,
@@ -42,7 +50,7 @@ From Android Studio, choose `File -> Open file or Project` and select the direct
 
 ### Connecting to a `mycroft-core` instance
 
-@TODO will need to figure this out
+@TODO not sure how this works
 
 ### Pairing Mycroft for Android
 

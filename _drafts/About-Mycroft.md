@@ -21,11 +21,7 @@ As of late 2017, Mycroft is undergoing heavy development. It is at a level of ma
 
 ## Mycroft components
 
-Mycroft is modular. Some components can be easily 'swapped out' for others:
-
-* Wake Word detection
-* Speech to Text (STT)
-* Intent parser
+Mycroft is modular. Some components can be easily 'swapped out' for others.
 
 ### Wake Word detection
 
@@ -35,10 +31,9 @@ There are two technologies that Mycroft.AI currently uses for **Wake Word** dete
 
 * [PocketSphinx](https://github.com/cmusphinx/pocketsphinx_): PocketSphinx is part of the broader [CMUSphinx package](https://cmusphinx.github.io/), developed by [Carnegie Mellon University](https://www.cmu.edu). PocketSphinx is a lightweight speech recognition engine, specifically tuned for handheld and mobile devices. PocketSphinx is currently the default **Wake Word** detection tool on all Mycroft platforms.
 
-Because PocketSphinx is trained on English speech, your **Wake Word** currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well. 
+Because PocketSphinx is trained on English speech, your **Wake Word** currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well, although [you can configure Mycroft to handle other languages](Adding-a-new-language-to-Mycroft.md).
 
-* Precise: Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what *words* you want to use for your **Wake Word**. Instead, you train it on *sounds*. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise is currently being developed and tested internally at Mycroft, and is not yet ready for Community Developers to work with.
-@TODO: Put link in here to the Precise documentation
+* [Precise](Precise.md): Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what *words* you want to use for your **Wake Word**. Instead, you train it on *sounds*. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise is currently being developed and tested internally at Mycroft, and is not yet ready for Community Developers to work with.
 
 ### Speech to Text (STT)
 
@@ -105,13 +100,11 @@ Mycroft is designed to run on many different platforms - called **Devices**, wit
 
 ## Choosing to use Mycroft
 
-### Why would you choose to use Mycroft over alternatives such as Amazon™ Alexa™, Google Assistant™, Microsoft Cortana™ or Apple's Siri™?
-
-Great question!
+Why would you choose to use Mycroft over alternatives such as Amazon™ Alexa™, Google Assistant™, Microsoft Cortana™ or Apple's Siri™? Great question!
 
 While alternative tools are readily available, and easy to use, they come with some pretty big downsides.
 
-#### Open source
+### Open source
 
 Mycroft is open source. This means that the code used by Mycroft can be inspected, copied, modified, and contributed back to the Mycroft community for everyone to enjoy.
 
@@ -119,23 +112,35 @@ Tools like Amazon™ Alexa™, Google Assistant™, Microsoft Cortana™ or Appl
 
 Mycroft code is licensed under the [Apache 2 open source license](https://en.wikipedia.org/wiki/Apache_License).
 
-#### Respecting your privacy
+### Respecting your privacy
 
 Mycroft uses _opt-in privacy_. This means we will only record what you say to Mycroft with your explicit permission. Don't want us to record your voice? No problem! If you'd like us to help Mycroft become more accurate, you can opt in to have your voice anonymously recorded.
 
 You're welcome to view our [privacy policy](https://home.mycroft.ai/#/privacy-policy)
 
-#### More hardware, more choices
+### More hardware, more choices
 
 Mycroft runs on a wide range of software platforms and hardware - meaning that you can run Mycroft on the **Devices** _you_ want. Try Mycroft on a Raspberry Pi, on an Android device - or on your Linux desktop.
 
-#### Lightweight
+### Lightweight
 
 Mycroft is lightweight, and will run on low-powered hardware, such as the Raspberry Pi 3. So if you're a Hacker, Maker or Hobbyist, it's the perfect platform for low cost experimentation.
 
-#### Community
+### Community
 
 Mycroft has a vibrant, engaged and helpful community. You can interact with the community via:
 
 * Chat - [https://chat.mycroft.ai](https://chat.mycroft.ai)
 * Forum - [https://community.mycroft.ai](https://community.mycroft.ai)
+* GitHub - [https://github.com/MycroftAI](https://github.com/MycroftAI)
+
+or visit us on social media at:
+
+* [Facebook](https://www.facebook.com/aiforeveryone)
+* [Twitter](https://twitter.com/mycroft_ai)
+* [Instagram](https://www.instagram.com/mycroft_ai/)
+* [Reddit](https://www.reddit.com/r/Mycroftai/)
+* [LinkedIn](https://www.linkedin.com/company/10255844/)
+* [Google Plus](https://plus.google.com/+MycroftAIForEveryone)
+* [YouTube](https://www.youtube.com/channel/UC1dlmB1lup9RwFQBSGnhA-g)
+* [AngelCo](https://angel.co/mycroft-a-i)

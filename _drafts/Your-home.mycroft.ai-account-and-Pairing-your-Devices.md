@@ -11,6 +11,20 @@ published: false
 ---
 # Your home.mycroft.ai account
 
+- [Your home.mycroft.ai account](#your-homemycroftai-account)
+  * [Creating a home.mycroft.ai account](#creating-a-homemycroftai-account)
+  * [home.mycroft.ai settings](#homemycroftai-settings)
+    + [Advanced settings](#advanced-settings)
+      - [Changing your Wake Word](#changing-your-wake-word)
+    + [Telling Mycroft to pick up the new settings](#telling-mycroft-to-pick-up-the-new-settings)
+  * [Adding a Device](#adding-a-device)
+    + [Getting a Registration Code from a Mark 1](#getting-a-registration-code-from-a-mark-1)
+    + [Getting a Registration Code from a Picroft](#getting-a-registration-code-from-a-picroft)
+    + [Getting a Registration Code from Linux](#getting-a-registration-code-from-linux)
+    + [How Mycroft speaks the Registration Code](#how-mycroft-speaks-the-registration-code)
+  * [Pairing your Device(s) to your home.mycroft.ai account](#pairing-your-devices-to-your-homemycroftai-account)
+  * [Where is my identity information shared in the Mycroft code?](#where-is-my-identity-information-shared-in-the-mycroft-code)
+
 Each of your Mycroft **Device(s)** must be **Paired** with your [home.mycroft.ai](https://home.mycroft.ai) account.
 
 Pairing makes information available to your Device to personalise your experience, such as which units of measurement you prefer, and your general location.
@@ -55,8 +69,11 @@ Phonemes are basic units of sound. They are a way to represent the different sou
 
 You can see the similarity when these words are written as phonemes:
 
-* `JH UW S .` =  juice
-* `JH AY AH N T .` = giant
+* `JH UW S .`
+=  juice
+
+* `JH AY AH N T .`
+= giant
 
 The period, or full stop, indicates the end of the word.
 
@@ -72,7 +89,11 @@ The Advanced Settings allow you to change the **Wake Word** that Mycroft respond
 
 First, choose the phrase that you wish to set as your **Wake Word**. For the purposes of this example, we're going to use the phrase:
 
-`yo mike` instead of `hey mycroft`
+`yo mike`
+
+instead of
+
+`hey mycroft`
 
 We then need to identify the **phoneme** sounds for this **Wake Word** using the [CMU Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict).
 
@@ -100,13 +121,11 @@ Other settings are available to further tune how sensitive the Speech to Text (S
 
 If Mycroft is being *too sensitive*, reduce this value. If Mycroft *is not being sensitive enough*, increase this value.
 
-@TODO ALL THE ABOVE is educated guessword, and needs to be reviewed by Speech Recognition programmers.
-
 ### Telling Mycroft to pick up the new settings
 
 Mycroft doesn't automatically fetch the new settings. You need to tell Mycroft to fetch the new settings by speaking
 
-`hey mycroft, configuration update`
+> Hey Mycroft, configuration update
 
 Mycroft will then pull the new Settings configuration down.
 
@@ -124,15 +143,11 @@ If you're stuck connecting to Wifi, please read the [Mark 1 Getting Started Guid
 
 After you have connected your Picroft to Wifi, Mycroft will speak a 6-character **Registration Code**.
 
-If you're stuck connecting to Wifi, please read the [Picroft documentation](../06.picroft/02.installing-picroft.md).
+If you're stuck connecting to Wifi, please read the [Picroft documentation](Picroft.md).
 
 ### Getting a Registration Code from Linux
 
 After your Mycroft for Linux installation is successfully installed, Mycroft will speak a 6-character **Registration Code**.
-
-### Getting a Registration Code from Android
-
-@TODO Not sure how this works on Android
 
 ### How Mycroft speaks the Registration Code
 

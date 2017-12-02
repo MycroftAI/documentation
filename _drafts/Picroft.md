@@ -9,6 +9,29 @@ published: false
 ---
 # Picroft
 
+- [Picroft](#picroft)
+    + [Prerequisites](#prerequisites)
+      - [Hardware prerequisites](#hardware-prerequisites)
+        * [Required](#required)
+        * [Optional](#optional)
+      - [Hardware recommendations](#hardware-recommendations)
+        * [Working Microphones](#working-microphones)
+        * [Incompatible Microphones](#incompatible-microphones)
+        * [Working Speakers](#working-speakers)
+    + [Getting Started](#getting-started)
+      - [Downloading the disk image](#downloading-the-disk-image)
+      - [Burn the disk image to the Micro SD card](#burn-the-disk-image-to-the-micro-sd-card)
+      - [Booting up Picroft](#booting-up-picroft)
+      - [Getting Picroft connected to the internet using a network cable](#getting-picroft-connected-to-the-internet-using-a-network-cable)
+      - [Getting Mark 1 connected to the internet using Wifi](#getting-mark-1-connected-to-the-internet-using-wifi)
+    + [Pairing the Picroft](#pairing-the-picroft)
+      - [Connecting to Picroft via SSH](#connecting-to-picroft-via-ssh)
+      - [How to reimage a Picroft Device](#how-to-reimage-a-picroft-device)
+      - [Keeping your Picroft updated](#keeping-your-picroft-updated)
+    + [Common issues on Picroft Devices](#common-issues-on-picroft-devices)
+      - [Audio issues](#audio-issues)
+        * [Check which audio playback and recording devices are being recognized](#check-which-audio-playback-and-recording-devices-are-being-recognized)
+
 Picroft is an **Enclosure** for Mycroft, designed to the run on Raspberry Pi 3 or newer models. Mycroft provides the software for Picroft, in the form of a disk image, but you will need to burn this to an SD card.
 
 Picroft is based on [Raspbian Jessie Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
@@ -100,9 +123,9 @@ _NOTE: Picroft cannot connect to WiFi networks that operate in the 5GHz band. Yo
 
 Once the Picroft is connected to the internet, a **Registration Code** will be Spoken.
 
-[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](/03.your-home.mycroft.ai-account/01.your-home.mycroft-account.md).
+[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](@TODO add link in here).
 
-Once paired, you can then use [basic **skills**](../03.your-home.mycroft.ai-account/02.basic-commands.md).
+Once paired, you can then use [basic Skills](@TODO add link in here).
 
 #### Connecting to Picroft via SSH
 
@@ -111,9 +134,9 @@ Once paired, you can then use [basic **skills**](../03.your-home.mycroft.ai-acco
 
 * Ensure you know the IP address of your Mark 1 Device on your network. A handy way to do this is to install the IP Address **Skill**, and then Speak:
 
-`hey mycroft, what's your IP address?`
+> Hey Mycroft, what's your IP address?
 
-`here are my available IP addresses: wlan IP address ... Those are all my available IP addresses`
+`"here are my available IP addresses: wlan IP address ... Those are all my available IP addresses"`
 
 * Open up your favorite terminal program, like PuTTy on Windows, or a new terminal on Linux
 * `ssh pi@IPADDRESS`
@@ -138,18 +161,65 @@ You are now connected to Picroft via SSH.
 
 #### How to reimage a Picroft Device
 
-@TODO Not sure how to do this - I'm assuming it's as easy as burning a new image to the SD card?
+To reimage a Picroft **Device**, [download the latest disk image](https://mycroft.ai/to/picroft-image). Burn that to a MicroSD card using Etcher, and insert the burned MicroSD card into the Raspberry Pi, then connect the Raspberry Pi to power.
 
 #### Keeping your Picroft updated
 
 The easiest way to keep your Picroft updated is to burn a new disk image to your Micro SD card, and re-pair your Picroft Device.
 
-@TODO Not sure if this is the best way to keep Picroft updated - is there an easier way?
-
 ### Common issues on Picroft Devices
 
-@TODO link to Troubleshooting
+#### Audio issues
 
-### Hardware Hacking your Picroft Device
+By far the most common issue on Picroft **Devices** are audio issues - with audio devices not being recognized, audio levels not being high enough and so on. There are a couple of tricks that can help.
 
-@TODO need to touch base with @penrods on what should go in here
+##### Check which audio playback and recording devices are being recognized
+
+By default, Picroft uses the PulseAudio subsystem (as opposed to Alsa).
+
+To identify which playback and recording devices are recognized on your Picroft system, use the command:
+
+`pacmd list-sources`
+
+If you are attempting to have one of your audio devices set as the primary device, take note of its number.
+
+To change the device that is used as the default source, using the command:
+
+`pacmd set-default-source 1`
+
+where 1 is the number of the audio device when sources were listed.
+
+
+If you prefer the Alsa sound subsystem, then you can accomplish the same task using the commands below.
+
+To identify which playback and recording devices are recognized on your Picroft system, use the command:
+
+`alsamixer `
+
+You can also run a similar command line command:
+
+`aplay -L`
+
+which shows playback devices, and
+
+`arecord -L`
+
+which shows recording devices.
+
+To edit your default audio device with Also, you will have to manually edit your
+
+`mycroft.conf`
+
+This file is located at:
+
+`~/.mycroft/mycroft.conf`
+
+Using a program like _vi_ or _nano_, add a line to the end of the file as follows:
+
+```json
+ "listener": {  
+    "device_index":0  
+}
+```
+
+Make sure to set the device number to the correct device.

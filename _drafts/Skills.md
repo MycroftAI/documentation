@@ -9,11 +9,17 @@ published: false
 ---
 # Mycroft Skills
 
+- [Mycroft Skills](#mycroft-skills)
+  * [Overview](#overview)
+  * [Core Skills](#core-skills)
+  * [Community Developed Skills](#community-developed-skills)
+    + [Community Developed Skills status meaning](#community-developed-skills-status-meaning)
+
 ## Overview
 
 **Skills** provide Mycroft with functionality. **Skills** are what allow Mycroft to tell you the weather in your location, display the time in another timezone, play you a song or tell you a Chuck Norris joke.
 
-Mycroft determines what **Skill** should handle an **Utterance** by using an **intent parser** like Adapt(@TODO: link) or [Padatious](../15.padatious/01.padatious-overview.md) to identify the **intent** of the user. For instance, if the **intent parser** determines that the user is asking about the *weather*, then Mycroft will pass the **intent data** to the *Weather Skill*.
+Mycroft determines what **Skill** should handle an **Utterance** by using an **intent parser** like Adapt(@TODO: link) or [Padatious](@TODO - link once this is in WordPress) to identify the **intent** of the user. For instance, if the **intent parser** determines that the user is asking about the *weather*, then Mycroft will pass the **intent data** to the *Weather Skill*.
 
 Mycroft comes with several **Skills** built in. These are called *core skills*. It is easy to add more **Skills** to Mycroft.
 

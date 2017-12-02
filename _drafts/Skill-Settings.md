@@ -9,15 +9,42 @@ published: false
 ---
 # Skill Settings
 
+- [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
+    + [Generate a README.md file for your **Skill**](#generate-a-readmemd-file-for-your-skill)
+    + [Add a Git submodule for your **Skill**](#add-a-git-submodule-for-your-skill)
+    + [Modify the Mycroft Skills Repo README.md file with your **Skill**](#modify-the-mycroft-skills-repo-readmemd-file-with-your-skill)
+    + [Submit a PR (Pull Request) in GitHub to have your **Skill** listed](#submit-a-pr-pull-request-in-github-to-have-your-skill-listed)
+    + [MSM Compliance](#msm-compliance)
+    + [What happens next?](#what-happens-next)kathyreid@kathyreid-N76VZ:~/Dropbofts/Skill-Settings.md
+- [Skill Settings](#skill-settings)
+  * [How do I use Skill Settings?](#how-do-i-use-skill-settings)
+    + [More information on Skill Settings](#more-information-on-skill-settings)
+  * [settings.json](#settingsjson)
+  * [Web configurable Settings with `settingsmeta.json`](#web-configurable-settings-with-settingsmetajson)
+    + [More information on the `settingsmeta.json` file](#more-information-on-the-settingsmetajson-file)
+      - [name (String)](#name-string)
+      - [skillMetadata (Object)](#skillmetadata-object)
+      - [sections (Array)](#sections-array)
+      - [sections > name (String)](#sections--name-string)
+      - [sections > fields (Array)](#sections--fields-array)
+
 Have you ever wanted to store settings for a **Skill** locally to a Device? For instance, you might want the User to specify a preference the first time they use a **Skill**, and then store that preference for subsequent uses.
 
 **Skill Settings** provide this ability.
 
-They are a simple extension of the [Python `dict`](https://docs.python.org/2/library/stdtypes.html#typesmapping) that enables local storage of settings. Skill settings can be accessed from the `MycroftSkill` class. Skill settings can also interact with a backend system to provide a graphical user interface (GUI) for Skills configuration. Skills configuration is done through metadata described in an optional `settingsmeta.json` file.
+They are a simple extension of the [Python `dict`](https://docs.python.org/2/library/stdtypes.html#typesmapping) that enables local storage of settings. Skill settings can be accessed from the
+
+`MycroftSkill`
+
+class. Skill settings can also interact with a backend system to provide a graphical user interface (GUI) for Skills configuration. Skills configuration is done through metadata described in an optional
+
+`settingsmeta.json`
+
+file.
 
 ## How do I use Skill Settings?
 
-**Skill Settings** inherit from a Python `dict`. This means that you can use it just like you would any other Python dictionary.
+**Skill Settings** inherit from a Python dict. This means that you can use it just like you would any other Python dictionary.
 
 ```python
 print self.settings.get('meaning of life') # outputs None... oh.. :(
@@ -28,9 +55,17 @@ print self.settings.get('meaning of life') # outputs 42! yay
 
 ## settings.json
 
-The `settings.json` file is created at the root level of the **Skill's** directory. The file is created when a **Skill** uses the **Skill Settings** feature.
+The
 
-Here is an example directory listing of a **Skill** that has a `settings.json` file:
+`settings.json`
+
+file is created at the root level of the **Skill's** directory. The file is created when a **Skill** uses the **Skill Settings** feature.
+
+Here is an example directory listing of a **Skill** that has a
+
+`settings.json'
+
+file:
 
 ```bash
 4 drwxr-xr-x  4 mycroft mycroft  4096 Nov 24 14:34 .
@@ -47,7 +82,7 @@ Here is an example directory listing of a **Skill** that has a `settings.json` f
 
 _NOTE: The Skill directory should be owned by user `mycroft` and have group ownership of `mycroft` with file system permissions as shown above - that is, all files should have permissions 644 and all directories should have permission 755._
 
-When a **Skill** is shut down - which usually happens when restarting a service, or reloading a **Skill** - it will create a `settings.json` file and store the `dict` data there. When a **Skill** loads, it reads the `settings.json` file and loads the settings into the **Skill**. Knowing this makes it easier to build and test **Skills**, because you can create the `settings.json` file first with settings in it, and use these in your Skills development, and then add in code later on that _writes_ to `settings.json`.
+When a **Skill** is shut down - which usually happens when restarting a service, or reloading a **Skill** - it will create a `settings.json` file and store the dict data there. When a **Skill** loads, it reads the `settings.json` file and loads the settings into the **Skill**. Knowing this makes it easier to build and test **Skills**, because you can create the `settings.json` file first with settings in it, and use these in your Skills development, and then add in code later on that _writes_ to `settings.json`.
 
 ## Web configurable Settings with `settingsmeta.json`
 

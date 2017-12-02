@@ -9,6 +9,18 @@ published: false
 ---
 # Contributing to Mycroft
 
+- [Contributing to Mycroft](#contributing-to-mycroft)
+  * [I'm non-technical, how do I contribute?](#im-non-technical-how-do-i-contribute)
+  * [I'm technically minded, how do I contribute?](#im-technically-minded-how-do-i-contribute)
+    + [Reporting Issues](#reporting-issues)
+      - [A description of the Issue in object-deviation format](#a-description-of-the-issue-in-object-deviation-format)
+      - [The Enclosure or Device you are using, and the version of Mycroft you are using](#the-enclosure-or-device-you-are-using-and-the-version-of-mycroft-you-are-using)
+        * [Mark 1 and Picroft](#mark-1-and-picroft)
+          + [Mycroft for Linux](#mycroft-for-linux)
+    + [Making changes](#making-changes)
+  * [Submitting changes for review](#submitting-changes-for-review)
+  * [Additional Resources](#additional-resources)
+
 We value and recognise your contributions. Mycroft is artificial intelligence for _everyone_ and we warmly welcome both non-technical and technical contributions.
 
 ## I'm non-technical, how do I contribute?
@@ -42,12 +54,50 @@ For example:
 
 #### The Enclosure or Device you are using, and the version of Mycroft you are using
 
-@TODO include in here how to find what version you're running
+Be sure to let us know the **Enclosure** or **Device** you're using, such as:
 
-This helps us to pinpoint the Issue quickly.
+* Mark 1
+* Mycroft for Linux (please let us know your distro and install method)
+* Picroft (let us know which Speakers and Headphones you're using too)
+
+This helps us to pinpoint the issue quickly.
+
+Below, you'll find instructions to identify the version of Mycroft you're using.
+
+##### Mark 1 and Picroft
+
+To find what version of Mycroft your Mark 1 or Picroft is running, you'll need to [SSH into the **Device**](@TODO link to the SSH instructions). Run the command
+`apt list`
+
+then look through it to find the Mycroft packages that are installed.
+
+```bash
+mycroft-core/unknown,now 0.9.7 armhf [installed,automatic]
+mycroft-mark-1/unknown,now 0.9.7 armhf [installed]
+mycroft-picroft/unknown 0.9.7 armhf
+mycroft-wifi-setup/unknown,now 0.1.5 armhf [installed,automatic]
+```
+
+###### Mycroft for Linux
+
+If you're using Mycroft for Linux, you will simply run the CLI, and the CLI will tell you the version number.
+
+`mycroft-core$ ./start-mycroft.sh debug`
+
+```bash
+Starting all mycroft-core services
+Initializing...
+Starting background service bus
+Restarting: skills
+Restarting: audio
+Starting background service voice
+Starting cli
+```
+The version number will be shown in the top right hand corner of the CLI, as shown below.
+
+![CLI showing version number](../img/CLI-showing-version-number.png "CLI showing version number")
 
 ### Making changes
-
 
   1. [Fork the Project](https://help.github.com/articles/fork-a-repo/)
   2. [Create a new Issue](https://help.github.com/articles/creating-an-issue/) if one doesn't already exist.

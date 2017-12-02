@@ -57,9 +57,17 @@ Do this by clicking the 'Fork' button.
 
 ![Forking the Mycroft Skills Repo](../img/skills-forking-mycroft-skills-repo.png "Forking the Mycroft Skills Repo")
 
-Then, `git clone` the repo you've just forked to your local machine.
+Then,
 
-For example, if your GitHub username is `JaneBloggs` then you will need to `git clone` from [https://github.com/JaneBloggs/mycroft-skills.git](https://github.com/JaneBloggs/mycroft-skills.git)
+`git clone`
+
+the repo you've just forked to your local machine.
+
+For example, if your GitHub username is "JaneBloggs" then you will need to
+
+`git clone`
+
+from [https://github.com/JaneBloggs/mycroft-skills.git](https://github.com/JaneBloggs/mycroft-skills.git)
 
 ```bash
 $ git clone https://github.com/JaneBloggs/mycroft-skills.git
@@ -105,9 +113,9 @@ total 128
 
 The `dialog` directory contains subdirectories for each spoken language the skill supports.  Each subdirectory has `.dialog` files which specify what Mycroft should say when a **Skill** is executed.
 
-The subdirectories are named using the [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language. For example, Brazilian Portugues is `pt-br`, German is `de`, and Australian English is `en-au`.
+The subdirectories are named using the [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language. For example, Brazilian Portugues is 'pt-br', German is 'de', and Australian English is 'en-au'.
 
-Here is an example where one language is supported. By default, the **Template Skill** contains one subdirectory for United States English - `en-us`. If more languages were supported, then there would be additional language directories.
+Here is an example where one language is supported. By default, the **Template Skill** contains one subdirectory for United States English - 'en-us'. If more languages were supported, then there would be additional language directories.
 
 ```bash
 $ ls -las -R
@@ -146,9 +154,13 @@ For example, how do you say 'goodbye' to someone?
 
 #### vocab directory and defining Intents
 
-Each **Skill** defines one or more **Intents**. Intents are defined in the `vocab` directory.The `vocab` directory is organized by language, just like the `dialog` directory.  
+Each **Skill** defines one or more **Intents**. Intents are defined in the 'vocab' directory. The 'vocab' directory is organized by language, just like the 'dialog' directory.  
 
-In this example, we can see that there are three **Intents**, each defined in `IntentKeyword.voc` **vocab** files:
+In this example, we can see that there are three **Intents**, each defined in
+
+'IntentKeyword.voc`
+
+**vocab** files:
 
 ```bash
 mycroft-skills/skill-hello-world/vocab/en-us$ ls -las
@@ -160,7 +172,11 @@ total 40
 8 -rw-rw-r-- 1 kathyreid kathyreid   17 Nov  9 00:11 ThankYouKeyword.voc
 ```
 
-Just like **dialog** files, **vocab** files can have multiple lines. Mycroft will match _any_ of these phrases with the **Intent**. If we have a look at the `ThankYouKeyword.voc` file, we can see this in action:
+Just like **dialog** files, **vocab** files can have multiple lines. Mycroft will match _any_ of these phrases with the **Intent**. If we have a look at the
+
+`ThankYouKeyword.voc`
+
+file, we can see this in action:
 
 ```bash
 $ cat ThankYouKeyword.voc
@@ -168,15 +184,27 @@ thank you
 thanks
 ```
 
-If the User speaks _either_ `thank you` or `thanks`, Mycroft will match this to the `ThankYou` **intent** in the **Skill**.
+If the User speaks _either_
+
+> thank you
+
+or
+
+> thanks
+
+Mycroft will match this to the
+
+`ThankYou`
+
+**intent** in the **Skill**.
 
 _NOTE: One of the most common mistakes when getting started with **Skills** is that the **vocab** file doesn't include all the phrases that the User might use to trigger the **intent**. _
 
 #### `__init__.py`
 
-`__init__.py` is where most of the **Skill** is defined, using Python code.
+`__init__.py`
 
-@TODO talk here about the Copyright notice
+is where most of the **Skill** is defined, using Python code.
 
 Let's take a look:
 
@@ -194,20 +222,27 @@ __author__ = 'eward'
 
 This section defines the _author_ of the **Skill**. This value is usually set to the GitHub username of the author.
 
-
 ```python
 LOGGER = getLogger(__name__)
 ```
 
 This section starts logging of the **Skill** in the `mycroft-skills.log` file. If you remove this line, your **Skill** will not log any errors, and you will have difficulty debugging.
 
-The `class` definition extends the `MycroftSkill` class:
+The
+
+`class`
+
+definition extends the
+
+`MycroftSkill`
+
+class:
 
 ```python
 class HelloWorldSkill(MycroftSkill):
 ```
 
-The class should be named logically, for example `TimeSkill`, `WeatherSkill`, `NewsSkill`, `IPaddressSkill`. If you would like guidance on what to call your **Skill**, please join the [~skills Channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
+The class should be named logically, for example "TimeSkill", "WeatherSkill", "NewsSkill", "IPaddressSkill". If you would like guidance on what to call your **Skill**, please join the [~skills Channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
 
 Inside the class, methods are then defined.
 
@@ -247,36 +282,67 @@ def initialize(self):
                              self.handle_hello_world_intent)
 ```
 
-The `initialize()` function defines each of the **Intents** of the **Skill**. Note that there are three **Intents** defined in `initialize()`, and there were three **Intents** defined in **vocab** files.
+The
+
+`initialize()`
+
+ function defines each of the **Intents** of the **Skill**. Note that there are three **Intents** defined in
+
+ `initialize()`
+
+ , and there were three **Intents** defined in **vocab** files.
 
 Next, there are methods that handle each of the **Intents**.
-@TODO are they called methods or functions in Python? IDK. It's a `class` so I'm guessing they're `class methods`?
 
 ```python
 def handle_hello_world_intent(self, message):
         self.speak_dialog("hello.world")
 ```
 
-In the `handle_hello_world_intent()` method above, the method receives two _parameters_, `self` and `message`. `self` is the reference to the object itself, and `message` is an incoming message from the `messagebus`. This method then calls the `speak_dialog()` method, passing to it the `hello.world` dialog. Remember, this is defined in the file `hello.world.dialog`. Can you guess what Mycroft will Speak?
+In the
 
-@TODO is this correct - is this what `message` is here? This was just totally an educated guess.
+`handle_hello_world_intent()`
 
-You will usually also have a `stop()` method. This method tells Mycroft what to do if a `stop` **intent** is detected.
+ method above, the method receives two _parameters_,
+
+ `self`
+
+ and
+
+ `message`
+
+ `self` is the reference to the object itself, and `message` is an incoming message from the `messagebus`. This method then calls the
+
+ `speak_dialog()`
+
+ method, passing to it the
+
+ `hello.world`
+
+ dialog. Remember, this is defined in the file "hello.world.dialog".
+
+ Can you guess what Mycroft will Speak?
+
+You will usually also have a
+
+`stop()`
+
+method. This method tells Mycroft what to do if a stop **intent** is detected.
 
 ```python
 def stop(self):
     pass
 ```
 
-In the above code block, the [`pass` statement](https://docs.python.org/2/reference/simple_stmts.html#the-pass-statement) is used as a placeholder; it doesn't actually have any function. However, if the **Skill** had any active functionality, the `stop()` method would terminate the functionality, leaving the *Skill** in a known good state.
+In the above code block, the [`pass` statement](https://docs.python.org/2/reference/simple_stmts.html#the-pass-statement) is used as a placeholder; it doesn't actually have any function. However, if the **Skill** had any active functionality, the stop() method would terminate the functionality, leaving the *Skill** in a known good state.
 
 ## Simplifying your Skill code with `intent_handler` _decorators_ (preferred)
 
-Your **Skill** code can be simpliied using the `intent_handler()` _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
+Your **Skill** code can be simpliied using the intent_handler() _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
 
 [Learn more about what _decorators_ are in Python at this link](https://en.wikipedia.org/wiki/Python_syntax_and_semantics#Decorators).
 
-The `intent_handler()` _decorator_ tags a method to be an intent handler for the intent, removing the need for separate registration.
+The intent_handler() _decorator_ tags a method to be an intent handler for the intent, removing the need for separate registration.
 
 ```python
     @intent_handler(IntentBuilder('IntentName').require('Keyword'))
@@ -309,7 +375,7 @@ class HelloWorldSkill(MycroftSkill):
         pass
 ```
 
-As seen above the entire `initialize()` method is removed and the **Intent** registration is moved to the the method declaration.
+As seen above the entire initialize() method is removed and the **Intent** registration is moved to the the method declaration.
 
 Ideally, you should use approach to **Intent** registration.
 

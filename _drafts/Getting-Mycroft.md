@@ -9,6 +9,13 @@ published: false
 ---
 # Getting Mycroft
 
+- [Getting Mycroft](#getting-mycroft)
+  * [Mark 1](#mark-1)
+  * [Picroft](#picroft)
+  * [Mycroft for Linux](#mycroft-for-linux)
+  * [Mycroft for Android](#mycroft-for-android)
+  * [Windows and Mac](#windows-and-mac)
+
 To get started, choose one of the platforms below
 
 ## Mark 1
@@ -21,7 +28,7 @@ If you have a Raspberry Pi 3 (older models aren't powerful enough to run Mycroft
 
 ## Mycroft for Linux
 
-If you have a popular Linux distro, like Ubuntu, Mint, Fedora or Arch, then you can [download Mycroft for your distro](https://github.com/MycroftAI/mycroft-core/blob/dev/README.md). There are multiple methods of installation, such as via a shell script, or via `apt-get`, so be sure to follow the documentation.
+If you have a popular Linux distro, like Ubuntu, Mint, Fedora or Arch, then you can [download Mycroft for your distro](https://github.com/MycroftAI/mycroft-core/blob/dev/README.md). There are multiple methods of installation, such as via a shell script, or via package, so be sure to follow the documentation.
 
 ## Mycroft for Android
 

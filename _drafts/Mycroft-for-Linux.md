@@ -25,6 +25,7 @@ published: false
     + [Using Mycroft behind an authenticated proxy](#using-mycroft-behind-an-authenticated-proxy)
       - [Keeping Mycroft for Linux updated](#keeping-mycroft-for-linux-updated)
     + [Common issues with Mycroft for Linux](#common-issues-with-mycroft-for-linux)
+      - [Removing and rebuilding your `virtualenv`](#removing-and-rebuilding-your-virtualenv)
 
 Mycroft is available for Linux, and can be installed via several methods.
 
@@ -69,7 +70,6 @@ The `dev_setup.sh` script identifies, installs and configures dependencies that 
 The script will also install and configure [virtualenv](https://virtualenv.pypa.io/en/stable/). `virtualenv` is a tool to create isolated Python environments. It is a way to isolate an application - in this case Mycroft - from other applications. It helps to better manage both dependencies and security.
 
 If you are running a Linux distribution other than Ubuntu, Debian, Arch or Fedora, you may need to manually install packages as instructed by `dev_setup.sh`.
-
 
 _NOTE: The default branch for this repository is 'dev', which should be considered a work-in-progress. If you want to clone a more stable version, switch over to the 'master' branch._
 
@@ -156,16 +156,16 @@ Stopping all mycroft-core services
 Once successfully installed, you will need to **pair** your Mycroft for Linux **Device** with your [home.mycroft.ai](https://home.mycroft.ai) account.
 
 Speak
-`hey mycroft, pair my device`
+> Hey Mycroft, pair my device
 
 Mycroft will Speak
-`I am connected to the internet and need to be paired. Your 6-digit **Registration Code** is XXXXXX`
+`"I am connected to the internet and need to be paired. Your 6-digit Registration Code is XXXXXX"`
 
 Use the **Registration Code** to pair your Mycroft for Linux **Device** with home.mycroft.ai.
 
-[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](/03.your-home.mycroft.ai-account/01.your-home.mycroft-account.md).
+[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](@TODO link to go in here once in WordPress).
 
-Once paired, you can then use [basic **skills**](../03.your-home.mycroft.ai-account/02.basic-commands.md).
+Once paired, you can then use [basic **skills**](@TODO link to go in here once in WordPress).
 
 ### Using Mycroft behind a proxy
 
@@ -201,4 +201,22 @@ $  export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,0.0.0.0,::
 
 ### Common issues with Mycroft for Linux
 
-@TODO link to Troubleshooting
+#### Removing and rebuilding your `virtualenv`
+
+If your CLI won't run, it is highly likely to be an issue with the Mycroft virtual environment. The easiest solution we've found has been to remove and reinstall the virtual environment.
+
+First, delete the existing virtual environment:
+
+```bash
+sudo rm -R ~/.virtualenvs/mycroft
+```
+
+Next, we run the setup script again:
+
+```bash
+mycroft-core$ ./dev_setup.sh
+```
+
+This will rebuild your
+
+`virtualenv`

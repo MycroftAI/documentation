@@ -11,6 +11,14 @@ published: false
 ---
 # Preparing your Skill for submission to the Mycroft Skills Repo
 
+- [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
+    + [Generate a README.md file for your **Skill**](#generate-a-readmemd-file-for-your-skill)
+    + [Add a Git submodule for your **Skill**](#add-a-git-submodule-for-your-skill)
+    + [Modify the Mycroft Skills Repo README.md file with your **Skill**](#modify-the-mycroft-skills-repo-readmemd-file-with-your-skill)
+    + [Submit a PR (Pull Request) in GitHub to have your **Skill** listed](#submit-a-pr-pull-request-in-github-to-have-your-skill-listed)
+    + [MSM Compliance](#msm-compliance)
+    + [What happens next?](#what-happens-next)
+
 It's important that you prepare your **Skill** for submission to the Mycroft Skills Repo so that:
 
 * Your **Skill** can easily be reviewed by the Skill Management Team
@@ -25,14 +33,22 @@ _NOTE: This following sections of documentation assume that you have set up a `r
 ### Add a Git submodule for your **Skill**
 Next we need to add the Submodule for your **Skill**. For more help on Submodules in GitHub, feel free to check out [this guide](https://github.com/blog/2104-working-with-submodules)
 
-Or, type the following in the terminal, assuming you are in the directory where you cloned `mycroft-skills`:
+Or, type the following in the terminal, assuming you are in the directory where you cloned
+
+`mycroft-skills`
 
 ```bash
 git submodule add $remote $name-your-skill
 ```
-where ``$remote` is the git address for your repo [example] (https://github.com/mycroftai/skill-configuration) and ``$name-your-skill` is the name you have given to your **Skill**. In general, we normally use BLANK-skill as a format for **Skill** names.
 
-This should have edited the ``.gitmodule` file and added something similar to the bottom of the file:
+where $remote is the git address for your repo [example] (https://github.com/mycroftai/skill-configuration) and $name-your-skill is the name you have given to your **Skill**. In general, we normally use BLANK-skill as a format for **Skill** names.
+
+This should have edited the
+
+`.gitmodule`
+
+file and added something similar to the bottom of the file:
+
 ```
 +[submodule "NAME OF YOUR SKILL"]
  +	path = name-of-your-skill-skill
@@ -86,7 +102,7 @@ There are two continuous integration (CI) tools that Mycroft uses, and these CI 
 * Codacy for test coverage
 * TravisCI for Python code linting
 
-The most common issue reported by the CI tools are [PEP8 code linting](https://pypi.python.org/pypi/pep8) failures. It's a good idea to run your Python code through a PEP8 checker before submitting your PR. 
+The most common issue reported by the CI tools are [PEP8 code linting](https://pypi.python.org/pypi/pep8) failures. It's a good idea to run your Python code through a PEP8 checker before submitting your PR.
 
 ### MSM Compliance
 To make your skill capable of being installed via MSM (the Mycroft Skill Manager) you need two additional files.

@@ -9,11 +9,22 @@ published: false
 ---
 # Audio Service
 
+- [Audio Service](#audio-service)
+  * [How to set up the Audio Service](#how-to-set-up-the-audio-service)
+  * [Starting playback](#starting-playback)
+  * [More technical information](#more-technical-information)
+  * [The backends](#the-backends)
+  * [PulseAudio features](#pulseaudio-features)
+
 The audio service handles playback and queueing of tracks. The `mycroft-core` distribution of Mycroft includes a _Playback Skill_ which can be used to control playback after it has been started. This means that playback only needs to be started in the **Skill**. Controlling playback can then be done through the _Playback Skill_.
 
 ## How to set up the Audio Service
 
-First, import the `AudioService` class.
+First, import the
+
+`AudioService`
+
+ class.
 
 ```python
 from mycroft.skills.audioservice import AudioService
@@ -46,7 +57,7 @@ or with a list of tracks
 
 The play method has an optional second argument to further process the user's **Utterance**. Currently this can only be used to select backend (where you want to send the audio) but in the future it will be able to handle requests like
 
-`Hey Mycroft, play Hello Nasty by the Beastie Boys at half volume. We don't want to wake the neighbours`
+ > Hey Mycroft, play Hello Nasty by the Beastie Boys at half volume. We don't want to wake the neighbours
 
 To use this feature the **Utterance** received from the intent service must be passed
 
@@ -68,8 +79,6 @@ Included in this release there's also
 - `chromecast` (experimental)
 
 These haven't been extensively tested on the Mark 1 yet.
-
-@TODO is this still the case?
 
 ## PulseAudio features
 
