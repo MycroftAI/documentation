@@ -4,8 +4,9 @@ post_title: Mycroft for Android
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32438
-published: false
+permalink: http://mycroft.ai/documentation/android/
+published: true
+post_date: 2017-12-02 02:56:02
 ---
 # Mycroft for Android
 
