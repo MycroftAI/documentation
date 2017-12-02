@@ -4,8 +4,10 @@ post_title: Conversational Context
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=33179
-published: false
+permalink: >
+  http://mycroft.ai/documentation/skills/conversational-context/
+published: true
+post_date: 2017-12-02 04:38:52
 ---
 # Conversational Context
 
