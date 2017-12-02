@@ -4,8 +4,10 @@ post_title: Skill Settings
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32919
-published: false
+permalink: >
+  http://mycroft.ai/documentation/skills/skill-settings/
+published: true
+post_date: 2017-12-02 04:10:14
 ---
 # Skill Settings
 
