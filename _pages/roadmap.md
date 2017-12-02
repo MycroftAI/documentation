@@ -4,8 +4,9 @@ post_title: Mycroft Roadmap
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32418
-published: false
+permalink: http://mycroft.ai/documentation/roadmap/
+published: true
+post_date: 2017-12-02 00:47:10
 ---
 # Mycroft roadmap
 
