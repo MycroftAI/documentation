@@ -1,13 +1,15 @@
 ---
 ID: 32424
-post_title: Getting Mycroft
+post_title: Download Mycroft
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32424
-published: false
+permalink: >
+  http://mycroft.ai/documentation/download/
+published: true
+post_date: 2017-12-02 01:25:59
 ---
-# Getting Mycroft
+# Download Mycroft
 
 To get started, choose one of the platforms below
 
