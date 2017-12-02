@@ -4,8 +4,10 @@ post_title: Introduction to developing Skills
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32444
-published: false
+permalink: >
+  http://mycroft.ai/documentation/skills/develop-skills/
+published: true
+post_date: 2017-12-02 03:42:20
 ---
 # Developing a new **Skill**
 
@@ -267,16 +269,16 @@ def __init__(self):
 
 ```python    
 def initialize(self):
-        thank_you_intent = IntentBuilder("ThankYouIntent"). \
+        thank_you_intent = IntentBuilder("ThankYouIntent"). 
             require("ThankYouKeyword").build()
         self.register_intent(thank_you_intent, self.handle_thank_you_intent)
 
-        how_are_you_intent = IntentBuilder("HowAreYouIntent"). \
+        how_are_you_intent = IntentBuilder("HowAreYouIntent"). 
             require("HowAreYouKeyword").build()
         self.register_intent(how_are_you_intent,
                              self.handle_how_are_you_intent)
 
-        hello_world_intent = IntentBuilder("HelloWorldIntent"). \
+        hello_world_intent = IntentBuilder("HelloWorldIntent"). 
             require("HelloWorldKeyword").build()
         self.register_intent(hello_world_intent,
                              self.handle_hello_world_intent)
@@ -361,12 +363,12 @@ class HelloWorldSkill(MycroftSkill):
     def handle_thank_you_intent(self, message):
         self.speak_dialog("welcome")
 
-    @intent_handler(IntentBuilder("HowAreYouIntent") \
+    @intent_handler(IntentBuilder("HowAreYouIntent") 
                     .require("HowAreYouKeyword"))
     def handle_how_are_you_intent(self, message):
         self.speak_dialog("how.are.you")
 
-    @intent_handler(IntentBuilder("HelloWorldIntent") \
+    @intent_handler(IntentBuilder("HelloWorldIntent") 
                     .require("HelloWorldKeyword"))
     def handle_hello_world_intent(self, message):
         self.speak_dialog("hello.world")
