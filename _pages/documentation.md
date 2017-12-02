@@ -4,8 +4,9 @@ post_title: Mycroft Documentation
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32458
-published: false
+permalink: http://mycroft.ai/documentation/
+published: true
+post_date: 2017-12-01 23:58:02
 ---
 # Documentation Home
 
