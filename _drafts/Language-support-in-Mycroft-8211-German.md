@@ -9,18 +9,18 @@ published: false
 ---
 # Language support in Mycroft - German - Deutsch
 
-- [Language support in Mycroft - German - français](#language-support-in-mycroft---German---francais)
-  * [Change the **Wake Word** to German](#change-the-wake-word-to-German)
-    + [Download and install the German dictionary](#download-and-install-the-German-dictionary)
+- [Language support in Mycroft - German - français](#language-support-in-mycroft---german---francais)
+  * [Change the **Wake Word** to German](#change-the-wake-word-to-german)
+    + [Download and install the German dictionary](#download-and-install-the-german-dictionary)
     + [Download and install acoustic model](#download-and-install-acoustic-model)
-    + [Download and install German language model](#download-and-install-German-language-model)
+    + [Download and install German language model](#download-and-install-german-language-model)
     + [Verify the installed files](#verify-the-installed-files)
     + [Install language in Mycroft directories](#install-language-in-mycroft-directories)
-    + [Choosing a German **Wake Word**](#choosing-a-German-wake-word)
-    + [Configure Mycroft to use German language and the chosen **Wake Word**](#configure-mycroft-to-use-German-language-and-the-chosen-wake-word)
-  * [Select and configure a Speech to Text (STT) engine with German support](#select-and-configure-a-speech-to-text-stt-engine-with-German-support)
-  * [Select and configure a Text to Speech (TTS) engine with German support](#select-and-configure-a-text-to-speech-tts-engine-with-German-support)
-  * [Configure Mycroft source code to handle German](#configure-mycroft-source-code-to-handle-German)
+    + [Choosing a German **Wake Word**](#choosing-a-german-wake-word)
+    + [Configure Mycroft to use German language and the chosen **Wake Word**](#configure-mycroft-to-use-german-language-and-the-chosen-wake-word)
+  * [Select and configure a Speech to Text (STT) engine with German support](#select-and-configure-a-speech-to-text-stt-engine-with-german-support)
+  * [Select and configure a Text to Speech (TTS) engine with German support](#select-and-configure-a-text-to-speech-tts-engine-with-german-support)
+  * [Configure Mycroft source code to handle German](#configure-mycroft-source-code-to-handle-german)
   * [Getting involved](#getting-involved)
 
 Guten tag. Sprechen sie Deutsch? Follow these steps to change Mycroft's language to German (BCP 47: `de`).
@@ -41,7 +41,7 @@ To change the **Wake Word** to German, we need to download the generic German di
 
 First, we create a directory for the `pocketsphinx` files:
 
-`mkdir -p /usr/local/share/pocketsphinx/model/de/de`
+`sudo mkdir -p /usr/local/share/pocketsphinx/model/de/de`
 
 ### Download and install the German dictionary
 
@@ -51,7 +51,7 @@ Next, we download the German dictionary_ [cmusphinx-voxforge-de.dic](https://sou
 
 Then, we install the dictionary into the directory we created.
 
-`cp cmusphinx-voxforge-de.dic /usr/local/share/pocketsphinx/model/de/de`
+`sudo mv cmusphinx-voxforge-de.dic /usr/local/share/pocketsphinx/model/de/de.dict`
 
 ### Download and install acoustic model
 
@@ -66,8 +66,8 @@ We then  unpack the gzipped file into a temporary directory.
 Then we copy it to the PocketSphinx directory
 
 ```bash
-cd cmusphinx-de-ptm-voxforge-5.2.tar.gz
-cp * /usr/local/share/pocketsphinx/model/de/de
+cd cmusphinx-de-ptm-voxforge-5.2
+sudo mv * /usr/local/share/pocketsphinx/model/de/de
 cd ..
 ```
 
@@ -79,11 +79,11 @@ Next, we download the _German language model_ [cmusphinx-voxforge-de.lm.gz](http
 
 We then  unpack the gzipped file into a temporary directory.
 
-`gzip -d cmusphinx-voxforge-de.lm.gz
+`gzip -d cmusphinx-voxforge-de.lm.gz`
 
 Then we move it to the PocketSphinx directory
 
-`mv de-small.lm /usr/local/share/pocketsphinx/model/de/de`
+`sudo mv cmusphinx-voxforge-de.lm /usr/local/share/pocketsphinx/model/de/de.lm`
 
 ### Verify the installed files
 
@@ -91,7 +91,7 @@ Check that the following files exist:
 
 * `/usr/local/share/pocketsphinx/model/de`
 * `/usr/local/share/pocketsphinx/model/de/de.dict`
-* `/usr/local/share/pocketsphinx/model/de/de-small.lm`
+* `/usr/local/share/pocketsphinx/model/de/de.lm`
 * `/usr/local/share/pocketsphinx/model/de/de`
 * `/usr/local/share/pocketsphinx/model/de/de/feat.params`
 * `/usr/local/share/pocketsphinx/model/de/de/mdef`
@@ -99,7 +99,7 @@ Check that the following files exist:
 * `/usr/local/share/pocketsphinx/model/de/de/mixture_weights`
 * `/usr/local/share/pocketsphinx/model/de/de/noisedict`
 * `/usr/local/share/pocketsphinx/model/de/de/README`
-* `/usr/local/share/pocketsphinx/model/es/es/sendump`
+* `/usr/local/share/pocketsphinx/model/de/de/sendump`
 * `/usr/local/share/pocketsphinx/model/de/de/transition_matrices`
 * `/usr/local/share/pocketsphinx/model/de/de/variances`
 
@@ -134,6 +134,7 @@ Create a new directory here for German, and then symlink it to the `pocketsphinx
 ```bash
 mkdir de
 ln -s /usr/local/share/pocketsphinx/model/de/de de/hmm
+cp /usr/local/share/pocketsphinx/model/de/de.lm de/de.lm
 cp /usr/local/share/pocketsphinx/model/de/de.dict de/de.dict
 ```
 _NOTE: The last `cp` command could be replaced by the `ln` command if you wish to save disk space. However, it is normal to add words to the `de.dict`, and copying means the original file is unchanged, and you are working with a copy._
@@ -149,13 +150,13 @@ You must have the following directories, files and symbolic links:
 
 Choose a **Wake Word** or Wake Phrase in German, and then verify that it is in the `cmusphinx-voxforge-de.dic` file of the language model. Experience shows that the best choice is a single word with three or more phonemes.
 
-For example, check  if the 'salutations' word exists:
+For example, check  if the 'hallo' word exists:
 
-`egrep '^salutations ' cmusphinx-voxforge-de.dic`
+`egrep '^hallo ' de.dict`
 
-`salutations ss aa ll uu tt aa ss yy on`
+`hallo HH AE L AX UU`
 
-If your chosen **Wake Word** or phrase is not in the `cmusphinx-voxforge-de.dic` file, either choose a different **Wake Word**, or edit the `cmusphinx-voxforge-de.dic` file to add it.
+If your chosen **Wake Word** or phrase is not in the `de.dict` file, either choose a different **Wake Word**, or edit the `de.dict` file to add it.
 
 ### Configure Mycroft to use German language and the chosen **Wake Word**
 
@@ -172,11 +173,11 @@ Edit the configuration file with following changes:
 
       "listener": {
 
-        "wake_word": "salutations",
-        "phonemes": "ss aa ll uu tt aa ss yy on",
+        "wake_word": "hallo",
+        "phonemes": "HH AE L AX UU",
         "threshold": 1e-10,
-        "standup_word": "salutations",
-        "standup_phonemes": "ss aa ll uu tt aa ss yy on",
+        "standup_word": "hallo",
+        "standup_phonemes": "HH AE L AX UU",
         "standup_threshold": 1e-10
       }
     }
@@ -184,7 +185,7 @@ Edit the configuration file with following changes:
 
 ## Select and configure a Speech to Text (STT) engine with German support
 
-If the Speech to Text engine you are using already supports German, you don't need to do anything.
+If the Speech to Text engine you are using already supports German, you don't need to do anything - this is the case with the default mycroft hosted engine for example.
 
 As an alternative, you can use PocketSphinx, running on your local machine. To use PocketSphinx as your STT engine, add the following to your `mycroft.conf` file:
 

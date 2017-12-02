@@ -4,8 +4,9 @@ post_title: Mycroft Documentation
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32458
-published: false
+permalink: http://mycroft.ai/documentation/
+published: true
+post_date: 2017-12-01 23:58:02
 ---
 # Documentation Home
 
@@ -196,4 +197,8 @@ Stuck? Learn common tricks and techniques for resolving common errors.
 
 ## Getting help and support
 
+<<<<<<< HEAD:_drafts/Mycroft-Documentation.md
 Need to chat things over with a human? No problem. You can join our [Chat](https://chat.mycroft.ai), [Forum](https://community.mycroft.ai) or [make contact via this web form](https://mycroft.ai/contact).
+=======
+TBA
+>>>>>>> bdb1ccc79459c2ab91bfce146b33223e95df0182:_pages/documentation.md

@@ -4,8 +4,9 @@ post_title: Mark 1
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32430
-published: false
+permalink: http://mycroft.ai/documentation/mark-1/
+published: true
+post_date: 2017-12-02 01:58:49
 ---
 # Mark 1
 

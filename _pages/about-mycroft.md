@@ -1,17 +1,143 @@
 ---
-ID: 28842
+ID: 32412
 post_title: About Mycroft
-author: senseid23@7h4r
+author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: https://mycroft.ai/about-mycroft/
+permalink: >
+  http://mycroft.ai/documentation/about-mycroft/
 published: true
-post_date: 2017-02-01 18:41:06
+post_date: 2017-12-02 00:23:33
 ---
-[vc_row type="full_width_background" full_screen_row_position="middle" equal_height="yes" content_placement="middle" scene_position="center" text_color="dark" text_align="left" enable_gradient="true" color_overlay="#4990e2" color_overlay_2="#80c3f3" gradient_direction="left_to_right" overlay_strength="1"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_custom_heading text="Who is Mycroft?" font_container="tag:h2|text_align:left|color:%23ffffff" use_theme_fonts="yes" css=".vc_custom_1494033732965{margin-top: 10% !important;}"][vc_custom_heading text="AI FOR EVERYONE" font_container="tag:h3|text_align:left|color:%23ffffff|line_height:1.33em" use_theme_fonts="yes" css=".vc_custom_1495186607933{margin-top: 50px !important;}"][vc_column_text css_animation="bottom-to-top" css=".vc_custom_1490912603269{padding-right: 30% !important;}"]<span style="color: #ffffff;">Mycroft is the world’s first open source voice assistant. It can run anywhere – on a desktop computer, inside an automobile, it even runs on a Raspberry Pi. It is open so it can be remixed, extended, improved. It can be used in anything from a science project to an enterprise software application.</span>[/vc_column_text][/vc_column][vc_column column_padding="padding-2-percent" column_padding_position="left-right" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][image_with_animation image_url="29592" alignment="center" animation="Fade In From Right" box_shadow="none" max_width="175%"][/vc_column][/vc_row][vc_row type="full_width_background" full_screen_row_position="middle" equal_height="yes" content_placement="middle" full_height="yes" scene_position="center" text_color="dark" text_align="left" id="what-can-you-do" overlay_strength="0.3"][vc_column column_padding="padding-5-percent" column_padding_position="left-right" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][divider line_type="No Line" custom_height="30"][nectar_video_lightbox link_style="play_button_2" nectar_play_button_color="Default-Accent-Color" image_url="28850" hover_effect="zoom_button" box_shadow="none" video_url="https://www.youtube.com/watch?v=g1G0yEKuED8"][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_custom_heading text="What Can Mycroft do?" font_container="tag:h2|text_align:left|color:%23058efb" use_theme_fonts="yes"][vc_column_text css_animation="bottom-to-top"]I can help you get stuff done, seamlessly, without looking for the right button to push. Just use your voice to tell me how I can assist you.
+# About Mycroft
 
-Mycroft is primarily software. What you see in the video is our reference device Mark 1.[/vc_column_text][nectar_btn size="large" button_style="regular" button_color_2="Accent-Color" icon_family="default_arrow" text="MORE ABOUT MARK 1" css_animation="zoomIn" margin_top="20" url="https://mycroft.ai/mark1"][/vc_column][/vc_row][vc_row type="full_width_background" full_screen_row_position="middle" equal_height="yes" content_placement="middle" full_height="yes" scene_position="center" text_color="dark" text_align="left" enable_gradient="true" color_overlay="#4990e2" color_overlay_2="#80c3f3" gradient_direction="left_to_right" overlay_strength="1"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_custom_heading text="And in 3 years?" font_container="tag:h2|text_align:left|color:%23ffffff" use_theme_fonts="yes" css=".vc_custom_1494104637785{margin-top: 10% !important;}"][vc_column_text css_animation="bottom-to-top" css=".vc_custom_1492183903675{padding-right: 30% !important;}"]<span style="color: #ffffff;">Thanks to my multi-platform nature, there’s no limit to where I can be integrated.</span>
-<span style="color: #ffffff;">We see a future where our open-source Mycroft is ubiquitous, and assists you whenever and wherever you ask him to, seamlessly.</span>[/vc_column_text][nectar_btn size="large" open_new_tab="true" button_style="regular" button_color_2="Accent-Color" icon_family="default_arrow" text="EARLY INTEGRATIONS" css_animation="zoomIn" margin_top="20" url="https://github.com/MycroftAI/mycroft-skills"][/vc_column][vc_column column_padding="padding-5-percent" column_padding_position="left-right" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][divider line_type="No Line" custom_height="30"][nectar_video_lightbox link_style="play_button_2" nectar_play_button_color="Default-Accent-Color" image_url="28850" hover_effect="zoom_button" box_shadow="none" video_url="https://www.youtube.com/watch?v=NS3EASr1yfE"][/vc_column][/vc_row][vc_row type="full_width_background" full_screen_row_position="middle" equal_height="yes" content_placement="middle" bg_color="#ffffff" scene_position="center" text_color="dark" text_align="left" top_padding="5%" bottom_padding="5%" id="steps" row_name="Sign Up Steps" overlay_strength="0.3"][vc_column column_padding="padding-3-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][nectar_icon_list animate="true" color="Accent-Color" icon_size="large" icon_style="no-border"][nectar_icon_list_item icon_type="icon" title="List Item" id="1485457205085-00638-1280" header="Know-it-all" text="I can answer all kinds of factual questions. Like, “Hey Mycroft, what is Codex Seraphinianus?”." tab_id="1491833142422-6" icon_fontawesome="fa fa-globe"] [/nectar_icon_list_item][nectar_icon_list_item icon_type="icon" title="List Item" id="1491833291326-0-5" header="Practical Assistant" text="Classics – I can tell you the date, time, weather, set alarms, or play the news." tab_id="1491833142422-6" icon_fontawesome="fa fa-hand-peace-o"] [/nectar_icon_list_item][nectar_icon_list_item icon_type="icon" title="List Item" id="1491834988278-0-10" header="Media" text="Rock’n’roll! I love to play music, radio, podcasts, or movies and videos on your nearby display." tab_id="1491833142422-6" icon_fontawesome="fa fa-play-circle-o"] [/nectar_icon_list_item][nectar_icon_list_item icon_type="icon" title="List Item" id="1491835594088-0-10" header="Home Control" text="If you have wifi connected appliances, I can talk to them on your behalf." tab_id="1491833142422-6" icon_fontawesome="fa fa-coffee"] [/nectar_icon_list_item][/nectar_icon_list][/vc_column][vc_column column_padding="padding-3-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][vc_custom_heading text="Is that it?" font_container="tag:h2|text_align:left|color:%23058efb" use_theme_fonts="yes"][divider line_type="No Line" custom_height="20"][vc_column_text css_animation="bottom-to-top"]No way. The number of things I can do is growing exponentially. If I posted them here, the list would feel like a fossil by the time you’d read it.
+Welcome to Mycroft.
 
-My creators are constantly working on new skills, and assuring the quality of existing ones. Not to mention our developer community, which is beginning to outpace them in new skills creation. They are my dearest![/vc_column_text][nectar_btn size="large" open_new_tab="true" button_style="regular" button_color_2="Accent-Color" icon_family="default_arrow" text="SEE ALL SKILLS" css_animation="zoomIn" margin_top="20" url="https://github.com/MycroftAI/mycroft-skills"][/vc_column][/vc_row][vc_row type="full_width_background" full_screen_row_position="middle" equal_height="yes" content_placement="middle" scene_position="center" text_color="dark" text_align="left" enable_gradient="true" color_overlay="#4990e2" color_overlay_2="#80c3f3" gradient_direction="left_to_right" overlay_strength="1"][vc_column column_padding="padding-2-percent" column_padding_position="left-right" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="2/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][image_with_animation image_url="29592" alignment="center" animation="Fade In From Right" box_shadow="none" max_width="150%"][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_custom_heading text="Why open source?" font_container="tag:h2|text_align:left|color:%23ffffff" use_theme_fonts="yes" css=".vc_custom_1494104609661{margin-top: 10% !important;}"][vc_column_text css_animation="bottom-to-top" css=".vc_custom_1491835815250{padding-right: 30% !important;}"]<span style="color: #ffffff;">We believe the future of AI should be open, not a cryptic black box only few understand and have control over.
-Building this new technology together, collaborating, sharing ideas and building on top of each other – that’s how we see it.</span>[/vc_column_text][nectar_btn size="large" open_new_tab="true" button_style="regular" button_color_2="Accent-Color" icon_family="default_arrow" text="VISIT GITHUB REPOS" css_animation="zoomIn" margin_top="20" url="https://github.com/MycroftAI"][divider line_type="No Line" custom_height="5"][nectar_btn size="large" button_style="regular" button_color_2="Accent-Color" icon_family="default_arrow" text="MEET THE TEAM" css_animation="zoomIn" margin_top="20" url="https://mycroft.ai/team"][/vc_column][/vc_row]
+## What is Mycroft?
+
+Mycroft is the name of a suite of software and hardware tools that use [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing) and [machine learning](https://en.wikipedia.org/wiki/Machine_learning) to provide an open source voice assistant.
+
+As of late 2017, Mycroft is undergoing heavy development. It is at a level of maturity where developers and hardware hobbyists will be able to use it effectively. However, it is not yet ready for mainstream adoption.
+
+[This video provides a quick overview](https://youtu.be/m4L0QfzUeEI) of our vision for Mycroft.
+
+## Mycroft components
+
+Mycroft is modular. Some components can be easily 'swapped out' for others:
+
+* Wake Word detection
+* Speech to Text (STT)
+* Intent parser
+
+### Wake Word detection
+
+A Wake Word is a phrase you use to tell Mycroft you're about to issue a command. By default this is `Hey Mycroft`, but you can configure your own **Wake Word** in your [Mycroft Home](https://home.mycroft.ai) account.
+
+There are two technologies that Mycroft.AI currently uses for **Wake Word** detection:
+
+* [PocketSphinx](https://github.com/cmusphinx/pocketsphinx_): PocketSphinx is part of the broader [CMUSphinx package](https://cmusphinx.github.io/), developed by [Carnegie Mellon University](https://www.cmu.edu). PocketSphinx is a lightweight speech recognition engine, specifically tuned for handheld and mobile devices. PocketSphinx is currently the default **Wake Word** detection tool on all Mycroft platforms.
+
+Because PocketSphinx is trained on English speech, your **Wake Word** currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well. 
+
+* Precise: Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what *words* you want to use for your **Wake Word**. Instead, you train it on *sounds*. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise is currently being developed and tested internally at Mycroft, and is not yet ready for Community Developers to work with.
+@TODO: Put link in here to the Precise documentation
+
+### Speech to Text (STT)
+
+Speech to Text (STT) software is used to take spoken words, and turn them into text phrases that can then be acted on.
+
+Mycroft currently uses external Speech to Text software. However, we are aiming to build our own open Speech to Text solution, [OpenSTT](https://openstt.org/), by partnering with other organizations and their projects, such as [Mozilla Voice](https://voice.mozilla.org/).
+
+* [Google STT](https://cloud.google.com/speech/): Google STT is the default STT engine used with Mycroft. In [home.mycroft.ai](https://home.mycroft.ai), you are able to change this default.
+
+Mycroft also supports these other STT engines:
+
+* [IBM Watson Speech to Text](https://www.ibm.com/watson/services/speech-to-text/) (username and password required)
+* [wit.ai Speech to Text](https://wit.ai/blog/2014/02/12/speech-api) (wit.ai API key required)
+
+### Intent parser
+
+An **intent parser** is software which identifies what the user's _intent_ is based on their speech. An **intent parser** usually takes the output of a Speech to Text (STT) engine as an input.
+
+For example, Julie Speaks the following to Mycroft:
+`Hey Mycroft, tell me about the weather`
+
+Julie's *intent* is to find out about the weather (probably in her current location).
+
+An **intent parser** can then match the *intent* with a suitable **Skill** to handle the *intent*.
+
+* [Adapt intent parser](https://github.com/MycroftAI/adapt): Adapt is the default intent parser for all Mycroft platforms. Adapt was developed by Mycroft and is available under an open source license.
+
+* [Padatious](https://github.com/MycroftAI/padatious): Padatious is a neural network based intent parser. Padatious is currently under active development by Mycroft and is available under an open source license. It is likely that some Mycroft platforms will switch to using Padatious in the future instead of Adapt.
+
+### Text to Speech
+
+Text to Speech (TTS) software takes written text, such as as in text files on a computer, and uses a *voice* to *speak* the text. Text to Speech can have different voices, dependenting on the TTS engine used.
+
+* [Mimic](https://github.com/MycroftAI/mimic): Mycroft's default text to speech (TTS) engine, based on CMU's Flite (Festival Lite)
+
+In your home.mycroft.ai account, you can select several other TTS engines if you don't wish to use Mimic.
+
+* [eSpeak](http://espeak.sourceforge.net/): you need to choose which [voice](http://espeak.sourceforge.net/voices.html) to use
+* [MaryTTS](http://mary.dfki.de/): you need to choose which voice to use
+* [Google TTS](https://play.google.com/store/apps/details?id=c): you need to choose which voice to use
+* FATTS: you need to choose which voice to use
+
+### Middleware
+
+The Mycroft middleware has two components:
+
+* [Mycroft Core](https://github.com/MycroftAI/mycroft-core): this code, written in Python, is the core software that provides the 'glue' between other modules. Mycroft Core is available under an open source license.
+
+* [Mycroft Home and Mycroft API](https://home.mycroft.ai): this is the platform where data on **Users** and **Devices** is held. This platform provides abstraction services, such as storing API keys that are used to access third-party services to provide **Skill** functionality. The code for this platform is not publicly available.
+
+### Mycroft Skills
+
+[Mycroft Skills](https://github.com/MycroftAI/mycroft-skills) are like 'add-ons' or 'plugins' that provide additional functionality. **Skills** can be developed by Mycroft Developers, or by Community Developers, and vary in their functionality and maturity.
+
+[Mycroft Skills Management (msm)](https://github.com/MycroftAI/msm) is a set of helper scripts that assist in the installation and management of **Skills**.
+
+### Devices and Enclosures
+
+Mycroft is designed to run on many different platforms - called **Devices**, with different hardware, called **Enclosures**.
+
+* **Mark 1** - a software image of Mycroft designed to be installed on the Mycroft Mark 1 - a reference hardware device
+* **Picroft** - a software image of Mycroft designed to be installed on Raspberry Pi 3
+* **Android** - a software image of Mycroft designed to be installed on Android devices
+
+## Choosing to use Mycroft
+
+### Why would you choose to use Mycroft over alternatives such as Amazon™ Alexa™, Google Assistant™, Microsoft Cortana™ or Apple's Siri™?
+
+Great question!
+
+While alternative tools are readily available, and easy to use, they come with some pretty big downsides.
+
+#### Open source
+
+Mycroft is open source. This means that the code used by Mycroft can be inspected, copied, modified, and contributed back to the Mycroft community for everyone to enjoy.
+
+Tools like Amazon™ Alexa™, Google Assistant™, Microsoft Cortana™ or Apple's Siri™ are _black boxes_. That is, you can't look inside them, and see what they do - or importantly - _how_ they do it. And while they may allow you some flexibility to create new **Skills**, these are usually strictly controlled. Mycroft gives you freedom, flexibility and control over how your want _your_ voice assistant to work. Mycroft is AI for _everyone_.
+
+Mycroft code is licensed under the [Apache 2 open source license](https://en.wikipedia.org/wiki/Apache_License).
+
+#### Respecting your privacy
+
+Mycroft uses _opt-in privacy_. This means we will only record what you say to Mycroft with your explicit permission. Don't want us to record your voice? No problem! If you'd like us to help Mycroft become more accurate, you can opt in to have your voice anonymously recorded.
+
+You're welcome to view our [privacy policy](https://home.mycroft.ai/#/privacy-policy)
+
+#### More hardware, more choices
+
+Mycroft runs on a wide range of software platforms and hardware - meaning that you can run Mycroft on the **Devices** _you_ want. Try Mycroft on a Raspberry Pi, on an Android device - or on your Linux desktop.
+
+#### Lightweight
+
+Mycroft is lightweight, and will run on low-powered hardware, such as the Raspberry Pi 3. So if you're a Hacker, Maker or Hobbyist, it's the perfect platform for low cost experimentation.
+
+#### Community
+
+Mycroft has a vibrant, engaged and helpful community. You can interact with the community via:
+
+* Chat - [https://chat.mycroft.ai](https://chat.mycroft.ai)
+* Forum - [https://community.mycroft.ai](https://community.mycroft.ai)
