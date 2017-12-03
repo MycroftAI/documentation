@@ -4,8 +4,9 @@ post_title: Precise
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32976
-published: false
+permalink: http://mycroft.ai/documentation/precise/
+published: true
+post_date: 2017-12-03 05:40:08
 ---
 # Precise
 
