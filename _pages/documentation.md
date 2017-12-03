@@ -6,7 +6,7 @@ post_excerpt: ""
 layout: page
 permalink: http://mycroft.ai/documentation/
 published: true
-post_date: 2017-12-01 23:58:02
+post_date: 2017-12-02 22:35:25
 ---
 # Documentation Home
 
