@@ -4,8 +4,10 @@ post_title: Common issues in Skills development
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32446
-published: false
+permalink: >
+  http://mycroft.ai/documentation/skills/common-issues-in-skills-development/
+published: true
+post_date: 2017-12-03 06:24:16
 ---
 # Common issues in **Skills** development
 
