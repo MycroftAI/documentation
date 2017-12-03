@@ -1,11 +1,13 @@
 ---
 ID: 33366
-post_title: 'Language support in Mycroft &#8211; Spanish'
+post_title: Language support in Mycroft – Spanish
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=33366
-published: false
+permalink: >
+  http://mycroft.ai/documentation/language-support/spanish/
+published: true
+post_date: 2017-12-03 04:47:11
 ---
 # Language support in Mycroft - Spanish - Español
 
