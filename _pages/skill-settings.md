@@ -17,7 +17,7 @@ post_date: 2017-12-02 22:35:25
     + [Modify the Mycroft Skills Repo README.md file with your **Skill**](#modify-the-mycroft-skills-repo-readmemd-file-with-your-skill)
     + [Submit a PR (Pull Request) in GitHub to have your **Skill** listed](#submit-a-pr-pull-request-in-github-to-have-your-skill-listed)
     + [MSM Compliance](#msm-compliance)
-    + [What happens next?](#what-happens-next)kathyreid@kathyreid-N76VZ:~/Dropbofts/Skill-Settings.md
+    + [What happens next?](#what-happens-next)
 - [Skill Settings](#skill-settings)
   * [How do I use Skill Settings?](#how-do-i-use-skill-settings)
     + [More information on Skill Settings](#more-information-on-skill-settings)
