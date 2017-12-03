@@ -4,8 +4,10 @@ post_title: Audio Service
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=33177
-published: false
+permalink: >
+  http://mycroft.ai/documentation/skills/audio-service/
+published: true
+post_date: 2017-12-03 01:42:34
 ---
 # Audio Service
 
