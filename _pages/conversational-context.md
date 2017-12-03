@@ -5,7 +5,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/conversational-context/
+  http://mycroft.ai/documentation/skills/conversational-context/
 published: true
 post_date: 2017-12-02 22:35:25
 ---
