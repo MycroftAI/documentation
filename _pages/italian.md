@@ -1,11 +1,13 @@
 ---
 ID: 33227
-post_title: 'Language support in Mycroft &#8211; Italian'
+post_title: Language support in Mycroft – Italian
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=33227
-published: false
+permalink: >
+  http://mycroft.ai/documentation/language-support/italian/
+published: true
+post_date: 2017-12-03 04:20:09
 ---
 # Language support in Mycroft - Italian - italiano
 
