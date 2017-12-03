@@ -4,8 +4,9 @@ post_title: Mimic
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=33029
-published: false
+permalink: http://mycroft.ai/documentation/mimic/
+published: true
+post_date: 2017-12-03 05:31:14
 ---
 # Mimic
 
