@@ -4,10 +4,9 @@ post_title: Mycroft Glossary
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: >
-  http://mycroft.ai/documentation/glossary/
+permalink: http://mycroft.ai/glossary/
 published: true
-post_date: 2017-12-02 01:01:08
+post_date: 2017-12-02 22:35:25
 ---
 # Mycroft Glossary
 
