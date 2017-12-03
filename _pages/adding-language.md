@@ -4,8 +4,10 @@ post_title: Adding a new language to Mycroft
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32452
-published: false
+permalink: >
+  http://mycroft.ai/documentation/language-support/adding-language/
+published: true
+post_date: 2017-12-03 06:53:37
 ---
 # Adding a new language to Mycroft
 
