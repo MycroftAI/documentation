@@ -7,7 +7,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/preparing-your-skill-for-submission-to-the-mycroft-skills-repo/
+  http://mycroft.ai/documentation/skill-submission/
 published: true
 post_date: 2017-12-02 22:35:25
 ---
