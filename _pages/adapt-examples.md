@@ -4,8 +4,10 @@ post_title: Adapt Examples
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=33171
-published: false
+permalink: >
+  http://mycroft.ai/documentation/adapt/adapt-examples/
+published: true
+post_date: 2017-12-03 05:17:36
 ---
 # Adapt Examples
 
