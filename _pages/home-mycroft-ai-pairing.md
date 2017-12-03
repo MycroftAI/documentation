@@ -7,7 +7,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/your-home-mycroft-ai-account-and-pairing-your-devices/
+  http://mycroft.ai/documentation/home-mycroft-ai-pairing/
 published: true
 post_date: 2017-12-02 22:35:25
 ---
