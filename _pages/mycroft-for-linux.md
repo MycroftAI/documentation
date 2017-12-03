@@ -4,9 +4,9 @@ post_title: Mycroft for Linux
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/documentation/linux/
+permalink: http://mycroft.ai/mycroft-for-linux/
 published: true
-post_date: 2017-12-02 02:48:59
+post_date: 2017-12-02 22:35:25
 ---
 # Mycroft for Linux
 
