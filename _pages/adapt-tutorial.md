@@ -4,8 +4,10 @@ post_title: Adapt Tutorial
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=33102
-published: false
+permalink: >
+  http://mycroft.ai/documentation/adapt/adapt-tutorial/
+published: true
+post_date: 2017-12-03 05:21:08
 ---
 # Adapt Tutorial
 
@@ -98,10 +100,10 @@ for loc in locations:
 Next, we construct an `intent parser`. The `intent parser` is named `WeatherIntent` and requires both a `WeatherKeyword` and `Location`, and can optionally include a `WeatherType`.
 
 ```python
-weather_intent = IntentBuilder("WeatherIntent")\
-    .require("WeatherKeyword")\
-    .optionally("WeatherType")\
-    .require("Location")\
+weather_intent = IntentBuilder("WeatherIntent")
+    .require("WeatherKeyword")
+    .optionally("WeatherType")
+    .require("Location")
     .build()
 ```
 Next, we register the `intent parser` with the `engine`.
