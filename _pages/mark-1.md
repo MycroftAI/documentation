@@ -49,7 +49,7 @@ This section of documentation assumes the following:
 
 ### Getting Started
 
-When you received your Mark 1, you would have received a [blue-colored Getting Started guide (PDF, 290Kb)]().
+When you received your Mark 1, you would have received a [blue-colored Getting Started guide (PDF, 290Kb)](https://mycroft.ai/wp-content/uploads/2017/06/Mark_1_User_Guide.pdf).
 
 Connect the Mark 1 power supply to a power outlet, and to the Mark 1 device. _NOTE: If you are in a country other than the USA, you will need a power adapter to convert from the US power supply the Mark 1 ships with. Alternatively, use a 12V, 1A power supply for your country's power outlets._
 
