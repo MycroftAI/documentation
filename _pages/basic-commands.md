@@ -7,7 +7,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/basic-commands-to-get-started-with-mycroft/
+  http://mycroft.ai/documentation/basic-commands/
 published: true
 post_date: 2017-12-02 22:35:25
 ---
