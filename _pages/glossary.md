@@ -11,6 +11,8 @@ post_date: 2017-12-02 22:35:25
 ---
 # Mycroft Glossary
 
+Use our Glossary to learn more about the specialist terms that we use in natural language processing generally, and more specifically with Mycroft software and hardware.
+
 * **Device** - the platform you have Mycroft installed on. This might be using an **Enclosure**, like the Mark 1, or on a Raspberry Pi, or it might be on a Linux desktop. Each **Device**  needs to be **Paired** with your Mycroft Home account before it can be used.
 
 * **Enclosure** - a hardware implmentation of Mycroft. Examples include the Mark 1 and Picroft.
@@ -30,3 +32,5 @@ post_date: 2017-12-02 22:35:25
 * **Utterance** - an Utterance is how you interact with Mycroft. An **Utterance** is a command or question -  like "What's the weather like in Kansas City?" or "Tell me about the Pembroke Welsh Corgi".
 
 * **Wake Word** - the Wake Word is the phrase you use to tell Mycroft you're about to issue a command. You can configure your own **Wake Word** in your [Mycroft Home](https://home.mycroft.ai) account.
+
+Are we missing a word? Let us know below.
