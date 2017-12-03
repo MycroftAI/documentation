@@ -4,8 +4,10 @@ post_title: Display control
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32432
-published: false
+permalink: >
+  http://mycroft.ai/documentation/skills/display-control/
+published: true
+post_date: 2017-12-03 02:07:53
 ---
 # Enclosure display control
 
