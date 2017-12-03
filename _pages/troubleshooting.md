@@ -4,8 +4,10 @@ post_title: Troubleshooting and known errors
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32456
-published: false
+permalink: >
+  http://mycroft.ai/documentation/troubleshooting/
+published: true
+post_date: 2017-12-03 05:58:48
 ---
 # Troubleshooting and known errors
 
