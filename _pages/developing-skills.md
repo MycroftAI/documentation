@@ -4,8 +4,10 @@ post_title: Developing Skills for Mycroft
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32442
-published: false
+permalink: >
+  http://mycroft.ai/documentation/skills/developing-skills/
+published: true
+post_date: 2017-12-03 06:39:38
 ---
 # Developing Skills for Mycroft
 
