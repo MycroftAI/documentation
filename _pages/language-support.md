@@ -11,6 +11,21 @@ post_date: 2017-12-03 02:32:01
 ---
 # Language support for Mycroft
 
+- [Language support for Mycroft](#language-support-for-mycroft)
+  * [In English](#in-english)
+  * [en français](#en-francais)
+  * [auf Deutsch](#auf-deutsch)
+  * [in italiano](#in-italiano)
+  * [em portugues](#em-portugues)
+    + [funcionários da Mycroft que falam portugues](#funcionarios-da-mycroft-que-falam-portugues)
+  * [en español](#en-espanol)
+  * [dalam Bahasa Indonesia](#dalam-bahasa-indonesia)
+    + [Petugas Mycroft yang bisa berbahasa Indonesia](#petugas-mycroft-yang-bisa-berbahasa-indonesia)
+  * [Türkçe olarak](#turkce-olarak)
+  * [用中文（表達)](#%E7%94%A8%E4%B8%AD%E6%96%87%E8%A1%A8%E9%81%94)
+  * [在日語](#%E5%9C%A8%E6%97%A5%E8%AA%9E)
+  * [한국](#%ED%95%9C%EA%B5%AD)
+
 ## In English
 
 Currently, Mycroft supports only English (en-US). Over time, we aim to support additional languages.
