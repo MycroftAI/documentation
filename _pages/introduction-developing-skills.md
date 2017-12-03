@@ -5,7 +5,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/introduction-to-developing-skills/
+  http://mycroft.ai/introduction-developing-skills/
 published: true
 post_date: 2017-12-02 22:35:25
 ---
