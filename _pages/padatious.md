@@ -4,8 +4,10 @@ post_title: Padatious
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=32454
-published: false
+permalink: >
+  http://mycroft.ai/documentation/padatious/
+published: true
+post_date: 2017-12-03 05:48:00
 ---
 # Padatious
 
