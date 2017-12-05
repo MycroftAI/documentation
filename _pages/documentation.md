@@ -48,9 +48,7 @@ Our documentation, just like our source code, is open source, [and you can contr
   * [Mimic](#mimic)
   * [Precise](#precise)
   * [Padatious](#padatious)
-  * [FAQ](#faq)
   * [Troubleshooting and known errors](#troubleshooting-and-known-errors)
-    + [Known errors and workarounds](#known-errors-and-workarounds)
   * [Getting help and support](#getting-help-and-support)
 
 ## [About Mycroft](http://mycroft.ai/documentation/mycroft-software-hardware/)
