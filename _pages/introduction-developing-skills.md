@@ -5,7 +5,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/documentation/introduction-developing-skills/
+  http://mycroft.ai/documentation/skills/introduction-developing-skills/
 published: true
 post_date: 2017-12-02 22:35:25
 ---
@@ -33,7 +33,7 @@ It's a good idea to get prepared before writing your new **Skill**, as this will
 * **Naming your Skill** - Choose a name for your **Skill** before creating a new repository. It's a good idea to check the [Mycroft Skills Repo](https://github.com/MycroftAI/mycroft-skills) so that you don't create a duplicate name.
 * **Set up your environment** - Most people will find it easiest to test new **Skills** by setting up [Mycroft for Linux](Mycroft-for-Linux.md). `cd` into the directory where you have `mycroft-core` installed and type `/start_mycroft.sh debug`. This should open a command line interface (CLI) like that shown below:
 
-![Starting mycroft-core in debug mode for Skills testing](../img/mycroft-core-start-debug.png "Starting mycroft-core in debug mode for Skills testing")
+![Starting mycroft-core in debug mode for Skills testing](https://mycroft.ai/wp-content/uploads/2017/12/mycroft-core-start-debug.png "Starting mycroft-core in debug mode for Skills testing")
 
 * **Understand the flow of your Skill** - It's a good idea to write down on paper how your **Skill** will work, including
   * What words will the User speak to activate the **Skill**?
@@ -57,7 +57,7 @@ In GitHub, `fork` the [Mycroft Skills repo](https://github.com/MycroftAI/mycroft
 
 Do this by clicking the 'Fork' button.
 
-![Forking the Mycroft Skills Repo](../img/skills-forking-mycroft-skills-repo.png "Forking the Mycroft Skills Repo")
+![Forking the Mycroft Skills Repo](https://mycroft.ai/wp-content/uploads/2017/12/skills-forking-mycroft-skills-repo.png "Forking the Mycroft Skills Repo")
 
 Then,
 
