@@ -72,7 +72,7 @@ Below is information on specific hardware that has been tested with Picroft. If 
 ##### Working Microphones
 
 * **Blue Snoball/Snoball Ice** - Works very well
-* **CM108 Based Mics** - The CM108 chip drives many low-priced microphones in various form-factors (if you run 'lsusb' you'll see them as _C-Media Electronics, Inc. CM108 Audio Controller_.  All work, but some are better than others for Picroft purposes.
+* **CM108 Based Mics** - The CM108 chip drives many low-priced microphones in various form-factors (if you run `lsusb` you'll see them as _C-Media Electronics, Inc. CM108 Audio Controller_.  All work, but some are better than others for Picroft purposes.
    * eBerry Plug and Play Home Studio - decent experience, fair range
    * Kinobo Makio - functional, but only works at close range
 * **[Jabra Speak410 USB Speakerphone](http://amzn.to/2kriCvh)** - Microphone and Speaker in the same device. Microphone range is good and speaker sound is loud and crisp.
