@@ -151,7 +151,7 @@ If you are SSH'd into the Mark 1 device, you are able to issue commands using th
 
 You will now be able to type **Utterances** into the CLI.
 
-![Issuing commands to Mark 1 from the command line](../img/mark1-utterances-from-command-line.png "Issuing commands to Mark 1 from the command line")
+![Issuing commands to Mark 1 from the command line](https://mycroft.ai/wp-content/uploads/2017/12/mark1-utterances-from-command-line.png "Issuing commands to Mark 1 from the command line")
 
 #### Enabling the LEARN function
 
