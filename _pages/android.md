@@ -47,7 +47,7 @@ Checking connectivity... done.
 
 From Android Studio, choose `File -> Open file or Project` and select the directory you cloned `Mycroft-Android` into. Android Studio will attempt to load the project, and build the project using [Gradle](https://gradle.org/). You may be prompted to install additional components.
 
-![Android Studio with Mycroft-Android loaded](../img/android-studio-with-mycroft-for-android-loaded.png "Android Studio with Mycroft-Android loaded")
+![Android Studio with Mycroft-Android loaded](https://mycroft.ai/wp-content/uploads/2017/12/android-studio-with-mycroft-for-android-loaded.png "Android Studio with Mycroft-Android loaded")
 
 ### Connecting to a `mycroft-core` instance
 

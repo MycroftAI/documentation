@@ -100,4 +100,4 @@ For example:
 
 ## More information on Skills
 
-For more information on Skills, please see the [Skills section](@TODO link to Skill)
+For more information on Skills, please see the [Skills section](http://mycroft.ai/documentation/skills/)

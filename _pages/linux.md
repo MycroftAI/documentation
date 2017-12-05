@@ -55,7 +55,7 @@ There are multiple ways to install Mycroft for Linux.
 
 #### Installing via git clone
 
-The simplest way to install Mycroft for Linux is to clone the `mycroft-core` repo to your system and run a shell script, which will install all dependencies, and [Mycroft components](../01.about-mycroft/01.about-mycroft.md).
+The simplest way to install Mycroft for Linux is to clone the `mycroft-core` repo to your system and run a shell script, which will install all dependencies, and [Mycroft components](http://mycroft.ai/documentation/mycroft-software-hardware/).
 
 The instructions below will install Mycroft in your HOME directory.
 
@@ -76,7 +76,7 @@ _NOTE: The default branch for this repository is 'dev', which should be consider
 
 You can do this by choosing the `master` branch in GitHub instead of the default `dev` branch as shown below.
 
-![Changing from the default dev branch to master on mycroft-core](../img/mycroft-core-switching-dev-master.png "Changing from the default dev branch to master on mycroft-core")
+![Changing from the default dev branch to master on mycroft-core](https://mycroft.ai/wp-content/uploads/2017/12/mycroft-core-switching-dev-master.png "Changing from the default dev branch to master on mycroft-core")
 
 #### Other installation options
 
@@ -164,9 +164,9 @@ Mycroft will Speak
 
 Use the **Registration Code** to pair your Mycroft for Linux **Device** with home.mycroft.ai.
 
-[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](@TODO link to go in here once in WordPress).
+[View the home.mycroft.ai documentation to learn how to add your Device to home.mycroft.ai](http://mycroft.ai/documentation/home-mycroft-ai-pairing/).
 
-Once paired, you can then use [basic **skills**](@TODO link to go in here once in WordPress).
+Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/).
 
 ### Using Mycroft behind a proxy
 

@@ -83,7 +83,7 @@ To learn more about phonemes, see the [CMU Dictionary](http://www.speech.cs.cmu.
 
 If you do make changes, don't forget to save them using the button at the top of the page.
 
-![Default Mycroft Listener settings](../img/default-mycroft-voice-settings.png "Default Mycroft Listener settings")
+![Default Mycroft Listener settings](https://mycroft.ai/wp-content/uploads/2017/12/default-mycroft-voice-settings.png "Default Mycroft Listener settings")
 
 #### Changing your Wake Word
 
@@ -145,7 +145,7 @@ If you're stuck connecting to Wifi, please read the [Mark 1 Getting Started Guid
 
 After you have connected your Picroft to Wifi, Mycroft will speak a 6-character **Registration Code**.
 
-If you're stuck connecting to Wifi, please read the [Picroft documentation](Picroft.md).
+If you're stuck connecting to Wifi, please read the [Picroft documentation](http://mycroft.ai/documentation/picroft/).
 
 ### Getting a Registration Code from Linux
 
@@ -171,7 +171,7 @@ Once you have your Registration Code, you can then go to home.mycroft.ai -> Devi
 
 Use your Registration Code, select the type of Device you have, and provide a meaningful name and location for the Device. This will help you in the future if you have multiple devices.
 
-![Adding a new Device](../img/pairing-device-with-home-mycroft-ai.png "Pairing a new Device on home.mycroft.ai")
+![Adding a new Device](https://mycroft.ai/wp-content/uploads/2017/12/pairing-device-with-home-mycroft-ai.png "Pairing a new Device on home.mycroft.ai")
 
 Click 'OK, Let's Pair' to pair the Device. Wait a few seconds, and then you'll be taken to a new screen where you can finalize Pairing.
 

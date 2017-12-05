@@ -73,9 +73,9 @@ _NOTE: Mark 1 cannot connect to WiFi networks that operate in the 5GHz band. You
 
 Once the Mark 1 is connected to the internet, a **Registration Code** will be Spoken, and displayed on the Mark 1's LED panel.
 
-[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](@TODO link to Home documentation).
+[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](http://mycroft.ai/documentation/home-mycroft-ai-pairing/).
 
-Once paired, you can then use [basic **Skills**](@TODO link to basic skills).
+Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/).
 
 ### Mark 1 menu options
 
@@ -107,7 +107,7 @@ The available menu options are:
 
 #### Installing Skills on the Mark 1
 
-[Please refer to the information here](@TODO link to adding new skills)
+[Please refer to the information here](http://mycroft.ai/documentation/skills/)
 
 #### Connecting to the Mark 1 via SSH
 
@@ -137,11 +137,7 @@ Last login: Wed Oct 18 13:02:44 2017
 pi@mark_1:~ $
 ```
 
-You are now connected to the Mark 1 via SSH.
-
-#### Changing the password for the default user via SSH
-
-@TODO for discussion - I don't really want to include this because it will make troubleshooting basic errors much harder if beginner level developers change the pi user password. If people are advanced, they will figure out how to change the password.  
+You are now connected to the Mark 1 via SSH.  
 
 #### Setting up SSH to the Mark 1 using SSH keys
 
@@ -167,7 +163,7 @@ To enable the Learn functionality:
 
 1. Make sure that you've checked the 'Opt In' checkbox at [home.mycroft.ai](https://home.mycroft.ai), Settings -> Basic.
 
-![Adding a new Device](../img/opting-in-open-dataset.png "Opting in to help build the Mycroft Open Dataset")
+![Adding a new Device](https://mycroft.ai/wp-content/uploads/2017/12/opting-in-open-dataset.png "Opting in to help build the Mycroft Open Dataset")
 
 2. Next press the top button on your Mark 1. Turn the button to LEARN. Press the top button again. Turn the button to ALLOW. Mycroft will Speak:
 
@@ -215,8 +211,15 @@ There's nothing else you need to do.
 
 ### Common issues on Mark 1 Devices
 
-@TODO link to Troubleshooting
+There are several common issues with Mark 1 Devices. They are documented here to help you.
+
+#### Mark 1 Device is frozen
+
+If your Mark 1 Device is frozen, reboot it by:
+
+1. Pressing the top button for 2 seconds, scrolling the button to select REBOOT then pressing the top button again to reboot.
+2. If this does not work, disconnect your Mark 1 **Device** from the power source, wait 10 seconds, then plug the Mark 1 back into the power source.
 
 ### Hardware Hacking your Mark 1 Device
 
-@TODO need to touch base with @penrods on what should go in here
+If you're interested in hardware hacking on your Mark 1 **Device**, the [hardware schematics](https://github.com/MycroftAI/hardware-mycroft-mark-1) are open source and available for download.

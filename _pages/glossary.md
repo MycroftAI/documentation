@@ -25,7 +25,7 @@ Use our Glossary to learn more about the specialist terms that we use in natural
 
 * **Pairing** - The process of registering a **Device** to home.mycroft.ai. Each **Device** needs to be **Paired** before it can be used.
 
-* **Registration Code** - a 6-character code that Mycroft issues to you during setup of the Device. This code is needed to [add a Device](@TODO add link to registering a device)
+* **Registration Code** - a 6-character code that Mycroft issues to you during setup of the Device. This code is needed to [add a Device](http://mycroft.ai/documentation/home-mycroft-ai-pairing/)
 
 * **Skill** - when Mycroft hears the **Wake Word**, then an **Utterance**, Mycroft will try to find a **Skill** that matches the **Utterance**. The **Skill** might fetch some data, or play some audio, or speak, or display some information. If Mycroft can't find a **Skill** that matches the Utterance, he will tell you he doesn't understand.
 

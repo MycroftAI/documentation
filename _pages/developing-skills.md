@@ -24,7 +24,7 @@ Before starting to develop **Skills** for Mycroft, you should already have these
 
 ## An overview of Mycroft components
 
-If you haven't yet read the [overview of Mycroft components](../01.about-mycroft/01.about-mycroft.md), it's worth doing so. 
+If you haven't yet read the [overview of Mycroft components](http://mycroft.ai/documentation/mycroft-software-hardware/), it's worth doing so. 
 
 ## What makes a good **Skill**?
 

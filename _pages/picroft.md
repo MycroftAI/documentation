@@ -98,7 +98,7 @@ Next, the disk image needs to be burnt to the Micro SD card.
 
 The [Raspberry Pi official documentation provides an excellent tutorial](https://www.raspberrypi.org/documentation/installation/installing-images/) on this, using Etcher software. We recommend that you burn the Picroft image to the Micro SD card using Etcher.
 
-![Etcher SD card image burning tool](../img/etcher-screenshot.png "Etcher SD card image burning tool")
+![Etcher SD card image burning tool](https://mycroft.ai/wp-content/uploads/2017/12/etcher-screenshot.png "Etcher SD card image burning tool")
 
 #### Booting up Picroft
 
@@ -124,9 +124,9 @@ _NOTE: Picroft cannot connect to WiFi networks that operate in the 5GHz band. Yo
 
 Once the Picroft is connected to the internet, a **Registration Code** will be Spoken.
 
-[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](@TODO add link in here).
+[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](http://mycroft.ai/documentation/home-mycroft-ai-pairing/).
 
-Once paired, you can then use [basic Skills](@TODO add link in here).
+Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/).
 
 #### Connecting to Picroft via SSH
 

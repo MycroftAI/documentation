@@ -66,9 +66,7 @@ The Mycroft logs each follow a standard format, being:
 
 #### Mark 1
 
-  On a Mark 1 **Device**, first `ssh` into the Mark 1.
-
-  @TODO: link to instruction here on SSH'ing into the devices
+  On a Mark 1 **Device**, [first `ssh` into the Mark 1](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
 
   The logs on a Mark 1 are held at `/var/log/`
 
@@ -93,9 +91,7 @@ The Mycroft logs each follow a standard format, being:
 
 #### Picroft
 
-On a Raspberry Pi 3 running Picroft, first `ssh` into the Picroft.
-
-@TODO: link to instruction here on SSH'ing into the devices
+On a Raspberry Pi 3 running Picroft, [first `ssh` into the Picroft](https://mycroft.ai/documentation/picroft/#connecting-to-picroft-via-ssh).
 
 The logs on a Picroft are held at
 

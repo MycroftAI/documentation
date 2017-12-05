@@ -68,7 +68,7 @@ Below, you'll find instructions to identify the version of Mycroft you're using.
 
 ##### Mark 1 and Picroft
 
-To find what version of Mycroft your Mark 1 or Picroft is running, you'll need to [SSH into the **Device**](@TODO link to the SSH instructions). Run the command
+To find what version of Mycroft your Mark 1 or Picroft is running, you'll need to [SSH into the Device](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh). Run the command
 `apt list`
 
 then look through it to find the Mycroft packages that are installed.
@@ -97,7 +97,7 @@ Starting cli
 ```
 The version number will be shown in the top right hand corner of the CLI, as shown below.
 
-![CLI showing version number](../img/CLI-showing-version-number.png "CLI showing version number")
+![CLI showing version number](https://mycroft.ai/wp-content/uploads/2017/12/CLI-showing-version-number.png "CLI showing version number")
 
 ### Making changes
 

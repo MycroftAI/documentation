@@ -63,7 +63,6 @@ This file would contain examples of questions asking what a *tomato* is.
 * `Describe a tomato`
 * `What defines a tomato`
 
-
 ### API Example
 
 Here's a simple example of how to use Padatious:

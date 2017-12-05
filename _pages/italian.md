@@ -104,8 +104,7 @@ Check that the following files exist:
 
 Now that we have installed the PocketSphinx files for Italian, we need to install Italian in the Mycroft directories.
 
-First, SSH into your device.
-@TODO link here to SSH instructions
+First, [SSH into your device](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
 
 
 Navigate to the Mycroft language model directory.
