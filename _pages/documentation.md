@@ -99,7 +99,11 @@ Learn how to configure your Raspberry Pi 3 to output audio via USB, HDMI and Blu
 
 ### [Manually configuring WiFi for Picroft](https://mycroft.ai/documentation/picroft/picroft-wifi/)
 
-Are you on an enterprise network? The automated WiFi network connection process not working? Learn how to manually configure WiFi. 
+Are you on an enterprise network? The automated WiFi network connection process not working? Learn how to manually configure WiFi.
+
+### [Reconfiguring automatic updates for Picroft](https://mycroft.ai/documentation/picroft/picroft-automatic-update/)
+
+Want to turn off automatic updates? Change what time they occur? Learn how to manually configure updates.
 
 ## [Mycroft for Linux platforms](http://mycroft.ai/documentation/linux/)
 
