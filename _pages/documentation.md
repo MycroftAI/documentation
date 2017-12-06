@@ -96,6 +96,10 @@ In depth information about the Picroft build of Mycroft for Raspberry Pi.
 
 Learn how to configure your Raspberry Pi 3 to output audio via USB, HDMI and Bluetooth
 
+### [Manually configuring WiFi for Picroft](https://mycroft.ai/documentation/picroft/picroft-wifi/)
+
+Are you on an enterprise network? The automated WiFi network connection process not working? Learn how to manually configure WiFi. 
+
 ## [Mycroft for Linux platforms](http://mycroft.ai/documentation/linux/)
 
 In depth information on how to build Mycroft for common Linux distributions.
