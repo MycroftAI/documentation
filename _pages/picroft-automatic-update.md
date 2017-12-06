@@ -11,6 +11,9 @@ post_date: 2017-12-06 12:10:34
 ---
 # Picroft - editing automatic update settings
 
+- [Picroft - editing automatic update settings](#picroft---editing-automatic-update-settings)
+  * [To turn off checking for updates at boot](#to-turn-off-checking-for-updates-at-boot)
+  * [To change the time that Picroft checks for updates, or to disable auto-update](#to-change-the-time-that-picroft-checks-for-updates-or-to-disable-auto-update)
 
 By default, Picroft will check for updates at two separate times: 
 
