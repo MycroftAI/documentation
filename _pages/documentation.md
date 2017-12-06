@@ -25,6 +25,7 @@ Our documentation, just like our source code, is open source, [and you can contr
     + [Basic commands](#basic-commands)
   * [Mark 1](#mark-1)
   * [Picroft](#picroft)
+    + [Configuring Picroft audio for USB, HDMI and Bluetooth](#configuring-picroft-audio-for-usb-hdmi-and-bluetooth)
   * [Mycroft for Linux platforms](#mycroft-for-linux-platforms)
   * [Mycroft for Android](#mycroft-for-android)
   * [Mycroft Skills](#mycroft-skills)
