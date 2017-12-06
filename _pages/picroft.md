@@ -136,8 +136,7 @@ Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/bas
 
 #### Connecting to Picroft via SSH
 
-* First, ensure that you've enabled SSH access.
-@TODO is SSH on Picroft enabled by default?
+SSH access to Picroft is enabled by default, so you don't have to enable SSH access.
 
 * Ensure you know the IP address of your Mark 1 Device on your network. A handy way to do this is to install the IP Address **Skill**, and then Speak:
 
@@ -181,6 +180,14 @@ If you would like to see the output of Picroft on a monitor (rather than SSH'ing
 If you would like to connect a keyboard or mouse (rather than SSH'ing in to Picroft), connect them via the USB slots on the Raspberry Pi. 
 
 In our experience, we've found most monitors, keyboards and mice are plug-and-play - ie. you shouldn't have to install any additional drivers. 
+
+### Next steps
+
+Congratulations! You now have a fully functional Picroft, and can start exploring all the options you now have. Consider using it as a stand-alone voice assistant, or connect it to a monitor and keyboard, and develop straight away. If you don't have a monitor and keybaord, SSH is enabled by default so you can remotely connect to it straight away.
+
+Picroft uses a Raspbian Jessie Lite image under the hood - with Mycroft pre-installed - so everything you can do with Raspbian, you can do with Picroft. You can download other packages, get it running as a server - or more!
+
+For more help or ideas, consider joining our [Picroft channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/picroft) or reading through our [Picroft topic on the Mycroft Forum](https://community.mycroft.ai/c/mycroft-project/Raspberry-Pi).
 
 ### Common issues on Picroft Devices
 
