@@ -181,6 +181,16 @@ If you would like to connect a keyboard or mouse (rather than SSH'ing in to Picr
 
 In our experience, we've found most monitors, keyboards and mice are plug-and-play - ie. you shouldn't have to install any additional drivers. 
 
+#### Important file locations for Picroft
+
+If you plan to do **Skills** development work, or other development work with Picroft, you'll find knowing these file locations useful. 
+
+* Skills - have a shortcut in `/home/pi` that points to `opt/mycroft/skills`
+* `mycroft-core` - is located at `/usr/local/lib/python2.7/site-packages/mycroft_core`
+* Logs - are located at `/var/log`
+* `mycroft.conf` - is located at `/home/mycroft/.mycroft/mycroft.conf`
+* Identity file (do not share) - is located at `/home/mycroft/.mycroft/identity/identity2.json`
+
 ### Next steps
 
 Congratulations! You now have a fully functional Picroft, and can start exploring all the options you now have. Consider using it as a stand-alone voice assistant, or connect it to a monitor and keyboard, and develop straight away. If you don't have a monitor and keybaord, SSH is enabled by default so you can remotely connect to it straight away.
