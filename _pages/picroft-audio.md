@@ -5,13 +5,16 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/documentation/picroft/picroft-outputting-audio/
+  http://mycroft.ai/documentation/picroft/picroft-audio/
 published: true
 post_date: 2017-12-06 08:53:08
 ---
 # Picroft - outputting audio
 
-
+- [Picroft - outputting audio](#picroft---outputting-audio)
+  * [How to output audio via HDMI](#how-to-output-audio-via-hdmi)
+  * [How to output audio through USB](#how-to-output-audio-through-usb)
+  * [How to output audio through Bluetooth](#how-to-output-audio-through-bluetooth)
 
 If you are developing on Picroft, and want to do audio-related **Skills** development, you will find this information on outputting audio useful. 
 
