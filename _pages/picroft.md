@@ -90,7 +90,9 @@ Below is information on specific hardware that has been tested with Picroft. If 
 
 #### Downloading the disk image
 
-First, download the [Picroft disk image, available from the Picroft repo on GitHub](https://github.com/MycroftAI/enclosure-picroft).
+First, download the [Picroft disk image](https://mycroft.ai/to/picroft-image).
+
+We also have a [Picroft disk image](https://mycroft.ai/to/picroft-unstable) available of our `unstable` branch if desired.
 
 #### Burn the disk image to the Micro SD card
 
@@ -102,9 +104,11 @@ The [Raspberry Pi official documentation provides an excellent tutorial](https:/
 
 #### Booting up Picroft
 
-Once you've burned the Micro SD card, insert the Micro SD card into the Micro SD card slot on the Raspberry Pi. Plug in your microphone, speakers, and if you're using a monitor and/or keyboard, plug these in too.
+Once you've burned the disk image to the Micro SD card, insert the Micro SD card into the Micro SD card slot on the Raspberry Pi. Plug in your microphone, speakers, and if you're using a monitor and/or keyboard, plug these in too.
 
 Next, plug in the power and switch the power on.
+
+Our next step is to connect Picroft to the internet. 
 
 ####  Getting Picroft connected to the internet using a network cable
 
@@ -118,6 +122,8 @@ Using your computer or a mobile device, connect to the Wifi SSID `MYCROFT` using
 
 _NOTE: Picroft cannot connect to WiFi networks that operate in the 5GHz band. You must select a WiFi network that operates in the 2.4GHz band._
 
+If you're concerned about privacy with Picroft's WiFi setup, you can inspect our [Wifi Client code on GitHub](https://github.com/MycroftAI/mycroft-core/tree/dev/mycroft/client/wifisetup).
+
 @TODO I don't know what the limitations are around the WiFi networks that Mycroft can connect to - for instance, can Mycroft connect to WiFi networks that use certain types of authentication like WEP, or enterprise WPA2-PSK with things like Radius that are used in the enterprise? Don't know, flagging as @TODO
 
 ### Pairing the Picroft
@@ -126,7 +132,7 @@ Once the Picroft is connected to the internet, a **Registration Code** will be S
 
 [View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](http://mycroft.ai/documentation/home-mycroft-ai-pairing/).
 
-Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/).
+Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/) to get started.
 
 #### Connecting to Picroft via SSH
 
@@ -167,6 +173,14 @@ To reimage a Picroft **Device**, [download the latest disk image](https://mycrof
 #### Keeping your Picroft updated
 
 The easiest way to keep your Picroft updated is to burn a new disk image to your Micro SD card, and re-pair your Picroft Device.
+
+#### Connecting Picroft to a keyboard and/or monitor
+
+If you would like to see the output of Picroft on a monitor (rather than SSH'ing in to Picroft), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi. 
+
+If you would like to connect a keyboard or mouse (rather than SSH'ing in to Picroft), connect them via the USB slots on the Raspberry Pi. 
+
+In our experience, we've found most monitors, keyboards and mice are plug-and-play - ie. you shouldn't have to install any additional drivers. 
 
 ### Common issues on Picroft Devices
 
