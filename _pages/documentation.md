@@ -91,6 +91,10 @@ In depth information about the Mark 1 reference hardware **Device**.
 
 In depth information about the Picroft build of Mycroft for Raspberry Pi.
 
+### [Configuring Picroft audio for USB, HDMI and Bluetooth](https://mycroft.ai/documentation/picroft/picroft-audio/)
+
+Learn how to configure your Raspberry Pi 3 to output audio via USB, HDMI and Bluetooth
+
 ## [Mycroft for Linux platforms](http://mycroft.ai/documentation/linux/)
 
 In depth information on how to build Mycroft for common Linux distributions.
