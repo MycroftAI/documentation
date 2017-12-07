@@ -11,7 +11,17 @@ post_date: 2017-12-07 11:39:43
 ---
 # Release notes
 
-
+- [Release notes](#release-notes)
+  * [release/v0.9.7](#releasev097)
+    + [Send E-mail #1230](#send-e-mail-%231230)
+    + [Metrics #1247](#metrics-%231247)
+    + [Misc](#misc)
+  * [release/v0.9.6](#releasev096)
+  * [release/v0.9.5](#releasev095)
+    + [Precise wake word engine #1199, #1207](#precise-wake-word-engine-%231199-%231207)
+    + [API enhancements](#api-enhancements)
+    + [Utility changes](#utility-changes)
+    + [Misc](#misc-1)
 
 ## [release/v0.9.7](https://github.com/MycroftAI/mycroft-core/tree/release/v0.9.7)
 
