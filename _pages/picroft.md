@@ -9,7 +9,6 @@ published: true
 post_date: 2017-12-02 22:35:25
 ---
 # Picroft
-
 - [Picroft](#picroft)
     + [Prerequisites](#prerequisites)
       - [Hardware prerequisites](#hardware-prerequisites)
@@ -29,6 +28,7 @@ post_date: 2017-12-02 22:35:25
       - [Connecting to Picroft via SSH](#connecting-to-picroft-via-ssh)
       - [How to reimage a Picroft Device](#how-to-reimage-a-picroft-device)
       - [Keeping your Picroft updated](#keeping-your-picroft-updated)
+      - [How to switch your Picroft to the `unstable` branch to test new releases](#how-to-switch-your-picroft-to-the-unstable-branch-to-test-new-releases)
       - [Connecting Picroft to a keyboard and/or monitor](#connecting-picroft-to-a-keyboard-andor-monitor)
       - [Important file locations for Picroft](#important-file-locations-for-picroft)
     + [Next steps](#next-steps)
