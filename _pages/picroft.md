@@ -176,6 +176,28 @@ To reimage a Picroft **Device**, [download the latest disk image](https://mycrof
 
 The easiest way to keep your Picroft updated is to burn a new disk image to your Micro SD card, and re-pair your Picroft Device.
 
+#### How to switch your Picroft to the `unstable` branch to test new releases
+
+If you want to help us test the next release of Picroft early, swap your `source` on the Raspberry Pi. 
+
+_NOTE: This is the same as the `dev` branch on GitHub for `mycroft-core`._
+
+Using a text editor, edit your `/etc/apt/sources.list.d/repo.mycroft.ai.list` file: 
+
+By default it points to:
+
+```
+deb http://repo.mycroft.ai/repos/apt/debian debian main
+```
+
+If you want to try the `unstable` version, edit the file so that it reads: 
+
+```
+deb http://repo.mycroft.ai/repos/apt/debian debian-unstable main
+```
+
+You will then need to run `sudo apt-get upgrade && sudo apt-get upgrade` for the change to take effect. 
+
 #### Connecting Picroft to a keyboard and/or monitor
 
 If you would like to see the output of Picroft on a monitor (rather than SSH'ing in to Picroft), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi. 
