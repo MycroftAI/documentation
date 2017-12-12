@@ -153,6 +153,10 @@ Display Control manages features of the **Enclosure**, such as the _mouth_ and _
 
 Fallback **Skills** handle an **Intent** if one can't be matched with an **Utterance** and are a useful catch-all. This documentation shows how to write a new Fallback **Skill** and set its order of precedence.
 
+## [Mycroft Skill Manager - msm](https://mycroft.ai/msm/)
+
+Learn how to use `msm` to install, search and update **Skills**.
+
 ## [Language support in Mycroft](https://mycroft.ai/documentation/language-support/)
 
 Learn more about languages support in Mycroft.
