@@ -1,6 +1,8 @@
 ---
 ID: 33735
-post_title: 'Release Notes v0.9.8 | What&#8217;s New?'
+post_title: >
+  Release Notes v0.9.8 | Skill Creators
+  Rejoice
 author: Alyx Horace
 post_excerpt: ""
 layout: post
@@ -24,9 +26,7 @@ Release v0.9.8 is loaded with skill creation tools. Bettering the lives of Devel
 <div class="highlight highlight-source-python">
 <pre>    <span class="pl-k">def</span> <span class="pl-en">echo</span>(<span class="pl-smi">self</span>, <span class="pl-smi">message</span>):
         response <span class="pl-k">=</span><span class="pl-c1">self</span>.get_response(<span class="pl-s"><span class="pl-pds">'</span>what.should.I.repeat<span class="pl-pds">'</span></span>)
-        <span class="pl-c1">self</span>.speak(response)
-
-</pre>
+        <span class="pl-c1">self</span>.speak(response)</pre>
 </div>
 <h3></h3>
 <h3><strong>Global skill settings <a class="issue-link js-issue-link" href="https://github.com/MycroftAI/mycroft-core/pull/1290" data-error-text="Failed to load issue title" data-id="280182333" data-permission-text="Issue title is private" data-url="https://github.com/MycroftAI/mycroft-core/issues/1290">#1290</a></strong></h3>
