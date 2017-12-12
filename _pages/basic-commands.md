@@ -90,13 +90,13 @@ Now that your Mycroft is now **Paired** with home.mycroft.ai, you can begin issu
 
 To install new **Skills** onto Mycroft, speak:
 
-> install skill [skillname]
+> install [skillname]
 
 For example:
 
-> install skill coinflip
-> install skill easter eggs
-> install skill home assistant
+> install coinflip
+> install easter eggs
+> install home assistant
 
 ## More information on Skills
 
