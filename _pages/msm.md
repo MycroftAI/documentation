@@ -10,6 +10,10 @@ post_date: 2017-12-12 10:56:48
 ---
 # Mycroft Skills Manager - msm
 
+- [Mycroft Skills Manager - msm](#mycroft-skills-manager---msm)
+  * [What is Mycroft Skills Manager - msm?](#what-is-mycroft-skills-manager---msm)
+  * [Using Mycroft Skills Manager - msm](#using-mycroft-skills-manager---msm)
+
 ## What is Mycroft Skills Manager - msm? 
 
 Mycroft Skills Manager - `msm`-  is a command line tool used to add, manage and remove **Skills** on any Mycroft installation. It can install any **Skill** listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills). `msm` is a handy tool for Developers and those who may frequently reconfigure, install and uninstall **Skills**. 
