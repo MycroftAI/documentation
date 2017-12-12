@@ -23,7 +23,7 @@ post_date: 2017-12-02 22:35:25
       - [Burn the disk image to the Micro SD card](#burn-the-disk-image-to-the-micro-sd-card)
       - [Booting up Picroft](#booting-up-picroft)
       - [Getting Picroft connected to the internet using a network cable](#getting-picroft-connected-to-the-internet-using-a-network-cable)
-      - [Getting Mark 1 connected to the internet using Wifi](#getting-mark-1-connected-to-the-internet-using-wifi)
+      - [Getting Picroft connected to the internet using Wifi](#getting-picroft-connected-to-the-internet-using-wifi)
     + [Pairing the Picroft](#pairing-the-picroft)
       - [Connecting to Picroft via SSH](#connecting-to-picroft-via-ssh)
       - [How to reimage a Picroft Device](#how-to-reimage-a-picroft-device)
@@ -119,7 +119,7 @@ Plug the Picroft into your router using an ethernet cable plugged into the RJ45 
 
 When Picroft boots, it will look for a network connection and will prompt you to set up a WiFi connection if a wired connection is not found.
 
-#### Getting Mark 1 connected to the internet using Wifi
+#### Getting Picroft connected to the internet using Wifi
 
 Using your computer or a mobile device, connect to the Wifi SSID `MYCROFT` using the password `123456787`. Once you are connected to this SSID, go to the web page [http://start.mycroft.ai](https://start.mycroft.ai). A list of available WiFi networks will be presented. Select the WiFi network that you wish to connect the Picroft to, and enter the WiFi password. Picroft will attempt to connect to the WiFi network.
 
@@ -141,7 +141,7 @@ Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/bas
 
 SSH access to Picroft is enabled by default, so you don't have to enable SSH access.
 
-* Ensure you know the IP address of your Mark 1 Device on your network. A handy way to do this is to install the IP Address **Skill**, and then Speak:
+* Ensure you know the IP address of your Picroft Device on your network. A handy way to do this is to install the IP Address **Skill**, and then Speak:
 
 > Hey Mycroft, what's your IP address?
 
