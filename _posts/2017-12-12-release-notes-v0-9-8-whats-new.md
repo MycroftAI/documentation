@@ -3,7 +3,7 @@ ID: 33735
 post_title: >
   Release Notes v0.9.8 | Skill Creators
   Rejoice
-author: Alyx Horace
+author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
