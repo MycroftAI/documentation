@@ -19,7 +19,7 @@ post_date: 2017-12-02 22:35:25
       - [`dialog` directory](#dialog-directory)
       - [vocab directory and defining Intents](#vocab-directory-and-defining-intents)
       - [`__init__.py`](#__init__py)
-  * [Simplifying your Skill code with intent handler decorators (preferred)](#simplifying-your-skill-code-with-intent-handler-decorators-preferred)
+  * [Simplifying your Skill code with intent handler decorators](#simplifying-your-skill-code-with-intent-handler-decorators)
   * [How do I find more information on Mycroft functions?](#how-do-i-find-more-information-on-mycroft-functions)
 
 This page will walk you through developing a new Mycroft **Skill**. It assumes you have read through the [basic skills information](skills.md)
@@ -338,7 +338,7 @@ def stop(self):
 
 In the above code block, the [`pass` statement](https://docs.python.org/2/reference/simple_stmts.html#the-pass-statement) is used as a placeholder; it doesn't actually have any function. However, if the **Skill** had any active functionality, the stop() method would terminate the functionality, leaving the *Skill** in a known good state.
 
-## Simplifying your Skill code with `intent_handler` _decorators_ (preferred)
+## Simplifying your Skill code with `intent_handler` _decorators_ 
 
 Your **Skill** code can be simpliied using the intent_handler() _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
 
