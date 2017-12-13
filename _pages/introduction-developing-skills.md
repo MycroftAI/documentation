@@ -19,7 +19,7 @@ post_date: 2017-12-02 22:35:25
       - [`dialog` directory](#dialog-directory)
       - [vocab directory and defining Intents](#vocab-directory-and-defining-intents)
       - [`__init__.py`](#__init__py)
-  * [Simplifying your Skill code with intent handler decorators](#simplifying-your-skill-code-with-intent-handler-decorators)
+  * [Simplifying your Skill code with intent handler decorators](#simplifying-your-skill-code-with-intent_handler-decorators)
   * [How do I find more information on Mycroft functions?](#how-do-i-find-more-information-on-mycroft-functions)
 
 This page will walk you through developing a new Mycroft **Skill**. It assumes you have read through the [basic skills information](skills.md)
