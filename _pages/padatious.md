@@ -13,7 +13,7 @@ post_date: 2017-12-03 05:48:00
 
 Padatious is a [machine-learning](https://en.wikipedia.org/wiki/Machine_learning), [neural-network](https://en.wikipedia.org/wiki/Artificial_neural_network) based *intent parser*.
 
-It is an alternative to the Adapt intent parser (@TODO: link to Adapt).
+It is an alternative to the [Adapt intent parser](https://mycroft.ai/documentation/adapt/).
 
 Padatious has a number of key benefits:
 
