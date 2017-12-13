@@ -30,6 +30,7 @@ Our documentation, just like our source code, is open source, [and you can contr
       + [Reconfiguring automatic updates for Picroft](#reconfiguring-automatic-updates-for-picroft)
   * [Mycroft for Linux platforms](#mycroft-for-linux-platforms)
   * [Mycroft for Android](#mycroft-for-android)
+  * [`mycroft-conf` file](#mycroft-conf)
   * [Mycroft Skills](#mycroft-skills)
       + [Introduction to developing Skills for Mycroft](#introduction-to-developing-skills-for-mycroft)
       + [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
@@ -114,6 +115,10 @@ In depth information on how to build Mycroft for common Linux distributions.
 ## [Mycroft for Android](https://mycroft.ai/documentation/android/)
 
 In depth information on the Mycroft companion app for Android.
+
+## [`mycroft-conf` file](https://mycroft.ai/documentation/mycroft-conf/)
+
+Learn about the `mycroft.conf` file and the settings it contains. 
 
 ## [Mycroft Skills](https://mycroft.ai/documentation/skills/)
 
