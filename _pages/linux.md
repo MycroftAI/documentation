@@ -200,6 +200,28 @@ $  export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,0.0.0.0,::
 
 @TODO Not sure what the easiest way is to keep Mycroft for Linux updated - is it as simple as doing a `git pull` from the remote repo?
 
+### Removing Mycroft for Linux from your system
+
+If you have installed `mycroft-core` using the `git-clone` method, then removing it requires a couple of steps. 
+
+_NOTE: depending on your system, you may need to run the commands below with `sudo`_
+
+* Remove the `mycroft-core` directory from wherever you installed it: 
+
+`rm -R ~/yourpath/to/mycroft-core`
+
+* Next, remove the **Skills** directories: 
+
+`rm -R /opt/mycroft`
+
+* Next, remove the Mycroft settings: 
+
+`rm -R ~/.mycroft`
+
+* Next, remove the `virtualenv`: 
+
+`rm -R ~/.virtualenvs/mycroft`
+
 ### Common issues with Mycroft for Linux
 
 #### Removing and rebuilding your `virtualenv`
