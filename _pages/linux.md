@@ -25,6 +25,7 @@ post_date: 2017-12-02 22:35:25
     + [Using Mycroft behind a proxy without authentication](#using-mycroft-behind-a-proxy-without-authentication)
     + [Using Mycroft behind an authenticated proxy](#using-mycroft-behind-an-authenticated-proxy)
       - [Keeping Mycroft for Linux updated](#keeping-mycroft-for-linux-updated)
+    + [Removing Mycroft for Linux from your system](#removing-mycroft-for-linux-from-your-system)
     + [Common issues with Mycroft for Linux](#common-issues-with-mycroft-for-linux)
       - [Removing and rebuilding your `virtualenv`](#removing-and-rebuilding-your-virtualenv)
 
