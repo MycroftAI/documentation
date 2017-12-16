@@ -11,6 +11,20 @@ post_date: 2017-12-03 05:48:00
 ---
 # Padatious
 
+- [Padatious](#padatious)
+  * [System generated documentation](#system-generated-documentation)
+  * [What is an **Intent**? What is an **Intent parser**?](#what-is-an-intent-what-is-an-intent-parser)
+  * [Creating **Intents**](#creating-intents)
+  * [Creating Entities](#creating-entities)
+  * [Creating a skill](#creating-a-skill)
+  * [Advanced Usage](#advanced-usage)
+    + [Parentheses Expansion](#parentheses-expansion)
+    + [Number matching](#number-matching)
+    + [Entities with unknown tokens](#entities-with-unknown-tokens)
+  * [API Example](#api-example)
+  * [Installing Padatious](#installing-padatious)
+    + [Prerequisites](#prerequisites)
+
 Padatious is a [machine-learning](https://en.wikipedia.org/wiki/Machine_learning), [neural-network](https://en.wikipedia.org/wiki/Artificial_neural_network) based *intent parser*. It is an alternative to the [Adapt intent parser](https://mycroft.ai/documentation/adapt/). Unlike Adapt, which uses small groups of unique words, Padatious is trained on the sentence as a whole.
 
 Padatious has a number of key benefits:
