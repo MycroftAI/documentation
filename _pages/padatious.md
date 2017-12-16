@@ -11,19 +11,14 @@ post_date: 2017-12-03 05:48:00
 ---
 # Padatious
 
-Padatious is a [machine-learning](https://en.wikipedia.org/wiki/Machine_learning), [neural-network](https://en.wikipedia.org/wiki/Artificial_neural_network) based *intent parser*.
-
-It is an alternative to the [Adapt intent parser](https://mycroft.ai/documentation/adapt/).
+Padatious is a [machine-learning](https://en.wikipedia.org/wiki/Machine_learning), [neural-network](https://en.wikipedia.org/wiki/Artificial_neural_network) based *intent parser*. It is an alternative to the [Adapt intent parser](https://mycroft.ai/documentation/adapt/). Unlike Adapt, which uses small groups of unique words, Padatious is trained on the sentence as a whole.
 
 Padatious has a number of key benefits:
 
 * With Padatious, **Intents** are easy to create
 * The machine lerning model in Padtious requires a relatively small amount of data
 * Machine learning models need to be *trained*. The model used by Padatious is quick and easy to train.
-* Intents run independently of each other
-
-@TODO I don't understand this one in detail - why does Intents running independently matter - why is this a benefit? Is it that there's no dependence - ie the Weather intent can be different to the Bushire risk intent?
-
+* Intents run independently of each other. This allows quickly installing new skills without retraining all other skill intents.
 * With Padatious, you can easily extract entities and then use these in **Skills**. For example, "Find the nearest gas station" -> `{ "place":"gas station"}`
 
 ## System generated documentation
@@ -63,9 +58,167 @@ This file would contain examples of questions asking what a *tomato* is.
 * `Describe a tomato`
 * `What defines a tomato`
 
-### API Example
+and
 
-Here's a simple example of how to use Padatious:
+`vocab/en-us/what.is.intent`
+
+with examples of questions about mycroft's opinion about tomatoes:
+
+* Are you fond of tomatoes?
+* Do you like tomatoes?
+* What are your thoughts on tomatoes?
+
+* Are you fond of `{type}` tomatoes?
+* Do you like `{type}` tomatoes?
+* What are your thoughts on `{type}` tomatoes?
+
+Note the {type} in above examples these are wild-cards where matching content is forwarded to the skill's intent handler.
+
+Each file should contain at least 4 examples for good modeling.
+
+## Creating Entities
+
+In the above example, `{type}` will match anything. While this makes the intent flexible, it will also match if we say something like Do you like eating tomatoes?. It would think the type of tomato is eating which doesn't make much sense. Instead, we can specify what type of things the {type} of tomato should be. We do this by defining the type entity file here:
+
+`vocab/en-us/type.entity`
+
+which would contain something like:
+
+```
+red
+reddish
+green
+greenish
+yellow
+yellowish
+ripe
+unripe
+pale
+```
+
+Now, we can say things like Do you like greenish red tomatoes? and it will tag type: as greenish red.
+
+## Creating a skill
+
+A skill using Padatious is no different than previous skills except that `self.register_intent_file()` is used instead of `self.register_intent()`. To register a `.entity file`, use `self.register_entity_file()`.
+
+For example, the Tomato Skill would be written as: 
+
+```
+from mycroft.skills.core import MycroftSkill
+
+class TomatoSkill(MycroftSkill):
+    def __init__(self):
+        MycroftSkill.__init__(self)
+
+    def initialize(self):
+        self.register_intent_file('what.is.intent', self.handle_what_is)
+        self.register_intent_file('do.you.like.intent', self.handle_do_you_like)
+
+    def handle_what_is(self, message):
+        self.speak('A tomato is a big red thing')
+
+    def handle_do_you_like(self, message):
+        tomato_type = message.get('type')
+        if tomato_type is not None:
+            self.speak("Well, I'm not sure if I like " + tomato_type + " tomatoes.")
+        else:
+            self.speak('Of course I like tomatoes!')
+```
+
+The `register_intent_file(intent_file, handler)` methods arguments are:
+
+* intent_file: the filename of above mentioned intent files without the .intent as argument.
+* handler: the method/function that the examples in the intent_file should map to
+
+The corresponding decorator is also available:
+
+`@intent_file_handler()`
+
+In the handler method the wild card words can be fetched from the message using
+
+```
+def handler(self, message):
+        word = message.data.get('your_keyword') # if not present will return None
+```
+
+## Advanced Usage
+
+### Parentheses Expansion
+
+Sometimes you might find yourself writing a lot of variations of the same thing. For example, to write a skill that orders food, you might write the following intent:
+
+```
+Order some {food}.
+Order some {food} from {place}.
+Grab some {food}.
+Grab some {food} from {place}.
+```
+
+Rather than writing out all combinations of possibilities, you can embed them into a single line by writing each possible option inside parentheses with | in between each part. For example, that same intent above could be written as:
+
+```
+(Order | Grab) some {food} (from {place} | )
+```
+
+### Number matching
+
+Let's say you are writing an **Intent** to call a phone number. You can make it only match specific formats of numbers by writing out possible arrangements using `#` where a number would go. For example, with the following intent:
+
+```
+Call {number}.
+Call the phone number {number}.
+```
+
+the number.entity could be written as:
+
+```
++### (###) ###-####
++## (###) ###-####
++# (###) ###-####
+(###) ###-####
+###-####
+###-###-####
+###.###.####
+### ### ####
+##########
+```
+
+### Entities with unknown tokens
+
+Let's say you wanted to create an intent to match places:
+
+```
+Directions to {place}.
+Navigate me to {place}.
+Open maps to {place}.
+Show me how to get to {place}.
+How do I get to {place}?
+```
+
+This alone will work, but it will still get a high confidence with a phrase like "How do I get to the boss in my game?". We can try creating a `.entity` file with things like:
+
+```
+New York City
+#### Georgia Street
+San Francisco
+```
+
+The problem is, now anything that is not specifically a mix of New York City, San Francisco, or something on Georgia Street won't match. Instead, we can specify an unknown word with :0. This would would be written as:
+
+```
+:0 :0 City
+#### :0 Street
+:0 :0
+```
+
+Now, while this will still match quite a lot, it will match things like "Directions to Baldwin City" more than "How do I get to the boss in my game?"
+
+_NOTE: Currently, the number of :0 words is not fully taken into consideration so the above might match quite liberally, but this will change in the future._
+
+## API Example
+
+_NOTE: This section is of use if you are using Padatious on a project other than Mycroft. If you're developing [Skills for Mycroft](https://mycroft.ai/documentation/skills), you don't need to worry about this_
 
 **program.py**:
 ```python
@@ -98,9 +251,11 @@ You can then run this in Python using:
 python3 program.py
 ```
 
-### Installing Padatious
+## Installing Padatious
 
-#### Prerequisites
+_NOTE: This section is of use if you are using Padatious on a project other than Mycroft. If you're developing [Skills for Mycroft](https://mycroft.ai/documentation/skills), you don't need to worry about this_
+
+### Prerequisites
 
 Padatious is designed to be run in Linux. Padatious requires the following native packages to be installed:
 
