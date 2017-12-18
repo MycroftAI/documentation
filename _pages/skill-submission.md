@@ -79,7 +79,7 @@ Next, we need to submit a Pull Request (PR) in GitHub to have your **Skill** lis
 * Ensure that you have done a `git commit` for all your files, and that you have done a `git push -u origin master` so that your local files have been pushed to your GitHub repository.
 * Next, go to the GitHub repo for your **Skill**. Click the 'New Pull Request' button as shown in the image below.
 
-![Raising a Pull Request in GitHub](https://mycroft.ai/wp-content/uploads/2017/12/git-pull-request.pngw "Raising a Pull Request in GitHub")
+![Raising a Pull Request in GitHub](https://mycroft.ai/wp-content/uploads/2017/12/git-pull-request.png "Raising a Pull Request in GitHub")
 
 * You will need to choose with repositories to compare and create a PR from. This will  usually be `MycroftAI/mycroft-skills/master` and `YourGitHubUsername/mycroft-skills/master`
 * When  you create a PR, you will be presented with a PR template to fill in. This helps to make sure that your **Skill** is ready for submission. It will look like this:
