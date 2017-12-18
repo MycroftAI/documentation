@@ -1,6 +1,6 @@
 ---
 ID: 33222
-post_title: 'Language support in Mycroft &#8211; French'
+post_title: Language support in Mycroft – French
 author: Kathy Reid
 post_excerpt: ""
 layout: page
@@ -33,7 +33,7 @@ If you speak French and wish to enable French language support for Mycroft, this
 * downloading and unzipping large files
 * editing Python source code files
 
-If you need further assistance, please join us in the [Languages channel on Mycroft Chat](*https://chat.mycroft.ai/community/channels/languages).
+If you need further assistance, please join us in the [Languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages).
 
 ## Change the **Wake Word** to French
 
