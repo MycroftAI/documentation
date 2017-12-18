@@ -33,7 +33,7 @@ If you speak Spanish and wish to enable Spanish language support for Mycroft, th
 * downloading and unzipping large files
 * editing Python source code files
 
-If you need further assistance, please join us in the [Languages channel on Mycroft Chat](*https://chat.mycroft.ai/community/channels/languages).
+If you need further assistance, please join us in the [Languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages).
 
 ## Change the **Wake Word** to Spanish
 
