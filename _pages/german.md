@@ -33,7 +33,7 @@ If you speak German and wish to enable German language support for Mycroft, this
 * downloading and unzipping large files
 * editing Python source code files
 
-If you need further assistance, please join us in the [Languages channel on Mycroft Chat](*https://chat.mycroft.ai/community/channels/languages).
+If you need further assistance, please join us in the [Languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages).
 
 ## Change the **Wake Word** to German
 
