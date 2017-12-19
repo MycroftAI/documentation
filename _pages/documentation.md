@@ -129,7 +129,7 @@ An overview of the Skills that can be installed on your Mycroft **Device**.
 
 Aimed at developers, this section is an introduction to developing new **Skills** for Mycroft
 
-### [Developing Skills for Mycroft](#http://mycroft.ai/documentation/skills/developing-skills/)
+### [Developing Skills for Mycroft](http://mycroft.ai/documentation/skills/developing-skills/)
 
 Take your next step in Developing **Skills** for Mycroft. Learn about the structure of a **Skill**, and how to start creating your own. 
 
