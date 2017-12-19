@@ -33,7 +33,6 @@ Our documentation, just like our source code, is open source, [and you can contr
   * [`mycroft-conf` file](#mycroft-conf)
   * [Mycroft Skills](#mycroft-skills)
       + [Introduction to developing Skills for Mycroft](#introduction-to-developing-skills-for-mycroft)
-	  + [Developing Skills for Mycroft](#developing-skills-for-mycroft)
       + [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
       + [Skill Settings](#skill-settings)
       + [Common issues in Skills development](#common-issues-in-skills-development)
@@ -129,7 +128,7 @@ An overview of the Skills that can be installed on your Mycroft **Device**.
 
 Aimed at developers, this section is an introduction to developing new **Skills** for Mycroft
 
-### [Developing Skills for Mycroft](http://mycroft.ai/documentation/skills/developing-skills/)
+### [Developing Skills for Mycroft](https://mycroft.ai/documentation/skills/introduction-developing-skills/)
 
 Take your next step in Developing **Skills** for Mycroft. Learn about the structure of a **Skill**, and how to start creating your own. 
 
