@@ -13,21 +13,18 @@ post_date: 2017-11-21 07:57:58
 ---
 [vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][divider line_type="No Line"][vc_column_text]
 <h2><span style="font-weight: 400;">We’re living through a paradigm shift in computing. </span></h2>
-<span style="font-weight: 400;">We’re living through yet another paradigm shift in computing.   For the most challenging problems facing computer science traditional software development is being supplanted by machine learning.  Machine learning is a programming technique that allows algorithms to become more accurate at predicting outcomes without being explicitly programmed.</span> <span style="font-weight: 400;">Instead, data is used to present examples to the learning algorithm -- much like a child is taught by being told something over and over again.  Teaching machines also relies on training data - lots and lots of it.</span>
-
-&nbsp;
-<h2></h2>
+<span style="font-weight: 400;">We’re living through yet another paradigm shift in computing.   For the most challenging problems facing computer science, traditional software development is being supplanted by machine learning.  Machine learning is a programming technique that allows algorithms to become more accurate at predicting outcomes without being explicitly programmed.</span> <span style="font-weight: 400;">Instead, data is used to present examples to the learning algorithm -- much like a child is taught by being told something over and over again.  Teaching machines also relies on training data - lots and lots of it.</span>
 <h2></h2>
 <h2>How much data do we need?</h2>
-<span style="font-weight: 400;">To give you an idea of the data needs, let’s look at a key voice technologies.  Speech To Text (STT) can be tackled with a machine learning approach.  Estimates and experiments suggest that approximately 10,000 hours of audio is required to get a decent STT engine.  That is the equivalent of nearly 5 years of someone talking 40 hours a week.</span>
+<span style="font-weight: 400;">To give you an idea of the data needs, let’s look at key voice technologies.  Speech To Text (STT) can be tackled with a machine learning approach.  Estimates and experiments suggest that approximately 10,000 hours of audio is required to get a decent STT engine.  That is the equivalent of nearly 5 years of someone talking 40 hours a week.</span>
 
-<span style="font-weight: 400;">Though many of the machine learning frameworks are starting to be released as open source the </span><i><span style="font-weight: 400;">data </span></i><span style="font-weight: 400;">underpinning them is </span><i><span style="font-weight: 400;">not </span></i><span style="font-weight: 400;">being released.  Without data a learning framework cannot solve complex problems.  This means that companies without access to LOTS of data are getting left behind.</span>
+<span style="font-weight: 400;">Though many of the machine learning frameworks are starting to be released as open source the </span><i><span style="font-weight: 400;">data </span></i><span style="font-weight: 400;">underpinning them is </span><i><span style="font-weight: 400;">not </span></i><span style="font-weight: 400;">being released.  Without data, a learning framework cannot solve complex problems.  This means that companies without access to LOTS of data are getting left behind.</span>
 
 &nbsp;
 <h3>How's everyone else getting their hands on adequate data?</h3>
 <span style="font-weight: 400;">There are currently a handful of organizations who have billions of customers who have agreed to allow their data be used.  This agreement was necessary to make use of the company’s services.  This is what’s in those “Terms of Service” notices everyone routinely accepts without careful reading.  Typically, the only option for a user who wishes for privacy is to simply stop using these services.  This is true of Amazon, Google, Facebook and hundreds of others.</span>
 
-<span style="font-weight: 400;">For anyone who does not have billions of customers there is little hope that they can collect the volume of data they need to solve problems using modern methods.  This includes academic researchers, smaller business and startups, individual working on their pet project and, ironically, open source organizations who are respectful of user privacy.</span>
+<span style="font-weight: 400;">For anyone who does not have billions of customers, there is little hope that they can collect the volume of data they need to solve problems using modern methods.  This includes academic researchers, smaller businesses, startups, individuals working on their pet project and, ironically, open source organizations who are respectful of user privacy.</span>
 
 &nbsp;
 
@@ -45,7 +42,7 @@ post_date: 2017-11-21 07:57:58
 
 &nbsp;
 
-<span style="font-weight: 400;">All who Opt-In under their basic settings at </span><a href="https://home.mycroft.ai/#/setting/basic"><span style="font-weight: 400;">https://home.mycroft.ai/#/setting/basic</span></a><span style="font-weight: 400;"> can later choose to Opt-Out, stopping not only future data contributions but also removing any previously contributed data from future datasets. We truly appreciate the help of all in building an AI for Everyone, and aim to safeguard what has been entrusted to us.</span>
+<span style="font-weight: 400;">All who Opt-In under their basic settings at </span><a href="https://home.mycroft.ai/#/setting/basic"><span style="font-weight: 400;">https://home.mycroft.ai/#/setting/basic</span></a><span style="font-weight: 400;"> can later choose to Opt-Out, stopping not only future data contributions but also removing any previously contributed data from future datasets. We truly appreciate the help of all in building an AI for Everyone and aim to safeguard what has been entrusted to us.</span>
 
 &nbsp;
 
