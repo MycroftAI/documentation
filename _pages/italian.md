@@ -11,6 +11,8 @@ post_date: 2017-12-03 04:20:09
 ---
 # Language support in Mycroft - Italian - italiano
 
+_NOTE: These instructions apply to Mycroft for Linux only; we don't currently have instructions for changing the language on Picroft. If you'd like to help us out with that, jump into the [~languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) and let us know._
+
 - [Language support in Mycroft - Italian - italiano](#language-support-in-mycroft---italian---italiano)
   * [Change the **Wake Word** to Italian](#change-the-wake-word-to-italian)
     + [Download and install the Italian dictionary](#download-and-install-the-italian-dictionary)
