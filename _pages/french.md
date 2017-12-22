@@ -11,6 +11,8 @@ post_date: 2017-12-03 04:14:42
 ---
 # Language support in Mycroft - French - français
 
+_NOTE: These instructions apply to Mycroft for Linux only; we don't currently have instructions for changing the language on Picroft. If you'd like to help us out with that, jump into the [~languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) and let us know._
+
 - [Language support in Mycroft - French - français](#language-support-in-mycroft---french---francais)
   * [Change the **Wake Word** to French](#change-the-wake-word-to-french)
     + [Download and install the French dictionary](#download-and-install-the-french-dictionary)
