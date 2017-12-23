@@ -11,23 +11,21 @@ post_date: 2017-12-23 20:20:09
 ---
 # Language support in Mycroft - Portuguese - Português
 
-@TODO change these
-
 @TODO this should work exactly the same in picroft?
 _NOTE: These instructions apply to Mycroft for Linux only; we don't currently have instructions for changing the language on Picroft. If you'd like to help us out with that, jump into the [~languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) and let us know._
 
 - [Language support in Mycroft - Portuguese - Português](#language-support-in-mycroft---italian---italiano)
-  * [Change the **Wake Word** to Italian](#change-the-wake-word-to-italian)
-    + [Download and install the Italian dictionary](#download-and-install-the-italian-dictionary)
-    + [Download and install acoustic model](#download-and-install-acoustic-model)
-    + [Download and install Italian language model](#download-and-install-italian-language-model)
-    + [Verify the installed files](#verify-the-installed-files)
+  * [Change the **Wake Word** to Portuguese](#change-the-wake-word-to-portuguese)
+    + [Download and install Portuguese acoustic model](#download-and-install-acoustic-model)
     + [Install language in Mycroft directories](#install-language-in-mycroft-directories)
-    + [Choosing a Italian **Wake Word**](#choosing-a-italian-wake-word)
-    + [Configure Mycroft to use Italian language and the chosen **Wake Word**](#configure-mycroft-to-use-italian-language-and-the-chosen-wake-word)
-  * [Select and configure a Speech to Text (STT) engine with Italian support](#select-and-configure-a-speech-to-text-stt-engine-with-italian-support)
-  * [Select and configure a Text to Speech (TTS) engine with Italian support](#select-and-configure-a-text-to-speech-tts-engine-with-italian-support)
-  * [Configure Mycroft source code to handle Italian](#configure-mycroft-source-code-to-handle-italian)
+    + [Verify installed files](#verify-installed-files)
+    + [Choosing a Portuguese **Wake Word**](#choosing-a-italian-wake-word)
+    + [Configure Mycroft to use Portuguese language and the chosen **Wake Word**](#configure-mycroft-to-use-portuguese-language-and-the-chosen-wake-word)
+  * [Select and configure a Speech to Text (STT) engine with Portuguese support](#select-and-configure-a-speech-to-text-stt-engine-with-italian-support)
+  * [Select and configure a Text to Speech (TTS) engine with Portuguese support](#select-and-configure-a-text-to-speech-tts-engine-with-italian-support)
+  * [Configure Mycroft to use Portuguese](#configure-mycroft-source-code-to-use-portuguese)
+  * [Language parsing](#language-parsing)
+  * [Translating Skills](#translating-skills)
   * [Getting involved](#getting-involved)
 
 Olá, falas Português? Follow these steps to change Mycroft's language to Portuguese (BCP 47:`pt`).
@@ -92,7 +90,7 @@ download a Portuguese dictionary and a Portuguese acoustic model, trained with
  them if you want to use portuguese phonemes
 
 
-### Download and install acoustic model
+### Download and install Portuguese acoustic model
 
 No official model currently exists, but you can get an acoustic model from
 [FalaBrasil](http://laps.ufpa.br/falabrasil/downloads.php)
