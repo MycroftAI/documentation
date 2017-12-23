@@ -277,6 +277,7 @@ The skills have a folder structure like this:
 
     dialog/en-us/speak.dialog
     vocab/en-us/sentence.intent
+    vocab/en-us/word.entity
     vocab/en-us/keyword.voc
     regex/en-us/regex.rx
 
