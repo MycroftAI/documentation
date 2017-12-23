@@ -294,6 +294,7 @@ that did not implement the previous step
 
 Finally some skills, like the News skill, play english audio and you must find an alternative
 
+You can also try to use [auto_translatable skills](https://github.com/JarbasAl/auto_translatable_skills), this is community contributed and not officially supported
 
 ## Getting involved
 
