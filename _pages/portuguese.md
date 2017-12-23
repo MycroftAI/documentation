@@ -35,7 +35,7 @@ Mycroft, this is possible. However, this requires some technical knowledge such 
 
 * moving and copying files in a Linux shell
 * downloading and unzipping large files
-* editing Python source code files
+* editing configuration files
 
 If you need further assistance, please join us in the [Languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages).
 
