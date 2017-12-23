@@ -23,6 +23,7 @@ _NOTE: These instructions apply to Mycroft for Linux only; we don't currently ha
     + [Configure Mycroft to use Portuguese language and the chosen **Wake Word**](#configure-mycroft-to-use-portuguese-language-and-the-chosen-wake-word)
   * [Select and configure a Speech to Text (STT) engine with Portuguese support](#select-and-configure-a-speech-to-text-stt-engine-with-italian-support)
   * [Select and configure a Text to Speech (TTS) engine with Portuguese support](#select-and-configure-a-text-to-speech-tts-engine-with-italian-support)
+  * [Translating core dialog](#translating-core-dialog)
   * [Configure Mycroft to use Portuguese](#configure-mycroft-source-code-to-use-portuguese)
   * [Language parsing](#language-parsing)
   * [Translating Skills](#translating-skills)
@@ -220,6 +221,32 @@ Espeak should support [most languages](http://espeak.sourceforge.net/languages.h
 ```
 
 @TODO list of languages for all officially supported engines like in this [post](https://jarbasai.github.io//tts_comparison/)
+
+## Translating core dialog
+
+The default mycroft dialog files may need translation, for portuguese this is already implemented
+
+You can find these files at
+
+`mycroft_root_dir/res/txt/pt-pt`
+
+You may need to copy the pt-pt folder into a pt-br folder
+
+@TODO bash usage example
+
+Check that the following files exist:
+
+* `/mycroft_core/mycroft/res/text/pt-br/checking for updates.dialog`
+* `/mycroft_core/mycroft/res/text/pt-br/i am awake.dialog`
+* `/mycroft_core/mycroft/res/text/pt-br/i didn't catch that.dialog`
+* `/mycroft_core/mycroft/res/text/pt-br/checking for updates.dialog`
+* `/mycroft_core/mycroft/res/text/pt-br/not connected to the internet.dialog`
+* `/mycroft_core/mycroft/res/text/pt-br/reset to factory defaults.dialog`
+* `/mycroft_core/mycroft/res/text/pt-br/skills updated.dialog`
+* `/mycroft_core/mycroft/res/text/pt-br/sorry i couldn't install default skills.dialog`
+* `/mycroft_core/mycroft/res/text/pt-br/ssh disabled.dialog`
+* `/mycroft_core/mycroft/res/text/pt-br/ssh enabled.dialog`
+
 
 ## Configure Mycroft to use Portuguese
 
