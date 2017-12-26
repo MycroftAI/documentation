@@ -30,6 +30,7 @@ post_date: 2017-12-02 22:35:25
         * [Reimaging steps](#reimaging-steps)
         * [What should I do if reimaging doesn't work?](#what-should-i-do-if-reimaging-doesnt-work)
       - [Keeping your Mark 1 Device updated](#keeping-your-mark-1-device-updated)
+	  - [Downgrading your Mark 1 Device to a lower version](#downgrading-your-mark-1-device-to-a-lower-version)
     + [Common issues on Mark 1 Devices](#common-issues-on-mark-1-devices)
     + [Hardware Hacking your Mark 1 Device](#hardware-hacking-your-mark-1-device)
 
@@ -208,6 +209,31 @@ If you believe your Micro SD card might have failed, [please make contact with u
 Your Mark 1 device will check for updates around every hour. If new software is available, Mark 1 will automatically download the updates and apply them.
 
 There's nothing else you need to do.
+
+#### Downgrading your Mark 1 Device to a lower version
+
+The `apt` repo use to store the Mark 1 package, `mycroft-core` - does not store package versions. However, the Mark 1 **does** cache `apt` packages on the **Device** at: 
+
+`/var/cache/apt/archives`
+
+So, in order to downgrade the Mark 1 **Device**, we need to do two things: 
+
+* remove the current `mycroft-core` package
+* manually install the archived package using `dpkg`
+
+First, we remove the current `mycroft-core` package. In the example below, the version is given as `0.9.12`, but use the version you currently have installed. 
+
+`sudo apt-get remove mycroft-core=0.9.12`
+
+Next, find the package in the archives that you want to install:
+
+`pi@mark_1:~ $ ls -las /var/cache/apt/archives/ | grep mycroft-core`
+
+Then, use `dpkg` to install the archive
+
+`sudo dpkg -i /path/to/file`
+
+You should then reboot the Mark 1. 
 
 ### Common issues on Mark 1 Devices
 
