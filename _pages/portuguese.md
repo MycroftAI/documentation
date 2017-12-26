@@ -45,19 +45,21 @@ If you need further assistance, please join us in the [Languages channel on Mycr
 
 Mycroft uses PocketSphinx as the **Wake Word** engine. The default **Wake Word** in English is `Hey Mycroft`.
 
-The wake word engine takes a language parameter, if you can spell your
-wakeword with english phonemes nothing special must be done
+The **Wake Word** engine takes a language parameter. If you can spell your
+**Wake Word** with english phonemes nothing special must be done.
 
-You can find english phonemes for words with [The CMU Pronouncing
-Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict), try to pick english
- sounds that spell your Portuguese word
+You can find English phonemes for words with [The CMU Pronouncing
+Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). Try to pick english
+ sounds that spell your Portuguese word. 
 
 First, locate your `mycroft.conf` configuration file. On Mycroft for Linux,
 the configuration files exists in several places and is loaded by this order
 
     default, remote (mycroft.ai), system, user
+	
+[More information about the mycroft.conf file](https://mycroft.ai/documentation/mycroft-conf/)
 
-You should use remote settings or edit the user configuration file located at
+You should use remote settings, or edit the user configuration file located at:
 
 `~/.mycroft/mycroft.conf`
 
@@ -86,10 +88,10 @@ You should use remote settings or edit the user configuration file located at
     }
 ```
 
-If you want to use a Portuguese Wake Word with Portuguese phonemes we need to
+If you want to use a Portuguese **Wake Word** with Portuguese phonemes we need to
 download a Portuguese dictionary and a Portuguese acoustic model, trained with
  the latest `sphinxtrain`. The following steps are optional, you only need
- them if you want to use portuguese phonemes
+ them if you want to use Portuguese phonemes.
 
 
 ### Download and install Portuguese acoustic model
@@ -97,10 +99,11 @@ download a Portuguese dictionary and a Portuguese acoustic model, trained with
 No official model currently exists, but you can get an acoustic model from
 [FalaBrasil](http://laps.ufpa.br/falabrasil/downloads.php)
 
-Download the _acoustic model_ @TODO downloads link, site is currently down
+Download the _acoustic model_ 
+
+@TODO downloads link, site is currently down
 
 `wget link -O file`
-
 
 ### Install language in Mycroft directories
 
@@ -146,13 +149,13 @@ Check that the following files exist:
 
 ### Choosing a Portuguese **Wake Word**
 
-There is no tool to easily get the portuguese phonemes for words, you could
-choose a **Wake Word** or Wake Phrase in Portuguese, and then verify that it
+There is no tool to easily get the Portuguese phonemes for words. You could
+choose a **Wake Word** in Portuguese, and then verify that it
 is in the `pt-br.dic` file of the language model. This file is not needed for
-wake word spotting, you can get it from [FalaBrasil]() @TODO link
+**Wake Word** spotting, you can get it from [FalaBrasil]() @TODO link
 
 If your chosen **Wake Word** or phrase is not in the `pt-br.dict` file, you
-can try looking for similar words and pick the phonemes manually
+can try looking for similar words and pick the phonemes manually.
 
 ### Configure Mycroft to use Portuguese language and the chosen **Wake Word**
 
@@ -192,13 +195,11 @@ Edit the configuration file and add the new portuguese wake word:
 If the Speech to Text engine you are using already supports Portuguese, you
 don't need to do anything.
 
-The standard Mycroft STT should support most languages by default
+The standard Mycroft STT should support most languages by default.
 
-list of languages supported by [google](https://stackoverflow.com/questions/14257598/what-are-language-codes-in-chromes-implementation-of-the-html5-speech-recogniti)
+* list of languages supported by [google](https://stackoverflow.com/questions/14257598/what-are-language-codes-in-chromes-implementation-of-the-html5-speech-recogniti)
 
-list of languages supported by [ibm_bluemix](https://www.ibm.com/watson/developercloud/speech-to-text/api/v1/#sessionless_methods)
-
-@TODO list of languages for all officially supported engines
+* list of languages supported by [ibm_bluemix](https://www.ibm.com/watson/developercloud/speech-to-text/api/v1/#sessionless_methods)
 
 ## Select and configure a Text to Speech (TTS) engine with Portuguese support
 
@@ -221,19 +222,15 @@ Espeak should support [most languages](http://espeak.sourceforge.net/languages.h
     }
 ```
 
-@TODO list of languages for all officially supported engines like in this [post](https://jarbasai.github.io//tts_comparison/)
-
 ## Translating core dialog
 
-The default mycroft dialog files may need translation, for portuguese this is already implemented
+The default Mycroft dialog files may need translation. For Portuguese this is already implemented.
 
 You can find these files at
 
 `mycroft_root_dir/res/txt/pt-pt`
 
-You may need to copy the pt-pt folder into a pt-br folder
-
-@TODO bash usage example
+You may need to copy the `pt-pt` folder into a `pt-br` folder
 
 Check that the following files exist:
 
@@ -248,10 +245,9 @@ Check that the following files exist:
 * `/mycroft_core/mycroft/res/text/pt-br/ssh disabled.dialog`
 * `/mycroft_core/mycroft/res/text/pt-br/ssh enabled.dialog`
 
-
 ## Configure Mycroft to use Portuguese
 
-Finally change mycroft to Portuguese, you should use remote settings or edit
+Finally, to change Mycroft to Portuguese, you should use remote settings or edit
 the user configuration file located at
 
 `~/.mycroft/mycroft.conf`
@@ -262,41 +258,41 @@ the user configuration file located at
 
 ## Language Parsing
 
-There a few pieces of code needed to fully support a new language, these
+There a few pieces of code needed to fully support a new language. These
 include extracting numbers from text, sentence normalization and date time
-extraction
+extraction.
 
-for portuguese these have [already been implemented](https://github.com/MycroftAI/mycroft-core/pull/1049) and you do not need to
-worry about it
-
+For Portuguese these have [already been implemented](https://github.com/MycroftAI/mycroft-core/pull/1049) and you do not need to worry about it.
 
 ## Translating Skills
 
-Language support is implemented individually per skill
+Language support is implemented individually per **Skill**.
 
-The skills have a folder structure like this:
+The **Skills** have a folder structure like this:
 
+```
     dialog/en-us/speak.dialog
     vocab/en-us/sentence.intent
     vocab/en-us/word.entity
     vocab/en-us/keyword.voc
     regex/en-us/regex.rx
+```
 
-Just create the new language folder `pt-br` and translate all the files,
-please submit a PR in the skill repo so everyone benefits
+Will need to create a new language folder, `pt-br` in the `dialog`, `vocab` and `regex` directories, then translate all the files for the **Skill** to work in Portugues. Once you do this, please ensure you submit a PR in the Skill Repo on GitHub, so that the **Skill** author can merge the PR - and everyone benefits from your work. 
 
-_NOTE: once you change a skill folder you will no longer get automatic updates
+_NOTE: once you change a **Skill** folder you will no longer get automatic updates of that **Skill**
 
-Some skills, may generate speech at runtime, these need you to edit the code and language support is non trivial
+## Other things to consider with language translation in Mycroft
 
-Some skills need english input, like WolframAlpha, these will not trigger correctly
+Some **Skills** may generate speech at runtime. Language support for these **Skills** is non-trivial and will require editing of code in Python. 
 
-Skills like the reminder and alarm skill may not work correctly for languages
-that did not implement the previous step
+Some **Skills** expect English input, like WolframAlpha. These **Skills** will not work correctly with other languages. 
 
-Finally some skills, like the News skill, play english audio and you must find an alternative
+Some **Skills** use number and date-time processing, such as the Reminder and Alarm **Skills**. These **Skills** will not work correctly unless language parsing code has been implemented for the language. 
 
-You can also try to use [auto_translatable skills](https://github.com/JarbasAl/auto_translatable_skills), this is community contributed and not officially supported
+Some **Skills**, like the News Skill, play audio streams in English. You will need to find alternative audio streams in your language. 
+
+You can also try to use [auto_translatable skills](https://github.com/JarbasAl/auto_translatable_skills). This is community contributed by community member @JarbasAI,  and not officially supported by Mycroft.
 
 ## Getting involved
 
