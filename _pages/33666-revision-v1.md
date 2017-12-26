@@ -1,18 +1,19 @@
 ---
 ID: 33667
-post_title: Language support in Mycroft – Portuguese
+post_title: >
+  Language support in Mycroft –
+  Portuguese
 author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/documentation/language-support/portuguese/
+  http://mycroft.ai/documentation/release-notes/33666-revision-v1/
 published: true
 post_date: 2017-12-23 20:20:09
 ---
 # Language support in Mycroft - Portuguese - Português
 
-@TODO this should work exactly the same in picroft?
-_NOTE: These instructions apply to Mycroft for Linux only; we don't currently have instructions for changing the language on Picroft. If you'd like to help us out with that, jump into the [~languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) and let us know._
+_NOTE: These instructions apply to Mycroft for Linux only; we don't currently have instructions for changing the language on Picroft, but changing the language in Picroft should work in a similar way - why not give it a try and let us know how you go?. If you'd like to help us out with that, jump into the [~languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) and let us know._
 
 - [Language support in Mycroft - Portuguese - Português](#language-support-in-mycroft---portuguese---portugues)
   * [Change the **Wake Word** to Portuguese](#change-the-wake-word-to-portuguese)
