@@ -7,7 +7,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/documentation/release-notes/portuguese/
+  http://mycroft.ai/documentation/language-support/portuguese/
 published: true
 post_date: 2017-12-23 20:20:09
 ---
