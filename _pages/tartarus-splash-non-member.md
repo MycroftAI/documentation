@@ -23,7 +23,7 @@ post_date: 2017-11-14 13:27:13
 <ul>
  	<li><b>Social media news:</b> We're posting photos of the new Mark II device exclusively to our social media. You can see everything from the design ideation to what our first prototype looks like!</li>
 </ul>
-[/vc_column_text][nectar_icon icon_family="fontawesome" icon_style="default" icon_color="Accent-Color" icon_padding="0px" icon_fontawesome="fa fa-music" icon_size="40" margin_left="55" margin_top="25"][vc_column_text css=".vc_custom_1514331083453{padding-right: 5% !important;padding-bottom: 5% !important;padding-left: 5% !important;}"]
+[/vc_column_text][nectar_icon icon_family="fontawesome" icon_style="default" icon_color="Accent-Color" icon_padding="0px" icon_fontawesome="fa fa-newspaper-o" icon_size="40" margin_left="55" margin_top="25"][vc_column_text css=".vc_custom_1514331083453{padding-right: 5% !important;padding-bottom: 5% !important;padding-left: 5% !important;}"]
 <ul>
  	<li><b>In the News:</b><span style="font-weight: 400;">  Why consumers need a neutral option; <a href="https://mycroft.ai/blog/tech-giant-feud-heats-consumers-left-cold/" target="_blank" rel="noopener">read</a> our write up on the recent Google and Amazon feud, and how it's hurting customers.</span></li>
 </ul>
