@@ -28,7 +28,7 @@ If you haven't yet read the [overview of Mycroft components](http://mycroft.ai/d
 
 ## What makes a good **Skill**?
 
-There are many components to what mkes a good **Skill**.
+There are many components to what makes a good **Skill**.
 
 * **Fulfilling a need the user has**: Good **Skills** meet one or more needs the user has. Popular **Skills** are popular because people use them frequently - for instance to set alarms, reminders, and to identify the time in other time zones. On the other hand, a **Skill** that, say, recites π to a 100 digits might be pretty cool, but when was the last time you needed to know π to 100 digits? Contrast that with the last time you set a reminder on your phone.
 
