@@ -340,7 +340,7 @@ In the above code block, the [`pass` statement](https://docs.python.org/2/refere
 
 ## Simplifying your Skill code with `intent_handler` _decorators_ 
 
-Your **Skill** code can be simpliied using the intent_handler() _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
+Your **Skill** code can be simplified using the intent_handler() _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
 
 [Learn more about what _decorators_ are in Python at this link](https://en.wikipedia.org/wiki/Python_syntax_and_semantics#Decorators).
 
