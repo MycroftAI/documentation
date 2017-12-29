@@ -23,9 +23,10 @@ post_date: 2017-12-27 15:21:25
 <h3><span style="font-weight: 400;">Mycroft community member? </span></h3>
 <span style="font-weight: 400;">Come meet the Mycroft team or join us as a volunteer who represents the Mycroft community. We have free tickets and would love to have you along.</span>
 
-<span style="font-weight: 400;">Email </span><a href="mailto:eric@mycroft.ai"><span style="font-weight: 400;">eric@mycroft.ai</span></a><span style="font-weight: 400;"> for information</span>
+Simply fill out this form with your details, and we'll be in touch!
+[wpforms id="34083" title="true" description="true"]
 
-<span style="font-weight: 400;">Mycroft is at </span><a href="https://ces18.mapyourshow.com/7_0/floorplan/?hallID=M&amp;selectedBooth=booth~50679"><span style="font-weight: 400;">booth 50679</span></a><span style="font-weight: 400;"> of Eureka Park, in Hall G of the Sands Convention Center.</span>
+Mycroft is at <a href="https://ces18.mapyourshow.com/7_0/floorplan/?hallID=M&amp;selectedBooth=booth~50679">booth 50679</a> of Eureka Park, in Hall G of the Sands Convention Center.
 
 &nbsp;
 <h3><span style="font-weight: 400;">And whether we see you in Vegas or not, Happy Holidays and here’s to a great 2018!</span></h3>
