@@ -12,13 +12,13 @@ post_date: 2017-12-13 07:51:51
 # mycroft.conf and web_config_cache.json
 
 - [mycroft.conf and web_config_cache.json](#mycroftconf-and-web_config_cachejson)
-  * [What is `mycroft.conf`?](#what-is-mycroftconf)
+  * [What is `mycroft.conf`?](#what-is-mycroft-conf)
   * [What is `web_config_cache.json`?](#what-is-web_config_cachejson)
-  * [How are `mycroft.conf` and `web_config_cache.json` updated?](#how-are-mycroftconf-and-web_config_cachejson-updated)
-  * [Where is the `mycroft.conf` file stored?](#where-is-the-mycroftconf-file-stored)
-  * [A look at the inside of `mycroft.conf`](#a-look-at-the-inside-of-mycroftconf)
-  * [Where is the `web_config_cache.json` file stored?](#where-is-the-web_config_cachejson-file-stored)
-  * [A look at the inside of `web_config_cache.json`](#a-look-at-the-inside-of-web_config_cachejson)
+  * [How are `mycroft.conf` and `web_config_cache.json` updated?](#how-are-mycroft-conf-and-web_config_cache-json-updated)
+  * [Where is the `mycroft.conf` file stored?](#where-is-the-mycroft-conf-file-stored)
+  * [A look at the inside of `mycroft.conf`](#a-look-at-the-inside-of-mycroft-conf)
+  * [Where is the `web_config_cache.json` file stored?](#where-is-the-web_config_cache-json-file-stored)
+  * [A look at the inside of `web_config_cache.json`](#a-look-at-the-inside-of-web_config_cache-json)
 
 ## What is `mycroft.conf`?
 
