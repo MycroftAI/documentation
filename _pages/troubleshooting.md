@@ -193,6 +193,35 @@ Mycroft will respond in one of two ways:
 * If your configuration was out of date, and has been pulled down again, Mycroft will respond `Your device has been configured`.
 * If your configuration was the same on your **Device** as on home.mycroft.ai, Mycroft will respond `Updated configuration`.
 
+If you're comfortable SSHing into your device, SSH in and then run the following commands to see what configuration values are stored locally. 
+
+To see the city location value: 
+
+`jq ".location.city" < /opt/mycroft/web_config_cache.json`
+
+To see the latitude and longitude coordinates of your location: 
+
+`jq ".location.coordinate" < /opt/mycroft/web_config_cache.json`
+
+To see the timezone setting: 
+
+`jq ".location.timezone" < /opt/mycroft/web_config_cache.json`
+
+To see the listener setting: 
+
+`jq ".listener" < /opt/mycroft/web_config_cache.json`
+
+To see the Speech to Text (STT) settings: 
+
+`jq ".stt" < /opt/mycroft/web_config_cache.json`
+
+To see the Text to Speech (TTS) settings: 
+
+`jq ".tts" < /opt/mycroft/web_config_cache.json`
+
+
+We also have [more information available on `mycroft.conf` and `web_config_cache.json` files](https://mycroft.ai/documentation/mycroft-conf/). 
+
 ## Troubleshooting Mark 1
 
 #### Not connected to the internet
