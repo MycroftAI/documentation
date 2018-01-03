@@ -13,6 +13,6 @@ post_date: 2018-01-03 10:07:53
 Meet Mark II, our new voice assistant device.
 
 A private, neutral, and customizable way to voice enable your life.
-" font_container="tag:h2|font_size:42px|text_align:center|color:%23ffffff|line_height:50px" use_theme_fonts="yes"][/vc_column_inner][/vc_row_inner][vc_row_inner column_margin="default" bottom_padding="7%" text_align="left" css=".vc_custom_1506614575658{background-color: #283e52 !important;}"][vc_column_inner column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" width="1/1" column_border_width="none" column_border_style="solid"][vc_column_text]
+" font_container="tag:h2|font_size:56px|text_align:center|color:%23ffffff|line_height:64px" use_theme_fonts="yes"][/vc_column_inner][/vc_row_inner][vc_row_inner column_margin="default" bottom_padding="7%" text_align="left" css=".vc_custom_1506614575658{background-color: #283e52 !important;}"][vc_column_inner column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" width="1/1" column_border_width="none" column_border_style="solid"][vc_column_text]
 <p style="text-align: center;">[activecampaign form=1]</p>
 [/vc_column_text][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row]
