@@ -224,6 +224,20 @@ Picroft uses a Raspbian Jessie Lite image under the hood - with Mycroft pre-inst
 
 For more help or ideas, consider joining our [Picroft channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/picroft) or reading through our [Picroft topic on the Mycroft Forum](https://community.mycroft.ai/c/mycroft-project/Raspberry-Pi).
 
+#### Using the GPIO pins on the Raspberry Pi 3
+
+One common question we get is - "Can I use the [general purpose input output pins (GPIO)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi 3 with Picroft?".
+
+The answer is 'Yes' - but this requires some additional configuration. 
+
+You need to add the `mycroft` user to the `gpio` group with the command 
+
+`sudo adduser mycroft gpio`
+
+You also need to install some additional packages: 
+
+`sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
+
 ### Common issues on Picroft Devices
 
 #### Audio issues
