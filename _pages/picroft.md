@@ -9,6 +9,7 @@ published: true
 post_date: 2017-12-02 22:35:25
 ---
 # Picroft
+
 - [Picroft](#picroft)
     + [Prerequisites](#prerequisites)
       - [Hardware prerequisites](#hardware-prerequisites)
@@ -32,6 +33,7 @@ post_date: 2017-12-02 22:35:25
       - [Connecting Picroft to a keyboard and/or monitor](#connecting-picroft-to-a-keyboard-andor-monitor)
       - [Important file locations for Picroft](#important-file-locations-for-picroft)
     + [Next steps](#next-steps)
+      - [Using the GPIO pins on the Raspberry Pi 3](#using-the-gpio-pins-on-the-raspberry-pi-3)
     + [Common issues on Picroft Devices](#common-issues-on-picroft-devices)
       - [Audio issues](#audio-issues)
         * [Check which audio playback and recording devices are being recognized](#check-which-audio-playback-and-recording-devices-are-being-recognized)
