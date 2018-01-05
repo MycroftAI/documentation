@@ -6,7 +6,8 @@ post_title: >
 author: Alyx Horace
 post_excerpt: ""
 layout: post
-permalink: http://mycroft.ai/blog/34213/
+permalink: >
+  http://mycroft.ai/blog/crowdfunding-lessons-tips/
 published: true
 post_date: 2018-01-05 15:53:41
 ---
