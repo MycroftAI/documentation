@@ -133,7 +133,7 @@ class TomatoSkill(MycroftSkill):
         self.speak('A tomato is a big red thing')
 
     def handle_do_you_like(self, message):
-        tomato_type = message.get('type')
+        tomato_type = message.data.get('type')
         if tomato_type is not None:
             self.speak("Well, I'm not sure if I like " + tomato_type + " tomatoes.")
         else:
