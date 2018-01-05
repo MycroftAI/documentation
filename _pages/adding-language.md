@@ -13,6 +13,12 @@ post_date: 2017-12-03 06:53:37
 
 _NOTE: This documentation is a work in progress and is not yet complete_
 
+- [Adding a new language to Mycroft](#adding-a-new-language-to-mycroft)
+  * [Wake Word](#wake-word)
+  * [Speech to text (STT)](#speech-to-text-stt)
+  * [Text to Speech](#text-to-speech)
+  * [Skills](#skills)
+
 The Mycroft software suite has many elements. Adding language support for Mycroft means that each of those elements has to support the new language. This page walks you what has to be done for each of the elements. This is currently a significant undertaking; it is complex and will require some development and Linux system administration knowledge. 
 
 * Wake Word: When you Speak 'Hey Mycroft, do something', you are invoking a **Wake Word**. To change your **Wake Word** to another language, you need to install libraries for that language, and configure your **Wake Word** so that it has phonemes available in the library. 
