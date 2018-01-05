@@ -16,13 +16,15 @@ post_date: 2017-12-02 22:35:25
 
 A **Skill** can add context to the **Intent Parser** to create more natural interaction with Mycroft.
 
+_NOTE: Conversational context is currently only available with the [Adapt](https://mycroft.ai/documentation/adapt) Intent Parser, and is not yet available for [Padatious](https://mycroft.ai/documentation/padatious)_
+
 > How tall is John Cleese?
 
 `"John Cleese is 196 centimeters"`
 
 > Where's he from?
 
-'"Mycroft: He's from England"`
+`"He's from England"`
 
 Context is added manually by the **Skill** creator using either the `self.set_context()` method or the `@adds_context()` decorator.
 
