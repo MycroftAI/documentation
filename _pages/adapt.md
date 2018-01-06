@@ -122,9 +122,6 @@ Install Adapt via `pip` into your project's `virtualenv`:
 $ sudo apt-get install virtualenv
 $ virtualenv myvirtualenv
 $ . myvirtualenv/bin/activate
-$ pip install -e git+https://github.com/mycroftai/adapt#egg=adapt-parser$ sudo apt-get install virtualenv
-$ virtualenv myvirtualenv
-$ . myvirtualenv/bin/activate
 $ pip install -e git+https://github.com/mycroftai/adapt#egg=adapt-parser
 ```
 
