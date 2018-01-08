@@ -234,7 +234,7 @@ The answer is 'Yes' - but this requires some additional configuration.
 
 You need to add the `mycroft` user to the `gpio` group with the command 
 
-`sudo adduser mycroft gpio`
+`sudo usermod -g gpio mycroft`
 
 You also need to install some additional packages: 
 
