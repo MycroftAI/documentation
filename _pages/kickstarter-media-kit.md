@@ -8,11 +8,11 @@ permalink: http://mycroft.ai/kickstarter-media-kit/
 published: true
 post_date: 2018-01-09 05:42:17
 ---
-[vc_row type="full_width_content" full_screen_row_position="middle" vertically_center_columns="true" bg_color="#22a7f0" scene_position="center" text_color="light" text_align="left" top_padding="0" bottom_padding="0" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="0.3" background_color_hover="#22a7f0" background_hover_color_opacity="1" background_image="34072" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][/vc_column][vc_column column_padding="padding-7-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+[vc_row type="full_width_content" full_screen_row_position="middle" vertically_center_columns="true" bg_color="#22a7f0" scene_position="center" text_color="light" text_align="left" top_padding="0" bottom_padding="0" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="0.3" background_color_hover="#22a7f0" background_hover_color_opacity="1" background_image="34072" enable_bg_scale="true" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][/vc_column][vc_column column_padding="padding-7-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
 <h1>Mycroft AI Mark II</h1>
 <h2>Kickstarter Media Kit</h2>
 [/vc_column_text][divider line_type="No Line" custom_height="20"][vc_column_text]
-<h3><span style="font-weight: 400;">Mycroft is heading </span><i><span style="font-weight: 400;">back</span></i><span style="font-weight: 400;"> to Kickstarter to launch our second device, <strong>Mark II</strong>. A fully <em>open source</em> and <em>open hardware</em> voice assistant. </span></h3>
+<h3>Mycroft is heading back to Kickstarter to launch our second device, Mark II. A full open source and open hardware voice assistant, that respects your privacy.</h3>
 [/vc_column_text][divider line_type="No Line" custom_height="30"][vc_column_text]<b>In this media kit you’ll find:</b>
 <ul>
  	<li><span style="font-weight: 400;">Mycroft AI Kickstarter Media Kit</span></li>
