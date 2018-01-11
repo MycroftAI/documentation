@@ -24,21 +24,23 @@ post_date: 2018-01-09 05:42:17
  	<li><span style="font-weight: 400;">Quote Sheet and FAQs</span></li>
  	<li><span style="font-weight: 400;">Brand Assets and Media Repository</span></li>
 </ul>
-[/vc_column_text][/vc_column][/vc_row][vc_row type="full_width_content" full_screen_row_position="middle" equal_height="yes" content_placement="middle" vertically_center_columns="true" scene_position="center" text_color="dark" text_align="left" top_padding="1%" bottom_padding="0%" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="2/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][image_with_animation image_url="34383" alignment="center" animation="Fade In From Left" box_shadow="large_depth" max_width="125%"][/vc_column][vc_column column_padding="padding-7-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][vc_row_inner column_margin="default" text_align="left"][vc_column_inner enable_animation="true" animation="fade-in-from-bottom" column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" width="1/1" column_border_width="none" column_border_style="solid"][vc_custom_heading text="Media Contact" font_container="tag:h3|text_align:left|color:rgba(0%2C0%2C0%2C0.75)" use_theme_fonts="yes" css_animation="none"][/vc_column_inner][/vc_row_inner][vc_column_text]<span style="font-weight: 400;">For more information or any press inquiries, please reach out to </span><a href="mailto:media@mycroft.ai"><span style="font-weight: 400;">media@mycroft.ai</span></a><span style="font-weight: 400;"> or call (505) 470-1103.</span>
+[/vc_column_text][/vc_column][/vc_row][vc_row type="full_width_content" full_screen_row_position="middle" equal_height="yes" content_placement="middle" vertically_center_columns="true" scene_position="center" text_color="dark" text_align="left" top_padding="1%" bottom_padding="0%" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="2/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][image_with_animation image_url="34383" alignment="center" animation="Fade In From Left" box_shadow="large_depth" max_width="125%"][/vc_column][vc_column column_padding="padding-3-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][vc_column_text]
+<h2>Media Contact</h2>
+For more information or any press inquiries, please reach out to <a href="mailto:media@mycroft.ai">media@mycroft.ai</a> or call (505) 470-1103.
 
-<span style="font-weight: 400;">To learn more, please visit </span><a href="https://mycroft.ai/"><span style="font-weight: 400;">mycroft.ai</span></a><span style="font-weight: 400;"> and be sure to follow our socials!</span>
+To learn more, please visit <a href="https://mycroft.ai/">mycroft.ai</a> and be sure to follow our socials!
 <ul>
- 	<li><a href="http://www.facebook.com/aiforeveryone/"><span style="font-weight: 400;">Facebook</span></a></li>
- 	<li><a href="https://twitter.com/mycroft_ai"><span style="font-weight: 400;">Twitter</span></a></li>
- 	<li><a href="https://www.instagram.com/mycroft_ai/"><span style="font-weight: 400;">Instagram</span></a></li>
- 	<li><a href="https://www.linkedin.com/company/10255844/"><span style="font-weight: 400;">LinkedIn</span></a></li>
- 	<li><a href="https://www.youtube.com/channel/UC1dlmB1lup9RwFQBSGnhA-g"><span style="font-weight: 400;">Youtube</span></a></li>
+ 	<li><a href="http://www.facebook.com/aiforeveryone/">Facebook</a></li>
+ 	<li><a href="https://twitter.com/mycroft_ai">Twitter</a></li>
+ 	<li><a href="https://www.instagram.com/mycroft_ai/">Instagram</a></li>
+ 	<li><a href="https://www.linkedin.com/company/10255844/">LinkedIn</a></li>
+ 	<li><a href="https://www.youtube.com/channel/UC1dlmB1lup9RwFQBSGnhA-g">Youtube</a></li>
  	<li><a href="https://www.reddit.com/r/Mycroftai/"><span style="font-weight: 400;">Reddit</span></a></li>
- 	<li><a href="https://plus.google.com/+MycroftAIForEveryone"><span style="font-weight: 400;">G+</span></a></li>
- 	<li><a href="https://www.crunchbase.com/organization/mycroft-ai-inc"><span style="font-weight: 400;">Crunchbase</span></a></li>
- 	<li><a href="https://www.f6s.com/mycroftai"><span style="font-weight: 400;">F6s</span></a></li>
- 	<li><a href="https://chat.mycroft.ai"><span style="font-weight: 400;">Mycroft Community Chat </span></a></li>
- 	<li><a href="https://community.mycroft.ai/"><span style="font-weight: 400;">Mycroft Forum</span></a></li>
+ 	<li><a href="https://plus.google.com/+MycroftAIForEveryone">G+</a></li>
+ 	<li><a href="https://www.crunchbase.com/organization/mycroft-ai-inc">Crunchbase</a></li>
+ 	<li><a href="https://www.f6s.com/mycroftai">F6s</a></li>
+ 	<li><a href="https://chat.mycroft.ai">Mycroft Community Chat </a></li>
+ 	<li><a href="https://community.mycroft.ai/">Mycroft Forum</a></li>
 </ul>
 [/vc_column_text][/vc_column][/vc_row][vc_row type="full_width_content" full_screen_row_position="middle" vertically_center_columns="true" bg_color="#22a7f0" scene_position="center" text_color="light" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" background_image="34072" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][/vc_column][vc_column column_padding="padding-7-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
 <h1><span style="font-weight: 400;">Mycroft AI Kickstarter History</span></h1>
