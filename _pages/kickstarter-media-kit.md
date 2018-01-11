@@ -45,11 +45,7 @@ post_date: 2018-01-09 05:42:17
 [/vc_column_text][/vc_column][/vc_row][vc_row type="full_width_content" full_screen_row_position="middle" bg_color="#22a7f0" scene_position="center" text_color="light" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="2/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_row_inner equal_height="yes" content_placement="middle" column_margin="default" text_align="left"][vc_column_inner column_padding="padding-7-percent" column_padding_position="all" background_color_opacity="1" width="1/1" column_border_width="none" column_border_style="solid"][vc_column_text]
 <h2>Mycroft AI Kickstarter History</h2>
 <h3>History</h3>
-In the fall of 2015 we went to Kickstarter to see if there was a market for our idea. We raised $193,000 USD and turned Mycroft from a project into a company.
-
-We fulfilled all crowdfunding orders in July of 2017 - putting Mark I units in the hands of 1500 backers.
-
-Between these two dates we’ve progressed rapidly on the software and business development front, as detailed in the next section Company History and Traction.
+In the fall of 2015 we went to Kickstarter to see if there was a market for our idea. We raised $193,000 USD and turned Mycroft from a project into a company. We fulfilled all crowdfunding orders in July of 2017 - putting Mark I units in the hands of 1500 backers. Between these two dates we’ve progressed rapidly on the software and business development front, as detailed in the next section Company History and Traction.
 
 Our first Kickstarter campaign sold an advance prototype, Mark I. Still an open source, open hardware voice assistant, it was targeted at the makers and hackers. Mark II is for all consumers. A more robust voice assistant with far more benefits, and an increasingly intelligent technology stack behind it.
 <h3>About this campaign</h3>
