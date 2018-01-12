@@ -1,6 +1,6 @@
 ---
 ID: 34424
-post_title: 'Why we&#8217;re moving to DeepSpeech on March 31  Privacy, Speech to Text &#038; Balance'
+post_title: 'Why We&#8217;re moving to DeepSpeech on March 31 | Privacy, Speech to Text &#038; Balance'
 author: Steve Penrod
 post_excerpt: ""
 layout: post
