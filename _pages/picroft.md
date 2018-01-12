@@ -114,7 +114,7 @@ If you prefer to use the Linux command line tool `dd` to burn the disk image ins
 3. Identify the path where the MicroSD card is mounted by running the command `sudo fdisk -l`. You will be able to tell the path based on the storage size of the device.
 4. Keep a note of this - it will be something like `/dev/sdb1`
 5. Unmount the disk so that no other operation can write to the device while it is being imaged using the command `sudo umount /dev/sdb1`. Make sure to substitute for the location of your device. 
-5. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitue the location of your device, and the path to the `.img` file you downloaded.
+5. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitute the location of your device, and the path to the `.img` file you downloaded.
 6. This will take several minutes to run. The command prompt will return if successful, otherwise an error message will be displayed on your terminal.
 
 #### Booting up Picroft
