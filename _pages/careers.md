@@ -4,7 +4,7 @@ post_title: Careers at Mycroft
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/careers/
+permalink: http://mycroft.ai/contact/careers/
 published: true
 post_date: 2018-01-12 12:00:43
 ---
