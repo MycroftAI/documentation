@@ -194,6 +194,16 @@ To reimage a Mark 1 **Device**, you will need:
 
 For more information, [see the original forum post by Barney Woodrow](https://community.mycroft.ai/t/how-to-re-image-mark1s-sd-card/2106).
 
+If you prefer to use the Linux command line tool `dd` to burn the disk image instead, follow these instructions: 
+
+1. Download the [Mark 1 disk image](https://mycroft.ai/to/mark-1-image)
+2. Insert the Micro SD card you wish to burn the image to. It must have a storage capacity of 8GB or higher. 
+3. Identify the path where the MicroSD card is mounted by running the command `sudo fdisk -l`. You will be able to tell the path based on the storage size of the device.
+4. Keep a note of this - it will be something like `/dev/sdb1`
+5. Unmount the disk so that no other operation can write to the device while it is being imaged using the command `sudo umount /dev/sdb1`. Make sure to substitute for the location of your device. 
+5. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitute the location of your device, and the path to the `.img` file you downloaded.
+6. This will take several minutes to run. The command prompt will return if successful, otherwise an error message will be displayed on your terminal.
+
 ##### What should I do if reimaging doesn't work?
 
 Micro SD cards have a finite lifespan. It is possible that the Micro SD card inside the Raspberry Pi inside the Mark 1 unit has suffered hardware failure. If this occurs, you will see symptoms such as:
