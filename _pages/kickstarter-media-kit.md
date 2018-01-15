@@ -59,6 +59,7 @@ We accepted a strategic investment from Jaguar Land Rover to bring OS voice to t
 
 Technical Milestones:
 Wake Word: Continue to improve the accuracy of the Precise Wake Word software, and pre-train several Wake Words
+
 Speech to Text: Continue to partner with Mozilla with a view to implementing DeepSpeech
 
 Intents and Skills: Continue nurturing our Developer Community, providing on-ramps and tools to allow Developers to easily build and share Skills for Mycroft, and interface them with other data sets using common tools such as OAuth.
