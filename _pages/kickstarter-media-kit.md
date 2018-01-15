@@ -124,7 +124,7 @@ https://angel.co/mycroft-a-i/jobs
  	<li><a href="https://techcrunch.com/video/mycroft-open-source-voice-assistant/59c2b725c214e377dac11512/"><span style="font-weight: 400;">Techcrunch</span><span style="font-weight: 400;">
 </span></a></li>
 </ul>
-<h2><span style="font-weight: 400;">Quotes and FAQs</span></h2>
+<h2><span style="font-weight: 400;">Quotes</span></h2>
 <blockquote><span style="font-weight: 400;">"I love what Mycroft is doing. Artificial intelligence and machine learning are becoming a common component in our businesses, homes, and elsewhere, and with such a fundamental connection between people and technology, it is essential that the technology is as open and transparent as possible. Mycroft's focus on community, transparency, and delivering simple and expandable AI is what we need to ensure the AI revolution is in good hands." </span><b>- Jono Bacon, Author, Consultant, and Leader in Community Strategy and Open Source</b>
 
 "Voice is the next frontier for user interfaces and artificial intelligence. Mycroft ​is the open source solution to voice and I am excited to see the​Mycroft team propel this journey to the next level." <strong>- Lesa Mitchell, Managing Director <a href="https://www.techstars.com/">Techstars</a></strong>
