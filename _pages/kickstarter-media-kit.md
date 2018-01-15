@@ -27,21 +27,33 @@ post_date: 2018-01-09 05:42:17
 </ul>
 [/vc_column_text][/vc_column][/vc_row][vc_row type="full_width_content" full_screen_row_position="middle" equal_height="yes" content_placement="middle" vertically_center_columns="true" scene_position="center" text_color="dark" text_align="left" top_padding="2%" bottom_padding="2%" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="2/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][image_with_animation image_url="34383" alignment="center" animation="Fade In From Left" box_shadow="large_depth" max_width="125%"][/vc_column][vc_column column_padding="padding-3-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][vc_column_text]
 <h2>Media Contact</h2>
-<h3><span style="font-weight: 400;">For more information or any press inquiries, please reach out to </span><a href="mailto:media@mycroft.ai"><span style="font-weight: 400;">media@mycroft.ai</span></a><span style="font-weight: 400;"> or call (505) 470-1103.</span></h3>
+<h4><span style="font-weight: 400;">For more information or any press inquiries, please contact:</span></h4>
+<h3><strong> Alyx</strong> at<strong> </strong></h3>
+<h3><strong><a href="mailto:media@mycroft.ai">media@mycroft.ai</a> </strong></h3>
+<h3><strong>or call (505) 470-1103.</strong></h3>
 <span style="font-weight: 400;">To learn more, please visit </span><a href="https://mycroft.ai/"><span style="font-weight: 400;">mycroft.ai</span></a><span style="font-weight: 400;"> and be sure to follow our socials!</span>
 <ul>
- 	<li><a href="http://www.facebook.com/aiforeveryone/"><span style="font-weight: 400;">Facebook</span></a></li>
- 	<li><a href="https://twitter.com/mycroft_ai"><span style="font-weight: 400;">Twitter</span></a></li>
- 	<li><a href="https://www.instagram.com/mycroft_ai/"><span style="font-weight: 400;">Instagram</span></a></li>
- 	<li><a href="https://www.linkedin.com/company/10255844/"><span style="font-weight: 400;">LinkedIn</span></a></li>
- 	<li><a href="https://www.youtube.com/channel/UC1dlmB1lup9RwFQBSGnhA-g"><span style="font-weight: 400;">Youtube</span></a></li>
- 	<li><a href="https://www.reddit.com/r/Mycroftai/"><span style="font-weight: 400;">Reddit</span></a></li>
- 	<li><a href="https://plus.google.com/+MycroftAIForEveryone"><span style="font-weight: 400;">G+</span></a></li>
- 	<li><a href="https://www.crunchbase.com/organization/mycroft-ai-inc"><span style="font-weight: 400;">Crunchbase</span></a></li>
- 	<li><a href="https://chat.mycroft.ai"><span style="font-weight: 400;">Mycroft Community Chat </span></a></li>
- 	<li><a href="https://community.mycroft.ai/"><span style="font-weight: 400;">Mycroft Forum</span></a></li>
+ 	<li><a href="http://www.facebook.com/aiforeveryone/" target="_blank" rel="noopener"><span style="font-weight: 400;">Facebook</span></a></li>
+ 	<li><a href="https://twitter.com/mycroft_ai" target="_blank" rel="noopener"><span style="font-weight: 400;">Twitter</span></a></li>
+ 	<li><a href="https://www.instagram.com/mycroft_ai/" target="_blank" rel="noopener"><span style="font-weight: 400;">Instagram</span></a></li>
+ 	<li><a href="https://www.linkedin.com/company/10255844/" target="_blank" rel="noopener"><span style="font-weight: 400;">LinkedIn</span></a></li>
+ 	<li><a href="https://www.youtube.com/channel/UC1dlmB1lup9RwFQBSGnhA-g" target="_blank" rel="noopener"><span style="font-weight: 400;">Youtube</span></a></li>
+ 	<li><a href="https://www.reddit.com/r/Mycroftai/" target="_blank" rel="noopener"><span style="font-weight: 400;">Reddit</span></a></li>
+ 	<li><a href="https://plus.google.com/+MycroftAIForEveryone" target="_blank" rel="noopener"><span style="font-weight: 400;">G+</span></a></li>
+ 	<li><a href="https://www.crunchbase.com/organization/mycroft-ai-inc" target="_blank" rel="noopener"><span style="font-weight: 400;">Crunchbase</span></a></li>
+ 	<li><a href="https://chat.mycroft.ai" target="_blank" rel="noopener"><span style="font-weight: 400;">Mycroft Community Chat </span></a></li>
+ 	<li><a href="https://community.mycroft.ai/" target="_blank" rel="noopener"><span style="font-weight: 400;">Mycroft Forum</span></a></li>
 </ul>
 [/vc_column_text][/vc_column][/vc_row][vc_row type="full_width_content" full_screen_row_position="middle" bg_color="#2c3e50" scene_position="center" text_color="light" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="2/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_row_inner equal_height="yes" content_placement="middle" column_margin="default" text_align="left"][vc_column_inner column_padding="padding-7-percent" column_padding_position="all" background_color_opacity="1" width="1/1" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h2>Why We're Different</h2>
+<span style="font-weight: 400;">Voice is coming to every device, every platform and every household globally. The technology is becoming a critical part of nearly every technology stack and has a growing presence within the home as an AI assistant.</span>
+
+<span style="font-weight: 400;">This calls for voice to be</span><b> flexible, customizable, neutral, and privacy-minded</b><span style="font-weight: 400;">; things that the proprietary voice assistants on the market today don’t offer.</span>
+
+<span style="font-weight: 400;">Mycroft’s open platform differs from products like Alexa or Siri in four important ways.  Data privacy, customization, user agency and open data. Mycroft’s platform provides users with privacy by deleting queries as they come in. The agent can also be customized by changing the wake word, voice and even the user experience. Mycroft is also the first assistant that embraces the concept of user agency--other voice assistants don’t represent users, they represent the companies that own them.  Mycroft is different, it represents end users. Finally, Mycroft is using data from users who have opted in to publish an open data set that can be used to improve wakeword spotting, speech to text transcription, natural language understanding, and speech synthesis.</span>
+
+<span style="font-weight: 400;">Mycroft is a full feature voice platform that can be deployed anywhere, or used in conjunction with our devices. Our next generation hardware device, Mark II is a wireless smart speaker that plays music, set timers, can access calendar events, search for general knowledge and has everything else the public has come to expect from a voice assistant.</span>
+<h2></h2>
 <h2>Mycroft AI Kickstarter History</h2>
 In the fall of 2015 we went to Kickstarter to see if there was a market for our idea. We raised $193,000 USD and turned Mycroft from a project into a company. We fulfilled all crowdfunding orders in July of 2017 - putting Mark I units in the hands of 1500 backers. Between these two dates we’ve progressed rapidly on the software and business development front, as detailed in the next section Company History and Traction.
 
