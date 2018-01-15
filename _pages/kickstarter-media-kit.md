@@ -111,17 +111,18 @@ https://angel.co/mycroft-a-i/jobs
 <h1><span style="font-weight: 400;">Mycroft in the News</span><span style="font-weight: 400;">
 </span></h1>
 <ul>
- 	<li><a href="https://www.popsci.com/ultimate-diy-ai"><span style="font-weight: 400;">Popular Science</span></a></li>
- 	<li><a href="https://www.forbes.com/sites/janakirammsv/2015/08/20/meet-mycroft-the-open-source-alternative-to-amazon-echo/#1d6882c362a2"><span style="font-weight: 400;">Forbes</span></a></li>
- 	<li><a href="https://www.technologyreview.com/s/607892/an-open-source-and-cute-alternative-to-amazon-echo/"><span style="font-weight: 400;">MIT Technology Review</span></a></li>
- 	<li><a href="http://www.jupiterbroadcasting.com/86422/vulkan-the-metal-slayer-lup-105/"><span style="font-weight: 400;">Jupiter Broadcasting</span></a></li>
- 	<li><a href="http://www.cnet.com/products/mycroft-smart-home-ai-platform/"><span style="font-weight: 400;">CNet</span></a></li>
- 	<li><a href="http://www.zdnet.com/article/meet-mycroft-the-open-source-ai-who-wants-to-rival-siri-cortana-and-alexa/"><span style="font-weight: 400;">ZDNet</span></a></li>
- 	<li><a href="https://www.inc.com/matt-hunckler/these-5-artificial-intelligence-startups-are-trans.html"><span style="font-weight: 400;">Inc.</span></a></li>
- 	<li><a href="https://www.cio.com/article/3017983/linux/2015s-most-exciting-linux-devices.html#slide2"><span style="font-weight: 400;">CIO</span></a></li>
- 	<li><a href="http://news.softpedia.com/news/mycroft-is-an-ai-for-your-home-powered-by-raspberry-pi-2-and-ubuntu-snappy-489280.shtml"><span style="font-weight: 400;">Softpedia</span></a></li>
- 	<li><a href="https://mycroft.ai/blog/le-monde-science-health/"><span style="font-weight: 400;">Le Monde</span></a></li>
- 	<li><a href="https://techcrunch.com/video/mycroft-open-source-voice-assistant/59c2b725c214e377dac11512/"><span style="font-weight: 400;">Techcrunch</span><span style="font-weight: 400;">
+ 	<li><a href="http://money.cnn.com/gallery/technology/2018/01/13/ces-2018-gadgets/12.html" target="_blank" rel="noopener">CNN Tech</a></li>
+ 	<li><a href="https://www.popsci.com/ultimate-diy-ai" target="_blank" rel="noopener"><span style="font-weight: 400;">Popular Science</span></a></li>
+ 	<li><a href="https://www.forbes.com/sites/janakirammsv/2015/08/20/meet-mycroft-the-open-source-alternative-to-amazon-echo/#1d6882c362a2" target="_blank" rel="noopener"><span style="font-weight: 400;">Forbes</span></a></li>
+ 	<li><a href="https://www.technologyreview.com/s/607892/an-open-source-and-cute-alternative-to-amazon-echo/" target="_blank" rel="noopener"><span style="font-weight: 400;">MIT Technology Review</span></a></li>
+ 	<li><a href="http://www.jupiterbroadcasting.com/86422/vulkan-the-metal-slayer-lup-105/" target="_blank" rel="noopener"><span style="font-weight: 400;">Jupiter Broadcasting</span></a></li>
+ 	<li><a href="http://www.cnet.com/products/mycroft-smart-home-ai-platform/" target="_blank" rel="noopener"><span style="font-weight: 400;">CNet</span></a></li>
+ 	<li><a href="http://www.zdnet.com/article/meet-mycroft-the-open-source-ai-who-wants-to-rival-siri-cortana-and-alexa/" target="_blank" rel="noopener"><span style="font-weight: 400;">ZDNet</span></a></li>
+ 	<li><a href="https://www.inc.com/matt-hunckler/these-5-artificial-intelligence-startups-are-trans.html" target="_blank" rel="noopener"><span style="font-weight: 400;">Inc.</span></a></li>
+ 	<li><a href="https://www.cio.com/article/3017983/linux/2015s-most-exciting-linux-devices.html#slide2" target="_blank" rel="noopener"><span style="font-weight: 400;">CIO</span></a></li>
+ 	<li><a href="http://news.softpedia.com/news/mycroft-is-an-ai-for-your-home-powered-by-raspberry-pi-2-and-ubuntu-snappy-489280.shtml" target="_blank" rel="noopener"><span style="font-weight: 400;">Softpedia</span></a></li>
+ 	<li><a href="https://mycroft.ai/blog/le-monde-science-health/" target="_blank" rel="noopener"><span style="font-weight: 400;">Le Monde</span></a></li>
+ 	<li><span style="font-weight: 400;"><a href="https://techcrunch.com/video/mycroft-open-source-voice-assistant/59c2b725c214e377dac11512/" target="_blank" rel="noopener">Techcrunch</a></span><a href="https://techcrunch.com/video/mycroft-open-source-voice-assistant/59c2b725c214e377dac11512/" target="_blank" rel="noopener"><span style="font-weight: 400;">
 </span></a></li>
 </ul>
 <h2><span style="font-weight: 400;">Quotes</span></h2>
