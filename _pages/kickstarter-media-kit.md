@@ -21,7 +21,7 @@ post_date: 2018-01-09 05:42:17
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#why-were-different"><span style="font-weight: 400;">Mycroft AI Kickstarter History</span></a></span></li>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#milestones-and-traction"><span style="font-weight: 400;">Company History and Traction</span></a></span></li>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#leadership"><span style="font-weight: 400;">Executive Team Biographies</span></a></span></li>
- 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#pressrelease"><span style="font-weight: 400;">Mycroft Launches an Open Alternative to Alexa and Assistant</span></a></span></li>
+ 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#mycroft-launches-an-open-alternative-to-alexa-and-assistant"><span style="font-weight: 400;">Mycroft Launches an Open Alternative to Alexa and Assistant</span></a></span></li>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#news"><span style="font-weight: 400;">Mycroft in the News</span></a></span></li>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#quotes"><span style="font-weight: 400;">Quote Sheet and FAQs</span></a></span></li>
 </ul>
