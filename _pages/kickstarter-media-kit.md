@@ -151,8 +151,19 @@ https://angel.co/mycroft-a-i/jobs
 </div>
 </div>
 <div class="yj6qo ajU"></div></blockquote>
-[/vc_column_text][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row type="full_width_background" full_screen_row_position="middle" bg_color="#f4f4f4" scene_position="center" text_color="dark" text_align="left" top_padding="10%" bottom_padding="10%" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/6" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][vc_column_text max_width="450"]
+[/vc_column_text][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row type="full_width_background" full_screen_row_position="middle" bg_color="#f4f4f4" scene_position="center" text_color="dark" text_align="left" top_padding="10%" bottom_padding="10%" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="5/6" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_row_inner column_margin="default" text_align="left"][vc_column_inner column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" width="1/1" column_border_width="none" column_border_style="solid"][vc_column_text]
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
 <div data-mh="-1">
-<h1 class="_HTf">Image and asset repository</h1>
+<h1 id="image-and-asset-repository" class="_HTf">Image and asset repository</h1>
 </div>
-[/vc_column_text][vc_column_text css=".vc_custom_1515506705202{margin-top: 25px !important;padding-right: 15% !important;}" max_width="500"]We've provided the following images and assets for your use. Please don't hesitate to contact us if what you're looking for isn't here.[/vc_column_text][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="5/6" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_gallery type="nectarslider_style" images="34644,33860,34412,34410,34072,33537,34378" flexible_slider_height="true" bullet_navigation_style="see_through" onclick="link_image" img_size="medium"][/vc_column][/vc_row]
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element vc_custom_1515506705202">
+<div class="wpb_wrapper">
+
+We've provided the following images and assets for your use. Please don't hesitate to contact us if what you're looking for isn't here.
+
+</div>
+</div>
+[/vc_column_text][/vc_column_inner][/vc_row_inner][vc_gallery type="nectarslider_style" images="34644,33860,34412,34410,34072,33537,34378" flexible_slider_height="true" bullet_navigation_style="see_through" onclick="link_image" img_size="medium"][/vc_column][/vc_row]
