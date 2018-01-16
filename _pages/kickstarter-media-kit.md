@@ -128,13 +128,25 @@ https://angel.co/mycroft-a-i/jobs
 <h2><span style="font-weight: 400;">Quotes</span></h2>
 <blockquote><span style="font-weight: 400;">"I love what Mycroft is doing. Artificial intelligence and machine learning are becoming a common component in our businesses, homes, and elsewhere, and with such a fundamental connection between people and technology, it is essential that the technology is as open and transparent as possible. Mycroft's focus on community, transparency, and delivering simple and expandable AI is what we need to ensure the AI revolution is in good hands." </span><b>- Jono Bacon, Author, Consultant, and Leader in Community Strategy and Open Source</b>
 
+<hr />
+
 "Voice is the next frontier for user interfaces and artificial intelligence. Mycroft ​is the open source solution to voice and I am excited to see the​Mycroft team propel this journey to the next level." <strong>- Lesa Mitchell, Managing Director <a href="https://www.techstars.com/">Techstars</a></strong>
+
+<hr />
+
 <div id="m_-8470326683647559940gmail-:123" class="m_-8470326683647559940gmail-ii m_-8470326683647559940gmail-gt m_-8470326683647559940gmail-adO">
 <div id="m_-8470326683647559940gmail-:zn" class="m_-8470326683647559940gmail-a3s m_-8470326683647559940gmail-aXjCH m_-8470326683647559940gmail-m160dd08117fa6ffe">
 <div dir="ltr">
 <div>"Mycroft is a super platform for Makers interested in exploring and using Voice. It is open source and well supported by the company and community of users with quick answers on the forum. The underlying language of skills is Python, so if you can write it in Python, you can use it on Mycroft and very importantly there are already large number of skills available to learn from" - <strong>Greg Voronin, Community Developer and Maker</strong></div>
-<div></div>
-<div><span style="font-weight: 400;">“Unlike some technologies where correct and incorrect is easy to define, Artificial Intelligence has to deal with fuzzy lines.  Shaping these AI entities to serve the world should be managed in an open way where it can be researched and understood by all.</span><b>”</b><b> - Steve Penrod, Mycroft AI CTO</b></div>
+<div>
+
+<hr />
+
+<span style="font-weight: 400;">“Unlike some technologies where correct and incorrect is easy to define, Artificial Intelligence has to deal with fuzzy lines.  Shaping these AI entities to serve the world should be managed in an open way where it can be researched and understood by all.</span><b>”</b><b> - Steve Penrod, Mycroft AI CTO</b>
+
+<hr />
+
+</div>
 </div>
 </div>
 </div>
