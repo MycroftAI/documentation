@@ -14,16 +14,15 @@ post_date: 2018-01-09 05:42:17
 [/vc_column_text][divider line_type="No Line" custom_height="20"][vc_column_text]
 <h2>Kickstarter Launch - January 25th</h2>
 <h4><span style="font-weight: 400;">The Mark II is the second smart speaker from Mycroft AI.  Mycroft is an open voice assistant that designed with privacy and user agency in mind.</span></h4>
-[/vc_column_text][divider line_type="No Line" custom_height="30"][vc_column_text]<b>In this Media Kit you’ll find:</b>
+[/vc_column_text][divider line_type="No Line" custom_height="30"][vc_column_text]<span style="color: #ffffff;"><b>In this Media Kit you’ll find:</b></span>
 <ul>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#media-contact"><span style="font-weight: 400;">Media Contact</span></a></span></li>
- 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#image-and-asset-repository"><span style="font-weight: 400;">Brand Assets and Media Repository</span></a></span></li>
- 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#why-were-different"><span style="font-weight: 400;">Mycroft AI Kickstarter History</span></a></span></li>
- 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#milestones-and-traction"><span style="font-weight: 400;">Company History and Traction</span></a></span></li>
- 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#leadership"><span style="font-weight: 400;">Executive Team Biographies</span></a></span></li>
+ 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#images-and-assets"><span style="font-weight: 400;">Images and Assets</span></a></span></li>
+ 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#why-were-different"><span style="font-weight: 400;">Why we're Different</span></a></span></li>
+ 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#milestones-and-traction"><span style="font-weight: 400;">Milestones and Traction</span></a></span></li>
+ 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#leadership"><span style="font-weight: 400;">Leadership</span></a></span></li>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#mycroft-launches-an-open-alternative-to-alexa-and-assistant"><span style="font-weight: 400;">Mycroft Launches an Open Alternative to Alexa and Assistant</span></a></span></li>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#mycroft-in-the-news"><span style="font-weight: 400;">Mycroft in the News</span></a></span></li>
- 	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#quotes"><span style="font-weight: 400;">Quote Sheet and FAQs</span></a></span></li>
 </ul>
 [/vc_column_text][/vc_column][/vc_row][vc_row type="full_width_content" full_screen_row_position="middle" equal_height="yes" content_placement="middle" vertically_center_columns="true" scene_position="center" text_color="dark" text_align="left" top_padding="2%" bottom_padding="2%" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="2/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][image_with_animation image_url="34383" alignment="center" animation="Fade In From Left" box_shadow="large_depth" max_width="125%"][/vc_column][vc_column column_padding="padding-3-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][vc_column_text]
 <h2 id="#mediakit">Media Contact</h2>
