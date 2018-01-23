@@ -18,6 +18,8 @@ post_date: 2018-01-23 10:49:18
 <div class="column">
 <h4>We’ve briefed you on why open source is better for privacy, then we told you our story and what we’ve learned.</h4>
 Now, see our brand-new voice assistant and it’s features. <strong>Think things like...</strong>
+
+&nbsp;
 <h3><strong>A multi-microphone array</strong> that ensures Mycroft can hear when you’re speaking to him, even when music is playing.</h3>
 </div>
 </div>
