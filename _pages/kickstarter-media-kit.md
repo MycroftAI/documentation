@@ -14,7 +14,7 @@ post_date: 2018-01-09 05:42:17
 [/vc_column_text][divider line_type="No Line" custom_height="20"][vc_column_text]
 <h2>LIVE on Kickstarter. 100% funded in 6.5 hours.</h2>
 <h4><span style="font-weight: 400;">The Mark II is the second smart speaker from Mycroft AI.  Mycroft is an open voice assistant that designed with privacy and user agency in mind.</span></h4>
-[/vc_column_text][divider line_type="No Line" custom_height="30"][vc_column_text]<span style="color: #ffffff;"><b>In this Media Kit you’ll find:</b></span>
+[/vc_column_text][divider line_type="No Line" custom_height="30"][nectar_btn size="large" button_style="regular" button_color_2="Extra-Color-3" icon_family="none" url="http://www.001.kickstarter.mycroft.ai/" text="Go To Kickstarter Page"][divider line_type="No Line" custom_height="30"][vc_column_text]<span style="color: #ffffff;"><b>In this Media Kit you’ll find:</b></span>
 <ul>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#media-contact"><span style="font-weight: 400;">Media Contact</span></a></span></li>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#images-and-assets"><span style="font-weight: 400;">Images and Assets</span></a></span></li>
