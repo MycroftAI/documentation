@@ -175,6 +175,14 @@ Rather than writing out all combinations of possibilities, you can embed them in
 (Order | Grab) some {food} (from {place} | )
 ```
 
+Note that at this time, only one layer of parentheses is supported meaning the following will not work:
+
+```
+(Look (at | for) | Find) {object}.
+```
+
+We'd love a community contribution to add support for this if you are up for it.
+
 ### Number matching
 
 Let's say you are writing an **Intent** to call a phone number. You can make it only match specific formats of numbers by writing out possible arrangements using `#` where a number would go. For example, with the following intent:
