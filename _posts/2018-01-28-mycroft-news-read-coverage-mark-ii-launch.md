@@ -1,8 +1,8 @@
 ---
 ID: 34970
 post_title: >
-  Mycroft in the News? Read Coverage the
-  Mark II Launch
+  Mycroft in the News? Press Coverage on
+  the Mark II Launch
 author: Alyx Horace
 post_excerpt: ""
 layout: post
