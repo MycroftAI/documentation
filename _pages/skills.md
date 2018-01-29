@@ -76,42 +76,42 @@ The table of **Skills** below have all been contributed by the Developer Communi
 
 | Status              | Skill Name                                                     | Description<br>```"phrase to trigger"```    |
 | ------------------- | -------------------------------------------------------------- | --------------------------------------------|
-| :question:          |[amarok-media-player-skill](https://github.com/AIIX/amarok-player-skill#readme)               | Player controls for the Amarok Media Player<br>```"amarok play/stop/next/previous music"``` |
-| :question:         | [angry-beanie-podcast-player](https://github.com/purserj/mycroft-angrybeanie#readme)         | Skill for querying and playing Angry Beanie Podcasts<br />```"Get Angry Beanie shows"``` |
-| :heavy_check_mark:  | [autogui-skill](../../wiki/SKILL-Autogui)                      | Manipulate your mouse and keyboard with Mycroft                                                  |
-| :question:  | [audio-control-plasma](https://github.com/AIIX/audio-control-plasma#readme)| Audio control for Plasma Desktop<br>```"increase volume to maximum", "decrease microphone to minimum volume"```         |
+| :question:          | [amarok-media-player-skill](https://github.com/AIIX/amarok-player-skill#readme)               | Player controls for the Amarok Media Player<br>```"amarok play/stop/next/previous music"``` |
+| :question:          | [angry-beanie-podcast-player](https://github.com/purserj/mycroft-angrybeanie#readme)         | Skill for querying and playing Angry Beanie Podcasts<br />```"Get Angry Beanie shows"``` |
+| :heavy_check_mark:  | [autogui-skill](https://github.com/eClarity/skill-autogui)                      | Manipulate your mouse and keyboard with Mycroft                                                  |
+| :question:          | [audio-control-plasma](https://github.com/AIIX/audio-control-plasma#readme)| Audio control for Plasma Desktop<br>```"increase volume to maximum", "decrease microphone to minimum volume"```         |
 | :heavy_check_mark:  | [basichelp](https://github.com/btotharye/mycroft-skill-basichelp#readme)| Get basic mycroft questions and help answered<br>```"where is the documentation", "how do I install from source"```         |
-| :question:          |[bioinformatics](../../wiki/SKILL-bioinformatics)               | Adds Bio-Linux Commands to Mycroft   |  
-| :question:          | [bitcoin](../../wiki/SKILL-bitcoin)                            | Check the price of bitcoin                                                               |  
-| :construction:      | [bitcoin-price](../../wiki/SKILL-bitcoin-price)                |  Checks the price of bitcoin                             |
-| :construction:      | [brain-skill](../../wiki/SKILL-brain)                          |  Chain intents and provide some services                                                 |
-| :construction:  | [skill-calculator](https://github.com/TREE-Edu/calculator-skill.git)| Provides a conversational based calculator.<br>```Do some math```
-| :question:          | [cbc-news-skill](../../wiki/SKILL-cbc-news)        | Fetches CBC News Podcast             |  
+| :question:          | [bioinformatics](https://github.com/TicklishGiraffe/mycroft_genomics)               | Adds Bio-Linux Commands to Mycroft   |  
+| :question:          | [bitcoin](https://github.com/chrison999/mycroft-skill-bitcoin-enhanced)                            | Check the price of bitcoin                                                               |  
+| :construction:      | [bitcoin-price](https://github.com/dmp1ce/mycroft-bitcoinprice-skill)                |  Checks the price of bitcoin                             |
+| :construction:      | [brain-skill](https://github.com/skeledrew/brain-skill)                          |  Chain intents and provide some services                                                 |
+| :construction:      | [skill-calculator](https://github.com/TREE-Edu/calculator-skill)| Provides a conversational based calculator.<br>```Do some math```
+| :question:          | [cbc-news-skill](https://github.com/chrison999/mycroft-skill-cbc-news)        | Fetches CBC News Podcast             |  
 | :question:          | [clarifai-image-recognition-skill](https://github.com/AIIX/clarifai-image-recognition-skill#readme)      | Image recognition skill based on clarifai<br> ```"search image url [imagelocation]"```   |
-| :question:          | [clementine-player-skill](../../wiki/SKILL-clementine-player)  | Controls your clementine-player localy. A fork from amarok-player.   |
-| :question:          | [cleverbot-skill](../../wiki/SKILL-cleverbot)        | cleverbot api fallback skill   |
-| :heavy_check_mark:          | [coin-flip-skill](../../wiki/SKILL-coin-flip)        | Flip a virtual coin   |
-| :question:          | [daily-meditation](../../wiki/SKILL-daily-meditation)          |Plays your Daily Meditation from the  Meditation Podcast     |
-| :construction:      | [deepdream_skill](../../wiki/SKILL-deepdream)                  | Adds Deepdreaming image converstion to Mycroft       |
-| :question:          | [diagnostics](../../wiki/SKILL-diagnostics)                    | Diagnostic tools (CPU %age, free space, etc)    |
-| :construction:      | [dice-roll](../../wiki/SKILL-dice)                             | Rolls dice spoken in RPG notation.                                                       |
-| :question:          | [domoticz_skill](../../wiki/SKILL-domoticz)                    | Skill integrating Mycroft with Domoticz    |
-| :question:          | [drive_servos](../../wiki/SKILL-drive-servos)                  | Control Hacked-Servo-Engines to make your mycroft move around   |
-| :heavy_check_mark:  | [easter-eggs](../../wiki/SKILL-easter-eggs)                    | Pop culture references and other easter eggs  |
-| :question:          | [earth-orbit-pic-skill](../../wiki/SKILL-earth-orbit-pic)      | Earth orbit picture skill   |
-| :skull:             | [enhanced-bitcoin-skill](../../wiki/SKILL-enhanced-bitcoin)  | Enhanced bitcoin skill from api.bitcoinaverage.com        |
-| :construction:      | [facebook](../../wiki/SKILL-facebook)                          | Generates posts for Facebook                  |
-| :construction:      | [facebook-marketing](../../wiki/SKILL-facebook-marketing)      | Works with Facebook Marketing API                                                        |
-| :question:          | [feedback-skill](../../wiki/SKILL-feedback)                    | triggers positive feedback intent -> calls feedback method on last active skill          |  
-| :question:          | [fox-news-skill](../../wiki/SKILL-fox-news)                    | Fetches Fox News Podcast                                                                 |
-| :question:          | [google-calendar](../../wiki/SKILL-google-calendar)            | Check and add google calendar events                                                     |  
-| :question:          | [google-gmail](../../wiki/SKILL-google-gmail)                  | Get emails from your Gmail Inbox                                                         |  
-| :question:          | [google-image-search](../../wiki/SKILl-google-image-search)    | Search google images for search term and display                                         |
-| :question:          | [google-translate](../../wiki/SKILL-google-translate)          | Translate English phrases into other languages                                           |
-| :construction:  | [gpio-example](../../wiki/SKILL-gpio-example)                            | Example skill using the GPIO pins on the Raspberry Pi to blink an LED                                         |    
-| :question:          | [hue](../../wiki/SKILL-hue)                                    | Control your Phillips Hue lights                                                         |  
+| :question:          | [clementine-player-skill](https://github.com/hersche/mycroft-clementine-skill)  | Controls your clementine-player localy. A fork from amarok-player.   |
+| :question:          | [cleverbot-skill](https://github.com/JarbasAI/skill_cleverbot)        | cleverbot api fallback skill   |
+| :heavy_check_mark:  | [coin-flip-skill](https://github.com/wligtenberg/coin-flip-skill)        | Flip a virtual coin   |
+| :question:          | [daily-meditation](https://github.com/kfezer/daily_meditation)          |Plays your Daily Meditation from the  Meditation Podcast     |
+| :construction:      | [deepdream_skill](https://github.com/JarbasAI/mycroft-deepdream-skill)                  | Adds Deepdreaming image converstion to Mycroft       |
+| :question:          | [diagnostics](https://github.com/the7erm/mycroft-skill-diagnostics)                    | Diagnostic tools (CPU %age, free space, etc)    |
+| :construction:      | [dice-roll](https://github.com/Friday811/skill-dice)                             | Rolls dice spoken in RPG notation.                                                       |
+| :question:          | [domoticz_skill](https://github.com/matleses/domoticz_skill)                    | Skill integrating Mycroft with Domoticz    |
+| :question:          | [drive_servos](https://github.com/Nold360/mycroft_skill-drive_servos)                  | Control Hacked-Servo-Engines to make your mycroft move around   |
+| :heavy_check_mark:  | [easter-eggs](https://github.com/JarbasAI/skill_easter_eggs)                    | Pop culture references and other easter eggs  |
+| :question:          | [earth-orbit-pic-skill](https://github.com/JarbasAI/mycroft---astronomy-picture-of-teh-day)      | Earth orbit picture skill   |
+| :skull:             | [enhanced-bitcoin-skill](https://github.com/chrison999/mycroft-skill-bitcoin-enhanced)  | Enhanced bitcoin skill from api.bitcoinaverage.com        |
+| :construction:      | [facebook](https://github.com/JarbasAI/mycroft-facebook-skill)                          | Generates posts for Facebook                  |
+| :construction:      | [facebook-marketing](https://github.com/ProsperousHeart/mycroft-facebook-marketing)      | Works with Facebook Marketing API                                                        |
+| :question:          | [feedback-skill](https://github.com/JarbasAI/mycroft-feedback-skill)                    | triggers positive feedback intent -> calls feedback method on last active skill          |  
+| :question:          | [fox-news-skill](https://github.com/chrison999/mycroft-skill-fox-news)                    | Fetches Fox News Podcast                                                                 |
+| :question:          | [google-calendar](https://github.com/jcasoft/GoogleCalendar-Skill)            | Check and add google calendar events                                                     |  
+| :question:          | [google-gmail](https://github.com/jcasoft/GoogleGmailSkill)                  | Get emails from your Gmail Inbox                                                         |  
+| :question:          | [google-image-search](https://github.com/JarbasAI/mycroft-pictureskill)    | Search google images for search term and display                                         |
+| :question:          | [google-translate](https://github.com/jcasoft/TranslateSkill)          | Translate English phrases into other languages                                           |
+| :construction:      | [gpio-example](https://github.com/MycroftAI/picroft_example_skill_gpio)                            | Example skill using the GPIO pins on the Raspberry Pi to blink an LED                                         |    
+| :question:          | [hue](https://github.com/ChristopherRogers1991/mycroft-hue)                                    | Control your Phillips Hue lights                                                         |  
 | :heavy_check_mark:  | [home-assistant](https://github.com/btotharye/mycroft-homeassistant#readme)| Control your devices in home-assistant<br>```"turn on office"```                                                      |  
-| :question:          | [irsend](../../wiki/SKILL-irsend)                              | Control devices via [lirc's](http://www.lirc.org/) [irsend](http://www.lirc.org/html/irsend.html)                                                         |
+| :question:          | [irsend](https://github.com/ChristopherRogers1991/mycroft-hue)                              | Control devices via [lirc's](http://www.lirc.org/) [irsend](http://www.lirc.org/html/irsend.html)                                                         |
 | :question:          | [jb-podcasts](../../wiki/SKILL-Jupiter-Broadcasting-Podcasts)  | Play podcasts from Jupiter Broadcasting shows                                            |  
 | :question:          | [krunner-search](https://github.com/AIIX/krunner-search-skill#readme) | Search local KDE desktop for files, images, recent documents, bookmarks<br>```"search this computer for [any keyword]"```                  |
 | :question:          | [kodi-cadair](../../wiki/SKILL-cadair-kodi)                    | Kodi playback and search                                                                 |  
