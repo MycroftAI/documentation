@@ -67,6 +67,12 @@ Now that your Mycroft is now **Paired** with home.mycroft.ai, you can begin issu
 
 > Hey Mycroft, remind me to turn off the oven in 5 minutes
 
+### Support information 
+
+> Create a support ticket
+> You're not working!
+> Send me debug info
+
 ### Version checker
 
 > Hey Mycroft, check version
