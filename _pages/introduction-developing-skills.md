@@ -346,6 +346,14 @@ Your **Skill** code can be simplified using the intent_handler() _decorator_. Th
 
 The intent_handler() _decorator_ tags a method to be an intent handler for the intent, removing the need for separate registration.
 
+First, you need to `import` the `intent_handler()` library. Include the following line in the `import` section: 
+
+```
+from mycroft import intent_handler
+```
+
+Then, you will be able to use the `@intent_handler` _decorator_:
+
 ```python
     @intent_handler(IntentBuilder('IntentName').require('Keyword'))
     def handler_method(self):
