@@ -157,7 +157,7 @@ The table of **Skills** below have all been contributed by the Developer Communi
 | WIP     | [slack-skill](https://github.com/guilhembn/Mycroft-Slack-skill)                                    | Integrate Mycroft with Slack<br>```Send <my message> on Slack``` |
 | UNKNOWN | [spaceflight-schedule](https://github.com/praxeo/mycroft_spaceflightnow_skill)                     | Check when the next space flight launch is                                               |
 | GOOD    | [skill-radio-rne](https://github.com/ReK2Fernandez/skill-radio-rne)                                | Spanish news radio Radio Nacional de Espa?a RNE. |
-| GOOD    | [skill-the-cows-lists])https://github.com/CarstenAgerskov/skill-the-cows-lists)                    | Integration with Remember the Milk<br>```"Hey Mycroft, add milk to my grocery list"``` |
+| GOOD    | [skill-the-cows-lists](https://github.com/CarstenAgerskov/skill-the-cows-lists)                    | Integration with Remember the Milk<br>```"Hey Mycroft, add milk to my grocery list"``` |
 | UNKNOWN | [spacelaunch-skill](https://github.com/marksev1/Mycroft-SpaceLaunch-Skill)                         | Check when the next space launch is                                               |
 | UNKNOWN | [speedtest](https://github.com/ChristopherRogers1991/mycroft-speedtest)                            | Run a speedtest                                               |
 | UNKNOWN | [sunspot-skill](https://github.com/BoatrightTBC/sunspots)                                          | Answers questions on daily sunspots |
