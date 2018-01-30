@@ -56,9 +56,9 @@ As of December 2017, we have implemented a [Support Skill](https://github.com/My
 
 To generate information for a Support Ticket, say any of these phrases:
 
-* > "Create a support ticket"
-* > "You're not working!"
-* > "Send me debug info"
+> "Create a support ticket"
+> "You're not working!"
+> "Send me debug info"
 
 Mycroft will then ask:
 
