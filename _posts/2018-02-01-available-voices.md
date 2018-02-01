@@ -13,9 +13,7 @@ That's why we give you a range of voice options for your Mycroft device, matchin
 
 And <em>coming in April 2018</em>, you'll be able to choose from an additional voice using <strong>Mimic 2 - our state of the art Text to Speech engine! </strong>Mimic 2 is built using next-generation machine learning technology, learning from tens of thousands of samples, to produce a rich, resonant and human-sounding voice. Moreover, Mimic 2 will allow us to build new voices quicker and easier.
 
-Would you like to donate your voice to help? Great! <a href="https://voice.mozilla.org/">The Mozilla Open Voice</a> project is looking for voice samples from speakers all over the world. Donate your voice to help open source speech recognition efforts.
-
-You can also help us train the <a href="http://precise.mycroft.ai">Precise Wake Word listener</a>. Just a few minutes of your time will help us help the entire open source voice community.
+&nbsp;
 
 Compare our voice options below with Google and Alexa and choose the voice that's right for you.
 <ul>
