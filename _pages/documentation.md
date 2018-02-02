@@ -43,6 +43,7 @@ Our documentation, just like our source code, is open source, [and you can contr
       + [Fallback Skills](#fallback-skills)
   * [Mycroft Skill Manager](#mycroft-skill-manager)
   * [Language support in Mycroft](#language-support-in-mycroft)
+      + [Adding a new language to Mycroft](#adding-a-new-language-to-mycroft)
       + [Configuring Mycroft for French language support](#configuring-mycroft-for-french-language-support)
       + [Configuring Mycroft for Italian language support](#configuring-mycroft-for-italian-language-support)
       + [Configuring Mycroft for German language support](#configuring-mycroft-for-german-language-support)
@@ -172,6 +173,10 @@ Learn how to use `msm` to install, search and update **Skills**.
 ## [Language support in Mycroft](https://mycroft.ai/documentation/language-support/)
 
 Learn more about languages support in Mycroft.
+
+### [Adding a new language to Mycroft](https://mycroft.ai/documentation/language-support/adding-language/)
+
+Adding a new language to Mycroft is complex; this documentation takes you through the different layers of the voice stack that need to be adapted for a new language. 
 
 ### [Configuring Mycroft for French language support](https://mycroft.ai/documentation/language-support/french/)
 
