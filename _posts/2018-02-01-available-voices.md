@@ -10,11 +10,8 @@ post_date: 2018-02-01 12:06:24
 ---
 <h5>Voice is a personal choice.</h5>
 That's why we give you a range of voice options for your Mycroft device, matching your personal style and preference.
-
-And <em>coming in April 2018</em>, you'll be able to choose from an additional voice using <strong>Mimic 2 - our state of the art Text to Speech engine! </strong>Mimic 2 is built using next-generation machine learning technology, learning from tens of thousands of samples, to produce a rich, resonant and human-sounding voice. Moreover, Mimic 2 will allow us to build new voices quicker and easier.
-
-&nbsp;
-
+<h3><span style="color: #ec644b;">And <em>coming in April 2018</em>, you'll be able to choose from an additional voice using <strong>Mimic 2 - our state of the art Text to Speech engine! </strong>Mimic 2 is built using next-generation machine learning technology, learning from tens of thousands of samples, to produce a rich, resonant and human-sounding voice. </span></h3>
+<h3><span style="color: #ec644b;">Moreover, Mimic 2 will allow us to build new voices quicker and easier.</span></h3>
 Compare our voice options below with Google and Alexa and choose the voice that's right for you.
 <ul>
  	<li><a href="#it-took-me-quite-a-long-time-to-develop-a-voice-and-now-that-i-have-it-im-not-going-to-be-silent-madeline-albright">Madeline Albright</a></li>
@@ -27,13 +24,7 @@ Compare our voice options below with Google and Alexa and choose the voice that'
 <h3 style="text-align: left;">"It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent." - <em style="font-family: inherit; font-size: inherit;">Madeline Albright</em></h3>
 Sample of quote on Mimic (British Male Voice)
 
-[audio wav="https://mycroft.ai/wp-content/uploads/2018/01/pope-long-time.wav"][/audio]
-
-&nbsp;
-
-Sample of quote on Mimic (American Female Voice)
-
-[audio wav="https://mycroft.ai/wp-content/uploads/2018/01/amy-long-time.wav"][/audio]
+[audio wav="https://mycroft.ai/wp-content/uploads/2018/02/It-took-me-quite-a-long-time-to-develop-a-voice-and-now-that-I-have-it-Im-not-going-to-be-silent1.wav"][/audio]
 
 &nbsp;
 
@@ -61,12 +52,6 @@ Sample of quote on Alexa
 Sample of quote on Mimic (British Male Voice)
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/pope-be-a-voice.wav"][/audio]
-
-&nbsp;
-
-Sample of quote on Mimic (American Female Voice)
-
-[audio wav="https://mycroft.ai/wp-content/uploads/2018/01/amy-be-a-voice.wav"][/audio]
 
 &nbsp;
 
@@ -98,12 +83,6 @@ Sample of quote on Mimic (British Male Voice)
 
 &nbsp;
 
-Sample of quote on Mimic (American Female Voice)
-
-[audio wav="https://mycroft.ai/wp-content/uploads/2018/01/amy-perfect-instrument.wav"][/audio]
-
-&nbsp;
-
 Sample of quote on Mimic II <em>(Available April 2018)</em>
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/mimic2-perfect-instrument.wav"][/audio]
@@ -130,12 +109,6 @@ Sample of quote on Mimic (British Male Voice)
 
 &nbsp;
 
-Sample of quote on Mimic (American Female Voice)
-
-[audio wav="https://mycroft.ai/wp-content/uploads/2018/01/amy-im-sorry-dave.wav"][/audio]
-
-&nbsp;
-
 Sample of quote on Mimic II <em>(Available April 2018)</em>
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/mimic2-im-sorry-dave.wav"][/audio]
@@ -159,12 +132,6 @@ Sample of quote on Alexa
 Sample of quote on Mimic (British Male Voice)
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/pope-cake-is-great.wav"][/audio]
-
-&nbsp;
-
-Sample of quote on Mimic (American Female Voice)
-
-[audio wav="https://mycroft.ai/wp-content/uploads/2018/01/amy-cake-is-great.wav"][/audio]
 
 &nbsp;
 
