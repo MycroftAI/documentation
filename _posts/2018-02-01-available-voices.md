@@ -22,26 +22,26 @@ Compare our voice options below with Google and Alexa and choose the voice that'
 </ul>
 <h3></h3>
 <h3 style="text-align: left;">"It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent." - <em style="font-family: inherit; font-size: inherit;">Madeline Albright</em></h3>
-Sample of quote on Mimic (British Male Voice)
+Mimic (British Male Voice)
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/02/It-took-me-quite-a-long-time-to-develop-a-voice-and-now-that-I-have-it-Im-not-going-to-be-silent1.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Mimic II <em>(Available April 2018)</em>
+Mimic II <em>(Available April 2018)</em>
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/mimic2-quite-a-long-time.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Google
+Google
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/google-quite-a-long-time.wav"][/audio]
 <div>
 
 &nbsp;
 
-Sample of quote on Alexa
+Alexa
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/alexa-quite-a-long-time.wav"][/audio]
 
@@ -49,18 +49,18 @@ Sample of quote on Alexa
 
 <h3></h3>
 <h3>"Be a voice, not an echo." - <em>Albert Einstein</em></h3>
-Sample of quote on Mimic (British Male Voice)
+Mimic (British Male Voice)
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/pope-be-a-voice.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Mimic II <em>(Available April 2018)</em><strong>
+Mimic II <em>(Available April 2018)</em><strong>
 </strong>
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/mimic2-be-a-voice.wav"][/audio]
 <h5><strong> </strong></h5>
-Sample of quote on Google
+Google
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/google-be-a-voice.wav"][/audio]
 
@@ -68,7 +68,7 @@ Sample of quote on Google
 &nbsp;
 <div>
 
-Sample of quote on Alexa
+Alexa
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/alexa-be-a-voice.wav"][/audio]
 
@@ -77,25 +77,25 @@ Sample of quote on Alexa
 </div>
 &nbsp;
 <h3 style="text-align: left;">"The human voice is the most perfect instrument of all" - <em><span style="font-family: inherit; font-size: inherit;">Arvo Part</span></em></h3>
-Sample of quote on Mimic (British Male Voice)
+Mimic (British Male Voice)
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/pope-perfect-instrument.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Mimic II <em>(Available April 2018)</em>
+Mimic II <em>(Available April 2018)</em>
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/mimic2-perfect-instrument.wav"][/audio]
 
 <strong> </strong>
 
-Sample of quote on Google
+Google
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/google-perfect-instrument.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Alexa
+Alexa
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/alexa-perfect-instrument.wav"][/audio]
 
@@ -103,25 +103,25 @@ Sample of quote on Alexa
 
 &nbsp;
 <h3>"<span style="font-family: inherit; font-size: inherit;">I'm sorry Dave. I'm afraid I can't do that." - </span><em><span style="font-family: inherit; font-size: inherit;">(H.A.L.)</span></em></h3>
-Sample of quote on Mimic (British Male Voice)
+Mimic (British Male Voice)
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/pope-im-sorry-dave.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Mimic II <em>(Available April 2018)</em>
+Mimic II <em>(Available April 2018)</em>
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/mimic2-im-sorry-dave.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Google
+Google
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/google-im-sorry-dave.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Alexa
+Alexa
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/alexa-im-sorry-dave.wav"][/audio]
 
@@ -129,25 +129,25 @@ Sample of quote on Alexa
 
 &nbsp;
 <h3 style="text-align: left;">"<span style="font-family: inherit; font-size: inherit;">This cake is great. </span><span style="font-family: inherit; font-size: inherit;">It's so delicious and moist." - </span><em><span style="font-family: inherit; font-size: inherit;">GlaDOS</span></em></h3>
-Sample of quote on Mimic (British Male Voice)
+Mimic (British Male Voice)
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/pope-cake-is-great.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Mimic II <em>(Available April 2018)</em>
+Mimic II <em>(Available April 2018)</em>
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/mimic2-cake-is-great.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Google
+Google
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/google-cake-is-great.wav"][/audio]
 
 &nbsp;
 
-Sample of quote on Alexa
+Alexa
 <div>
 
 [audio wav="https://mycroft.ai/wp-content/uploads/2018/01/alexa-cake-is-great.wav"][/audio]
