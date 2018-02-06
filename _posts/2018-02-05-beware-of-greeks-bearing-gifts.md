@@ -1,7 +1,7 @@
 ---
 ID: 34623
 post_title: Beware of Greeks Bearing Gifts
-author: Kathy Reid
+author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
