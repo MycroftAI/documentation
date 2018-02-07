@@ -10,7 +10,7 @@ post_date: 2018-02-07 17:05:51
 ---
 <h1><strong>Image Sizes</strong></h1>
 <a href="https://makeawebsitehub.com/social-media-image-sizes-cheat-sheet/" target="_blank" rel="noopener">Cheatsheet</a> for social image sizes.
-Includes recommended sizes, min and max sizes, aspect ratios.
+→ Includes recommended sizes, min and max sizes, aspect ratios.
 <h1 style="width: 650px; height: 400px; background-color: #f2f2f2; padding: 40px; margin-bottom: 40px;"><strong><span style="color: #000;">Email</span></strong>
 <span style="color: #000;"> Inserted image <a href="https://help.activecampaign.com/hc/en-us/articles/115001501004-Best-practices-for-adding-images-to-your-campaigns" target="_blank" rel="noopener">recommended</a>:
 650 × &lt;600</span></h1>
