@@ -65,12 +65,12 @@ Als nächstes laden wir die _acoustic model_ [cmusphinx-de-ptm-voxforge-5.2.tar.
 
 Wir entpacken dann die gezippte Datei in ein temporäres Verzeichnis.
 
-`tar -xzf cmusphinx-de-ptm-voxforge-5.2.tar.gz`
+`tar -xf cmusphinx-de-ptm-voxforge-5.2.tar.gz`
 
 Dann kopieren wir es in das PocketSphinx-Verzeichnis
 
 ```bash
-cd cmusphinx-de-ptm-voxforge-5.2
+cd cmusphinx-ptm-voxforge-de-r20171217/model_parameters/voxforge.cd_ptm_5000
 sudo mv * /usr/local/share/pocketsphinx/model/de/de
 cd ..
 ```
