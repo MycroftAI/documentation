@@ -65,7 +65,7 @@ Next, we download the _acoustic model_ [cmusphinx-de-ptm-voxforge-5.2.tar.gz](ht
 
 We then  unpack the gzipped file into a temporary directory.
 
-`tar -xzf cmusphinx-de-ptm-voxforge-5.2.tar.gz`
+`tar -xf cmusphinx-de-ptm-voxforge-5.2.tar.gz`
 
 Then we copy it to the PocketSphinx directory
 
