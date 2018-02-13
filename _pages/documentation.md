@@ -21,7 +21,7 @@ Our documentation, just like our source code, is open source, [and you can contr
       + [Roadmap](#roadmap)
       + [Glossary](#glossary)
   * [Getting Mycroft](#getting-mycroft)
-  * [Your home.mycroft.ai account](#your-homemycroftai-account)
+  * [Your home.mycroft.ai account](#your-home-mycroft-ai-account)
       + [Basic commands](#basic-commands)
   * [Mark 1](#mark-1)
   * [Picroft](#picroft)
