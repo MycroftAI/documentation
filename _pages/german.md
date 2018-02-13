@@ -13,19 +13,19 @@ post_date: 2017-12-03 04:41:11
 
 _NOTE: These instructions apply to Mycroft for Linux only; we don't currently have instructions for changing the language on Picroft. If you'd like to help us out with that, jump into the [~languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) and let us know._
 
-- [Language support in Mycroft - German - français](#language-support-in-mycroft---german---francais)
-  * [Change the **Wake Word** to German](#change-the-wake-word-to-german)
-    + [Download and install the German dictionary](#download-and-install-the-german-dictionary)
-    + [Download and install acoustic model](#download-and-install-acoustic-model)
-    + [Download and install German language model](#download-and-install-german-language-model)
-    + [Verify the installed files](#verify-the-installed-files)
-    + [Install language in Mycroft directories](#install-language-in-mycroft-directories)
-    + [Choosing a German **Wake Word**](#choosing-a-german-wake-word)
-    + [Configure Mycroft to use German language and the chosen **Wake Word**](#configure-mycroft-to-use-german-language-and-the-chosen-wake-word)
-  * [Select and configure a Speech to Text (STT) engine with German support](#select-and-configure-a-speech-to-text-stt-engine-with-german-support)
-  * [Select and configure a Text to Speech (TTS) engine with German support](#select-and-configure-a-text-to-speech-tts-engine-with-german-support)
-  * [Configure Mycroft source code to handle German](#configure-mycroft-source-code-to-handle-german)
-  * [Getting involved](#getting-involved)
+- [Language support in Mycroft - German - Deutsch](#language-support-in-mycroft---german---deutsch)
+  * [ändere das **Wake Word** nach Deutsch](#andere-das-wake-word-nach-deutsch)
+    + [Laden Sie das deutsche Wörterbuch herunter und installieren Sie es](#laden-sie-das-deutsche-worterbuch-herunter-und-installieren-sie-es)
+    + [Laden des akustischen Modells und die Installation](#laden-des-akustischen-modells-und-die-installation)
+    + [Laden Sie das deutsche Sprachmodell herunter und installieren Sie es](#laden-sie-das-deutsche-sprachmodell-herunter-und-installieren-sie-es)
+    + [Überprüfen Sie die installierten Dateien](#uberprufen-sie-die-installierten-dateien)
+    + [Installieren Sie die Sprache in Mycroft-Verzeichnissen](#installieren-sie-die-sprache-in-mycroft-verzeichnissen)
+    + [Einen Deutsches **Wake Word** wählen](#einen-deutsches-wake-word-wahlen)
+    + [Konfigurieren Sie Mycroft für die Verwendung der deutschen Sprache und des ausgewählten Sprache **Wake Word**](#konfigurieren-sie-mycroft-fur-die-verwendung-der-deutschen-sprache-und-des-ausgewahlten-sprache-wake-word)
+  * [Wählen und konfigurieren Sie eine STT-Engine (Speak to Text) mit deutscher Unterstützung](#wahlen-und-konfigurieren-sie-eine-stt-engine-speak-to-text-mit-deutscher-unterstutzung)
+  * [Wählen und konfigurieren Sie eine TTS-Engine (Text to Speech) mit deutscher Unterstützung](#wahlen-und-konfigurieren-sie-eine-tts-engine-text-to-speech-mit-deutscher-unterstutzung)
+  * [Konfigurieren Sie den Mycroft-Quellcode für die Handhabung von Deutsch](#konfigurieren-sie-den-mycroft-quellcode-fur-die-handhabung-von-deutsch)
+  * [Sie wollen Einbezogen werden?](#sie-wollen-einbezogen-werden)
 
 Guten tag. Sprechen sie Deutsch? Befolgen Sie diese Schritte, um die Sprache von Mycroft auf Deutsch zu ändern (BCP 47: `de`).
 
