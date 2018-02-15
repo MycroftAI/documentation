@@ -134,8 +134,6 @@ https://angel.co/mycroft-a-i/jobs
 </ul>
 <h3>Coverage of our Mark II Campaign,</h3>
 Find a larger list <em><a href="https://mycroft.ai/blog/mycroft-news-read-coverage-mark-ii-launch/" target="_blank" rel="noopener">here</a>.</em>
-
-&nbsp;
 <ul>
  	<li><a href="https://www.fastcompany.com/40522226/can-mycrofts-privacy-centric-voice-assistant-take-on-alexa-and-google" target="_blank" rel="noopener">FastCompany</a></li>
  	<li><a href="https://www.digitaltrends.com/cool-tech/mycroft-mark-ii-assistant/" target="_blank" rel="noopener">Digital Trends</a></li>
