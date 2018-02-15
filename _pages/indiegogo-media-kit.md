@@ -132,15 +132,26 @@ https://angel.co/mycroft-a-i/jobs
  	<li><span style="font-weight: 400;"><a href="https://techcrunch.com/video/mycroft-open-source-voice-assistant/59c2b725c214e377dac11512/" target="_blank" rel="noopener">Techcrunch</a></span><a href="https://techcrunch.com/video/mycroft-open-source-voice-assistant/59c2b725c214e377dac11512/" target="_blank" rel="noopener"><span style="font-weight: 400;">
 </span></a></li>
 </ul>
-<h3>Coverage of our Mark II Campaign</h3>
+<h3>Coverage of our Mark II Campaign,</h3>
+Find a larger list <em><a href="https://mycroft.ai/blog/mycroft-news-read-coverage-mark-ii-launch/" target="_blank" rel="noopener">here</a>.</em>
+
+&nbsp;
 <ul>
+ 	<li><a href="https://www.fastcompany.com/40522226/can-mycrofts-privacy-centric-voice-assistant-take-on-alexa-and-google" target="_blank" rel="noopener">FastCompany</a></li>
+ 	<li><a href="https://www.digitaltrends.com/cool-tech/mycroft-mark-ii-assistant/" target="_blank" rel="noopener">Digital Trends</a></li>
+ 	<li><a href="https://www.slashgear.com/mycroft-mark-ii-the-open-source-amazon-echo-youve-always-wanted-29517303/" target="_blank" rel="noopener">Slash Gear</a></li>
+ 	<li><a href="http://www.autonews.com/article/20180120/OEM06/180129987/with-ai-digital-assistant-drivers-talk-to-their-cars" target="_blank" rel="noopener">Automotive News</a></li>
+ 	<li><a href="http://www.cbc.ca/radio/spark/383-dangerous-data-libraries-and-more-1.4516637/the-privacy-first-smart-speaker-taking-on-the-likes-of-apple-and-amazon-1.4516676" target="_blank" rel="noopener">CBC Radio</a></li>
+ 	<li><a href="https://blog.hackster.io/mycroft-announces-a-kickstarter-campaign-for-the-mark-ii-ai-assistant-39e406368d4a">Hackster.io</a></li>
+ 	<li><a href="https://itsfoss.com/mycroft-mark-2/">It's FOSS</a></li>
+ 	<li><a href="https://www.stuff.tv/hot-stuff/smart-home/mycroft-mark-ii-voice-assistant-can-be-extended-and-customised-wont-share-your" target="_blank" rel="noopener">Stuff</a></li>
+ 	<li><a href="https://www.open-electronics.org/mycroft-mark-ii-the-open-source-voice-assistant/" target="_blank" rel="noopener">Open Electronics</a></li>
+ 	<li><a href="https://www.trendhunter.com/trends/mycroft-mark-ii" target="_blank" rel="noopener">Trend Hunter</a></li>
  	<li><a href="https://www.voicebot.ai/2018/01/25/mycroft-mark-ii-smart-display-puts-privacy-first/">Voicebot.ai</a></li>
  	<li><a href="https://androidmarvel.com/mycroft-mark-ii-open-answer-amazon-echo-google-home/">Android Marvel</a></li>
  	<li><a href="https://liliputing.com/2018/01/mycroft-mark-ii-smart-speaker-open-source-voice-assistant-crowdfunding.html">Liliputing</a></li>
  	<li><a href="https://fossbytes.com/mycroft-open-source-ai-assistant-mark-ii-crowdfunding/">FOSSbytes</a></li>
- 	<li><a href="https://itsfoss.com/mycroft-mark-2/">It's FOSS</a></li>
  	<li><a href="https://www.cnx-software.com/2018/01/27/mycroft-mark-ii-smart-speaker-voice-assistant-works-with-open-source-software-crowdfunding/">CNX Software</a></li>
- 	<li><a href="https://blog.hackster.io/mycroft-announces-a-kickstarter-campaign-for-the-mark-ii-ai-assistant-39e406368d4a">Hackster.io</a></li>
 </ul>
 <h2><span style="font-weight: 400;">Quotes</span></h2>
 <blockquote><span style="font-weight: 400;">"I love what Mycroft is doing. Artificial intelligence and machine learning are becoming a common component in our businesses, homes, and elsewhere, and with such a fundamental connection between people and technology, it is essential that the technology is as open and transparent as possible. Mycroft's focus on community, transparency, and delivering simple and expandable AI is what we need to ensure the AI revolution is in good hands." </span><b>- Jono Bacon, Author, Consultant, and Leader in Community Strategy and Open Source</b>
