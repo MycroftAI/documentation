@@ -113,10 +113,9 @@ The Mycroft logs each follow a standard format, being:
 
 On a Raspberry Pi 3 running Picroft, [first `ssh` into the Picroft](https://mycroft.ai/documentation/picroft/#connecting-to-picroft-via-ssh).
 
-The logs on a Picroft are held at
+The logs on a Picroft are held at `/var/log/` and are named `mycroft-LOGFILE.log`. 
 
-@TODO: haven't build a Picroft yet, will need to fill this in
-
+To see all the Picroft logs that are available, use the command `ls -las /var/log/ | grep mycroft`
 
 #### Linux
 
