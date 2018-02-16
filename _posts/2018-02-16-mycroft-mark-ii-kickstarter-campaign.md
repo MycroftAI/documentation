@@ -5,7 +5,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/picturing-a-new-kickstarter-reward-meet-mark-ii-with-a-camera/
+  http://mycroft.ai/blog/mycroft-mark-ii-kickstarter-campaign/
 published: true
 post_date: 2018-02-16 14:55:07
 ---
