@@ -13,6 +13,7 @@ post_date: 2017-12-12 10:56:48
 - [Mycroft Skills Manager - msm](#mycroft-skills-manager---msm)
   * [What is Mycroft Skills Manager - msm?](#what-is-mycroft-skills-manager---msm)
   * [Using Mycroft Skills Manager - msm](#using-mycroft-skills-manager---msm)
+  * [msm error codes](#msm-error-codes)
 
 ## What is Mycroft Skills Manager - msm? 
 
@@ -88,7 +89,7 @@ If `msm` encounters an error during installation, deletion or searching for a **
 
 | **Error code** | **Meaning** | **How to resolve it** |
 | --- | --- | --- |
-| `5 ERROR:  Missing virtualwrapper, cowardly refusing to install skills` | Virtualwrapper is a set of extensions to the virtualenv tool. Mycroft uses virtualenv extensively to manage Python package dependencies. This error indicates that virtualwrapper isn&#39;t installed or couldn&#39;t be found. | First, try **  workon mycroft** Then try your command. If this doesn&#39;t work, use **  pip install virtualwrapper** Then try your command again. |
+| `5 ERROR:  Missing virtualwrapper, cowardly refusing to install skills` | Virtualwrapper is a set of extensions to the virtualenv tool. Mycroft uses virtualenv extensively to manage Python package dependencies. This error indicates that virtualwrapper isn't installed or couldn't be found. | First, try **  workon mycroft** Then try your command. If this doesn't work, use **  pip install virtualwrapper** Then try your command again. |
 | `20 Skill already installed.  Perhaps you meant to use update?` | You tried to install a Skill that was already installed. | You may have wanted to update the Skill instead. |
 | `101 ERROR: Unable to find/access ${mycroft\_skill\_folder}!` | By default, the Skills are stored on every Device (Picroft, Mycroft for Linux etc) at the path /opt/mycroft/skills. MSM cannot access this directory. | Check that the directory exists, and that it has appropriate permissions. This directory should have permissions mycroft:mycroft (mycroft owner, mycroft group) |
 | `102 ERROR: Unable to access directory ${name}!` | Trying to access a Skill directory that either does not exist, or which the mycroft user does not have permission to traverse. | If you are developing a Skill, make sure the path to any directories (for instance to resources like mp3 files) is correct. Check that the permissions on the directory allow the mycroft user to traverse it. |
