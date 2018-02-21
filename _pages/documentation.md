@@ -168,7 +168,7 @@ Fallback **Skills** handle an **Intent** if one can't be matched with an **Utter
 
 ## [Mycroft Skill Manager](https://mycroft.ai/documentation/msm/)
 
-Learn how to use `msm` to install, search and update **Skills**.
+Learn how to use `msm` to install, search and update **Skills**. Includes a comprehensive list of `msm` error codes, and how to resolve them. 
 
 ## [Language support in Mycroft](https://mycroft.ai/documentation/language-support/)
 
