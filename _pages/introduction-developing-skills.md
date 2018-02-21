@@ -202,7 +202,7 @@ Mycroft will match this to the
 
 _NOTE: One of the most common mistakes when getting started with **Skills** is that the **vocab** file doesn't include all the phrases that the User might use to trigger the **intent**. _
 
-#### `__init__.py`
+#### __init__.py
 
 `__init__.py`
 
