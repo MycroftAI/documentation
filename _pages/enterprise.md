@@ -51,5 +51,5 @@ The MED Kit workstation is developer-grade machine learning rig including:
 </ul>
 <h5>The MEDKit is priced at $USD 12,500 and requires a 3-week lead time. Inquire below to order yours.</h5>
 [/vc_column_text][nectar_btn size="jumbo" open_new_tab="true" button_style="regular" button_color_2="extra-color-gradient-1" icon_family="fontawesome" url="#enterprise-inquiry" text="GET MORE INFO" icon_fontawesome="fa fa-info-circle" margin_top="20px"][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row type="full_width_content" full_screen_row_position="middle" bg_color="#22a7f0" scene_position="center" text_color="dark" text_align="left" top_padding="2%" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
-<h2 style="padding-left: 5%; padding-top: 5%;"><span style="color: #ffffff;">Enterprise inquiry</span></h2>
+<h2 style="padding-left: 5%; padding-top: 5%;"><span style="color: #ffffff;">Enterprise Inquiry</span></h2>
 [activecampaign form=22][/vc_column_text][/vc_column][/vc_row]
