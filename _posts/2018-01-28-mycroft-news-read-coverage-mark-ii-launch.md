@@ -72,4 +72,92 @@ And then there’s <a href="https://mycroft.ai/">Mycroft</a>. It’s a voice as
 <h3 class="mvp-post-title left entry-title"><a href="https://androidmarvel.com/mycroft-mark-ii-open-answer-amazon-echo-google-home/" target="_blank" rel="noopener"><strong>Mycroft Mark II Is “An Open Answer To Amazon Echo &amp; Google Home”</strong></a></h3>
 "The device looks sleek, it comes with a high-quality 4-inch display, multi-microphone array, and high-quality stereo speakers. The display is designed to show details such as timers, calendars, weather forecasts, and more."[/vc_column_text][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="2/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
 <h3><a href="https://www.youtube.com/watch?v=Vg5w8E47iGk" target="_blank" rel="noopener"><strong>Interview with Open Source Thought Leader, Jono Bacon</strong></a></h3>
-Listen to an interview with Jono Bacon and Joshua Montgomery on the current Kickstarter, the evolution of Mark I, and the role of open source and privacy in AI and digital assistants.[/vc_column_text][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][nectar_video_lightbox link_style="play_button_2" nectar_play_button_color="Default-Accent-Color" image_url="35395" hover_effect="defaut" box_shadow="none" video_url="https://www.youtube.com/watch?v=Vg5w8E47iGk"][nectar_btn size="small" open_new_tab="true" button_style="regular" button_color_2="Accent-Color" icon_family="none" url="https://www.youtube.com/watch?v=Vg5w8E47iGk" text="Watch the Interview" css_animation="fadeIn" margin_top="10"][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][/vc_column][/vc_row]
+Listen to an interview with Jono Bacon and Joshua Montgomery on the current Kickstarter, the evolution of Mark I, and the role of open source and privacy in AI and digital assistants.[/vc_column_text][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][nectar_video_lightbox link_style="play_button_2" nectar_play_button_color="Default-Accent-Color" image_url="35395" hover_effect="defaut" box_shadow="none" video_url="https://www.youtube.com/watch?v=Vg5w8E47iGk"][nectar_btn size="small" open_new_tab="true" button_style="regular" button_color_2="Accent-Color" icon_family="none" url="https://www.youtube.com/watch?v=Vg5w8E47iGk" text="Watch the Interview" css_animation="fadeIn" margin_top="10"][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h3><strong>and MORE!</strong></h3>
+<style type="text/css"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--></style>
+<table dir="ltr" border="1" cellspacing="0" cellpadding="0"><colgroup> <col width="88" /></colgroup>
+<tbody>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;EEJournal&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.eejournal.com/article/aaware-of-wake-words/&quot;,&quot;EEJournal&quot;)"><a class="in-cell-link" href="https://www.eejournal.com/article/aaware-of-wake-words/" target="_blank" rel="noopener">EEJournal</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Alphr&quot;}" data-sheets-formula="=HYPERLINK(&quot;http://www.alphr.com/speakers/1008420/mycroft-kickstarter-open-source-smart-speaker&quot;,&quot;Alphr&quot;)"><a class="in-cell-link" href="http://www.alphr.com/speakers/1008420/mycroft-kickstarter-open-source-smart-speaker" target="_blank" rel="noopener">Alphr</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The Ambient &quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.the-ambient.com/features/indie-smart-home-hubs-controllers-8887-316&quot;,&quot;The Ambient &quot;)"><a class="in-cell-link" href="https://www.the-ambient.com/features/indie-smart-home-hubs-controllers-8887-316" target="_blank" rel="noopener">The Ambient </a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Continuations, by Albert Wenger&quot;}" data-sheets-formula="=HYPERLINK(&quot;http://continuations.com/post/170148723715/mycroft-open-consumer-voice-platform&quot;,&quot;Continuations, by Albert Wenger&quot;)">
+<div>
+<div><a class="in-cell-link" href="http://continuations.com/post/170148723715/mycroft-open-consumer-voice-platform" target="_blank" rel="noopener">Continuations, by Albert Wenger</a></div>
+</div></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;AVC&quot;}" data-sheets-numberformat="[null,5,&quot;M/d/yyyy&quot;,1]" data-sheets-formula="=HYPERLINK(&quot;http://avc.com/2018/02/funding-friday-an-open-source-voice-assistant/&quot;,&quot;AVC&quot;)"><a class="in-cell-link" href="http://avc.com/2018/02/funding-friday-an-open-source-voice-assistant/" target="_blank" rel="noopener">AVC</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Science 2.0&quot;}" data-sheets-formula="=HYPERLINK(&quot;http://www.science20.com/news_staff/mycroft_mark_ii_artificial_intelligence_goes_open_source_in_a_voice_enabled_assistant-230402&quot;,&quot;Science 2.0&quot;)"><a class="in-cell-link" href="http://www.science20.com/news_staff/mycroft_mark_ii_artificial_intelligence_goes_open_source_in_a_voice_enabled_assistant-230402" target="_blank" rel="noopener">Science 2.0</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;I4U News&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.i4u.com/2018/02/127133/mycroft-mark-ii-open-source-voice-assistant-speaker-launches&quot;,&quot;I4U News&quot;)"><a class="in-cell-link" href="https://www.i4u.com/2018/02/127133/mycroft-mark-ii-open-source-voice-assistant-speaker-launches" target="_blank" rel="noopener">I4U News</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Game Sinners&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://gamesinners.com/tech/2018/01/31/mycroft-mark-ii-nice-alternative-google-home-amazon-echo/&quot;,&quot;Game Sinners&quot;)"><a class="in-cell-link" href="https://gamesinners.com/tech/2018/01/31/mycroft-mark-ii-nice-alternative-google-home-amazon-echo/" target="_blank" rel="noopener">Game Sinners</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Hawaii News&quot;}" data-sheets-formula="=HYPERLINK(&quot;http://www.hawaiinewsnow.com/story/37378106/mycroft-mark-ii-launches-successful-kickstarter-campaign&quot;,&quot;Hawaii News&quot;)"><a class="in-cell-link" href="http://www.hawaiinewsnow.com/story/37378106/mycroft-mark-ii-launches-successful-kickstarter-campaign" target="_blank" rel="noopener">Hawaii News</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;TUTTI ANDRIOD - Foriegn &quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.tuttoandroid.net/accessori/mycroft-mark-ii-uno-smart-speaker-assistente-vocale-open-source-542288/&quot;,&quot;TUTTI ANDRIOD - Foriegn &quot;)">
+<div>
+<div><a class="in-cell-link" href="https://www.tuttoandroid.net/accessori/mycroft-mark-ii-uno-smart-speaker-assistente-vocale-open-source-542288/" target="_blank" rel="noopener">TUTTI ANDRIOD - Foriegn </a></div>
+</div></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;IPHINENESS&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.iphoneness.com/cool-finds/mycroft-mark-ii/&quot;,&quot;IPHINENESS&quot;)"><a class="in-cell-link" href="https://www.iphoneness.com/cool-finds/mycroft-mark-ii/" target="_blank" rel="noopener">IPHINENESS</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;LinuxInsider &quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.linuxinsider.com/story/85099.html&quot;,&quot;LinuxInsider &quot;)"><a class="in-cell-link" href="https://www.linuxinsider.com/story/85099.html" target="_blank" rel="noopener">LinuxInsider </a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Wwwhat's New&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://wwwhatsnew.com/2018/01/27/mycroft-mark-ii-un-altavoz-inteligente-y-open-source-que-apuesta-por-la-privacidad/&quot;,&quot;Wwwhat's New&quot;)"><a class="in-cell-link" href="https://wwwhatsnew.com/2018/01/27/mycroft-mark-ii-un-altavoz-inteligente-y-open-source-que-apuesta-por-la-privacidad/" target="_blank" rel="noopener">Wwwhat's New</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Hardware Libre&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.hwlibre.com/mycroft-mark-ii-asistente-virtual-nuevo-no-tan-libre/&quot;,&quot;Hardware Libre&quot;)"><a class="in-cell-link" href="https://www.hwlibre.com/mycroft-mark-ii-asistente-virtual-nuevo-no-tan-libre/" target="_blank" rel="noopener">Hardware Libre</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Whoopzz&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://whoopzz.com/gadget/mycroft-ai-mark-ii-open-voice-assistant/&quot;,&quot;Whoopzz&quot;)"><a class="in-cell-link" href="https://whoopzz.com/gadget/mycroft-ai-mark-ii-open-voice-assistant/" target="_blank" rel="noopener">Whoopzz</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Kuam News&quot;}" data-sheets-formula="=HYPERLINK(&quot;http://www.kuam.com/story/37378106/mycroft-mark-ii-launches-successful-kickstarter-campaign&quot;,&quot;Kuam News&quot;)"><a class="in-cell-link" href="http://www.kuam.com/story/37378106/mycroft-mark-ii-launches-successful-kickstarter-campaign" target="_blank" rel="noopener">Kuam News</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Xataka&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.xataka.com/accesorios/mycroft-mark-ii-apuesta-por-el-open-source-y-la-privacidad-para-competir-con-google-homes-y-amazon-echos&quot;,&quot;Xataka&quot;)"><a class="in-cell-link" href="https://www.xataka.com/accesorios/mycroft-mark-ii-apuesta-por-el-open-source-y-la-privacidad-para-competir-con-google-homes-y-amazon-echos" target="_blank" rel="noopener">Xataka</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;EEWeb&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.eeweb.com/profile/max-maxfield/articles/mycroft-mark-ii-open-source-smart-speaker-and-voice-assistant&quot;,&quot;EEWeb&quot;)"><a class="in-cell-link" href="https://www.eeweb.com/profile/max-maxfield/articles/mycroft-mark-ii-open-source-smart-speaker-and-voice-assistant" target="_blank" rel="noopener">EEWeb</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Geeky Gadgets&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.geeky-gadgets.com/mycroft-ii-open-voice-personal-assistant-protects-your-privacy-26-01-2018/&quot;,&quot;Geeky Gadgets&quot;)"><a class="in-cell-link" href="https://www.geeky-gadgets.com/mycroft-ii-open-voice-personal-assistant-protects-your-privacy-26-01-2018/" target="_blank" rel="noopener">Geeky Gadgets</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Android Caotic&quot;}" data-sheets-formula="=HYPERLINK(&quot;http://android.caotic.it/2018/01/mycroft-mark-ii-speaker-smart-kickstarter&quot;,&quot;Android Caotic&quot;)"><a class="in-cell-link" href="http://android.caotic.it/2018/01/mycroft-mark-ii-speaker-smart-kickstarter" target="_blank" rel="noopener">Android Caotic</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ABC Linuxu&quot;}" data-sheets-formula="=HYPERLINK(&quot;http://www.abclinuxu.cz/zpravicky/chytry-open-source-reproduktor-mycroft-mark-ii-na-kickstarteru&quot;,&quot;ABC Linuxu&quot;)"><a class="in-cell-link" href="http://www.abclinuxu.cz/zpravicky/chytry-open-source-reproduktor-mycroft-mark-ii-na-kickstarteru" target="_blank" rel="noopener">ABC Linuxu</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Ticker In&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://tickerin.com/mycroft-announces-a-kickstarter-campaign-for-the-mark-ii-ai-assistant/&quot;,&quot;Ticker In&quot;)"><a class="in-cell-link" href="https://tickerin.com/mycroft-announces-a-kickstarter-campaign-for-the-mark-ii-ai-assistant/" target="_blank" rel="noopener">Ticker In</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Linux Today - pointing to itsfoss&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.linuxtoday.com/high_performance/mycroft-mark-ii-the-open-source-answer-to-amazon-echo-and-google-home-that-doesnt-spy-on-you-180126094005.html&quot;,&quot;Linux Today - pointing to itsfoss&quot;)"><a class="in-cell-link" href="https://www.linuxtoday.com/high_performance/mycroft-mark-ii-the-open-source-answer-to-amazon-echo-and-google-home-that-doesnt-spy-on-you-180126094005.html" target="_blank" rel="noopener">Linux Today</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;WANT&quot;}" data-sheets-formula="=HYPERLINK(&quot;want.nl&quot;,&quot;WANT&quot;)"><a class="in-cell-link" href="http://want.nl" target="_blank" rel="noopener">WANT</a></td>
+</tr>
+<tr>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;OpenElectronics&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://www.open-electronics.org/mycroft-mark-ii-the-open-source-voice-assistant/&quot;,&quot;OpenElectronics&quot;)"><a class="in-cell-link" href="https://www.open-electronics.org/mycroft-mark-ii-the-open-source-voice-assistant/" target="_blank" rel="noopener">OpenElectronics</a></td>
+</tr>
+</tbody>
+</table>
+[/vc_column_text][/vc_column][/vc_row]
