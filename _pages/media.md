@@ -4,7 +4,7 @@ post_title: Mark II Media Kit
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/indiegogo-media-kit/
+permalink: http://mycroft.ai/media/
 published: true
 post_date: 2018-02-15 12:22:46
 ---
@@ -12,7 +12,7 @@ post_date: 2018-02-15 12:22:46
 <h1>Mycroft Mark II</h1>
 <h3>Media Kit</h3>
 [/vc_column_text][divider line_type="No Line" custom_height="20"][vc_column_text]
-<h2>LIVE on Indeigogo!</h2>
+<h2>LIVE on Indiegogo!</h2>
 <h4><span style="font-weight: 400;">The Mark II is the second smart speaker from Mycroft AI.  Mycroft is an open voice assistant that designed with privacy and user agency in mind.</span></h4>
 [/vc_column_text][divider line_type="No Line" custom_height="30"][nectar_btn size="large" open_new_tab="true" button_style="regular" button_color_2="Extra-Color-3" icon_family="none" url="http://www.001.kickstarter.mycroft.ai/" text="Go To Indiegogo Page"][divider line_type="No Line" custom_height="30"][vc_column_text]<span style="color: #ffffff;"><b>In this Media Kit you’ll find:</b></span>
 <ul>
