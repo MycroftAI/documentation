@@ -4,7 +4,7 @@ post_title: Mark II Media Kit
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/indiegogo-media-kit/
+permalink: http://mycroft.ai/media/
 published: true
 post_date: 2018-02-15 12:22:46
 ---
