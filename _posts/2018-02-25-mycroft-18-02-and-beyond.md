@@ -1,6 +1,6 @@
 ---
 ID: 35090
-post_title: Mycroft 18.02 and beyond
+post_title: Mycroft 18.02 and Beyond
 author: Steve Penrod
 post_excerpt: ""
 layout: post
