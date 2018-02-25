@@ -16,6 +16,8 @@ As an open source project, one of the greatest strengths we have is how many are
 Of course, individuals are always welcome and able to pursue their own projects and experiments. But common goals help us all plan and collaborate better.
 
 To kick off the process we are publishing what we have come up with inside the core team. We love community feedback, so please join us in our community forums with your thoughts and comments!
+
+&nbsp;
 <h1>Goals for 18.02</h1>
 In the coming week, we will be creating our 18.02 milestone release. For this milestone we had some specific technology targets in mind, laying the foundation for our future. They included:
 <ul>
