@@ -1,6 +1,6 @@
 ---
 ID: 35090
-post_title: Mycroft 18.02 and Beyond
+post_title: Mycroft 18.02b and Beyond
 author: Steve Penrod
 post_excerpt: ""
 layout: post
@@ -9,7 +9,7 @@ permalink: >
 published: true
 post_date: 2018-02-25 10:17:43
 ---
-Where is Mycroft technology going? Here is what's in store for the 18.02 milestone and beyond.
+Where is Mycroft technology going? Here is what's in store for the 18.02b milestone and beyond.
 <h1>Community Involvement</h1>
 As an open source project, one of the greatest strengths we have is how many are interested in what we are doing, volunteering ideas, and submitting code. On the flip side of this, the most difficult challenge is coming to a consensus on <em>exactly what</em> we should be doing as a group.
 
@@ -18,8 +18,8 @@ Of course, individuals are always welcome and able to pursue their own projects 
 To kick off the process we are publishing what we have come up with inside the core team. We love community feedback, so please join us in our community forums with your thoughts and comments!
 
 &nbsp;
-<h1>Goals for 18.02</h1>
-In the coming week, we will be creating our 18.02 milestone release. For this milestone we had some specific technology targets in mind, laying the foundation for our future. They included:
+<h1>Goals for 18.02b</h1>
+In the coming week, we will be creating our 18.02b milestone release. For this milestone we had some specific technology targets in mind, laying the foundation for our future. They included:
 <ul>
  	<li><strong>Precise wake word engine</strong>
 We started the project in 2015 using some existing tools and technologies. We preferred open technologies when possible and chose PocketSphinx for our wake-word engine. This was a good starting point, but the fundamental technology used has limitations that are unlikely to improve significantly. We've created the Precise engine specifically for this task. This uses machine learning techniques, running models generated from voice-clips contributed by the community. This leads to the next goal...</li>
