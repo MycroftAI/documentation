@@ -1,4 +1,4 @@
----
+----
 ID: 32430
 post_title: Mark 1
 author: Kathy Reid
@@ -25,6 +25,7 @@ post_date: 2017-12-02 22:35:25
       - [Setting up SSH to the Mark 1 using SSH keys](#setting-up-ssh-to-the-mark-1-using-ssh-keys)
       - [Accessing the command line interface (CLI) of the Mark 1](#accessing-the-command-line-interface-cli-of-the-mark-1)
       - [Enabling the LEARN function](#enabling-the-learn-function)
+      - [Upgrading to the latest version from a 2017 Mark 1](#Upgrading-to-the=latest-version-from-a-2017-Mark-1)
       - [How to reimage a Mark 1 Device](#how-to-reimage-a-mark-1-device)
         * [Prerequisites](#prerequisites-1)
         * [Reimaging steps](#reimaging-steps)
@@ -169,6 +170,57 @@ To enable the Learn functionality:
 2. Next press the top button on your Mark 1. Turn the button to LEARN. Press the top button again. Turn the button to ALLOW. Mycroft will Speak:
 
 `"I will now upload interaction data to help make me smarter"`
+
+#### Upgrading to the latest version from a 2017 Mark 1
+If you were one of the original Kickstarter backers or ordered a Mark 1 in 2017 your Mark 1 may be running an old version. In this case you will need to manually update your Mark 1 to the latest version. Once you complete these steps Mark 1 will automatically update in the future. There are two recommended options for updating. Option 1 is recommended for Makers, and those used to ‘tinkering’ with RPi 3 and related open hardware.
+
+Option 1: Burn a new disk image to the Micro SD card
+
+You will need:
+* A long reach T10 torx screwdriver
+* A Micro SD card reader/writer
+* An internet connection
+
+Method
+* Download the 18.02b Mark 1 disk image from
+* Unplug the Mark 1 from the power supply. 
+* Remove the four rubber feet from the Mark 1, and put them in a safe place. 
+* Gently remove the base of the Mark 1.
+* Gently unseat the Micro SD card. 
+* Using Etcher, burn the disk image to the Micro SD card. Allow Etcher to complete verification. 
+* Gently re-seat the Micro SD card in the Mark 1. 
+* Gently place the base of the Mark 1 back, and screw in the four screws. 
+* Replace the four rubber feet. 
+* Plug in the power supply. 
+* The Mark 1 device will power on with ‘white spinning eyes’. This will last around 20 seconds to 1 minute. Mark 1 will then have ‘full blue eyes’.
+* Mark 1 will then advise that it needs to be connected to WiFi.
+* Follow [the instructions to connect Mark 1 to WiFi](https://mycroft.ai/documentation/mark-1/#getting-mark-1-connected-to-the-internet-using-a-network-cable), or connect an ethernet cable to the ethernet socket on the back of the device.
+* Once you are connected to WiFi, Mark 1 will advise that you need to pair the device. Pair the device on home.mycroft.ai
+That’s it! Once your Mark 1 is paired, you’ll be able to use all the default Skills that come with the device, and you’ll also be able to install your own from the list at: https://mycroft.ai/documentation/skills/#community-developed-skills
+
+Option 2: Update the Mark 1 using voice commands
+
+This option is recommended if you aren't comfortable taking apart your Mark 1 device.
+You will need:
+* An internet connection
+* About 20 minutes to do the update - parts of the update take over an hour but you can do other things while the updates are happening. 
+Method
+[Follow along with Kathy](https://drive.google.com/a/mycroft.ai/file/d/1bJ_aPT-bplQElSoZcZ_FQUruWa3iFJZ5/view?usp=sharing), our community manager, as she guides you through the upgrade process via voice.
+* Take your Mark 1 out of its box, and give it a wipe over with a damp (not wet) cotton cloth, to remove dust. Be careful as the acrylic front plate can scratch if you use an abrasive cloth. Gently blow into the ports on the back of the device, and the ventilation holes on the top and bottom, to blow away excess dust.
+* Plug Mark 1 into power
+* The Mark 1 device will power on with ‘white spinning eyes’. This will last around 20 seconds to 1 minute. Mark 1 will then have ‘full blue eyes’.
+* Mark 1 will then advise that it needs to be connected to WiFi. 
+* Follow [the instructions to connect Mark 1 to WiFi](https://mycroft.ai/documentation/mark-1/#getting-mark-1-connected-to-the-internet-using-a-network-cable), or connect an ethernet cable to the ethernet socket on the back of the device.
+* Once you are connected to WiFi, Mark 1 will advise that you need to pair the device. Pair the device on home.mycroft.ai [following these instructions.](https://mycroft.ai/documentation/mark-1/#pairing-the-mark-1)
+* If you hear the message Error occurred in processing pairing Skill, don’t worry, this is common for Mark 1 that are doing their first update in a little while.
+* Your Mark 1 will now appear frozen; it won’t respond to voice commands.
+* Reboot the Device by removing the power supply, waiting 10 seconds then plugging the power supply back in.
+* You will see ‘grey spinny eyes’ then ‘full blue eyes’ after about 20 seconds to 1 minute
+* Speak the command Install platform patch. Mycroft will respond with installing.
+* Mark 1 will then show ‘blue eye’ and display ‘UPDATING’ on screen.
+* Updating will take between 15 minutes and 90 minutes depending on your internet connection. 
+* Mark 1 will reboot after the update is complete.
+* After the reboot, Mark 1 will show ‘white spinning eyes’ then ‘yellow eyes’ with ‘UPDATING’ on screen. When Mark 1 is ready to respond to voice commands, the device will show ‘full blue eyes’. 
 
 #### How to reimage a Mark 1 Device
 
