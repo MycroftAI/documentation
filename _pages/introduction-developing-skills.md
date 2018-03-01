@@ -18,8 +18,10 @@ post_date: 2017-12-02 22:35:25
     + [Structure of the **Skill** repo](#structure-of-the-skill-repo)
       - [`dialog` directory](#dialog-directory)
       - [vocab directory and defining Intents](#vocab-directory-and-defining-intents)
-      - [`__init__.py`](#__init__py)
-  * [Simplifying your Skill code with intent handler decorators](#simplifying-your-skill-code-with-intent_handler-decorators)
+      - [__init__.py](#__init__py)
+  * [Simplifying your Skill code with `intent_handler` _decorators_](#simplifying-your-skill-code-with-intent_handler-_decorators_)
+  * [How do I disable a Skill?](#how-do-i-disable-a-skill)
+  * [How to increase the priority of **Skills** during loading](#how-to-increase-the-priority-of-skills-during-loading)
   * [How do I find more information on Mycroft functions?](#how-do-i-find-more-information-on-mycroft-functions)
 
 This page will walk you through developing a new Mycroft **Skill**. It assumes you have read through the [basic skills information](skills.md)
@@ -269,16 +271,16 @@ def __init__(self):
 
 ```python    
 def initialize(self):
-        thank_you_intent = IntentBuilder("ThankYouIntent"). 
+        thank_you_intent = IntentBuilder("ThankYouIntent").
             require("ThankYouKeyword").build()
         self.register_intent(thank_you_intent, self.handle_thank_you_intent)
 
-        how_are_you_intent = IntentBuilder("HowAreYouIntent"). 
+        how_are_you_intent = IntentBuilder("HowAreYouIntent").
             require("HowAreYouKeyword").build()
         self.register_intent(how_are_you_intent,
                              self.handle_how_are_you_intent)
 
-        hello_world_intent = IntentBuilder("HelloWorldIntent"). 
+        hello_world_intent = IntentBuilder("HelloWorldIntent").
             require("HelloWorldKeyword").build()
         self.register_intent(hello_world_intent,
                              self.handle_hello_world_intent)
@@ -338,7 +340,7 @@ def stop(self):
 
 In the above code block, the [`pass` statement](https://docs.python.org/2/reference/simple_stmts.html#the-pass-statement) is used as a placeholder; it doesn't actually have any function. However, if the **Skill** had any active functionality, the stop() method would terminate the functionality, leaving the *Skill** in a known good state.
 
-## Simplifying your Skill code with `intent_handler` _decorators_ 
+## Simplifying your Skill code with `intent_handler` _decorators_
 
 Your **Skill** code can be simplified using the intent_handler() _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
 
@@ -346,7 +348,7 @@ Your **Skill** code can be simplified using the intent_handler() _decorator_. Th
 
 The intent_handler() _decorator_ tags a method to be an intent handler for the intent, removing the need for separate registration.
 
-First, you need to `import` the `intent_handler()` library. Include the following line in the `import` section: 
+First, you need to `import` the `intent_handler()` library. Include the following line in the `import` section:
 
 ```
 from mycroft import intent_handler
@@ -371,12 +373,12 @@ class HelloWorldSkill(MycroftSkill):
     def handle_thank_you_intent(self, message):
         self.speak_dialog("welcome")
 
-    @intent_handler(IntentBuilder("HowAreYouIntent") 
+    @intent_handler(IntentBuilder("HowAreYouIntent")
                     .require("HowAreYouKeyword"))
     def handle_how_are_you_intent(self, message):
         self.speak_dialog("how.are.you")
 
-    @intent_handler(IntentBuilder("HelloWorldIntent") 
+    @intent_handler(IntentBuilder("HelloWorldIntent")
                     .require("HelloWorldKeyword"))
     def handle_hello_world_intent(self, message):
         self.speak_dialog("hello.world")
@@ -388,6 +390,36 @@ class HelloWorldSkill(MycroftSkill):
 As seen above the entire initialize() method is removed and the **Intent** registration is moved to the the method declaration.
 
 Ideally, you should use approach to **Intent** registration.
+
+## How do I disable a Skill?
+
+During Skill development you may have reason to disable one or more **Skills**. Rather than constantly install or uninstall them via voice, or by adding and removing them from `/opt/mycroft/skills/`, you can disable them in [the `mycroft.conf` file](https://mycroft.ai/documentation/mycroft-conf/).
+
+First, identify the name of the **Skill**. The name of the **Skill** is the `path` attribute in the [`.gitmodules`](https://github.com/MycroftAI/mycroft-skills/blob/master/.gitmodules) file.
+
+To disable one or more **Skills** on a Mycroft **Device**, find where your `mycroft.conf` file is stored, then edit it using an editor like `nano` or `vi`.
+
+Search for the string `blacklisted` in the file. Then, edit the line below to include the **Skill** you wish to disable, and save the file. You will then need to reboot, or restart the `mycroft` services on the **Device**.
+
+```
+  "skills": {
+    "blacklisted_skills": ["skill-media", "send_sms", "skill-wolfram-alpha, YOUR_SKILL"]
+  }
+```
+
+## How to increase the priority of **Skills** during loading
+
+During **Skill** development, you may wish to increase the priority of your **Skill** loading during the startup process. This allows you to start using the **Skill** as soon as possible.
+
+First, identify the name of the **Skill**. The name of the **Skill** is the `path` attribute in the [`.gitmodules`](https://github.com/MycroftAI/mycroft-skills/blob/master/.gitmodules) file.
+
+To prioritize loading one or more **Skills** on a Mycroft **Device**, find where your [`mycroft.conf` file](https://mycroft.ai/documentation/mycroft-conf/) is stored, then edit it using an editor like `nano` or `vi`.
+
+Search for the string `priority` in the file. Then, edit the line below to include the **Skill** you wish to prioritize, and save the file. You will then need to reboot, or restart the `mycroft` services on the **Device**.
+
+```
+"priority_skills": ["skill-pairing"],
+```
 
 ## How do I find more information on Mycroft functions?
 
