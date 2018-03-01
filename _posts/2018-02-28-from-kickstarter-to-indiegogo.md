@@ -30,13 +30,6 @@ post_date: 2018-02-28 23:04:17
 <h3><span style="font-weight: 400;">
 </span><strong>Speaking of the community, check out this skill by member Christopher Rogers. A perfect example of how you can use Mark II with a camera in the future. </strong></h3>
 [/vc_column_text][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][nectar_video_lightbox link_style="play_button_2" nectar_play_button_color="Default-Accent-Color" image_url="36166" hover_effect="defaut" box_shadow="none" video_url="https://www.youtube.com/watch?v=ytKUTBfjnQI&amp;t=1s"][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]<span style="font-weight: 400;">If you’re wondering about privacy with the Mark II camera, we’ve added a mechanical shutter which puts you in total control.</span>
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 <h3><span style="font-weight: 400;">
-</span><span style="font-weight: 400;">
 </span><span style="font-weight: 400;">In the meantime, have you joined our <a href="https://chat.mycroft.ai">chat</a> or <a href="https://community.mycroft.ai">forum</a>? It’s where everyone working on Mycroft interacts and showcases what they’re building.</span></h3>
-[/vc_column_text][/vc_column][/vc_row]
+[/vc_column_text][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][divider line_type="No Line" custom_height="70"][/vc_column][/vc_row]
