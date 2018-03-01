@@ -58,7 +58,7 @@ You can now run `./auto_run.sh` to start the program back up and test and ensure
 First, we need to enable Bluetooth. 
 
 1. Edit the `/etc/mycroft/mycroft.conf` file
-2. Add `"port": "/dev/ttyAMA1"` to the enclosure settings
+2. Add `"port": "/dev/ttyAMA0"` to the enclosure settings
 
 Next, we set up the Bluetooth connection. 
 
