@@ -106,7 +106,7 @@ picroft:~$ pactl list sources short
 
 ##### Changing pulseaudio input and output 
 
-If you need to adjust the device you're using for input or output, `pactlset-default-source` (for input) and `pactl set-default-sink` (for output) can be used:
+If you need to adjust the device you're using for input or output, first determine the number of the source or sink you wish to set it to.  Then use `pactlset-default-source` (for input) or `pactl set-default-sink` (for output) to update:
 ```
 $ patcl set-default-source 3
 $ pactl set-default-sink 1
