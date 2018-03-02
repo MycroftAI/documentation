@@ -1,4 +1,4 @@
-----
+---
 ID: 32430
 post_title: Mark 1
 author: Kathy Reid
@@ -25,7 +25,7 @@ post_date: 2017-12-02 22:35:25
       - [Setting up SSH to the Mark 1 using SSH keys](#setting-up-ssh-to-the-mark-1-using-ssh-keys)
       - [Accessing the command line interface (CLI) of the Mark 1](#accessing-the-command-line-interface-cli-of-the-mark-1)
       - [Enabling the LEARN function](#enabling-the-learn-function)
-      - [Upgrading to the latest version from a 2017 Mark 1](#Upgrading-to-the=latest-version-from-a-2017-Mark-1)
+      - [Upgrading to the latest version from a 2017 Mark 1](#Upgrading-to-the-latest-version-from-a-2017-Mark-1)
       - [How to reimage a Mark 1 Device](#how-to-reimage-a-mark-1-device)
         * [Prerequisites](#prerequisites-1)
         * [Reimaging steps](#reimaging-steps)
