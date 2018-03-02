@@ -12,7 +12,7 @@ post_date:
 
   * [Troubleshooting Audio](#troubleshooting-audio)
     + [Missing pulseaudio](#missing-pulseaudio)
-    + [Microphone can't hear me/CLI show no change in meter while speaking](#mic-cant-hear-me)
+    + [Microphone can't hear me or CLI show no change in meter while speaking](#mic-cant-hear-me)
     + [Dev instance audio test](#dev-instance-audio-test)
     + [Test your mic](#test-your-mic)
   * [Pulseaudio settings](#pulseaudio-settings)
@@ -20,20 +20,18 @@ post_date:
     + [List available input devices](#list-available-input-devices)
     + [List available output devices](#list-available-output-devices)
     + [Changing pulseaudio input and output](#changing-pulseaudio-input-and-output)
-    + [Other useful commands](#other-useful-commands)
+  * [Other useful commands](#other-useful-commands)
    
-
-Mycroft makes use of pulseaudio to handle the audio input and output. 
 
 ## Troubleshooting Audio
 
-Mycroft utilizes pulseaudio for sound input and output.  Mycroft uses the default input and output from pulse. Frequent issues include not having the correct mic or speakers set as default. Systems without pulseaudio installed will also not function as expected.
+Mycroft utilizes pulseaudio for sound input and output. Mark 1 and Picroft devices have pulseaudio set up correctly for the mycroft user. On picroft, any mic or speakers you add to it may need to be configured as Mycroft uses the default input and output from pulse. Systems without pulseaudio installed will likely also not function as expected.  Systems with both jack and pulseaudio may need additional configuration to work correctly. 
 
 #### Missing pulseaudio
 
 If you see an issue in the logs with `Popen(play_wav_cmd)` and `OSError: [Errno 2] No such file or directory` this usually indicates that mycroft can't find pulseaudio. Make sure it's installed and mycroft is able to access it.
 
-#### Microphone can't hear me/CLI show no change in meter while speaking
+#### Microphone can't hear me or CLI show no change in meter while speaking
 
 If no audio is picked up by mycroft, check the mic to verify it's working.  If the mictest is successful, verify that pulse has your device as the default source.
 
@@ -58,6 +56,8 @@ You can play it back to hear what is recorded with
 `aplay test.wav`
 
 ## Pulseaudio settings
+
+
 ##### Show current settings and info
 
 `pactl info`
@@ -112,11 +112,11 @@ $ pactl set-default-sink 1
 
 This would set the default input to be device 3 and the default output device to be 1.  Your numbers will vary.  A succsessful change will not have any additional output listed.  Verify with `pactl info`
 
-##### Other useful commands
+### Other useful commands
 
 `lsusb` can be used to see what USB devices are connected to the system.  `lsusb -v` can be also used, but produces significantly more output.
 
-`groups` will list all the system groups the current user is a part of.  In dev instances of mycroft, can be used to see if the mycroft user is part of the audio group.  If you see null or no input/output devices for the user, use this command to verify if you're part of the `audio` group.
+`groups` will list all the system groups the current user is a part of.  In dev instances of mycroft, can be used to see if the mycroft user is part of the audio group.  If running list sinks or list sources you see null or no devices for the user, use this command to verify if you're part of the `audio` group.
 
 `alsamixer` is a command-line utility to adjust volume and muting of both inputs and outputs. 
 
