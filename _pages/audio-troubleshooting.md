@@ -21,7 +21,7 @@ post_date:
     + [List available output devices](#list-available-output-devices)
     + [Changing pulseaudio input and output](#changing-pulseaudio-input-and-output)
   * [Other useful commands](#other-useful-commands)
-   
+  * [Will my device work](#will-my-device-work)
 
 ## Troubleshooting Audio
 
@@ -92,6 +92,8 @@ picroft:~$ pactl list sinks short
 1       alsa_output.pci-0000_00_1b.0.analog-stereo      module-alsa-card.c      s16le 2ch 44100Hz       SUSPENDED
 ```
 
+
+
 ##### List available output devices
 
 `pactl list sources short` will list outputs, or sinks, available to the current user:
@@ -120,3 +122,9 @@ This would set the default input to be device 3 and the default output device to
 
 `alsamixer` is a command-line utility to adjust volume and muting of both inputs and outputs. 
 
+
+### Will my device work
+
+Maybe. 
+
+Most USB mics and speakers are usable with pulseaudio. In general, if your OS can recognize the device as an audio endpoint pulse will be able to connect it.  A variety of mics including the PS3 Eye, Blue snowballs, Jabra 410, various web cams, the movo mc1000, gaming headsets, and even the AIY hat have been used successfully. If you have the device on hand, try it out and see. If the information above isn't able to get it going, try asking on the chat server or the forum.  Always check the volume levels if everything else seems to be set correctly.
