@@ -182,7 +182,7 @@ You will need:
 * An internet connection
 
 Method
-* Download the 18.02b Mark 1 disk image from
+* Download the [18.02b Mark 1 disk image](https://mycroft.ai/to/mark-1-image) from the mycroft website.
 * Unplug the Mark 1 from the power supply. 
 * Remove the four rubber feet from the Mark 1, and put them in a safe place. 
 * Gently remove the base of the Mark 1.
