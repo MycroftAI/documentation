@@ -340,6 +340,128 @@ def stop(self):
 
 In the above code block, the [`pass` statement](https://docs.python.org/2/reference/simple_stmts.html#the-pass-statement) is used as a placeholder; it doesn't actually have any function. However, if the **Skill** had any active functionality, the stop() method would terminate the functionality, leaving the *Skill** in a known good state.
 
+#### Intents and regular expressions (regex)
+
+In the examples above, we walked through how to use phrases in a `.voc` file to build an `Intent` using _entities_. In this section, we expand on how `Intents` are built, and introduce _multiple entities_, and _regular expressions_.
+
+Throughout this section, we will be using examples from the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time).
+
+##### How .voc files are used to handle Intents
+
+At the top of your **Skill** file, you will have a line that looks like this:
+
+`from adapt.intent import IntentBuilder`
+
+This tells your **Skill** to import the `IntentBuilder` class from Adapt. Adapt is an Intent-handling engine. Its job is to understand what a user Speaks to Mycroft, and to pass that information to a **Skill** for handling.
+
+Different **Skills** require different information from the user. For example, the **Skill** to change the color of Mycroft's eyes just has one parameter - `color`. That parameter is mandatory - because you can't change the color of Mycroft's eyes without knowing what color to change them to.
+
+Later in your **Skill** file, you will call `IntentBuilder`, with one or more parameters. The parameters can be either `required` or `optional`.
+
+For example, here is the `@intent_handler` _decorator_ used in the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time). It has three parameters; two are `required` and one is `optional`.
+
+```python
+
+@intent_handler(IntentBuilder("")
+  .require("Query")
+  .require("Time")
+  .optionally("Location")
+)
+
+```
+
+This call is then interpreted by the Adapt Intent Parser.
+
+Internally, Adapt uses a function called `register_entity`, and tries to register `entities` based on the parameters passed to `IntentBuilder`. There are several ways that Adapt can register `entities`.
+
+If we were building `Intent`s manually, we would do something like this:
+
+```python
+
+locations = [
+    "Seattle",
+    "San Francisco",
+    "Tokyo"
+]
+
+for loc in locations:
+    engine.register_entity(loc, "Location")
+
+```
+
+But what if we want to support more `locations`? Or make the `location` available to the **Skill** to use as a parameter in an API call?
+
+First, Adapt will look in `.voc` files to try and register an `Intent`. For example, in the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time), in the `vocab` directory, you will see several `.voc` files. Note that they each correspond to one of the parameters passed to `Intentbuilder()`.
+
+```bash
+
+pi@mark_1:/opt/mycroft/skills/skill-date-time/vocab/en-us $ ls -las
+total 24
+4 drwxr-xr-x 2 mycroft mycroft 4096 Feb 15 14:17 .
+4 drwxr-xr-x 4 mycroft mycroft 4096 Feb 15 14:17 ..
+4 -rwxr-xr-x 1 mycroft mycroft    8 Feb 15 14:17 Date.voc
+4 -rwxr-xr-x 1 mycroft mycroft   12 Feb 15 14:17 Display.voc
+4 -rwxr-xr-x 1 mycroft mycroft    9 Feb 15 14:17 Query.voc
+4 -rwxr-xr-x 1 mycroft mycroft    5 Feb 15 14:17 Time.voc
+
+```
+
+If we take a look inside each of these files, they contain only a single word each:
+
+* `Date.voc` => "date"
+* `Display.voc => "display"
+* `Query.voc`=> "what"
+* `Time.voc` => "time"
+
+Now, remember back to `IntentBuilder` and the mandatory and optional parameters? Only `Query` and `Time` were mandatory. So if a user Spoke:
+
+`"Hey Mycroft, **what** **time** is it?"`
+
+then Adapt would match that **Utterance** to the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time), by _registering_ the `Intent`, and within the **Skill**, this would be handled by the `handle_query_time()` function.
+
+If the user Spoke:
+
+`"Hey Mycroft, **display** the **time**"`
+
+which function within the Date and Time Skill do you think would handle the **Utterance**?
+
+_ANSWER: handle_show_time()_
+
+Of course
+
+
+
+
+
+
+
+
+
+
+
+
+sngle intent parserwhat does register_entity() do under the hood?
+line 42-46 ? register_entity
+other examples for advanced use, it out of a database
+documentation needs to explain what register_intent does
+
+not much different b/w single and multi intent
+decent examples for Adapt, but not adapt / intent mycroft
+
+pick an adapt skill, explain how all the pieces come together - ie data time, example of hitting regex
+
+location is optional
+voc - multiple or single words
+combining multiple voc and regex
+
+`location.rx`
+
+
+
+
+
+
+
 ## Simplifying your Skill code with `intent_handler` _decorators_
 
 Your **Skill** code can be simplified using the intent_handler() _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
