@@ -421,13 +421,40 @@ then Adapt would match that **Utterance** to the [Date and Time Skill](https://g
 
 If the user Spoke:
 
-`"Hey Mycroft, **display** the **time**"`
+`"Hey Mycroft, **display** the **time** "`
 
 which function within the Date and Time Skill do you think would handle the **Utterance**?
 
 _ANSWER: handle_show_time()_
 
-Of course
+But what about `Location`? There isn't a `.voc` file for `Location`, so how does Adapt register an `entity` for `Location` so that `Location` can be included in an **Utterance**, recognised as an `Intent`, and handled properly by the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time)?
+
+This is done using [regular expressions](https://docs.python.org/2/library/re.html).
+
+In the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time) directory, you will see a sub-directory called `regex`. This sub-directory follows the same file structure as the `voc` directory (eg. there will be an `en-us` directory inside), and contains a file called 'location.rx':
+
+```bash
+
+pi@mark_1:/opt/mycroft/skills/skill-date-time/regex/en-us $ ls -las
+total 12
+4 drwxr-xr-x 2 mycroft mycroft 4096 Feb 15 14:17 .
+4 drwxr-xr-x 4 mycroft mycroft 4096 Feb 15 14:17 ..
+4 -rwxr-xr-x 1 mycroft mycroft   28 Feb 15 14:17 location.rx
+
+```
+
+Inside `location.rx` is a _regular expression_:
+
+`(at|in|for) (?P<Location>.*)`
+
+Because a `.voc` file is not present for the `Location` parameter, Adapt will then search for an equivalent `.rx` file in the `regex` directory. Instead of being restricted to the specified words in the `.voc` file, Adapt can register `Intents` using _regular expressions_, and thus support a wider range of input from the user.
+
+Can you think of another **Skill** where a _regular expression_ `Location` would be useful?
+
+_ANSWER: [Weather Skill](https://github.com/MycroftAI/skill-weather)_
+
+
+
 
 
 
