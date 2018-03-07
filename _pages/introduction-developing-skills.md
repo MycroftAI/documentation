@@ -453,42 +453,6 @@ Can you think of another **Skill** where a _regular expression_ `Location` would
 
 _ANSWER: [Weather Skill](https://github.com/MycroftAI/skill-weather)_
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-sngle intent parserwhat does register_entity() do under the hood?
-line 42-46 ? register_entity
-other examples for advanced use, it out of a database
-documentation needs to explain what register_intent does
-
-not much different b/w single and multi intent
-decent examples for Adapt, but not adapt / intent mycroft
-
-pick an adapt skill, explain how all the pieces come together - ie data time, example of hitting regex
-
-location is optional
-voc - multiple or single words
-combining multiple voc and regex
-
-`location.rx`
-
-
-
-
-
-
-
 ## Simplifying your Skill code with `intent_handler` _decorators_
 
 Your **Skill** code can be simplified using the intent_handler() _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
