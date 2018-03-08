@@ -62,5 +62,6 @@ post_date: 2018-02-12 07:26:19
  	<li>Conical Speakers</li>
 </ul>
 [/vc_column_text][vc_column_text]<strong><span style="color: #2c3e50;">The MEDKit is priced at $12,500 and requires a 3-week lead time. Inquire below to order yours.</span></strong>[/vc_column_text][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row type="full_width_content" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" top_padding="5%" bottom_padding="5%" overlay_strength="0.3"][vc_column centered_text="true" column_padding="no-extra-padding" column_padding_position="all" background_color="#ffffff" background_color_opacity="1" background_hover_color_opacity="1" font_color="#0c0c0c" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text max_width="960"]
-<h2 style="padding-left: 5%; padding-top: 5%;"><span style="color: #ffffff;">Enterprise Inquiry</span></h2>
-[activecampaign form=22][/vc_column_text][/vc_column][/vc_row]
+<h2 style="text-align: center;"><span style="color: #2c3e50;">Enterprise Inquiry
+</span>[activecampaign form=22]</h2>
+[/vc_column_text][/vc_column][/vc_row]
