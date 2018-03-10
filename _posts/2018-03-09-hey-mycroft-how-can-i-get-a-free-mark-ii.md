@@ -11,8 +11,8 @@ permalink: >
 published: true
 post_date: 2018-03-09 21:37:13
 ---
-[vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]<span style="font-weight: 400;">How would you like a free Mark II? Free is a good price--unless you’re getting a tattoo, or knee surgery... but nonetheless.</span>
-
+[vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h3><span style="font-weight: 400;">How would you like a free Mark II? Free is a good price--unless you’re getting a tattoo, or knee surgery... but nonetheless.</span></h3>
 <span style="font-weight: 400;">Today we’re announcing a referral program for the Mark II Indiegogo campaign. If you’re yet to reserve a Mark II this could be your chance to get one for free. If you have backed us you could get a second unit. Or a third.</span>
 
 &nbsp;
