@@ -453,6 +453,34 @@ Can you think of another **Skill** where a _regular expression_ `Location` would
 
 _ANSWER: [Weather Skill](https://github.com/MycroftAI/skill-weather)_
 
+For those who are new to Python, the `regex` used is a [Python named _group_](https://docs.python.org/2/library/re.html#regular-expression-syntax). The name of the group is case-sensitive, and correlates with the variable name used to extract the named group value.
+
+For example, in the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time), we can see one of the functions uses `Location` as an optional parameter to the function.
+
+[Link to the code snipped below](https://github.com/MycroftAI/skill-date-time/blob/master/__init__.py#L257
+)
+
+```python
+@intent_handler(IntentBuilder("").require("Query").require("Time").
+                    optionally("Location"))
+    def handle_query_time(self, message):
+        location = message.data.get("Location")
+        current_time = self.get_spoken_time(location)
+        if not current_time:
+```
+
+The `Location` value is extracted by calling `message.data.get("Location")`. If the named group was named differently, such as `TheUserLocation`, then this code would look like:
+
+```python
+@intent_handler(IntentBuilder("").require("Query").require("Time").
+                    optionally("TheUserLocation"))
+    def handle_query_time(self, message):
+        location = message.data.get("TheUserLocation")
+        current_time = self.get_spoken_time(location)
+        if not current_time:
+
+```
+
 ## Simplifying your Skill code with `intent_handler` _decorators_
 
 Your **Skill** code can be simplified using the intent_handler() _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
