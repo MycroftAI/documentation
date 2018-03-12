@@ -41,7 +41,7 @@ Adapt takes in natural language as an input, and outputs a data structure that i
 * **a match probability**: how confident Adapt is that the **Intent** has been correctly identified
 * a tagged list of **entities**: that can be used by **Skills** to perform functions
 
-Adapt is useful for interpreting natural language input. For example, you might want to create a [voice user interface])https://en.wikipedia.org/wiki/Voice_user_interface) that allows a User to play a Pandora station. The **Utterances** a User might Speak include:
+Adapt is useful for interpreting natural language input. For example, you might want to create a [voice user interface](https://en.wikipedia.org/wiki/Voice_user_interface) that allows a User to play a Pandora station. The **Utterances** a User might Speak include:
 
 * `Turn on Pandora`
 * `Play Pandora`

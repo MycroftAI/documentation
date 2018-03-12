@@ -35,7 +35,7 @@ A Wake Word is a phrase you use to tell Mycroft you're about to issue a command.
 
 There are two technologies that Mycroft.AI currently uses for **Wake Word** detection:
 
-* [PocketSphinx](https://github.com/cmusphinx/pocketsphinx_): PocketSphinx is part of the broader [CMUSphinx package](https://cmusphinx.github.io/), developed by [Carnegie Mellon University](https://www.cmu.edu). PocketSphinx is a lightweight speech recognition engine, specifically tuned for handheld and mobile devices. PocketSphinx is currently the default **Wake Word** detection tool on all Mycroft platforms.
+* [PocketSphinx](https://github.com/cmusphinx/pocketsphinx): PocketSphinx is part of the broader [CMUSphinx package](https://cmusphinx.github.io/), developed by [Carnegie Mellon University](https://www.cmu.edu). PocketSphinx is a lightweight speech recognition engine, specifically tuned for handheld and mobile devices. PocketSphinx is currently the default **Wake Word** detection tool on all Mycroft platforms.
 
 Because PocketSphinx is trained on English speech, your **Wake Word** currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well. 
 
@@ -80,7 +80,7 @@ In your home.mycroft.ai account, you can select several other TTS engines if you
 
 * [eSpeak](http://espeak.sourceforge.net/): you need to choose which [voice](http://espeak.sourceforge.net/voices.html) to use
 * [MaryTTS](http://mary.dfki.de/): you need to choose which voice to use
-* [Google TTS](https://play.google.com/store/apps/details?id=c): you need to choose which voice to use
+* [Google TTS](https://play.google.com/store/apps/details?id=com.google.android.tts): you need to choose which voice to use
 * FATTS: you need to choose which voice to use
 
 ### Middleware
