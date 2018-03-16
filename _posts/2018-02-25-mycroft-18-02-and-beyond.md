@@ -51,7 +51,7 @@ Email remains a great way to memorialize and share information. Mycroft can send
  	<li><strong>Skill Translation tools</strong>
 The Mycroft Skill system is built for translation. We have extended this with tools making it easier to support translatable dialog elements, templates, lists and named values.</li>
  	<li><strong>Common Context terms</strong>
-Mycroft has shared context, and this context is most powerful when the terminology is agreed-upon between skills. This allows the "him" in "Send me him a text that I'll be 5 minutes late" in an SMS skill to know who you meant when right before you asked the Calendar skill "When is my appointment with Puddles the Clown"?</li>
+Mycroft has shared context, and this context is most powerful when the terminology is agreed-upon between skills. This allows the "him" in "Send him a text that I'll be 5 minutes late" in an SMS skill to know who you meant when right before you asked the Calendar skill "When is my appointment with Puddles the Clown"?</li>
 </ul>
 &nbsp;
 <h1>Roadmap for 18.08</h1>
