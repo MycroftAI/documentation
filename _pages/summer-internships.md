@@ -4,8 +4,7 @@ post_title: Summer Internships at Mycroft AI
 author: David Smehlik
 post_excerpt: ""
 layout: page
-permalink: >
-  http://mycroft.ai/summer-internships-at-mycroft-ai/
+permalink: http://mycroft.ai/summer-internships/
 published: true
 post_date: 2018-03-16 15:19:30
 ---
