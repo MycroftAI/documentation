@@ -20,6 +20,8 @@ post_date:
     + [List available input devices](#list-available-input-devices)
     + [List available output devices](#list-available-output-devices)
     + [Changing pulseaudio input and output](#changing-pulseaudio-input-and-output)
+    + [Echo cancellation](#echo-cancellation)
+    + [Pulseaudio modules](#pulseaudio-modules)
   * [Other useful commands](#other-useful-commands)
   * [Will my device work](#will-my-device-work)
 
@@ -114,6 +116,24 @@ $ pactl set-default-sink 1
 
 This would set the default input to be device 3 and the default output device to be 1.  Your numbers will vary.  A succsessful change will not have any additional output listed.  Verify with `pactl info`
 
+##### Echo cancellation
+
+Pulseaudio has an echo cancellation module that can be loaded.  
+```
+$ pactl load-module echo-cancellation
+```
+This is system wide. If not previously enabled, you will need to restart any applications using pulse.
+For documentation, see https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#index45h3
+Additional usage and tips can be found https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting
+
+##### Pulseaudio modules
+
+Find out what modules are installed:
+```
+$ pactl list modules short
+```
+For more information like usage counts and properties, remove the ```short```.  
+
 ### Other useful commands
 
 `lsusb` can be used to see what USB devices are connected to the system.  `lsusb -v` can be also used, but produces significantly more output.
@@ -122,6 +142,13 @@ This would set the default input to be device 3 and the default output device to
 
 `alsamixer` is a command-line utility to adjust volume and muting of both inputs and outputs. 
 
+`pulseaudio -k` kills the current instance of pulseaudio. 
+
+`pulseaudio --start` will start pulseaudio.
+
+`pavucontrol` is a GUI mixer client for X.  
+
+`pacmd` is an interactive shell version of `pactl`. Use `help` to see more once in the shell. 
 
 ### Will my device work
 
