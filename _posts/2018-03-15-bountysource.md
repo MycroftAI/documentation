@@ -7,7 +7,7 @@ post_title: >
 author: Kathy Reid
 post_excerpt: ""
 layout: post
-permalink: https://mycroft.ai/blog/bountysource/
+permalink: http://mycroft.ai/blog/bountysource/
 published: true
 post_date: 2018-03-15 10:00:48
 ---
