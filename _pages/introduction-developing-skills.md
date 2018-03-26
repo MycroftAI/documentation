@@ -24,7 +24,7 @@ post_date: 2017-12-02 22:35:25
   * [How to increase the priority of **Skills** during loading](#how-to-increase-the-priority-of-skills-during-loading)
   * [How do I find more information on Mycroft functions?](#how-do-i-find-more-information-on-mycroft-functions)
 
-This page will walk you through developing a new Mycroft **Skill**. It assumes you have read through the [basic skills information](skills.md)
+This page will walk you through developing a new Mycroft **Skill**. It assumes you have read through the [basic skills information](https://mycroft.ai/documentation/skills/developing-skills/)
 
 ## Prerequisites
 
