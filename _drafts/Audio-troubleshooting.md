@@ -1,12 +1,11 @@
 ---
-ID: 
+ID: 36769
 post_title: Audio troubleshooting
-author: 
+author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: >
-published: unk
-post_date: 
+permalink: http://mycroft.ai/?page_id=36769
+published: false
 ---
 # Audio troubleshooting
 
