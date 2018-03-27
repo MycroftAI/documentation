@@ -247,7 +247,7 @@ We also have [more information available on `mycroft.conf` and `web_config_cache
 
 ##### If your Mark 1 loses internet connectivity
 
-If your Mark 1 has previously been connected to the internet, and loses internet connectivity, it will Speak
+If your Mark 1 has previously been connected to the internet, and loses internet connectivity, it will speak
 
 `I have lost connection to the internet`
 
@@ -264,6 +264,7 @@ then you may need to reinstall your `virtualenv`. To do this,
 
 * `sudo rm -R ~/.virtualenv/mycroft`
 * From the directory where you have cloned `mycroft-core`, run `./dev-setup.sh`. This shell script will re-install any `virtualenv` dependencies that you may be missing.
+
 
 ## Troubleshooting Skills development
 
