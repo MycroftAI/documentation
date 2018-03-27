@@ -27,7 +27,7 @@ post_date: 2018-03-27 11:27:51
 
 &nbsp;
 
-<span style="font-weight: 400;">What if you are reading this post and you did not get your Mark II on Kickstarter? It’s not too late. We moved over to Indiegogo In Demand, and even have a referral program so you can get Indiegogo credit or a free Mark II! Reserve your reward soon, because we’ll likely have a cutoff for December delivery dates. The survey’s for Indiegogo backers will come out a little later but will be similar to the Kickstarter surveys.</span>
+<span style="font-weight: 400;">What if you are reading this post and you did not get your Mark II on Kickstarter? It’s not too late. We moved over to <a href="https://igg.me/at/mycroft/x/1728487">Indiegogo In Demand</a>, and even have a referral program so you can get Indiegogo credit or a free Mark II! Reserve your reward soon, because we’ll likely have a cutoff for December delivery dates. The survey’s for Indiegogo backers will come out a little later but will be similar to the Kickstarter surveys.</span>
 
 &nbsp;
 
