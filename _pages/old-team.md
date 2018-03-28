@@ -1,10 +1,10 @@
 ---
 ID: 28898
-post_title: Team
+post_title: ZZZZ Old team page
 author: senseid23@7h4r
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/team/
+permalink: http://mycroft.ai/old-team/
 published: true
 post_date: 2017-02-01 19:25:30
 ---
