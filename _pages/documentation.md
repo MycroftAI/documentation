@@ -56,6 +56,7 @@ Our documentation, just like our source code, is open source, [and you can contr
   * [Precise](#precise)
   * [Padatious](#padatious)
   * [Troubleshooting and known errors](#troubleshooting-and-known-errors)
+      + [Audio troubleshooting](#audio-troubleshooting)
   * [Getting help and support](#getting-help-and-support)
   
 ## [About Mycroft](http://mycroft.ai/documentation/mycroft-software-hardware/)
@@ -225,6 +226,10 @@ Padatious is an **Intent parser**. Unlike [Adapt](http://mycroft.ai/documentatio
 ## [Troubleshooting and known errors](https://mycroft.ai/documentation/troubleshooting/)
 
 Stuck? Learn common tricks and techniques for resolving common errors.
+
+### [Audio troubleshooting](http://mycroft.ai/documentation/troubleshooting/audio-troubleshooting/)
+
+Audio is one of the most common areas that requires troubleshooting. 
 
 ## Getting help and support
 Need to chat things over with a human? No problem. You can join our [Chat](https://chat.mycroft.ai), [Forum](https://community.mycroft.ai) or [make contact via this web form](https://mycroft.ai/contact).
