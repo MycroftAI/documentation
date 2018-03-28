@@ -205,6 +205,6 @@ To see this more clearly, it sometimes pays off to reformat the rule status:
 
 The ```message_tester.py``` tool is able to evaluate one message event at a time, for instance:
 
-![message tester](../img/message_tester.png)
+![message tester](../img/message-tester.png)
 
 Not surprisingly it yields the same result as the test runner.
