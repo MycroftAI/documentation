@@ -4,8 +4,10 @@ post_title: Audio troubleshooting
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=36769
-published: false
+permalink: >
+  http://mycroft.ai/documentation/troubleshooting/audio-troubleshooting/
+published: true
+post_date: 2018-03-27 08:51:07
 ---
 # Audio troubleshooting
 
