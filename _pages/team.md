@@ -1,10 +1,10 @@
 ---
 ID: 36668
-post_title: new team page
+post_title: Team
 author: Kathy Reid
 post_excerpt: "128"
 layout: page
-permalink: http://mycroft.ai/new-team-page/
+permalink: http://mycroft.ai/team/
 published: true
 post_date: 2018-03-21 07:15:16
 ---
