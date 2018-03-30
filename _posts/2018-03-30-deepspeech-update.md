@@ -5,9 +5,9 @@ author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/deepspeech-update/
+  https://mycroft.ai/blog/deepspeech-update/
 published: true
-post_date: 2018-03-28 23:42:00
+post_date: 2018-03-30 07:30:00
 ---
 Lots has been quietly happening over the last few months around DeepSpeech. Today I'll share what's coming out now and what to expect in the coming weeks and months.
 <h1>Mycroft and Mozilla</h1>
