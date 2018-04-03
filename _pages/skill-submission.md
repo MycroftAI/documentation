@@ -81,23 +81,23 @@ Next, we need to submit a Pull Request (PR) in GitHub to have your **Skill** lis
 
 ![Raising a Pull Request in GitHub](https://mycroft.ai/wp-content/uploads/2017/12/git-pull-request.png "Raising a Pull Request in GitHub")
 
-* You will need to choose with repositories to compare and create a PR from. This will  usually be `MycroftAI/mycroft-skills/master` and `YourGitHubUsername/mycroft-skills/master`
+* You will need to choose which repositories to compare and create a PR from. This will  usually be `MycroftAI/mycroft-skills/master` and `YourGitHubUsername/mycroft-skills/master`
 * When  you create a PR, you will be presented with a PR template to fill in. This helps to make sure that your **Skill** is ready for submission. It will look like this:
 
 ```md
-## Description:
-Short description of your skill and what it does
-## Checklist:
-  - [ ] Used [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html) to generate the skill README
-  - [ ] Skill has been tested and works
-  - [ ] README.md has been updated with the following:
-  +[submodule "NAME OF YOUR SKILL"]
-  +	path = name-of-your-skill-skill
-  +	url = URL.FOR.YOUR.SKILL.git
- - [ ] README.md has been updated with your skill phrase and description
+		## Description:
+		Short description of your skill and what it does
+		## Checklist:
+  			- [ ] Used [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html) to generate the skill README
+  			- [ ] Skill has been tested and works
+  			- [ ] README.md has been updated with the following:
+  		+[submodule "NAME OF YOUR SKILL"]
+  		+	path = name-of-your-skill-skill
+  		+	url = URL.FOR.YOUR.SKILL.git
+ 			- [ ] README.md has been updated with your skill phrase and description
 ```
 
-Fill in the PR template and submit your PR.
+* Fill in the PR template and submit your PR.
 
 There are two continuous integration (CI) tools that Mycroft uses, and these CI tools will automatically trigger when you submit your PR:
 
