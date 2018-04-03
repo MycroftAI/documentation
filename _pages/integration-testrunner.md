@@ -221,3 +221,14 @@ The ```message_tester.py``` tool is able to evaluate one message event at a time
 ![message tester](../img/message-tester.png)
 
 Not surprisingly it yields the same result as the Integration Test Runner. 
+
+## Test coverage
+
+The last section of the Integration Test Runner output shows the test coverage - how many lines of code are covered by the tests. In general, the more coverage of a **Skill**, the better. 
+
+```python
+---------- coverage: platform linux2, python 2.7.12-final-0 ----------
+Name                                          Stmts   Miss  Cover
+-----------------------------------------------------------------
+/opt/mycroft/skills/skill-alarm/__init__.py     293    290     1%
+```
