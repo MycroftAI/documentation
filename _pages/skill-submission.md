@@ -28,7 +28,7 @@ It's important that you prepare your **Skill** for submission to the Mycroft Ski
 * Your **Skill** is well documented for people who may wish to use it.
 
 ### Generate a README.md file for your **Skill**
-First, you need to generate the README.md file for your **Skill** using the [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html). Fill out all the relative fields, and it will generate the Markdown to put into your README.md file. Save your README.md file.
+First, you need to generate the README.md file for your **Skill** using the [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html). Fill out all the relevant fields, and it will generate the Markdown to put into your README.md file. Save your README.md file.
 
 _NOTE: This following sections of documentation assume that you have set up a `remote` for your Git repository. If you have been developing locally, please pause here, and push your local development to a remote repository on GitHub. [New to working with remotes? Here's a handy guide](https://help.github.com/articles/adding-a-remote/)._
 
