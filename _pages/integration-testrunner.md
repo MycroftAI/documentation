@@ -1,3 +1,11 @@
+---
+ID: 
+post_title: Automatic testing of your Mycroft Skill
+author: Carsten Agerskov
+layout: page
+published: false
+---
+
 # Automatic testing of your Mycroft Skill
 
 Mycroft has a built-in mechanism to help you automatically test your **Skill**. Automatic testing of **Skills** helps increase the quality of the Mycroft ecosystem overall, and helps assure you that your **Skill** is performing as intended. Tests are required to be passing before your **Skill** will be accepted into the [Mycroft **Skill**](https://github.com/MycroftAI/mycroft-skills) repository on GitHub. 
