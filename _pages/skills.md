@@ -21,7 +21,7 @@ post_date: 2017-12-02 22:35:25
 
 **Skills** provide Mycroft with functionality. **Skills** are what allow Mycroft to tell you the weather in your location, display the time in another timezone, play you a song or tell you a Chuck Norris joke.
 
-Mycroft determines what **Skill** should handle an **Utterance** by using an **intent parser** like Adapt(http://mycroft.ai/documentation/adapt/) or [Padatious](http://mycroft.ai/documentation/padatious/) to identify the **intent** of the user. For instance, if the **intent parser** determines that the user is asking about the *weather*, then Mycroft will pass the **intent data** to the *Weather Skill*.
+Mycroft determines what **Skill** should handle an **Utterance** by using an **intent parser** like <a href="https://mycroft.ai/documentation/adapt/">Adapt</a> or [Padatious](http://mycroft.ai/documentation/padatious/) to identify the **intent** of the user. For instance, if the **intent parser** determines that the user is asking about the *weather*, then Mycroft will pass the **intent data** to the *Weather Skill*.
 
 Mycroft comes with several **Skills** built in. These are called *core skills*. It is easy to add more **Skills** to Mycroft.
 
