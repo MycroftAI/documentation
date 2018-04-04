@@ -11,6 +11,17 @@ post_date: 2018-04-04 07:57:16
 ---
 # Automatic testing of your Mycroft Skill
 
+- [Automatic testing of your Mycroft Skill](#automatic-testing-of-your-mycroft-skill)
+  * [Overview](#overview)
+  * [The Integration Test Runner files](#the-integration-test-runner-files)
+  * [How to define tests for your Skill](#how-to-define-tests-for-your-skill)
+  * [The internal rule format](#the-internal-rule-format)
+  * [Handling Skills with side effects](#handling-skills-with-side-effects)
+  * [Executing the Integration Test Runner](#executing-the-integration-test-runner)
+  * [Troubleshooting tests](#troubleshooting-tests)
+    + [Example of a failing test](#example-of-a-failing-test)
+  * [Test coverage](#test-coverage)
+
 Mycroft has a built-in mechanism to help you automatically test your **Skill**. Automatic testing of **Skills** helps increase the quality of the Mycroft ecosystem overall, and helps assure you that your **Skill** is performing as intended. Tests are required to be passing before your **Skill** will be accepted into the [Mycroft **Skill**](https://github.com/MycroftAI/mycroft-skills) repository on GitHub.
 
 ## Overview
