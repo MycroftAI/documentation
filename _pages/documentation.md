@@ -36,6 +36,7 @@ Our documentation, just like our source code, is open source, [and you can contr
 	  + [Developing Skills for Mycroft](#developing-skills-for-mycroft)
 	  + [Automatic testing for Mycroft Skills](#automatic-testing-for-mycroft-skills)
       + [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
+	  + [Skills Acceptance Process](#skills-acceptance-process)
       + [Skill Settings](#skill-settings)
       + [Common issues in Skills development](#common-issues-in-skills-development)
       + [Repurposing Skills developed for other platforms](#repurposing-skills-developed-for-other-platforms)
@@ -140,6 +141,10 @@ Take your next step in Developing **Skills** for Mycroft. Learn about the struct
 ### [Automatic testing for Mycroft Skills](https://mycroft.ai/documentation/skills/automatic-testing/)
 
 Learn how to use the Integration Test Runner for automatic testing of your Mycroft Skills. 
+
+### [Skills acceptance process](https://mycroft.ai/documentation/skills-acceptance-process/)
+
+Read more about the process used by Skill Authors, the Skill Management Team and Mycroft staff to ensure the robustness and quality of Skills in the Mycroft AI ecosystem. 
 
 ### [Preparing your Skill for submission to the Mycroft Skills Repo](https://mycroft.ai/documentation/skills/skill-submission/)
 
