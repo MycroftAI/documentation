@@ -11,6 +11,25 @@ post_date: 2018-04-04 08:43:20
 ---
 # Skills acceptance process
 
+- [Skills acceptance process](#skills-acceptance-process)
+  * [Objective](#objective)
+  * [Overview](#overview)
+  * [Autotest of Skills](#autotest-of-skills)
+  * [Testing by Skill Author and Mycroft Community](#testing-by-skill-author-and-mycroft-community)
+    + [Template for directions on how to test a Skill](#template-for-directions-on-how-to-test-a-skill)
+      - [YOUR SKILL NAME GOES HERE](#your-skill-name-goes-here)
+      - [How to install SKILL NAME](#how-to-install-skill-name)
+      - [How to test SKILL NAME](#how-to-test-skill-name)
+      - [Where feedback on SKILL NAME should be directed a](#where-feedback-on-skill-name-should-be-directed-a)
+  * [Peer review by Skill Management Team](#peer-review-by-skill-management-team)
+    + [Template for Skill Management Team Review](#template-for-skill-management-team-review)
+      - [Review of `skill-name`](#review-of-skill-name)
+        * [Standard checks (non-code checks)](#standard-checks-non-code-checks)
+      - [Python code checks of the Skill](#python-code-checks-of-the-skill)
+  * [Review by Mycroft AI](#review-by-mycroft-ai)
+  * [Deployment](#deployment)
+  * [Promotion](#promotion)
+
 ## Objective
 
 The objective of this document is to outline how Skills are tested, reviewed, deployed and promoted. It is vital that Mycroft Skills exhibit high quality, and are well tested to encourage adoption, and ongoing development of the platform. This process contributes to that goal by providing a structured framework to follow to ensure repeatable outcomes. 
