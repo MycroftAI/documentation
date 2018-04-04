@@ -135,6 +135,10 @@ Aimed at developers, this section is an introduction to developing new **Skills*
 
 Take your next step in Developing **Skills** for Mycroft. Learn about the structure of a **Skill**, and how to start creating your own. 
 
+### [Automatic testing for Mycroft Skills](https://mycroft.ai/documentation/skills/automatic-testing/)
+
+Learn how to use the Integration Test Runner for automatic testing of your Mycroft Skills. 
+
 ### [Preparing your Skill for submission to the Mycroft Skills Repo](https://mycroft.ai/documentation/skills/skill-submission/)
 
 Aimed at developers, this is a step by step guide to submitting a new Skill you've developed to the Mycroft Skills Repo.
