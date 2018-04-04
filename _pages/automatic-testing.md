@@ -4,18 +4,20 @@ post_title: Automatic testing of your Mycroft Skill
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/?page_id=36968
-published: false
+permalink: >
+  http://mycroft.ai/documentation/skills/automatic-testing/
+published: true
+post_date: 2018-04-04 07:57:16
 ---
 # Automatic testing of your Mycroft Skill
 
-Mycroft has a built-in mechanism to help you automatically test your **Skill**. Automatic testing of **Skills** helps increase the quality of the Mycroft ecosystem overall, and helps assure you that your **Skill** is performing as intended. Tests are required to be passing before your **Skill** will be accepted into the [Mycroft **Skill**](https://github.com/MycroftAI/mycroft-skills) repository on GitHub. 
+Mycroft has a built-in mechanism to help you automatically test your **Skill**. Automatic testing of **Skills** helps increase the quality of the Mycroft ecosystem overall, and helps assure you that your **Skill** is performing as intended. Tests are required to be passing before your **Skill** will be accepted into the [Mycroft **Skill**](https://github.com/MycroftAI/mycroft-skills) repository on GitHub.
 
 ## Overview
 
 The Integration Test Runner tests Mycroft **Skills** by emulating **Utterances** expected to be spoken by the User, sending them to the **Skill**, and then checking to see if the **Skill** responds as expected.
 
-The Integration Test Runner can test: 
+The Integration Test Runner can test:
 
 * That the expected **Intent** in the **Skill** is activated
 * That the expected parameters are extracted from the **Utterance**
@@ -59,9 +61,9 @@ An example test suite might look like this:
 
 ```
 ls test/intent
-001.AddTaskToList.intent.json       
-002.FindTaskOnList.intent.json      
-003.CompleteTaskOnList.intent.json  
+001.AddTaskToList.intent.json
+002.FindTaskOnList.intent.json
+003.CompleteTaskOnList.intent.json
 004.ReadList.intent.json
 005.CompleteList.intent.json
 050.GetToken.intent.json
@@ -84,19 +86,19 @@ A test case file understand the following json keywords:
 Below is an example test case file:
 ```
 {
- "utterance": "add milk to the grocery list",
- "remove_context": ["UndoContext", "ConfirmContext"],
- "set_context": {"_TestRunner": "data", "test": ""},
- "intent_type": "AddTaskToListIntent",
- "intent": {
-   "taskName": "milk",
-   "listName": "grocery",
-   "AddTaskToListKeyword": "add"
- },
- "expected_response": "I can\'t find a list called grocery.*",
- "evaluation_timeout": 10,
- "changed_context": ["UndoContext", "ConfirmContext"],
- "assert": "[['equal', 'context', 'UndoContext'], ['equal', 'context', 'ConfirmContext']]"
+"utterance": "add milk to the grocery list",
+"remove_context": ["UndoContext", "ConfirmContext"],
+"set_context": {"_TestRunner": "data", "test": ""},
+"intent_type": "AddTaskToListIntent",
+"intent": {
+"taskName": "milk",
+"listName": "grocery",
+"AddTaskToListKeyword": "add"
+},
+"expected_response": "I can\'t find a list called grocery.*",
+"evaluation_timeout": 10,
+"changed_context": ["UndoContext", "ConfirmContext"],
+"assert": "[['equal', 'context', 'UndoContext'], ['equal', 'context', 'ConfirmContext']]"
 }
 ```
 
@@ -106,15 +108,15 @@ A snippet of the intent to be tested looks like this:
 
 ```
 @intent_handler(IntentBuilder('AddTaskToListIntent').require('AddTaskToListKeyword').require(TASK_PARAMETER).
-               require(LIST_PARAMETER).optionally('_TestRunner').build())
+require(LIST_PARAMETER).optionally('_TestRunner').build())
 def add_task_to_list_intent(self, message):
-   try:
-       if message.data.get('_TestRunner'):
-           print "Initiated by the test runner"
+try:
+if message.data.get('_TestRunner'):
+print "Initiated by the test runner"
 ```
 
 And the message regular expression from the regex/en-us directory is:
-```add (?P<taskName>.+) to (?P<listName>.+) list$```
+```add (?P.+) to (?P.+) list$```
 
 The “AddTaksToListKeyword” is “Add”, defined in the vocab/en-us directory.
 
@@ -141,22 +143,22 @@ A test case succeeds if all test are passed for the **Intent**. And in that case
 
 ## The internal rule format
 
-If the standard keywords in the test case file does not suffice, it is possible to write tests in the internal rule format, using the ```assert``` keyword. The standard keywords and values are translated into the internal rule format by the Integration Test Runner as well. 
+If the standard keywords in the test case file does not suffice, it is possible to write tests in the internal rule format, using the ```assert``` keyword. The standard keywords and values are translated into the internal rule format by the Integration Test Runner as well.
 
 The example test case above is actually transformed into:
 
 ```
 [
-  ['and',
-    ['endsWith', 'intent_type', 'AddTaskToListIntent'], ['equal', 'listName', 'none'],
-    ['equal', 'taskName', 'some'],
-    ['equal', 'AddTaskToListKeyword', 'add']
-  ],
-  ['match', 'utterance', "I can\'t find a list called none.*"],
-  ['equal', 'context', 'UndoContext'],
-  ['equal', 'context', 'ConfirmContext'],
-  ['equal', 'context', 'UndoContext'],
-  ['equal', 'context', 'ConfirmContext']
+['and',
+['endsWith', 'intent_type', 'AddTaskToListIntent'], ['equal', 'listName', 'none'],
+['equal', 'taskName', 'some'],
+['equal', 'AddTaskToListKeyword', 'add']
+],
+['match', 'utterance', "I can\'t find a list called none.*"],
+['equal', 'context', 'UndoContext'],
+['equal', 'context', 'ConfirmContext'],
+['equal', 'context', 'UndoContext'],
+['equal', 'context', 'ConfirmContext']
 ]
 ```
 
@@ -166,12 +168,12 @@ The internal test format above is actually quite powerful. The code already supp
 
 ```
 [['and',
-    ['endsWith', 'type', 'AddTaskToListIntent'],
-    ['or',
-        ['equal', ['data', 'listName'], 'none'],
-        ['equal', ['data', 'taskName'], 'some']
-    ],
-    ['equal', ['data', 'AddTaskToListKeyword'], 'add']
+['endsWith', 'type', 'AddTaskToListIntent'],
+['or',
+['equal', ['data', 'listName'], 'none'],
+['equal', ['data', 'taskName'], 'some']
+],
+['equal', ['data', 'AddTaskToListKeyword'], 'add']
 ]]
 ```
 
@@ -200,7 +202,7 @@ Rule created [['and', ['endsWith', 'intent_type', 'PairingIntent'], ['equal', 'D
 Evaluating message: {'lang': 'en-us', 'skill_id': 1211234571, 'utterances': [u"let's pair my device"]}
 Evaluating message: {'confidence': 1.0, 'target': None, 'DeviceKeyword': 'device', 'intent_type': '1211234573:PairingIntent', 'PairingKeyword': 'pair', '__tags__': [{'end_token': 2, 'start_token': 2, 'from_context': False, 'entities': [{'confidence': 1.0, 'data': [('pair', u'BCBBCDEFHDPairingKeyword')], 'match': u'pair', 'key': 'pair'}], 'key': 'pair', 'match': u'pair'}, {'end_token': 4, 'start_token': 4, 'from_context': False, 'entities': [{'confidence': 1.0, 'data': [('device', u'BCBBCDEFHDDeviceKeyword')], 'match': u'device', 'key': 'device'}], 'key': 'device', 'match': u'device'}], 'utterance': u"let's pair my device"}
 Evaluating message: {'name': 'PairingSkill.handle_pairing'}
-Evaluating message: {'expect_response': False, 'utterance': u'Now I am ready for use.  Try asking me things like "hey mycroft, what's the weather", "hey mycroft, tell me about abraham lincoln", or "hey mycroft, play the news".  If you need to stop me talking at any time, just push my button.'}
+Evaluating message: {'expect_response': False, 'utterance': u'Now I am ready for use. Try asking me things like "hey mycroft, what's the weather", "hey mycroft, tell me about abraham lincoln", or "hey mycroft, play the news". If you need to stop me talking at any time, just push my button.'}
 Evaluating message: {'name': 'PairingSkill.handle_pairing'}
 Evaluation failed
 Rule status: [['and', ['endsWith', 'intent_type', 'PairingIntent', 'succeeded'], ['equal', 'DevicePairingPhrase', 'pair my device']]]
@@ -218,10 +220,10 @@ In the rule status we find ```['endsWith', 'intent_type', 'PairingIntent', 'succ
 To see this more clearly, it sometimes pays off to reformat the rule status:
 ```
 [
-  ['and',
-    ['endsWith', 'intent_type', 'PairingIntent', 'succeeded'],
-    ['equal', 'DevicePairingPhrase', 'pair my device']
-  ]
+['and',
+['endsWith', 'intent_type', 'PairingIntent', 'succeeded'],
+['equal', 'DevicePairingPhrase', 'pair my device']
+]
 ]
 ```
 
@@ -229,49 +231,49 @@ The ```message_tester.py``` tool is able to evaluate one message event at a time
 
 ![message tester](../img/message-tester.png)
 
-Not surprisingly it yields the same result as the Integration Test Runner. 
+Not surprisingly it yields the same result as the Integration Test Runner.
 
 ### Example of a failing test
 
-This is an example of a failing test where the **Skill** can't be found: 
+This is an example of a failing test where the **Skill** can't be found:
 
 ```
-self = <test.integrationtests.skills.skill_tester.SkillTest object at 0x7ff0c54cf750>
-loader = <test.integrationtests.skills.skill_tester.MockSkillsLoader object at 0x7ff0c9bc5f50>
-    def run(self, loader):
-        """
-                Run a test for a skill. The skill, test_case_file and emitter is
-                already set up in the __init__ method
-    
-                Args:
-                    loader:  A list of loaded skills
-            """
-    
-        s = [s for s in loader.skills if s and s._dir == self.skill]
-        if s:
-            s = s[0]
-        else:
->           raise Exception('Skill couldn't be loaded')
-E           Exception: Skill couldn't be loaded
+self =
+loader =
+def run(self, loader):
+"""
+Run a test for a skill. The skill, test_case_file and emitter is
+already set up in the __init__ method
+
+Args:
+loader: A list of loaded skills
+"""
+
+s = [s for s in loader.skills if s and s._dir == self.skill]
+if s:
+s = s[0]
+else:
+> raise Exception('Skill couldn't be loaded')
+E Exception: Skill couldn't be loaded
 test/integrationtests/skills/skill_tester.py:198: Exception
- TestCase.test_skill[/opt/mycroft/skills/skill-alarm-/opt/mycroft/skills/skill-alarm/test/intent/sample7.intent.json] 
-self = <test.integrationtests.skills.discover_tests.TestCase object at 0x7ff0c54da810>
+TestCase.test_skill[/opt/mycroft/skills/skill-alarm-/opt/mycroft/skills/skill-alarm/test/intent/sample7.intent.json]
+self =
 skill = '/opt/mycroft/skills/skill-alarm'
 example = '/opt/mycroft/skills/skill-alarm/test/intent/sample7.intent.json'
-    @pytest.mark.parametrize("skill,example", sum([
-        [(skill, example) for example in tests[skill]]
-        for skill in tests.keys()
-        ], []))
-    def test_skill(self, skill, example):
+@pytest.mark.parametrize("skill,example", sum([
+[(skill, example) for example in tests[skill]]
+for skill in tests.keys()
+], []))
+def test_skill(self, skill, example):
 ```
 
 ## Test coverage
 
-The last section of the Integration Test Runner output shows the test coverage - how many lines of code are covered by the tests. In general, the more coverage of a **Skill**, the better. 
+The last section of the Integration Test Runner output shows the test coverage - how many lines of code are covered by the tests. In general, the more coverage of a **Skill**, the better.
 
 ```python
 ---------- coverage: platform linux2, python 2.7.12-final-0 ----------
-Name                                          Stmts   Miss  Cover
+Name Stmts Miss Cover
 -----------------------------------------------------------------
-/opt/mycroft/skills/skill-alarm/__init__.py     293    290     1%
+/opt/mycroft/skills/skill-alarm/__init__.py 293 290 1%
 ```
