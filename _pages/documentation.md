@@ -33,6 +33,8 @@ Our documentation, just like our source code, is open source, [and you can contr
   * [`mycroft-conf` file](#mycroft-conf)
   * [Mycroft Skills](#mycroft-skills)
       + [Introduction to developing Skills for Mycroft](#introduction-to-developing-skills-for-mycroft)
+	  + [Developing Skills for Mycroft](#developing-skills-for-mycroft)
+	  + [Automatic testing for Mycroft Skills](#automatic-testing-for-mycroft-skills)
       + [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
       + [Skill Settings](#skill-settings)
       + [Common issues in Skills development](#common-issues-in-skills-development)
