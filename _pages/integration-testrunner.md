@@ -222,6 +222,40 @@ The ```message_tester.py``` tool is able to evaluate one message event at a time
 
 Not surprisingly it yields the same result as the Integration Test Runner. 
 
+### Example of a failing test
+
+This is an example of a failing test where the **Skill** can't be found: 
+
+```
+self = <test.integrationtests.skills.skill_tester.SkillTest object at 0x7ff0c54cf750>
+loader = <test.integrationtests.skills.skill_tester.MockSkillsLoader object at 0x7ff0c9bc5f50>
+    def run(self, loader):
+        """
+                Run a test for a skill. The skill, test_case_file and emitter is
+                already set up in the __init__ method
+    
+                Args:
+                    loader:  A list of loaded skills
+            """
+    
+        s = [s for s in loader.skills if s and s._dir == self.skill]
+        if s:
+            s = s[0]
+        else:
+>           raise Exception('Skill couldn\'t be loaded')
+E           Exception: Skill couldn't be loaded
+test/integrationtests/skills/skill_tester.py:198: Exception
+ TestCase.test_skill[/opt/mycroft/skills/skill-alarm-/opt/mycroft/skills/skill-alarm/test/intent/sample7.intent.json] 
+self = <test.integrationtests.skills.discover_tests.TestCase object at 0x7ff0c54da810>
+skill = '/opt/mycroft/skills/skill-alarm'
+example = '/opt/mycroft/skills/skill-alarm/test/intent/sample7.intent.json'
+    @pytest.mark.parametrize("skill,example", sum([
+        [(skill, example) for example in tests[skill]]
+        for skill in tests.keys()
+        ], []))
+    def test_skill(self, skill, example):
+```
+
 ## Test coverage
 
 The last section of the Integration Test Runner output shows the test coverage - how many lines of code are covered by the tests. In general, the more coverage of a **Skill**, the better. 
