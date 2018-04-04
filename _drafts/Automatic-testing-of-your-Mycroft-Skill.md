@@ -1,11 +1,12 @@
 ---
-ID: 
+ID: 36968
 post_title: Automatic testing of your Mycroft Skill
-author: Carsten Agerskov
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=36968
 published: false
 ---
-
 # Automatic testing of your Mycroft Skill
 
 Mycroft has a built-in mechanism to help you automatically test your **Skill**. Automatic testing of **Skills** helps increase the quality of the Mycroft ecosystem overall, and helps assure you that your **Skill** is performing as intended. Tests are required to be passing before your **Skill** will be accepted into the [Mycroft **Skill**](https://github.com/MycroftAI/mycroft-skills) repository on GitHub. 
@@ -92,7 +93,7 @@ Below is an example test case file:
    "listName": "grocery",
    "AddTaskToListKeyword": "add"
  },
- "expected_response": "I can\\'t find a list called grocery.*",
+ "expected_response": "I can\'t find a list called grocery.*",
  "evaluation_timeout": 10,
  "changed_context": ["UndoContext", "ConfirmContext"],
  "assert": "[['equal', 'context', 'UndoContext'], ['equal', 'context', 'ConfirmContext']]"
@@ -151,7 +152,7 @@ The example test case above is actually transformed into:
     ['equal', 'taskName', 'some'],
     ['equal', 'AddTaskToListKeyword', 'add']
   ],
-  ['match', 'utterance', "I can\\'t find a list called none.\*"],
+  ['match', 'utterance', "I can\'t find a list called none.*"],
   ['equal', 'context', 'UndoContext'],
   ['equal', 'context', 'ConfirmContext'],
   ['equal', 'context', 'UndoContext'],
@@ -199,7 +200,7 @@ Rule created [['and', ['endsWith', 'intent_type', 'PairingIntent'], ['equal', 'D
 Evaluating message: {'lang': 'en-us', 'skill_id': 1211234571, 'utterances': [u"let's pair my device"]}
 Evaluating message: {'confidence': 1.0, 'target': None, 'DeviceKeyword': 'device', 'intent_type': '1211234573:PairingIntent', 'PairingKeyword': 'pair', '__tags__': [{'end_token': 2, 'start_token': 2, 'from_context': False, 'entities': [{'confidence': 1.0, 'data': [('pair', u'BCBBCDEFHDPairingKeyword')], 'match': u'pair', 'key': 'pair'}], 'key': 'pair', 'match': u'pair'}, {'end_token': 4, 'start_token': 4, 'from_context': False, 'entities': [{'confidence': 1.0, 'data': [('device', u'BCBBCDEFHDDeviceKeyword')], 'match': u'device', 'key': 'device'}], 'key': 'device', 'match': u'device'}], 'utterance': u"let's pair my device"}
 Evaluating message: {'name': 'PairingSkill.handle_pairing'}
-Evaluating message: {'expect_response': False, 'utterance': u'Now I am ready for use.  Try asking me things like "hey mycroft, what\'s the weather", "hey mycroft, tell me about abraham lincoln", or "hey mycroft, play the news".  If you need to stop me talking at any time, just push my button.'}
+Evaluating message: {'expect_response': False, 'utterance': u'Now I am ready for use.  Try asking me things like "hey mycroft, what's the weather", "hey mycroft, tell me about abraham lincoln", or "hey mycroft, play the news".  If you need to stop me talking at any time, just push my button.'}
 Evaluating message: {'name': 'PairingSkill.handle_pairing'}
 Evaluation failed
 Rule status: [['and', ['endsWith', 'intent_type', 'PairingIntent', 'succeeded'], ['equal', 'DevicePairingPhrase', 'pair my device']]]
@@ -250,7 +251,7 @@ loader = <test.integrationtests.skills.skill_tester.MockSkillsLoader object at 0
         if s:
             s = s[0]
         else:
->           raise Exception('Skill couldn\'t be loaded')
+>           raise Exception('Skill couldn't be loaded')
 E           Exception: Skill couldn't be loaded
 test/integrationtests/skills/skill_tester.py:198: Exception
  TestCase.test_skill[/opt/mycroft/skills/skill-alarm-/opt/mycroft/skills/skill-alarm/test/intent/sample7.intent.json] 
