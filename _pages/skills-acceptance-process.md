@@ -5,7 +5,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/documentation/skills-acceptance-process/
+  http://mycroft.ai/documentation/skills/skills-acceptance-process/
 published: true
 post_date: 2018-04-04 08:43:20
 ---
