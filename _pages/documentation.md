@@ -142,7 +142,7 @@ Take your next step in Developing **Skills** for Mycroft. Learn about the struct
 
 Learn how to use the Integration Test Runner for automatic testing of your Mycroft Skills. 
 
-### [Skills acceptance process](https://mycroft.ai/documentation/skills-acceptance-process/)
+### [Skills acceptance process](https://mycroft.ai/documentation/skills/skills-acceptance-process/)
 
 Read more about the process used by Skill Authors, the Skill Management Team and Mycroft staff to ensure the robustness and quality of Skills in the Mycroft AI ecosystem. 
 
