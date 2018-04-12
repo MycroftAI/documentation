@@ -1,7 +1,7 @@
 ---
 ID: 37089
 post_title: 'Kickstarter Update: Fulfillment, Surveys, and Shipping'
-author: Alyx Horace
+author: Nate Tomasi
 post_excerpt: ""
 layout: post
 permalink: >
