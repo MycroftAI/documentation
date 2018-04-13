@@ -1,11 +1,11 @@
 ---
 ID: 37111
-post_title: "Meet Chris, Mycroft's New Lead Backend Developer"
+post_title: 'Meet Chris, Mycroft&#8217;s New Lead Backend Developer'
 author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/meet-chris-mycrofts-new-lead-backend-developer/
+  http://mycroft.ai/blog/meet-chris-mycrofts-new-lead-backend-developer/
 published: true
 post_date: 2018-04-13 08:00:02
 ---
