@@ -54,13 +54,22 @@ This section of documentation assumes the following:
 
 #### Hardware prerequisites
 
+##### Raspberry Pi compatibility chart
+
+* Pi3 B+ : COMING SOON <-- Not currently supported
+* Pi3 : SUPPORTED <-- You should get this device if you want to work on Picroft
+* Pi2 : functions but very slow <-- Only use this if you must
+* Pi B/A+/Zero/Zero W/Zero WH : NOT SUPPORTED
+
 ##### Required
 
-* Raspberry Pi 3
+* Raspberry Pi 3 (see compatibility chart above)
 * Micro SD card, 8GB or larger _highly_ recommended
 * Power adapter with micro USB for your country. [The Raspberry Pi Foundation has some excellent recommendations](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
 * An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi 3
 * USB Microphone
+
+
 
 ##### Optional
 
