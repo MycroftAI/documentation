@@ -91,7 +91,7 @@ Now, we'll made a new repository for your **Skill**. The new repository has to f
 Copy the Template Skill into a new directory. Here, we've called the new Skill `skill-training`, but your **Skill** will have a different name.
 
 ```bash
-$ cp -R 00__skill_template skill-hello-worldls -las
+$ cp -R 00__skill_template skill-hello-world
 ```
 
 ### Structure of the **Skill** repo
@@ -158,13 +158,13 @@ For example, how do you say 'goodbye' to someone?
 
 #### vocab directory and defining Intents
 
-Each **Skill** defines one or more **Intents**. Intents are defined in the 'vocab' directory. The 'vocab' directory is organized by language, just like the 'dialog' directory.  
+Each **Skill** defines one or more **Intents**.
+
+Intents are defined in the 'vocab' directory. The 'vocab' directory is
+organized by language, just like the 'dialog' directory.
 
 In this example, we can see that there are three **Intents**, each defined in
-
-'IntentKeyword.voc`
-
-**vocab** files:
+_IntentKeyword_`.voc` **vocab** files:
 
 ```bash
 mycroft-skills/skill-hello-world/vocab/en-us$ ls -las
@@ -176,11 +176,11 @@ total 40
 8 -rw-rw-r-- 1 kathyreid kathyreid   17 Nov  9 00:11 ThankYouKeyword.voc
 ```
 
-Just like **dialog** files, **vocab** files can have multiple lines. Mycroft will match _any_ of these phrases with the **Intent**. If we have a look at the
+Just like **dialog** files, **vocab** files can have multiple lines. Mycroft
+will match _any_ of these phrases with the **Intent**.
 
-`ThankYouKeyword.voc`
-
-file, we can see this in action:
+If we have a look at the `ThankYouKeyword.voc` file, we can see this in
+action:
 
 ```bash
 $ cat ThankYouKeyword.voc
@@ -212,6 +212,8 @@ is where most of the **Skill** is defined, using Python code.
 
 Let's take a look:
 
+##### Preamble
+
 ```python
 from adapt.intent import IntentBuilder
 from mycroft.skills.core import MycroftSkill
@@ -232,15 +234,9 @@ LOGGER = getLogger(__name__)
 
 This section starts logging of the **Skill** in the `mycroft-skills.log` file. If you remove this line, your **Skill** will not log any errors, and you will have difficulty debugging.
 
-The
+##### Skill Class
 
-`class`
-
-definition extends the
-
-`MycroftSkill`
-
-class:
+The `class` definition extends the `MycroftSkill` class:
 
 ```python
 class HelloWorldSkill(MycroftSkill):
@@ -249,6 +245,8 @@ class HelloWorldSkill(MycroftSkill):
 The class should be named logically, for example "TimeSkill", "WeatherSkill", "NewsSkill", "IPaddressSkill". If you would like guidance on what to call your **Skill**, please join the [~skills Channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
 
 Inside the class, methods are then defined.
+
+##### Constructor
 
 ```python
 def __init__(self):
@@ -269,6 +267,11 @@ def __init__(self):
         self.hello_phrases = ['Hello', 'Hallå', 'Olá']
 ```
 
+##### `initialize()` Method
+
+The `initialize()` function defines each of the **Intents** of the
+**Skill**.
+
 ```python    
 def initialize(self):
         thank_you_intent = IntentBuilder("ThankYouIntent").
@@ -286,15 +289,10 @@ def initialize(self):
                              self.handle_hello_world_intent)
 ```
 
-The
+The three **Intents** defined in this `initialize()` method correspond
+directly to the three **Intents** defined by the **vocab** files.
 
-`initialize()`
-
- function defines each of the **Intents** of the **Skill**. Note that there are three **Intents** defined in
-
- `initialize()`
-
- , and there were three **Intents** defined in **vocab** files.
+##### Intent Methods
 
 Next, there are methods that handle each of the **Intents**.
 
@@ -303,42 +301,33 @@ def handle_hello_world_intent(self, message):
         self.speak_dialog("hello.world")
 ```
 
-In the
+In the `handle_hello_world_intent()` method above, the method receives
+two _parameters_: `self` and `message`.  `self` is the reference to the
+object itself, and `message` is an incoming message from the
+`messagebus`.
 
-`handle_hello_world_intent()`
+This method then calls the `speak_dialog()` method, passing to it the
+`hello.world` dialog. Remember, this is defined in the file
+"hello.world.dialog".
 
- method above, the method receives two _parameters_,
+Can you guess what Mycroft will Speak?
 
- `self`
+##### `stop()` Method
 
- and
-
- `message`
-
- `self` is the reference to the object itself, and `message` is an incoming message from the `messagebus`. This method then calls the
-
- `speak_dialog()`
-
- method, passing to it the
-
- `hello.world`
-
- dialog. Remember, this is defined in the file "hello.world.dialog".
-
- Can you guess what Mycroft will Speak?
-
-You will usually also have a
-
-`stop()`
-
-method. This method tells Mycroft what to do if a stop **intent** is detected.
+A **Skill** will usually also have a `stop()` method, which tells
+Mycroft what to do when a stop **Intent** is detected.
 
 ```python
 def stop(self):
     pass
 ```
 
-In the above code block, the [`pass` statement](https://docs.python.org/2/reference/simple_stmts.html#the-pass-statement) is used as a placeholder; it doesn't actually have any function. However, if the **Skill** had any active functionality, the stop() method would terminate the functionality, leaving the *Skill** in a known good state.
+In the above code block, the
+[`pass` statement](https://docs.python.org/2/reference/simple_stmts.html#the-pass-statement)
+is used as a placeholder; it doesn't actually have any function.
+However, if the **Skill** had any active functionality, the `stop()`
+method would terminate that functionality and return the **Skill**
+to a known good state.
 
 #### Intents and regular expressions (regex)
 
@@ -483,13 +472,18 @@ The `Location` value is extracted by calling `message.data.get("Location")`. If 
 
 ## Simplifying your Skill code with `intent_handler` _decorators_
 
-Your **Skill** code can be simplified using the intent_handler() _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
+Your **Skill** code can be simplified using the `intent_handler` _decorator_.
+The major advantage in this approach is that the **Intent** is described
+together with the method that handles the **Intent**. This makes your code
+easier to read, easier to write, and errors will be easier to identify.
 
 [Learn more about what _decorators_ are in Python at this link](https://en.wikipedia.org/wiki/Python_syntax_and_semantics#Decorators).
 
-The intent_handler() _decorator_ tags a method to be an intent handler for the intent, removing the need for separate registration.
+The `intent_handler` _decorator_ tags a method to be an intent handler for
+the intent, removing the need for separate registration.
 
-First, you need to `import` the `intent_handler()` library. Include the following line in the `import` section:
+First, you need to `import` the `intent_handler()` library. Include the
+following line in the `import` section:
 
 ```
 from mycroft import intent_handler
@@ -528,9 +522,10 @@ class HelloWorldSkill(MycroftSkill):
         pass
 ```
 
-As seen above the entire initialize() method is removed and the **Intent** registration is moved to the the method declaration.
+As seen above the entire `initialize()` method is removed and the
+**Intent** registration is moved to the the method declaration.
 
-Ideally, you should use approach to **Intent** registration.
+Ideally, you should use this approach for **Intent** registration.
 
 ## How do I disable a Skill?
 
@@ -564,4 +559,5 @@ Search for the string `priority` in the file. Then, edit the line below to inclu
 
 ## How do I find more information on Mycroft functions?
 
-You can find documentation on Mycroft functions and helper methods at the [Mycroft Core API documentation](http://mycroft-core.readthedocs.io/en/stable)
+You can find documentation on Mycroft functions and helper methods at the
+[Mycroft Core API documentation](http://mycroft-core.readthedocs.io/en/stable)
