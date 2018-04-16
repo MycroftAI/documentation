@@ -1,6 +1,8 @@
 ---
 ID: 37111
-post_title: 'Meet Chris, Mycroft&#8217;s New Lead Backend Developer'
+post_title: >
+  Meet Chris, Mycroft’s New Lead Backend
+  Developer
 author: Alyx Horace
 post_excerpt: ""
 layout: post
@@ -19,7 +21,7 @@ post_date: 2018-04-13 08:00:02
 
 &nbsp;
 
-<span style="font-weight: 400;">Chris spent 11 years at DST Systems learning to be an IT professional.  He became an expert in SQL and relational database design. In the last few years of his tenure at DST, Chris was leading three project teams and working on large architecture projects.  During this time he discovered a passion for software architecture. I eventually decided to get out of the mainframe world and into a client/server shop.</span>
+<span style="font-weight: 400;">Chris spent 11 years at DST Systems learning to be an IT professional.  He became an expert in SQL and relational database design. In the last few years of his tenure at DST, Chris was leading three project teams and working on large architecture projects.  During this time he discovered a passion for software architecture. He eventually decided to get out of the mainframe world and into a client/server shop.</span>
 
 &nbsp;
 
@@ -27,7 +29,7 @@ post_date: 2018-04-13 08:00:02
 
 &nbsp;
 
-<span style="font-weight: 400;">In 2016, Chris began working with another startup called Farmobile. The ag-tech company produced a device that extracted operational data from farming equipment with the goal of selling the data and sharing the profits with the farmer.  At Farmobile, Chris led an effort to re-architect the backend code base to improve maintainability. His biggest win at Farmobile was a service that transferred files over cellular network to a device connected the farming equipment. This replaced a "boots on the ground" system where USB drives had to be delivered to farms. </span>
+<span style="font-weight: 400;">In 2016, Chris began working with another startup called Farmobile. The ag-tech company produced a device that extracted operational data from farming equipment with the goal of selling the data and sharing the profits with the farmer.  At Farmobile, Chris led an effort to re-architect the backend code base to improve maintainability. His biggest win at Farmobile was a service that transferred files over a cellular network to a device connected to the farming equipment. This replaced a "boots on the ground" system where USB drives had to be delivered to farms. </span>
 
 &nbsp;
 
