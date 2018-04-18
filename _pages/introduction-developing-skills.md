@@ -117,7 +117,7 @@ total 128
 
 The `dialog` directory contains subdirectories for each spoken language the skill supports.  Each subdirectory has `.dialog` files which specify what Mycroft should say when a **Skill** is executed.
 
-The subdirectories are named using the [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language. For example, Brazilian Portugues is 'pt-br', German is 'de', and Australian English is 'en-au'.
+The subdirectories are named using the [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language. For example, Brazilian Portugues is 'pt-br', German is 'de-de', and Australian English is 'en-au'.
 
 Here is an example where one language is supported. By default, the **Template Skill** contains one subdirectory for United States English - 'en-us'. If more languages were supported, then there would be additional language directories.
 
