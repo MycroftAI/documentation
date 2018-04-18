@@ -10,6 +10,29 @@ post_date: 2017-12-03 05:31:14
 ---
 # Mimic
 
+- [Mimic](#mimic)
+  * [What is Mimic?](#what-is-mimic)
+  * [Why should I use Mimic instead of other open source TTS tools?](#why-should-i-use-mimic-instead-of-other-open-source-tts-tools)
+  * [The partnership between Mycroft.AI's Mimic and VocaliD](#the-partnership-between-mycroftais-mimic-and-vocalid)
+    + [How to donate your voice to the VocaliD voicebank](#how-to-donate-your-voice-to-the-vocalid-voicebank)
+  * [Installing Mimic](#installing-mimic)
+    + [Installation prerequisites](#installation-prerequisites)
+      - [Install dependencies](#install-dependencies)
+        * [On Ubuntu or Debian Linux](#on-ubuntu-or-debian-linux)
+        * [On Fedora Linux](#on-fedora-linux)
+        * [On Arch Linux](#on-arch-linux)
+        * [On Mac OSX](#on-mac-osx)
+        * [On Windows](#on-windows)
+          + [Cross-compiling from Linux](#cross-compiling-from-linux)
+          + [Building on Windows natively](#building-on-windows-natively)
+  * [Using Mimic](#using-mimic)
+    + [Reading text with Mimic](#reading-text-with-mimic)
+    + [How to change the Voice that Mimic uses](#how-to-change-the-voice-that-mimic-uses)
+    + [Notes on Mimic Voices](#notes-on-mimic-voices)
+      - [Are Voices compiled or loaded from a file?](#are-voices-compiled-or-loaded-from-a-file)
+      - [Additional Voice options](#additional-voice-options)
+  * [How do I create my own custom voice to use with Mimic?](#how-do-i-create-my-own-custom-voice-to-use-with-mimic)
+
 You may prefer to watch [this short video](https://www.youtube.com/watch?v=gvnhcNdXJsk) for an overview of Mimic.
 
 ## What is Mimic?
