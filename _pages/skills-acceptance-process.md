@@ -143,8 +143,9 @@ If the **Skill** passes all reviews, it will then be merged into the [Mycroft Sk
 
 ## Promotion
 
-Once a **Skill** is deployed, the following measures are taken to promote the **Skill** to the Mycroft Community: 
+Once a **Skill** is deployed, the following measures may be taken by Mycroft Staff promote the **Skill** to the Mycroft Community. The Skill Author is of course welcome to do additional promotion of their own. 
 
+* Listing on [Community-Developed Skills Page](https://mycroft.ai/documentation/skills/#community-developed-skills)
 * Shoutout in Mycroft Newsletter
 * Notification on Mycroft Forum
 * Notification in [~Skills Channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/skills)
