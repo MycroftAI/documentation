@@ -89,7 +89,9 @@ A test case file understand the following json keywords:
 |set_context|A list of contexts and corresponding strings to set before sending the utterance|
 |intent_type|Assert that this intent name, as defined in the skills ```__init__.py``` code, is used|
 |intent.parameter|Assert that a message parameter has a certain value. Repeating field.|
-|Expected response|Assert that the skill speaks a response that matches this regular expression|
+|expected_response|Assert that the skill speaks a response that matches this regular expression|
+|expected_dialog|Assert that the skill responds with a response from a certain dialog file|
+|expected_data|Assert that a message is sent with the expected data. Takes a sub dictionary as argument|
 |evaluation_timeout|The default timeout is 30 seconds. If a skill takes longer than this to finish, the evaluation_timeout can be set|
 |changed_context|Assert that a list of contexts was set or removed|
 |assert|Assert that a rule, expressed in the internal test rummer format, is true|
@@ -146,8 +148,23 @@ The ```intent``` is a list of key/values that must match the ```IntentBuilder().
 
 The ```expected response``` is a regular expression that must match the answer that is Spoken by the **Intent**.
 
+
 The ```changed_context``` is a list of contexts, that the **Intent** has set or removed. It is not possible to distinguish between set or remove context.
 
+The `expected_data` can be used to check for specific data content, for example the content of a message parsed with padatious. T The example test case below will pass if a message contains an "ampm" value equal to **"pm"** and a "time" value equal to **6**
+
+```json
+  "expected_data": {
+    "ampm": "pm",
+    "time": 6
+   }
+ ```
+ 
+ Note that the message can contain additional fields without the test failing.
+ 
+ The `expected_dialog` takes the dialog file (without the `.dialog`) in the same manner as when using the dialog in the skill. See [skill-personal](https://github.com/MycroftAI/skill-personal/blob/0a056a0f13fa3ad2ff5d3f685be0bf99244bca1e/test/intent/what.are.you.intent.json) for an example.
+ 
+ 
 In the example above the ```changed_context``` and ```assert``` actually does the same thing, it is mentioned as an example only. The ```assert``` shows the internal rule format (see the next paragraph).
 
 A test case succeeds if all test are passed for the **Intent**. And in that case the Integration Test Runner immediately continues to the next test. If all tests have not succeeded 30 seconds after the **Utterance**, the test is failed. In the example above the timeout is reduced to 10 seconds to catch errors faster.
