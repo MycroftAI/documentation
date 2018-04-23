@@ -128,14 +128,14 @@ if message.data.get('_TestRunner'):
 print "Initiated by the test runner"
 ```
 
-And the message regular expression from the regex/en-us directory is:
+And the message regular expression from the `regex/en-us` directory is:
 ```add (?P.+) to (?P.+) list$```
 
-The “AddTaksToListKeyword” is “Add”, defined in the vocab/en-us directory.
+The `AddTaksToListKeyword` is `Add`, defined in the `vocab/en-us` directory.
 
 With this knowledge, let us walk through the test case.
 
-The test case simulate the user **Utterance**:
+The test case to simulate the user **Utterance**:
 >add milk to the grocery list
 
 Assuming other tests were run before this example, the `UndoContext` and the `ConfirmContext` may have been set, but to be sure they are removed, we remove them before the test starts.
@@ -148,10 +148,9 @@ The ```intent``` is a list of key/values that must match the ```IntentBuilder().
 
 The ```expected response``` is a regular expression that must match the answer that is Spoken by the **Intent**.
 
-
 The ```changed_context``` is a list of contexts, that the **Intent** has set or removed. It is not possible to distinguish between set or remove context.
 
-The `expected_data` can be used to check for specific data content, for example the content of a message parsed with padatious. T The example test case below will pass if a message contains an "ampm" value equal to **"pm"** and a "time" value equal to **6**
+The `expected_data` can be used to check for specific data content, for example the content of a message parsed with [Padatious](https://mycroft.ai/documentation/padatious/). The example test case below will pass if a message contains an "ampm" value equal to **"pm"** and a "time" value equal to **6**. Note that the "ampm" value is a string literal, and is quoted, while the "time" value is an integer value and is _not_ quoted. 
 
 ```json
   "expected_data": {
@@ -160,10 +159,9 @@ The `expected_data` can be used to check for specific data content, for example 
    }
  ```
  
- Note that the message can contain additional fields without the test failing.
+Note that the message can contain additional fields without the test failing.
  
- The `expected_dialog` takes the dialog file (without the `.dialog`) in the same manner as when using the dialog in the skill. See [skill-personal](https://github.com/MycroftAI/skill-personal/blob/0a056a0f13fa3ad2ff5d3f685be0bf99244bca1e/test/intent/what.are.you.intent.json) for an example.
- 
+The `expected_dialog` takes the dialog file (without the `.dialog`) in the same manner as when using the dialog in the skill. See [skill-personal](https://github.com/MycroftAI/skill-personal/blob/0a056a0f13fa3ad2ff5d3f685be0bf99244bca1e/test/intent/what.are.you.intent.json) for an example.
  
 In the example above the ```changed_context``` and ```assert``` actually does the same thing, it is mentioned as an example only. The ```assert``` shows the internal rule format (see the next paragraph).
 
