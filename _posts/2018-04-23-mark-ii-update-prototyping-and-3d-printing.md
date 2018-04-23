@@ -19,7 +19,7 @@ post_date: 2018-04-23 11:14:58
 
 At this stage, our parts selection is complete, and once we finalize some aspects of the design, we will be getting quotes from contract manufacturers. Designing and producing hardware is a slow and steady race, but we're feeling good about our pace.
 
-Excited to see Mark II? Comment and tell us why! And watch for more hardware updates coming soon!
+Excited to see Mark II? <a href="https://community.mycroft.ai/t/mark-ii-update-prototyping-and-3d-printing/3603">Comment</a> and tell us why! And watch for more hardware updates coming soon!
 
 &nbsp;
 <p class="p2"></p>
