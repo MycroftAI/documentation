@@ -91,4 +91,4 @@ post_date: 2018-04-18 09:29:01
 </span><span style="font-weight: 400;">
 </span><span style="font-weight: 400;">For now, I'd like to hear if I'm alone in my thinking.  Is this a real danger? Are we vulnerable? Does anyone care?</span><span style="font-weight: 400;">
 </span><span style="font-weight: 400;">
-</span><span style="font-weight: 400;">Join us on the Forums to share your thoughts.</span>
+</span><span style="font-weight: 400;">Join us on the <a href="https://community.mycroft.ai/t/privacy-and-data-ownership-needs-to-be-at-the-core-of-our-technology/3557">Forums</a> to share your thoughts.</span>
