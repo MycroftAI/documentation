@@ -13,7 +13,7 @@ post_date: 2018-04-23 11:14:58
 
 <ol>
  	<li class="p2"><strong>Acoustic Design:</strong> Making sure that Mark II has good sound is a high priority, so we have been trying various different shapes and methods to improve the performance. Getting great sound out of a small enclosure is tricky, but we have arrived at a good setup. We are using a sealed and isolated acoustic chamber within our main enclosure just for sound (think <a href="https://en.wikipedia.org/wiki/Matryoshka_doll" target="_blank" rel="noopener">Matryoshka doll</a>). The acoustic enclosure is also ported to improve performance on the low end.</li>
- 	<li><strong>Design for Manufacture (DFM):</strong> Some of the decisions we made in the prototype stage weren't the best for manufacturing. We have gone back to the drawing board on some of the parts. We are reducing the complexity of some of the parts to make sure they can be molded more easily, and we are reducing the part count by combing parts when possible.</li>
+ 	<li><strong>Design for Manufacture (DFM):</strong> Some of the decisions we made in the prototype stage weren't the best for manufacturing. We have gone back to the drawing board on some of the parts. We are reducing the complexity of some of the parts to make sure they can be molded more easily, and we are reducing the part count by combining parts when possible.</li>
 </ol>
 [caption id="attachment_37308" align="aligncenter" width="600"]<img class="wp-image-37308 size-full" src="https://mycroft.ai/wp-content/uploads/2018/04/acoustic-enclosure.gif" alt="" width="600" height="337" /> Acoustic enclosure[/caption]
 
