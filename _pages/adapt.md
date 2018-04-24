@@ -31,7 +31,7 @@ post_date: 2017-12-03 05:09:17
 
 ## What is the Adapt Intent Parser?
 
-Adapt is an _intent parser_ - meaning that it is a library for converting natural language into machine-readable data structures, such as JSON. The Adapt Intent Parser is open source software. It is ightweight and is designed to run on devices with limited computing resources, such as embedded devices.
+Adapt is an _intent parser_ - meaning that it is a library for converting natural language into machine-readable data structures, such as JSON. The Adapt Intent Parser is open source software. It is lightweight and is designed to run on devices with limited computing resources, such as embedded devices.
 
 [You may prefer to watch this video which provides an overview of the Adapt Intent Parser](https://www.youtube.com/watch?v=zR9xvPtM6Ro).
 
