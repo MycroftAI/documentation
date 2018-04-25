@@ -1,6 +1,6 @@
 ---
 ID: 37342
-post_title: 'Crowdfunding Update &#8211; Stickers, Coins, and Mark I&#8217;s'
+post_title: 'Crowdfunding Update: Stickers, Coins, and Mark I&#8217;s'
 author: Eric Jurgeson
 post_excerpt: ""
 layout: post
