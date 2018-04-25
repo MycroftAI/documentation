@@ -30,7 +30,7 @@ Padatious is a [machine-learning](https://en.wikipedia.org/wiki/Machine_learning
 Padatious has a number of key benefits:
 
 * With Padatious, **Intents** are easy to create
-* The machine lerning model in Padtious requires a relatively small amount of data
+* The machine learning model in Padatious requires a relatively small amount of data
 * Machine learning models need to be *trained*. The model used by Padatious is quick and easy to train.
 * Intents run independently of each other. This allows quickly installing new skills without retraining all other skill intents.
 * With Padatious, you can easily extract entities and then use these in **Skills**. For example, "Find the nearest gas station" -> `{ "place":"gas station"}`
