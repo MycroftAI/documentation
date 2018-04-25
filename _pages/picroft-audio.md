@@ -1,6 +1,6 @@
 ---
 ID: 33601
-post_title: 'Picroft &#8211; outputting audio'
+post_title: Picroft – outputting audio
 author: Kathy Reid
 post_excerpt: ""
 layout: page
@@ -58,7 +58,7 @@ You can now run `./auto_run.sh` to start the program back up and test and ensure
 First, we need to enable Bluetooth. 
 
 1. Edit the `/etc/mycroft/mycroft.conf` file
-2. Add `"port": "/dev/ttyAMA0"` to the enclosure settings
+2. Add `"port": "/dev/ttyAMA0"` to the enclosure settings. You may need to use `"port": "/dev/ttyAMA1"` or `"port": "/dev/ttyAMA2"` - the port can vary depending on the `Picroft` and `Raspbian` build. 
 
 Next, we set up the Bluetooth connection. 
 
