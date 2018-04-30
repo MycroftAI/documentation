@@ -1,6 +1,6 @@
 ---
 ID: 37299
-post_title: 'Mark II Update: Prototyping and 3D printing'
+post_title: 'Mark II Update: Prototyping and 3D Printing'
 author: Derick Schweppe
 post_excerpt: ""
 layout: post
