@@ -19,7 +19,7 @@ post_date: 2018-05-05 16:54:10
 <blockquote><em><span style="font-weight: 400;">"It is always the user's choice whether or not to share their data with a third party."</span></em></blockquote>
 <span style="font-weight: 400;">The responsibility for our failure rests entirely with me.</span>
 
-<span style="font-weight: 400;">I’ve instructed the team to irrevocably destroy all of the data collected during this effort and initiate a comprehensive review of our online presence to identify tools or systems that may compromise user privacy Though we do need to understand our users, we need to do so using tools that let them choose whether or not to share their information.</span>
+<span style="font-weight: 400;">I’ve instructed the team to irrevocably destroy all of the data collected during this effort and initiate a comprehensive review of our online presence to identify tools or systems that may compromise user privacy. Though we do need to understand our users, we need to do so using tools that let them choose whether or not to share their information.</span>
 
 <span style="font-weight: 400;">I apologize. We’ll work to do better.</span>
 <h4><strong>Joshua Montgomery, CEO</strong></h4>
