@@ -30,7 +30,7 @@ Our documentation, just like our source code, is open source, [and you can contr
       + [Reconfiguring automatic updates for Picroft](#reconfiguring-automatic-updates-for-picroft)
   * [Mycroft for Linux platforms](#mycroft-for-linux-platforms)
   * [Mycroft for Android](#mycroft-for-android)
-  * [`mycroft-conf` file](#mycroft-conf)
+  * [`mycroft-conf` file](#mycroft-conf-file)
   * [Mycroft Skills](#mycroft-skills)
       + [Introduction to developing Skills for Mycroft](#introduction-to-developing-skills-for-mycroft)
 	  + [Developing Skills for Mycroft](#developing-skills-for-mycroft)
