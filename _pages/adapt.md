@@ -20,13 +20,13 @@ post_date: 2017-12-03 05:09:17
 - [How do I install Adapt Intent Parser?](#how-do-i-install-adapt-intent-parser)
   * [Requirements](#requirements)
   * [`pip` installation](#pip-installation)
-    + [Installing `pip` for Ubuntu / Debian based Linux](#installing-pip-for-ubuntu--debian-based-linux)
-    + [Installing `pip` for Fedora / RPM based Linux](#installing-pip-for-fedora--rpm-based-linux)
+    + [Installing `pip` for Ubuntu / Debian based Linux](#installing-pip-for-ubuntu-debian-based-linux)
+    + [Installing `pip` for Fedora / RPM based Linux](#installing-pip-for-fedora-rpm-based-linux)
   * [Installing Adapt Intent Parser](#installing-adapt-intent-parser)
     + [Installing Adapt for Ubuntu, Debian or Raspbian](#installing-adapt-for-ubuntu-debian-or-raspbian)
 - [How do I contribute to Adapt Intent Parser?](#how-do-i-contribute-to-adapt-intent-parser)
   * [For Ubuntu, Debian and Raspbian based Linux](#for-ubuntu-debian-and-raspbian-based-linux)
-  * [For Fedora / RPM based Linux](#for-fedora--rpm-based-linux)
+  * [For Fedora / RPM based Linux](#for-fedora-rpm-based-linux)
   * [For MacOS X](#for-macos-x)
 
 ## What is the Adapt Intent Parser?
