@@ -11,7 +11,7 @@ post_date: 2018-05-09 10:30:45
 ---
 <span style="font-weight: 400;">If you follow Open Source news you may have heard recently about the protests in Russia in support of Telegram. We particularly enjoyed the <a href="https://www.nytimes.com/2018/05/02/world/europe/telegram-iran-russia.html" target="_blank" rel="noopener">paper airplanes</a>. </span>
 <h2><span style="font-weight: 400;">What is Telegram and why are Russians protesting?</span></h2>
-<span style="font-weight: 400;">Telegram is an open source messaging app that claims to be the first to use end-to-end data encryption in 2013. It also has fully open sourced its<a href="https://github.com/telegramdesktop/tdesktop" target="_blank" rel="noopener"> client code</a>.</span>
+<span style="font-weight: 400;">Telegram is an open source messaging app that claims to be the first to use end-to-end data encryption in 2013. It also has fully open sourced its <a href="https://github.com/telegramdesktop/tdesktop" target="_blank" rel="noopener">client code</a>.</span>
 
 <span style="font-weight: 400;">In March Telegram <a href="https://telegram.org/blog/200-million" target="_blank" rel="noopener">announced</a> they had reached 200,000,000 users. Very shortly after, the Russian government banned the use of Telegram for not turning over the keys to decrypt data on the secure platform.</span>
 
