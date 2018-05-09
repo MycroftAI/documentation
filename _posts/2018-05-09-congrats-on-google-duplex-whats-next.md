@@ -1,11 +1,11 @@
 ---
 ID: 37740
-post_title: "Congratulations to Google Duplex! What's Next?"
+post_title: 'Congratulations to Google Duplex! What&#8217;s Next?'
 author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/congrats-on-google-duplex-whats-next/
+  http://mycroft.ai/blog/congrats-on-google-duplex-whats-next/
 published: true
 post_date: 2018-05-09 14:00:21
 ---
