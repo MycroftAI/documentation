@@ -118,7 +118,7 @@ https://angel.co/mycroft-a-i/jobs
 </span></h1>
 <h3>General coverage of Mycroft</h3>
 <ul>
- 	<li><a href="http://money.cnn.com/gallery/technology/2018/01/13/ces-2018-gadgets/12.html" target="_blank" rel="noopener">CNN Tech</a></li>
+ 	<li><a href="http://money.cnn.com/gallery/technology/2018/01/13/ces-2018-gadgets/13.html" target="_blank" rel="noopener">CNN Tech</a></li>
  	<li><a href="https://www.popsci.com/ultimate-diy-ai" target="_blank" rel="noopener"><span style="font-weight: 400;">Popular Science</span></a></li>
  	<li><a href="https://www.forbes.com/sites/janakirammsv/2015/08/20/meet-mycroft-the-open-source-alternative-to-amazon-echo/#1d6882c362a2" target="_blank" rel="noopener"><span style="font-weight: 400;">Forbes</span></a></li>
  	<li><a href="https://www.technologyreview.com/s/607892/an-open-source-and-cute-alternative-to-amazon-echo/" target="_blank" rel="noopener"><span style="font-weight: 400;">MIT Technology Review</span></a></li>
