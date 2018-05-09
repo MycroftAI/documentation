@@ -21,7 +21,7 @@ post_date: 2018-05-09 10:30:45
 
 <span style="font-weight: 400;">After the ban, Telegram switched IPs prompting Russian officials to go on a <a href="https://www.bleepingcomputer.com/news/government/russia-bans-18-million-amazon-and-google-ips-in-attempt-to-block-telegram/" target="_blank" rel="noopener">banning spree</a> blocking swaths of Google Cloud and Amazon Web Services, where Telegram had shifted some of its services. At the height of the ban Russia was blocking 16 million sites causing access issues to a large number of sites Russian’s access daily.</span>
 
-<span style="font-weight: 400;">In show of support and solidarity for Open Source projects we have added <a href="https://t.me/mycroft_ai" target="_blank" rel="noopener">Telegram</a> to our communications channels. If you would like to chat with us there we would love to see you.</span>
+<span style="font-weight: 400;">To show of support and solidarity for Open Source projects, we have added <a href="https://t.me/mycroft_ai" target="_blank" rel="noopener">Telegram</a> to our communications channels. If you would like to chat with us there we would love to see you.</span>
 
 &nbsp;
 
