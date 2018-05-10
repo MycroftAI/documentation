@@ -2,7 +2,10 @@
 ID: 36668
 post_title: Team
 author: Kathy Reid
-post_excerpt: "128"
+post_excerpt: |
+  At Mycroft AI, we value privacy, passion and purpose. We're talented, curious and switched on people of all persuasions.
+  
+  <a href="http://mycroft.ai/careers/">Want to work with us?</a>
 layout: page
 permalink: http://mycroft.ai/team/
 published: true
