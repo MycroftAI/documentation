@@ -153,6 +153,10 @@ Validate the build:
 
 `$ make check`
 
+Install the compiled code:
+
+`$ make install`
+
 ## Using Mimic
 
 By default, Mimic will play the text using the selected audio device. Alternatively, Mimic can output the wave file in RIFF format (.wav).
