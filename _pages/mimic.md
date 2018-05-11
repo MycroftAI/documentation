@@ -155,7 +155,7 @@ Validate the build:
 
 Install the compiled code:
 
-`$ make install`
+`$ sudo make install`
 
 ## Using Mimic
 
