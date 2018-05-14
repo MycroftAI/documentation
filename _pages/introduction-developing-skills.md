@@ -90,7 +90,7 @@ Now, we'll made a new repository for your **Skill**. The new repository has to f
 
 Copy the Template Skill into a new directory. Here, we've called the new Skill `skill-training`, but your **Skill** will have a different name.
 
-```bash
+```
 $ cp -R 00__skill_template skill-hello-world
 $ ls -las
 ```
