@@ -68,14 +68,14 @@ In order to build Mimic, you will need the following:
 * A good C compiler - for Linux or Mac OSX, `gcc` or `clang`is recommended. For Windows, `gcc` under [`Cygwin`](https://cygwin.com/) or [`mingw32`](http://www.mingw.org/) is recommended.
 * GNU `make`, `automake` and `libtool`
 * `pkg-config`
-* ICU library and headers
+* PCRE and ICU libraries and headers
 * An audio engine - for Linux we recommend ALSA, and for Mac OSX and Windows we recommend PortAudio
 
 #### Install dependencies
 
 ##### On Ubuntu or Debian Linux
 
-`$ sudo apt-get install gcc make pkg-config automake libtool libicu-dev libasound2-dev`
+`$ sudo apt-get install gcc make pkg-config automake libtool libicu-dev libpcre2-dev libasound2-dev`
 
 ##### On Fedora Linux
 
@@ -105,11 +105,11 @@ This requires additional packages to be installed.
 
 On Ubuntu 16.04 (xenial):
 
-`sudo apt-get install gcc make pkg-config automake libtool libicu-dev wine binutils-mingw-w64-i686 mingw-w64-i686-dev gcc-mingw-w64-i686 g++-mingw-w64-i686`
+`sudo apt-get install gcc make pkg-config automake libtool libicu-dev libpcre2-dev wine binutils-mingw-w64-i686 mingw-w64-i686-dev gcc-mingw-w64-i686 g++-mingw-w64-i686`
 
 On Ubuntu 14.04 (trusty):
 
-`sudo apt-get install gcc make pkg-config automake libtool libicu-dev mingw32 mingw32-runtime wine`
+`sudo apt-get install gcc make pkg-config automake libtool libicu-dev libpcre2-dev mingw32 mingw32-runtime wine`
 
 Next, run the Windows build script:
 
