@@ -30,7 +30,7 @@ post_date: 2017-12-02 22:35:25
       - [How to reimage a Picroft Device](#how-to-reimage-a-picroft-device)
       - [Keeping your Picroft updated](#keeping-your-picroft-updated)
       - [How to switch your Picroft to the `unstable` branch to test new releases](#how-to-switch-your-picroft-to-the-unstable-branch-to-test-new-releases)
-      - [Connecting Picroft to a keyboard and/or monitor](#connecting-picroft-to-a-keyboard-andor-monitor)
+      - [Connecting Picroft to a keyboard and/or monitor](#connecting-picroft-to-a-keyboard-and-monitor)
       - [Important file locations for Picroft](#important-file-locations-for-picroft)
     + [Next steps](#next-steps)
       - [Using the GPIO pins on the Raspberry Pi 3](#using-the-gpio-pins-on-the-raspberry-pi-3)
@@ -220,7 +220,7 @@ deb http://repo.mycroft.ai/repos/apt/debian debian-unstable main
 
 You will then need to run `sudo apt-get upgrade && sudo apt-get upgrade` for the change to take effect. 
 
-#### Connecting Picroft to a keyboard and/or monitor
+#### Connecting Picroft to a keyboard and monitor
 
 If you would like to see the output of Picroft on a monitor (rather than SSH'ing in to Picroft), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi. 
 
