@@ -57,6 +57,7 @@ This section of documentation assumes the following:
 ##### Raspberry Pi compatibility chart
 
 * Pi3 B+ : COMING SOON <-- Not currently supported
+* Pi3 B : SUPPORTED <-- You should get this device if you want to work on Picroft
 * Pi3 : SUPPORTED <-- You should get this device if you want to work on Picroft
 * Pi2 : functions but very slow <-- Only use this if you must
 * Pi B/A+/Zero/Zero W/Zero WH : NOT SUPPORTED
