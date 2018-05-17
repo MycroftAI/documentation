@@ -25,8 +25,8 @@ If you are developing on Picroft, and want to do audio-related **Skills** develo
 
 1. Connect a keyboard and/or monitor to Picroft, or alternatively, `ssh` into Picrot. By default the user is `pi` and the password is `mycroft`. 
 2. Run `nano auto_run.sh` (or use your preferred text editor)
-3. Add a `#` in front of the line `sudo amixer cset numid 3 "1"` to comment it out
-4. Remove the `#` at the start of the line `sudo amixer cset numid 3 "2"`
+3. Change "1" to "2". e.g. `sudo amixer cset numid 3 "1"` to `sudo amixer cset numid 3 "2"`
+4. Save the change.
 5. Reboot Picroft
 
 Audio should now play through the device you have the HDMI cable connected to (ie TV or speakers). 
