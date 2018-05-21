@@ -75,3 +75,109 @@ network={
 	phase2="auth=MSCHAPV2"
 }
 ```
+## Wifi-Setup by using WPS
+Informations from: https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+
+1. Connect network cable.  
+(Netzwerkkabel anschließen.)
+  
+
+2. Activ SSH on MyCroft with Button.  
+(SSH auf dem MyCroft mittels Drehrad (Typ1) aktivieren.)
+
+
+3. Connect MyCroft with SSH (PUTTY).  
+(Eine Verbindung mit MyCroft mittels Putty aufbauen.)
+
+
+4. Change activ interface to wlan0.  
+(Das aktive Netzwerk-Interface auf wlan0 ändern.)
+
+```
+sudo wpa_cli interface wlan0
+```
+
+5. Start WPS on own network router.  
+(WPS auf dem eigenen Router starten.)
+
+
+6. Start WPS on MyCroft.  
+(WPS auf dem MyCroft starten)
+
+```
+sudo wpa_cli wps_pbc
+```
+
+It's success with "WPS-SUCCESS".  
+(Erfolgsmeldung ist "WPS-SUCCESS".)
+
+
+7. Apply change.  
+(Änderung anwenden.)
+
+```
+sudo wpa_cli -i wlan0 reconfigure
+```
+  
+  
+## Increase security by encrypting the local wifi key
+(Erhöhung der Sicherheit durch Verschlüsselung des lokalen WLAN-Kennwortes.)
+
+
+1. Show wifi-configuration.  
+(Anzeigen des WLAN-Authentifizierung.)
+
+```
+sudo cat /etc/wpa_supplicant/wpa_supplicant.conf
+
+Example output: 
+(Bespielausgabe)
+network={
+        ssid="AAAAAAAAAAAAAAAAAAA"
+        psk="BBBBBBBBBBBBBBBBBBBBB"
+}
+```
+
+
+2. Encrypting  
+(Verschlüsseln)
+
+```
+wpa_passphrase "AAAAAAAAAAAAAAAAAAA" "BBBBBBBBBBBBBBBBBBBBB"
+
+
+Example output: 
+(Bespielausgabe)
+network={
+        ssid="AAAAAAAAAAAAAAAAAAA"
+        #psk="BBBBBBBBBBBBBBBBBBBBB"
+        psk=ffae5a4df1fb6095257093db22e43fe57f548f3e5a747d7b3f8248dd9d370cdc
+}
+```
+
+
+3. Open wifi authentication.  
+(Gespeichterten WLAN-Authentifizierung öffnen.)
+
+```
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+
+4. Write new psk in file.  
+(Neuen psk in die Datei schreiben)
+
+```
+Change Text "BBBBBBBBBBBBBBBBBBBBB" to ffae5a4df1fb6095257093db22e43fe57f548f3e5a747d7b3f8248dd9d370cdc (Last without quotes!)
+Ändere Test "BBBBBBBBBBBBBBBBBBBBB" zu ffae5a4df1fb6095257093db22e43fe57f548f3e5a747d7b3f8248dd9d370cdc (Letztes ohne Anführungsstriche!)
+```
+Saving STRG+o and enter / exit STRG+x  
+(Speichern STRG+o und Enter / Beenden STRG+x)
+
+
+5. Apply change.  
+(Änderung anwenden)
+
+```
+sudo wpa_cli -i wlan0 reconfigure
+```
