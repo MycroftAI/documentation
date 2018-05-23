@@ -8,12 +8,12 @@ permalink: http://mycroft.ai/coded-animation-test/
 published: true
 post_date: 2018-05-23 13:38:02
 ---
-<div id="mount-3ad6800f7ab003f44e2656165bad5ce6a3e515be"></div>
+<div id="mount-57b0634a41726fda69a74e83313f199f29375d65"></div>
 <script src="https://code.haiku.ai/scripts/core/HaikuCore.3.2.16.min.js"></script>
-<script src="https://cdn.haiku.ai/26e7281d-a862-4efb-babc-af10cc0c6baf/3ad6800f7ab003f44e2656165bad5ce6a3e515be/index.embed.js"></script>
+<script src="https://cdn.haiku.ai/26e7281d-a862-4efb-babc-af10cc0c6baf/57b0634a41726fda69a74e83313f199f29375d65/index.embed.js"></script>
 <script>
   HaikuComponentEmbed_akuataja_test2(
-    document.getElementById('mount-3ad6800f7ab003f44e2656165bad5ce6a3e515be'),
+    document.getElementById('mount-57b0634a41726fda69a74e83313f199f29375d65'),
     {loop: true}
   );
 </script>
