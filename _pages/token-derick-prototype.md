@@ -4,7 +4,8 @@ post_title: Mykrosystem
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/token/
+permalink: >
+  http://mycroft.ai/token-derick-prototype/
 published: true
 post_date: 2018-04-12 10:38:26
 ---
