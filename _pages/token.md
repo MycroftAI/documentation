@@ -4,7 +4,7 @@ post_title: ""
 author: Steve Penrod
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/38190-2/
+permalink: http://mycroft.ai/token/
 published: true
 post_date: 2018-05-23 23:06:16
 ---
