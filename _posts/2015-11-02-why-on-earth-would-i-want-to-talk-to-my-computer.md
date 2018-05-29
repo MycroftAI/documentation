@@ -7,7 +7,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/why-on-earth-would-i-want-to-talk-to-my-computer/
+  http://mycroft.ai/blog/why-on-earth-would-i-want-to-talk-to-my-computer/
 published: true
 post_date: 2015-11-02 16:18:10
 ---
