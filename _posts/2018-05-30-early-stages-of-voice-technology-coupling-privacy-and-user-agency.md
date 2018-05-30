@@ -5,7 +5,7 @@ author: Eric Jurgeson
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/early-stages-of-voice-technology-coupling-privacy-and-user-agency/
+  http://mycroft.ai/blog/early-stages-of-voice-technology-coupling-privacy-and-user-agency/
 published: true
 post_date: 2018-05-30 10:00:52
 ---
@@ -48,4 +48,4 @@ Some may say the Alexa communications skills are unnecessary when someone could 
 
 <span style="font-weight: 400;">Practicing both user-centered design and privacy by design maintains our foundation of an AI for everyone -- an assistant easy to set up that is useful to the general public, and configurable to meet the specific needs of privacy and security of anyone who so chooses.</span>
 
-Have something to say on the topic? Join us on the forum to discuss.
+Have something to say on the topic? <a href="https://community.mycroft.ai/t/the-early-stages-of-voice-technology-coupling-privacy-and-user-agency/3852" target="_blank" rel="noopener">Join us on the forum</a> to discuss.
