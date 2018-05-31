@@ -21,6 +21,7 @@ post_date: 2018-04-04 07:57:16
   * [Troubleshooting tests](#troubleshooting-tests)
     + [Example of a failing test](#example-of-a-failing-test)
   * [Test coverage](#test-coverage)
+  * [What should I do if the tests that are failing are not within my control?](#what-should-i-do-if-the-tests-that-are-failing-are-not-within-my-control)
 
 Mycroft has a built-in mechanism to help you automatically test your **Skill**. Automatic testing of **Skills** helps increase the quality of the Mycroft ecosystem overall, and helps assure you that your **Skill** is performing as intended. Tests are required to be passing before your **Skill** will be accepted into the [Mycroft **Skill**](https://github.com/MycroftAI/mycroft-skills) repository on GitHub.
 
@@ -150,7 +151,7 @@ The ```expected response``` is a regular expression that must match the answer t
 
 The ```changed_context``` is a list of contexts, that the **Intent** has set or removed. It is not possible to distinguish between set or remove context.
 
-The `expected_data` can be used to check for specific data content, for example the content of a message parsed with [Padatious](https://mycroft.ai/documentation/padatious/). The example test case below will pass if a message contains an "ampm" value equal to **"pm"** and a "time" value equal to **6**. Note that the "ampm" value is a string literal, and is quoted, while the "time" value is an integer value and is _not_ quoted. 
+The `expected_data` can be used to check for specific data content, for example the content of a message parsed with [Padatious](https://mycroft.ai/documentation/padatious/). The example test case below will pass if a message contains an "ampm" value equal to **"pm"** and a "time" value equal to **6**. Note that the "ampm" value is a string literal, and is quoted, while the "time" value is an integer value and is _not_ quoted.
 
 ```json
   "expected_data": {
@@ -158,11 +159,11 @@ The `expected_data` can be used to check for specific data content, for example 
     "time": 6
    }
  ```
- 
+
 Note that the message can contain additional fields without the test failing.
- 
+
 The `expected_dialog` takes the dialog file (without the `.dialog`) in the same manner as when using the dialog in the skill. See [skill-personal](https://github.com/MycroftAI/skill-personal/blob/0a056a0f13fa3ad2ff5d3f685be0bf99244bca1e/test/intent/what.are.you.intent.json) for an example.
- 
+
 In the example above the ```changed_context``` and ```assert``` actually does the same thing, it is mentioned as an example only. The ```assert``` shows the internal rule format (see the next paragraph).
 
 A test case succeeds if all test are passed for the **Intent**. And in that case the Integration Test Runner immediately continues to the next test. If all tests have not succeeded 30 seconds after the **Utterance**, the test is failed. In the example above the timeout is reduced to 10 seconds to catch errors faster.
@@ -303,3 +304,9 @@ Name Stmts Miss Cover
 -----------------------------------------------------------------
 /opt/mycroft/skills/skill-alarm/__init__.py 293 290 1%
 ```
+
+## What should I do if the tests that are failing are not within my control?
+
+If you are running the automated tests, and have test failures that are beyond your control - for example the error is triggered by something in `mycroft-core` or other Mycroft software, then the Skills Management Team can choose to override the need for automated tests to have passed when they assess the **Skill**.
+
+Please paste a copy of the automated Skill testing output as a comment in the Pull Request when you [submit it to the Skills repo](https://mycroft.ai/documentation/skills/skill-submission/).
