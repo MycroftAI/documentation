@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/blockchain-for-mycroft-following-up-on-our-crypto-token-discussion/
+  http://mycroft.ai/blog/blockchain-for-mycroft-following-up-on-our-crypto-token-discussion/
 published: true
 post_date: 2018-05-16 15:35:23
 ---
