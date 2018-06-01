@@ -142,7 +142,7 @@ class TomatoSkill(MycroftSkill):
 
 The `register_intent_file(intent_file, handler)` methods arguments are:
 
-* intent_file: the filename of above mentioned intent files without the .intent as argument.
+* intent_file: the filename of above mentioned intent files with the .intent as argument.
 * handler: the method/function that the examples in the intent_file should map to
 
 The corresponding decorator is also available:
