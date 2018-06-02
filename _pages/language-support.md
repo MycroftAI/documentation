@@ -2,7 +2,10 @@
 ID: 32450
 post_title: Language support in Mycroft
 author: Kathy Reid
-post_excerpt: ""
+post_excerpt: >
+  Learn about foreign language support in
+  Mycroft, and how to approach configuring
+  Mycroft to support other languages.
 layout: page
 permalink: >
   http://mycroft.ai/documentation/language-support/
