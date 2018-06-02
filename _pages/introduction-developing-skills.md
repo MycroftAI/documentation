@@ -2,7 +2,7 @@
 ID: 32444
 post_title: Introduction to developing Skills
 author: Kathy Reid
-post_excerpt: ""
+post_excerpt: "In this introduction to developing Skills for Mycroft, learn the prerequisites you'll need, and step through the basic anatomy of a Mycroft Skill."
 layout: page
 permalink: >
   http://mycroft.ai/documentation/skills/introduction-developing-skills/
