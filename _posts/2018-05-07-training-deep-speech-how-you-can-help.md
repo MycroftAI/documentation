@@ -5,7 +5,7 @@ author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/training-deep-speech-how-you-can-help/
+  http://mycroft.ai/blog/training-deep-speech-how-you-can-help/
 published: true
 post_date: 2018-05-07 10:00:15
 ---
