@@ -5,7 +5,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/languages-are-hard/
+  http://mycroft.ai/blog/languages-are-hard/
 published: true
 post_date: 2018-05-24 13:00:30
 ---
