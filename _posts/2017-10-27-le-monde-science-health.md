@@ -1,11 +1,11 @@
 ---
 ID: 32156
-post_title: "Mycroft.AI featured in 'Le Monde' science and health special issue"
+post_title: 'Mycroft.AI featured in &#8216;Le Monde&#8217; science and health special issue'
 author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/le-monde-science-health/
+  http://mycroft.ai/blog/le-monde-science-health/
 published: true
 post_date: 2017-10-27 05:54:31
 ---
