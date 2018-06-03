@@ -7,7 +7,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/will-ai-voice-assistants-affect-homes-businesses-privacy/
+  http://mycroft.ai/blog/will-ai-voice-assistants-affect-homes-businesses-privacy/
 published: true
 post_date: 2017-10-25 19:24:50
 ---
