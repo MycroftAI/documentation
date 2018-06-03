@@ -6,7 +6,7 @@ post_title: >
 author: Steve Penrod
 post_excerpt: ""
 layout: post
-permalink: https://mycroft.ai/blog/right-license/
+permalink: http://mycroft.ai/blog/right-license/
 published: true
 post_date: 2017-06-28 10:12:29
 ---
