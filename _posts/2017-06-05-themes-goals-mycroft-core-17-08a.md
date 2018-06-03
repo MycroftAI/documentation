@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/themes-goals-mycroft-core-17-08a/
+  http://mycroft.ai/blog/themes-goals-mycroft-core-17-08a/
 published: true
 post_date: 2017-06-05 21:01:16
 ---
