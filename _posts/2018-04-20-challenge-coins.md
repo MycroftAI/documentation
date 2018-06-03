@@ -6,7 +6,7 @@ post_title: >
 author: Kathy Reid
 post_excerpt: ""
 layout: post
-permalink: https://mycroft.ai/blog/challenge-coins/
+permalink: http://mycroft.ai/blog/challenge-coins/
 published: true
 post_date: 2018-04-20 08:00:57
 ---
