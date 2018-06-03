@@ -1,11 +1,11 @@
 ---
 ID: 31929
-post_title: '17.08a - The mycroft-core "alpha" release!'
+post_title: '17.08a &#8211; The mycroft-core &#8220;alpha&#8221; release!'
 author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/17-08a-mycroft-core-alpha-release/
+  http://mycroft.ai/blog/17-08a-mycroft-core-alpha-release/
 published: true
 post_date: 2017-10-11 19:37:12
 ---
