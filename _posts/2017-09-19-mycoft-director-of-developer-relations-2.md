@@ -1,11 +1,11 @@
 ---
 ID: 31639
-post_title: 'Mycroft&#039;s New Director of Developer Relations | Kathy Reid'
+post_title: 'Mycroft&#039;s New Director of Developer Relations &#124; Kathy Reid'
 author: Arron Atchison
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycoft-director-of-developer-relations-2/
+  http://mycroft.ai/blog/mycoft-director-of-developer-relations-2/
 published: true
 post_date: 2017-09-19 08:52:36
 ---
