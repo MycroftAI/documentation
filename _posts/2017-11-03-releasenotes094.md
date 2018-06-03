@@ -4,7 +4,7 @@ post_title: Release Notes v0.9.4
 author: Steve Penrod
 post_excerpt: ""
 layout: post
-permalink: https://mycroft.ai/blog/releasenotes094/
+permalink: http://mycroft.ai/blog/releasenotes094/
 published: true
 post_date: 2017-11-03 07:48:23
 ---
