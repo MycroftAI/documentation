@@ -7,7 +7,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/international-shipments/
+  http://mycroft.ai/blog/international-shipments/
 published: true
 post_date: 2017-07-11 11:27:50
 ---
