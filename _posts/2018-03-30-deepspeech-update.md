@@ -5,7 +5,7 @@ author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/deepspeech-update/
+  http://mycroft.ai/blog/deepspeech-update/
 published: true
 post_date: 2018-03-30 07:30:00
 ---
