@@ -27,4 +27,4 @@ https://youtu.be/V-FkalybggA
 <h3>What does this mean for Mycroft?</h3>
 Well, we're not going to make any big decisions just yet. We want to wait for the dust to settle and better understand what Microsoft's plans are for GitHub. Then, we'll look at what alternatives are available, and importantly, the costs, benefits, and risks of each option.
 
-What are your thoughts? Let us know below.
+What are your thoughts? <a href="https://community.mycroft.ai/t/what-does-microsofts-acquisition-of-github-mean-for-mycroft/3885" target="_blank" rel="noopener">Let us know in the forum</a>.
