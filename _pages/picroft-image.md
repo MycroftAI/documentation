@@ -18,6 +18,29 @@ Are you looking for the latest Picroft disk images?
 * [Picroft stable disk image](https://mycroft.ai/to/picroft-image)
 * [Picroft unstable disk image](https://mycroft.ai/to/picroft-unstable)
 
+- [Creating a new Picroft image](#creating-a-new-picroft-image)
+  * [Introduction](#introduction)
+    + [Requirements](#requirements)
+  * [Procedure](#procedure)
+    + [Install operating system](#install-operating-system)
+    + [Enable ssh service](#enable-ssh-service)
+    + [Configuring WiFi](#configuring-wifi)
+    + [Install Mycroft repos](#install-mycroft-repos)
+    + [Install git version control](#install-git-version-control)
+    + [Install vim](#install-vim)
+    + [Create a cron job for auto updates](#create-a-cron-job-for-auto-updates)
+    + [Add configuration for platform detection](#add-configuration-for-platform-detection)
+    + [Add Picroft components](#add-picroft-components)
+    + [Run the update script](#run-the-update-script)
+    + [Restart Picroft](#restart-picroft)
+    + [Create a RAM disk](#create-a-ram-disk)
+    + [Upgrade packages](#upgrade-packages)
+      - [Set up packagekit](#set-up-packagekit)
+    + [Set up pip](#set-up-pip)
+    + [Remove your WiFi nework information](#remove-your-wifi-nework-information)
+    + [Clear bash history](#clear-bash-history)
+  * [Create a disk image](#create-a-disk-image)
+
 ## Introduction
 
 This documentation shows you how to generate the base Picroft installation. Once you have a base Picroft installation, you can snapshot your installation to produce a Picroft disk image. 
