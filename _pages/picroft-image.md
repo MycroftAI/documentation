@@ -220,7 +220,7 @@ Action=org.freedesktop.packagekit.package-eula-accept;org.freedesktop.packagekit
 
 ### Set up pip
 
-`[pip](https://en.wikipedia.org/wiki/Pip_(package_manager))` is a package manager for Python. 
+[pip](https://en.wikipedia.org/wiki/Pip_(package_manager)) is a package manager for Python. 
 
 `pip` doesn't interact with `policykit` so a `sudoer` rule is needed to allow `pip install` from the `mycroft` user without a password. 
 
@@ -244,7 +244,8 @@ Remove your network information at the end of the `wpa_supplicant.conf` file the
 network={
 	ssid="_your network ssid_"
 	psk="_your network password_"
-}```
+}
+```
 
 ### Clear bash history
 
