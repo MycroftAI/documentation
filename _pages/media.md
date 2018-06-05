@@ -27,9 +27,8 @@ post_date: 2018-02-15 12:22:46
 [/vc_column_text][/vc_column][/vc_row][vc_row type="full_width_content" full_screen_row_position="middle" equal_height="yes" content_placement="middle" vertically_center_columns="true" scene_position="center" text_color="dark" text_align="left" top_padding="2%" bottom_padding="2%" overlay_strength="0.3" shape_divider_position="bottom"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="2/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][image_with_animation image_url="36042" alignment="center" animation="Fade In From Left" border_radius="none" box_shadow="large_depth" max_width="125%"][/vc_column][vc_column column_padding="padding-3-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" offset="vc_col-xs-12"][vc_column_text]
 <h2 id="#mediakit">Media Contact</h2>
 <h4><span style="font-weight: 400;">For more information or any press inquiries, please contact:</span></h4>
-<h3><strong> Alyx Horace at</strong></h3>
 <h3><strong><a href="mailto:media@mycroft.ai">media@mycroft.ai</a> </strong></h3>
-<h3><strong>or call (505) 470-1103</strong></h3>
+<h3><strong>or call 816.287.1992</strong></h3>
 <span style="font-weight: 400;">To learn more, please visit </span><a href="https://mycroft.ai/"><span style="font-weight: 400;">mycroft.ai</span></a><span style="font-weight: 400;"> and be sure to follow our socials!</span>
 <ul>
  	<li><a href="http://www.facebook.com/aiforeveryone/" target="_blank" rel="noopener"><span style="font-weight: 400;">Facebook</span></a></li>
