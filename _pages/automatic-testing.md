@@ -109,7 +109,7 @@ Below is an example test case file:
 "listName": "grocery",
 "AddTaskToListKeyword": "add"
 },
-"expected_response": "I can\'t find a list called grocery.*",
+"expected_response": "I can't find a list called grocery.*",
 "evaluation_timeout": 10,
 "changed_context": ["UndoContext", "ConfirmContext"],
 "assert": "[['equal', 'context', 'UndoContext'], ['equal', 'context', 'ConfirmContext']]"
@@ -181,7 +181,7 @@ The example test case above is actually transformed into:
 ['equal', 'taskName', 'some'],
 ['equal', 'AddTaskToListKeyword', 'add']
 ],
-['match', 'utterance', "I can\'t find a list called none.*"],
+['match', 'utterance', "I can't find a list called none.*"],
 ['equal', 'context', 'UndoContext'],
 ['equal', 'context', 'ConfirmContext'],
 ['equal', 'context', 'UndoContext'],
