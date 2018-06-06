@@ -148,7 +148,7 @@ If you would like to set up SSH access to  your Mark 1 device using SSH keys ins
 
 If you are SSH'd into the Mark 1 device, you are able to issue commands using the command line interface (CLI) instead of using voice. This bypasses the Speech To Text (STT) component of Mycroft.
 
-`python -m mycroft.client.text.main --quiet`
+`mycroft-cli-client`
 
 You will now be able to type **Utterances** into the CLI.
 
