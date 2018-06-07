@@ -52,8 +52,8 @@ We have many competing demands on the Picroft roadmap.
 </ul>
 As you can see, our roadmap here is not straightforward - and your feedback can help shape where we take it, ensuring that we align our actions with community needs.
 <h3>How can you help?</h3>
-<a href="https://www.surveymonkey.com/r/picroft-june-2018">We’d really appreciate you letting us know how you use Picroft. </a>What model Raspberry Pi are you using? What speakers and microphone do you use? Do you have a Raspberry Pi Model 3B+ and are hanging out for a working Picroft image?<a href="https://www.surveymonkey.com/r/picroft-june-2018"> Take our super-quick survey and help us help you. </a>
+<a href="https://www.surveymonkey.com/r/picroft-june-2018" target="_blank" rel="noopener">We’d really appreciate you letting us know how you use Picroft. </a>What model Raspberry Pi are you using? What speakers and microphone do you use? Do you have a Raspberry Pi Model 3B+ and are hanging out for a working Picroft image?<a href="https://www.surveymonkey.com/r/picroft-june-2018" target="_blank" rel="noopener"> Take our super-quick survey and help us help you. </a>
 
 If you’re an advanced user, you might even want to have a go at <a href="http://mycroft.ai/documentation/picroft/picroft-image/">building your own Picroft image.</a>
 
-Let us know what you think below.
+Let us know what you think <a href="https://community.mycroft.ai/t/what-should-be-on-our-raspberry-pi-and-picroft-roadmap/3906" target="_blank" rel="noopener">on the forums</a>.
