@@ -1,11 +1,8 @@
 ---
 ID: 38649
-post_title: 'Mycroft Skills Kit &#8211; msk'
+post_title: Mycroft Skills Kit – msk
 author: Kathy Reid
-post_excerpt: >
-  Learn how to use the Mycroft Skills Kit
-  to make the creation, testing and
-  submission of Skills a lot easier.
+post_excerpt: 'Learn how to use the Mycroft Skills Kit - msk - to make the creation, testing and submission of Skills a lot easier. '
 layout: page
 permalink: >
   http://mycroft.ai/documentation/skills/msk/
