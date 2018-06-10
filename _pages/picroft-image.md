@@ -13,11 +13,6 @@ post_date: 2018-06-05 09:18:18
 ---
 # Creating a new Picroft image
 
-Are you looking for the latest Picroft disk images?
-
-* [Picroft stable disk image](https://mycroft.ai/to/picroft-image)
-* [Picroft unstable disk image](https://mycroft.ai/to/picroft-unstable)
-
 - [Creating a new Picroft image](#creating-a-new-picroft-image)
   * [Introduction](#introduction)
     + [Requirements](#requirements)
@@ -40,6 +35,11 @@ Are you looking for the latest Picroft disk images?
     + [Remove your WiFi nework information](#remove-your-wifi-nework-information)
     + [Clear bash history](#clear-bash-history)
   * [Create a disk image](#create-a-disk-image)
+
+Are you looking for the latest Picroft disk images?
+
+* [Picroft stable disk image](https://mycroft.ai/to/picroft-image)
+* [Picroft unstable disk image](https://mycroft.ai/to/picroft-unstable)
 
 ## Introduction
 
@@ -66,24 +66,24 @@ As well as the below hardware requirements, we also assume that you are comforta
 * Now, we will set some operating sysem settings. Type `sudo raspi-config` at the prompt. 
 
 ```
-- '2 Hostname'\
+- '2 Hostname'
 --> Enter: `picroft`
-- '3 Boot Options'\
---> 'B1 Desktop / CLI'\
+- '3 Boot Options'
+--> 'B1 Desktop / CLI'
 --> 'B2 Console Autologin'
-- '3 Boot Options'\
---> 'B2 Wait for Network at Boot'\
---> 'No'\
+- '3 Boot Options'
+--> 'B2 Wait for Network at Boot'
+--> 'No'
 --> 'Ok'
-- '5 Localisation Options'\
---> 'I3 Change Keyboard Layout'\
---> 'Generic 101-key PC'\
---> 'Other'\
---> 'English (US)'\
---> 'English (US)'\
---> 'The default for the keyboard layout'\
+- '5 Localisation Options'
+--> 'I3 Change Keyboard Layout'
+--> 'Generic 101-key PC'
+--> 'Other'
+--> 'English (US)'
+--> 'English (US)'
+--> 'The default for the keyboard layout'
 --> 'No compose key'
-- '7 Advanced Options'\
+- '7 Advanced Options'
 -->'A1 Expand Filesystem'
 ```
 
