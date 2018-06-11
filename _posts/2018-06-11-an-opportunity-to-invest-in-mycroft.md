@@ -10,7 +10,7 @@ layout: post
 permalink: >
   http://mycroft.ai/blog/an-opportunity-to-invest-in-mycroft/
 published: true
-post_date: 2018-06-05 09:45:32
+post_date: 2018-06-11 10:45:32
 ---
 [vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3" shape_divider_position="bottom"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]<span style="font-weight: 400;">Our goal here at Mycroft has remained a constant. We are building a voice assistant that runs anywhere and interacts exactly like a person. When the technology is completed people who talk to Mycroft won’t know whether they are talking to a human or a machine.</span>
 
