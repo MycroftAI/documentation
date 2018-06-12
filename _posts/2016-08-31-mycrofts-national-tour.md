@@ -19,7 +19,7 @@ The team is hard at work behind the scenes making sure they do their best to del
 
 <a href="https://mycroft.ai/wp-content/uploads/2016/08/CrInYoQWcAABKFz.jpg"><img class="alignnone size-medium wp-image-2001 aligncenter" src="https://mycroft.ai/wp-content/uploads/2016/08/CrInYoQWcAABKFz-225x300.jpg" alt="CrInYoQWcAABKFz" width="225" height="300" /></a>
 
-<a href="https://mycroft.ai/wp-content/uploads/2016/08/Cqn3fuBUsAExxiI.jpg"><img class="alignnone size-medium wp-image-2005 aligncenter" src="https://mycroft.ai/wp-content/uploads/2016/08/Cqn3fuBUsAExxiI-300x225.jpg" alt="Cqn3fuBUsAExxiI" width="300" height="225" /></a>
+&nbsp;
 
 <a href="https://mycroft.ai/wp-content/uploads/2016/08/Cq3zcgBWYAAEucQ.jpg"><img class="alignnone size-medium wp-image-2006 aligncenter" src="https://mycroft.ai/wp-content/uploads/2016/08/Cq3zcgBWYAAEucQ-300x225.jpg" alt="Cq3zcgBWYAAEucQ" width="300" height="225" /></a>
 
