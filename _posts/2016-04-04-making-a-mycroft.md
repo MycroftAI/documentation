@@ -4,8 +4,7 @@ post_title: 'Making a Mycroft &#038; First Shipment'
 author: Kris Adair
 post_excerpt: ""
 layout: post
-permalink: >
-  https://mycroft.ai/blog/making-a-mycroft/
+permalink: http://mycroft.ai/blog/making-a-mycroft/
 published: true
 post_date: 2016-04-04 15:58:17
 ---
