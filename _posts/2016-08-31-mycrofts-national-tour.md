@@ -1,11 +1,11 @@
 ---
 ID: 1997
-post_title: "Mycroft's National Tour"
+post_title: 'Mycroft&#8217;s National Tour'
 author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycrofts-national-tour/
+  http://mycroft.ai/blog/mycrofts-national-tour/
 published: true
 post_date: 2016-08-31 11:08:10
 ---
