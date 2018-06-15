@@ -1,3 +1,10 @@
+---
+post_title: Using nice date and time functions in your Skill
+author: Carsten Agerskov
+layout: page
+published: false
+---
+
 # Configuring some of the “nice” functions for a language
 
 The following functions are used to convert a Python datetime to a pronounceable string,
