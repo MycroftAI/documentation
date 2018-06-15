@@ -75,7 +75,7 @@ Please see this ASCII Cinema video to see the process for using `msk create`:
 
 [![msk-create](https://images2.imgbox.com/ab/25/6kbqKbXh_o.gif)](https://asciinema.org/a/X5pWLPOpsMLUPYp5kgswNm5Zu?speed=1.5)
 
-If using the msk delivered with the mycroft-core github installation the Python _virtual environment_ needs to be activated. From the mycroft-core directory run
+If using the msk delivered with the `mycroft-core` `git` installation, the Python _virtual environment_ needs to be activated. From the `mycroft-core` directory run
 
 `$ source .venv/bin/activate`
 
@@ -212,7 +212,7 @@ Compressing objects: 100% (339/339), done.
 Writing objects: 100% (531/531), 123.54 KiB | 0 bytes/s, done.
 Total 531 (delta 298), reused 304 (delta 177)
 remote: Resolving deltas: 100% (298/298), completed with 6 local objects.
-To https://github.com/KathyReid/mycroft-skills
+To https://github.com/YourGitHubUserName/mycroft-skills
  * [new branch]      add/feed-the-corgi -> add/feed-the-corgi
 Branch add/feed-the-corgi set up to track remote branch add/feed-the-corgi from fork.
 Created pull request:  https://github.com/MycroftAI/mycroft-skills/pull/392
