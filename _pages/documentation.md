@@ -36,6 +36,7 @@ Our documentation, just like our source code, is open source, [and you can contr
 	  + [Developing Skills for Mycroft](#developing-skills-for-mycroft)
 	  + [Automatic testing for Mycroft Skills](#automatic-testing-for-mycroft-skills)
       + [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
+	  + [Mycroft Skills Kit](#mycroft-skills-kit)
 	  + [Skills Acceptance Process](#skills-acceptance-process)
       + [Skill Settings](#skill-settings)
       + [Common issues in Skills development](#common-issues-in-skills-development)
@@ -149,6 +150,10 @@ Read more about the process used by Skill Authors, the Skill Management Team and
 ### [Preparing your Skill for submission to the Mycroft Skills Repo](https://mycroft.ai/documentation/skills/skill-submission/)
 
 Aimed at developers, this is a step by step guide to submitting a new Skill you've developed to the Mycroft Skills Repo.
+
+### [Mycroft Skills Kit](http://mycroft.ai/documentation/skills/msk/)
+
+Learn how to use the Mycroft Skills Kit to make the creation, testing and submission of Skills a lot easier.
 
 ### [Skill Settings](https://mycroft.ai/documentation/skills/skill-settings/)
 
