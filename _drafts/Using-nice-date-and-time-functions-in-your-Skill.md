@@ -1,10 +1,14 @@
 ---
-post_title: Using nice date and time functions in your Skill
-author: Carsten Agerskov
+ID: 38898
+post_title: >
+  Using nice date and time functions in
+  your Skill
+author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=38898
 published: false
 ---
-
 # Configuring some of the “nice” functions for a language
 
 The following functions are used to convert a Python datetime to a pronounceable string,
@@ -89,25 +93,25 @@ The lists are searched from beginning (index 1) to end. The first match is used,
 The decade format will work on the two rightmost digits of the year. For en-us it looks like this:
 ```json
 "decade_format": {
-    "1": {"match": "^\\d$", "format": "{x}"},
-    "2": {"match": "^1\\d$", "format": "{xx}"},
-    "3": {"match": "^\\d0$", "format": "{x0}"},
-    "4": {"match": "^[2-9]\\d$", "format": "{x0} {x}"},
+    "1": {"match": "^\d$", "format": "{x}"},
+    "2": {"match": "^1\d$", "format": "{xx}"},
+    "3": {"match": "^\d0$", "format": "{x0}"},
+    "4": {"match": "^[2-9]\d$", "format": "{x0} {x}"},
     "default": "{number}"
   }
 ```
 
 The format consists of a list of four templates, and a default fall back template. The two rightmost digits of the year is converted to a string, and then matched to the value of the 'match' keyword above.
-Starting from index 1. For instance, the first list entry match ^\d$, which is a single digit. The second list entry are for numbers between 10 and 19, the third matches multiples of ten, the fourth is for the rest,
-the 'default' entry will never be used. The double '\' in the json file is because it acts as an escape character.
+Starting from index 1. For instance, the first list entry match ^d$, which is a single digit. The second list entry are for numbers between 10 and 19, the third matches multiples of ten, the fourth is for the rest,
+the 'default' entry will never be used. The double '' in the json file is because it acts as an escape character.
 
 
 Lets use 1969 as an example with language en-us:
-The string '1969' is used, and the first match is index 4: "^[2-9]\\d". The components {x0} is 'sixty' and {x} is {nine}, the end result is 'sixty nine'
+The string '1969' is used, and the first match is index 4: "^[2-9]\d". The components {x0} is 'sixty' and {x} is {nine}, the end result is 'sixty nine'
 If the string had been 1910, the second list entry would have been used, since that would be the first match, even if the third entry also match '10'.
 
 In some languages, for instance Danish, the order of ones and tens is reversed, so 69 is pronounced 'ni og tres' (nine and sixty). The list entry for Danish would be:
-```"4": {"match": "^[2-9]\\d$", "format": "{x} og {x0}"}```
+```"4": {"match": "^[2-9]\d$", "format": "{x} og {x0}"}```
 
 The result of the decade format is {formatted_decade}, that can be used as a component in other formats.
 
@@ -123,7 +127,7 @@ The following components can be used in the decade format:
 The hundreds format will work on the three rightmost digits of the year. For en-us it looks like this:
 ```json
 "hundreds_format": {
-	"1": {"match": "^\\d{3}$", "format": "{x_in_x00} hundred"},
+	"1": {"match": "^\d{3}$", "format": "{x_in_x00} hundred"},
 	"default": "{number}"
 }
 ```
@@ -147,8 +151,8 @@ Even if {formatted_decade} can be used as a component in hundreds, it is usually
 The thousand format will work on the four rightmost digits of the year. For en-us it looks like this:
 ```json
 "thousand_format": {
-	"1": {"match": "^1[1-9]\\d{2}$", "format": "{xx_in_xx00} hundred"},
-	"2": {"match": "^\\d{4}$", "format": "{x_in_x000} thousand"},
+	"1": {"match": "^1[1-9]\d{2}$", "format": "{xx_in_xx00} hundred"},
+	"2": {"match": "^\d{4}$", "format": "{x_in_x000} thousand"},
 	"default": "{number}"
 }
 ```
@@ -181,13 +185,13 @@ This section contains information on how to format a pronounceable year.
 For en-us the configuration looks like this:
 ```json
 "year_format": {
-	"1": {"match": "^\\d\\d?$", "format": "{formatted_decade} {bc}"},
-	"2": {"match": "^\\d00$", "format": "{formatted_hundreds} {bc}"},
-	"3": {"match": "^\\d{3}$", "format": "{formatted_hundreds} and {formatted_decade} {bc}"},
-	"4": {"match": "^(1\\d00)|([2-9]000)$", "format": "{formatted_thousand} {bc}"},
-	"5": {"match": "^\\d{2}00$", "format": "{formatted_thousand} {formatted_hundreds} {bc}"},
-	"6": {"match": "^(1\\d{3})|(\\d0\\d{2})$", "format": "{formatted_thousand} and {formatted_decade} {bc}"},
-	"7": {"match": "^\\d{4}$", "format": "{formatted_thousand} {formatted_hundreds} and {formatted_decade} {bc}"},
+	"1": {"match": "^\d\d?$", "format": "{formatted_decade} {bc}"},
+	"2": {"match": "^\d00$", "format": "{formatted_hundreds} {bc}"},
+	"3": {"match": "^\d{3}$", "format": "{formatted_hundreds} and {formatted_decade} {bc}"},
+	"4": {"match": "^(1\d00)|([2-9]000)$", "format": "{formatted_thousand} {bc}"},
+	"5": {"match": "^\d{2}00$", "format": "{formatted_thousand} {formatted_hundreds} {bc}"},
+	"6": {"match": "^(1\d{3})|(\d0\d{2})$", "format": "{formatted_thousand} and {formatted_decade} {bc}"},
+	"7": {"match": "^\d{4}$", "format": "{formatted_thousand} {formatted_hundreds} and {formatted_decade} {bc}"},
 	"default": "{year} {bc}",
 	"bc": "b.c."
 }
@@ -319,29 +323,29 @@ Each nice_*() function takes different parameters, the parameters must be specif
 ```json
 {
   "decade_format": {
-    "1": {"match": "^\\d$", "format": "{x}"},
-    "2": {"match": "^1\\d$", "format": "{xx}"},
-    "3": {"match": "^\\d0$", "format": "{x0}"},
-    "4": {"match": "^[2-9]\\d$", "format": "{x0} {x}"},
+    "1": {"match": "^\d$", "format": "{x}"},
+    "2": {"match": "^1\d$", "format": "{xx}"},
+    "3": {"match": "^\d0$", "format": "{x0}"},
+    "4": {"match": "^[2-9]\d$", "format": "{x0} {x}"},
     "default": "{number}"
   },
   "hundreds_format": {
-    "1": {"match": "^\\d{3}$", "format": "{x_in_x00} hundred"},
+    "1": {"match": "^\d{3}$", "format": "{x_in_x00} hundred"},
     "default": "{number}"
   },
   "thousand_format": {
-    "1": {"match": "^1[1-9]\\d{2}$", "format": "{xx_in_xx00} hundred"},
-    "2": {"match": "^\\d{4}$", "format": "{x_in_x000} thousand"},
+    "1": {"match": "^1[1-9]\d{2}$", "format": "{xx_in_xx00} hundred"},
+    "2": {"match": "^\d{4}$", "format": "{x_in_x000} thousand"},
     "default": "{number}"
   },
   "year_format": {
-    "1": {"match": "^\\d\\d?$", "format": "{formatted_decade} {bc}"},
-    "2": {"match": "^\\d00$", "format": "{formatted_hundreds} {bc}"},
-    "3": {"match": "^\\d{3}$", "format": "{formatted_hundreds} and {formatted_decade} {bc}"},
-    "4": {"match": "^(1\\d00)|([2-9]000)$", "format": "{formatted_thousand} {bc}"},
-    "5": {"match": "^\\d{2}00$", "format": "{formatted_thousand} {formatted_hundreds} {bc}"},
-    "6": {"match": "^(1\\d{3})|(\\d0\\d{2})$", "format": "{formatted_thousand} and {formatted_decade} {bc}"},
-    "7": {"match": "^\\d{4}$", "format": "{formatted_thousand} {formatted_hundreds} and {formatted_decade} {bc}"},
+    "1": {"match": "^\d\d?$", "format": "{formatted_decade} {bc}"},
+    "2": {"match": "^\d00$", "format": "{formatted_hundreds} {bc}"},
+    "3": {"match": "^\d{3}$", "format": "{formatted_hundreds} and {formatted_decade} {bc}"},
+    "4": {"match": "^(1\d00)|([2-9]000)$", "format": "{formatted_thousand} {bc}"},
+    "5": {"match": "^\d{2}00$", "format": "{formatted_thousand} {formatted_hundreds} {bc}"},
+    "6": {"match": "^(1\d{3})|(\d0\d{2})$", "format": "{formatted_thousand} and {formatted_decade} {bc}"},
+    "7": {"match": "^\d{4}$", "format": "{formatted_thousand} {formatted_hundreds} and {formatted_decade} {bc}"},
     "default": "{year} {bc}",
     "bc": "b.c."
   },
