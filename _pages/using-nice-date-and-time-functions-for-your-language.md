@@ -38,8 +38,7 @@ post_date: 2018-06-15 14:03:04
   * [Test file for en-us](#test-file-for-en-us)
   
 
-The following functions are used to convert a Python datetime to a pronounceable string,
-for a given language [please refer to the Mycroft API documentation](http://mycroft-core.readthedocs.io/en/stable/))
+The following functions are used to convert a Python datetime to a pronounceable string, for a given language [please refer to the Mycroft API documentation](http://mycroft-core.readthedocs.io/en/stable/))
 
 * ```nice_date(dt, lang='en-us', now=None)```
 * ```nice_date_time(dt, lang='en-us', now=None, use_24hour=False, use_ampm=False)```
