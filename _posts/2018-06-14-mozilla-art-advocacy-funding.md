@@ -34,6 +34,6 @@ So, what are you waiting for?
 </ul>
 These are just suggestions - we’re sure you’ve got plenty of your own ideas!
 
-Contribute to the discussion on the forum.
+<a href="https://community.mycroft.ai/t/putting-the-art-into-artificial-intelligence/3971/1">Contribute to the discussion on the forum.</a>
 
 &nbsp;
