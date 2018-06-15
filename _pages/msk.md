@@ -26,10 +26,7 @@ The Mycroft Skills Kit - `msk` - is a Python-based utility that has been created
 
 _NOTE: `msk` has only been tested on Linux systems_
 
-`msk` comes pre installed on the Mark 1, picroft and in the venv of the mycroft git installation as of v18.2.9b.
-The utility is self contained and can be installed separately using `pip` by typing the following line into the terminal on your Linux system:
-
-@TODO are there any Python or pip minimum requirements for `msk`?
+`msk` comes pre installed on the [Mark 1](https://mycroft.ai/documentation/mark-1), [Picroft](https://mycroft.ai/documentation/picroft) and in the `venv` of the Mycroft `git` installation as of v18.2.9b. The utility is self-contained and can be installed separately using `pip` by typing the following line into the terminal on your Linux system:
 
 ```bash
 pip3 install msk
