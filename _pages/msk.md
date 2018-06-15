@@ -26,10 +26,7 @@ The Mycroft Skills Kit - `msk` - is a Python-based utility that has been created
 
 _NOTE: `msk` has only been tested on Linux systems_
 
-`msk` is installed using `pip`. To install `msk`, run the following line from the command prompt on your Linux system:
-
-@TODO are there any Python or pip minimum requirements for `msk`?
-@TODO this installation method will likely change in the next release
+`msk` comes pre installed on the [Mark 1](https://mycroft.ai/documentation/mark-1), [Picroft](https://mycroft.ai/documentation/picroft) and in the `venv` of the Mycroft `git` installation as of v18.2.9b. The utility is self-contained and can be installed separately using `pip` by typing the following line into the terminal on your Linux system:
 
 ```bash
 pip3 install msk
@@ -60,7 +57,8 @@ Installing collected packages: smmap2, gitdb2, GitPython, typing, msm, pyjwt, py
 Successfully installed GitPython-2.1.10 gitdb2-2.0.3 msk-0.3.8 msm-0.5.14 pygithub-1.39 pyjwt-1.6.4 smmap2-2.0.3 typing-3.6.4
 ```
 
-@TODO is there a way to verify that `msk` has been successfully installed without running one of the other functions - ie like an `msk help` type command? Happy to raise an Issue for this or even try and write the PR.
+To check that the installation was successful `msk --help` can be run and should list the arguments and options for the utility.
+
 
 ## Usage
 
@@ -77,7 +75,7 @@ Please see this ASCII Cinema video to see the process for using `msk create`:
 
 [![msk-create](https://images2.imgbox.com/ab/25/6kbqKbXh_o.gif)](https://asciinema.org/a/X5pWLPOpsMLUPYp5kgswNm5Zu?speed=1.5)
 
-First, we need to activate the Python _virtual environment_.
+If using the msk delivered with the `mycroft-core` `git` installation, the Python _virtual environment_ needs to be activated. From the `mycroft-core` directory run
 
 `$ source .venv/bin/activate`
 
@@ -151,7 +149,7 @@ Please see this ASCII Cinema video to see the process for using `msk create-test
 
 [![msk-create-test](https://images2.imgbox.com/9c/c8/gLRS7xuL_o.gif)](https://asciinema.org/a/Ayzaj6QJbKGBfs2eIQWr11idH?speed=1.5)
 
-First, we need to activate the Python _virtual environment_.
+As before if the mycroft-core github installation is used make sure to activate the mycroft-core Python _virtual environment_. From the mycroft-core folder
 
 `$ source .venv/bin/activate`
 
@@ -196,7 +194,7 @@ Please see this ASCII Cinema video to see the process for using `msk upload`:
 
 [![msk-upload](https://images2.imgbox.com/35/5d/BCVxUxuh_o.gif)](https://asciinema.org/a/Bp1sORVnmVz9wYjZXfempTPoO?speed=1.5)
 
-First, we need to activate the Python _virtual environment_.
+If using the msk delivered with the mycroft-core github installation the Python _virtual environment_ needs to be activated. From the mycroft-core directory run
 
 `$ source .venv/bin/activate`
 
@@ -214,7 +212,7 @@ Compressing objects: 100% (339/339), done.
 Writing objects: 100% (531/531), 123.54 KiB | 0 bytes/s, done.
 Total 531 (delta 298), reused 304 (delta 177)
 remote: Resolving deltas: 100% (298/298), completed with 6 local objects.
-To https://github.com/KathyReid/mycroft-skills
+To https://github.com/YourGitHubUserName/mycroft-skills
  * [new branch]      add/feed-the-corgi -> add/feed-the-corgi
 Branch add/feed-the-corgi set up to track remote branch add/feed-the-corgi from fork.
 Created pull request:  https://github.com/MycroftAI/mycroft-skills/pull/392
