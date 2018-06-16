@@ -133,7 +133,7 @@ While a **Skill** is undergoing review, there are several *labels* used on the P
 * **update** This Skill is an update to an existing Skill
 * **waiting** This PR or Issue is waiting on the Skill Author to respond
 
-![alt text](https://mycroft.ai/wp-content/uploads/2018/05/skills-repo-labels.png "Mycroft Skills Repo labels")
+![alt text](https://mycroft.ai/wp-content/uploads/2018/06/mycroft-skils-repo-labels.png "Mycroft Skills Repo labels")
 
 ### What happens if the Skill Management Team can't test the Skill?
 
