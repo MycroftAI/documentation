@@ -5,7 +5,7 @@ author: Eric Jurgeson
 post_excerpt: "Mycroft has engaged two experienced audio hardware consultants for the Mark II's hardware design. With these two on board, the audio enclosure and design for manufacturing of Mark II are getting a big boost!"
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mark-ii-update-behind-the-scenes-hardware-team/
+  http://mycroft.ai/blog/mark-ii-update-behind-the-scenes-hardware-team/
 published: true
 post_date: 2018-06-20 10:00:38
 ---
