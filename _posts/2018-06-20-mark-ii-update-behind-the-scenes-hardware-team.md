@@ -26,4 +26,4 @@ post_date: 2018-06-20 10:00:38
 
 <span style="font-weight: 400;">Don’t have your Mark II yet? <a href="https://igg.me/at/mycroft/reft/1649210/blog" target="_blank" rel="noopener">Head over to Indiegogo</a> to reserve yours today!</span>
 
-Questions about Mark II's design and progress? Ask on the <a href="http://mycroft.ai/blog/mark-ii-update-behind-the-scenes-hardware-team/" target="_blank" rel="noopener">forum</a>!
+Questions about Mark II's design and progress? Ask on the <a href="https://community.mycroft.ai/t/mark-ii-update-behind-the-scenes-hardware-team/3996" target="_blank" rel="noopener">forum</a>!
