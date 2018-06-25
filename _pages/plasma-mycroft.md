@@ -9,12 +9,12 @@ published: false
 post_date: 2018-06-25 19:30:00
 ---
 + [Plasma-Mycroft User Guide](#plasma-mycroft-user-guide)
-  - [Getting Started](#getting-familiar-with-the-interface)
-  - [Troubleshooting](#troubleshooting-plasma-mycroft)
+- [Getting Started](#getting-familiar-with-the-interface)
+- [Troubleshooting](#troubleshooting-plasma-mycroft)
 + [Visual API Developers Guide For Plasma-Mycroft](#visual-display-api-developers-guide-for-plasma-mycroft)
-  -[HTML based Visual Skill Generation](#html-based-visual-skill-generation)
-  -[QML based Visual Skill Generation](#qml-based-visual-skill-generation)
-  -[Plasma-Mycroft Native Visual Skill](#plasma-mycroft-native-visual-skill)
+-[HTML based Visual Skill Generation](#html-based-visual-skill-generation)
+-[QML based Visual Skill Generation](#qml-based-visual-skill-generation)
+-[Plasma-Mycroft Native Visual Skill](#plasma-mycroft-native-visual-skill)
 
 PLASMA MYCROFT USER GUIDE
 =========================
