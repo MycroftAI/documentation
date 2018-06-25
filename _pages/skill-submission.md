@@ -13,6 +13,8 @@ post_date: 2017-12-02 22:35:25
 ---
 # Preparing your Skill for submission to the Mycroft Skills Repo
 
+_NOTE: To make Skill subsmission to the Mycroft Skills Repo a lot easier, we now recommend the [Mycroft Skills Kit](https://mycroft.ai/documentation/skills/msk)_
+
 - [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
     + [Generate a README.md file for your **Skill**](#generate-a-readmemd-file-for-your-skill)
     + [Add a Git submodule for your **Skill**](#add-a-git-submodule-for-your-skill)
