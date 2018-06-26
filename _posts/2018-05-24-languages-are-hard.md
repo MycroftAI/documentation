@@ -49,7 +49,7 @@ In the Voice Stack, the role of the Skill is to do the ‘heavy lifting’ and p
 
 The Mycroft skills system has supported multiple languages from the beginning.  To support a new language, each Skill must translate three different pieces:
 <h4>Vocabulary</h4>
-Independent directories within the Skill hold vocab for the various language codes.  For example, a skill written originally in English will have several files like <code>vocab\en-us\Word.voc</code>, with the English language pieces in the <code>*.voc</code> files.  Adding German support involves creating <code>vocab\de-de\Word.voc</code> files holding the German version of the same words.
+Independent directories within the Skill hold vocab for the various language codes.  For example, a skill written originally in English will have several files like <code>vocaben-usWord.voc</code>, with the English language pieces in the <code>*.voc</code> files.  Adding German support involves creating <code>vocabde-deWord.voc</code> files holding the German version of the same words.
 
 A Skill might also use regular expressions in parsing, contained in its<code>*.rx</code> files.  For a <code>regex</code> pattern match not only do these words differ between languages, but also the phrasing and placement of words changes.
 
