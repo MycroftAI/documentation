@@ -36,7 +36,7 @@ post_date: 2018-06-15 14:03:04
   * [Unit testing](#unit-testing)
   * [Configuration file for en-us](#configuration-file-for-en-us)
   * [Test file for en-us](#test-file-for-en-us)
-  
+
 
 The following functions are used to convert a Python datetime to a pronounceable string, for a given language [please refer to the Mycroft API documentation](http://mycroft-core.readthedocs.io/en/stable/))
 
@@ -117,22 +117,22 @@ The decade format will work on the two rightmost digits of the year. For `en-us`
 
 ```json
 "decade_format": {
-"1": {"match": "^\d$", "format": "{x}"},
-"2": {"match": "^1\d$", "format": "{xx}"},
-"3": {"match": "^\d0$", "format": "{x0}"},
-"4": {"match": "^[2-9]\d$", "format": "{x0} {x}"},
+"1": {"match": "^\\d$", "format": "{x}"},
+"2": {"match": "^1\\d$", "format": "{xx}"},
+"3": {"match": "^\\d0$", "format": "{x0}"},
+"4": {"match": "^[2-9]\\d$", "format": "{x0} {x}"},
 "default": "{number}"
 }
 ```
 
-The format consists of a list of four templates, and a default fall back template. The two rightmost digits of the year are converted to a string, and then matched to the value of the 'match' keyword above, starting from index 1. For instance, the first list entry match `^d$`, which is a single digit. The second list entry are for numbers between 10 and 19, the third matches multiples of ten, the fourth is for the rest, the 'default' entry will never be used. The double `''` in the `json` file is because it acts as an escape character.
+The format consists of a list of four templates, and a default fall back template. The two rightmost digits of the year are converted to a string, and then matched to the value of the 'match' keyword above, starting from index 1. For instance, the first list entry match `^\d$`, which is a single digit. The second list entry are for numbers between 10 and 19, the third matches multiples of ten, the fourth is for the rest, the 'default' entry will never be used. The double `\\` in the `json` file is used because it acts as an escape character.
 
 Let's use 1969 as an example with language en-us:
 
 The string '1969' is used, and the first match is index 4: `^[2-9]\d`. The components `{x0}` is `'sixty'` and `{x}` is `{nine}`, the end result is `'sixty nine'`. If the string had been 1910, the second list entry would have been used, since that would be the first match, even if the third entry also match '10'.
 
 In some languages, for instance Danish, the order of ones and tens is reversed, so 69 is pronounced 'ni og tres' (nine and sixty). The list entry for Danish would be:
-```"4": {"match": "^[2-9]\d$", "format": "{x} og {x0}"}```
+```"4": {"match": "^[2-9]\\d$", "format": "{x} og {x0}"}```
 
 The result of the decade format is `{formatted_decade}`, that can be used as a component in other formats.
 
@@ -152,7 +152,7 @@ The hundreds format will work on the three rightmost digits of the year. For `en
 
 ```json
 "hundreds_format": {
-"1": {"match": "^\d{3}$", "format": "{x_in_x00} hundred"},
+"1": {"match": "^\\d{3}$", "format": "{x_in_x00} hundred"},
 "default": "{number}"
 }
 ```
@@ -162,6 +162,9 @@ Lets use 1969 as an example with language en-us:
 The string '969' is used, and matches the first (and only) list entry. `{x_in_x00}` is nine, so the end result is `'nine hundred'`.
 
 The result of the hundreds format is `{formatted_hundreds}`, that can be used as a component in other formats.
+
+In the hundreds format, we are only interested in how to pronounce the first digit of the houndreds, we use the `year_format` to put together the decade, hundreds and thousand formats laster.
+
 
 ##### Components in the hundreds format
 
@@ -181,21 +184,32 @@ The thousand format will work on the four rightmost digits of the year. For `en-
 
 ```json
 "thousand_format": {
-"1": {"match": "^1[1-9]\d{2}$", "format": "{xx_in_xx00} hundred"},
-"2": {"match": "^\d{4}$", "format": "{x_in_x000} thousand"},
-"default": "{number}"
+    "1": {"match": "^\\d00\\d$", "format": "{x_in_x000} thousand"},
+    "2": {"match": "^1\\d00$", "format": "{xx_in_xx00} hundred"},
+    "3": {"match": "^\\d{2}00$", "format": "{x0_in_x000} {x_in_x00} hundred"},
+    "4": {"match": "^(1\\d{3})|(\\d0\\d{2})$", "format": "{xx_in_xx00}"},
+    "5": {"match": "^\\d{4}$", "format": "{x0_in_x000} {x_in_x00}"},
+    "default": "{number}"
 }
 ```
+The first list entry handles thousands and the first decade (year 0-9) of a thousand, e.g. 3004, or 2000.
 
-The first list entry handles 1100 to 1900, the second handles 1000, and 2000 and up.You may want to check out the 'en-au' for a more complex example, where 2017 is formatted to 'twenty seventeen' but 2007 is formatted to 'two thousand and seven'.
+The second list entry handles the hundreds in range 1100 to 1900 (e.g. 1800), and the third entry handles the hundreds above 1900, e.g. 2100.
+Note that since the first entry caught whole thousands, like 2000, the thrid entry will only catch the thousand with a century, like 2100.
+
+The fourth list entry handles whatever was not handled before, and are either below 2000, or before the first century of a thousand, e.g. 1864 or 3021.
+
+The fifth entry handles the rest, e.g. 2113.
+
+In the thousands format, we are only interested in how to pronounce the first two digits of the thousand, we use the `year_format` to put together the decade, hundreds and thousand formats later.
 
 Lets use 1969 as an example with language `en-us`:
 
-The string '1969' is used, it matches the first list entry and is formatted to 'nineteen hundred'
+The string `'1969'` is used, it matches the fourth list entry and is formatted to `'nineteen'`. In the `year_format` this will be combined with `'sixty nine'`  from the `decade_format`, to produce `'nineteen sixty nine'`.
 
 The result of the thousands format is `{formatted_thousands}`, that can be used as a component in other formats.
 
-##### Components in the thousand format 
+##### Components in the thousand format
 
 The following components can be used in the thousand format:
 
@@ -215,20 +229,31 @@ Even if `{formatted_decade}` and `{formatted_hundreds}` can be used as a compone
 This section contains information on how to format a pronounceable year. For `en-us` the configuration looks like this:
 
 ```json
-"year_format": {
-"1": {"match": "^\d\d?$", "format": "{formatted_decade} {bc}"},
-"2": {"match": "^\d00$", "format": "{formatted_hundreds} {bc}"},
-"3": {"match": "^\d{3}$", "format": "{formatted_hundreds} and {formatted_decade} {bc}"},
-"4": {"match": "^(1\d00)|([2-9]000)$", "format": "{formatted_thousand} {bc}"},
-"5": {"match": "^\d{2}00$", "format": "{formatted_thousand} {formatted_hundreds} {bc}"},
-"6": {"match": "^(1\d{3})|(\d0\d{2})$", "format": "{formatted_thousand} and {formatted_decade} {bc}"},
-"7": {"match": "^\d{4}$", "format": "{formatted_thousand} {formatted_hundreds} and {formatted_decade} {bc}"},
-"default": "{year} {bc}",
-"bc": "b.c."
+  "year_format": {
+    "1": {"match": "^\\d\\d?$", "format": "{formatted_decade} {bc}"},
+    "2": {"match": "^\\d00$", "format": "{formatted_hundreds} {bc}"},
+    "3": {"match": "^\\d{3}$", "format": "{formatted_hundreds} {formatted_decade} {bc}"},
+    "4": {"match": "^\\d{2}00$", "format": "{formatted_thousand} {bc}"},
+    "5": {"match": "^\\d00\\d$", "format": "{formatted_thousand} {formatted_decade} {bc}"},
+    "6": {"match": "^\\d{2}0\\d$", "format": "{formatted_thousand} oh {formatted_decade} {bc}"},
+    "7": {"match": "^\\d{4}$", "format": "{formatted_thousand} {formatted_decade} {bc}"},
+    "default": "{year} {bc}",
+  "bc": "b.c."
 }
 ```
 
-The first entry handles years below 100. The second entry handles years below 1000, that are multiples of 100. The third entry handles years below 1000 (years below 1000, that are multiples of 100, are caught by the second entry). The fourth entry handles years in the range 1100 to 1900 that are multiples of 100, and years that are multiples of 1000. This allows for instance 'eighteen hundred' and 'three thousand'. The fifth entry handles years multiple of 100, that has not been matched before. For instance 'two thousand four hundred'. The sixth entry handles years int the range 1100 to 1900, and years before the first century, when part of a millennium. This allows for instance 'eighteen hundred and forty one' and 'two thousand and five'. The seventh entry handles the rest of the years, up to 9999. For instance "two thousand one hundred and forty five"
+The first entry handles years below 100, e.g. 22 (twenty two).
+
+The second entry handles years below 1000, that are multiples of 100, e.g. 800 (eight hundred).
+
+The third entry handles years below 1000, that are not multiples of 100 (they were caught by the second entry), e.g. 832 (eight hundred thirty two).
+
+The fourth entry handles years that are multiples of 100, e.g. 2000 (two thousand).
+
+The fifth entry handles the first decade of a millennia, e.g. 2001 (two thousand one).
+The sixth entry handles the first decade of other years than millennia (millennia was caught earlier), e.g. 2101 (twenty one oh one).
+
+The sevneth entry handles the rest, e.g. 2018 (twenty eighteen).
 
 The default entry is used if the year is larger than 9999.
 
@@ -252,12 +277,12 @@ This section contains information on how to format a pronounceable date. For `en
 
 ```json
 "date_format": {
-"date_full": "{weekday}, {month} the {day}, {formatted_year}",
-"date_full_no_year": "{weekday}, {month} the {day}",
-"date_full_no_year_month": "{weekday}, the {day}",
-"today": "today",
-"tomorrow": "tomorrow",
-"yesterday": "yesterday"
+	"date_full": "{weekday}, {month} {day}, {formatted_year}",
+	"date_full_no_year": "{weekday}, {month} {day}",
+	"date_full_no_year_month": "{weekday}, {day}",
+	"today": "today",
+	"tomorrow": "tomorrow",
+	"yesterday": "yesterday"
 }
 ```
 
@@ -266,7 +291,7 @@ The `nice_date()` function takes an optional now parameter in addition to the `d
 If your language don't have, for instance, a tradition for saying yesterday, it is of cause possible to use arguments here instead. For example:
 
 ```json
-"yesterday": "{weekday}, {month} the {day}, {formatted_year}"
+"yesterday": "{weekday}, {month} {day}, {formatted_year}"
 ```
 will create the same output as `date_full` above, in case of yesterday.
 
@@ -321,7 +346,10 @@ A map from the month number to a pronounceable month
 A new language requires new unit tests, to ensure that it produce correct results. Unit tests that assert that all years between 1 and 9999 produce a non empty string, and that all dates in a year produce a non empty string, already exists. The unit tests will automatically find and test a new language.
 
 To prove the likelihood that formatting makes sense, a configuration file must be provided, that lists the unit tests. One unit test file exists for each language, it is placed in:
-```mycroft/res/text//date_time_test.json```
+
+```
+mycroft/res/text//date_time_test.json
+```
 
 Section [Test file for en-us](# Test file for en-us) contains the test file for the en-us language. It has three sections:
 
@@ -337,170 +365,179 @@ For each section there is a list, the index must start at 1 and continue in incr
 
 ```json
 {
-"decade_format": {
-"1": {"match": "^\d$", "format": "{x}"},
-"2": {"match": "^1\d$", "format": "{xx}"},
-"3": {"match": "^\d0$", "format": "{x0}"},
-"4": {"match": "^[2-9]\d$", "format": "{x0} {x}"},
-"default": "{number}"
-},
-"hundreds_format": {
-"1": {"match": "^\d{3}$", "format": "{x_in_x00} hundred"},
-"default": "{number}"
-},
-"thousand_format": {
-"1": {"match": "^1[1-9]\d{2}$", "format": "{xx_in_xx00} hundred"},
-"2": {"match": "^\d{4}$", "format": "{x_in_x000} thousand"},
-"default": "{number}"
-},
-"year_format": {
-"1": {"match": "^\d\d?$", "format": "{formatted_decade} {bc}"},
-"2": {"match": "^\d00$", "format": "{formatted_hundreds} {bc}"},
-"3": {"match": "^\d{3}$", "format": "{formatted_hundreds} and {formatted_decade} {bc}"},
-"4": {"match": "^(1\d00)|([2-9]000)$", "format": "{formatted_thousand} {bc}"},
-"5": {"match": "^\d{2}00$", "format": "{formatted_thousand} {formatted_hundreds} {bc}"},
-"6": {"match": "^(1\d{3})|(\d0\d{2})$", "format": "{formatted_thousand} and {formatted_decade} {bc}"},
-"7": {"match": "^\d{4}$", "format": "{formatted_thousand} {formatted_hundreds} and {formatted_decade} {bc}"},
-"default": "{year} {bc}",
-"bc": "b.c."
-},
-"date_format": {
-"date_full": "{weekday}, {month} the {day}, {formatted_year}",
-"date_full_no_year": "{weekday}, {month} the {day}",
-"date_full_no_year_month": "{weekday}, the {day}",
-"today": "today",
-"tomorrow": "tomorrow",
-"yesterday": "yesterday"
-},
-"date_time_format": {
-"date_time": "{formatted_date} at {formatted_time}"
-},
-"weekday": {
-"0": "monday",
-"1": "tuesday",
-"2": "wednesday",
-"3": "thursday",
-"4": "friday",
-"5": "saturday",
-"6": "sunday"
-},
-"date": {
-"1": "first",
-"2": "second",
-"3": "third",
-"4": "fourth",
-"5": "fifth",
-"6": "sixth",
-"7": "seventh",
-"8": "eighth",
-"9": "ninth",
-"10": "tenth",
-"11": "eleventh",
-"12": "twelfth",
-"13": "thirteenth",
-"14": "fourteenth",
-"15": "fifteenth",
-"16": "sixteenth",
-"17": "seventeenth",
-"18": "eighteenth",
-"19": "nineteenth",
-"20": "twentieth",
-"21": "twenty-first",
-"22": "twenty-second",
-"23": "twenty-third",
-"24": "twenty-fourth",
-"25": "twenty-fifth",
-"26": "twenty-sixth",
-"27": "twenty-seventh",
-"28": "twenty-eighth",
-"29": "twenty-ninth",
-"30": "thirtieth",
-"31": "thirty-first"
-},
-"month": {
-"1": "january",
-"2": "february",
-"3": "march",
-"4": "april",
-"5": "may",
-"6": "june",
-"7": "july",
-"8": "august",
-"9": "september",
-"10": "october",
-"11": "november",
-"12": "december"
-},
-"number": {
-"0": "zero",
-"1": "one",
-"2": "two",
-"3": "three",
-"4": "four",
-"5": "five",
-"6": "six",
-"7": "seven",
-"8": "eight",
-"9": "nine",
-"10": "ten",
-"11": "eleven",
-"12": "twelve",
-"13": "thirteen",
-"14": "fourteen",
-"15": "fifteen",
-"16": "sixteen",
-"17": "seventeen",
-"18": "eighteen",
-"19": "nineteen",
-"20": "twenty",
-"30": "thirty",
-"40": "forty",
-"50": "fifty",
-"60": "sixty",
-"70": "seventy",
-"80": "eighty",
-"90": "ninety",
-"100": "hundred",
-"1000": "thousand"
+  "decade_format": {
+    "1": {"match": "^\\d$", "format": "{x}"},
+    "2": {"match": "^1\\d$", "format": "{xx}"},
+    "3": {"match": "^\\d0$", "format": "{x0}"},
+    "4": {"match": "^[2-9]\\d$", "format": "{x0} {x}"},
+    "default": "{number}"
+  },
+    "hundreds_format": {
+    "1": {"match": "^\\d{3}$", "format": "{x_in_x00} hundred"},
+    "default": "{number}"
+  },
+    "thousand_format": {
+    "1": {"match": "^\\d00\\d$", "format": "{x_in_x000} thousand"},
+    "2": {"match": "^1\\d00$", "format": "{xx_in_xx00} hundred"},
+    "3": {"match": "^\\d{2}00$", "format": "{x0_in_x000} {x_in_x00} hundred"},
+    "4": {"match": "^(1\\d{3})|(\\d0\\d{2})$", "format": "{xx_in_xx00}"},
+    "5": {"match": "^\\d{4}$", "format": "{x0_in_x000} {x_in_x00}"},
+    "default": "{number}"
+  },
+    "year_format": {
+    "1": {"match": "^\\d\\d?$", "format": "{formatted_decade} {bc}"},
+    "2": {"match": "^\\d00$", "format": "{formatted_hundreds} {bc}"},
+    "3": {"match": "^\\d{3}$", "format": "{formatted_hundreds} {formatted_decade} {bc}"},
+    "4": {"match": "^\\d{2}00$", "format": "{formatted_thousand} {bc}"},
+    "5": {"match": "^\\d00\\d$", "format": "{formatted_thousand} {formatted_decade} {bc}"},
+    "6": {"match": "^\\d{2}0\\d$", "format": "{formatted_thousand} oh {formatted_decade} {bc}"},
+    "7": {"match": "^\\d{4}$", "format": "{formatted_thousand} {formatted_decade} {bc}"},
+    "default": "{year} {bc}",
+    "bc": "b.c."
+  },
+    "date_format": {
+    "date_full": "{weekday}, {month} {day}, {formatted_year}",
+    "date_full_no_year": "{weekday}, {month} {day}",
+    "date_full_no_year_month": "{weekday}, {day}",
+    "today": "today",
+    "tomorrow": "tomorrow",
+    "yesterday": "yesterday"
+  },
+    "date_time_format": {
+    "date_time": "{formatted_date} at {formatted_time}"
+  },
+    "weekday": {
+    "0": "monday",
+    "1": "tuesday",
+    "2": "wednesday",
+    "3": "thursday",
+    "4": "friday",
+    "5": "saturday",
+    "6": "sunday"
+  },
+  "date": {
+    "1": "first",
+    "2": "second",
+    "3": "third",
+    "4": "fourth",
+    "5": "fifth",
+    "6": "sixth",
+    "7": "seventh",
+    "8": "eighth",
+    "9": "ninth",
+    "10": "tenth",
+    "11": "eleventh",
+    "12": "twelfth",
+    "13": "thirteenth",
+    "14": "fourteenth",
+    "15": "fifteenth",
+    "16": "sixteenth",
+    "17": "seventeenth",
+    "18": "eighteenth",
+    "19": "nineteenth",
+    "20": "twentieth",
+    "21": "twenty-first",
+    "22": "twenty-second",
+    "23": "twenty-third",
+    "24": "twenty-fourth",
+    "25": "twenty-fifth",
+    "26": "twenty-sixth",
+    "27": "twenty-seventh",
+    "28": "twenty-eighth",
+    "29": "twenty-ninth",
+    "30": "thirtieth",
+    "31": "thirty-first"
+  },
+  "month": {
+    "1": "january",
+    "2": "february",
+    "3": "march",
+    "4": "april",
+    "5": "may",
+    "6": "june",
+    "7": "july",
+    "8": "august",
+    "9": "september",
+    "10": "october",
+    "11": "november",
+    "12": "december"
+  },
+  "number": {
+    "0": "zero",
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four",
+    "5": "five",
+    "6": "six",
+    "7": "seven",
+    "8": "eight",
+    "9": "nine",
+    "10": "ten",
+    "11": "eleven",
+    "12": "twelve",
+    "13": "thirteen",
+    "14": "fourteen",
+    "15": "fifteen",
+    "16": "sixteen",
+    "17": "seventeen",
+    "18": "eighteen",
+    "19": "nineteen",
+    "20": "twenty",
+    "30": "thirty",
+    "40": "forty",
+    "50": "fifty",
+    "60": "sixty",
+    "70": "seventy",
+    "80": "eighty",
+    "90": "ninety"
+  }
 }
-}
-
 ```
 
 ## Test file for en-us
-```
+```json
 {
-"test_nice_year": {
-"1": {"datetime_param": "2017, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "two thousand and seventeen"},
-"2": {"datetime_param": "1984, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "nineteen hundred and eighty four"},
-"3": {"datetime_param": "1906, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "nineteen hundred and six"},
-"4": {"datetime_param": "1802, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "eighteen hundred and two" },
-"5": {"datetime_param": "806, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "eight hundred and six" },
-"6": {"datetime_param": "1800, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "eighteen hundred" },
-"7": {"datetime_param": "1000, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "one thousand" },
-"8": {"datetime_param": "2000, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "two thousand" },
-"9": {"datetime_param": "99, 1, 31, 13, 22, 3", "bc": "True", "assertEqual": "ninety nine b.c." },
-"10": {"datetime_param": "5, 1, 31, 13, 22, 3", "bc": "True", "assertEqual": "five b.c." },
-"11": {"datetime_param": "3120, 1, 31, 13, 22, 3", "bc": "True", "assertEqual": "three thousand one hundred and twenty b.c." },
-"12": {"datetime_param": "3241, 1, 31, 13, 22, 3", "bc": "True", "assertEqual": "three thousand two hundred and forty one b.c." },
-"13": {"datetime_param": "1001, 1, 31, 13, 22, 3", "bc": "False", "assertEqual": "one thousand and one" },
-"14": {"datetime_param": "2100, 1, 31, 13, 22, 3", "bc": "False", "assertEqual": "two thousand one hundred" },
-"15": {"datetime_param": "5200, 1, 31, 13, 22, 3", "bc": "False", "assertEqual": "five thousand two hundred" }
-},
-"test_nice_date": {
-"1": {"datetime_param": "2017, 1, 31, 0, 2, 3", "now": "None", "assertEqual": "tuesday, january the thirty-first, two thousand and seventeen"},
-"2": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2017, 1, 1, 0, 2, 3", "assertEqual": "sunday, february the fourth, two thousand and eighteen"},
-"3": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 1, 1, 0, 2, 3", "assertEqual": "sunday, february the fourth"},
-"4": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 2, 1, 0, 2, 3", "assertEqual": "sunday, the fourth"},
-"5": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 2, 3, 0, 2, 3", "assertEqual": "tomorrow"},
-"6": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 2, 4, 0, 2, 3", "assertEqual": "today"},
-"7": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 2, 5, 0, 2, 3", "assertEqual": "yesterday"},
-"8": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 2, 6, 0, 2, 3", "assertEqual": "sunday, february the fourth"},
-"9": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2019, 2, 6, 0, 2, 3", "assertEqual": "sunday, february the fourth, two thousand and eighteen"}
-},
-"test_nice_date_time": {
-"1": {"datetime_param": "2017, 1, 31, 13, 22, 3", "now": "None", "use_24hour": "False", "use_ampm": "True", "assertEqual": "tuesday, january the thirty-first, two thousand and seventeen at one twenty two PM"},
-"2": {"datetime_param": "2017, 1, 31, 13, 22, 3", "now": "None", "use_24hour": "True", "use_ampm": "False", "assertEqual": "tuesday, january the thirty-first, two thousand and seventeen at thirteen twenty two"}
-}
+  "test_nice_year": {
+    "1": {"datetime_param": "1, 1, 31, 13, 22, 3", "bc": "True", "assertEqual": "one b.c." },
+    "2": {"datetime_param": "10, 1, 31, 13, 22, 3", "bc": "True", "assertEqual": "ten b.c." },
+    "3": {"datetime_param": "92, 1, 31, 13, 22, 3", "bc": "True", "assertEqual": "ninety two b.c." },
+    "4": {"datetime_param": "803, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "eight hundred three" },
+    "5": {"datetime_param": "811, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "eight hundred eleven" },
+    "6": {"datetime_param": "454, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "four hundred fifty four" },
+    "7": {"datetime_param": "1005, 1, 31, 13, 22, 3", "bc": "False", "assertEqual": "one thousand five" },
+    "8": {"datetime_param": "1012, 1, 31, 13, 22, 3", "bc": "False", "assertEqual": "ten twelve" },
+    "9": {"datetime_param": "1046, 1, 31, 13, 22, 3", "bc": "False", "assertEqual": "ten forty six" },
+    "10": {"datetime_param": "1807, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "eighteen oh seven" },
+    "11": {"datetime_param": "1717, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "seventeen seventeen" },
+    "12": {"datetime_param": "1988, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "nineteen eighty eight"},
+    "13": {"datetime_param": "2009, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "two thousand nine"},
+    "14": {"datetime_param": "2018, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "twenty eighteen"},
+    "15": {"datetime_param": "2021, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "twenty twenty one"},
+    "16": {"datetime_param": "2030, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "twenty thirty"},
+    "17": {"datetime_param": "2100, 1, 31, 13, 22, 3", "bc": "False", "assertEqual": "twenty one hundred" },
+    "18": {"datetime_param": "1000, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "one thousand" },
+    "19": {"datetime_param": "2000, 1, 31, 13, 22, 3", "bc": "None", "assertEqual": "two thousand" },
+    "20": {"datetime_param": "3120, 1, 31, 13, 22, 3", "bc": "True", "assertEqual": "thirty one twenty b.c." },
+    "21": {"datetime_param": "3241, 1, 31, 13, 22, 3", "bc": "True", "assertEqual": "thirty two forty one b.c." },
+    "22": {"datetime_param": "5200, 1, 31, 13, 22, 3", "bc": "False", "assertEqual": "fifty two hundred" },
+    "23": {"datetime_param": "1100, 1, 31, 13, 22, 3", "bc": "False", "assertEqual": "eleven hundred" },
+    "24": {"datetime_param": "2100, 1, 31, 13, 22, 3", "bc": "False", "assertEqual": "twenty one hundred" }
+  },
+  "test_nice_date": {
+    "1": {"datetime_param": "2017, 1, 31, 0, 2, 3", "now": "None", "assertEqual": "tuesday, january thirty-first, twenty seventeen"},
+    "2": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2017, 1, 1, 0, 2, 3", "assertEqual": "sunday, february fourth, twenty eighteen"},
+    "3": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 1, 1, 0, 2, 3", "assertEqual": "sunday, february fourth"},
+    "4": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 2, 1, 0, 2, 3", "assertEqual": "sunday, fourth"},
+    "5": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 2, 3, 0, 2, 3", "assertEqual": "tomorrow"},
+    "6": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 2, 4, 0, 2, 3", "assertEqual": "today"},
+    "7": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 2, 5, 0, 2, 3", "assertEqual": "yesterday"},
+    "8": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2018, 2, 6, 0, 2, 3", "assertEqual": "sunday, february fourth"},
+    "9": {"datetime_param": "2018, 2, 4, 0, 2, 3", "now": "2019, 2, 6, 0, 2, 3", "assertEqual": "sunday, february fourth, twenty eighteen"}
+  },
+  "test_nice_date_time": {
+    "1": {"datetime_param": "2017, 1, 31, 13, 22, 3", "now": "None", "use_24hour": "False", "use_ampm": "True", "assertEqual": "tuesday, january thirty-first, twenty seventeen at one twenty two PM"},
+    "2": {"datetime_param": "2017, 1, 31, 13, 22, 3", "now": "None", "use_24hour": "True", "use_ampm": "False", "assertEqual": "tuesday, january thirty-first, twenty seventeen at thirteen twenty two"}
+  }
 }
 ```
