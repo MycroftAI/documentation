@@ -11,7 +11,7 @@ post_excerpt: >
   technology.
 layout: post
 permalink: >
-  https://mycroft.ai/blog/myzilla-mycroft-at-the-mozilla-all-hands/
+  http://mycroft.ai/blog/myzilla-mycroft-at-the-mozilla-all-hands/
 published: true
 post_date: 2018-06-27 10:00:05
 ---
@@ -33,17 +33,17 @@ We are also both working on implementations of the <a href="https://ai.googleblo
 
 DeepSpeech is young (currently version 0.2.0-alpha.6) and still rapidly evolving on both the code and the published models. The current model is noticeably weak in noisy environments and with rapid, conversational speech. The Mycroft community is providing access to the kind of data needed to train a model to handle this. I'm very excited about what we can achieve jointly!
 
-[caption id="attachment_39078" align="aligncenter" width="2592"]<img class="size-full wp-image-39078" src="https://mycroft.ai/wp-content/uploads/2018/06/Mozilla_MachineLearning_Team.jpg" alt="Mozilla's Machine Learning team" width="2592" height="1943" /> With the Mozilla's Machine Learning team (missing Reuben, sorry!)[/caption]
+[caption id="attachment_39078" align="aligncenter" width="2592"]<img class="size-full wp-image-39078" src="https://mycroft.ai/wp-content/uploads/2018/06/Mozilla_MachineLearning_Team.jpg" alt="Mozilla's Machine Learning team" width="2592" height="1943" /> With Mozilla's Machine Learning team (missing Reuben, sorry!)[/caption]
 <h1><a href="https://voice.mozilla.org/" target="_blank" rel="noopener">Common Voice</a></h1>
 Mozilla began Common Voice to gather the kind of language data needed for building technologies like DeepSpeech. While their <a href="https://creativecommons.org/share-your-work/public-domain/cc0/" target="_blank" rel="noopener">CC0</a> (aka "public domain") data licensing model is different to Mycroft's OpenVoice dataset, the collaborative ethos is very similar. We are sharing technical and social learning about working with a community to achieve better things together in data gathering and tagging – for a spectrum of languages.
 
 Through this team, I met with another volunteer, Dewi Jones of the University of Bangor in Wales. He and I had several discussions about what it will take to build a fully-functional Welsh Mycroft as part of their <a href="http://techiaith.cymru/" target="_blank" rel="noopener">Welsh Language Technology</a> program. FFantastig!
 
-[caption id="attachment_39077" align="aligncenter" width="2429"]<img class="size-full wp-image-39077" src="https://mycroft.ai/wp-content/uploads/2018/06/Mozilla_CommonVoice_Team.jpg" alt="Mozilla's Common Voice team" width="2429" height="1366" /> With the Mozilla's Common Voice team[/caption]
+[caption id="attachment_39077" align="aligncenter" width="2429"]<img class="size-full wp-image-39077" src="https://mycroft.ai/wp-content/uploads/2018/06/Mozilla_CommonVoice_Team.jpg" alt="Mozilla's Common Voice team" width="2429" height="1366" /> With Mozilla's Common Voice team[/caption]
 <h1><a href="https://iot.mozilla.org/" target="_blank" rel="noopener">Project Things</a></h1>
 This new IoT framework looks to simplify and unify the physical world with web technologies into a Web of Things. Mozilla integrated <a href="https://mycroft.ai/documentation/adapt" target="_blank" rel="noopener">Mycroft's Adapt intent parser</a> into the platform several months ago to simplify working with all sorts of natural language commands. They are also working hard on their <a href="https://iot.mozilla.org/gateway/" target="_blank" rel="noopener">Things Gateway</a> built on the Raspberry Pi where Mycroft/Picroft would obviously offer some powerful possibilities.
 
-[caption id="attachment_39079" align="aligncenter" width="4032"]<img class="size-full wp-image-39079" src="https://mycroft.ai/wp-content/uploads/2018/06/Mozilla_ProjectThings_Team.jpg" alt="Mozilla's Project Things team" width="4032" height="1960" /> With the Mozilla's Project Things team[/caption]
+[caption id="attachment_39079" align="aligncenter" width="4032"]<img class="size-full wp-image-39079" src="https://mycroft.ai/wp-content/uploads/2018/06/Mozilla_ProjectThings_Team.jpg" alt="Mozilla's Project Things team" width="4032" height="1960" /> With Mozilla's Project Things team[/caption]
 <h1>Scout</h1>
 This caused a bit of a stir in the <a href="https://www.cnet.com/news/mozilla-working-on-scout-a-voice-controlled-web-browser-project/" target="_blank" rel="noopener">tech journalism</a> world! I won't say much, but really Scout is just an early experiment in how consumers think of voice technologies and how they might interact in collaboration with, and independently of, a screen. Mozilla has spent almost all of its existence developing the technologies for today's web, and these are inherently visual. We are all learning how consumers think of speech differently than written text.
 <h1>And More...</h1>
