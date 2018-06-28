@@ -9,10 +9,11 @@ post_excerpt: >
   accepting of all.
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycroft-celebrates-pride/
+  http://mycroft.ai/blog/mycroft-celebrates-pride/
 published: true
 post_date: 2018-06-28 08:00:13
 ---
+<h6>Don't miss your chance to <a href="https://www.startengine.com/mycroft-ai">invest in Mycroft AI</a>, the voice of the future.</h6>
 <h1><span style="font-weight: 400;">Celebrating Pride</span></h1>
 <span style="font-weight: 400;">To honor Pride Month - sorry we’re a little late to the party -  and the many diverse, and often difficult, journeys it reflects, we’re delighted to give our logo a colorful makeover. Each of the colors of the Pride rainbow has meaning, and we’ve reflected on this at Mycroft and how we embody - our could better embody - these values in what we do, and the products and services we deliver.</span><span style="font-weight: 400;"><a href="https://mycroft.ai/wp-content/uploads/2018/06/mycroft-logo-stacked-gay-pride-rainbow-bg.png"><img class="size-full wp-image-39154 alignnone" src="https://mycroft.ai/wp-content/uploads/2018/06/mycroft-logo-stacked-gay-pride-rainbow-bg.png" alt="" width="340" height="340" /></a><a href="https://mycroft.ai/wp-content/uploads/2018/06/mycroft-logo-stacked-gay-pride-white-bg.png"><img class="size-full wp-image-39155 alignright" src="https://mycroft.ai/wp-content/uploads/2018/06/mycroft-logo-stacked-gay-pride-white-bg.png" alt="" width="340" height="340" /></a></span>
 <ul>
