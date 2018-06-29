@@ -37,8 +37,8 @@ _NOTE: KDE Neon only provides `plasma-mycroft` packages for the [Git Unstable Ed
 
 ``` sudo apt install plasma-mycroft ```
 
-PLASMA-MYCROFT-INSTALLER
-=========================
+## Mycroft for Plasma installer
+
 |Supported Distributions|
 |---|
 |Debian Testing|
@@ -47,7 +47,8 @@ PLASMA-MYCROFT-INSTALLER
 |Fedora 27, 28|
 
 Download The Latest Installer AppImage From: https://github.com/AIIX/mycroft-installer/releases
-* Please Note: This installer also provides support for installing Mycroft-Core & Plasma-Mycroft on Arm64 and ArmHF architecture.
+
+_NOTE: This installer also provides support for installing `mycroft-core` and `plasma-mycroft` on Arm64 and ArmHF architecture._
 
 PLASMA-MYCROFT-INSTALLER-SCRIPTS
 ================================
