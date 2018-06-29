@@ -12,6 +12,11 @@ post_date: 2018-06-29 12:29:29
 
 - [Mycroft for Plasma](#mycroft-for-plasma)
   * [Getting started](#getting-started)
+    + [Distribution packages](#distribution-packages)
+    + [KDE Neon git unstable](#kde-neon-git-unstable)
+  * [Mycroft for Plasma installer](#mycroft-for-plasma-installer)
+    + [Mycroft for Plasma installer scripts](#mycroft-for-plasma-installer-scripts)
+    + [Mycroft for Plasma manual installation](#mycroft-for-plasma-manual-installation)
   * [The Mycroft for Plasma interface](#the-mycroft-for-plasma-interface)
   * [Troubleshooting Mycroft for Plasma](#troubleshooting-mycroft-for-plasma)
     + [Debugging connection errors](#debugging-connection-errors)
