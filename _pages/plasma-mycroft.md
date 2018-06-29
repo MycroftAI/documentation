@@ -25,7 +25,7 @@ GETTING STARTED
 * Please Note: For Installation Instructions Please Refer To The Installation Guide(https://mycroft.ai/documentation/linux)
 
 ### Getting Familiar With The Interface
-![Screenshot](https://raw.githubusercontent.com/AIIX/docs-rewrite/master/img/plasmoid-gs1.png)
+![Plasma Mycroft Screenshot](https://mycroft.ai/wp-content/uploads/2018/06/plasmoid-gs1.png)
 
 TROUBLESHOOTING PLASMA-MYCROFT
 ==============================
