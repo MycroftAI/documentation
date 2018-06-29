@@ -35,7 +35,7 @@ Currently, there are builds and/or instructions for installing Mycroft on:
 * Debian / Ubuntu
 * Arch
 * Mint
-* KDE Plasmoid
+* [KDE Plasma 5 Supported Distributions For Plasma-Mycroft Widget](https://mycroft.ai/documentation/plasma)
 
 ### Prerequisites
 

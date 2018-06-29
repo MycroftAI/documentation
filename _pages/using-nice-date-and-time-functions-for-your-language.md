@@ -129,9 +129,10 @@ The format consists of a list of four templates, and a default fall back templat
 
 Let's use 1969 as an example with language en-us:
 
-The string '1969' is used, and the first match is index 4: `^[2-9]\d`. The components `{x0}` is `'sixty'` and `{x}` is `{nine}`, the end result is `'sixty nine'`. If the string had been 1910, the second list entry would have been used, since that would be the first match, even if the third entry also match '10'.
+The string '1969' is used, and the first match is index 4: `^[2-9]d`. The components `{x0}` is `'sixty'` and `{x}` is `{nine}`, the end result is `'sixty nine'`. If the string had been 1910, the second list entry would have been used, since that would be the first match, even if the third entry also match '10'.
 
 In some languages, for instance Danish, the order of ones and tens is reversed, so 69 is pronounced 'ni og tres' (nine and sixty). The list entry for Danish would be:
+
 ```"4": {"match": "^[2-9]\\d$", "format": "{x} og {x0}"}```
 
 The result of the decade format is `{formatted_decade}`, that can be used as a component in other formats.
