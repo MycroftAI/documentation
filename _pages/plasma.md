@@ -2,7 +2,7 @@
 ID: 39182
 post_title: Mycroft for KDE Plasma
 author: Kathy Reid
-post_excerpt: ""
+post_excerpt: 'Learn how to create Skills for Mycroft for Plasma - Mycroft on the KDE Plasma desktop environment. '
 layout: page
 permalink: http://mycroft.ai/documentation/plasma/
 published: true
