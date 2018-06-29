@@ -33,7 +33,7 @@ Check your Linux distribution for `mycroft-core` and `plasma-mycroft` packages.
 
 ### KDE Neon git unstable
 
-_NOTE: KDE Neon only provides `plasma-mycroft` packages for the [Git Unstable Edition](https://neon.kde.org/download). This installation method requires that `mycroft-core` be installed in your home folder following the [guide here]https://mycroft.ai/documentation/linux/()_.
+_NOTE: KDE Neon only provides `plasma-mycroft` packages for the [Git Unstable Edition](https://neon.kde.org/download). This installation method requires that `mycroft-core` be installed in your home folder following the [guide here](https://mycroft.ai/documentation/linux/)_.
 
 ``` sudo apt install plasma-mycroft ```
 
@@ -50,13 +50,13 @@ Download The Latest Installer AppImage From: https://github.com/AIIX/mycroft-ins
 
 _NOTE: This installer also provides support for installing `mycroft-core` and `plasma-mycroft` on Arm64 and ArmHF architecture._
 
-PLASMA-MYCROFT-INSTALLER-SCRIPTS
-================================
-* Installation scripts are available at https://github.com/MycroftAI/installers
+### Mycroft for Plasma installer scripts
 
-PLASMA-MYCROFT-MANUAL-INSTALLATION
-==================================
-Please Note: This Installation Method Requires Mycroft-Core To Be Installed In Your Home Folder Following The Guide Available Here: https://mycroft.ai/documentation/linux/
+Installation scripts are available at https://github.com/MycroftAI/installers
+
+### Mycroft for Plasma manual installation
+
+_NOTE: This installation method requires `mycroft-core` to be installed in your home folder following the [guide available here](https://mycroft.ai/documentation/linux/).
 
 ```
 git clone https://anongit.kde.org/plasma-mycroft.git
@@ -72,8 +72,6 @@ sudo chmod +x /usr/share/plasma/plasmoids/org.kde.plasma.mycroftplasmoid/content
 sudo chmod +x /usr/share/plasma/plasmoids/org.kde.plasma.mycroftplasmoid/contents/code/pkgstopservice.sh
 
 ```
-
-[Installation instructions for Mycroft on Linux](https://mycroft.ai/documentation/linux)
 
 ## The Mycroft for Plasma interface
 
