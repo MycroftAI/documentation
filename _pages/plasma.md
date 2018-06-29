@@ -23,9 +23,54 @@ post_date: 2018-06-29 12:29:29
     + [Wikipedia Skill QML Example](#wikipedia-skill-qml-example)
   * [Mycroft for Plasma native visual Skill](#mycroft-for-plasma-native-visual-skill)
 
-This is a general User Guide for Plasma Mycroft on the KDE Desktop Platform. This User Guide aims to provide an overview of getting started with Mycroft AI on your [KDE Plasma Desktop](https://www.kde.org/plasma-desktop).
+This is a general installation and user guide for Plasma Mycroft on the [KDE Plasma Desktop platform](https://www.kde.org/plasma-desktop).
 
 ## Getting started
+
+### Distribution packages
+
+Check your Linux distribution for `mycroft-core` and `plasma-mycroft` packages. 
+
+### KDE Neon git unstable
+
+_NOTE: KDE Neon only provides `plasma-mycroft` packages for the [Git Unstable Edition](https://neon.kde.org/download). This installation method requires that `mycroft-core` be installed in your home folder following the [guide here]https://mycroft.ai/documentation/linux/()_.
+
+``` sudo apt install plasma-mycroft ```
+
+PLASMA-MYCROFT-INSTALLER
+=========================
+|Supported Distributions|
+|---|
+|Debian Testing|
+|KDE Neon Xenial, Bionic|
+|Kubuntu 17.10, 18.04|
+|Fedora 27, 28|
+
+Download The Latest Installer AppImage From: https://github.com/AIIX/mycroft-installer/releases
+* Please Note: This installer also provides support for installing Mycroft-Core & Plasma-Mycroft on Arm64 and ArmHF architecture.
+
+PLASMA-MYCROFT-INSTALLER-SCRIPTS
+================================
+* Installation scripts are available at https://github.com/MycroftAI/installers
+
+PLASMA-MYCROFT-MANUAL-INSTALLATION
+==================================
+Please Note: This Installation Method Requires Mycroft-Core To Be Installed In Your Home Folder Following The Guide Available Here: https://mycroft.ai/documentation/linux/
+
+```
+git clone https://anongit.kde.org/plasma-mycroft.git
+cd plasma-mycroft
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DKDE_INSTALL_LIBDIR=lib -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
+make
+sudo make install
+sudo chmod +x /usr/share/plasma/plasmoids/org.kde.plasma.mycroftplasmoid/contents/code/startservice.sh
+sudo chmod +x /usr/share/plasma/plasmoids/org.kde.plasma.mycroftplasmoid/contents/code/stopservice.sh
+sudo chmod +x /usr/share/plasma/plasmoids/org.kde.plasma.mycroftplasmoid/contents/code/pkgstartservice.sh
+sudo chmod +x /usr/share/plasma/plasmoids/org.kde.plasma.mycroftplasmoid/contents/code/pkgstopservice.sh
+
+```
 
 [Installation instructions for Mycroft on Linux](https://mycroft.ai/documentation/linux)
 
