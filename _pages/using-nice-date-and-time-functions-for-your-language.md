@@ -117,10 +117,10 @@ The decade format will work on the two rightmost digits of the year. For `en-us`
 
 ```json
 "decade_format": {
-"1": {"match": "^\d$", "format": "{x}"},
-"2": {"match": "^1\d$", "format": "{xx}"},
-"3": {"match": "^\d0$", "format": "{x0}"},
-"4": {"match": "^[2-9]\d$", "format": "{x0} {x}"},
+"1": {"match": "^d$", "format": "{x}"},
+"2": {"match": "^1d$", "format": "{xx}"},
+"3": {"match": "^d0$", "format": "{x0}"},
+"4": {"match": "^[2-9]d$", "format": "{x0} {x}"},
 "default": "{number}"
 }
 ```
@@ -129,10 +129,10 @@ The format consists of a list of four templates, and a default fall back templat
 
 Let's use 1969 as an example with language en-us:
 
-The string '1969' is used, and the first match is index 4: `^[2-9]\d`. The components `{x0}` is `'sixty'` and `{x}` is `{nine}`, the end result is `'sixty nine'`. If the string had been 1910, the second list entry would have been used, since that would be the first match, even if the third entry also match '10'.
+The string '1969' is used, and the first match is index 4: `^[2-9]d`. The components `{x0}` is `'sixty'` and `{x}` is `{nine}`, the end result is `'sixty nine'`. If the string had been 1910, the second list entry would have been used, since that would be the first match, even if the third entry also match '10'.
 
 In some languages, for instance Danish, the order of ones and tens is reversed, so 69 is pronounced 'ni og tres' (nine and sixty). The list entry for Danish would be:
-```"4": {"match": "^[2-9]\d$", "format": "{x} og {x0}"}```
+```"4": {"match": "^[2-9]d$", "format": "{x} og {x0}"}```
 
 The result of the decade format is `{formatted_decade}`, that can be used as a component in other formats.
 
@@ -152,7 +152,7 @@ The hundreds format will work on the three rightmost digits of the year. For `en
 
 ```json
 "hundreds_format": {
-"1": {"match": "^\d{3}$", "format": "{x_in_x00} hundred"},
+"1": {"match": "^d{3}$", "format": "{x_in_x00} hundred"},
 "default": "{number}"
 }
 ```
@@ -181,8 +181,8 @@ The thousand format will work on the four rightmost digits of the year. For `en-
 
 ```json
 "thousand_format": {
-"1": {"match": "^1[1-9]\d{2}$", "format": "{xx_in_xx00} hundred"},
-"2": {"match": "^\d{4}$", "format": "{x_in_x000} thousand"},
+"1": {"match": "^1[1-9]d{2}$", "format": "{xx_in_xx00} hundred"},
+"2": {"match": "^d{4}$", "format": "{x_in_x000} thousand"},
 "default": "{number}"
 }
 ```
@@ -216,13 +216,13 @@ This section contains information on how to format a pronounceable year. For `en
 
 ```json
 "year_format": {
-"1": {"match": "^\d\d?$", "format": "{formatted_decade} {bc}"},
-"2": {"match": "^\d00$", "format": "{formatted_hundreds} {bc}"},
-"3": {"match": "^\d{3}$", "format": "{formatted_hundreds} and {formatted_decade} {bc}"},
-"4": {"match": "^(1\d00)|([2-9]000)$", "format": "{formatted_thousand} {bc}"},
-"5": {"match": "^\d{2}00$", "format": "{formatted_thousand} {formatted_hundreds} {bc}"},
-"6": {"match": "^(1\d{3})|(\d0\d{2})$", "format": "{formatted_thousand} and {formatted_decade} {bc}"},
-"7": {"match": "^\d{4}$", "format": "{formatted_thousand} {formatted_hundreds} and {formatted_decade} {bc}"},
+"1": {"match": "^dd?$", "format": "{formatted_decade} {bc}"},
+"2": {"match": "^d00$", "format": "{formatted_hundreds} {bc}"},
+"3": {"match": "^d{3}$", "format": "{formatted_hundreds} and {formatted_decade} {bc}"},
+"4": {"match": "^(1d00)|([2-9]000)$", "format": "{formatted_thousand} {bc}"},
+"5": {"match": "^d{2}00$", "format": "{formatted_thousand} {formatted_hundreds} {bc}"},
+"6": {"match": "^(1d{3})|(d0d{2})$", "format": "{formatted_thousand} and {formatted_decade} {bc}"},
+"7": {"match": "^d{4}$", "format": "{formatted_thousand} {formatted_hundreds} and {formatted_decade} {bc}"},
 "default": "{year} {bc}",
 "bc": "b.c."
 }
@@ -338,29 +338,29 @@ For each section there is a list, the index must start at 1 and continue in incr
 ```json
 {
 "decade_format": {
-"1": {"match": "^\d$", "format": "{x}"},
-"2": {"match": "^1\d$", "format": "{xx}"},
-"3": {"match": "^\d0$", "format": "{x0}"},
-"4": {"match": "^[2-9]\d$", "format": "{x0} {x}"},
+"1": {"match": "^d$", "format": "{x}"},
+"2": {"match": "^1d$", "format": "{xx}"},
+"3": {"match": "^d0$", "format": "{x0}"},
+"4": {"match": "^[2-9]d$", "format": "{x0} {x}"},
 "default": "{number}"
 },
 "hundreds_format": {
-"1": {"match": "^\d{3}$", "format": "{x_in_x00} hundred"},
+"1": {"match": "^d{3}$", "format": "{x_in_x00} hundred"},
 "default": "{number}"
 },
 "thousand_format": {
-"1": {"match": "^1[1-9]\d{2}$", "format": "{xx_in_xx00} hundred"},
-"2": {"match": "^\d{4}$", "format": "{x_in_x000} thousand"},
+"1": {"match": "^1[1-9]d{2}$", "format": "{xx_in_xx00} hundred"},
+"2": {"match": "^d{4}$", "format": "{x_in_x000} thousand"},
 "default": "{number}"
 },
 "year_format": {
-"1": {"match": "^\d\d?$", "format": "{formatted_decade} {bc}"},
-"2": {"match": "^\d00$", "format": "{formatted_hundreds} {bc}"},
-"3": {"match": "^\d{3}$", "format": "{formatted_hundreds} and {formatted_decade} {bc}"},
-"4": {"match": "^(1\d00)|([2-9]000)$", "format": "{formatted_thousand} {bc}"},
-"5": {"match": "^\d{2}00$", "format": "{formatted_thousand} {formatted_hundreds} {bc}"},
-"6": {"match": "^(1\d{3})|(\d0\d{2})$", "format": "{formatted_thousand} and {formatted_decade} {bc}"},
-"7": {"match": "^\d{4}$", "format": "{formatted_thousand} {formatted_hundreds} and {formatted_decade} {bc}"},
+"1": {"match": "^dd?$", "format": "{formatted_decade} {bc}"},
+"2": {"match": "^d00$", "format": "{formatted_hundreds} {bc}"},
+"3": {"match": "^d{3}$", "format": "{formatted_hundreds} and {formatted_decade} {bc}"},
+"4": {"match": "^(1d00)|([2-9]000)$", "format": "{formatted_thousand} {bc}"},
+"5": {"match": "^d{2}00$", "format": "{formatted_thousand} {formatted_hundreds} {bc}"},
+"6": {"match": "^(1d{3})|(d0d{2})$", "format": "{formatted_thousand} and {formatted_decade} {bc}"},
+"7": {"match": "^d{4}$", "format": "{formatted_thousand} {formatted_hundreds} and {formatted_decade} {bc}"},
 "default": "{year} {bc}",
 "bc": "b.c."
 },
