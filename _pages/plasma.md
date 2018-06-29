@@ -10,13 +10,18 @@ post_date: 2018-06-29 12:29:29
 ---
 # Mycroft for Plasma
 
-- [Plasma-Mycroft User Guide](#plasma-mycroft-user-guide)
-- [Getting Started](#getting-familiar-with-the-interface)
-- [Troubleshooting](#troubleshooting-plasma-mycroft)
-- [Visual API Developers Guide For Plasma-Mycroft](#visual-display-api-developers-guide-for-plasma-mycroft)
-- [HTML based Visual Skill Generation](#html-based-visual-skill-generation)
-- [QML based Visual Skill Generation](#qml-based-visual-skill-generation)
-- [Plasma-Mycroft Native Visual Skill](#plasma-mycroft-native-visual-skill)
+- [Mycroft for Plasma](#mycroft-for-plasma)
+  * [Getting started](#getting-started)
+  * [The Mycroft for Plasma interface](#the-mycroft-for-plasma-interface)
+  * [Troubleshooting Mycroft for Plasma](#troubleshooting-mycroft-for-plasma)
+    + [Debugging connection errors](#debugging-connection-errors)
+  * [The visual display](#the-visual-display)
+    + [HTML-based visual Skill generation](#html-based-visual-skill-generation)
+      - [Wikipedia Skill HTML Example](#wikipedia-skill-html-example)
+      - [CSS file](#css-file)
+  * [QML based visual Skill generation](#qml-based-visual-skill-generation)
+    + [Wikipedia Skill QML Example](#wikipedia-skill-qml-example)
+  * [Mycroft for Plasma native visual Skill](#mycroft-for-plasma-native-visual-skill)
 
 This is a general User Guide for Plasma Mycroft on the KDE Desktop Platform. This User Guide aims to provide an overview of getting started with Mycroft AI on your [KDE Plasma Desktop](https://www.kde.org/plasma-desktop).
 
