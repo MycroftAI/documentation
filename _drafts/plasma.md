@@ -3,7 +3,7 @@ ID: 39182
 post_title: "Mycroft for KDE Plasma"
 author: Kathy Reid
 post_excerpt: ""
-layout: post
+layout: page
 permalink: http://mycroft.ai/?p=39182
 published: false
 ---
