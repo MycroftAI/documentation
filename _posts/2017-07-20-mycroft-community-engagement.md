@@ -5,7 +5,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycroft-community-engagement/
+  http://mycroft.ai/blog/mycroft-community-engagement/
 published: true
 post_date: 2017-07-20 01:00:26
 ---

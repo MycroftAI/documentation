@@ -117,6 +117,8 @@ Mycroft: Here you go, here's your Tea with Honey
 ```
 
 ```python
+from mycroft.skills.context import adds_context, removes_context
+
 class TeaSkill(MycroftSkill):
     @intent_handler(IntentBuilder('TeaIntent').require("TeaKeyword"))
     @adds_context('MilkContext')
@@ -143,18 +145,18 @@ class TeaSkill(MycroftSkill):
     @removes_context('HoneyContext')
     def handle_no_honey_intent(self, message):
         if self.milk:
-            self.speak('Here's your Tea, straight up')
+            self.speak('Heres your Tea, straight up')
         else:
-            self.speak('Here's your Tea with a dash of Milk')
+            self.speak('Heres your Tea with a dash of Milk')
 
     @intent_handler(IntentBuilder('YesHoneyIntent').require("YesKeyword").
                                 require('HoneyContext').build())
     @removes_context('HoneyContext')
     def handle_yes_honey_intent(self, message):
         if self.milk:
-            self.speak('Here's your Tea with Milk and Honey')
+            self.speak('Heres your Tea with Honey')
         else:
-            self.speak('Here's your Tea with Honey')
+            self.speak('Heres your Tea with Milk and Honey')
 ```
 
 When starting up only the `TeaIntent` will be available. When that has been triggered and _MilkContext_ is added the `MilkYesIntent` and `MilkNoIntent` are available since the _MilkContext_ is set. when a _yes_ or _no_ is received the _MilkContext_ is removed and can't be accessed. In it's place the _HoneyContext_ is added making the `YesHoneyIntent` and `NoHoneyIntent` available.

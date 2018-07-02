@@ -7,7 +7,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycroft-techcrunch-disrupt-featured-startup-alley-company/
+  http://mycroft.ai/blog/mycroft-techcrunch-disrupt-featured-startup-alley-company/
 published: true
 post_date: 2017-09-12 09:12:40
 ---

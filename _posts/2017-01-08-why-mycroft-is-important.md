@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/why-mycroft-is-important/
+  http://mycroft.ai/blog/why-mycroft-is-important/
 published: true
 post_date: 2017-01-08 13:43:33
 ---

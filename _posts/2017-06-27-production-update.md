@@ -7,7 +7,7 @@ author: Derick Schweppe
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/production-update/
+  http://mycroft.ai/blog/production-update/
 published: true
 post_date: 2017-06-27 13:00:18
 ---

@@ -13,6 +13,8 @@ post_date: 2017-12-02 22:35:25
 ---
 # Preparing your Skill for submission to the Mycroft Skills Repo
 
+_NOTE: To make Skill subsmission to the Mycroft Skills Repo a lot easier, we now recommend the [Mycroft Skills Kit](https://mycroft.ai/documentation/skills/msk)_
+
 - [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
     + [Generate a README.md file for your **Skill**](#generate-a-readmemd-file-for-your-skill)
     + [Add a Git submodule for your **Skill**](#add-a-git-submodule-for-your-skill)
@@ -28,7 +30,7 @@ It's important that you prepare your **Skill** for submission to the Mycroft Ski
 * Your **Skill** is well documented for people who may wish to use it.
 
 ### Generate a README.md file for your **Skill**
-First, you need to generate the README.md file for your **Skill** using the [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html). Fill out all the relative fields, and it will generate the Markdown to put into your README.md file. Save your README.md file.
+First, you need to generate the README.md file for your **Skill** using the [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html). Fill out all the relevant fields, and it will generate the Markdown to put into your README.md file. Save your README.md file.
 
 _NOTE: This following sections of documentation assume that you have set up a `remote` for your Git repository. If you have been developing locally, please pause here, and push your local development to a remote repository on GitHub. [New to working with remotes? Here's a handy guide](https://help.github.com/articles/adding-a-remote/)._
 
@@ -81,23 +83,23 @@ Next, we need to submit a Pull Request (PR) in GitHub to have your **Skill** lis
 
 ![Raising a Pull Request in GitHub](https://mycroft.ai/wp-content/uploads/2017/12/git-pull-request.png "Raising a Pull Request in GitHub")
 
-* You will need to choose with repositories to compare and create a PR from. This will  usually be `MycroftAI/mycroft-skills/master` and `YourGitHubUsername/mycroft-skills/master`
+* You will need to choose which repositories to compare and create a PR from. This will  usually be `MycroftAI/mycroft-skills/master` and `YourGitHubUsername/mycroft-skills/master`
 * When  you create a PR, you will be presented with a PR template to fill in. This helps to make sure that your **Skill** is ready for submission. It will look like this:
 
 ```md
-## Description:
-Short description of your skill and what it does
-## Checklist:
-  - [ ] Used [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html) to generate the skill README
-  - [ ] Skill has been tested and works
-  - [ ] README.md has been updated with the following:
-  +[submodule "NAME OF YOUR SKILL"]
-  +	path = name-of-your-skill-skill
-  +	url = URL.FOR.YOUR.SKILL.git
- - [ ] README.md has been updated with your skill phrase and description
+		## Description:
+		Short description of your skill and what it does
+		## Checklist:
+  			- [ ] Used [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html) to generate the skill README
+  			- [ ] Skill has been tested and works
+  			- [ ] README.md has been updated with the following:
+  		+[submodule "NAME OF YOUR SKILL"]
+  		+	path = name-of-your-skill-skill
+  		+	url = URL.FOR.YOUR.SKILL.git
+ 			- [ ] README.md has been updated with your skill phrase and description
 ```
 
-Fill in the PR template and submit your PR.
+* Fill in the PR template and submit your PR.
 
 There are two continuous integration (CI) tools that Mycroft uses, and these CI tools will automatically trigger when you submit your PR:
 

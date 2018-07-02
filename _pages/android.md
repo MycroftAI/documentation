@@ -9,6 +9,8 @@ published: true
 post_date: 2017-12-02 22:35:25
 ---
 # Mycroft for Android
+	
+## Mycroft for Android is still in proof of concept and is not ready for general use. There is no .apk available, and to use Mycroft for Android at the moment, you will need to be familiar with [Android Studio](https://developer.android.com/studio/index.html). 
 
 - [Mycroft for Android](#mycroft-for-android)
     + [Prerequisites](#prerequisites)

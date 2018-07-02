@@ -1,11 +1,11 @@
 ---
 ID: 31633
-post_title: "Congratulations New Techstars Class, You've Made a Great Decision"
+post_title: 'Congratulations New Techstars Class, You&#8217;ve Made a Great Decision'
 author: Arron Atchison
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/congratulations-new-techstars-class-youve-made-great-decision-2/
+  http://mycroft.ai/blog/congratulations-new-techstars-class-youve-made-great-decision-2/
 published: true
 post_date: 2017-07-18 11:44:39
 ---

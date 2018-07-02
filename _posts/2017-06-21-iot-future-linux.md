@@ -4,8 +4,7 @@ post_title: Is IoT the Future of Linux?
 author: Kris Adair
 post_excerpt: ""
 layout: post
-permalink: >
-  https://mycroft.ai/blog/iot-future-linux/
+permalink: http://mycroft.ai/blog/iot-future-linux/
 published: true
 post_date: 2017-06-21 07:50:31
 ---

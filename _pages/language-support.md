@@ -2,7 +2,10 @@
 ID: 32450
 post_title: Language support in Mycroft
 author: Kathy Reid
-post_excerpt: ""
+post_excerpt: >
+  Learn about foreign language support in
+  Mycroft, and how to approach configuring
+  Mycroft to support other languages.
 layout: page
 permalink: >
   http://mycroft.ai/documentation/language-support/
@@ -22,9 +25,9 @@ post_date: 2017-12-03 02:32:01
   * [dalam Bahasa Indonesia](#dalam-bahasa-indonesia)
     + [Petugas Mycroft yang bisa berbahasa Indonesia](#petugas-mycroft-yang-bisa-berbahasa-indonesia)
   * [Türkçe olarak](#turkce-olarak)
-  * [用中文（表達)](#%E7%94%A8%E4%B8%AD%E6%96%87%E8%A1%A8%E9%81%94)
-  * [在日語](#%E5%9C%A8%E6%97%A5%E8%AA%9E)
-  * [한국](#%ED%95%9C%EA%B5%AD)
+  * [用中文（表達)](#%e7%94%a8%e4%b8%ad%e6%96%87%ef%bc%88%e8%a1%a8%e9%81%94)
+  * [在日語](#%e5%9c%a8%e6%97%a5%e8%aa%9e)
+  * [한국](#%ed%95%9c%ea%b5%ad)
 
 ## In English
 

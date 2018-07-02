@@ -5,7 +5,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/kickstarter-anniversary/
+  http://mycroft.ai/blog/kickstarter-anniversary/
 published: true
 post_date: 2017-08-16 07:45:28
 ---

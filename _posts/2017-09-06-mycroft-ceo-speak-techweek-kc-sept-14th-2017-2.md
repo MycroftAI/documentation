@@ -7,7 +7,7 @@ author: Arron Atchison
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycroft-ceo-speak-techweek-kc-sept-14th-2017-2/
+  http://mycroft.ai/blog/mycroft-ceo-speak-techweek-kc-sept-14th-2017-2/
 published: true
 post_date: 2017-09-06 19:29:54
 ---

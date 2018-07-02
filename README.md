@@ -50,6 +50,7 @@ The following conventions are used for styling technical terms and related phras
 * **Micro SD card** is always styled as such, not as micro sd card, micro SD card or alternatives
 * **Picroft** is always styled as such
 * **PocketSphinx** is always styled as such
+* **Skill Author** is always used to refer to the developer, writer or creator of a **Skill**.
 * **Speak** is always capitalized given the importance of Speaking in a voice interface.
 * **User** is always capitalized as a sign of respect for our Users.
 

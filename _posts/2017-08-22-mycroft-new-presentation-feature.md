@@ -1,11 +1,11 @@
 ---
 ID: 30996
-post_title: 'Taking the Pain out of Presentations - A New Piece of Tech from Mycroft'
+post_title: 'Taking the Pain out of Presentations &#8211; A New Piece of Tech from Mycroft'
 author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycroft-new-presentation-feature/
+  http://mycroft.ai/blog/mycroft-new-presentation-feature/
 published: true
 post_date: 2017-08-22 13:12:53
 ---

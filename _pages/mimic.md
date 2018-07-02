@@ -10,6 +10,29 @@ post_date: 2017-12-03 05:31:14
 ---
 # Mimic
 
+- [Mimic](#mimic)
+  * [What is Mimic?](#what-is-mimic)
+  * [Why should I use Mimic instead of other open source TTS tools?](#why-should-i-use-mimic-instead-of-other-open-source-tts-tools)
+  * [The partnership between Mycroft.AI's Mimic and VocaliD](#the-partnership-between-mycroftais-mimic-and-vocalid)
+    + [How to donate your voice to the VocaliD voicebank](#how-to-donate-your-voice-to-the-vocalid-voicebank)
+  * [Installing Mimic](#installing-mimic)
+    + [Installation prerequisites](#installation-prerequisites)
+      - [Install dependencies](#install-dependencies)
+        * [On Ubuntu or Debian Linux](#on-ubuntu-or-debian-linux)
+        * [On Fedora Linux](#on-fedora-linux)
+        * [On Arch Linux](#on-arch-linux)
+        * [On Mac OSX](#on-mac-osx)
+        * [On Windows](#on-windows)
+          + [Cross-compiling from Linux](#cross-compiling-from-linux)
+          + [Building on Windows natively](#building-on-windows-natively)
+  * [Using Mimic](#using-mimic)
+    + [Reading text with Mimic](#reading-text-with-mimic)
+    + [How to change the Voice that Mimic uses](#how-to-change-the-voice-that-mimic-uses)
+    + [Notes on Mimic Voices](#notes-on-mimic-voices)
+      - [Are Voices compiled or loaded from a file?](#are-voices-compiled-or-loaded-from-a-file)
+      - [Additional Voice options](#additional-voice-options)
+  * [How do I create my own custom voice to use with Mimic?](#how-do-i-create-my-own-custom-voice-to-use-with-mimic)
+
 You may prefer to watch [this short video](https://www.youtube.com/watch?v=gvnhcNdXJsk) for an overview of Mimic.
 
 ## What is Mimic?
@@ -45,14 +68,14 @@ In order to build Mimic, you will need the following:
 * A good C compiler - for Linux or Mac OSX, `gcc` or `clang`is recommended. For Windows, `gcc` under [`Cygwin`](https://cygwin.com/) or [`mingw32`](http://www.mingw.org/) is recommended.
 * GNU `make`, `automake` and `libtool`
 * `pkg-config`
-* ICU library and headers
+* PCRE and ICU libraries and headers
 * An audio engine - for Linux we recommend ALSA, and for Mac OSX and Windows we recommend PortAudio
 
 #### Install dependencies
 
 ##### On Ubuntu or Debian Linux
 
-`$ sudo apt-get install gcc make pkg-config automake libtool libicu-dev libasound2-dev`
+`$ sudo apt-get install gcc make pkg-config automake libtool libicu-dev libpcre2-dev libasound2-dev`
 
 ##### On Fedora Linux
 
@@ -82,11 +105,11 @@ This requires additional packages to be installed.
 
 On Ubuntu 16.04 (xenial):
 
-`sudo apt-get install gcc make pkg-config automake libtool libicu-dev wine binutils-mingw-w64-i686 mingw-w64-i686-dev gcc-mingw-w64-i686 g++-mingw-w64-i686`
+`sudo apt-get install gcc make pkg-config automake libtool libicu-dev libpcre2-dev wine binutils-mingw-w64-i686 mingw-w64-i686-dev gcc-mingw-w64-i686 g++-mingw-w64-i686`
 
 On Ubuntu 14.04 (trusty):
 
-`sudo apt-get install gcc make pkg-config automake libtool libicu-dev mingw32 mingw32-runtime wine`
+`sudo apt-get install gcc make pkg-config automake libtool libicu-dev libpcre2-dev mingw32 mingw32-runtime wine`
 
 Next, run the Windows build script:
 
@@ -129,6 +152,10 @@ Build from source:
 Validate the build:
 
 `$ make check`
+
+Install the compiled code:
+
+`$ sudo make install`
 
 ## Using Mimic
 
@@ -224,11 +251,11 @@ _Example:_
 
 #### Are Voices compiled or loaded from a file?
 
-Voices can be compiled (built-in) into Mimic or loaded from a ``.flitevox` file. The only exception are `hts` Voices. `hts` Voices combine both a compiled function with a voice data file, `.htsvoice`. Mimic will look for the `.htsvoice` file when the `hts` voice is loaded, looking in the current working directory, the `voices` subdirectory and the ``$prefix/share/mimic/voices` directory if it exists.
+Voices can be compiled (built-in) into Mimic or loaded from a `.flitevox` file. The only exception are `hts` Voices. `hts` Voices combine both a compiled function with a voice data file, `.htsvoice`. Mimic will look for the `.htsvoice` file when the `hts` voice is loaded, looking in the current working directory, the `voices` subdirectory and the `$prefix/share/mimic/voices` directory if it exists.
 
 Voice names are identified as loadable files if the name includes a "/" (slash) otherwise they are treated as internal compiled-in voices.
 
-The `voices/` directory contains several `flitevox` voices. Existing Flite voices can be found here: http://www.festvox.org/flite/packed/flite-2.0/voices/. The voice referenced via a URL will be downloaded on the fly.
+The `voices/` directory contains several `flitevox` voices. Existing Flite voices can be found [here](http://www.festvox.org/flite/packed/flite-2.0/voices/). The voice referenced via a URL will be downloaded on the fly.
 
 #### Additional Voice options
 
