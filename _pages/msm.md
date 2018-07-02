@@ -14,18 +14,27 @@ post_date: 2017-12-12 10:56:48
   * [What is Mycroft Skills Manager - msm?](#what-is-mycroft-skills-manager---msm)
   * [Using Mycroft Skills Manager - msm](#using-mycroft-skills-manager---msm)
 
-## What is Mycroft Skills Manager - msm? 
+## What is Mycroft Skills Manager - msm?
 
-Mycroft Skills Manager (msm) is a command line tool used to add, manage and remove **Skills** on any Mycroft installation. It can install any **Skill** listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills). `msm` is a handy tool for Developers and those who may frequently reconfigure, install and uninstall **Skills**. 
+Mycroft Skills Manager (msm) is a command line tool used to add, manage and remove **Skills** on any Mycroft installation. It can install any **Skill** listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills). `msm` is a handy tool for Developers and those who may frequently reconfigure, install and uninstall **Skills**.
 
 ## Using Mycroft Skills Manager - msm
 
-_NOTE: If you are using `mycroft-core` on Linux, then you will need to `cd` into `mycroft-core/msm` and call `msm` using `./msm [command]`_
+`msm` has recently been rewritten in Python (`msm` was previously a `bash` script). In order to use `msm`, you will first need to enter the Mycroft _virtual environment_, `venv`, using the following command:
 
-To bring up a list of all available `msm` commands, SSH into your **Device** and then type `msm -h`: 
+`mycroft-core$ source .venv/bin/activate`
+
+``(.venv) kathyreid@kathyreid-N76VZ:~/mycroft-core$``
+
+You can then run `msm`:
+
+`(.venv) kathyreid@kathyreid-N76VZ:~/mycroft-core$ msm update`
+
+To see a list of all the available `msm` commands, type `msm -h`:
 
 ```
-$ msm -h
+(.venv) kathyreid@kathyreid-N76VZ:~/mycroft-core$ msm -h
+
 msm: Mycroft Skill Manager
 usage: msm [option] [repo | name]
 
@@ -54,16 +63,16 @@ Examples:
 ```
 
 
-For instance to see information on a **Skill**, type: 
+For instance to see information on a **Skill**, type:
 
 `msm info mycroft-mark-1`
 
 
-To list all available **Skills**, type: 
+To list all available **Skills**, type:
 
 `msm list`
 
-This will show available **Skills**, and indicate which ones you have installed: 
+This will show available **Skills**, and indicate which ones you have installed:
 
 ```
 rss-skill
@@ -74,11 +83,9 @@ skill-caffeinewiz
 ```
 
 
-Search is very handy functionality if you're looking for a particular **Skill**: 
+Search is very handy functionality if you're looking for a particular **Skill**:
 
 ```
 pi@mark_1:/opt/mycroft/skills $ msm search twitter
 Possible match: twitter-skill
 ```
-
-##
