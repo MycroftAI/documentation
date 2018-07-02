@@ -82,4 +82,6 @@ There was also excellent value in the free text comments. Several key themes eme
 </ul>
 &nbsp;
 
-In conclusion, this was a very useful exercise for us. Thank you again for taking the time to provide your feedback, and do feel free to have a read through the data and share your insights. {LINK TO FORUM}
+In conclusion, this was a very useful exercise for us. Thank you again for taking the time to provide your feedback, and do feel free to have a read through the data and <a href="https://community.mycroft.ai/t/picroft-survey-2018-results-and-roadmap-implications/4078">share your insights</a>.
+
+&nbsp;
