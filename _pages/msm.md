@@ -82,10 +82,48 @@ skill-autogui
 skill-caffeinewiz
 ```
 
-
 Search is very handy functionality if you're looking for a particular **Skill**:
 
 ```
 pi@mark_1:/opt/mycroft/skills $ msm search twitter
 Possible match: twitter-skill
+```
+
+Update is very handy for updating all the **Skills** on your **Device**:
+
+`msm update`
+
+```
+INFO - Nothing new for mycroft-ip
+INFO - Nothing new for mycroft-timer
+INFO - Nothing new for mycroft-release-test
+INFO - Nothing new for mycroft-weather
+INFO - Nothing new for chatbot
+INFO - Nothing new for mycroft-speak
+INFO - Nothing new for fallback-wolfram-alpha
+INFO - Nothing new for mycroft-naptime
+INFO - Nothing new for plasma-activities-skill
+INFO - Nothing new for mycroft-pairing
+```
+
+### `msm` errors
+
+The deprecated version of `msm` had several error codes. Instead, this version relies on standard Python errors.
+
+Here are some common errors, what they mean, and how to resolve them.
+
+#### Git authentication failed
+
+```bash
+ERROR - Error running update_skill on skill-radio-rne: GitException(Git command failed: GitCommandError(['git', 'fetch'], 128, b"remote: Invalid username or password.\nfatal: Authentication failed for 'https://github.com/ChrisFernandez/skill-radio-rne/'", b''))
+```
+
+This error usually means that the GitHub repository for the **Skill** no longer exists, or has moved. Remove the **Skill** using `msm remove [Skill Name]` and then install a new **Skill**.
+
+#### Uncommitted changes
+
+```bash
+ERROR - Error running update_skill on TranslateSkill: SkillModified(Uncommitted changes:
+	 M requirements.sh
+)
 ```
