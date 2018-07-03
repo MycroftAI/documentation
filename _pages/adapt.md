@@ -20,18 +20,18 @@ post_date: 2017-12-03 05:09:17
 - [How do I install Adapt Intent Parser?](#how-do-i-install-adapt-intent-parser)
   * [Requirements](#requirements)
   * [`pip` installation](#pip-installation)
-    + [Installing `pip` for Ubuntu / Debian based Linux](#installing-pip-for-ubuntu--debian-based-linux)
-    + [Installing `pip` for Fedora / RPM based Linux](#installing-pip-for-fedora--rpm-based-linux)
+    + [Installing `pip` for Ubuntu / Debian based Linux](#installing-pip-for-ubuntu-debian-based-linux)
+    + [Installing `pip` for Fedora / RPM based Linux](#installing-pip-for-fedora-rpm-based-linux)
   * [Installing Adapt Intent Parser](#installing-adapt-intent-parser)
     + [Installing Adapt for Ubuntu, Debian or Raspbian](#installing-adapt-for-ubuntu-debian-or-raspbian)
 - [How do I contribute to Adapt Intent Parser?](#how-do-i-contribute-to-adapt-intent-parser)
   * [For Ubuntu, Debian and Raspbian based Linux](#for-ubuntu-debian-and-raspbian-based-linux)
-  * [For Fedora / RPM based Linux](#for-fedora--rpm-based-linux)
+  * [For Fedora / RPM based Linux](#for-fedora-rpm-based-linux)
   * [For MacOS X](#for-macos-x)
 
 ## What is the Adapt Intent Parser?
 
-Adapt is an _intent parser_ - meaning that it is a library for converting natural language into machine-readable data structures, such as JSON. The Adapt Intent Parser is open source software. It is ightweight and is designed to run on devices with limited computing resources, such as embedded devices.
+Adapt is an _intent parser_ - meaning that it is a library for converting natural language into machine-readable data structures, such as JSON. The Adapt Intent Parser is open source software. It is lightweight and is designed to run on devices with limited computing resources, such as embedded devices.
 
 [You may prefer to watch this video which provides an overview of the Adapt Intent Parser](https://www.youtube.com/watch?v=zR9xvPtM6Ro).
 
@@ -41,7 +41,7 @@ Adapt takes in natural language as an input, and outputs a data structure that i
 * **a match probability**: how confident Adapt is that the **Intent** has been correctly identified
 * a tagged list of **entities**: that can be used by **Skills** to perform functions
 
-Adapt is useful for interpreting natural language input. For example, you might want to create a [voice user interface])https://en.wikipedia.org/wiki/Voice_user_interface) that allows a User to play a Pandora station. The **Utterances** a User might Speak include:
+Adapt is useful for interpreting natural language input. For example, you might want to create a [voice user interface](https://en.wikipedia.org/wiki/Voice_user_interface) that allows a User to play a Pandora station. The **Utterances** a User might Speak include:
 
 * `Turn on Pandora`
 * `Play Pandora`

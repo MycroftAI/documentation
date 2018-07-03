@@ -7,7 +7,7 @@ author: Ryan Sipes
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycroft-joins-2016-techstars-class-at-the-sprint-accelerator/
+  http://mycroft.ai/blog/mycroft-joins-2016-techstars-class-at-the-sprint-accelerator/
 published: true
 post_date: 2016-02-22 13:32:14
 ---
@@ -22,7 +22,3 @@ Mycroft A.I., Inc. is excited to announce its participation in the 2016 <a href=
 The Sprint Accelerator program starts today (February 22) and runs through an investor demo day on May 24. With a focus on mentorship and networking the Techstars program <a href="http://www.techstars.com/companies/" target="_blank" rel="noopener">has helped more than 650 million companies raise an average of $3.2 million in capital</a>.
 
 <a href="https://mycroft.ai/wp-content/uploads/2016/02/Mycroft-Joins-2016-Techstars-Class-at-the-Sprint-Accelerator.pdf" target="_blank" rel="noopener">Download the Press Release</a>
-
-&nbsp;
-
-[/et_pb_text][/et_pb_column][/et_pb_row][/et_pb_section]

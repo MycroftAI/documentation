@@ -5,7 +5,7 @@ author: Andrew Vavrek
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/new-face-same-values/
+  http://mycroft.ai/blog/new-face-same-values/
 published: true
 post_date: 2017-06-23 18:00:13
 ---

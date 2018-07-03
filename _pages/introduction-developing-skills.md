@@ -2,7 +2,7 @@
 ID: 32444
 post_title: Introduction to developing Skills
 author: Kathy Reid
-post_excerpt: ""
+post_excerpt: "In this introduction to developing Skills for Mycroft, learn the prerequisites you'll need, and step through the basic anatomy of a Mycroft Skill."
 layout: page
 permalink: >
   http://mycroft.ai/documentation/skills/introduction-developing-skills/
@@ -18,11 +18,13 @@ post_date: 2017-12-02 22:35:25
     + [Structure of the **Skill** repo](#structure-of-the-skill-repo)
       - [`dialog` directory](#dialog-directory)
       - [vocab directory and defining Intents](#vocab-directory-and-defining-intents)
-      - [`__init__.py`](#__init__py)
-  * [Simplifying your Skill code with intent handler decorators](#simplifying-your-skill-code-with-intent_handler-decorators)
+      - [__init__.py](#init-py)
+  * [Simplifying your Skill code with `intent_handler` _decorators_](#simplifying-your-skill-code-with-intent_handler-decorators)
+  * [How do I disable a Skill?](#how-do-i-disable-a-skill)
+  * [How to increase the priority of **Skills** during loading](#how-to-increase-the-priority-of-skills-during-loading)
   * [How do I find more information on Mycroft functions?](#how-do-i-find-more-information-on-mycroft-functions)
 
-This page will walk you through developing a new Mycroft **Skill**. It assumes you have read through the [basic skills information](skills.md)
+This page will walk you through developing a new Mycroft **Skill**. It assumes you have read through the [basic skills information](https://mycroft.ai/documentation/skills/developing-skills/)
 
 ## Prerequisites
 
@@ -31,7 +33,7 @@ It's a good idea to get prepared before writing your new **Skill**, as this will
 * **Git** - You will need to know some basic Git commands in order to create a new **Skill** for Mycroft. If you're not familiar with Git, that's OK, but you _will_ need to have [Git installed on your system. ](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 * **Python** - You will need to know some basic Python programming to get started. If you've programmed in other object-oriented languages, like Javascript or C#, then you'll be able to pick it up, but if you're totally new to programming, you'll need to do an [introductory programming course](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11).
 * **Naming your Skill** - Choose a name for your **Skill** before creating a new repository. It's a good idea to check the [Mycroft Skills Repo](https://github.com/MycroftAI/mycroft-skills) so that you don't create a duplicate name.
-* **Set up your environment** - Most people will find it easiest to test new **Skills** by setting up [Mycroft for Linux](Mycroft-for-Linux.md). `cd` into the directory where you have `mycroft-core` installed and type `./start-mycroft.sh debug`. This should open a command line interface (CLI) like that shown below:
+* **Set up your environment** - Most people will find it easiest to test new **Skills** by setting up [Mycroft for Linux](https://mycroft.ai/documentation/linux/). `cd` into the directory where you have `mycroft-core` installed and type `./start-mycroft.sh debug`. This should open a command line interface (CLI) like that shown below:
 
 ![Starting mycroft-core in debug mode for Skills testing](https://mycroft.ai/wp-content/uploads/2017/12/mycroft-core-start-debug.png "Starting mycroft-core in debug mode for Skills testing")
 
@@ -88,8 +90,9 @@ Now, we'll made a new repository for your **Skill**. The new repository has to f
 
 Copy the Template Skill into a new directory. Here, we've called the new Skill `skill-training`, but your **Skill** will have a different name.
 
-```bash
-$ cp -R 00__skill_template skill-hello-worldls -las
+```
+$ cp -R 00__skill_template skill-hello-world
+$ ls -las
 ```
 
 ### Structure of the **Skill** repo
@@ -115,7 +118,7 @@ total 128
 
 The `dialog` directory contains subdirectories for each spoken language the skill supports.  Each subdirectory has `.dialog` files which specify what Mycroft should say when a **Skill** is executed.
 
-The subdirectories are named using the [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language. For example, Brazilian Portugues is 'pt-br', German is 'de', and Australian English is 'en-au'.
+The subdirectories are named using the [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the language. For example, Brazilian Portugues is 'pt-br', German is 'de-de', and Australian English is 'en-au'.
 
 Here is an example where one language is supported. By default, the **Template Skill** contains one subdirectory for United States English - 'en-us'. If more languages were supported, then there would be additional language directories.
 
@@ -202,7 +205,7 @@ Mycroft will match this to the
 
 _NOTE: One of the most common mistakes when getting started with **Skills** is that the **vocab** file doesn't include all the phrases that the User might use to trigger the **intent**. _
 
-#### `__init__.py`
+#### __init__.py
 
 `__init__.py`
 
@@ -269,16 +272,16 @@ def __init__(self):
 
 ```python    
 def initialize(self):
-        thank_you_intent = IntentBuilder("ThankYouIntent"). 
+        thank_you_intent = IntentBuilder("ThankYouIntent").
             require("ThankYouKeyword").build()
         self.register_intent(thank_you_intent, self.handle_thank_you_intent)
 
-        how_are_you_intent = IntentBuilder("HowAreYouIntent"). 
+        how_are_you_intent = IntentBuilder("HowAreYouIntent").
             require("HowAreYouKeyword").build()
         self.register_intent(how_are_you_intent,
                              self.handle_how_are_you_intent)
 
-        hello_world_intent = IntentBuilder("HelloWorldIntent"). 
+        hello_world_intent = IntentBuilder("HelloWorldIntent").
             require("HelloWorldKeyword").build()
         self.register_intent(hello_world_intent,
                              self.handle_hello_world_intent)
@@ -338,7 +341,148 @@ def stop(self):
 
 In the above code block, the [`pass` statement](https://docs.python.org/2/reference/simple_stmts.html#the-pass-statement) is used as a placeholder; it doesn't actually have any function. However, if the **Skill** had any active functionality, the stop() method would terminate the functionality, leaving the *Skill** in a known good state.
 
-## Simplifying your Skill code with `intent_handler` _decorators_ 
+#### Intents and regular expressions (regex)
+
+In the examples above, we walked through how to use phrases in a `.voc` file to build an `Intent` using _entities_. In this section, we expand on how `Intents` are built, and introduce _multiple entities_, and _regular expressions_.
+
+Throughout this section, we will be using examples from the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time).
+
+##### How .voc files are used to handle Intents
+
+At the top of your **Skill** file, you will have a line that looks like this:
+
+`from adapt.intent import IntentBuilder`
+
+This tells your **Skill** to import the `IntentBuilder` class from Adapt. Adapt is an Intent-handling engine. Its job is to understand what a user Speaks to Mycroft, and to pass that information to a **Skill** for handling.
+
+Different **Skills** require different information from the user. For example, the **Skill** to change the color of Mycroft's eyes just has one parameter - `color`. That parameter is mandatory - because you can't change the color of Mycroft's eyes without knowing what color to change them to.
+
+Later in your **Skill** file, you will call `IntentBuilder`, with one or more parameters. The parameters can be either `required` or `optional`.
+
+For example, here is the `@intent_handler` _decorator_ used in the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time). It has three parameters; two are `required` and one is `optional`.
+
+```python
+
+@intent_handler(IntentBuilder("")
+  .require("Query")
+  .require("Time")
+  .optionally("Location")
+)
+
+```
+
+This call is then interpreted by the Adapt Intent Parser.
+
+Internally, Adapt uses a function called `register_entity`, and tries to register `entities` based on the parameters passed to `IntentBuilder`. There are several ways that Adapt can register `entities`.
+
+If we were building `Intent`s manually, we would do something like this:
+
+```python
+
+locations = [
+    "Seattle",
+    "San Francisco",
+    "Tokyo"
+]
+
+for loc in locations:
+    engine.register_entity(loc, "Location")
+
+```
+
+But what if we want to support more `locations`? Or make the `location` available to the **Skill** to use as a parameter in an API call?
+
+First, Adapt will look in `.voc` files to try and register an `Intent`. For example, in the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time), in the `vocab` directory, you will see several `.voc` files. Note that they each correspond to one of the parameters passed to `Intentbuilder()`.
+
+```bash
+
+pi@mark_1:/opt/mycroft/skills/skill-date-time/vocab/en-us $ ls -las
+total 24
+4 drwxr-xr-x 2 mycroft mycroft 4096 Feb 15 14:17 .
+4 drwxr-xr-x 4 mycroft mycroft 4096 Feb 15 14:17 ..
+4 -rwxr-xr-x 1 mycroft mycroft    8 Feb 15 14:17 Date.voc
+4 -rwxr-xr-x 1 mycroft mycroft   12 Feb 15 14:17 Display.voc
+4 -rwxr-xr-x 1 mycroft mycroft    9 Feb 15 14:17 Query.voc
+4 -rwxr-xr-x 1 mycroft mycroft    5 Feb 15 14:17 Time.voc
+
+```
+
+If we take a look inside each of these files, they contain only a single word each:
+
+* `Date.voc` => "date"
+* `Display.voc => "display"
+* `Query.voc`=> "what"
+* `Time.voc` => "time"
+
+Now, remember back to `IntentBuilder` and the mandatory and optional parameters? Only `Query` and `Time` were mandatory. So if a user Spoke:
+
+`"Hey Mycroft, **what** **time** is it?"`
+
+then Adapt would match that **Utterance** to the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time), by _registering_ the `Intent`, and within the **Skill**, this would be handled by the `handle_query_time()` function.
+
+If the user Spoke:
+
+`"Hey Mycroft, **display** the **time** "`
+
+which function within the Date and Time Skill do you think would handle the **Utterance**?
+
+_ANSWER: handle_show_time()_
+
+But what about `Location`? There isn't a `.voc` file for `Location`, so how does Adapt register an `entity` for `Location` so that `Location` can be included in an **Utterance**, recognised as an `Intent`, and handled properly by the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time)?
+
+This is done using [regular expressions](https://docs.python.org/2/library/re.html).
+
+In the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time) directory, you will see a sub-directory called `regex`. This sub-directory follows the same file structure as the `voc` directory (eg. there will be an `en-us` directory inside), and contains a file called 'location.rx':
+
+```bash
+
+pi@mark_1:/opt/mycroft/skills/skill-date-time/regex/en-us $ ls -las
+total 12
+4 drwxr-xr-x 2 mycroft mycroft 4096 Feb 15 14:17 .
+4 drwxr-xr-x 4 mycroft mycroft 4096 Feb 15 14:17 ..
+4 -rwxr-xr-x 1 mycroft mycroft   28 Feb 15 14:17 location.rx
+
+```
+
+Inside `location.rx` is a _regular expression_:
+
+`(at|in|for) (?P<Location>.*)`
+
+Because a `.voc` file is not present for the `Location` parameter, Adapt will then search for an equivalent `.rx` file in the `regex` directory. Instead of being restricted to the specified words in the `.voc` file, Adapt can register `Intents` using _regular expressions_, and thus support a wider range of input from the user.
+
+Can you think of another **Skill** where a _regular expression_ `Location` would be useful?
+
+_ANSWER: [Weather Skill](https://github.com/MycroftAI/skill-weather)_
+
+For those who are new to Python, the `regex` used is a [Python named _group_](https://docs.python.org/2/library/re.html#regular-expression-syntax). The name of the group is case-sensitive, and correlates with the variable name used to extract the named group value.
+
+For example, in the [Date and Time Skill](https://github.com/MycroftAI/skill-date-time), we can see one of the functions uses `Location` as an optional parameter to the function.
+
+[Link to the code snipped below](https://github.com/MycroftAI/skill-date-time/blob/master/__init__.py#L257
+)
+
+```python
+@intent_handler(IntentBuilder("").require("Query").require("Time").
+                    optionally("Location"))
+    def handle_query_time(self, message):
+        location = message.data.get("Location")
+        current_time = self.get_spoken_time(location)
+        if not current_time:
+```
+
+The `Location` value is extracted by calling `message.data.get("Location")`. If the named group was named differently, such as `TheUserLocation`, then this code would look like:
+
+```python
+@intent_handler(IntentBuilder("").require("Query").require("Time").
+                    optionally("TheUserLocation"))
+    def handle_query_time(self, message):
+        location = message.data.get("TheUserLocation")
+        current_time = self.get_spoken_time(location)
+        if not current_time:
+
+```
+
+## Simplifying your Skill code with `intent_handler` _decorators_
 
 Your **Skill** code can be simplified using the intent_handler() _decorator_. The major advantage in this approach is that the **Intent** is described together with the method that handles the **Intent**. This makes your code easier to read, easier to write, and errors will be easier to identify.
 
@@ -346,7 +490,7 @@ Your **Skill** code can be simplified using the intent_handler() _decorator_. Th
 
 The intent_handler() _decorator_ tags a method to be an intent handler for the intent, removing the need for separate registration.
 
-First, you need to `import` the `intent_handler()` library. Include the following line in the `import` section: 
+First, you need to `import` the `intent_handler()` library. Include the following line in the `import` section:
 
 ```
 from mycroft import intent_handler
@@ -371,12 +515,12 @@ class HelloWorldSkill(MycroftSkill):
     def handle_thank_you_intent(self, message):
         self.speak_dialog("welcome")
 
-    @intent_handler(IntentBuilder("HowAreYouIntent") 
+    @intent_handler(IntentBuilder("HowAreYouIntent")
                     .require("HowAreYouKeyword"))
     def handle_how_are_you_intent(self, message):
         self.speak_dialog("how.are.you")
 
-    @intent_handler(IntentBuilder("HelloWorldIntent") 
+    @intent_handler(IntentBuilder("HelloWorldIntent")
                     .require("HelloWorldKeyword"))
     def handle_hello_world_intent(self, message):
         self.speak_dialog("hello.world")
@@ -388,6 +532,36 @@ class HelloWorldSkill(MycroftSkill):
 As seen above the entire initialize() method is removed and the **Intent** registration is moved to the the method declaration.
 
 Ideally, you should use approach to **Intent** registration.
+
+## How do I disable a Skill?
+
+During Skill development you may have reason to disable one or more **Skills**. Rather than constantly install or uninstall them via voice, or by adding and removing them from `/opt/mycroft/skills/`, you can disable them in [the `mycroft.conf` file](https://mycroft.ai/documentation/mycroft-conf/).
+
+First, identify the name of the **Skill**. The name of the **Skill** is the `path` attribute in the [`.gitmodules`](https://github.com/MycroftAI/mycroft-skills/blob/master/.gitmodules) file.
+
+To disable one or more **Skills** on a Mycroft **Device**, find where your `mycroft.conf` file is stored, then edit it using an editor like `nano` or `vi`.
+
+Search for the string `blacklisted` in the file. Then, edit the line below to include the **Skill** you wish to disable, and save the file. You will then need to reboot, or restart the `mycroft` services on the **Device**.
+
+```
+  "skills": {
+    "blacklisted_skills": ["skill-media", "send_sms", "skill-wolfram-alpha, YOUR_SKILL"]
+  }
+```
+
+## How to increase the priority of **Skills** during loading
+
+During **Skill** development, you may wish to increase the priority of your **Skill** loading during the startup process. This allows you to start using the **Skill** as soon as possible.
+
+First, identify the name of the **Skill**. The name of the **Skill** is the `path` attribute in the [`.gitmodules`](https://github.com/MycroftAI/mycroft-skills/blob/master/.gitmodules) file.
+
+To prioritize loading one or more **Skills** on a Mycroft **Device**, find where your [`mycroft.conf` file](https://mycroft.ai/documentation/mycroft-conf/) is stored, then edit it using an editor like `nano` or `vi`.
+
+Search for the string `priority` in the file. Then, edit the line below to include the **Skill** you wish to prioritize, and save the file. You will then need to reboot, or restart the `mycroft` services on the **Device**.
+
+```
+"priority_skills": ["skill-pairing"],
+```
 
 ## How do I find more information on Mycroft functions?
 

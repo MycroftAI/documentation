@@ -5,11 +5,11 @@ author: Ryan Sipes
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/the-vision-for-mycroft/
+  http://mycroft.ai/blog/the-vision-for-mycroft/
 published: true
 post_date: 2015-09-07 21:06:04
 ---
-<center><iframe width="853" height="480" src="https://www.youtube.com/embed/zxsRbDJTLAQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe src="https://www.youtube.com/embed/zxsRbDJTLAQ?rel=0&amp;showinfo=0" width="853" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
 <p dir="ltr"><em>This blog post was written by Lead Designer Derick Schweppe</em></p>
 <p dir="ltr">Joshua’s vision for Mycroft was to create a relatable and personable A.I. that people would welcome into their home. The physical design of Mycroft began to take shape after many brainstorming sessions with Joshua and feedback from the rest of the team. We looked at the current landscape of design but we also looked at fictional robots and A.I. from the past for inspiration. The simple shape is augmented with details to make it look like a friendly character without being too cartoonish</p>
 <p dir="ltr">Some people have said that Mycroft looks somewhat like a clock radio and that was definitely an intentional decision. The clock radio is something people are familiar with, they know it can live on a bed side table, a shelf, a countertop, etc.. This makes it easy for people to adapt to Mycroft because their is some familiarity with the form factor.</p>

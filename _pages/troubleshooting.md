@@ -113,10 +113,9 @@ The Mycroft logs each follow a standard format, being:
 
 On a Raspberry Pi 3 running Picroft, [first `ssh` into the Picroft](https://mycroft.ai/documentation/picroft/#connecting-to-picroft-via-ssh).
 
-The logs on a Picroft are held at
+The logs on a Picroft are held at `/var/log/` and are named `mycroft-LOGFILE.log`. 
 
-@TODO: haven't build a Picroft yet, will need to fill this in
-
+To see all the Picroft logs that are available, use the command `ls -las /var/log/ | grep mycroft`
 
 #### Linux
 
@@ -248,7 +247,7 @@ We also have [more information available on `mycroft.conf` and `web_config_cache
 
 ##### If your Mark 1 loses internet connectivity
 
-If your Mark 1 has previously been connected to the internet, and loses internet connectivity, it will Speak
+If your Mark 1 has previously been connected to the internet, and loses internet connectivity, it will speak
 
 `I have lost connection to the internet`
 
@@ -265,6 +264,7 @@ then you may need to reinstall your `virtualenv`. To do this,
 
 * `sudo rm -R ~/.virtualenv/mycroft`
 * From the directory where you have cloned `mycroft-core`, run `./dev-setup.sh`. This shell script will re-install any `virtualenv` dependencies that you may be missing.
+
 
 ## Troubleshooting Skills development
 

@@ -13,6 +13,7 @@ post_date: 2017-12-12 10:56:48
 - [Mycroft Skills Manager - msm](#mycroft-skills-manager---msm)
   * [What is Mycroft Skills Manager - msm?](#what-is-mycroft-skills-manager---msm)
   * [Using Mycroft Skills Manager - msm](#using-mycroft-skills-manager---msm)
+  * [msm error codes](#msm-error-codes)
 
 ## What is Mycroft Skills Manager - msm?
 

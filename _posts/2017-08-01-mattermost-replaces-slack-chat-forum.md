@@ -7,7 +7,7 @@ author: Andrew Vavrek
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mattermost-replaces-slack-chat-forum/
+  http://mycroft.ai/blog/mattermost-replaces-slack-chat-forum/
 published: true
 post_date: 2017-08-01 14:01:44
 ---

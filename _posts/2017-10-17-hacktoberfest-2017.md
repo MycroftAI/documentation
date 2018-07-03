@@ -1,11 +1,11 @@
 ---
 ID: 31965
-post_title: "We're participating in Hacktoberfest 2017"
+post_title: 'We&#8217;re participating in Hacktoberfest 2017'
 author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/hacktoberfest-2017/
+  http://mycroft.ai/blog/hacktoberfest-2017/
 published: true
 post_date: 2017-10-17 11:31:01
 ---
