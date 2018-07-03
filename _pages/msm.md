@@ -13,7 +13,12 @@ post_date: 2017-12-12 10:56:48
 - [Mycroft Skills Manager - msm](#mycroft-skills-manager---msm)
   * [What is Mycroft Skills Manager - msm?](#what-is-mycroft-skills-manager---msm)
   * [Using Mycroft Skills Manager - msm](#using-mycroft-skills-manager---msm)
-  * [msm error codes](#msm-error-codes)
+  * [`msm` errors](#msm-errors)
+    + [Git authentication failed](#git-authentication-failed)
+    + [Uncommitted changes](#uncommitted-changes)
+    + [Git command error - not something we can merge](#git-command-error---not-something-we-can-merge)
+  * [Other techniques to resolve Skill installation dependencies](#other-techniques-to-resolve-skill-installation-dependencies)
+    + [Forcing the re-installation of dependencies](#forcing-the-re-installation-of-dependencies)
 
 ## What is Mycroft Skills Manager - msm?
 
@@ -120,7 +125,7 @@ Here are some common errors, what they mean, and how to resolve them.
 ### Git authentication failed
 
 ```bash
-ERROR - Error running update_skill on skill-radio-rne: GitException(Git command failed: GitCommandError(['git', 'fetch'], 128, b"remote: Invalid username or password.\nfatal: Authentication failed for 'https://github.com/ChrisFernandez/skill-radio-rne/'", b''))
+ERROR - Error running update_skill on skill-radio-rne: GitException(Git command failed: GitCommandError(['git', 'fetch'], 128, b"remote: Invalid username or password.nfatal: Authentication failed for 'https://github.com/ChrisFernandez/skill-radio-rne/'", b''))
 ```
 
 This error usually means that the GitHub repository for the **Skill** no longer exists, or has moved. Remove the **Skill** using `msm remove [Skill Name]` and then install a new **Skill**.
@@ -157,4 +162,4 @@ To trigger a `pip` re-installing **Skill** dependencies, do the following:
 
 This will force both a **Skills** update and the re-installation of dependencies when the `mycroft-skills` service is re-started.
 
-You can also use the utility `mycroft-pip` which will install dependencies into the Mycroft _virtual environment_ without activation (ie. the 'activate' command). Use `mycroft-pip` as you would regular `pip` for installing Python libraries on which your **Skill** depends. 
+You can also use the utility `mycroft-pip` which will install dependencies into the Mycroft _virtual environment_ without activation (ie. the 'activate' command). Use `mycroft-pip` as you would regular `pip` for installing Python libraries on which your **Skill** depends.
