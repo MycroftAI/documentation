@@ -4,7 +4,8 @@ post_title: Mycroft for KDE Plasma
 author: Kathy Reid
 post_excerpt: 'Learn how to create Skills for Mycroft for Plasma - Mycroft on the KDE Plasma desktop environment. '
 layout: page
-permalink: http://mycroft.ai/documentation/plasma/
+permalink: >
+  http://mycroft.ai/documentation/plasma__trashed/
 published: true
 post_date: 2018-06-29 12:29:29
 ---
@@ -127,7 +128,7 @@ fname = self.html_index + stitle + 'wikiresult.html' # Path of html folder locat
 scss = self.css_index # Path of your main css file which you have manually created
 f = open(fname,'w')
 wrapper = """
-<div id="imgPlace" style="background-image: url('{1}');">
+<div id="imgPlace">
 <h1><strong>{2}</strong></h1>
 </div>
 <div id="wikisummary">
@@ -139,7 +140,7 @@ stitle, smry) # The wrapper is where you define your basic html layout for the s
 and using the format function pass variables to the html that will be used at
 the time of generation. Writing complex JS and CSS in the wrapper should be
 avoided and should be placed in the HTML folder as external files. Example JS
-inclusion would have a self.js_index which could be passed to <script src={x}></script> insidef.write(wrapper) f.close()
+inclusion would have a self.js_index which could be passed to  insidef.write(wrapper) f.close()
 ```
 
 Next, we call the `__genwebview(self)` function from `handle_intent()`. 
