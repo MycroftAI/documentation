@@ -9,9 +9,18 @@ permalink: >
 published: true
 post_date: 2018-07-04 05:37:00
 ---
-## Introduction to the Message Bus
+# Introduction to the Message Bus
 
-### What is a Message Bus?
+- [Introduction to the Message Bus](#introduction-to-the-message-bus)
+  * [What is a Message Bus?](#what-is-a-message-bus)
+  * [Mycroft Messagebus messages](#mycroft-messagebus-messages)
+  * [Guidelines for Mycroft Messagebus usage](#guidelines-for-mycroft-messagebus-usage)
+  * [Command line invocation syntax](#command-line-invocation-syntax)
+  * [Connecting message handlers within a MycroftSkill](#connecting-message-handlers-within-a-mycroftskill)
+  * [Generating messages within a MycroftSkill](#generating-messages-within-a-mycroftskill)
+  * [Connecting to the Mycroft Messagebus in Python](#connecting-to-the-mycroft-messagebus-in-python)
+
+## What is a Message Bus?
 
 A Message Bus is mechanism for independent systems to communicate with each other using a set of _messages_ for common commands or notifiers. In the Mycroft ecosystem, the Messagebus is a websocket and the messages contain a message type with an optional JSON data packet. Some messages trigger actions and have side effects; some are simple notifiers of actions that either have occurred or are about to occur. The Messagebus connects the `mycroft-core` processes and the **Skills**, and can also be joined by outside systems such as the CLI.
 
