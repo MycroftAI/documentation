@@ -11,13 +11,13 @@ published: false
 
 ### What is a Message Bus?
 
-A Message Bus is mechanism for independent systems to communicate with each other using a set of _messages_ for common commands or notifiers. In the Mycroft ecosystem, the Messagebus is a websocket and the messages are contain a message type with an optional JSON data packet.  Some messages trigger actions and have side effects; some are simple notifiers of actions that either have occurred or are about to occur.  The messagebus connects the mycroft-core processes and the skills, and can also be joined by outside systems such as the CLI.
+A Message Bus is mechanism for independent systems to communicate with each other using a set of _messages_ for common commands or notifiers. In the Mycroft ecosystem, the Messagebus is a websocket and the messages contain a message type with an optional JSON data packet.  Some messages trigger actions and have side effects; some are simple notifiers of actions that either have occurred or are about to occur.  The Messagebus connects the `mycroft-core` processes and the **Skills**, and can also be joined by outside systems such as the CLI.
 
-The common _messages_ are listed below. Messages can be sent from the _producers_ listed below and acted upon by [Skills](https://mycroft.ai/documentation/skills) or other _consumers_ within mycroft-core.  The producers and consumers list below is not definitive and some messages might be generated or handled by other processes or advanced skills.
+The common _messages_ are listed below. Messages can be sent from the _producers_ listed below and acted upon by [Skills](https://mycroft.ai/documentation/skills) or other _consumers_ within `mycroft-core`.  The producers and consumers list below is not exhaustive and some messages might be generated or handled by other processes or advanced **Skills*.
 
-The base [MycroftSkill API](http://mycroft-core.readthedocs.io/en/stable/) handles most of the message bus usage automatically.  For example, the 'mycroft.stop' message is caught by the skill framework, invoking an overridden MycroftSkills.stop() method within a Skill.  Similarly, the MycroftSkill.speak() and MycroftSkill.speak_dialog() methods generate 'speak' messages to be conveyed to the TTS and audio systems.
+The base [MycroftSkill API](http://mycroft-core.readthedocs.io/en/stable/) handles most of the Messagebus usage automatically.  For example, the `mycroft.stop` message is caught by the skill framework, invoking an overridden `MycroftSkills.stop()` method within a **Skill**.  Similarly, the `MycroftSkill.speak()` and `MycroftSkill.speak_dialog()` methods generate `speak` messages to be conveyed to the text-to-speech (TTS) and audio systems.
 
-You will really only need to know about the Mycroft Messagebus if you are developing advanced or complex Skills.  The MycroftSkill.add_event() method allows you to attach a handler which will be triggered when the message is seen on the bus.
+You will really only need to know about the Mycroft Messagebus if you are developing advanced **Skills**.  The `MycroftSkill.add_event()` method allows you to attach a handler which will be triggered when the message is seen on the Messagebus.
 
 _NOTE: We can only currently assist you in writing Skills in Python, so if you choose to write Skills in another programming language, we may not be able to provide assistance - but we don't want to stop you doing awesome things!_
 
@@ -89,13 +89,12 @@ _NOTE: We can only currently assist you in writing Skills in Python, so if you c
 | `system.update`                                                                    |                                                                              |                              | mycroft-wifi-setup: mycroft_admin_service.py |  Force an `apt-get update` on `mycroft-mark-1` or `mycroft-picroft` package (as appropriate) |
 
 
-
 ## Guidelines for Mycroft Messagebus usage
 
-Private messages can be placed on the messagebus following these naming conventions:
+Private messages can be placed on the Messagebus following these naming conventions:
 `subsystem.message` or `skill.skillname.message`
 
-* * Messages MUST use verbs for requests - such as;
+* Messages MUST use verbs for requests - such as;
   - `mic.mute`
   - `mic.unmute`
   - `skill.mycrofttimer.cancel.all`
@@ -110,7 +109,7 @@ Private messages can be placed on the messagebus following these naming conventi
   - `skill.mycrofttimer.expired`
 
 
-## Command line invocation syntax:
+## Command line invocation syntax
 
 ```bash
 python -m mycroft.messagebus.send xxx.yyy.zzz
