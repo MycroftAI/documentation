@@ -69,3 +69,26 @@ Once you've found an TTS engine for your language, you will need to configure My
 In order to support a new language, individual **Skills** must support that language too. 
 
 [See here for more information on how Skills are structured](https://mycroft.ai/documentation/skills/introduction-developing-skills/#structure-of-the-skill-repo) - **Skills** have different `vocab` and `dialog` for each language they support.
+
+## Mycroft Core
+
+In addition to the above, `mycroft-core` also requires localization, in particular to extract dates and numbers. 
+
+[For more information, have a look at the `lang` directory within `mycroft/util` in `mycroft-core`](https://github.com/MycroftAI/mycroft-core/tree/dev/mycroft/util/lang). 
+
+Some common files for each language are: 
+
+* `parse_LANG.py` - this file parses large numbers, extracts dates and times in formats specific to the language, and handles definite articles such as 'a, an' etc. 
+
+* `format_LANG.py` - this file formats cardinal and ordinal numbers, and helps to handle pronunciation of complex phrases involving decimals and fractions. Depending on the language, this file will also help format days of the week and other complex date and time phrasing. 
+
+
+
+
+
+See code and the lang directory here:
+
+https://github.com/MycroftAI/mycroft-core/tree/dev/mycroft/util
+
+Best!
+Sergio (@zeehio)
