@@ -24,7 +24,7 @@ post_date: 2018-07-04 05:37:00
 
 A Message Bus is mechanism for independent systems to communicate with each other using a set of _messages_ for common commands or notifiers. In the Mycroft ecosystem, the Messagebus is a websocket and the messages contain a message type with an optional JSON data packet. Some messages trigger actions and have side effects; some are simple notifiers of actions that either have occurred or are about to occur. The Messagebus connects the `mycroft-core` processes and the **Skills**, and can also be joined by outside systems such as the CLI.
 
-The common _messages_ are listed below. Messages can be sent from the _producers_ listed below and acted upon by [Skills](https://mycroft.ai/documentation/skills) or other _consumers_ within `mycroft-core`. The producers and consumers list below is not exhaustive and some messages might be generated or handled by other processes or advanced **Skills*.
+The common _messages_ are listed below. Messages can be sent from the _producers_ listed below and acted upon by [Skills](https://mycroft.ai/documentation/skills) or other _consumers_ within `mycroft-core`. The producers and consumers list below is not exhaustive and some messages might be generated or handled by other processes or advanced **Skills**.
 
 The base [MycroftSkill API](http://mycroft-core.readthedocs.io/en/stable/) handles most of the Messagebus usage automatically. For example, the `mycroft.stop` message is caught by the skill framework, invoking an overridden `MycroftSkills.stop()` method within a **Skill**. Similarly, the `MycroftSkill.speak()` and `MycroftSkill.speak_dialog()` methods generate `speak` messages to be conveyed to the text-to-speech (TTS) and audio systems.
 
