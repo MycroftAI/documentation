@@ -1,12 +1,12 @@
 ---
-ID:
+ID: 39264
 post_title: Message Bus
 author: Kathy Reid
+post_excerpt: ""
 layout: page
+permalink: http://mycroft.ai/?page_id=39264
 published: false
 ---
-
-
 ## Introduction to the Message Bus
 
 ### What is a Message Bus?
@@ -29,7 +29,7 @@ _NOTE: We can only currently assist you in writing Skills in Python, so if you c
 | `mycroft.internet.connected`                                                       |                                                                              |                              |                                              | Internet connection is now available (only generated on initial connection)                |
 | `mycroft.stop`                                                                     |                                                                              |                              |                                              | Stop command (e.g. button pressed)                                                         |
 | `mycroft.paired`                                                                   |                                                                              |                              |                                              | Pairing has completed                                                                      |
-| `open`                                                                             |                                                                              | messagebus\client\ws.py      |                                              | System UI is ready                                                                         |
+| `open`                                                                             |                                                                              | messagebusclientws.py      |                                              | System UI is ready                                                                         |
 | `complete_intent_failure`                                                          |                                                                              |                              |                                              | Intent processing failed                                                                   |
 | `recognizer_loop:sleep`                                                            |                                                                              |                              |                                              | Go into 'sleep' mode.  Everything except "Hey Mycroft, wake up" will be ignored.           |
 | `recognizer_loop:wake_up`                                                          |                                                                              |                              |                                              | Come out of 'sleep' mode.                                                                  |
