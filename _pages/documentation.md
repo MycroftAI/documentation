@@ -46,6 +46,7 @@ Our documentation, just like our source code, is open source, [and you can contr
       + [Display Control](#display-control)
       + [Fallback Skills](#fallback-skills)
   * [Mycroft Skill Manager](#mycroft-skill-manager)
+  * [Message Bus](#message-bus)
   * [Language support in Mycroft](#language-support-in-mycroft)
       + [Adding a new language to Mycroft](#adding-a-new-language-to-mycroft)
       + [Configuring Mycroft for French language support](#configuring-mycroft-for-french-language-support)
@@ -186,6 +187,10 @@ Fallback **Skills** handle an **Intent** if one can't be matched with an **Utter
 ## [Mycroft Skill Manager](https://mycroft.ai/documentation/msm/)
 
 Learn how to use `msm` to install, search and update **Skills**. Includes a comprehensive list of `msm` error codes, and how to resolve them. 
+
+## [Message Bus](https://mycroft.ai/documentation/message-bus/)
+
+Aimed at advanced Skill Authors, learn how the Mycroft `MessageBus` is used to emit and consume messages. 
 
 ## [Language support in Mycroft](https://mycroft.ai/documentation/language-support/)
 
