@@ -81,14 +81,3 @@ Some common files for each language are:
 * `parse_LANG.py` - this file parses large numbers, extracts dates and times in formats specific to the language, and handles definite articles such as 'a, an' etc. 
 
 * `format_LANG.py` - this file formats cardinal and ordinal numbers, and helps to handle pronunciation of complex phrases involving decimals and fractions. Depending on the language, this file will also help format days of the week and other complex date and time phrasing. 
-
-
-
-
-
-See code and the lang directory here:
-
-https://github.com/MycroftAI/mycroft-core/tree/dev/mycroft/util
-
-Best!
-Sergio (@zeehio)
