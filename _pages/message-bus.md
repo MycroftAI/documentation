@@ -138,16 +138,16 @@ python -m mycroft.messagebus.send xxx.yyy.zzz '{"name": "value"}'
 ```python  
 ...  
 def initialize(self):  
-self.add_event('recognizer_loop:record_begin',  
-self.handle_listener_started)  
-self.add_event('recognizer_loop:record_end',  
-self.handle_listener_ended)
+    self.add_event('recognizer_loop:record_begin',  
+    self.handle_listener_started)  
+    self.add_event('recognizer_loop:record_end',  
+    self.handle_listener_ended)
 
 def handle_listener_started(self, message):  
-# code to excecute when active listening begins...
+    # code to excecute when active listening begins...
 
 def handle_listener_ended(self, message):  
-# code to excecute when active listening begins...  
+    # code to excecute when active listening begins...  
 ...  
 ```
 
@@ -156,9 +156,9 @@ def handle_listener_ended(self, message):
 ```python  
 ...  
 def some_method(self):  
-self.emitter.emit(Message("recognizer_loop:utterance",  
-{'utterances': ["inject a user utterance"],  
-'lang': 'en-us'}))  
+    self.emitter.emit(Message("recognizer_loop:utterance",  
+                              {'utterances': ["inject a user utterance"],  
+                               'lang': 'en-us'}))  
 ...  
 ```
 
@@ -169,15 +169,15 @@ Here is an example Python script to connect to the `messagebus`:
 ```python  
 #! /usr/bin/env python
 
-import sys  
-from websocket import create_connection  
-uri = 'ws://' + sys.argv[1] + ':8181/core'  
-ws = create_connection(uri)  
-print "Sending " + sys.argv[2] + " to " + uri + "..."  
-if len(sys.argv) >= 4:  
-data = sys.argv[3]  
+import sys
+from websocket import create_connection
+uri = 'ws://' + sys.argv[1] + ':8181/core'
+ws = create_connection(uri)
+print "Sending " + sys.argv[2] + " to " + uri + "..."
+if len(sys.argv) >= 4:
+    data = sys.argv[3]
 else:  
-data = "{}"
+    data = "{}"
 
 message = '{"type": "' + sys.argv[2] + '", "data": ' + data +'}'  
 result = ws.send(message)  
