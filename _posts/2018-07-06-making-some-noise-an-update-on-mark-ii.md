@@ -1,11 +1,14 @@
 ---
 ID: 39305
-post_title: Making Some Noise, an update on Mark II
+post_title: 'Mark II Update: Making Some Noise'
 author: Derick Schweppe
-post_excerpt: ""
+post_excerpt: >
+  Mycroft Chief of Design Derick Schweppe
+  gives an overview of smart speaker sound
+  design in this Mark II update.
 layout: post
 permalink: >
-  https://mycroft.ai/blog/making-some-noise-an-update-on-mark-ii/
+  http://mycroft.ai/blog/making-some-noise-an-update-on-mark-ii/
 published: true
 post_date: 2018-07-06 07:46:15
 ---
