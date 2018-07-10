@@ -29,6 +29,7 @@ Our documentation, just like our source code, is open source, [and you can contr
       + [Manually configuring WiFi for Picroft](#manually-configuring-wifi-for-picroft)
       + [Reconfiguring automatic updates for Picroft](#reconfiguring-automatic-updates-for-picroft)
   * [Mycroft for Linux platforms](#mycroft-for-linux-platforms)
+  * [Mycroft for Docker](#mycroft-for-docker)
   * [Mycroft for Android](#mycroft-for-android)
   * [`mycroft-conf` file](#mycroft-conf-file)
   * [Mycroft Skills](#mycroft-skills)
@@ -119,6 +120,10 @@ Want to turn off automatic updates? Change what time they occur? Learn how to ma
 ## [Mycroft for Linux platforms](https://mycroft.ai/documentation/linux/)
 
 In depth information on how to build Mycroft for common Linux distributions.
+
+## [Mycroft for Docker](http://mycroft.ai/documentation/docker/)
+
+How to build Mycroft in a Docker container either by building an image or pulling the image off Docker Hub.
 
 ## [Mycroft for Android](https://mycroft.ai/documentation/android/)
 
