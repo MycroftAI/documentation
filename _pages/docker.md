@@ -2,7 +2,12 @@
 ID: 39407
 post_title: Mycroft for Docker
 author: Kathy Reid
-post_excerpt: ""
+post_excerpt: >
+  Learn how to install Mycroft for Docker
+  either from a Docker Hub install, or by
+  building the image. Many thanks to Brian
+  Hopkins (@btotharye) for this
+  documentation.
 layout: page
 permalink: http://mycroft.ai/documentation/docker/
 published: true
