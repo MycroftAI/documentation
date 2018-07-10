@@ -1,12 +1,11 @@
 ---
-ID: 
+ID: 39407
 post_title: Mycroft for Docker
-author: Brian Hopkins
+author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/documentation/docker/
+permalink: http://mycroft.ai/?page_id=39407
 published: false
-post_date: 
 ---
 # Mycroft for Docker
 
@@ -73,13 +72,13 @@ Run the following to start up mycroft:
 _NOTE: You don't need the -e PLUSE_SERVER or any of the other pulse related variables if you only want to use text via a websocket to mycroft for example using this container.
 
 ```bash
-docker run -d \
--v directory_on_local_machine:/root/.mycroft \
---device /dev/snd \
--e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
--v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native \
--v ~/.config/pulse/cookie:/root/.config/pulse/cookie \
--p 8181:8181 \
+docker run -d 
+-v directory_on_local_machine:/root/.mycroft 
+--device /dev/snd 
+-e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native 
+-v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native 
+-v ~/.config/pulse/cookie:/root/.config/pulse/cookie 
+-p 8181:8181 
 --name mycroft mycroftai/docker-mycroft
 ```
 
