@@ -8,4 +8,4 @@ permalink: http://mycroft.ai/documentation/skills/
 published: true
 post_date: 2017-12-02 22:35:25
 ---
-[iframe src="https://mycroftai.github.io/mycroft-skills/"]
+<p>[iframe src=&quot;<a href="https://mycroftai.github.io/mycroft-skills/">https://mycroftai.github.io/mycroft-skills/</a>&quot;]</p>
