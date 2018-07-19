@@ -11,7 +11,7 @@ layout: post
 permalink: >
   http://mycroft.ai/blog/history-of-mycroft-how-we-got-here/
 published: true
-post_date: 2018-07-18 17:32:54
+post_date: 2018-07-19 10:00:54
 ---
 <h1><span style="font-weight: 400;">Community Supported</span></h1>
 <span style="font-weight: 400;">Our community and the power of crowdfunding is important. Mycroft was not a company before we took our <a href="https://mycroft.ai/blog/history-of-mycroft-making-mycroft-1/" target="_blank" rel="noopener">Mark I device to Kickstarter</a> and used perks-based crowdfunding to determine market interest. Because of the success of that project and the power of Kickstarter we were able to build a community of like-minded individuals to work together on an open source voice assistant. We ended up raising $193,000 total from Kickstarter and Indiegogo to produce our Mark I.</span>
