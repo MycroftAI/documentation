@@ -55,6 +55,8 @@ There are multiple ways to install Mycroft for Linux.
 
 The simplest way to install Mycroft for Linux is to clone the `mycroft-core` repo to your system and run a shell script, which will install all dependencies, and [Mycroft components](http://mycroft.ai/documentation/mycroft-software-hardware/).
 
+The `mycroft-core` repo is at [https://github.com/MycroftAI/mycroft-core](https://github.com/MycroftAI/mycroft-core).
+
 The instructions below will install Mycroft in your HOME directory.
 
 ```
