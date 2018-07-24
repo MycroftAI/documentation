@@ -9,7 +9,7 @@ post_excerpt: >
   development progress going forward.
 layout: post
 permalink: >
-  https://mycroft.ai/blog/many-roads-one-destination/
+  http://mycroft.ai/blog/many-roads-one-destination/
 published: true
 post_date: 2018-07-20 10:30:59
 ---
