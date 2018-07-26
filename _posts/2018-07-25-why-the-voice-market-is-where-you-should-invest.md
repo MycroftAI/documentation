@@ -11,7 +11,7 @@ post_excerpt: >
   fast-growing market.
 layout: post
 permalink: >
-  https://mycroft.ai/blog/why-the-voice-market-is-where-you-should-invest/
+  http://mycroft.ai/blog/why-the-voice-market-is-where-you-should-invest/
 published: true
 post_date: 2018-07-25 16:00:40
 ---
