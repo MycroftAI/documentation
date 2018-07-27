@@ -40,7 +40,7 @@ Typically, USB audio should be connected to `hwplug:1,0` but to verify, run this
 
 `aplay -L`
 
-Next, find the `hwplug` output for the device you want to use. Take this, and update the `mycroft.conf` file accordingly. This file is located at `/etc/mycroft/mycroft.conf` on Picroft. 
+Next, find the `hwplug` output for the device you want to use. Take this, and update the `mycroft.conf` file accordingly. This file is located at `~/mycroft.conf` on Picroft. 
 
 `"play_wav_cmdline": "aplay -Dhw:0,0 %1"`
 
