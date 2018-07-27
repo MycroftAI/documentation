@@ -1,12 +1,12 @@
 ---
-ID: 28902
-post_title: Contact
-author: senseid23@7h4r
+ID: 39668
+post_title: 'Contact &#8212; copy'
+author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/contact/
+permalink: http://mycroft.ai/purple-monkey-spanner/
 published: true
-post_date: 2017-02-01 19:29:42
+post_date: 2018-07-27 12:20:17
 ---
 [vc_row type="full_width_content" full_screen_row_position="full_height" equal_height="yes" content_placement="top" scene_position="center" text_color="light" text_align="left" overlay_strength="0.3"][vc_column column_padding="padding-10-percent" column_padding_position="all" background_color="#ffffff" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" width="1/2" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_row_inner column_margin="default" text_align="left"][vc_column_inner column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" width="1/1" column_border_width="none" column_border_style="solid"][image_with_animation image_url="30281" alignment="center" animation="Fade In" box_shadow="none" max_width="100%"][/vc_column_inner][/vc_row_inner][vc_column_text]
 <h2><span style="color: #000000;">Contact Mycroft</span></h2>
