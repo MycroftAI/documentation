@@ -35,7 +35,7 @@ Mycroft Skills Manager (msm) is a command line tool used to add, manage and remo
 
 If you are using a Picroft or Mark 1 **Device**, you can activate the `.venv` using the command:
 
-`mycroft-core$ source/opt/venvs/mycroft-core/bin/activate`
+`mycroft-core$ source /opt/venvs/mycroft-core/bin/activate`
 
 You can then run `msm`:
 
