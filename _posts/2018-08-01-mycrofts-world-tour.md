@@ -1,11 +1,11 @@
 ---
 ID: 39747
-post_title: "Mycroft's World Tour"
+post_title: 'Mycroft&#8217;s World Tour'
 author: Kris Adair
 post_excerpt: "Expanding the languages our voice assistant speaks makes Mycroft better. We're visiting near you to build our international community."
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycrofts-world-tour/
+  http://mycroft.ai/blog/mycrofts-world-tour/
 published: true
 post_date: 2018-08-01 14:30:37
 ---
