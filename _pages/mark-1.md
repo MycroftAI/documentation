@@ -17,6 +17,7 @@ post_date: 2017-12-02 22:35:25
       - [Getting Mark 1 connected to the internet using Wifi](#getting-mark-1-connected-to-the-internet-using-wifi)
     + [Pairing the Mark 1](#pairing-the-mark-1)
     + [Mark 1 menu options](#mark-1-menu-options)
+    + [Mark 1 boot sequence](#mark-1-boot-sequence)
     + [Hardware information](#hardware-information)
     + [Common tasks performed on the Mark 1](#common-tasks-performed-on-the-mark-1)
       - [Installing Skills on the Mark 1](#installing-skills-on-the-mark-1)
@@ -101,6 +102,20 @@ The available menu options are:
 * RESET: This option resets Mark 1 back to a factory default state. You may need to do this for troubleshooing, or if you're giving your Mark 1 to someone else. _NOTE: If you're resetting your Mark 1, remember to remove the Device from home.mycroft.ai so that the Pairing is removed also_
 
 * DEMO: If this option is selected, Mark 1 will provide a short demonstration of functionality, whilst channelling his secret desire to be Eminem :-)
+
+### Mark 1 boot sequence
+
+When you power on your Mark 1, the eyes on the Mark 1 will go through a series of color changes. They are explained in more detail here. 
+
+* NO EYES SHOWN: If your Mark 1 is not showing any LED pixels light up on its eyes when the power is plugged in, this means that the Arduino that powers the Neopixel eyes hasn't booted correctly. Try unplugging the power, waiting 30 seconds and then plugging the power back in. 
+
+* GREY SPINNEY EYES: On first boot, Mark 1 will show grey spinning eyes. During this time, both the Raspberry Pi 3 board, and the Arduino used to control the [Neopixel](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels) eyes are powering up. If your Mark 1 is stuck at this stage, try unplugging the power, waiting 30 seconds and then plugging the power back in. 
+
+* SOLID GREY EYES: After around 10 seconds, the grey spinning eyes may turn into solid grey eyes. During this time, the Raspberry Pi 3 board is writing code to the Arduino board that controls the Neopixel eyes. 
+
+* SOLID YELLOW EYES: On boot, Mark 1 will check that its software is up to date. First, it will do a [network time protocol](https://en.wikipedia.org/wiki/Network_Time_Protocol) sync to ensure that the system clock is synchronised, during which you will see the word `<<< SYNC <<<` appear on the LED display. Next, Mark 1 will attempt to update the Skills that are installed on the **Device**. If your Mark 1 gets stuck at this stage, it is likely an issue with updating software or Skills. A reboot may assist, but if it does not then please contact us via [Chat](https://mycroft.ai/chat) or the [Forum](https://community.mycroft.ai) and we can assist further. 
+
+* SOLID BLUE EYES (or color you have eyes set to in your home.mycroft.ai preferences): after Mark 1 has finished booting and is ready for your voice commands, it will show solid blue eyes, or the solid color you have chosen in your home.mycroft.ai preferences. 
 
 ### Hardware information
 
