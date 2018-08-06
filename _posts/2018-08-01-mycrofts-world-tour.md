@@ -28,7 +28,7 @@ We've <a href="https://mycroft.ai/blog/languages-are-hard/" target="_blank" rel=
 <span style="font-weight: 400;">In addition to the events for local language support, Joshua will be presenting on early-stage startup fundraising. If you or someone you know would like to learn how we’ve used crowdfunding to build Mycroft from an idea in a makerspace to an international company building a large open source voice project, let us know.</span>
 <h2>Tentative dates for the events are:</h2>
 <h3><span style="font-weight: 400;">Reykjavik</span></h3>
-<span style="font-weight: 400;">August 8, 7 PM International Language </span>
+<span style="font-weight: 400;">August 8, 7 PM International Language - <a href="https://www.eventbrite.com/e/an-icelandic-voice-assistant-teaching-mycroft-ai-new-languages-tickets-48811821472?utm-medium=discovery&amp;utm-campaign=social&amp;utm-content=attendeeshare&amp;aff=escb&amp;utm-source=cp&amp;utm-term=listing" target="_blank" rel="noopener">GET TICKETS</a></span>
 
 <span style="font-weight: 400;">August 9, 7 PM Startup Fundraising</span>
 <h3><span style="font-weight: 400;">Vienna</span></h3>
