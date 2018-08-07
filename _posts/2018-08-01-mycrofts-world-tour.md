@@ -20,27 +20,27 @@ post_date: 2018-08-01 14:30:37
 <hr />
 
 <h3><span style="font-weight: 400;">Reykjavik</span></h3>
-<span style="font-weight: 400;">August 8, 7 PM – International Language – <a href="https://www.eventbrite.com/e/an-icelandic-voice-assistant-teaching-mycroft-ai-new-languages-tickets-48811821472?utm-medium=discovery&amp;utm-campaign=social&amp;utm-content=attendeeshare&amp;aff=escb&amp;utm-source=cp&amp;utm-term=listing" target="_blank" rel="noopener">GET TICKETS</a></span>
+<span style="font-weight: 400;">August 8, 7 PM – <strong>International Language</strong> – <a href="https://www.eventbrite.com/e/an-icelandic-voice-assistant-teaching-mycroft-ai-new-languages-tickets-48811821472?utm-medium=discovery&amp;utm-campaign=social&amp;utm-content=attendeeshare&amp;aff=escb&amp;utm-source=cp&amp;utm-term=listing" target="_blank" rel="noopener">GET TICKETS</a></span>
 
-<span style="font-weight: 400;">August 9, 7 PM – Startup Fundraising</span>
+<span style="font-weight: 400;">August 9, 7 PM – <strong>Startup Fundraising</strong></span>
 
 <hr />
 
 <h3><span style="font-weight: 400;">Vienna</span></h3>
-<span style="font-weight: 400;">August 12, 5 PM – International Language </span>
+<span style="font-weight: 400;">August 12, 5 PM – <strong>International Language </strong></span>
 
-<span style="font-weight: 400;">August 13, 7 PM – Startup Fundraising</span>
+<span style="font-weight: 400;">August 13, 7 PM – <strong>Startup Fundraising</strong></span>
 
 <hr />
 
 <h3><span style="font-weight: 400;">Amsterdam</span></h3>
-<span style="font-weight: 400;">August 22, 7 PM – International Language</span>
+<span style="font-weight: 400;">August 22, 7 PM – <strong>International Language</strong></span>
 
-<span style="font-weight: 400;">August 23, 7 PM – Startup Fundraising</span>
+<span style="font-weight: 400;">August 23, 7 PM – <strong>Startup Fundraising</strong></span>
 
 <hr />
 
-<em><strong>Please check back for locations and more information.</strong></em>
+<em>Please check back for locations and more information.</em>
 <h2></h2>
 <h2>How Mycroft Learns a New Language</h2>
 We've <a href="https://mycroft.ai/blog/languages-are-hard/" target="_blank" rel="noopener">published a blog</a> on everything that's needed to make a voice assistant speak a new language. The last post was a high-level and technical overview. We've got some updates now:
