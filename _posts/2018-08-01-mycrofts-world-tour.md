@@ -46,3 +46,5 @@ We've <a href="https://mycroft.ai/blog/languages-are-hard/" target="_blank" rel=
 <h2></h2>
 <h2>Help Mycroft Go Global!</h2>
 [activecampaign form=43]
+
+&nbsp;
