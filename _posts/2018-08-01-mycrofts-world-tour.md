@@ -15,19 +15,30 @@ post_date: 2018-08-01 14:30:37
 
 <span style="font-weight: 400;">Mycroft’s next considered stops are <strong>Berlin</strong>, <strong>Paris</strong>, <strong>Madrid</strong>, <strong>Lisbon</strong>, and <strong>Barcelona</strong>. If you live in or near those cities and can help arrange an event, spread the word, or just want to know when plans finalize, please fill out </span><a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global"><span style="font-weight: 400;">the form</span></a><span style="font-weight: 400;"> or reach out to us at </span><a href="mailto:hello@mycroft.ai" target="_blank" rel="noopener"><span style="font-weight: 400;">hello@mycroft.ai</span></a><span style="font-weight: 400;">.</span>
 <h2></h2>
-<h2>Tentative dates for the events are:</h2>
+<h2>Tentative event dates:</h2>
+
+<hr />
+
 <h3><span style="font-weight: 400;">Reykjavik</span></h3>
 <span style="font-weight: 400;">August 8, 7 PM – International Language – <a href="https://www.eventbrite.com/e/an-icelandic-voice-assistant-teaching-mycroft-ai-new-languages-tickets-48811821472?utm-medium=discovery&amp;utm-campaign=social&amp;utm-content=attendeeshare&amp;aff=escb&amp;utm-source=cp&amp;utm-term=listing" target="_blank" rel="noopener">GET TICKETS</a></span>
 
 <span style="font-weight: 400;">August 9, 7 PM – Startup Fundraising</span>
+
+<hr />
+
 <h3><span style="font-weight: 400;">Vienna</span></h3>
 <span style="font-weight: 400;">August 12, 5 PM – International Language </span>
 
 <span style="font-weight: 400;">August 13, 7 PM – Startup Fundraising</span>
+
+<hr />
+
 <h3><span style="font-weight: 400;">Amsterdam</span></h3>
 <span style="font-weight: 400;">August 22, 7 PM – International Language</span>
 
 <span style="font-weight: 400;">August 23, 7 PM – Startup Fundraising</span>
+
+<hr />
 
 <em><strong>Please check back for locations and more information.</strong></em>
 <h2></h2>
