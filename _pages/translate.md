@@ -1,6 +1,6 @@
 ---
 ID: 39970
-post_title: translate
+post_title: Translating Mycroft into Your Language
 author: Steve Penrod
 post_excerpt: ""
 layout: page
