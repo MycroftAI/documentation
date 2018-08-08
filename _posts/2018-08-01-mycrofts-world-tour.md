@@ -27,7 +27,6 @@ post_date: 2018-08-01 14:30:37
 
 <hr />
 
-<h3></h3>
 <h3><span style="font-weight: 400;">Vienna</span></h3>
 <span style="font-weight: 400;">August 12, 5 PM – <strong>International Language </strong></span>
 
