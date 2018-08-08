@@ -16,13 +16,13 @@ post_date: 2018-08-08 14:19:04
 <span style="font-weight: 400;">We are committed to supporting as many languages as possible, but we are going to need help.  Though our team is from places as diverse as Sweden, Brazil, Czech Republic, we don’t even come close to being able to translate into the hundreds of languages we’d like to support.  We’ve been working on some tools over the past few months to make translation easier and we’re now ready to roll out the first alpha versions.</span>
 <h1>Overview</h1>
 Supporting a language fully requires several independent but related processes.  The major pieces are the Mycroft Text, Text to Speech (TTS), and Speech to Text (STT).
-<h2>1) Text defining the Mycroft interaction</h2>
+<h3>1) Text defining the Mycroft interaction</h3>
 At the lowest level, the verbal interaction with Mycroft gets converted to text for processing, then back again to be spoken to you.  So the majority of the interaction level is defined with text files.  The most important step in localizing the interaction is translating these text files.
 
 Our localization is managed using an open set of tools called Pootle.  The Mycroft translation suite can be found here:  <a href="https://translate.mycroft.ai">https://translate.mycroft.ai </a> (<em>Coming Soon!</em>)
 
 This tool is the hub for translating all Mycroft Core technology and all the Skills built by both the Mycroft AI team and by the community.  This is a straightforward and generally well understood translation process.
-<h2>2) Text to Speech engine</h2>
+<h3>2) Text to Speech engine</h3>
 Unlike most simple apps on a phone or computer, supporting a voice agent requires literally teaching it to talk!  With Mycroft, this happens through machine learning with several steps.  The process is very similar to teaching a child to the relationship between written language and spoken language by reading books out loud to them.
 
 The steps of the process are:
@@ -35,7 +35,7 @@ Each language needs around 15,000 phrases:  <a href="https://docs.google.com/sp
 <em>Mycroft AI will provide the computing resources and expertise for this</em></li>
  	<li>Publish the trained voice</li>
 </ul>
-<h2>3) Speech to Text engine</h2>
+<h3>3) Speech to Text engine</h3>
 The last and most difficult piece is teaching the agent to understand human speech.  While the Text to Speech can be done by a single dedicated individual, Speech to Text requires a community.  Recordings of hundreds of voices are needed to make this work well.
 
 The steps of the process are:
