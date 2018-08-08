@@ -22,7 +22,7 @@ post_date: 2018-08-01 14:30:37
 <h3><span style="font-weight: 400;">Reykjavik</span></h3>
 <span style="font-weight: 400;">August 8, 7 PM – <strong>International Language</strong> – <a href="https://www.eventbrite.com/e/an-icelandic-voice-assistant-teaching-mycroft-ai-new-languages-tickets-48811821472?utm-medium=discovery&amp;utm-campaign=social&amp;utm-content=attendeeshare&amp;aff=escb&amp;utm-source=cp&amp;utm-term=listing" target="_blank" rel="noopener">GET TICKETS</a></span>
 
-<span style="font-weight: 400;">August 9, 7 PM – <strong>Startup Fundraising – <a href="https://www.eventbrite.com/e/early-stage-startup-fundraising-how-to-crowdfund-tickets-48811991982" target="_blank" rel="noopener">GET TICKETS</a></strong></span>
+<span style="font-weight: 400;">August 9, 7 PM – <strong>Startup Fundraising – </strong><a href="https://www.eventbrite.com/e/early-stage-startup-fundraising-how-to-crowdfund-tickets-48811991982" target="_blank" rel="noopener">GET TICKETS</a></span>
 
 <hr />
 
