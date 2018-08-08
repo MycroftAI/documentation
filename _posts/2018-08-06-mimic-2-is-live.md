@@ -4,7 +4,7 @@ post_title: Mimic 2 is LIVE!
 author: Michael Nguyen
 post_excerpt: "Mycroft announces Version 2 Beta of Mycroft's Mimic Text to Speech engine. Version 2 is an entirely new architecture and sounds far more natural."
 layout: post
-permalink: https://mycroft.ai/blog/mimic-2-is-live/
+permalink: http://mycroft.ai/blog/mimic-2-is-live/
 published: true
 post_date: 2018-08-06 06:50:14
 ---
@@ -30,6 +30,8 @@ post_date: 2018-08-06 06:50:14
 &nbsp;
 
 <span style="font-weight: 400;">Voice is a personal choice, and Mimic allows you to select or create a voice that fits your style and pre</span><span style="font-weight: 400;">ference. To start using this new voice, change the Voice option in your <a href="https://home.mycroft.ai/#/setting/basic" target="_blank" rel="noopener">Home settings</a> to American Male (Beta). That's it! Your devices will update to use the new voice after a minute. You can also tell Mycroft to “update your configuration.”</span>
+
+Mimic2 will be on a 3 month trial and then will be a feature for <a href="https://mycroft.ai/product/mycroft-supporter/" target="_blank" rel="noopener">Mycroft Supporters</a>.
 
 <span style="font-weight: 400;">Below is a technical explanation of Mimic. You can continue if you like to see what’s happening under the hood.</span>
 <h2>What is the new architecture of Mimic?</h2>
