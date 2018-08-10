@@ -28,9 +28,9 @@ post_date: 2018-08-01 14:30:37
 <hr />
 
 <h3><span style="font-weight: 400;">Vienna</span></h3>
-<span style="font-weight: 400;">August 12, 5 PM – <strong>International Language </strong></span>
+<span style="font-weight: 400;">August 12, 5 PM – <strong>International Language – <a href="https://www.eventbrite.com/e/an-austrian-voice-assistant-teaching-mycroft-ai-new-languages-tickets-48949589540" target="_blank" rel="noopener">RSVP</a></strong></span>
 
-<span style="font-weight: 400;">August 13, 7 PM – <strong>Startup Fundraising</strong></span>
+<span style="font-weight: 400;">August 13, 7 PM – <strong>Startup Fundraising – <a href="https://www.eventbrite.com/e/early-stage-startup-fundraising-how-to-crowdfund-tickets-48949734975" target="_blank" rel="noopener">RSVP</a></strong></span>
 
 <hr />
 
