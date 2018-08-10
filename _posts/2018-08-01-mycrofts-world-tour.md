@@ -23,21 +23,19 @@ post_date: 2018-08-01 14:30:37
 <span style="font-weight: 400;">August 8, 7 PM – <strong>International Language</strong> – <a href="https://www.eventbrite.com/e/an-icelandic-voice-assistant-teaching-mycroft-ai-new-languages-tickets-48811821472?utm-medium=discovery&amp;utm-campaign=social&amp;utm-content=attendeeshare&amp;aff=escb&amp;utm-source=cp&amp;utm-term=listing" target="_blank" rel="noopener">RSVP</a></span>
 
 <span style="font-weight: 400;">August 9, 7 PM – <strong>Startup Fundraising – </strong><a href="https://www.eventbrite.com/e/early-stage-startup-fundraising-how-to-crowdfund-tickets-48811991982" target="_blank" rel="noopener">RSVP</a></span>
-<h2>Tentative event dates:</h2>
-
-<hr />
-
 <h3><span style="font-weight: 400;">Vienna</span></h3>
 <span style="font-weight: 400;">August 12, 5 PM – <strong>International Language – <a href="https://www.eventbrite.com/e/an-austrian-voice-assistant-teaching-mycroft-ai-new-languages-tickets-48949589540" target="_blank" rel="noopener">RSVP</a></strong></span>
 
 <span style="font-weight: 400;">August 13, 7 PM – <strong>Startup Fundraising – <a href="https://www.eventbrite.com/e/early-stage-startup-fundraising-how-to-crowdfund-tickets-48949734975" target="_blank" rel="noopener">RSVP</a></strong></span>
+<h2>Tentative event dates:</h2>
+&nbsp;
 
 <hr />
 
 <h3><span style="font-weight: 400;">Amsterdam</span></h3>
-<span style="font-weight: 400;">August 22, 7 PM – <strong>International Language</strong></span>
+<span style="font-weight: 400;">August 29, 7 PM – <strong>International Language</strong></span>
 
-<span style="font-weight: 400;">August 23, 7 PM – <strong>Startup Fundraising</strong></span>
+<span style="font-weight: 400;">August 30, 7 PM – <strong>Startup Fundraising</strong></span>
 
 <hr />
 
