@@ -35,4 +35,6 @@ post_date: 2018-08-13 16:24:45
 <h2>What we're looking for</h2>
 <span style="font-weight: 400;">We’re looking for all sorts of posts, not just technical. This could be research or a survey on people’s privacy concerns in tech, an analysis of linguistic differences voice assistants struggle with, or a how-to process for building a special enclosure for a Picroft. If it meets the general criteria, don’t be shy!</span>
 
-<span style="font-weight: 400;">We hope this program will bring some great awareness to our community and their work and research. <a href="https://mycroftai.activehosted.com/f/44" target="_blank" rel="noopener">Submit your topic here</a>!</span>
+<span style="font-weight: 400;">We hope this program will bring some great awareness to our community and their work and research. Submit your topic below!</span>
+
+[activecampaign form=44]
