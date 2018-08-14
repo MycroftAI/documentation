@@ -35,6 +35,10 @@ post_date: 2018-08-01 14:30:37
 <span style="font-weight: 400;">August 29, 7 PM – <strong>International Language</strong></span>
 
 <span style="font-weight: 400;">August 30, 7 PM – <strong>Startup Fundraising</strong></span>
+<h3><span style="font-weight: 400;">Berlin</span></h3>
+<span style="font-weight: 400;">September 11, 7 PM – <strong>International Language</strong></span>
+
+<span style="font-weight: 400;">September 12, 7 PM – <strong>Startup Fundraising</strong></span>
 
 <hr />
 
