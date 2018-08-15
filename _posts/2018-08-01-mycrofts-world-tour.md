@@ -19,14 +19,7 @@ post_date: 2018-08-01 14:30:37
 
 <hr />
 
-<h3><span style="font-weight: 400;">Reykjavik</span></h3>
-<span style="font-weight: 400;">August 8, 7 PM – <strong>International Language</strong> – <a href="https://www.eventbrite.com/e/an-icelandic-voice-assistant-teaching-mycroft-ai-new-languages-tickets-48811821472?utm-medium=discovery&amp;utm-campaign=social&amp;utm-content=attendeeshare&amp;aff=escb&amp;utm-source=cp&amp;utm-term=listing" target="_blank" rel="noopener">RSVP</a></span>
-
-<span style="font-weight: 400;">August 9, 7 PM – <strong>Startup Fundraising – </strong><a href="https://www.eventbrite.com/e/early-stage-startup-fundraising-how-to-crowdfund-tickets-48811991982" target="_blank" rel="noopener">RSVP</a></span>
-<h3><span style="font-weight: 400;">Vienna</span></h3>
-<span style="font-weight: 400;">August 12, 6:30 PM – <strong>International Language – <a href="https://www.eventbrite.com/e/an-austrian-voice-assistant-teaching-mycroft-ai-new-languages-tickets-48949589540" target="_blank" rel="noopener">RSVP</a></strong></span>
-
-<span style="font-weight: 400;">August 13, 7 PM – <strong>Startup Fundraising – <a href="https://www.eventbrite.com/e/early-stage-startup-fundraising-how-to-crowdfund-tickets-48949734975" target="_blank" rel="noopener">RSVP</a></strong></span>
+RSVP's for Amsterdam coming soon!
 <h2>Tentative event dates:</h2>
 
 <hr />
@@ -39,11 +32,22 @@ post_date: 2018-08-01 14:30:37
 <span style="font-weight: 400;">September 11, 7 PM – <strong>International Language</strong></span>
 
 <span style="font-weight: 400;">September 12, 7 PM – <strong>Startup Fundraising</strong></span>
+<h2>Past events:</h2>
+
+<hr />
+
+<h3><span style="font-weight: 400;">Reykjavik - <em>Recap coming soon</em></span></h3>
+<span style="font-weight: 400;">August 8, 7 PM – <strong>International Language</strong></span>
+
+<span style="font-weight: 400;">August 9, 7 PM – <strong>Startup Fundraising</strong></span>
+<h3><span style="font-weight: 400;">Vienna - </span><span style="font-weight: 400;"><em>Recap coming soon</em></span></h3>
+<span style="font-weight: 400;">August 12, 6:30 PM – <strong>International Language</strong></span>
+
+<span style="font-weight: 400;">August 13, 7 PM – <strong>Startup Fundraising</strong></span>
 
 <hr />
 
 <em>Please check back for locations and more information.</em>
-<h2></h2>
 <h2>How Mycroft Learns a New Language</h2>
 We've <a href="https://mycroft.ai/blog/languages-are-hard/" target="_blank" rel="noopener">published a blog</a> on everything that's needed to make a voice assistant speak a new language. The last post was a high-level and technical overview. We've got some updates now:
 <ul>
