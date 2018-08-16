@@ -1,0 +1,33 @@
+---
+ID: 40127
+post_title: 'Mycroft World Tour: Recapping Iceland and Austria'
+author: Joshua Montgomery
+post_excerpt: ""
+layout: post
+permalink: >
+  http://mycroft.ai/blog/mycroft-world-tour-recapping-iceland-and-austria/
+published: true
+post_date: 2018-08-16 09:00:52
+---
+<h1><b>Reykjavik, Iceland</b></h1>
+<span style="font-weight: 400;">We hosted our first</span><a href="https://mycroft.ai/blog/mycrofts-world-tour/" target="_blank" rel="noopener"> <span style="font-weight: 400;">Mycroft World Tour</span></a><span style="font-weight: 400;"> events in Reykjavik on August 8 and 9. During the international language meeting, we were lucky to have met the team at <a href="https://en.ru.is/" target="_blank" rel="noopener">Reykjavik University</a> that is working to build speech recognition and synthesis for Icelandic. It turns out that the government of Iceland has already funded data collection efforts for the language and </span><a href="http://www.malfong.is/index.php?lang=en&amp;pg=" target="_blank" rel="noopener"><span style="font-weight: 400;">the data is all freely available online</span></a><span style="font-weight: 400;">.</span>
+
+<a href="https://mycroft.ai/wp-content/uploads/2018/08/mycroft_at_RU.jpg"><img class="alignnone wp-image-40160 size-full" src="https://mycroft.ai/wp-content/uploads/2018/08/mycroft_at_RU.jpg" alt="Joshua of Mycroft with the Icelandic language team from Reykjavik University." width="2677" height="1652" /></a>
+
+<span style="font-weight: 400;">Over the next several months the Mycroft Community will be working with Mozilla to import this data into <a href="https://github.com/mozilla/DeepSpeech" target="_blank" rel="noopener">DeepSpeech</a> and build the first <a href="https://github.com/MycroftAI/mimic2" target="_blank" rel="noopener">Mimic2</a> powered voice for Icelandic.</span>
+<h1><b>Vienna, Austria</b></h1>
+<span style="font-weight: 400;"><a href="https://mycroft.ai/wp-content/uploads/2018/08/IMG_20180812_175736.jpg"><img class="alignnone wp-image-40133 size-full" src="https://mycroft.ai/wp-content/uploads/2018/08/IMG_20180812_175736.jpg" alt="Mycroft Mark I in Vienna, Austria" width="4032" height="3024" /></a>It was Mycroft’s privilege to be a small sponsor of <a href="https://akademy.kde.org/2018" target="_blank" rel="noopener">KDE Akademy</a> in Vienna, Austria. It worked out nicely as a World Tour stop to ensure the broader open source community was included.</span>
+
+<span style="font-weight: 400;">The crowd at KDE Akademy was awesome. I was immediately greeted by Aditya Mehra who is an active member of both the Mycroft and KDE communities. You probably know Aditya by his handle - AIX. We spent the day listening to great talks on subjects like privacy and onboarding developers. We even got a look at how free and open source software is helping to track crimes against humanity in North Korea.</span>
+
+<span style="font-weight: 400;">That night I got to attend the sponsor’s dinner where I was impressed by folks like Nicole Faerber at </span><a href="https://puri.sm/" target="_blank" rel="noopener"><span style="font-weight: 400;">Purism</span></a><span style="font-weight: 400;">, TL Lim at </span><a href="https://www.pine64.org/" target="_blank" rel="noopener"><span style="font-weight: 400;">Pine64</span></a><span style="font-weight: 400;">, and Clemens Toennies at </span><a href="https://www.pine64.org/" target="_blank" rel="noopener"><span style="font-weight: 400;">Blue Systems</span></a><span style="font-weight: 400;">. We had a very nice meal and some deep discussions about how we can expand private, open solutions to people around the world.</span>
+
+<span style="font-weight: 400;">On day two </span><a href="https://conf.kde.org/en/Akademy2018/public/events/34" target="_blank" rel="noopener"><span style="font-weight: 400;">AIX gave a talk</span></a><span style="font-weight: 400;"> about the progress of Mycroft on Plasma. He has made significant inroads on the effort and the graphics look great. AIX also showed me how the desktop plasmoid can interface with KDE’s mobile system to send directions and other information to the mobile device. Today this is only working if both devices are on the same network, but I can see a future where a web service allows you to share data across all of your Mycroft instances for a seamless experience across wearable - mobile - desktop and embedded devices.</span>
+
+<a href="https://mycroft.ai/wp-content/uploads/2018/08/aix-cropped.png"><img class="alignnone wp-image-40134 size-full" src="https://mycroft.ai/wp-content/uploads/2018/08/aix-cropped.png" alt="Mycroft Community Developer AIX presenting updates to the Mycroft Plasma at KDE Akademy" width="1600" height="900" /></a>
+
+<span style="font-weight: 400;">I also got a chance to chat further with Lydia Pintscher from the </span><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" target="_blank" rel="noopener"><span style="font-weight: 400;">WikiData project</span></a><span style="font-weight: 400;">. For those of you who don’t know, WikiData provides structured data to support Wikipedia and - importantly - Q&amp;A engines from companies like Google, Amazon, and Apple. Though we do all right for Q&amp;A at Mycroft by using a combination of Wikipedia, Wolfram Alpha, and DuckDuckGo I think there is a real opportunity to ingest WikiData’s dataset and do a better job with general knowledge questions. Lydia is based in Berlin so I plan to follow up with her </span><a href="https://mycroft.ai/blog/mycrofts-world-tour/#berlin" target="_blank" rel="noopener"><span style="font-weight: 400;">while I’m there in September</span></a><span style="font-weight: 400;">.</span>
+
+<span style="font-weight: 400;">Finally, I got to give a sponsor’s talk where I shared my vision for an open future for voice. Though the desktop and mobile worlds are important, the winners in those markets have largely been decided. Voice technology is so incredibly new ( at least WORKING voice technology ) that the winners haven’t been decided yet. That presents a huge opportunity to the open source world to build a voice assistant that plays a significant role in the future of the technology. Mycroft embodies that opportunity and I was glad to share our vision for a private, capable user-agent for the masses.</span>
+
+To let us know about a group in your area who would want to host or attend a Mycroft event, or to get notified when new dates are set near you, <a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global" target="_blank" rel="noopener">fill out this form</a>!
