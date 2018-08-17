@@ -124,13 +124,13 @@ Private messages can be placed on the Messagebus following these naming conventi
 ## Command line invocation syntax
 
 ```bash  
-python -m mycroft.messagebus.send xxx.yyy.zzz  
+python3 -m mycroft.messagebus.send xxx.yyy.zzz  
 ```
 
 or
 
 ```bash  
-python -m mycroft.messagebus.send xxx.yyy.zzz '{"name": "value"}'  
+python3 -m mycroft.messagebus.send xxx.yyy.zzz '{"name": "value"}'  
 ```
 
 ## Connecting message handlers within a MycroftSkill
@@ -167,13 +167,13 @@ def some_method(self):
 Here is an example Python script to connect to the `messagebus`:
 
 ```python  
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 import sys
 from websocket import create_connection
 uri = 'ws://' + sys.argv[1] + ':8181/core'
 ws = create_connection(uri)
-print "Sending " + sys.argv[2] + " to " + uri + "..."
+print("Sending " + sys.argv[2] + " to " + uri + "...")
 if len(sys.argv) >= 4:
     data = sys.argv[3]
 else:  
@@ -181,9 +181,9 @@ else:
 
 message = '{"type": "' + sys.argv[2] + '", "data": ' + data +'}'  
 result = ws.send(message)  
-print "Receiving..."  
+print("Receiving..." )
 result = ws.recv()  
-print "Received '%s'" % result  
+print("Received '%s'" % result)
 ws.close()  
 ```
 
