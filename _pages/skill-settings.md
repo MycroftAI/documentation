@@ -42,9 +42,9 @@ file.
 **Skill Settings** inherit from a Python dict. This means that you can use it just like you would any other Python dictionary.
 
 ```python
-print self.settings.get('meaning of life') # outputs None... oh.. :(
+print(self.settings.get('meaning of life')) # outputs None... oh.. :(
 self.settings['meaning of life'] = 42
-print self.settings.get('meaning of life') # outputs 42! yay
+print(self.settings.get('meaning of life')) # outputs 42! yay
 ```
 ### More information on Skill Settings
 

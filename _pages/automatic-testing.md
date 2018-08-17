@@ -126,7 +126,7 @@ require(LIST_PARAMETER).optionally('_TestRunner').build())
 def add_task_to_list_intent(self, message):
 try:
 if message.data.get('_TestRunner'):
-print "Initiated by the test runner"
+print("Initiated by the test runner")
 ```
 
 And the message regular expression from the `regex/en-us` directory is:
