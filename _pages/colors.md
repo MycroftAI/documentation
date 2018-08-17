@@ -8,7 +8,7 @@ permalink: http://mycroft.ai/colors/
 published: true
 post_date: 2018-08-17 15:13:21
 ---
-&nbsp;
+<p>&nbsp;</p>
 <h1>Mycroft Color Palette</h1>
 <div style="background-color: #22a7f0; display: inline-block; width: 150px; height: 150px; border-radius: 50%; font-size: 18px; color: #fff; line-height: 150px; text-align: center; margin: 0 20px 20px 0;">#22A7F0</div>
 <div style="background-color: #fee255; display: inline-block; width: 150px; height: 150px; border-radius: 50%; font-size: 18px; color: black; line-height: 150px; text-align: center; margin: 0 20px 20px 0;">#FEE255</div>
