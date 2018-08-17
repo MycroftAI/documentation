@@ -74,7 +74,7 @@ This file would contain examples of questions asking what a *tomato* is.
 
 and
 
-`vocab/en-us/what.is.intent`
+`vocab/en-us/do.you.like.intent`
 
 with examples of questions about mycroft's opinion about tomatoes:
 
