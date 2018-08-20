@@ -7,7 +7,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/18-08b-what-you-need-to-know-as-a-community-developer/
+  http://mycroft.ai/blog/18-08b-what-you-need-to-know-as-a-community-developer/
 published: true
 post_date: 2018-08-15 10:00:22
 ---
@@ -28,6 +28,7 @@ post_date: 2018-08-15 10:00:22
  	<li style="font-weight: 400;"><span style="font-weight: 400;">Merger of the dialog/announce parameters in <code>MycroftSkills.get_response()</code></span></li>
  	<li style="font-weight: 400;"><span style="font-weight: 400;">Data typecasts for <code>settingsmeta</code> values</span></li>
  	<li style="font-weight: 400;"><span style="font-weight: 400;">Removal of <code>parsedatetime</code> module as a Mycroft Core requirement</span></li>
+ 	<li><span style="font-weight: 400;">Removal of deprecated <code>mycroft.util.extractnumber()</code>, use <code>extract_number() </code>instead.</span></li>
 </ul>
 <span style="font-weight: 400;">With these changes in place, we can continue the evolution of Mycroft Core, adding the next round of new features.</span>
 
