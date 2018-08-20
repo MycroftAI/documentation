@@ -16,7 +16,7 @@ permalink: >
 published: true
 post_date: 2018-06-07 10:29:28
 ---
-<a href="https://mycroft.ai/documenation/picroft">Picroft</a> - Mycroft on a Raspberry Pi - is the most popular way for people to get familiar with Mycroft software and to start experimenting with Skills and our other tools such as Precise, Padatious, and Mimic. To date, we’ve had tens of thousands of downloads of our <a href="https://mycroft.ai/to/picroft-image">Picroft disk image</a>, and it’s wonderful to be able to unite affordable open ARM-based hardware with our software to deliver an open source voice assistant.
+<a href="https://mycroft.ai/documentation/picroft">Picroft</a> - Mycroft on a Raspberry Pi - is the most popular way for people to get familiar with Mycroft software and to start experimenting with Skills and our other tools such as Precise, Padatious, and Mimic. To date, we’ve had tens of thousands of downloads of our <a href="https://mycroft.ai/to/picroft-image">Picroft disk image</a>, and it’s wonderful to be able to unite affordable open ARM-based hardware with our software to deliver an open source voice assistant.
 
 Picroft has been around <a href="https://mycroft.ai/blog/mycroft-now-available-raspberry-pi-image/">since January 2017, when the first disk image was made available</a>. Since that time, it’s been based on the <a href="http://downloads.raspberrypi.org/raspbian_lite/images/">Raspbian Jessie Lite image</a>, and has been targeted at the Raspberry Pi 3 Model B. With <a href="https://www.raspberrypi.org/blog/raspberry-pi-3-model-bplus-sale-now-35/">new models of Raspberry Pi hardware being introduced</a> (particularly the powerful Pi3B+)  we are now at a crossroads.
 
