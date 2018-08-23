@@ -148,7 +148,6 @@ The data type of this field. The supported types are:
   * Text: (any kind of text)
   * Email: (text validated as an email address)
   * Checkbox: (boolean, True or False)
-
   * Number: (text validated as a number)
   * Password: (text hidden from view by default)
 
