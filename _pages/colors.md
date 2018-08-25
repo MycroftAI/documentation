@@ -23,6 +23,7 @@ post_date: 2018-08-17 15:13:21
 <div style="background-color: #bdc3c7; display: inline-block; width: 150px; height: 150px; border-radius: 50%; font-size: 18px; color: black; line-height: 150px; text-align: center; margin: 0 20px 20px 0;">#BDC3C7</div>
 <div style="background-color: #6c7a89; display: inline-block; width: 150px; height: 150px; border-radius: 50%; font-size: 18px; color: #fff; line-height: 150px; text-align: center; margin: 0 20px 20px 0;">#6C7A89</div>
 <div style="background-color: #222222; display: inline-block; width: 150px; height: 150px; border-radius: 50%; font-size: 18px; color: #fff; line-height: 150px; text-align: center; margin: 0 20px 20px 0;">#222222</div>
+<h2></h2>
 <h2>Palette for GIMP, Inkscape etc</h2>
 <pre><code>GIMP Palette
 Name: Mycroft August 2018
