@@ -14,7 +14,7 @@ permalink: >
 published: true
 post_date: 2018-08-13 16:24:45
 ---
-<span style="font-weight: 400;">Mycroft is happy to announce the ability for community members to author and publish Guest Blog Posts on Mycroft.ai. Ever written some content about your favorite voice assistant? Or, maybe you've had an idea for a post about the technology that makes it work, or the policy, philosophy, or societal impacts arising around it? Now you can, and have it featured on our blog!</span>
+<span style="font-weight: 400;">Mycroft is happy to announce the ability for community members to author and publish Guest Blog Posts on <a href="https://mycroft.ai/">Mycroft.ai</a>. Ever written some content about your favorite voice assistant? Or, maybe you've had an idea for a post about the technology that makes it work, or the policy, philosophy, or societal impacts arising around it? Now you can, and have it featured on our blog!</span>
 
 <span style="font-weight: 400;">Every so often, we receive a request for guest blog posting and have now put together a process to ensure equal opportunity and quality assurance for guest content on Mycroft’s website. We’ve been testing this process with a few potential guest authors so revisions are likely, but don’t let that stop you from jumping in if you meet the criteria!</span>
 <h1><span style="font-weight: 400;">We’ve set these standards to consider when outlining your Guest Post and submitting:</span></h1>
@@ -25,7 +25,7 @@ post_date: 2018-08-13 16:24:45
  	<li style="font-weight: 400;"><span style="font-weight: 400;">The</span><i><span style="font-weight: 400;"> Guest Blog Post</span></i><span style="font-weight: 400;"> cannot be used to promote another platform or product; unless Mycroft already has an existing partnership with the organization.</span></li>
 </ul>
 <h2>How about an example?</h2>
-<span style="font-weight: 400;">For example, let’s say I’ve written an awesome post on how to deploy highly accurate Speech to Text with low enough processing requirement that it can be used anywhere. To prove it’s ability, I took my system to the jungles of Madagascar for testing. if I were to submit for a post, I’d link to my LinkedIn or personal blog, whichever best demonstrates my ability to build such a system. I’d provide a brief outline of the post, including the premise I’ll be testing my system against, how to set it up and test it yourself, what the results of my jungle test were, and the conclusion and any further reading.</span>
+<span style="font-weight: 400;">For example, let’s say I’ve written an awesome post on how to deploy highly accurate Speech to Text with low enough processing requirements that it can be used anywhere. To prove its ability, I took my system to the jungles of Madagascar for testing. If I were to submit for a post, I’d link to my LinkedIn or personal blog, whichever best demonstrates my ability to build such a system. I’d provide a brief outline of the post, including the premise I’ll be testing my system against, how to set it up and test it yourself, what the results of my jungle test were, and the conclusion and any further reading.</span>
 
 <span style="font-weight: 400;">If the Mycroft team finds promise in your outline and background, we’ll reach out with further guidelines and a blog template. We’ll then work with you to collect a draft of your post, the name and title you’ll want on the post, a headshot, and a snippet about you.</span>
 
