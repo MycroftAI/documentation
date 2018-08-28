@@ -91,7 +91,7 @@ Specify the steps the user should take to test the Skill, such as;
 
 Indicate clearly what constitutes a pass criterion for the Skill, and what constitutes a fail criterion.
 
-#### Where feedback on SKILL NAME should be directed a
+#### Where feedback on SKILL NAME should be directed to
 
 Be clear about how feedback on the Skill should be provided, such as through Issues on GitHub, via email or via [Mycroft Chat](https://chat.mycroft.ai).
 
@@ -148,6 +148,7 @@ Instead, the Skill Management Team will seek assistance from the Community, and 
 * Callback check - do we need to do a check for the callback error that was in the Spotify Skill?
 * Error handling - are there any specific checks we make for error handling or graceful degradation?
 * Automatic tests - do automatic tests of the **Skill** pass?
+* Skill Settings using Python Booleans - Skill Settings were updated in August 2018 to use Python Booleans instead of text Boolean values used in Python 2.4. [This is a good example of the change to check for](https://github.com/MycroftAI/skill-date-time/pull/32/files?utf8=%E2%9C%93&diff=split)
 
 _NOTE: We do not enforce PEP8 Checks on Skills_
 
