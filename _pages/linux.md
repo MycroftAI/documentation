@@ -246,3 +246,12 @@ mycroft-core$ ./dev_setup.sh
 This will rebuild your
 
 `virtualenv`
+
+#### Installation warns about bad interpreter
+
+When running dev_setup.sh, if you encounter a warning about a "bad interpreter", it is likely from having a space in the installation path:
+
+```./dev_setup.sh: /opt/test path/mycroft-core/.venv/bin/pip: "/opt/test: bad interpreter: No such file or directory
+Warning: Failed to install all requirements. Continue? y/N```
+
+If you can't install to a path without spaces, you will have to manually verify the requirements.txt entries are installed to your virtual environment.
