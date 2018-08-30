@@ -5,7 +5,7 @@ author: Eric Jurgeson
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/the-mycroft-benchmark/
+  http://mycroft.ai/blog/the-mycroft-benchmark/
 published: true
 post_date: 2018-08-30 08:00:23
 ---
@@ -93,4 +93,4 @@ post_date: 2018-08-30 08:00:23
 </ul>
 <span style="font-weight: 400;">Once you’ve done that you’ll not only be providing the metrics from your interactions, but also helping build STT, Wake Word spotting, and Intent Parsing for Mycroft. We always want to thank those members of our community who have Opted-In to help make AI for Everyone.</span>
 
-<span style="font-weight: 400;">Have an idea to improve Mycroft’s metrics and benchmarking? Maybe a question on the process? Let us know on the forum.</span>
+<span style="font-weight: 400;">Have an idea to improve Mycroft’s metrics and benchmarking? Maybe a question on the process? Let us know <a href="https://community.mycroft.ai/t/improving-mycroft-through-metrics-the-mycroft-benchmark/4427" target="_blank" rel="noopener">on the forum</a>.</span>
