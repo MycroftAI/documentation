@@ -19,10 +19,8 @@ post_date: 2018-08-01 14:30:37
 
 <hr />
 
-<h3><span style="font-weight: 400;">Amsterdam</span></h3>
-<span style="font-weight: 400;">August 29, 7 PM – <strong>International Language - <a href="https://www.eventbrite.com/e/a-dutch-voice-assistant-teaching-mycroft-ai-new-languages-tickets-49137606905">RSVP</a></strong></span>
-
-<span style="font-weight: 400;">August 29, 5:30 PM – <strong>Startup Fundraising - <a href="https://www.eventbrite.com/e/early-stage-fundraising-the-naked-truth-tickets-49135613944">RSVP</a></strong></span>
+<h3><span style="font-weight: 400;">Berlin</span></h3>
+<span style="font-weight: 400;">RSVPs coming soon!</span>
 <h2>Tentative event dates:</h2>
 
 <hr />
@@ -37,6 +35,7 @@ post_date: 2018-08-01 14:30:37
 
 <h3><span style="font-weight: 400;">Reykjavik - </span><span style="font-weight: 400;">August 8, </span><span style="font-weight: 400;">August 9 - <a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-iceland-and-austria/" target="_blank" rel="noopener">Recap</a></span></h3>
 <h3><span style="font-weight: 400;">Vienna - </span><span style="font-weight: 400;">August 12, </span><span style="font-weight: 400;">August 13 - <a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-iceland-and-austria/" target="_blank" rel="noopener">Recap</a></span></h3>
+<h3><span style="font-weight: 400;">Amsterdam - </span><span style="font-weight: 400;">August 29 - </span><em><span style="font-weight: 400;">Recap Soon!</span></em></h3>
 
 <hr />
 
