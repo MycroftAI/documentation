@@ -20,15 +20,25 @@ post_date: 2018-08-01 14:30:37
 <hr />
 
 <h3><span style="font-weight: 400;">Berlin</span></h3>
-<span style="font-weight: 400;">RSVPs coming soon!</span>
+<span style="font-weight: 400;">September 12, 7:30 PM – <strong>International Language - </strong><a href="https://www.eventbrite.com/e/german-voice-assistant-teaching-mycroft-ai-new-languages-tickets-49803507632">RSVP</a></span>
+
+<span style="font-weight: 400;">September 12, 5 PM – <strong>Startup Fundraising - </strong><a href="https://www.eventbrite.com/e/early-stage-fundraising-the-naked-truth-tickets-49803532707">RSVP</a></span>
+<h3><span style="font-weight: 400;">Paris</span></h3>
+September 18, 7 PM <span style="font-weight: 400;">– <strong>International Language - </strong><a href="https://www.eventbrite.com/e/french-voice-assistant-teaching-mycroft-ai-new-languages-tickets-49807770382">RSVP</a></span>
+
+September 19, 7 PM <span style="font-weight: 400;">– <strong>Startup Fundraising - </strong><a href="https://www.eventbrite.com/e/early-stage-fundraising-the-naked-truth-tickets-49807706190">RSVP</a></span>
 <h2>Tentative event dates:</h2>
 
 <hr />
 
-<h3><span style="font-weight: 400;">Berlin</span></h3>
-<span style="font-weight: 400;">September 11, 7 PM – <strong>International Language</strong></span>
+<h3><span style="font-weight: 400;">Madrid</span></h3>
+October 4, 7:30 PM <span style="font-weight: 400;">– <strong>International Language </strong></span>
 
-<span style="font-weight: 400;">September 12, 7 PM – <strong>Startup Fundraising</strong></span>
+October 4, 5 PM <span style="font-weight: 400;">– <strong>Startup Fundraising </strong></span>
+<h3><span style="font-weight: 400;">Lisbon</span></h3>
+October 18, 7:30 PM <span style="font-weight: 400;">– <strong>International Language </strong></span>
+
+October 18, 5 PM <span style="font-weight: 400;">– <strong>Startup Fundraising </strong></span>
 <h2>Past events:</h2>
 
 <hr />
