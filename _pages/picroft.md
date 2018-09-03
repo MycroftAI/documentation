@@ -218,7 +218,7 @@ If you want to try the `unstable` version, edit the file so that it reads:
 deb http://repo.mycroft.ai/repos/apt/debian debian-unstable main
 ```
 
-You will then need to run `sudo apt-get upgrade && sudo apt-get upgrade` for the change to take effect. 
+You will then need to run `sudo apt-get update && sudo apt-get upgrade` for the change to take effect. 
 
 #### Connecting Picroft to a keyboard and monitor
 
