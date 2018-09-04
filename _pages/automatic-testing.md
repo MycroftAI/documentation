@@ -43,21 +43,23 @@ To initialize a test, the Integration Test Runner can:
 * Set up and remove *context*
 * Set up a custom timeout for the Integration Test Runner, to allow for **Skills** that run for a very long time
 
+_NOTE: If you have submitted your Skill to the `mycroft-skills` repo and wish to run tests to ensure they are still passing, you can add the comment `Run test` to the PR and this will automatically initiate a Jenkins CI runthrough of the tests in the Skill._
+
 ## The Integration Test Runner files
 
 The Integration Test Runner is part of the `mycroft-core` package. It consists of the following files in `mycroft-core/test/integrationtests/skills`:
 
 * `discover_tests.py`
 * `skill_tester.py`
-* `skill_developers_testrunner.py`
+* `runner.py`
 * `message_tester.py`
 * `test_all_skills.py`
 
-The ```discover_test.py``` is the Python file that runs integration tests on all **Skills** in ```/opt/mycroft/skills```.
+The most interesting files from a Skill Author's perspective are:
 
-The ```skill_tester.py``` is the file that loads all **Skills** and execute tests, one **Skill** and one test at a time.
+The ```runner.py``` is can be copied to the Skill Author's working directory, where the **Skill's** ```__init__.py``` file exists or invoked directly with the skill path as argument. Running ```runner.py``` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill**, it will search any subdirectory.
 
-The ```skill_developers_testrunner.py``` is intended to be copied to the Skill Author's working directory, where the **Skill's** ```__init__.py``` file exists. Running ```skill_developers_testrunner.py``` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill** where it is, it will search the subdirectories.
+The ```discover_test.py``` is the Python file that runs integration tests on all **Skills** in ```/opt/mycroft/skills```. It is intended for debugging that all your tests are found by the test runner.
 
 The ```message_tester.py``` is a utility that can test a single message against the internal rule format used by the `skill_tester`. It is intended for debugging rules.
 
@@ -81,7 +83,7 @@ ls test/intent
 050.GetToken.intent.json
 ```
 
-A test case file understand the following json keywords:
+A test case file understand the following `JSON` keywords:
 
 | Keyword | Description |
 |---------|-------------|
@@ -118,7 +120,7 @@ Below is an example test case file:
 
 In the example above, some of the things asserted are not really needed, they are only provided to create an example demonstrating all possibilities.
 
-A snippet of the intent to be tested looks like this:
+A snippet of the **Intent** to be tested looks like this:
 
 ```
 @intent_handler(IntentBuilder('AddTaskToListIntent').require('AddTaskToListKeyword').require(TASK_PARAMETER).
@@ -137,7 +139,7 @@ The `AddTaksToListKeyword` is `Add`, defined in the `vocab/en-us` directory.
 With this knowledge, let us walk through the test case.
 
 The test case to simulate the user **Utterance**:
->add milk to the grocery list
+> add milk to the grocery list
 
 Assuming other tests were run before this example, the `UndoContext` and the `ConfirmContext` may have been set, but to be sure they are removed, we remove them before the test starts.
 
@@ -159,10 +161,9 @@ The `expected_data` can be used to check for specific data content, for example 
     "time": 6
    }
  ```
-
 Note that the message can contain additional fields without the test failing.
 
-The `expected_dialog` takes the dialog file (without the `.dialog`) in the same manner as when using the dialog in the skill. See [skill-personal](https://github.com/MycroftAI/skill-personal/blob/0a056a0f13fa3ad2ff5d3f685be0bf99244bca1e/test/intent/what.are.you.intent.json) for an example.
+The `expected_dialog` takes the dialog file (without the `.dialog`) in the same manner as when using the dialog in the **Skill**. See [skill-personal](https://github.com/MycroftAI/skill-personal/blob/0a056a0f13fa3ad2ff5d3f685be0bf99244bca1e/test/intent/what.are.you.intent.json) for an example.
 
 In the example above the ```changed_context``` and ```assert``` actually does the same thing, it is mentioned as an example only. The ```assert``` shows the internal rule format (see the next paragraph).
 
@@ -214,11 +215,25 @@ As mentioned in the example above, context can be used to make an **Intent** awa
 
 The ```discover_tests.py``` is intended to be run like a Python unit test, please refer to [https://docs.python.org/2/library/unittest.html](https://docs.python.org/2/library/unittest.html). Most IDEs have an easy way to run unit tests, and create nice structured test reports.
 
-The ```skill_developers_testrunner.py``` is intended to be copied to the Skill Author's development directory, or directly in the **Skill** directory. When run, it will search the directory it is in, and subdirectories, until it finds an ```__init__.py``` file. When it does, it will not traverse further down from that directory, but it will search sibling directories. In effect, it will only test one **Skill**, if it is run in that **Skill's** directory. The ```skill_developers_testrunner.py``` is just like a unit test.
+The ```runner.py``` is intended to run with a skill directory as parameter,
+
+```shell
+ake@Woodstock:~/projects/python/mycroft-core$ source venv-activate.sh
+ake@Woodstock:~/projects/python/mycroft-core$ python -m test.integrationtest.skills.runner PATH/TO/SKILL
+```
+or directly in the **Skill** directory:
+
+```shell
+ake@Woodstock:~/projects/python/mycroft-core$ source venv-activate.sh
+ake@Woodstock:~/projects/python/mycroft-core$ cd /PATH/TO/SKILL
+ake@Woodstock:/PATH/TO/SKILL$ python -m test.integrationtest.skills.runner
+```
+
+When run, it will search the directory it is in, and subdirectories, until it finds an ```__init__.py``` file. When it does, it will not traverse further down from that directory, but it will search sibling directories. In effect, it will only test one **Skill**, if it is run in that **Skill's** directory. ```runner.py``` is an excellent tool when developing a **Skill** and wanting to run only the tests for that **Skill**.
 
 ## Troubleshooting tests
 
-Each message event is tested by the rules. When all rules have succeeded, the test ends. When a rule succeeds, the string ”Succeeded” is appended to the rule (see the "Rule status" in the test case output file below). During execution, the test runner prints the messages received from the skill. An example test run is shown below (some output has been left out to keep the example short):
+Each message event is tested by the rules. When all rules have succeeded, the test ends. When a rule succeeds, the string ”Succeeded” is appended to the rule (see the "Rule status" in the test case output file below). During execution, the test runner prints the messages received from the **Skill**. An example test run is shown below (some output has been left out to keep the example short):
 
 Test case output file:
 
@@ -309,4 +324,8 @@ Name Stmts Miss Cover
 
 If you are running the automated tests, and have test failures that are beyond your control - for example the error is triggered by something in `mycroft-core` or other Mycroft software, then the Skills Management Team can choose to override the need for automated tests to have passed when they assess the **Skill**.
 
-Please paste a copy of the automated Skill testing output as a comment in the Pull Request when you [submit it to the Skills repo](https://mycroft.ai/documentation/skills/skill-submission/).
+Please paste a copy of the automated **Skill** testing output as a comment in the Pull Request when you [submit it to the Skills repo](https://mycroft.ai/documentation/skills/skill-submission/).
+
+## Where can I go to get more assistance?
+
+Join us in the [~skills channel in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills). 
