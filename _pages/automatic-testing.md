@@ -49,15 +49,15 @@ The Integration Test Runner is part of the `mycroft-core` package. It consists o
 
 * `discover_tests.py`
 * `skill_tester.py`
-* `skill_developers_testrunner.py`
+* `runner.py`
 * `message_tester.py`
 * `test_all_skills.py`
 
+The most interesting files from a skill developer's perspective are:
+
+The ```runner.py``` is can be copied to the Skill Author's working directory, where the **Skill's** ```__init__.py``` file exists or invoked directly with the skill path as argument. Running ```runner.py``` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill**, it will search any subdirectory.
+
 The ```discover_test.py``` is the Python file that runs integration tests on all **Skills** in ```/opt/mycroft/skills```.
-
-The ```skill_tester.py``` is the file that loads all **Skills** and execute tests, one **Skill** and one test at a time.
-
-The ```skill_developers_testrunner.py``` is intended to be copied to the Skill Author's working directory, where the **Skill's** ```__init__.py``` file exists. Running ```skill_developers_testrunner.py``` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill** where it is, it will search the subdirectories.
 
 The ```message_tester.py``` is a utility that can test a single message against the internal rule format used by the `skill_tester`. It is intended for debugging rules.
 
@@ -214,7 +214,21 @@ As mentioned in the example above, context can be used to make an **Intent** awa
 
 The ```discover_tests.py``` is intended to be run like a Python unit test, please refer to [https://docs.python.org/2/library/unittest.html](https://docs.python.org/2/library/unittest.html). Most IDEs have an easy way to run unit tests, and create nice structured test reports.
 
-The ```skill_developers_testrunner.py``` is intended to be copied to the Skill Author's development directory, or directly in the **Skill** directory. When run, it will search the directory it is in, and subdirectories, until it finds an ```__init__.py``` file. When it does, it will not traverse further down from that directory, but it will search sibling directories. In effect, it will only test one **Skill**, if it is run in that **Skill's** directory. The ```skill_developers_testrunner.py``` is just like a unit test.
+The ```runner.py``` is intended to run with a skill directory as parameter,
+
+```shell
+ake@Woodstock:~/projects/python/mycroft-core$ source venv-activate.sh
+ake@Woodstock:~/projects/python/mycroft-core$ python -m test.integrationtest.skills.runner PATH/TO/SKILL
+```
+or directly in the **Skill** directory:
+
+```shell
+ake@Woodstock:~/projects/python/mycroft-core$ source venv-activate.sh
+ake@Woodstock:~/projects/python/mycroft-core$ cd /PATH/TO/SKILL
+ake@Woodstock:/PATH/TO/SKILL$ python -m test.integrationtest.skills.runner
+```
+
+When run, it will search the directory it is in, and subdirectories, until it finds an ```__init__.py``` file. When it does, it will not traverse further down from that directory, but it will search sibling directories. In effect, it will only test one **Skill**, if it is run in that **Skill's** directory. ```runner.py``` is an excellent tool when developing a skill and wanting to run only the tests for that skill.
 
 ## Troubleshooting tests
 
