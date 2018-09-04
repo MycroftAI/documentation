@@ -98,6 +98,7 @@ A test case file understand the following `JSON` keywords:
 |evaluation_timeout|The default timeout is 30 seconds. If a skill takes longer than this to finish, the evaluation_timeout can be set|
 |changed_context|Assert that a list of contexts was set or removed|
 |assert|Assert that a rule, expressed in the internal test rummer format, is true|
+|settings|Provides a custom temporary settings structure for the test, replacing the normal settings.json.|
 
 Below is an example test case file:
 ```
