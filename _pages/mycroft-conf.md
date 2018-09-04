@@ -9,28 +9,28 @@ permalink: >
 published: true
 post_date: 2017-12-13 07:51:51
 ---
-# mycroft.conf and web_config_cache.json
+# mycroft.conf and mycroft_web_cache.json
 
-- [mycroft.conf and web_config_cache.json](#mycroftconf-and-web_config_cachejson)
+- [mycroft.conf and mycroft_web_cache.json](#mycroftconf-and-mycroft_web_cachejson)
   * [What is `mycroft.conf`?](#what-is-mycroft-conf)
-  * [What is `web_config_cache.json`?](#what-is-web_config_cachejson)
-  * [How are `mycroft.conf` and `web_config_cache.json` updated?](#how-are-mycroft-conf-and-web_config_cache-json-updated)
+  * [What is `mycroft_web_cache.json`?](#what-is-mycroft_web_cachejson)
+  * [How are `mycroft.conf` and `mycroft_web_cache.json` updated?](#how-are-mycroft-conf-and-mycroft_web_cache-json-updated)
   * [Where is the `mycroft.conf` file stored?](#where-is-the-mycroft-conf-file-stored)
   * [A look at the inside of `mycroft.conf`](#a-look-at-the-inside-of-mycroft-conf)
-  * [Where is the `web_config_cache.json` file stored?](#where-is-the-web_config_cache-json-file-stored)
-  * [A look at the inside of `web_config_cache.json`](#a-look-at-the-inside-of-web_config_cache-json)
+  * [Where is the `mycroft_web_cache.json` file stored?](#where-is-the-mycroft_web_cache-json-file-stored)
+  * [A look at the inside of `mycroft_web_cache.json`](#a-look-at-the-inside-of-mycroft_web_cache-json)
 
 ## What is `mycroft.conf`?
 
 `mycroft.conf` is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft **Device**, such as Picroft or Mark 1. `mycroft-conf` contains information about the **Device** itself, like what type of **Device** and **Enclosure** it is, as well as information about user preferences. If you haven't specified preferences, then `mycroft.conf` will contain some default values. Your **Device**, and **Skills** installed on your **Device**, use `mycroft.conf` to provide additional functionality. 
 
-## What is `web_config_cache.json`?
+## What is `mycroft_web_cache.json`?
 
-`web_config_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft **Device**, such as Picroft or Mark 1. `web_config_cache.json` is a cached copy of the settings on  your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ (which determines _Time Zone_), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance. 
+`mycroft_web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft **Device**, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on  your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ (which determines _Time Zone_), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance. 
 
 Both of these files are regularly used in troubleshooting, so it's useful to know what information they hold, and where they are stored on your **Device**. 
 
-## How are `mycroft.conf` and `web_config_cache.json` updated?
+## How are `mycroft.conf` and `mycroft_web_cache.json` updated?
 
 When you update settings at [home.mycroft.ai](https://home.mycroft.ai), your **Device** will periodically pull them down. However, this may not be fast enough to do what you want to do. To refresh your `mycroft.conf` from [home.mycroft.ai](https://home.mycroft.ai), Speak: 
 
@@ -365,17 +365,17 @@ and here is an example `mycroft.conf` file from Mycroft for Linux, User-level:
 }
 ```
 
-## Where is the `web_config_cache.json` file stored? 
+## Where is the `mycroft_web_cache.json` file stored? 
 
 This file is stored at: 
 
-`/opt/mycroft/web_config_cache.json` 
+`/var/tmp/mycroft_web_cache.json` 
 
 on the **Device**. 
 
-## A look at the inside of `web_config_cache.json`
+## A look at the inside of `mycroft_web_cache.json`
 
-Here is an example `web_config_cache.json`. _NOTE: Your settings will be different._
+Here is an example `mycroft_web_cache.json`. _NOTE: Your settings will be different._
 
 ```
 {

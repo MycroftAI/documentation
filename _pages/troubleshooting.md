@@ -216,30 +216,30 @@ If you're comfortable SSHing into your device, SSH in and then run the following
 
 To see the city location value:
 
-`jq ".location.city" < /opt/mycroft/web_config_cache.json`
+`jq ".location.city" < /var/tmp/mycroft_web_cache.json`
 
 To see the latitude and longitude coordinates of your location:
 
-`jq ".location.coordinate" < /opt/mycroft/web_config_cache.json`
+`jq ".location.coordinate" < /var/tmp/mycroft_web_cache.json`
 
 To see the timezone setting:
 
-`jq ".location.timezone" < /opt/mycroft/web_config_cache.json`
+`jq ".location.timezone" < /var/tmp/mycroft_web_cache.json`
 
 To see the listener setting:
 
-`jq ".listener" < /opt/mycroft/web_config_cache.json`
+`jq ".listener" < /var/tmp/mycroft_web_cache.json`
 
 To see the Speech to Text (STT) settings:
 
-`jq ".stt" < /opt/mycroft/web_config_cache.json`
+`jq ".stt" < /var/tmp/mycroft_web_cache.json`
 
 To see the Text to Speech (TTS) settings:
 
-`jq ".tts" < /opt/mycroft/web_config_cache.json`
+`jq ".tts" < /var/tmp/mycroft_web_cache.json`
 
 
-We also have [more information available on `mycroft.conf` and `web_config_cache.json` files](https://mycroft.ai/documentation/mycroft-conf/).
+We also have [more information available on `mycroft.conf` and `mycroft_web_cache.json` files](https://mycroft.ai/documentation/mycroft-conf/).
 
 ## Troubleshooting Mark 1
 
