@@ -310,4 +310,4 @@ Name Stmts Miss Cover
 
 If you are running the automated tests, and have test failures that are beyond your control - for example the error is triggered by something in `mycroft-core` or other Mycroft software, then the Skills Management Team can choose to override the need for automated tests to have passed when they assess the **Skill**.
 
-Please paste a copy of the automated Skill testing output as a comment in the Pull Request when you [submit it to the Skills repo](https://mycroft.ai/documentation/skills/skill-submission/).
+Please paste a copy of the automated **Skill** testing output as a comment in the Pull Request when you [submit it to the Skills repo](https://mycroft.ai/documentation/skills/skill-submission/).
