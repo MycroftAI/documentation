@@ -19,7 +19,7 @@ post_date: 2018-09-06 14:00:21
 <h2>Mycroft Events in Amsterdam</h2>
 <span style="font-weight: 400;">We held two events at StartDock while we were in town, one surrounding bringing Dutch language support to Mycroft and another surrounding early stage fundraising.  Both events were well attended and we were happy to share our excitement and insight with this great group of people. It was great to see how interested Dutch entrepreneurs are in building great companies and we had a lot of great questions from the crowd.  </span>
 
-<span style="font-weight: 400;"><a href="https://igg.me/at/volareo/x/1649210"><img class="alignnone wp-image-40428 size-full" src="https://mycroft.ai/wp-content/uploads/2018/09/Volareo-Logo.png" alt="" width="1600" height="900" /></a></span>
+<span style="font-weight: 400;"><a href="https://igg.me/at/volareo/x/1649210" target="_blank" rel="noopener"><img class="alignnone wp-image-40428 size-full" src="https://mycroft.ai/wp-content/uploads/2018/09/Volareo-Logo.png" alt="" width="1600" height="900" /></a></span>
 
 <span style="font-weight: 400;">One of the stand-out members of the crowd was Nick Yap from Volareo.  Nick's company is working on a smart speaker concept that is both novel and intriguing.  We're looking forward to seeing what his team does with Mycroft's open software stack. We hope they can also benefit from our Mark II hardware schematics which will be opened under a public license once we've completed both testing and our first production run.  </span>
 
