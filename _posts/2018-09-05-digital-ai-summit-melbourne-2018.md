@@ -9,10 +9,10 @@ permalink: >
 published: true
 post_date: 2018-09-05 12:34:06
 ---
-<span style="font-weight: 400;">Mycroft is a global company. One of the key advantages of having a distributed world-wide workforce is our ability to engage with entrepreneurial and technology ecosystems in cities across the world. As our Australian contingent, I recently attended the </span><a href="https://www.digitalaisummit.com/"><span style="font-weight: 400;">Digital AI Summit in Melbourne</span></a><span style="font-weight: 400;">. In our spirit of openness and sharing, I have provided my notes for our entire community to benefit from.</span>
+<span style="font-weight: 400;">Mycroft is a global company. One of the key advantages of having a distributed world-wide workforce is our ability to engage with entrepreneurial and technology ecosystems in cities across the world. As our Australian contingent, I recently attended the </span><a href="https://www.digitalaisummit.com/" target="_blank" rel="noopener"><span style="font-weight: 400;">Digital AI Summit in Melbourne</span></a><span style="font-weight: 400;">. In our spirit of openness and sharing, I have provided my notes for our entire community to benefit from.</span>
 
-<span style="font-weight: 400;">Tweets from the day are available at the hashtag </span><a href="https://twitter.com/search?vertical=default&amp;q=digitalaisummit&amp;src=typd"><span style="font-weight: 400;">#digitalaisummit</span></a>
-<h3>Session 1 - <a href="https://www.linkedin.com/in/blairtbryant/"><span style="color: #1155cc;"><u>Blair Bryant, Global Digital Advisor, Microsoft</u></span></a></h3>
+<span style="font-weight: 400;">Tweets from the day are available at the hashtag </span><a href="https://twitter.com/search?vertical=default&amp;q=digitalaisummit&amp;src=typd" target="_blank" rel="noopener"><span style="font-weight: 400;">#digitalaisummit</span></a>
+<h3>Session 1 - <a href="https://www.linkedin.com/in/blairtbryant/" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>Blair Bryant, Global Digital Advisor, Microsoft</u></span></a></h3>
 Blair outlined how important it was to get the CEO on board with digital transformation programs. He underscored how digital transformation needs to solve specific problems for the C-suite - don’t sell digital transformation itself, sell the problems that it solves. He outlined a four-point plan;
 <ol>
  	<li>Inspire the CEO - the CEO needs to be inspired to adopt digital transformation</li>
@@ -25,8 +25,8 @@ Business should immediately start to gather their data; understanding what data 
 <i>Key takeaway: Get your house in order, build a plan and execute it. </i>
 
 [caption id="attachment_40396" align="alignnone" width="960"]<a href="https://mycroft.ai/wp-content/uploads/2018/09/blair-bryant-digital-ai-summit.png"><img class="wp-image-40396" src="https://mycroft.ai/wp-content/uploads/2018/09/blair-bryant-digital-ai-summit.png" alt="Blair Bryant" width="960" height="540" /></a> Blair Bryant[/caption]
-<h3>Session 2 - Professor<a href="https://www.linkedin.com/in/phil-cohen-3b5455"><span style="color: #1155cc;"><u> Phil Cohen</u></span></a>, Monash University Laboratory for Dialogue Research - Conversational Technology, Present, and Future</h3>
-<span style="font-weight: 400;">Prof Cohen has </span><a href="https://www.monash.edu/it/about-us/news-and-events/latest/articles/2018/ai-pioneer-joins-monash-university"><span style="font-weight: 400;">recently joined Monash University</span></a><span style="font-weight: 400;"> to head up the Laboratory for Dialogue Research. He previously headed up a startup called </span><a href="https://www.crunchbase.com/organization/voicebox-technologies"><span style="font-weight: 400;">VoiceBox, which was recently acquired by Nuance</span></a><span style="font-weight: 400;">.</span>
+<h3>Session 2 - Professor<a href="https://www.linkedin.com/in/phil-cohen-3b5455" target="_blank" rel="noopener"><span style="color: #1155cc;"><u> Phil Cohen</u></span></a>, Monash University Laboratory for Dialogue Research - Conversational Technology, Present, and Future</h3>
+<span style="font-weight: 400;">Prof Cohen has </span><a href="https://www.monash.edu/it/about-us/news-and-events/latest/articles/2018/ai-pioneer-joins-monash-university" target="_blank" rel="noopener"><span style="font-weight: 400;">recently joined Monash University</span></a><span style="font-weight: 400;"> to head up the Laboratory for Dialogue Research. He previously headed up a startup called </span><a href="https://www.crunchbase.com/organization/voicebox-technologies" target="_blank" rel="noopener"><span style="font-weight: 400;">VoiceBox, which was recently acquired by Nuance</span></a><span style="font-weight: 400;">.</span>
 
 <strong>This was the standout presentation of the day.</strong>
 
@@ -48,14 +48,14 @@ Voice assistants are able to handle broad topics, but there are limited ways to 
 <h3>Semantic parsing</h3>
 Semantic parsing is a technology currently in research labs that allows users to have better “expressivity” and better “understanding” of natural language. Semantic parsing has more capability than the current generation of voice assistants, and can handle things like superlatives - ie “find the best pizza in downtown closest to the space needle, but not McDonald's”.
 
-<a href="https://en.wikipedia.org/wiki/Semantic_parsing"><span style="color: #1155cc;"><u>https://en.wikipedia.org/wiki/Semantic_parsing</u></span></a>
+<a href="https://en.wikipedia.org/wiki/Semantic_parsing" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>https://en.wikipedia.org/wiki/Semantic_parsing</u></span></a>
 
-<i>Side note: I had a quick look at open source Semantic Parsing libraries and this one called SLING from Google looked like the most commonly used one - if anyone has thoughts, feel free to post in the <a href="https://community.mycroft.ai">Forum</a>!
-</i><a href="https://github.com/google/sling"><span style="color: #1155cc;"><i><u>https://github.com/google/sling</u></i></span></a><i> </i>
+<i>Side note: I had a quick look at open source Semantic Parsing libraries and this one called SLING from Google looked like the most commonly used one - if anyone has thoughts, feel free to post in the <a href="https://community.mycroft.ai" target="_blank" rel="noopener">Forum</a>!
+</i><a href="https://github.com/google/sling" target="_blank" rel="noopener"><span style="color: #1155cc;"><i><u>https://github.com/google/sling</u></i></span></a><i> </i>
 
 Prof Cohen gave a live demo of Voicebox using web-based speech to text, which was then converted in real time to Intents, and it came back with a pretty slick answer.
 
-<a href="https://www.voicebox.com/"><span style="color: #1155cc;"><u>https://www.voicebox.com/</u></span></a> - the live demo website isn’t available.
+<a href="https://www.voicebox.com/" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>https://www.voicebox.com/</u></span></a> - the live demo website isn’t available.
 <h3>Comparison voice assistants</h3>
 He then presented a chart (not available online) of what Voicebox can do compared to Siri, Google Home, and Alexa, positioning Voicebox in a positive light.
 <h3>Transactional dialogue</h3>
@@ -75,15 +75,15 @@ The Laboratory for Dialogue Research intends to collaborate with industry via a 
 [caption id="attachment_40395" align="alignnone" width="960"]<a href="https://mycroft.ai/wp-content/uploads/2018/09/phil-cohen-digital-ai-summit.png"><img class="wp-image-40395" src="https://mycroft.ai/wp-content/uploads/2018/09/phil-cohen-digital-ai-summit.png" alt="Professor Phil Cohen" width="960" height="480" /></a> Professor Phil Cohen[/caption]
 <h3>Session 3 - Whole of government and whole of community approach to AI - Cheryl George, Kathy Coultas, and Martine Letts</h3>
 <ul>
- 	<li><a href="https://www.linkedin.com/in/kathycoultas/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_top%3Bxkn8BmVoR7mP6oibTTepFQ%3D%3D&amp;licu=urn%3Ali%3Acontrol%3Ad_flagship3_search_srp_top-search_srp_result&amp;lici=vIkgJb8cQoCuhHeCbJ9byg%3D%3D"><span style="color: #1155cc;"><u>Kathy Coultas</u></span></a> - Director, Technology Innovation and Investment, Department of Economic Development, Victoria</li>
- 	<li><a href="https://www.linkedin.com/in/cheryl-george-a7206320/"><span style="color: #1155cc;"><u>Cheryl George</u></span></a> - Government and Stakeholder Relations, Data61 CSIRO</li>
- 	<li><a href="https://www.linkedin.com/in/clivedwyer/"><span style="color: #1155cc;"><u>Clive Dwyer</u></span></a> and <a href="https://www.linkedin.com/in/martine-letts-8791a76/"><span style="color: #1155cc;"><u>Martine Letts</u></span></a> - Committee for Melbourne</li>
+ 	<li><a href="https://www.linkedin.com/in/kathycoultas/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_top%3Bxkn8BmVoR7mP6oibTTepFQ%3D%3D&amp;licu=urn%3Ali%3Acontrol%3Ad_flagship3_search_srp_top-search_srp_result&amp;lici=vIkgJb8cQoCuhHeCbJ9byg%3D%3D" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>Kathy Coultas</u></span></a> - Director, Technology Innovation and Investment, Department of Economic Development, Victoria</li>
+ 	<li><a href="https://www.linkedin.com/in/cheryl-george-a7206320/" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>Cheryl George</u></span></a> - Government and Stakeholder Relations, Data61 CSIRO</li>
+ 	<li><a href="https://www.linkedin.com/in/clivedwyer/" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>Clive Dwyer</u></span></a> and <a href="https://www.linkedin.com/in/martine-letts-8791a76/" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>Martine Letts</u></span></a> - Committee for Melbourne</li>
 </ul>
 The AI space is evolving rapidly, and there are opportunities that Australia is well positioned to take advantage of - especially using our domain knowledge. To really take advantage of the opportunities requires a broad cross-sector collaborative approach. Coordination will be critical. The government needs an “enabling environment” and “enabling infrastructure” to harness the opportunities, and this needs to be done quickly.
 
-Kathy Coultas recognized the need for ALL citizens to engage with digital, and explained that this was part of the reason behind the <a href="https://dif.vic.gov.au/"><span style="color: #1155cc;"><u>Digital Innovation Festival</u></span></a>.
+Kathy Coultas recognized the need for ALL citizens to engage with digital, and explained that this was part of the reason behind the <a href="https://dif.vic.gov.au/" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>Digital Innovation Festival</u></span></a>.
 
-Martine Letts noted that the <a href="https://www.parliament.vic.gov.au/about/news/4029-artificial-intelligence-group-launched"><span style="color: #1155cc;"><u>cross-partisan Parliamentary AI group</u></span></a> had been established at a state level to help politicians really grapple with the opportunities and challenges of AI. She would like to see this initiative expanded into a national working party. The only other country in the world that has a similar cross-partisan working party is the United Kingdom.
+Martine Letts noted that the <a href="https://www.parliament.vic.gov.au/about/news/4029-artificial-intelligence-group-launched" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>cross-partisan Parliamentary AI group</u></span></a> had been established at a state level to help politicians really grapple with the opportunities and challenges of AI. She would like to see this initiative expanded into a national working party. The only other country in the world that has a similar cross-partisan working party is the United Kingdom.
 
 Kathy Coultas noted the issues surrounding data privacy, security, and ethics and how we need to tackle these as part of coming to terms with artificial intelligence. Part of this will be the necessity for legislative amendments to harness emerging technology effectively while protecting citizens from foreseeable harm. She was firm that political point-scoring won’t be effective; regulatory reform for emerging technologies requires a multi-partisan approach.
 
@@ -91,7 +91,7 @@ Martine Letts noted that Australia is well behind investment in the AI space; Ch
 
 Kathy Coultas also noted the investment needed in workforce capability and training to be able to have the skills needed to harness AI - right now there is a significant skills shortable in this space, and universities are only now moving to catch up and address this shortfall.
 
-Cheryl George highlighted that CSIRO/Data 61 <a href="https://blog.csiro.au/artificial-intelligence-and-australias-industries-of-the-future/">had been tasked with developing a national AI technologies roadmap to lay out the opportunities, threats and possible approaches.</a> A draft of this is due by the end of the year 2018.
+Cheryl George highlighted that CSIRO/Data 61 <a href="https://blog.csiro.au/artificial-intelligence-and-australias-industries-of-the-future/" target="_blank" rel="noopener">had been tasked with developing a national AI technologies roadmap to lay out the opportunities, threats and possible approaches.</a> A draft of this is due by the end of the year 2018.
 
 <i>Key takeaways: Whole of government approaches to AI require significant coordination, whole of sector and whole of pipeline approaches.</i>
 
@@ -118,10 +118,10 @@ He also outlined that machine learning does not exist in isolation in an organiz
 [caption id="attachment_40393" align="alignnone" width="960"]<a href="https://mycroft.ai/wp-content/uploads/2018/09/nathan-faggian-digital-ai-summit.png"><img class="wp-image-40393" src="https://mycroft.ai/wp-content/uploads/2018/09/nathan-faggian-digital-ai-summit.png" alt="Dr Nathan Faggian" width="960" height="604" /></a> Dr Nathan Faggian[/caption]
 <h3>Session 5 - Health Technology Panel</h3>
 <ul>
- 	<li><a href="https://www.linkedin.com/in/annette-hicks-0593687/"><span style="color: #1155cc;"><u>Annette Hicks</u></span></a>, IBM</li>
- 	<li><a href="https://www.linkedin.com/in/alicesidhu/"><span style="color: #1155cc;"><u>Alice Sidhu</u></span></a></li>
- 	<li><a href="https://www.linkedin.com/in/priscilla-rogers/"><span style="color: #1155cc;"><u>Dr Priscilla Rogers</u></span></a></li>
- 	<li><a href="https://www.linkedin.com/in/mikepcw/"><span style="color: #1155cc;"><u>Mike Wang, NVIDIA</u></span></a></li>
+ 	<li><a href="https://www.linkedin.com/in/annette-hicks-0593687/" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>Annette Hicks</u></span></a>, IBM</li>
+ 	<li><a href="https://www.linkedin.com/in/alicesidhu/" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>Alice Sidhu</u></span></a></li>
+ 	<li><a href="https://www.linkedin.com/in/priscilla-rogers/" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>Dr Priscilla Rogers</u></span></a></li>
+ 	<li><a href="https://www.linkedin.com/in/mikepcw/" target="_blank" rel="noopener"><span style="color: #1155cc;"><u>Mike Wang, NVIDIA</u></span></a></li>
 </ul>
 This was a really interesting panel that looked at the application of machine learning to the health sector. The key points were;
 <ul>
