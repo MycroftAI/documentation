@@ -5,7 +5,7 @@ author: Derick Schweppe
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mark-ii-update-assembly-prototypes-and-audio-test/
+  http://mycroft.ai/blog/mark-ii-update-assembly-prototypes-and-audio-test/
 published: true
 post_date: 2018-09-07 12:00:06
 ---
