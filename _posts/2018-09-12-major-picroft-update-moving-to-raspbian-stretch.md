@@ -1,11 +1,11 @@
 ---
 ID: 40526
-post_title: 'Major Picroft Update - Moving to Raspbian Stretch'
+post_title: 'Major Picroft Update &#8211; Moving to Raspbian Stretch'
 author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/major-picroft-update-moving-to-raspbian-stretch/
+  http://mycroft.ai/blog/major-picroft-update-moving-to-raspbian-stretch/
 published: true
 post_date: 2018-09-12 20:00:57
 ---
@@ -55,7 +55,7 @@ There's a brand new Picroft image available! <span style="font-weight: 400;"><a
 <h1><span style="font-weight: 400;">What Else Can You Look Forward To?</span></h1>
 <span style="font-weight: 400;">We’ll be providing Skills that are unique to the Picroft environment, allowing you to attach buttons to the GPIO pins to emulate the Mark 1 button. Or use this example to do whatever else you might want to do -- this is your Picroft!</span>
 
-<span style="font-weight: 400;">As mentioned above, we’d like to expand the microphone and audio hardware supported by Picroft. With a little help from community members, I expect we’ll have support for various USB and Bluetooth mics and speakers soon. Join us on the forums to give feedback on AIY integration, how to pipe in new mics, and what you'd like to connect over GPIO.</span>
+<span style="font-weight: 400;">As mentioned above, we’d like to expand the microphone and audio hardware supported by Picroft. With a little help from community members, I expect we’ll have support for various USB and Bluetooth mics and speakers soon. <a href="https://community.mycroft.ai/t/major-picroft-update-moving-to-raspbian-stretch/4522" target="_blank" rel="noopener">Join us on the forums</a> to give feedback on AIY integration, how to pipe in new mics, and what you'd like to connect over GPIO.</span>
 <h1><span style="font-weight: 400;">Gimme, Gimme, Gimme!!!</span></h1>
 <span style="font-weight: 400;">You can download the new Picroft image from </span><a href="https://mycroft.ai/to/picroft-image" target="_blank" rel="noopener">https://mycroft.ai/to/picroft-image</a><span style="font-weight: 400;">. Learn all about it (including exactly how it was built) from </span><a href="https://github.com/MycroftAI/enclosure-picroft/tree/stretch" target="_blank" rel="noopener">https://github.com/MycroftAI/enclosure-picroft/tree/stretch</a><span style="font-weight: 400;">.</span>
 
