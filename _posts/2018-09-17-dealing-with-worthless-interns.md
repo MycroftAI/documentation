@@ -43,6 +43,4 @@ post_date: 2018-09-17 14:00:30
 </ol>
 <span style="font-weight: 400;">Thank you, interns, for joining our team and our journey. Mycroft wouldn’t be the same place if you weren’t here, and we are already missing you guys being full-time.</span>
 
-&nbsp;
-
 <span style="font-weight: 400;">To sum this up, interns are not worthless. Preconceived notions about interns or internships make them worthless. To have worthwhile internships staffed with valuable interns, align the vision of the company with the attitude of someone that wants to learn. In my experience, it’s a recipe for success.</span>
