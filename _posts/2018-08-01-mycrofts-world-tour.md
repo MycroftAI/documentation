@@ -9,20 +9,18 @@ permalink: >
 published: true
 post_date: 2018-08-01 14:30:37
 ---
-<span style="font-weight: 400;">Mycroft is going global. Next week our CEO, Joshua Montgomery, is beginning a series of talks around international language support and community building. The first meetings will be held in <strong>Reykjavik</strong>, <strong>Amsterdam</strong>, and <strong>Vienna</strong>. If you live in those cities, <a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global">get in touch</a>! We would love help in coordinating event locations and recruiting community members to get excited about Mycroft.</span>
+<span style="font-weight: 400;">Mycroft is going global. Next week our CEO, Joshua Montgomery, is beginning a series of talks around international language support and community building. The first meetings were held in <strong>Reykjavik</strong>, <strong>Amsterdam</strong>, and <strong>Vienna</strong>. We've since hosted events in <strong>Berlin </strong>and <strong>Paris. </strong>Coming up are <strong>Madrid</strong>, <strong>Lisbon</strong>, and <strong>Barcelona. </strong>If you live in those cities, <a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global">get in touch</a>! We would love help in coordinating event locations and recruiting community members to get excited about Mycroft.</span>
 
 <span style="font-weight: 400;">A <a href="https://mycroft.ai/blog/languages-are-hard/" target="_blank" rel="noopener">diverse and international community</a> is invaluable to a voice assistant. Just by using Mycroft and Opting-In, we gain various accents to improve Wake Word spotting and STT. Exposing the technology to more people worldwide builds a base who can translate Mycroft into their local languages.</span>
 
-<span style="font-weight: 400;">Mycroft’s next considered stops are <strong>Berlin</strong>, <strong>Paris</strong>, <strong>Madrid</strong>, <strong>Lisbon</strong>, and <strong>Barcelona</strong>. If you live in or near those cities and can help arrange an event, spread the word, or just want to know when plans finalize, please fill out </span><a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global"><span style="font-weight: 400;">the form</span></a><span style="font-weight: 400;"> or reach out to us at </span><a href="mailto:hello@mycroft.ai" target="_blank" rel="noopener"><span style="font-weight: 400;">hello@mycroft.ai</span></a><span style="font-weight: 400;">.</span>
+<span style="font-weight: 400;">If you live in or near an upcoming city and can help arrange an event, spread the word, or just want to know when plans finalize, please fill out </span><a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global"><span style="font-weight: 400;">the form</span></a><span style="font-weight: 400;"> or reach out to us at </span><a href="mailto:hello@mycroft.ai" target="_blank" rel="noopener"><span style="font-weight: 400;">hello@mycroft.ai</span></a><span style="font-weight: 400;">.</span>
 <h2></h2>
 <h2>Scheduled events:</h2>
 
 <hr />
 
-<h3><span style="font-weight: 400;">Paris</span></h3>
-September 18, 7 PM <span style="font-weight: 400;">– <strong>International Language - </strong><a href="https://www.eventbrite.com/e/french-voice-assistant-teaching-mycroft-ai-new-languages-tickets-49807770382">RSVP</a></span>
-
-September 19, 7 PM <span style="font-weight: 400;">– <strong>Startup Fundraising - </strong><a href="https://www.eventbrite.com/e/early-stage-fundraising-the-naked-truth-tickets-49807706190">RSVP</a></span>
+<h3><span style="font-weight: 400;">Barcelona</span></h3>
+November 5, 7 PM <span style="font-weight: 400;">– <strong>International Language - </strong><a href="https://www.eventbrite.com/e/catalan-voice-assistant-teaching-mycroft-ai-new-languages-tickets-50443907084" target="_blank" rel="noopener">RSVP</a></span>
 <h2>Tentative event dates:</h2>
 
 <hr />
@@ -41,8 +39,9 @@ October 18, 5 PM <span style="font-weight: 400;">– <strong>Startup Fundraising
 
 <h3><span style="font-weight: 400;">Reykjavik - </span><span style="font-weight: 400;">August 8, </span><span style="font-weight: 400;">August 9 - <a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-iceland-and-austria/" target="_blank" rel="noopener">Recap</a></span></h3>
 <h3><span style="font-weight: 400;">Vienna - </span><span style="font-weight: 400;">August 12, </span><span style="font-weight: 400;">August 13 - <a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-iceland-and-austria/" target="_blank" rel="noopener">Recap</a></span></h3>
-<h3><span style="font-weight: 400;">Amsterdam - </span><span style="font-weight: 400;">August 29 - </span><a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-the-netherlands/"><span style="font-weight: 400;">Recap</span></a></h3>
+<h3><span style="font-weight: 400;">Amsterdam - </span><span style="font-weight: 400;">August 29 - </span><a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-the-netherlands/" target="_blank" rel="noopener"><span style="font-weight: 400;">Recap</span></a></h3>
 <h3><span style="font-weight: 400;">Berlin - September 12 - <em>Recap Soon!</em></span></h3>
+<h3><span style="font-weight: 400;">Paris - September 18, September 19 - <em>Recap Soon!</em></span></h3>
 
 <hr />
 
