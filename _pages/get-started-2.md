@@ -1,10 +1,10 @@
 ---
 ID: 40555
-post_title: 'Get Started 2 &#8212; copy'
+post_title: Get Started
 author: Sam Ritchie
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/get-started-2-copy/
+permalink: http://mycroft.ai/get-started-2/
 published: true
 post_date: 2018-09-14 13:32:22
 ---
