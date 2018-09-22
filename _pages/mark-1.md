@@ -127,7 +127,7 @@ When you power on your Mark 1, the eyes on the Mark 1 will go through a series o
 
 #### Connecting to the Mark 1 via SSH
 
-* First, ensure that you've enabled SSH access.
+* First, ensure that you've enabled SSH access. To do this hold down Mycroft's button until you see the menu. Twist till you see  SSH, press the button again. Twist to Allow, then press again. Mycroft will then say "SSH Logins are now allowed".
 * Ensure you know the IP address of your Mark 1 Device on your network. A handy way to do this is to install the IP Address **Skill**, and then Speak:
 
 > Hey Mycroft, what's your IP address?
