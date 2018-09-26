@@ -7,7 +7,7 @@ author: Kris Adair
 post_excerpt: "Mycroft lives because of it's Community. That is why we're testing a Mycroft Community Recognition Program to show our best Ambassadors what they mean to us!"
 layout: post
 permalink: >
-  https://mycroft.ai/blog/building-a-mycroft-community-recognition-program/
+  http://mycroft.ai/blog/building-a-mycroft-community-recognition-program/
 published: true
 post_date: 2018-09-26 12:00:06
 ---
@@ -17,8 +17,8 @@ The better we can engage our current Community, and welcome new, diverse members
 <h2>Testing a Mycroft Community Recognition Program</h2>
 Starting in October, we will test a pilot project with 100 Community members to learn how to best recognize our Community. These first Ambassadors will test a point system and help us decide how to reward those who contribute to the project.
 
-Until now, some of the only ways to help with the project involved coding, offering support on the forum, or tagging Wake Words. The Mycroft Community Recognition Program will roll out several new ways for Community members to contribute. Moreso, badges, prizes, shoutouts, and more will be explored so participants will feel rewarded for their time. If you have wanted to contribute to the Open Source, privacy-focused voice assistant - but haven't known how - here is your chance.
+Until now, some of the only ways to help with the project involved coding, offering support on the forum, or tagging Wake Words. The Mycroft Community Recognition Program will roll out several new ways for Community members to contribute. Moreso, badges, prizes, shoutouts, and more will be explored to make participants will feel rewarded for their time. If you have wanted to contribute to the Open Source, privacy-focused voice assistant - but haven't known how - here is your chance.
 
 Please fill out this form to let us know you would like to be a Mycroft Ambassador. This is your chance to help shape the future of Open Source voice computing.
 <h3>Stand and be recognized!</h3>
-https://mycroftai.activehosted.com/f/49
+[activecampaign form=49]
