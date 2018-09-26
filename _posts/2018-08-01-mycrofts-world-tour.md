@@ -19,16 +19,14 @@ post_date: 2018-08-01 14:30:37
 
 <hr />
 
+<h3><span style="font-weight: 400;">Madrid</span></h3>
+October 5, 6:30 PM <span style="font-weight: 400;">– <strong>International Language - </strong><a href="https://www.eventbrite.com/e/spanish-voice-assistant-teaching-mycroft-ai-new-languages-tickets-50634791023" target="_blank" rel="noopener">RSVP</a></span>
 <h3><span style="font-weight: 400;">Barcelona</span></h3>
 November 5, 7 PM <span style="font-weight: 400;">– <strong>International Language - </strong><a href="https://www.eventbrite.com/e/catalan-voice-assistant-teaching-mycroft-ai-new-languages-tickets-50443907084" target="_blank" rel="noopener">RSVP</a></span>
 <h2>Tentative event dates:</h2>
 
 <hr />
 
-<h3><span style="font-weight: 400;">Madrid</span></h3>
-October 4, 7:30 PM <span style="font-weight: 400;">– <strong>International Language </strong></span>
-
-October 4, 5 PM <span style="font-weight: 400;">– <strong>Startup Fundraising </strong></span>
 <h3><span style="font-weight: 400;">Lisbon</span></h3>
 October 18, 7:30 PM <span style="font-weight: 400;">– <strong>International Language </strong></span>
 
