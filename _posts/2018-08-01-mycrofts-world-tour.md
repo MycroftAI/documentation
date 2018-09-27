@@ -21,6 +21,8 @@ post_date: 2018-08-01 14:30:37
 
 <h3><span style="font-weight: 400;">Madrid</span></h3>
 October 5, 6:30 PM <span style="font-weight: 400;">– <strong>International Language - </strong><a href="https://www.eventbrite.com/e/spanish-voice-assistant-teaching-mycroft-ai-new-languages-tickets-50634791023" target="_blank" rel="noopener">RSVP</a></span>
+
+October 8, 7:00 PM <span style="font-weight: 400;">– <strong>Startup Fundraising - </strong><a href="https://www.eventbrite.com/e/early-stage-fundraising-the-naked-truth-tickets-50729701904">RSVP</a></span>
 <h3><span style="font-weight: 400;">Barcelona</span></h3>
 November 5, 7 PM <span style="font-weight: 400;">– <strong>International Language - </strong><a href="https://www.eventbrite.com/e/catalan-voice-assistant-teaching-mycroft-ai-new-languages-tickets-50443907084" target="_blank" rel="noopener">RSVP</a></span>
 <h2>Tentative event dates:</h2>
