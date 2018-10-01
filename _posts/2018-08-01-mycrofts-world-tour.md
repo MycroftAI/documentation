@@ -30,9 +30,9 @@ November 5, 7 PM <span style="font-weight: 400;">– <strong>International Lang
 <hr />
 
 <h3><span style="font-weight: 400;">Lisbon</span></h3>
-October 18, 7:30 PM <span style="font-weight: 400;">– <strong>International Language </strong></span>
+October 23, 7:30 PM <span style="font-weight: 400;">– <strong>International Language </strong></span>
 
-October 18, 5 PM <span style="font-weight: 400;">– <strong>Startup Fundraising </strong></span>
+October 22, 7:30 PM <span style="font-weight: 400;">– <strong>Startup Fundraising </strong></span>
 <h2>Past events:</h2>
 
 <hr />
