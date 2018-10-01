@@ -53,4 +53,4 @@ post_date: 2018-10-01 11:33:02
 <h1><span style="font-weight: 400;">Your Thoughts?</span></h1>
 <span style="font-weight: 400;">All of the above are </span><i><span style="font-weight: 400;">my</span></i> <i><span style="font-weight: 400;">thoughts</span></i><span style="font-weight: 400;">. But as I said at the beginning, I want this to be a conversation. What do you want and see for the Mycroft Personal Server? Are there concerns I’m overlooking? Would you like to be involved in the building of this, taking control of your own fate?</span>
 
-<span style="font-weight: 400;">Please let us know your thoughts below!</span>
+<span style="font-weight: 400;">Please join us on our <a href="https://community.mycroft.ai/t/the-mycroft-personal-server-starting-the-conversation/4691" target="_blank" rel="noopener">Community Forum</a> to participate in the conversation!</span>
