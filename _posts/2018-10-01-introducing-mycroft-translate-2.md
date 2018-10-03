@@ -1,6 +1,6 @@
 ---
 ID: 40784
-post_title: 'Introducing Mycroft Translate &#8212; copy'
+post_title: Introducing Mycroft Translate
 author: Sam Ritchie
 post_excerpt: ""
 layout: post
