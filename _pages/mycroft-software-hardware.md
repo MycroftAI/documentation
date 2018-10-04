@@ -35,11 +35,11 @@ A Wake Word is a phrase you use to tell Mycroft you're about to issue a command.
 
 There are two technologies that Mycroft.AI currently uses for **Wake Word** detection:
 
-* [PocketSphinx](https://github.com/cmusphinx/pocketsphinx): PocketSphinx is part of the broader [CMUSphinx package](https://cmusphinx.github.io/), developed by [Carnegie Mellon University](https://www.cmu.edu). PocketSphinx is a lightweight speech recognition engine, specifically tuned for handheld and mobile devices. PocketSphinx is currently the default **Wake Word** detection tool on all Mycroft platforms.
+* [PocketSphinx](https://github.com/cmusphinx/pocketsphinx): PocketSphinx is part of the broader [CMUSphinx package](https://cmusphinx.github.io/), developed by [Carnegie Mellon University](https://www.cmu.edu). PocketSphinx is a lightweight speech recognition engine, specifically tuned for handheld and mobile devices.
 
 Because PocketSphinx is trained on English speech, your **Wake Word** currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well. 
 
-* [Precise](https://mycroft.ai/documentation/precise): Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what *words* you want to use for your **Wake Word**. Instead, you train it on *sounds*. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise is currently being developed and tested internally at Mycroft, and is not yet ready for Community Developers to work with.
+* [Precise](https://mycroft.ai/documentation/precise): Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what *words* you want to use for your **Wake Word**. Instead, you train it on *sounds*. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise has been the default **Wake Word** Listener for each Mycroft Device since mid-March 2018. Prior to this date, PocketSphinx was the default.
 
 ### Speech to Text (STT)
 
