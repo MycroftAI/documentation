@@ -14,7 +14,6 @@ post_date: 2018-08-01 14:30:37
 <span style="font-weight: 400;">A <a href="https://mycroft.ai/blog/languages-are-hard/" target="_blank" rel="noopener">diverse and international community</a> is invaluable to a voice assistant. Just by using Mycroft and Opting-In, we gain various accents to improve Wake Word spotting and STT. Exposing the technology to more people worldwide builds a base who can translate Mycroft into their local languages.</span>
 
 <span style="font-weight: 400;">If you live in or near an upcoming city and can help arrange an event, spread the word, or just want to know when plans finalize, please fill out </span><a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global"><span style="font-weight: 400;">the form</span></a><span style="font-weight: 400;"> or reach out to us at </span><a href="mailto:hello@mycroft.ai" target="_blank" rel="noopener"><span style="font-weight: 400;">hello@mycroft.ai</span></a><span style="font-weight: 400;">.</span>
-<h2></h2>
 <h2>Scheduled events:</h2>
 
 <hr />
