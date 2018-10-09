@@ -33,12 +33,12 @@ Our documentation, just like our source code, is open source, [and you can contr
   * [Mycroft for Android](#mycroft-for-android)
   * [`mycroft-conf` file](#mycroft-conf-file)
   * [Mycroft Skills](#mycroft-skills)
+      + [Developing Skills for Mycroft](#developing-skills-for-mycroft)
       + [Introduction to developing Skills for Mycroft](#introduction-to-developing-skills-for-mycroft)
-	  + [Developing Skills for Mycroft](#developing-skills-for-mycroft)
-	  + [Automatic testing for Mycroft Skills](#automatic-testing-for-mycroft-skills)
+      + [Automatic testing for Mycroft Skills](#automatic-testing-for-mycroft-skills)
       + [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
-	  + [Mycroft Skills Kit](#mycroft-skills-kit)
-	  + [Skills Acceptance Process](#skills-acceptance-process)
+      + [Mycroft Skills Kit](#mycroft-skills-kit)
+      + [Skills Acceptance Process](#skills-acceptance-process)
       + [Skill Settings](#skill-settings)
       + [Common issues in Skills development](#common-issues-in-skills-development)
       + [Repurposing Skills developed for other platforms](#repurposing-skills-developed-for-other-platforms)
@@ -54,7 +54,7 @@ Our documentation, just like our source code, is open source, [and you can contr
       + [Configuring Mycroft for Italian language support](#configuring-mycroft-for-italian-language-support)
       + [Configuring Mycroft for German language support](#configuring-mycroft-for-german-language-support)
       + [Configuring Mycroft for Spanish language support](#configuring-mycroft-for-spanish-language-support)
-	  + [Configuring Mycroft for Portuguese language support](#configuring-mycroft-for-portuguese-language-support)
+      + [Configuring Mycroft for Portuguese language support](#configuring-mycroft-for-portuguese-language-support)
   * [Adapt](#adapt)
       + [Adapt examples](#adapt-examples)
       + [Adapt tutorial](#adapt-tutorial)
@@ -137,13 +137,13 @@ Learn about the `mycroft.conf` file and the settings it contains.
 
 An overview of the Skills that can be installed on your Mycroft **Device**.
 
-### [Introduction to developing Skills for Mycroft](https://mycroft.ai/documentation/skills/developing-skills/)
+### [Developing Skills for Mycroft](https://mycroft.ai/documentation/skills/developing-skills/)
 
-Aimed at developers, this section is an introduction to developing new **Skills** for Mycroft
+Learn about the prerequisites of a **Skill**, and what makes a good Skill.
 
-### [Developing Skills for Mycroft](https://mycroft.ai/documentation/skills/introduction-developing-skills/)
+### [Introduction to developing Skills for Mycroft](https://mycroft.ai/documentation/skills/introduction-developing-skills/)
 
-Take your next step in Developing **Skills** for Mycroft. Learn about the structure of a **Skill**, and how to start creating your own. 
+Take your next step in Developing **Skills** for Mycroft. Learn about the structure of a **Skill**, and how to start creating your own.
 
 ### [Automatic testing for Mycroft Skills](https://mycroft.ai/documentation/skills/automatic-testing/)
 
