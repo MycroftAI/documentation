@@ -18,10 +18,6 @@ post_date: 2018-08-01 14:30:37
 
 <hr />
 
-<h3><span style="font-weight: 400;">Madrid</span></h3>
-October 5, 6:30 PM <span style="font-weight: 400;">– <strong>International Language - </strong><a href="https://www.eventbrite.com/e/spanish-voice-assistant-teaching-mycroft-ai-new-languages-tickets-50634791023" target="_blank" rel="noopener">RSVP</a></span>
-
-October 8, 7:00 PM <span style="font-weight: 400;">– <strong>Startup Fundraising - </strong><a href="https://www.eventbrite.com/e/early-stage-fundraising-the-naked-truth-tickets-50729701904">RSVP</a></span>
 <h3><span style="font-weight: 400;">Lisbon</span></h3>
 October 23, 8:30 PM <span style="font-weight: 400;">– <strong>International Language -</strong> <a href="https://www.eventbrite.com/e/portuguese-voice-assistant-teaching-mycroft-ai-new-languages-tickets-50960683777" target="_blank" rel="noopener">RSVP</a></span>
 <h3><span style="font-weight: 400;">Barcelona</span></h3>
@@ -41,6 +37,7 @@ October 22, 7:30 PM <span style="font-weight: 400;">– <strong>Startup Fundrais
 <h3><span style="font-weight: 400;">Amsterdam - </span><span style="font-weight: 400;">August 29 - </span><a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-the-netherlands/" target="_blank" rel="noopener"><span style="font-weight: 400;">Recap</span></a></h3>
 <h3><span style="font-weight: 400;">Berlin - September 12 - <em>Recap Soon!</em></span></h3>
 <h3><span style="font-weight: 400;">Paris - September 18, September 19 - <em>Recap Soon!</em></span></h3>
+<h3><span style="font-weight: 400;">Madrid - October 5, October 8 - <em>Recap Soon</em>!</em></span></h3>
 
 <hr />
 
