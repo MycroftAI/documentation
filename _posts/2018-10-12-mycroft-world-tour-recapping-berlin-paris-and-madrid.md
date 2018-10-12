@@ -5,7 +5,7 @@ author: Kris Adair
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycroft-world-tour-recapping-berlin-paris-and-madrid/
+  http://mycroft.ai/blog/mycroft-world-tour-recapping-berlin-paris-and-madrid/
 published: true
 post_date: 2018-10-12 08:00:46
 ---
@@ -15,7 +15,7 @@ post_date: 2018-10-12 08:00:46
 <h2><span style="font-weight: 400;">Paris</span></h2>
 <span style="font-weight: 400;">We were very fortunate in Paris to have a community member who works at </span><a href="https://www.algolia.com/"><span style="font-weight: 400;">Algolia</span></a><span style="font-weight: 400;"> and offered their beautiful offices for the event. We do use Algolia to power the search functions across Mycroft’s web properties, though they offered their event space prior to our deploying their tech. Thanks to them for being so gracious!</span>
 
-<span style="font-weight: 400;">In Paris, we were also able to meet one of our original backers from our first Kickstarter. Vincent brought his smartwatch with <a href="https://mycroft.ai/blog/mycroft-mascot-contest-winner/">this retro Mycroft Mascot</a> as well as wearing his Mycroft supporter t-shirt.</span>
+<span style="font-weight: 400;">In Paris, we were also able to meet an original backer from our first Kickstarter. Vincent brought his smartwatch with <a href="https://mycroft.ai/blog/mycroft-mascot-contest-winner/">this retro Mycroft Mascot</a> as well as wearing his Mycroft supporter t-shirt.</span>
 
 [gallery columns="2" ids="40935,40936"]
 <h2><span style="font-weight: 400;">Madrid</span></h2>
