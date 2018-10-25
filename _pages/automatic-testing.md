@@ -220,14 +220,14 @@ The ```runner.py``` is intended to run with a skill directory as parameter,
 
 ```shell
 ake@Woodstock:~/projects/python/mycroft-core$ source venv-activate.sh
-ake@Woodstock:~/projects/python/mycroft-core$ python -m test.integrationtest.skills.runner PATH/TO/SKILL
+ake@Woodstock:~/projects/python/mycroft-core$ python -m test.integrationtests.skills.runner PATH/TO/SKILL
 ```
 or directly in the **Skill** directory:
 
 ```shell
 ake@Woodstock:~/projects/python/mycroft-core$ source venv-activate.sh
 ake@Woodstock:~/projects/python/mycroft-core$ cd /PATH/TO/SKILL
-ake@Woodstock:/PATH/TO/SKILL$ python -m test.integrationtest.skills.runner
+ake@Woodstock:/PATH/TO/SKILL$ python -m test.integrationtests.skills.runner
 ```
 
 When run, it will search the directory it is in, and subdirectories, until it finds an ```__init__.py``` file. When it does, it will not traverse further down from that directory, but it will search sibling directories. In effect, it will only test one **Skill**, if it is run in that **Skill's** directory. ```runner.py``` is an excellent tool when developing a **Skill** and wanting to run only the tests for that **Skill**.
