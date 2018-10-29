@@ -1,15 +1,15 @@
 ---
 ID: 39747
-post_title: 'Mycroft&#8217;s World Tour'
+post_title: Mycroft’s World Tour
 author: Kris Adair
-post_excerpt: 'Expanding the languages our voice assistant speaks makes Mycroft better. We&#039;re visiting near you to build our international community.'
+post_excerpt: "Expanding the languages our voice assistant speaks makes Mycroft better. We're visiting near you to build our international community."
 layout: post
 permalink: >
   http://mycroft.ai/blog/mycrofts-world-tour/
 published: true
 post_date: 2018-08-01 14:30:37
 ---
-<span style="font-weight: 400;">Mycroft is going global. Next week our CEO, Joshua Montgomery, is beginning a series of talks around international language support and community building. The first meetings were held in <strong>Reykjavik</strong>, <strong>Amsterdam</strong>, and <strong>Vienna</strong>. We've since hosted events in <strong>Berlin </strong>and <strong>Paris. </strong>Coming up are <strong>Madrid</strong>, <strong>Lisbon</strong>, and <strong>Barcelona. </strong>If you live in those cities, <a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global">get in touch</a>! We would love help in coordinating event locations and recruiting community members to get excited about Mycroft.</span>
+<span style="font-weight: 400;">Mycroft is going global. Next week our CEO, Joshua Montgomery, is beginning a series of talks around international language support and community building. The first meetings were held in <strong>Reykjavik</strong>, <strong>Amsterdam</strong>, and <strong>Vienna</strong>. We've since hosted events in <strong>Berlin,</strong> <strong>Paris, Madrid </strong>and<strong> Lisbon. </strong>Coming up are <strong>Barcelona </strong>and<strong> London. </strong>If you live in those cities, <a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global">get in touch</a>! We would love help in coordinating event locations and recruiting community members to get excited about Mycroft.</span>
 
 <span style="font-weight: 400;">A <a href="https://mycroft.ai/blog/languages-are-hard/" target="_blank" rel="noopener">diverse and international community</a> is invaluable to a voice assistant. Just by using Mycroft and Opting-In, we gain various accents to improve Wake Word spotting and STT. Exposing the technology to more people worldwide builds a base who can translate Mycroft into their local languages.</span>
 
@@ -18,18 +18,21 @@ post_date: 2018-08-01 14:30:37
 
 <hr />
 
-<h3><span style="font-weight: 400;">Lisbon</span></h3>
-October 23, 7:30 PM <span style="font-weight: 400;">– <strong>International Language -</strong> <a href="https://www.eventbrite.com/e/portuguese-voice-assistant-teaching-mycroft-ai-new-languages-tickets-50960683777" target="_blank" rel="noopener">RSVP</a></span>
-
-October 24, 7:30 PM <span style="font-weight: 400;">– <strong>Startup Fundraising </strong></span>
 <h3><span style="font-weight: 400;">Barcelona</span></h3>
 November 5, 7:00 PM <span style="font-weight: 400;">– <strong>International Language - </strong><a href="https://www.eventbrite.com/e/catalan-voice-assistant-teaching-mycroft-ai-new-languages-tickets-50443907084" target="_blank" rel="noopener">RSVP</a></span>
+
+November 6, 7:00 PM <span style="font-weight: 400;">– <strong>Startup Fundraising - <a href="https://www.eventbrite.com/e/early-stage-fundraising-the-naked-truth-tickets-51583872752">RSVP</a></strong></span>
+<h3><span style="font-weight: 400;">London</span></h3>
+November 15, 6:30 PM <span style="font-weight: 400;"><strong>International Language - <a href="https://www.eventbrite.com/e/open-source-voice-assistant-teaching-mycroft-ai-new-languages-tickets-51958228460">RSVP</a></strong></span>
+
+November 14, 6:30 PM <span style="font-weight: 400;">– <strong>Startup Fundraising - <a href="https://www.eventbrite.com/e/early-stage-fundraising-the-naked-truth-tickets-51958527354">RSVP</a></strong></span>
+
+&nbsp;
 <h2>Tentative event dates:</h2>
 
 <hr />
 
-<h3><span style="font-weight: 400;">London</span></h3>
-Coming soon!
+Edinburgh - Coming soon!
 <h2>Past events:</h2>
 
 <hr />
@@ -37,9 +40,11 @@ Coming soon!
 <h3><span style="font-weight: 400;">Reykjavik - </span><span style="font-weight: 400;">August 8, </span><span style="font-weight: 400;">August 9 - <a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-iceland-and-austria/" target="_blank" rel="noopener">Recap</a></span></h3>
 <h3><span style="font-weight: 400;">Vienna - </span><span style="font-weight: 400;">August 12, </span><span style="font-weight: 400;">August 13 - <a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-iceland-and-austria/" target="_blank" rel="noopener">Recap</a></span></h3>
 <h3><span style="font-weight: 400;">Amsterdam - </span><span style="font-weight: 400;">August 29 - </span><a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-the-netherlands/" target="_blank" rel="noopener"><span style="font-weight: 400;">Recap</span></a></h3>
-<h3><span style="font-weight: 400;">Berlin - September 12 - <em>Recap Soon!</em></span></h3>
-<h3><span style="font-weight: 400;">Paris - September 18, September 19 - <em>Recap Soon!</em></span></h3>
-<h3><span style="font-weight: 400;">Madrid - October 5, October 8 - <em>Recap Soon</em>!</span></h3>
+<h3><span style="font-weight: 400;">Berlin - September 12 -</span><a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-berlin-paris-and-madrid/"><span style="font-weight: 400;">Recap</span></a></h3>
+<h3><span style="font-weight: 400;">Paris - September 18, September 19 - </span><a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-berlin-paris-and-madrid/"><span style="font-weight: 400;">Recap</span></a></h3>
+<h3><span style="font-weight: 400;">Madrid - October 5, October 8 - </span><a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-berlin-paris-and-madrid/"><span style="font-weight: 400;">Recap</span></a></h3>
+<h3><span style="font-weight: 400;">Lisbon</span><span style="font-weight: 400;"> - October 23, October 24 - </span><span style="font-weight: 400;"><em>Recap Soon</em>!</span></h3>
+&nbsp;
 
 <hr />
 
