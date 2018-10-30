@@ -40,7 +40,7 @@ post_date: 2017-12-02 22:35:25
 
 Picroft is an **Enclosure** for Mycroft, designed to the run on Raspberry Pi 3 or newer models. Mycroft provides the software for Picroft, in the form of a disk image, but you will need to burn this to an SD card.
 
-Picroft is based on [Raspbian Jessie Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
+Picroft is based on [Raspbian Stretch Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
 
 **PICROFT will not work on earlier models of Raspberry Pi, because they do not have enough processing power.**
 
@@ -56,9 +56,9 @@ This section of documentation assumes the following:
 
 ##### Raspberry Pi compatibility chart
 
-* Pi3 B+ : COMING SOON <-- Not currently supported
+* Pi3 B+ : SUPPORTED <-- You should get this device if you want to work on Picroft
 * Pi3 B : SUPPORTED <-- You should get this device if you want to work on Picroft
-* Pi3 : SUPPORTED <-- You should get this device if you want to work on Picroft
+* Pi3 : SUPPORTED <-- But not the primary target for development.
 * Pi2 : functions but very slow <-- Only use this if you must
 * Pi B/A+/Zero/Zero W/Zero WH : NOT SUPPORTED
 
