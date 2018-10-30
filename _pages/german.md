@@ -37,7 +37,7 @@ Wenn Sie Deutsch sprechen und die deutsche Sprachunterstützung für Mycroft akt
 * Herunterladen und Entpacken großer Dateien
 * Bearbeiten von Python-Quellcode-Dateien
 
-### Erster Einstig
+## Erster Einstig
 
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich daher sollten sie Mycroft bereits unter 
 "lang": "en-us" verbunden und eingerichtet haben.
@@ -247,21 +247,21 @@ Fügen Sie folgendes ihrer `~/.mycroft/mycroft.conf` Datei, um Ihre TTS-Engine z
 ```
 ## to doo
 
-## Mimic2
+### Mimic2
 
 Mycroft's neue Sprachausgabe [Mimic2](https://github.com/MycroftAI/mimic2.git) befindet aktuell in Arbeit. Unterstützung ist unter
 [machine-learning on Mycroft chat](https://chat.mycroft.ai/community/channels/machine-learning) Herzlich Wilkommen.
 
-## Skill Pflege
+### Skill Pflege
 
 Aktuell sind die meisten Skills bereits übersetzt. Die Pflege der Sprache in den Skills erfolgt zukünftig über [translate.mycroft.ai](https://translate.mycroft.ai/).
 
-## Konfigurieren Sie den Mycroft-Quellcode für die Handhabung von Deutsch
+### Konfigurieren Sie den Mycroft-Quellcode für die Handhabung von Deutsch
 
 Es gibt noch einige Quellcodeänderungen, die erforderlich sind, um eine Sprachänderung zu handhaben, und sie erfordern eine manuelle Änderung des Quellcodes, da sie noch nicht in `mycroft-core` einbezogen wurden.
 
 * [Changes to `listener.py` and `pocketsphinx_audio_consumer.py`](https://github.com/MycroftAI/mycroft-core/pull/656)
 
-## Sie wollen Einbezogen werden?
+### Sie wollen Einbezogen werden?
 
 Wenn Sie sich für fremdsprachige Übersetzungen von Mycroft interessieren, würden wir uns freuen, von Ihnen zu hören. Bitte besuchen Sie uns im [Languages channel on Mycroft chat](https://chat.mycroft.ai/community/channels/languages)
