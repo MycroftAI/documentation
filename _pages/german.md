@@ -42,16 +42,27 @@ Wenn Sie Deutsch sprechen und die deutsche Sprachunterstützung für Mycroft akt
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich daher sollten sie Mycroft bereits unter 
 "lang": "en-us" verbunden und eingerichtet haben.
 
-Installieren Sie espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
+
 
 Erstellen Sie danach eine eigene `mycroft.conf` Konfigurationsdatei. Bei Mycroft für Linux ist dies hier gespeichert:
 
 `~/.mycroft/mycroft.conf`
 
 Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
+ 
+ ```json
+ "lang": "de-de",
+ "tts": {
+     "module": "google",
+      "google": {
+        "lang": "de" 
+      }
+  }
+```
+##Alternativ mit espeak mbrola
 
+Installieren Sie espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
 ```json
-{
    "lang": "de-de",
    "tts": {
      "module": "espeak",
@@ -63,6 +74,7 @@ Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
 }
 ```
 Mycroft sollte nach einem neustart auf deutsch hören und sprechen.
+Das **Wake Word** (z.b. hey mycroft) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
 
 ## ändere das **Wake Word** nach Deutsch
 
@@ -245,15 +257,7 @@ Fügen Sie folgendes ihrer `~/.mycroft/mycroft.conf` Datei, um Ihre TTS-Engine z
       }
     }
 ```
-## Alternativ Google TTS
- ```json  
- "tts": {
-     "module": "google",
-      "google": {
-        "lang": "de" 
-      }
-  }
-```
+
 
 ## to doo
 
