@@ -27,7 +27,7 @@ _NOTE: These instructions apply to Mycroft for Linux only; we don't currently ha
   * [Configure Mycroft source code to handle German](#configure-mycroft-source-code-to-handle-german)
   * [Getting involved](#getting-involved)
 
-Guten tag. Sprechen sie Deutsch? Befolgen Sie diese Schritte, um die Sprache von Mycroft auf Deutsch zu ändern (BCP 47: `de`).
+Guten tag. Sprechen sie Deutsch? Befolgen Sie diese Schritte, um die Sprache von Mycroft auf Deutsch zu ändern (BCP 47: `de-de`).
 
 Wenn Sie Deutsch sprechen und die deutsche Sprachunterstützung für Mycroft aktivieren möchten, ist dies möglich. Dies erfordert jedoch einige technische Kenntnisse wie:
 
@@ -35,7 +35,32 @@ Wenn Sie Deutsch sprechen und die deutsche Sprachunterstützung für Mycroft akt
 * Herunterladen und Entpacken großer Dateien
 * Bearbeiten von Python-Quellcode-Dateien
 
-Wenn Sie weitere Hilfe benötigen, melden Sie sich bitte bei uns an [Languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages).
+## Erster Einstig
+
+!!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich daher sollten sie Mycroft bereits unter 
+"lang": "en-us" verbunden und eingerichtet haben.
+
+Installieren Sie espeak über "sudo apt install espeak espeak-data".
+
+Erstellen Sie danach eine eigene `mycroft.conf` Konfigurationsdatei. Bei Mycroft für Linux ist dies hier gespeichert:
+
+`_your_base_dir_mycroft/.mycroft/mycroft.conf`
+
+Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
+
+```json
+{
+   "lang": "de-de",
+   "tts": {
+     "module": "espeak",
+     "espeak": {
+        "lang": "de",
+        "voice": "m1"
+     }
+   }
+}
+```
+Mycroft sollte nach einem neustart auf deutsch hören und sprechen.
 
 ## ändere das **Wake Word** nach Deutsch
 
@@ -163,16 +188,18 @@ Wenn das gewählte **Wake Word** oder Phrase ist nicht in der `de.dict` Datei is
 
 ### Konfigurieren Sie Mycroft für die Verwendung der deutschen Sprache und des ausgewählten Sprache **Wake Word**
 
-Suchen Sie zuerst nach `mycroft.conf` Konfigurationsdatei. Bei Mycroft für Linux ist dies hier gespeichert:
+!!!Aktuell ist das Paaren von Mycroft noch nicht vollständig in deutsch Möglich deshalb sollte mycroft bereits unter "lang": "en-us" verbunden sein
 
-`_your_base_dir_mycroft/mycroft/configuration/mycroft.conf`
+Erstellen Sie zuerst eine eigene `mycroft.conf` Konfigurationsdatei. Bei Mycroft für Linux ist dies hier gespeichert:
+
+`_your_base_dir_mycroft/.mycroft/mycroft.conf`
 
 Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
 
 ```json
 
     {
-      "lang": "de",
+      "lang": "de-de",
 
       "listener": {
 
