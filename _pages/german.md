@@ -37,7 +37,7 @@ Wenn Sie Deutsch sprechen und die deutsche Sprachunterstützung für Mycroft akt
 * Herunterladen und Entpacken großer Dateien
 * Bearbeiten von Python-Quellcode-Dateien
 
-## Erster Einstig
+### Erster Einstig
 
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich daher sollten sie Mycroft bereits unter 
 "lang": "en-us" verbunden und eingerichtet haben.
@@ -245,7 +245,7 @@ Fügen Sie folgendes ihrer `~/.mycroft/mycroft.conf` Datei, um Ihre TTS-Engine z
       }
     }
 ```
-## to doo
+### to doo
 
 ## Mimic2
 
