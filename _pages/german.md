@@ -245,6 +245,16 @@ Fügen Sie folgendes ihrer `~/.mycroft/mycroft.conf` Datei, um Ihre TTS-Engine z
       }
     }
 ```
+## Alternativ Google TTS
+ ```json  
+ "tts": {
+     "module": "google",
+      "google": {
+        "lang": "de" 
+      }
+  }
+```
+
 ## to doo
 
 ### Mimic2
