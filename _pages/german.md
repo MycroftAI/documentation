@@ -51,6 +51,7 @@ Erstellen Sie danach eine eigene `mycroft.conf` Konfigurationsdatei. Bei Mycroft
 Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
  
  ```json
+ {
  "lang": "de-de",
  "tts": {
      "module": "google",
@@ -63,6 +64,7 @@ Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
 
 Installieren Sie espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
 ```json
+{
    "lang": "de-de",
    "tts": {
      "module": "espeak",
