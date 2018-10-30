@@ -40,7 +40,7 @@ Wenn Sie Deutsch sprechen und die deutsche Sprachunterstützung für Mycroft akt
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich daher sollten sie Mycroft bereits unter 
 "lang": "en-us" verbunden und eingerichtet haben.
 
-Installieren Sie espeak über "sudo apt install espeak espeak-data".
+Installieren Sie espeak über `sudo apt install espeak espeak-data`.
 
 Erstellen Sie danach eine eigene `mycroft.conf` Konfigurationsdatei. Bei Mycroft für Linux ist dies hier gespeichert:
 
