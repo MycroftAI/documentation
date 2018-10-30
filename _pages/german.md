@@ -15,6 +15,7 @@ _NOTE: These instructions apply to Mycroft for Linux only; we don't currently ha
 
 - [Language support in Mycroft - German - français](#language-support-in-mycroft---german---francais)
   * [Change the **Wake Word** to German](#change-the-wake-word-to-german)
+    + [Erster Einstieg](#erster-einstieg)
     + [Download and install the German dictionary](#download-and-install-the-german-dictionary)
     + [Download and install acoustic model](#download-and-install-acoustic-model)
     + [Download and install German language model](#download-and-install-german-language-model)
@@ -22,6 +23,7 @@ _NOTE: These instructions apply to Mycroft for Linux only; we don't currently ha
     + [Install language in Mycroft directories](#install-language-in-mycroft-directories)
     + [Choosing a German **Wake Word**](#choosing-a-german-wake-word)
     + [Configure Mycroft to use German language and the chosen **Wake Word**](#configure-mycroft-to-use-german-language-and-the-chosen-wake-word)
+    + [to do](#to-do)
   * [Select and configure a Speech to Text (STT) engine with German support](#select-and-configure-a-speech-to-text-stt-engine-with-german-support)
   * [Select and configure a Text to Speech (TTS) engine with German support](#select-and-configure-a-text-to-speech-tts-engine-with-german-support)
   * [Configure Mycroft source code to handle German](#configure-mycroft-source-code-to-handle-german)
@@ -40,11 +42,11 @@ Wenn Sie Deutsch sprechen und die deutsche Sprachunterstützung für Mycroft akt
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich daher sollten sie Mycroft bereits unter 
 "lang": "en-us" verbunden und eingerichtet haben.
 
-Installieren Sie espeak über `sudo apt install espeak espeak-data`.
+Installieren Sie espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
 
 Erstellen Sie danach eine eigene `mycroft.conf` Konfigurationsdatei. Bei Mycroft für Linux ist dies hier gespeichert:
 
-`_your_base_dir_mycroft/.mycroft/mycroft.conf`
+`~/.mycroft/mycroft.conf`
 
 Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
 
@@ -54,8 +56,8 @@ Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
    "tts": {
      "module": "espeak",
      "espeak": {
-        "lang": "de",
-        "voice": "m1"
+        "lang": "german-mbrola-7",
+        "voice": "german-mbrola-7"
      }
    }
 }
@@ -143,7 +145,7 @@ Navigieren Sie zum Mycroft-Sprachenmodellverzeichnis.
 
 Zum Beispiel, auf `mycroft-core` für Linux, navigiere zu
 
-`/mycroft-core/mycroft/client/speech/recognizer/model`
+`~/mycroft-core/mycroft/client/speech/recognizer/model`
 
 Sie sollten die folgenden Dateien in diesem Verzeichnis sehen:
 
@@ -169,10 +171,10 @@ _Hinsweis: Der `cp`Befehl könnte durch `ln` Befehl ersetzt werden um Speicherpl
 
 Sie müssten die folgenden Verzeichnisse, Dateien und symbolischen Verknüpfungen haben:
 
-* `_your_base_dir_/mycroft/client/speech/recognizer/model/de`
-* `_your_base_dir_mycroft/client/speech/recognizer/model/de/hmm`
-* `_your_base_dir_mycroft/client/speech/recognizer/model/de/de.dict`
-* `_your_base_dir_mycroft/client/speech/recognizer/model/de/de.lm`
+* `~/mycroft/client/speech/recognizer/model/de`
+* `~/mycroft-core/client/speech/recognizer/model/de/hmm`
+* `~/mycroft-core/client/speech/recognizer/model/de/de.dict`
+* `~/mycroft-core/client/speech/recognizer/model/de/de.lm`
 
 ### Einen Deutsches **Wake Word** wählen
 
@@ -192,7 +194,7 @@ Wenn das gewählte **Wake Word** oder Phrase ist nicht in der `de.dict` Datei is
 
 Erstellen Sie zuerst eine eigene `mycroft.conf` Konfigurationsdatei. Bei Mycroft für Linux ist dies hier gespeichert:
 
-`_your_base_dir_mycroft/.mycroft/mycroft.conf`
+`~/.mycroft/mycroft.conf`
 
 Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
 
@@ -217,7 +219,7 @@ Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
 
 Wenn die Sprache-zu-Text-Engine, die Sie verwenden, bereits Deutsch unterstützt, müssen Sie nichts tun - dies ist beispielsweise bei der standardmäßigen mycroft-Engine der Fall.
 
-Alternativ können Sie PocketSphinx verwenden, das auf Ihrem lokalen Computer ausgeführt wird. Um PocketSphinx als STT-Engine zu verwenden, fügen Sie folgendes zu Ihrer `mycroft.conf` Datei hinzu:
+Alternativ können Sie PocketSphinx verwenden, das auf Ihrem lokalen Computer ausgeführt wird. Um PocketSphinx als STT-Engine zu verwenden, fügen Sie folgendes zu Ihrer `~/.mycroft/mycroft.conf` Datei hinzu:
 
 ```json
     "listener": {
@@ -230,17 +232,29 @@ Alternativ können Sie PocketSphinx verwenden, das auf Ihrem lokalen Computer au
 
 Wählen Sie als Nächstes ein Text-to-Speech-Modul aus und konfigurieren Sie es, das Deutsch unterstützt. Beispielsweise, `espeak` hat unterschiedliche Deutsche Stimmen.
 
-Fügen Sie folgendes ihrer `mycroft.conf` Datei, um Ihre TTS-Engine zu konfigurieren:
+Installieren Sie die entsprechende espeak mbrola Sprache über `sudo apt install espeak espeak-data mbrola mbrola-de(1-8)`.
+
+Fügen Sie folgendes ihrer `~/.mycroft/mycroft.conf` Datei, um Ihre TTS-Engine zu konfigurieren:
 
 ```json
     "tts": {
       "module": "espeak",
       "espeak": {
-        "lang": "de",
-        "voice": "m1"
+        "lang": "german-mbrola-7",
+        "voice": "german-mbrola-7"
       }
     }
 ```
+## to doo
+
+## Mimic2
+
+Mycroft's neue Sprachausgabe [Mimic2](https://github.com/MycroftAI/mimic2.git) befindet aktuell in Arbeit. Unterstützung ist unter
+[machine-learning on Mycroft chat](https://chat.mycroft.ai/community/channels/machine-learning) Herzlich Wilkommen.
+
+## Skill Pflege
+
+Aktuell sind die meisten Skills bereits übersetzt. Die Pflege der Sprache in den Skills erfolgt zukünftig über [translate.mycroft.ai](https://translate.mycroft.ai/).
 
 ## Konfigurieren Sie den Mycroft-Quellcode für die Handhabung von Deutsch
 
