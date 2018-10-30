@@ -11,7 +11,7 @@ post_date: 2017-12-03 04:41:11
 ---
 # Language support in Mycroft - German - Deutsch
 
-_NOTE: These instructions apply to Mycroft for Linux only; we don't currently have instructions for changing the language on Picroft. If you'd like to help us out with that, jump into the [~languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) and let us know. Deutsche Support [~language-de channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/language-de)._
+_NOTE: These instructions apply to Mycroft for Linux only; we don't currently have instructions for changing the language on Picroft. If you'd like to help us out with that, jump into the [~languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) and let us know. Deutscher Support [~language-de channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/language-de)._
 
 - [Language support in Mycroft - German - français](#language-support-in-mycroft---german---francais)
   * [Change the **Wake Word** to German](#change-the-wake-word-to-german)
