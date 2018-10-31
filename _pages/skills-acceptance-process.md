@@ -115,7 +115,7 @@ _NOTE: Skills that are installed by default vary by `enclosure` and can be found
 
 * Check the regular expressions defined in the `regex` directory - do they appear sensible? [Integration Test Runner](https://mycroft.ai/documentation/skills/automatic-testing/) can also assist with this.
 
-* Check README for completeness - does it follow the README template and include all the relevant sections such as Intents, known issues, dependencies and so on?
+* Check README for completeness - does it follow the README template and include all the relevant sections such as Intents, known issues, dependencies and so on? Is at least one category selected? _At least one category must be selected for the Skill to be displayed correctly in the [Mycroft Marketplace](https://market.mycroft.ai)._
 
 * Check `requirements.txt` and `requirements.sh` - are the required dependencies listed? If `requirements.sh` is used, is some form of conditional processing done to match against multiple distros? Often Skill Authors will add requirements.txt using only an “library=1.x.x” instead of “library >=1.x.x”. Check to make sure that here is an equal or greater than in the requirements to help future-proof the Skill, unless a _specific_ version is needed. 
 
