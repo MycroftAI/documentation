@@ -18,7 +18,6 @@ _NOTE: To make Skill subsmission to the Mycroft Skills Repo a lot easier, we now
 - [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
     + [Generate a README.md file for your **Skill**](#generate-a-readmemd-file-for-your-skill)
     + [Add a Git submodule for your **Skill**](#add-a-git-submodule-for-your-skill)
-    + [Modify the Mycroft Skills Repo README.md file with your **Skill**](#modify-the-mycroft-skills-repo-readmemd-file-with-your-skill)
     + [Submit a PR (Pull Request) in GitHub to have your **Skill** listed](#submit-a-pr-pull-request-in-github-to-have-your-skill-listed)
     + [MSM Compliance](#msm-compliance)
     + [What happens next?](#what-happens-next)
@@ -59,21 +58,6 @@ file and added something similar to the bottom of the file:
  +	url = URL.FOR.YOUR.SKILL.git
 ```
 
-### Modify the Mycroft Skills Repo README.md file with your **Skill**
-Modify the table section in the `README.md` file of the `mycroft-skills` repo to include the file direct link to your repo like the following example. Include the `<br>` tag and the phrase to trigger your skill:
-
-```
-| :heavy_check_mark:  | [home-assistant](https://github.com/btotharye/mycroft-homeassistant#readme)| Control your devices in home-assistant<br>```turn on office
-```
-
-Ensure to include a status from the list below. This allows people to identify which **Skills** are mature, and which are under development.
-
-**Status meaning:**
-:heavy_check_mark: good working order
-:construction:     still being developed and not ready for general use (for reference/collaboration)
-:question:         untested (by us)
-:skull:            Broken, but good for ideas!
-
 ### Submit a PR (Pull Request) in GitHub to have your **Skill** listed
 
 Next, we need to submit a Pull Request (PR) in GitHub to have your **Skill** listed.
@@ -92,11 +76,11 @@ Next, we need to submit a Pull Request (PR) in GitHub to have your **Skill** lis
 		## Checklist:
   			- [ ] Used [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html) to generate the skill README
   			- [ ] Skill has been tested and works
-  			- [ ] README.md has been updated with the following:
+			- [ ] Read and verified approval process - https://mycroft.ai/documentation/skills/skills-acceptance-process (Can require a community member vouching for skill)
+  			- [ ] .gitmodules has been updated with the following:
   		+[submodule "NAME OF YOUR SKILL"]
   		+	path = name-of-your-skill-skill
   		+	url = URL.FOR.YOUR.SKILL.git
- 			- [ ] README.md has been updated with your skill phrase and description
 ```
 
 * Fill in the PR template and submit your PR.
