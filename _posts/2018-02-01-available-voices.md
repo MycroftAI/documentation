@@ -1,6 +1,6 @@
 ---
 ID: 34941
-post_title: 'Compare Mycroft&#8217;s available voices'
+post_title: Compare Mycroft’s available voices
 author: Kathy Reid
 post_excerpt: "Not sure what voices Mycroft has available? Use this handy table to compare and choose the voice that's right for you."
 layout: post
@@ -10,8 +10,10 @@ post_date: 2018-02-01 12:06:24
 ---
 <h5>Voice is a personal choice.</h5>
 That's why we give you a range of voice options for your Mycroft device, matching your personal style and preference.
-<h3><span style="color: #ec644b;">And <em>coming in April 2018</em>, you'll be able to choose from an additional voice using <strong>Mimic 2 - our state of the art Text to Speech engine! </strong>Mimic 2 is built using next-generation machine learning technology, learning from tens of thousands of samples, to produce a rich, resonant and human-sounding voice. </span></h3>
+<h3><span style="color: #ec644b;">And now, you'll be able to choose from an additional voice using <strong>Mimic 2 - our state of the art Text to Speech engine! </strong>Mimic 2 is built using next-generation machine learning technology, learning from tens of thousands of samples, to produce a rich, resonant and human-sounding voice. </span></h3>
 <h3><span style="color: #ec644b;">Moreover, Mimic 2 will allow us to build new voices quicker and easier.</span></h3>
+The Mimic2 voice has changed since this post was published. Hear samples of the new voice, and learn how to implement it yourself <a href="https://mycroft.ai/blog/mimic-2-is-live/" target="_blank" rel="noopener">here</a>.
+
 Compare our voice options below with Google and Alexa and choose the voice that's right for you.
 <ul>
  	<li><a href="#it-took-me-quite-a-long-time-to-develop-a-voice-and-now-that-i-have-it-im-not-going-to-be-silent-madeline-albright">Madeline Albright</a></li>

@@ -41,7 +41,11 @@ Yes, the ability to control your environment with your voice is the first step t
 Here at Mycroft we’ve embraced both privacy and user agency.  We don’t track our users or sell their data. We don’t even keep their data unless they explicitly opt-in to help train the AI.  And our source code is open.  Anyone can inspect the code and see exactly what we are doing with user data.  This transparency ensures good behavior and creates trust between Mycroft the company and Mycroft the community.
 
 <img class="size-full wp-image-35468 aligncenter" src="https://mycroft.ai/wp-content/uploads/2018/01/alexa-echo-dot-on-puppet-strings-02.png" alt="alexa echo dot-on puppet strings-02 Mycroft AI" width="1946" height="1632" />We’ve also embraced the idea of user agency.  The Mycroft agent is being designed to represent you the user, not us the company.  Think about it.  When you call for a rideshare do you want the best service at the lowest price, or do you want the service that paid the voice assistant company to be the preferred rideshare partner?  Do you want the voice assistant to represent your interests or the interests of some Big Tech giant.
-<h4>Voice technology is too important to the future of human-machine interfaces to leave it in the hands of Big Tech companies that have proven to be irresponsible and greedy.  That is why you should <a href="https://mycroft.ai/shop/">support Mycroft</a> - an open, privacy-focused voice assistant for everyone who isn’t a Big Tech giant.</h4>
+<h4>Voice technology is too important to the future of human-machine interfaces to leave it in the hands of Big Tech companies that have proven to be irresponsible and greedy.  That is why you should <a href="https://www.indiegogo.com/projects/mycroft-mark-ii-the-open-voice-assistant/reft/18156055#/GBG-Blog">support Mycroft</a> - an open, privacy-focused voice assistant for everyone who isn’t a Big Tech giant.</h4>
+&nbsp;
+
+&nbsp;
+
 &nbsp;
 
 &nbsp;

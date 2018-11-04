@@ -8,7 +8,7 @@ author: Arron Atchison
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/art-science-technology-collide-mycroft-state-festival-los-angeles/
+  http://mycroft.ai/blog/art-science-technology-collide-mycroft-state-festival-los-angeles/
 published: true
 post_date: 2017-09-24 21:29:30
 ---

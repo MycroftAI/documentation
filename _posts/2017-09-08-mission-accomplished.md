@@ -5,7 +5,7 @@ author: Derick Schweppe
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mission-accomplished/
+  http://mycroft.ai/blog/mission-accomplished/
 published: true
 post_date: 2017-09-08 14:58:17
 ---

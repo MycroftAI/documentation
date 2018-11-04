@@ -19,13 +19,11 @@ MVP: 1× landscape and 1× square or portrait
 <h1 style="width: 1200px; height: 600px; background-color: #22a7f0; padding: 40px; margin-bottom: 40px;"><strong><span style="color: #ffffff;">Web</span></strong>
 <span style="color: #ffffff;"> Blog featured image: 1200 × 600</span></h1>
 <h1 style="width: 1200px; height: 630px; background-color: #3b5998; padding: 40px; margin-bottom: 40px;"><strong><span style="color: #ffffff;">Facebook</span></strong>
-<span style="color: #ffffff;"> Shared image recommended: 1200 × 630</span></h1>
+<span style="color: #ffffff;"> Shared image recommended: 1200 × 628</span></h1>
 <h1 style="width: 1024px; height: 512px; background-color: #00aced; padding: 40px; margin-bottom: 40px;"><strong><span style="color: #ffffff;">Twitter</span></strong>
 <span style="color: #ffffff;"> Shared image recommended: 1024 × 512</span></h1>
-
 <h1 style="width: 1080px; height: 1080px; background-color: #fb3958; padding: 40px; margin-bottom: 40px;"><strong><span style="color: #ffffff;">Instagram</span></strong>
 <span style="color: #ffffff;"> Shared image square or portrait recommended:
 1080 × 1080</span></h1>
-
 <h1 style="width: 497px; height: 373px; background-color: #d34836; padding: 40px; margin-bottom: 40px;"><strong><span style="color: #ffffff;">Google Plus</span></strong>
 <span style="color: #ffffff;"> Shared image: 497 × 373</span></h1>

@@ -7,7 +7,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/building-strong-ai-strategy/
+  http://mycroft.ai/blog/building-strong-ai-strategy/
 published: true
 post_date: 2017-10-09 21:08:36
 ---

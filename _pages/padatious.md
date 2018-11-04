@@ -30,7 +30,7 @@ Padatious is a [machine-learning](https://en.wikipedia.org/wiki/Machine_learning
 Padatious has a number of key benefits:
 
 * With Padatious, **Intents** are easy to create
-* The machine lerning model in Padtious requires a relatively small amount of data
+* The machine learning model in Padatious requires a relatively small amount of data
 * Machine learning models need to be *trained*. The model used by Padatious is quick and easy to train.
 * Intents run independently of each other. This allows quickly installing new skills without retraining all other skill intents.
 * With Padatious, you can easily extract entities and then use these in **Skills**. For example, "Find the nearest gas station" -> `{ "place":"gas station"}`
@@ -74,7 +74,7 @@ This file would contain examples of questions asking what a *tomato* is.
 
 and
 
-`vocab/en-us/what.is.intent`
+`vocab/en-us/do.you.like.intent`
 
 with examples of questions about mycroft's opinion about tomatoes:
 
@@ -142,7 +142,7 @@ class TomatoSkill(MycroftSkill):
 
 The `register_intent_file(intent_file, handler)` methods arguments are:
 
-* intent_file: the filename of above mentioned intent files without the .intent as argument.
+* intent_file: the filename of above mentioned intent files with the .intent as argument.
 * handler: the method/function that the examples in the intent_file should map to
 
 The corresponding decorator is also available:

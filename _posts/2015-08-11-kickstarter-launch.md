@@ -5,11 +5,11 @@ author: Ryan Sipes
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/kickstarter-launch/
+  http://mycroft.ai/blog/kickstarter-launch/
 published: true
 post_date: 2015-08-11 11:16:24
 ---
-We've officially launched on Kickstarter and have already been featured as a Staff Pick! If you haven't visited the Kickstarter page yet - <a href="https://bit.ly/mycroftai" target="_blank">stop what you are doing and visit by clicking here!</a>
+We've officially launched on Kickstarter and have already been featured as a Staff Pick! If you haven't visited the Kickstarter page yet - <a href="https://bit.ly/mycroftai" target="_blank" rel="noopener">stop what you are doing and visit by clicking here!</a>
 
 The feedback we've received so far has been amazing and we are very humbled by the awesome support from our friends, family, and fans! We're asking those of you who like our project to consider backing our project, share it with your friends and on social media, and subscribe to our newsletter for the most up-to-date news on the project.
 

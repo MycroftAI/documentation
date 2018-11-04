@@ -1,0 +1,35 @@
+---
+ID: 37212
+post_title: >
+  Help Us Craft the 18.08b Release
+  Roadmap. What do you want to see from
+  Mycroft?
+author: Alyx Horace
+post_excerpt: ""
+layout: post
+permalink: >
+  http://mycroft.ai/blog/help-us-craft-the-18-08b-release-roadmap-what-do-you-want-to-see-from-mycroft/
+published: true
+post_date: 2018-04-16 12:43:45
+---
+[vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3" shape_divider_position="bottom"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]<span style="font-weight: 400;">If you use the Mycroft software, either with our hardware or your own, you might have noticed several recent updates. 18.02b was a major milestone for the project, and we’re working diligently toward our next major release, 18.08b. User input is what fuels progress here at Mycroft--whether that’s through testing, updating skills, or documentation feedback. In fact, a lot has been happening lately. Check out our pieces about <a href="https://mycroft.ai/blog/deepspeech-update/" target="_blank" rel="noopener">Mozilla Deepspeech</a>, the <a href="https://mycroft.ai/blog/happy-pi-day/" target="_blank" rel="noopener">Pi Day release</a>, and how you can help <a href="https://mycroft.ai/blog/introducing-precise/" target="_blank" rel="noopener">train a neural network</a>.</span>[/vc_column_text][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3" shape_divider_position="bottom"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
+<h3>We NEED your input, and would like to invite you to help us decide on the direction of our next major release. What do you want to see with the 18.08b release?</h3>
+<span style="font-weight: 400;">We are inviting our community to join CEO Joshua Montgomery as he works with Mycroft members and open up a discussion. What do you want Mycroft to be able to do? </span>
+
+[/vc_column_text][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][divider line_type="No Line"][vc_column_text]
+<p style="text-align: left;">Joshua is holding<i> three</i> Ask Me Anything sessions over the next few weeks. Find the dates and how you can join below!</p>
+[/vc_column_text][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3" shape_divider_position="bottom"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][nectar_icon icon_family="fontawesome" icon_style="default" icon_color="Accent-Color" icon_padding="20px" icon_fontawesome="fa fa-facebook-square"][vc_column_text]<strong>Friday April 20th on Facebook</strong>
+
+If you would like to join the conversation on Facebook please jump in and either post your thoughts in the event page or join us live.[/vc_column_text][divider line_type="No Line"][nectar_btn size="jumbo" open_new_tab="true" button_style="regular" button_color_2="Accent-Color" icon_family="none" url="https://www.facebook.com/events/210310076233254/" text="RSVP to the Event"][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][nectar_icon icon_family="fontawesome" icon_style="default" icon_color="Accent-Color" icon_padding="20px" icon_fontawesome="fa fa-comment"][vc_column_text]<strong>Thursday April 26th on Kickstarter </strong>
+
+<span style="font-weight: 400;">If you are a Kickstarter Mark II backer you will get a notification of the event and invited to submit questions there. </span>
+
+&nbsp;
+
+[/vc_column_text][divider line_type="No Line"][nectar_btn size="jumbo" open_new_tab="true" button_style="regular" button_color_2="Accent-Color" icon_family="none" url="https://live.kickstarter.com/joshua-montgomery/live/road-map-to-18-08b" text="Bookmark the Link"][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/3" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][nectar_icon icon_family="fontawesome" icon_style="default" icon_color="Accent-Color" icon_padding="20px" icon_fontawesome="fa fa-twitter-square"][vc_column_text]<strong>Thursday May 3rd on Twitter</strong>
+
+<span style="font-weight: 400;">If you are a Twitter user please send us your thoughts using #mycroft1808.</span>
+
+&nbsp;
+
+[/vc_column_text][divider line_type="No Line"][nectar_btn size="jumbo" open_new_tab="true" button_style="regular" button_color_2="Accent-Color" icon_family="none" url="https://twitter.com/mycroft_ai" text="Follow us on Twitter"][/vc_column][/vc_row][vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3" shape_divider_position="bottom"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]<span style="font-weight: 400;">If you are unable to attend these sessions or would rather submit your thoughts in writing, please join the conversation on our <a href="https://community.mycroft.ai/t/what-do-you-want-to-see-from-mycroft/3546">Community Forum</a>.</span>[/vc_column_text][/vc_column][/vc_row]

@@ -30,7 +30,7 @@ post_date: 2017-12-02 22:35:25
       - [How to reimage a Picroft Device](#how-to-reimage-a-picroft-device)
       - [Keeping your Picroft updated](#keeping-your-picroft-updated)
       - [How to switch your Picroft to the `unstable` branch to test new releases](#how-to-switch-your-picroft-to-the-unstable-branch-to-test-new-releases)
-      - [Connecting Picroft to a keyboard and/or monitor](#connecting-picroft-to-a-keyboard-andor-monitor)
+      - [Connecting Picroft to a keyboard and/or monitor](#connecting-picroft-to-a-keyboard-and-monitor)
       - [Important file locations for Picroft](#important-file-locations-for-picroft)
     + [Next steps](#next-steps)
       - [Using the GPIO pins on the Raspberry Pi 3](#using-the-gpio-pins-on-the-raspberry-pi-3)
@@ -40,7 +40,7 @@ post_date: 2017-12-02 22:35:25
 
 Picroft is an **Enclosure** for Mycroft, designed to the run on Raspberry Pi 3 or newer models. Mycroft provides the software for Picroft, in the form of a disk image, but you will need to burn this to an SD card.
 
-Picroft is based on [Raspbian Jessie Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
+Picroft is based on [Raspbian Stretch Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
 
 **PICROFT will not work on earlier models of Raspberry Pi, because they do not have enough processing power.**
 
@@ -54,13 +54,21 @@ This section of documentation assumes the following:
 
 #### Hardware prerequisites
 
+##### Raspberry Pi compatibility chart
+
+* Pi3 B+ : SUPPORTED <-- You should get this device if you want to work on Picroft
+* Pi3 B : SUPPORTED <-- You should get this device if you want to work on Picroft
+* Pi2 : functions but very slow, limited wifi support.  Not recommended.
+* Pi B/A+/Zero/Zero W/Zero WH : NOT SUPPORTED
+
 ##### Required
 
-* Raspberry Pi 3
+* Raspberry Pi 3/3B+ (see compatibility chart above)
 * Micro SD card, 8GB or larger _highly_ recommended
 * Power adapter with micro USB for your country. [The Raspberry Pi Foundation has some excellent recommendations](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
 * An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi 3
 * USB Microphone
+
 
 ##### Optional
 
@@ -137,9 +145,9 @@ Using your computer or a mobile device, connect to the Wifi SSID `MYCROFT` using
 
 _NOTE: Picroft cannot connect to WiFi networks that operate in the 5GHz band. You must select a WiFi network that operates in the 2.4GHz band._
 
-If you're concerned about privacy with Picroft's WiFi setup, you can inspect our [Wifi Client code on GitHub](https://github.com/MycroftAI/mycroft-core/tree/dev/mycroft/client/wifisetup).
+_NOTE: Picroft cannot connect to WiFi networks that operate on Channels 12 or 13 (2467MHz and 2472MHz frequencies). Please configure your SSID to use a different channel or frequency._
 
-@TODO I don't know what the limitations are around the WiFi networks that Mycroft can connect to - for instance, can Mycroft connect to WiFi networks that use certain types of authentication like WEP, or enterprise WPA2-PSK with things like Radius that are used in the enterprise? Don't know, flagging as @TODO
+If you're concerned about privacy with Picroft's WiFi setup, you can inspect our [Wifi Client code on GitHub](https://github.com/MycroftAI/mycroft-wifi-setup).
 
 ### Pairing the Picroft
 
@@ -208,9 +216,9 @@ If you want to try the `unstable` version, edit the file so that it reads:
 deb http://repo.mycroft.ai/repos/apt/debian debian-unstable main
 ```
 
-You will then need to run `sudo apt-get upgrade && sudo apt-get upgrade` for the change to take effect. 
+You will then need to run `sudo apt-get update && sudo apt-get upgrade` for the change to take effect. 
 
-#### Connecting Picroft to a keyboard and/or monitor
+#### Connecting Picroft to a keyboard and monitor
 
 If you would like to see the output of Picroft on a monitor (rather than SSH'ing in to Picroft), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi. 
 
@@ -249,6 +257,8 @@ You need to add the `mycroft` user to the `gpio` group with the command
 You also need to install some additional packages: 
 
 `sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
+
+This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill. 
 
 ### Common issues on Picroft Devices
 

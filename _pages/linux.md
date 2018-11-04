@@ -14,7 +14,6 @@ post_date: 2017-12-02 22:35:25
     + [Prerequisites](#prerequisites)
     + [Getting Started](#getting-started)
       - [Installing via git clone](#installing-via-git-clone)
-      - [Other installation options](#other-installation-options)
     + [Running Mycroft for Linux](#running-mycroft-for-linux)
       - [start-mycroft.sh](#start-mycroftsh)
         * [To start all Mycroft services at once](#to-start-all-mycroft-services-at-once)
@@ -36,7 +35,7 @@ Currently, there are builds and/or instructions for installing Mycroft on:
 * Debian / Ubuntu
 * Arch
 * Mint
-* KDE Plasmoid
+* [KDE Plasma 5 Supported Distributions For Plasma-Mycroft Widget](https://mycroft.ai/documentation/plasma)
 
 ### Prerequisites
 
@@ -48,8 +47,6 @@ This section of documentation assumes the following:
 * That your device has a built-in microphone and speakers, or, you have successfully connected microphone and speakers to your device.
 * That your device already has `git` installed and working. If you don't already have `git` installed, [here is a great set of instructions](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
 
-@TODO do we need to comment here on whether bluetooth or USB is a better connection choice for headphones and speakers?
-
 ### Getting Started
 
 There are multiple ways to install Mycroft for Linux.
@@ -57,6 +54,8 @@ There are multiple ways to install Mycroft for Linux.
 #### Installing via git clone
 
 The simplest way to install Mycroft for Linux is to clone the `mycroft-core` repo to your system and run a shell script, which will install all dependencies, and [Mycroft components](http://mycroft.ai/documentation/mycroft-software-hardware/).
+
+The `mycroft-core` repo is at [https://github.com/MycroftAI/mycroft-core](https://github.com/MycroftAI/mycroft-core).
 
 The instructions below will install Mycroft in your HOME directory.
 
@@ -78,10 +77,6 @@ _NOTE: The default branch for this repository is 'dev', which should be consider
 You can do this by choosing the `master` branch in GitHub instead of the default `dev` branch as shown below.
 
 ![Changing from the default dev branch to master on mycroft-core](https://mycroft.ai/wp-content/uploads/2017/12/mycroft-core-switching-dev-master.png "Changing from the default dev branch to master on mycroft-core")
-
-#### Other installation options
-
-@TODO what are the other installation options for Mycroft on Linux - there are the installers that @AIIX provided, and I think there's an `apt-get` package. Will need to clarify.
 
 ### Running Mycroft for Linux
 
@@ -199,7 +194,14 @@ $  export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,0.0.0.0,::
 
 #### Keeping Mycroft for Linux updated
 
-@TODO Not sure what the easiest way is to keep Mycroft for Linux updated - is it as simple as doing a `git pull` from the remote repo?
+Keeping your `mycroft-core` installation up to date is simple. 
+
+1. Change to the directory where your `mycroft-core` installation is. This is most likely at `~/mycroft-core`
+2. Type `git stash` - this preserves your Mycroft configuration. `git` may prompt you to [set up an identity](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup). 
+3. Type `git pull` to get the latest code. By default, using a `git` installation will bring down the `dev` branch of the repo. If you want to pull down another branch - for instance to test it - use `git pull origin BRANCH_NAME`. 
+4. Type `git stash pop` to return the configuration that was stashed with `git stash`
+5. Type `./update_dev.sh` to update your `virtualenv` - it's a good idea to do this if you update your `mycroft-core` installation. 
+6. Type `./start-mycroft.sh all` to restart the services
 
 ### Removing Mycroft for Linux from your system
 
@@ -244,3 +246,14 @@ mycroft-core$ ./dev_setup.sh
 This will rebuild your
 
 `virtualenv`
+
+#### Installation warns about bad interpreter
+
+When running `dev_setup.sh`, if you encounter a warning about a "bad interpreter", it is likely from having a space in the installation path:
+
+```shell
+./dev_setup.sh: /opt/test path/mycroft-core/.venv/bin/pip: "/opt/test: bad interpreter: No such file or directory
+Warning: Failed to install all requirements. Continue? y/N
+```
+
+If you can't install to a path without spaces, you will have to manually verify the `requirements.txt` entries are installed to your virtual environment.

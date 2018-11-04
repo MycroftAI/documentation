@@ -13,18 +13,18 @@ post_date: 2017-12-03 04:47:11
 
 _NOTE: These instructions apply to Mycroft for Linux only; we don't currently have instructions for changing the language on Picroft. If you'd like to help us out with that, jump into the [~languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) and let us know._
 
-- [Language support in Mycroft - Spanish - français](#language-support-in-mycroft---Spanish---francais)
-  * [Change the **Wake Word** to Spanish](#change-the-wake-word-to-Spanish)
-    + [Download and install the Spanish dictionary](#download-and-install-the-Spanish-dictionary)
+- [Language support in Mycroft - Spanish - Español](#language-support-in-mycroft---spanish---espanol)
+  * [Change the **Wake Word** to Spanish](#change-the-wake-word-to-spanish)
+    + [Download and install the Spanish dictionary](#download-and-install-the-spanish-dictionary)
     + [Download and install acoustic model](#download-and-install-acoustic-model)
-    + [Download and install Spanish language model](#download-and-install-Spanish-language-model)
+    + [Download and install Spanish language model](#download-and-install-spanish-language-model)
     + [Verify the installed files](#verify-the-installed-files)
     + [Install language in Mycroft directories](#install-language-in-mycroft-directories)
-    + [Choosing a Spanish **Wake Word**](#choosing-a-Spanish-wake-word)
-    + [Configure Mycroft to use Spanish language and the chosen **Wake Word**](#configure-mycroft-to-use-Spanish-language-and-the-chosen-wake-word)
-  * [Select and configure a Speech to Text (STT) engine with Spanish support](#select-and-configure-a-speech-to-text-stt-engine-with-Spanish-support)
-  * [Select and configure a Text to Speech (TTS) engine with Spanish support](#select-and-configure-a-text-to-speech-tts-engine-with-Spanish-support)
-  * [Configure Mycroft source code to handle Spanish](#configure-mycroft-source-code-to-handle-Spanish)
+    + [Choosing a Spanish **Wake Word**](#choosing-a-spanish-wake-word)
+    + [Configure Mycroft to use Spanish language and the chosen **Wake Word**](#configure-mycroft-to-use-spanish-language-and-the-chosen-wake-word)
+  * [Select and configure a Speech to Text (STT) engine with Spanish support](#select-and-configure-a-speech-to-text-stt-engine-with-spanish-support)
+  * [Select and configure a Text to Speech (TTS) engine with Spanish support](#select-and-configure-a-text-to-speech-tts-engine-with-spanish-support)
+  * [Configure Mycroft source code to handle Spanish](#configure-mycroft-source-code-to-handle-spanish)
   * [Getting involved](#getting-involved)
 
 Hola! Puedes hablar español? Follow these steps to change Mycroft's language to Spanish (BCP 47: `es`).

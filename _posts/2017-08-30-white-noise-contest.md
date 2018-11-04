@@ -5,7 +5,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/white-noise-contest/
+  http://mycroft.ai/blog/white-noise-contest/
 published: true
 post_date: 2017-08-30 22:21:32
 ---

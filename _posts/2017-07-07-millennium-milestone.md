@@ -7,7 +7,7 @@ author: Alyx Horace
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/millennium-milestone/
+  http://mycroft.ai/blog/millennium-milestone/
 published: true
 post_date: 2017-07-07 13:18:53
 ---

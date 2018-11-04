@@ -13,26 +13,6 @@ post_date: 2017-12-03 04:41:11
 
 _NOTE: These instructions apply to Mycroft for Linux only; we don't currently have instructions for changing the language on Picroft. If you'd like to help us out with that, jump into the [~languages channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) and let us know. Deutscher Support [~language-de channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/language-de)._
 
-- [Language support in Mycroft - German - français](#language-support-in-mycroft---german---francais)
-  * [Change the **Wake Word** to German](#change-the-wake-word-to-german)
-    + [Erster Einstieg](#erster-einstieg)
-    + [Download and install the German dictionary](#download-and-install-the-german-dictionary)
-    + [Download and install acoustic model](#download-and-install-acoustic-model)
-    + [Download and install German language model](#download-and-install-german-language-model)
-    + [Verify the installed files](#verify-the-installed-files)
-    + [Install language in Mycroft directories](#install-language-in-mycroft-directories)
-    + [Choosing a German **Wake Word**](#choosing-a-german-wake-word)
-    + [Configure Mycroft to use German language and the chosen **Wake Word**](#configure-mycroft-to-use-german-language-and-the-chosen-wake-word)
-    + [to do](#to-do)
-  * [Select and configure a Speech to Text (STT) engine with German support](#select-and-configure-a-speech-to-text-stt-engine-with-german-support)
-  * [Select and configure a Text to Speech (TTS) engine with German support](#select-and-configure-a-text-to-speech-tts-engine-with-german-support)
-  * [Configure Mycroft source code to handle German](#configure-mycroft-source-code-to-handle-german)
-  * [Getting involved](#getting-involved)
-
-Guten tag. Sprechen sie Deutsch? Befolgen Sie diese Schritte, um die Sprache von Mycroft auf Deutsch zu ändern (BCP 47: `de-de`).
-
-Wenn Sie Deutsch sprechen und die deutsche Sprachunterstützung für Mycroft aktivieren möchten, ist dies möglich. Dies erfordert jedoch einige technische Kenntnisse wie:
-
 * Verschieben und Kopieren von Dateien in einer Linux-Shell
 * Herunterladen und Entpacken großer Dateien
 * Bearbeiten von Python-Quellcode-Dateien
@@ -41,8 +21,6 @@ Wenn Sie Deutsch sprechen und die deutsche Sprachunterstützung für Mycroft akt
 
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich daher sollten sie Mycroft bereits unter 
 "lang": "en-us" verbunden und eingerichtet haben.
-
-
 
 Erstellen Sie danach eine eigene `mycroft.conf` Konfigurationsdatei. Bei Mycroft für Linux ist dies hier gespeichert:
 
@@ -78,37 +56,37 @@ Installieren Sie espeak mbrola über `sudo apt install espeak espeak-data mbrola
 Mycroft sollte nach einem neustart auf deutsch hören und sprechen.
 Das **Wake Word** (z.b. hey mycroft) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
 
-## ändere das **Wake Word** nach Deutsch
+### Ändern Sie das **Wake Word** nach Deutsch
 
-Mycroft verwendet PocketSphinx als **Wake Word** Mechanismus. Das Standart **Wake Word** in English ist `Hey Mycroft`.
+Mycroft verwendet PocketSphinx als **Wake Word**-Mechanismus. Das Standart **Wake Word** auf Englisch ist `Hey Mycroft`.
 
-Um das **Wake Word** nach Deutsch zu ändern müssen wir das Deutsche Wörterbuch und das Deutsche akustikmodel herunterladen, danach trainieren wir mit dem neusten `sphinxtrain`.
+Um das **Wake Word** nach Deutsch zu ändern müssen Sie das deutsche Wörterbuch und das deutsche akustische Modell herunterladen, danach trainieren Sie mit dem neusten `sphinxtrain`.
 
-Zuerst erstellen wir ein Verzeichnis für die `pocketsphinx` Dateien:
+Zuerst erstellen Sie ein Verzeichnis für die `pocketsphinx`-Dateien:
 
 `sudo mkdir -p /usr/local/share/pocketsphinx/model/de/de`
 
 ### Laden Sie das deutsche Wörterbuch herunter und installieren Sie es
 
-Als nächstes laden wir das deutsche Wörterbuch aus dem CMUSphinx-Projekt auf SourceForge herunter_ [cmusphinx-voxforge-de.dic](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-voxforge-de.dic/download).
+Als nächstes laden Sie das deutsche Wörterbuch aus dem CMUSphinx-Projekt auf SourceForge herunter_ [cmusphinx-voxforge-de.dic](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-voxforge-de.dic/download).
 
 `wget https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-voxforge-de.dic/download -O cmusphinx-voxforge-de.dic`
 
-Dann installieren wir das Wörterbuch in das von uns erstellte Verzeichnis.
+Dann installieren Sie das Wörterbuch in das von uns erstellte Verzeichnis.
 
 `sudo mv cmusphinx-voxforge-de.dic /usr/local/share/pocketsphinx/model/de/de.dict`
 
-### Laden des akustischen Modells und die Installation
+### Laden des akustischen Modells und Installation
 
-Als nächstes laden wir die _acoustic model_ [cmusphinx-de-ptm-voxforge-5.2.tar.gz](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-de-ptm-voxforge-5.2.tar.gz/download) aus dem CMUSphinx-Projekt auf SourceForge.
+Als Nächstes laden Sie das _acoustic model_ [cmusphinx-de-ptm-voxforge-5.2.tar.gz](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-de-ptm-voxforge-5.2.tar.gz/download) aus dem CMUSphinx-Projekt auf SourceForge.
 
 `wget https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-de-ptm-voxforge-5.2.tar.gz/download -O cmusphinx-de-ptm-voxforge-5.2.tar.gz`
 
-Wir entpacken dann die gezippte Datei in ein temporäres Verzeichnis.
+Entpacken Sie dann die gezippte Datei in ein temporäres Verzeichnis.
 
 `tar -xf cmusphinx-de-ptm-voxforge-5.2.tar.gz`
 
-Dann kopieren wir es in das PocketSphinx-Verzeichnis
+Dann kopieren Sie die entpackte Datei in das PocketSphinx-Verzeichnis
 
 ```bash
 cd cmusphinx-ptm-voxforge-de-r20171217/model_parameters/voxforge.cd_ptm_5000
@@ -118,15 +96,15 @@ cd ..
 
 ### Laden Sie das deutsche Sprachmodell herunter und installieren Sie es
 
-Als nächstes laden wir die _German language model_ [cmusphinx-voxforge-de.lm.gz](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-voxforge-de.lm.gz/download) aus dem CMUSphinx-Projekt auf SourceForge.
+Als nächstes laden Sie das _German language model_ [cmusphinx-voxforge-de.lm.gz](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-voxforge-de.lm.gz/download) aus dem CMUSphinx-Projekt auf SourceForge.
 
 `wget https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-voxforge-de.lm.gz/download -O cmusphinx-voxforge-de.lm.gz`
 
-Wir entpacken dann die gezippte Datei in ein temporäres Verzeichnis.
+Entpacken Sie dann die gezippte Datei in ein temporäres Verzeichnis.
 
 `gzip -d cmusphinx-voxforge-de.lm.gz`
 
-Dann verschieben wir es in das PocketSphinx-Verzeichnis
+Dann verschieben Sie sie in das PocketSphinx-Verzeichnis
 
 `sudo mv cmusphinx-voxforge-de.lm /usr/local/share/pocketsphinx/model/de/de.lm`
 
@@ -148,16 +126,16 @@ Dann verschieben wir es in das PocketSphinx-Verzeichnis
 * `/usr/local/share/pocketsphinx/model/de/de/transition_matrices`
 * `/usr/local/share/pocketsphinx/model/de/de/variances`
 
-### Installieren Sie die Sprache in Mycroft-Verzeichnissen
+### Installieren Sie die Sprache in den Mycroft-Verzeichnissen
 
-Nachdem wir die PocketSphinx-Dateien für Deutsch installiert haben, müssen wir Deutsch in den Mycroft-Verzeichnissen installieren.
+Nachdem Sie die PocketSphinx-Dateien für Deutsch installiert haben, müssen Sie Deutsch in den Mycroft-Verzeichnissen installieren.
 
 Zuerst, [SSH into your device](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
 
 
 Navigieren Sie zum Mycroft-Sprachenmodellverzeichnis.
 
-Zum Beispiel, auf `mycroft-core` für Linux, navigiere zu
+Zum Beispiel, auf `mycroft-core` für Linux, navigieren Sie zu
 
 `~/mycroft-core/mycroft/client/speech/recognizer/model`
 
@@ -181,32 +159,28 @@ ln -s /usr/local/share/pocketsphinx/model/de/de de/hmm
 cp /usr/local/share/pocketsphinx/model/de/de.lm de/de.lm
 cp /usr/local/share/pocketsphinx/model/de/de.dict de/de.dict
 ```
-_Hinsweis: Der `cp`Befehl könnte durch `ln` Befehl ersetzt werden um Speicherplatz zu sparen. Es ist jedoch normal, Wörter hinzuzufügen `de.dict`, Kopieren bedeutet, dass die Originaldatei unverändert ist und Sie mit einer Kopie arbeiten._
+_Hinweis: Der `cp`-Befehl könnte durch `ln`-Befehl ersetzt werden um Speicherplatz zu sparen. Es ist jedoch möglich, Wörter zu `de.dict` hinzuzufügen; `cp` bedeutet, dass die Originaldatei unverändert bleibt und Sie mit einer Kopie arbeiten._
 
-Sie müssten die folgenden Verzeichnisse, Dateien und symbolischen Verknüpfungen haben:
+Falls Sie mit mit `ln` arbeiten, müssen Sie für die folgenden Verzeichnisse, Dateien und symbolische Verknüpfungen haben:
 
 * `~/mycroft/client/speech/recognizer/model/de`
 * `~/mycroft-core/client/speech/recognizer/model/de/hmm`
 * `~/mycroft-core/client/speech/recognizer/model/de/de.dict`
 * `~/mycroft-core/client/speech/recognizer/model/de/de.lm`
 
-### Einen Deutsches **Wake Word** wählen
+### Ein deutsches **Wake Word** wählen
 
-Wähle ein **Wake Word** oder Wake Phrase auf Deutsch, und vergewissere dich dann, dass es in der `cmusphinx-voxforge-de.dic` datei des language models enthalten ist. Die Erfahrung zeigt, dass die beste Wahl ein einzelnes Wort mit drei oder mehr Phonemen ist.
+Wählen Sie ein deutsches **Wake Word** oder Wake Phrase auf Deutsch und vergewisseren Sie sich dann, dass es in der `cmusphinx-voxforge-de.dic`-Datei des Sprachmodells enthalten ist. Die Erfahrung zeigt, dass die beste Wahl ein einzelnes Wort mit drei oder mehr Phonemen ist.
 
-Überprüfen Sie zum Beispiel, ob das 'hallo' Word existiert:
+Überprüfen Sie zum Beispiel, ob das Wort 'hallo' existiert:
 
 `egrep '^hallo ' de.dict`
 
 `hallo HH AE L AX UU`
 
-Wenn das gewählte **Wake Word** oder Phrase ist nicht in der `de.dict` Datei ist, wählen Sie entweder einen anderes **Wake Word**, or ändere die `de.dict` Datei um es hinzuzufügen.
+Wenn das gewählte **Wake Word** oder Phrase nicht in der `de.dict` Datei ist, dann wählen Sie entweder ein anderes **Wake Word** oder ändern Sie die `de.dict`-Datei, um es hinzuzufügen.
 
-### Konfigurieren Sie Mycroft für die Verwendung der deutschen Sprache und des ausgewählten Sprache **Wake Word**
-
-!!!Aktuell ist das Paaren von Mycroft noch nicht vollständig in deutsch Möglich deshalb sollte mycroft bereits unter "lang": "en-us" verbunden sein
-
-Erstellen Sie zuerst eine eigene `mycroft.conf` Konfigurationsdatei. Bei Mycroft für Linux ist dies hier gespeichert:
+### Konfigurieren Sie Mycroft für die Verwendung der deutschen Sprache und des deutschen **Wake Words** 
 
 `~/.mycroft/mycroft.conf`
 
@@ -231,7 +205,7 @@ Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
 
 ## Wählen und konfigurieren Sie eine STT-Engine (Speak to Text) mit deutscher Unterstützung
 
-Wenn die Sprache-zu-Text-Engine, die Sie verwenden, bereits Deutsch unterstützt, müssen Sie nichts tun - dies ist beispielsweise bei der standardmäßigen mycroft-Engine der Fall.
+Wenn die Sprache-zu-Text-Engine, die Sie verwenden, bereits Deutsch unterstützt, müssen Sie nichts tun - dies ist beispielsweise bei der standardmäßigen Mycroft-Engine der Fall.
 
 Alternativ können Sie PocketSphinx verwenden, das auf Ihrem lokalen Computer ausgeführt wird. Um PocketSphinx als STT-Engine zu verwenden, fügen Sie folgendes zu Ihrer `~/.mycroft/mycroft.conf` Datei hinzu:
 
@@ -244,11 +218,7 @@ Alternativ können Sie PocketSphinx verwenden, das auf Ihrem lokalen Computer au
 
 ## Wählen und konfigurieren Sie eine TTS-Engine (Text to Speech) mit deutscher Unterstützung
 
-Wählen Sie als Nächstes ein Text-to-Speech-Modul aus und konfigurieren Sie es, das Deutsch unterstützt. Beispielsweise, `espeak` hat unterschiedliche Deutsche Stimmen.
-
-Installieren Sie die entsprechende espeak mbrola Sprache über `sudo apt install espeak espeak-data mbrola mbrola-de(1-8)`.
-
-Fügen Sie folgendes ihrer `~/.mycroft/mycroft.conf` Datei, um Ihre TTS-Engine zu konfigurieren:
+Wählen Sie als nächstes ein Text-to-Speech-Modul aus und konfigurieren Sie es, sodass es Deutsch unterstützt. Beispielsweise hat `espeak` unterschiedliche deutsche Stimmen.
 
 ```json
     "tts": {
@@ -260,24 +230,8 @@ Fügen Sie folgendes ihrer `~/.mycroft/mycroft.conf` Datei, um Ihre TTS-Engine z
     }
 ```
 
-
-## to doo
-
-### Mimic2
-
-Mycroft's neue Sprachausgabe [Mimic2](https://github.com/MycroftAI/mimic2.git) befindet aktuell in Arbeit. Unterstützung ist unter
-[machine-learning on Mycroft chat](https://chat.mycroft.ai/community/channels/machine-learning) Herzlich Wilkommen.
-
-### Skill Pflege
-
-Aktuell sind die meisten Skills bereits übersetzt. Die Pflege der Sprache in den Skills erfolgt zukünftig über [translate.mycroft.ai](https://translate.mycroft.ai/).
-
-### Konfigurieren Sie den Mycroft-Quellcode für die Handhabung von Deutsch
-
 Es gibt noch einige Quellcodeänderungen, die erforderlich sind, um eine Sprachänderung zu handhaben, und sie erfordern eine manuelle Änderung des Quellcodes, da sie noch nicht in `mycroft-core` einbezogen wurden.
 
 * [Changes to `listener.py` and `pocketsphinx_audio_consumer.py`](https://github.com/MycroftAI/mycroft-core/pull/656)
-
-### Sie wollen Einbezogen werden?
 
 Wenn Sie sich für fremdsprachige Übersetzungen von Mycroft interessieren, würden wir uns freuen, von Ihnen zu hören. Bitte besuchen Sie uns im [Languages channel on Mycroft chat](https://chat.mycroft.ai/community/channels/languages)

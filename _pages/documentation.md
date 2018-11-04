@@ -29,11 +29,16 @@ Our documentation, just like our source code, is open source, [and you can contr
       + [Manually configuring WiFi for Picroft](#manually-configuring-wifi-for-picroft)
       + [Reconfiguring automatic updates for Picroft](#reconfiguring-automatic-updates-for-picroft)
   * [Mycroft for Linux platforms](#mycroft-for-linux-platforms)
+  * [Mycroft for Docker](#mycroft-for-docker)
   * [Mycroft for Android](#mycroft-for-android)
-  * [`mycroft-conf` file](#mycroft-conf)
+  * [`mycroft-conf` file](#mycroft-conf-file)
   * [Mycroft Skills](#mycroft-skills)
+      + [Developing Skills for Mycroft](#developing-skills-for-mycroft)
       + [Introduction to developing Skills for Mycroft](#introduction-to-developing-skills-for-mycroft)
+      + [Automatic testing for Mycroft Skills](#automatic-testing-for-mycroft-skills)
       + [Preparing your Skill for submission to the Mycroft Skills Repo](#preparing-your-skill-for-submission-to-the-mycroft-skills-repo)
+      + [Mycroft Skills Kit](#mycroft-skills-kit)
+      + [Skills Acceptance Process](#skills-acceptance-process)
       + [Skill Settings](#skill-settings)
       + [Common issues in Skills development](#common-issues-in-skills-development)
       + [Repurposing Skills developed for other platforms](#repurposing-skills-developed-for-other-platforms)
@@ -42,13 +47,14 @@ Our documentation, just like our source code, is open source, [and you can contr
       + [Display Control](#display-control)
       + [Fallback Skills](#fallback-skills)
   * [Mycroft Skill Manager](#mycroft-skill-manager)
+  * [Message Bus](#message-bus)
   * [Language support in Mycroft](#language-support-in-mycroft)
       + [Adding a new language to Mycroft](#adding-a-new-language-to-mycroft)
       + [Configuring Mycroft for French language support](#configuring-mycroft-for-french-language-support)
       + [Configuring Mycroft for Italian language support](#configuring-mycroft-for-italian-language-support)
       + [Configuring Mycroft for German language support](#configuring-mycroft-for-german-language-support)
       + [Configuring Mycroft for Spanish language support](#configuring-mycroft-for-spanish-language-support)
-	  + [Configuring Mycroft for Portuguese language support](#configuring-mycroft-for-portuguese-language-support)
+      + [Configuring Mycroft for Portuguese language support](#configuring-mycroft-for-portuguese-language-support)
   * [Adapt](#adapt)
       + [Adapt examples](#adapt-examples)
       + [Adapt tutorial](#adapt-tutorial)
@@ -56,6 +62,7 @@ Our documentation, just like our source code, is open source, [and you can contr
   * [Precise](#precise)
   * [Padatious](#padatious)
   * [Troubleshooting and known errors](#troubleshooting-and-known-errors)
+      + [Audio troubleshooting](#audio-troubleshooting)
   * [Getting help and support](#getting-help-and-support)
   
 ## [About Mycroft](http://mycroft.ai/documentation/mycroft-software-hardware/)
@@ -114,6 +121,10 @@ Want to turn off automatic updates? Change what time they occur? Learn how to ma
 
 In depth information on how to build Mycroft for common Linux distributions.
 
+## [Mycroft for Docker](http://mycroft.ai/documentation/docker/)
+
+How to build Mycroft in a Docker container either by building an image or pulling the image off Docker Hub.
+
 ## [Mycroft for Android](https://mycroft.ai/documentation/android/)
 
 In depth information on the Mycroft companion app for Android.
@@ -126,17 +137,29 @@ Learn about the `mycroft.conf` file and the settings it contains.
 
 An overview of the Skills that can be installed on your Mycroft **Device**.
 
-### [Introduction to developing Skills for Mycroft](https://mycroft.ai/documentation/skills/developing-skills/)
+### [Developing Skills for Mycroft](https://mycroft.ai/documentation/skills/developing-skills/)
 
-Aimed at developers, this section is an introduction to developing new **Skills** for Mycroft
+Learn about the prerequisites of a **Skill**, and what makes a good Skill.
 
-### [Developing Skills for Mycroft](https://mycroft.ai/documentation/skills/introduction-developing-skills/)
+### [Introduction to developing Skills for Mycroft](https://mycroft.ai/documentation/skills/introduction-developing-skills/)
 
-Take your next step in Developing **Skills** for Mycroft. Learn about the structure of a **Skill**, and how to start creating your own. 
+Take your next step in Developing **Skills** for Mycroft. Learn about the structure of a **Skill**, and how to start creating your own.
+
+### [Automatic testing for Mycroft Skills](https://mycroft.ai/documentation/skills/automatic-testing/)
+
+Learn how to use the Integration Test Runner for automatic testing of your Mycroft Skills. 
+
+### [Skills acceptance process](https://mycroft.ai/documentation/skills/skills-acceptance-process/)
+
+Read more about the process used by Skill Authors, the Skill Management Team and Mycroft staff to ensure the robustness and quality of Skills in the Mycroft AI ecosystem. 
 
 ### [Preparing your Skill for submission to the Mycroft Skills Repo](https://mycroft.ai/documentation/skills/skill-submission/)
 
 Aimed at developers, this is a step by step guide to submitting a new Skill you've developed to the Mycroft Skills Repo.
+
+### [Mycroft Skills Kit](http://mycroft.ai/documentation/skills/msk/)
+
+Learn how to use the Mycroft Skills Kit to make the creation, testing and submission of Skills a lot easier.
 
 ### [Skill Settings](https://mycroft.ai/documentation/skills/skill-settings/)
 
@@ -168,7 +191,11 @@ Fallback **Skills** handle an **Intent** if one can't be matched with an **Utter
 
 ## [Mycroft Skill Manager](https://mycroft.ai/documentation/msm/)
 
-Learn how to use `msm` to install, search and update **Skills**.
+Learn how to use `msm` to install, search and update **Skills**. Includes a comprehensive list of `msm` error codes, and how to resolve them. 
+
+## [Message Bus](https://mycroft.ai/documentation/message-bus/)
+
+Aimed at advanced Skill Authors, learn how the Mycroft `MessageBus` is used to emit and consume messages. 
 
 ## [Language support in Mycroft](https://mycroft.ai/documentation/language-support/)
 
@@ -225,6 +252,10 @@ Padatious is an **Intent parser**. Unlike [Adapt](http://mycroft.ai/documentatio
 ## [Troubleshooting and known errors](https://mycroft.ai/documentation/troubleshooting/)
 
 Stuck? Learn common tricks and techniques for resolving common errors.
+
+### [Audio troubleshooting](http://mycroft.ai/documentation/troubleshooting/audio-troubleshooting/)
+
+Audio is one of the most common areas that requires troubleshooting. 
 
 ## Getting help and support
 Need to chat things over with a human? No problem. You can join our [Chat](https://chat.mycroft.ai), [Forum](https://community.mycroft.ai) or [make contact via this web form](https://mycroft.ai/contact).

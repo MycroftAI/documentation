@@ -1,6 +1,6 @@
 ---
 ID: 33601
-post_title: 'Picroft &#8211; outputting audio'
+post_title: Picroft – outputting audio
 author: Kathy Reid
 post_excerpt: ""
 layout: page
@@ -25,8 +25,8 @@ If you are developing on Picroft, and want to do audio-related **Skills** develo
 
 1. Connect a keyboard and/or monitor to Picroft, or alternatively, `ssh` into Picrot. By default the user is `pi` and the password is `mycroft`. 
 2. Run `nano auto_run.sh` (or use your preferred text editor)
-3. Add a `#` in front of the line `sudo amixer cset numid 3 "1"` to comment it out
-4. Remove the `#` at the start of the line `sudo amixer cset numid 3 "2"`
+3. Change "1" to "2". e.g. `sudo amixer cset numid 3 "1"` to `sudo amixer cset numid 3 "2"`
+4. Save the change.
 5. Reboot Picroft
 
 Audio should now play through the device you have the HDMI cable connected to (ie TV or speakers). 
@@ -40,7 +40,7 @@ Typically, USB audio should be connected to `hwplug:1,0` but to verify, run this
 
 `aplay -L`
 
-Next, find the `hwplug` output for the device you want to use. Take this, and update the `mycroft.conf` file accordingly. This file is located at `/etc/mycroft/mycroft.conf` on Picroft. 
+Next, find the `hwplug` output for the device you want to use. Take this, and update the `mycroft.conf` file accordingly. This file is located at `~/mycroft.conf` on Picroft. 
 
 `"play_wav_cmdline": "aplay -Dhw:0,0 %1"`
 
@@ -58,7 +58,7 @@ You can now run `./auto_run.sh` to start the program back up and test and ensure
 First, we need to enable Bluetooth. 
 
 1. Edit the `/etc/mycroft/mycroft.conf` file
-2. Add `"port": "/dev/ttyAMA1"` to the enclosure settings
+2. Add `"port": "/dev/ttyAMA0"` to the enclosure settings. You may need to use `"port": "/dev/ttyAMA1"` or `"port": "/dev/ttyAMA2"` - the port can vary depending on the `Picroft` and `Raspbian` build. 
 
 Next, we set up the Bluetooth connection. 
 
