@@ -1,6 +1,8 @@
 ---
 ID: 41145
-post_title: 'Mycroft AMA on r/IAmA &#8211; Ask Our CEO Anything!'
+post_title: >
+  Mycroft AMA on r/IAmA – Ask Our CEO
+  Anything!
 author: Eric Jurgeson
 post_excerpt: ""
 layout: post
