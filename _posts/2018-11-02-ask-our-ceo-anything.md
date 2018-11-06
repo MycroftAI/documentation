@@ -29,4 +29,4 @@ post_date: 2018-11-02 14:22:26
 
 <span style="font-weight: 400;"><a href="https://github.com/MycroftAI" target="_blank" rel="noopener">Mycroft Github</a></span>
 
-<span style="font-weight: 400;">That’s 14:30 GMT (UTC +0) on 7 November. 09:30 CST (UTC -5). We hope to see you there!</span>
+<span style="font-weight: 400;">That’s 14:30 GMT (UTC +0) on 7 November. 09:30 EST (UTC -5). We hope to see you there!</span>
