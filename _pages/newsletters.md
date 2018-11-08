@@ -10,7 +10,7 @@ post_date: 2018-02-16 10:25:37
 ---
 [vc_row type="full_width_content" full_screen_row_position="middle" bg_image="35810" bg_position="center center" bg_repeat="repeat" full_height="yes" bg_color="#2c3e50" scene_position="center" text_color="light" text_align="left" overlay_strength="0.3" shape_divider_position="bottom"][vc_column column_padding="padding-6-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_link_target="_self" column_shadow="none" column_border_radius="none" width="1/2" tablet_width_inherit="default" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text]
 <h2>Mycroft AI Newsletters</h2>
-[/vc_column_text][vc_raw_html]JTNDZGl2JTIwY2xhc3MlM0QlMjJfZm9ybV8yNCUyMiUzRSUzQyUyRmRpdiUzRSUwQSUzQ3NjcmlwdCUyMHNyYyUzRCUyMmh0dHBzJTNBJTJGJTJGbXljcm9mdGFpLmFjdGl2ZWhvc3RlZC5jb20lMkZmJTJGZW1iZWQucGhwJTNGaWQlM0QyNCUyMiUyMHR5cGUlM0QlMjJ0ZXh0JTJGamF2YXNjcmlwdCUyMiUyMGNoYXJzZXQlM0QlMjJ1dGYtOCUyMiUzRSUzQyUyRnNjcmlwdCUzRQ==[/vc_raw_html][vc_column_text]
+[/vc_column_text][vc_raw_html]JTNDZGl2JTIwY2xhc3MlM0QlMjJfZm9ybV81MCUyMiUzRSUzQyUyRmRpdiUzRSUzQ3NjcmlwdCUyMHNyYyUzRCUyMmh0dHBzJTNBJTJGJTJGbXljcm9mdGFpLmFjdGl2ZWhvc3RlZC5jb20lMkZmJTJGZW1iZWQucGhwJTNGaWQlM0Q1MCUyMiUyMHR5cGUlM0QlMjJ0ZXh0JTJGamF2YXNjcmlwdCUyMiUyMGNoYXJzZXQlM0QlMjJ1dGYtOCUyMiUzRSUzQyUyRnNjcmlwdCUzRQ==[/vc_raw_html][vc_column_text]
 <h3>Missed a newsletter? Catch up using the links below.</h3>
 <ul>
  	<li><a href="https://mycroftai.activehosted.com/social/76dc611d6ebaafc66cc0879c71b5db5c.101" target="_blank" rel="noopener">Custom, Private, and Open.</a></li>
