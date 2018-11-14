@@ -11,6 +11,17 @@ post_date: 2018-06-06 12:29:25
 ---
 # Mycroft Skills Kit - msk
 
+- [Mycroft Skills Kit - msk](#mycroft-skills-kit---msk)
+  * [Introduction](#introduction)
+  * [Installing msk](#installing-msk)
+  * [Usage](#usage)
+  * [Create](#create)
+  * [Create test](#create-test)
+  * [Upload Skill](#upload-skill)
+  * [Upgrade Skill](#upgrade-skill)
+    + [Before you upgrade](#before-you-upgrade)
+  * [Join our Skills Authoring Community](#join-our-skills-authoring-community)
+
 ## Introduction
 
 The Mycroft Skills Kit - `msk` - is a Python-based utility that has been created to make it easier for **Skill** Authors to create, test and submit **Skills** to the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills). We hope this utility helps to shorten the development cycle, and remove some of the tedious parts of **Skill** creation.
@@ -198,6 +209,8 @@ If using the msk delivered with the mycroft-core github installation the Python 
 
 `$ source .venv/bin/activate`
 
+You will now see that your `bash` prompt is prefixed with `(venv)`. 
+
 Next, we use the `msk upload` command with the path to the **Skill**:
 
 ```bash
@@ -217,3 +230,96 @@ To https://github.com/YourGitHubUserName/mycroft-skills
 Branch add/feed-the-corgi set up to track remote branch add/feed-the-corgi from fork.
 Created pull request:  https://github.com/MycroftAI/mycroft-skills/pull/392
 ```
+
+## Upgrade Skill
+
+`msk` also provides a function for upgrading a **Skill** once it has been merged into the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills), as part of our [Skill Submission Process] (https://mycroft.ai/documentation/skills/skill-submission/).
+
+### Before you upgrade
+
+Before you can use `msk upgrade`, you must ensure: 
+
+* That your **Skill** has already been merged with the `mycroft-skills` repo. If you try to run `msk upgrade` and your Skill has not yet been merged, you will receive the error: 
+
+```
+(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
+NotUploaded: The skill kathy-msk-test-skill has not yet been uploaded to the skill store
+
+```
+
+* That you have made changes to your **Skill** and that these changes have been committed to the **Skill's** `git` repository. If not, you will receive the error: 
+
+```
+(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
+AlreadyUpdated: The latest version of kathy-msk-test-skill is already uploaded to the skill repo
+(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+You need to ensure that your changes are committed: 
+
+```
+(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ git commit -a
+[master 6d0e355] test for msk
+ 1 file changed, 3 insertions(+)
+(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ git push -u origin master
+Username for 'https://github.com': KathyReid
+Password for 'https://KathyReid@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/KathyReid/kathy-msk-test-skill
+   5c9a7f2..6d0e355  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+```
+
+Once your changes are committed, you can then use `msk upgrade` by passing the location of the Skill folder. Generally we find it's easiest to be inside the Skill's folder in `/opt/mycroft/skills/SKILL-NAME` and then use the current directory symbol, period `.`.
+
+```
+(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
+=== GitHub Credentials ===
+Username: KathyReid
+Password: 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 877 bytes | 877.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'upgrade-kathy-msk-test-skill' on GitHub by visiting:
+remote:      https://github.com/KathyReid/mycroft-skills/pull/new/upgrade-kathy-msk-test-skill
+remote: 
+To https://github.com/KathyReid/mycroft-skills
+ * [new branch]      upgrade-kathy-msk-test-skill -> upgrade-kathy-msk-test-skill
+Branch 'upgrade-kathy-msk-test-skill' set up to track remote branch 'upgrade-kathy-msk-test-skill' from 'fork'.
+
+=== Upgrade kathy-msk-test-skill ===
+
+'This upgrades kathy-msk-test-skill to include the following new commits:
+
+ - [test for msk](https://github.com/KathyReid/kathy-msk-test-skill/commit/6d0e3552314673402e6f44ee90ee29feff6075ca)
+
+<sub>Created with [mycroft-skills-kit](https://github.com/mycroftai/mycroft-skills-kit) v0.3.10</sub>
+
+Created PR at: https://github.com/MycroftAI/mycroft-skills/pull/661
+```
+
+`msk upgrade` will create a new PR on the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills), and this will be reviewed using the [Skills Acceptance process](https://mycroft.ai/documentation/skills/skills-acceptance-process/). 
+
+## Join our Skills Authoring Community
+
+[Join other Skill Authors in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills). 
+
