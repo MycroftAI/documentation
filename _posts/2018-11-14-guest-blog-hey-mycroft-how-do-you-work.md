@@ -86,3 +86,9 @@ Creating an account is very easy, just go <a href="https://home.mycroft.ai/?utm_
 <span style="font-weight: 400;">So now that you know how the whole thing works, it is time to take things into your own hands. You can support Mycroft by investing to become a community partner. It doesn’t matter whether you are a developer or just another technology aficionado. Your actions count the same and together we can all help the world better. Even if you are not you could use Mark I or II.</span>
 
 <span style="font-weight: 400;">The whole point of Mycroft is that technology should be accessible by everyone and respectively, everyone should aid in creating an open and safe future!</span>
+
+<hr />
+
+<blockquote> Stelios Tsoukalas is a professional writer in the field of technology and AI with a degree in computer programming.
+
+<a href="https://www.linkedin.com/in/stelios-tsoukalas-ai-writer" target="_blank" rel="noopener">https://www.linkedin.com/in/stelios-tsoukalas-ai-writer</a></blockquote>
