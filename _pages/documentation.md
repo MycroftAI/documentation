@@ -46,6 +46,7 @@ Our documentation, just like our source code, is open source, [and you can contr
       + [Audio Service](#audio-service)
       + [Display Control](#display-control)
       + [Fallback Skills](#fallback-skills)
+	  + [Common Play Framework](#common-play-framework)
   * [Mycroft Skill Manager](#mycroft-skill-manager)
   * [Message Bus](#message-bus)
   * [Language support in Mycroft](#language-support-in-mycroft)
@@ -188,6 +189,10 @@ Display Control manages features of the **Enclosure**, such as the _mouth_ and _
 ### [Fallback Skills](https://mycroft.ai/documentation/skills/fallback-skill/)
 
 Fallback **Skills** handle an **Intent** if one can't be matched with an **Utterance** and are a useful catch-all. This documentation shows how to write a new Fallback **Skill** and set its order of precedence.
+
+### [Common Play Framework](https://mycroft.ai/documentation/skills/common-play-framework/)
+
+Learn how to use the `CommonPlaySkill` class instead of the regular `MycroftSkill` class to develop **Skills** which use the `play` keyword.
 
 ## [Mycroft Skill Manager](https://mycroft.ai/documentation/msm/)
 
