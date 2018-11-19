@@ -9,7 +9,7 @@ permalink: >
 published: true
 post_date: 2018-08-01 14:30:37
 ---
-<span style="font-weight: 400;">Mycroft is going global. Next week our CEO, Joshua Montgomery, is beginning a series of talks around international language support and community building. The first meetings were held in <strong>Reykjavik</strong>, <strong>Amsterdam</strong>, and <strong>Vienna</strong>. We've since hosted events in <strong>Berlin,</strong> <strong>Paris, Madrid, </strong>and<strong> Lisbon. </strong>Coming up are <strong>Barcelona </strong>and<strong> London. </strong>If you live in those cities, <a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global">get in touch</a>! We would love help in coordinating event locations and recruiting community members to get excited about Mycroft.</span>
+<span style="font-weight: 400;">Mycroft is going global. Next week our CEO, Joshua Montgomery, is beginning a series of talks around international language support and community building. We're at nine cities and counting!<strong> </strong>If you want Mycroft to come by your area, <a href="https://mycroft.ai/blog/mycrofts-world-tour/#help-mycroft-go-global">get in touch</a>! We would love help in coordinating event locations and recruiting community members to get excited about Mycroft.</span>
 
 <span style="font-weight: 400;">A <a href="https://mycroft.ai/blog/languages-are-hard/" target="_blank" rel="noopener">diverse and international community</a> is invaluable to a voice assistant. Just by using Mycroft and Opting-In, we gain various accents to improve Wake Word spotting and STT. Exposing the technology to more people worldwide builds a base who can translate Mycroft into their local languages.</span>
 
@@ -18,14 +18,7 @@ post_date: 2018-08-01 14:30:37
 
 <hr />
 
-<h3><span style="font-weight: 400;">Barcelona</span></h3>
-November 5, 7:00 PM <span style="font-weight: 400;">– <strong>International Language - </strong><a href="https://www.eventbrite.com/e/catalan-voice-assistant-teaching-mycroft-ai-new-languages-tickets-50443907084" target="_blank" rel="noopener">RSVP</a></span>
-
-November 6, 7:00 PM <span style="font-weight: 400;">– <strong>Startup Fundraising - <a href="https://www.eventbrite.com/e/early-stage-fundraising-the-naked-truth-tickets-51583872752">RSVP</a></strong></span>
-<h3><span style="font-weight: 400;">London</span></h3>
-November 15, 6:30 PM <span style="font-weight: 400;"><strong>International Language - <a href="https://www.eventbrite.com/e/open-source-voice-assistant-teaching-mycroft-ai-new-languages-tickets-51958228460">RSVP</a></strong></span>
-
-November 14, 6:30 PM <span style="font-weight: 400;">– <strong>Startup Fundraising - <a href="https://www.eventbrite.com/e/early-stage-fundraising-the-naked-truth-tickets-51958527354">RSVP</a></strong></span>
+Check back soon!
 <h2>Tentative event dates:</h2>
 
 <hr />
@@ -42,6 +35,8 @@ Edinburgh - Coming soon!
 <h3><span style="font-weight: 400;">Paris - September 18, September 19 - </span><a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-berlin-paris-and-madrid/"><span style="font-weight: 400;">Recap</span></a></h3>
 <h3><span style="font-weight: 400;">Madrid - October 5, October 8 - </span><a href="https://mycroft.ai/blog/mycroft-world-tour-recapping-berlin-paris-and-madrid/"><span style="font-weight: 400;">Recap</span></a></h3>
 <h3><span style="font-weight: 400;">Lisbon</span><span style="font-weight: 400;"> - October 23, October 24 - </span><span style="font-weight: 400;"><em>Recap Soon</em>!</span></h3>
+<h3><span style="font-weight: 400;">Barcelona - November 5, November 6 - </span><span style="font-weight: 400;"><em>Recap Soon</em>!</span></h3>
+<h3><span style="font-weight: 400;">London</span><span style="font-weight: 400;"> - November 14, November 15 - </span><span style="font-weight: 400;"><em>Recap Soon</em>!</span></h3>
 
 <hr />
 
