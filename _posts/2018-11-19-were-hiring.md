@@ -4,7 +4,7 @@ post_title: 'We&#8217;re Hiring! &#8211; Jobs at Mycroft'
 author: Eric Jurgeson
 post_excerpt: ""
 layout: post
-permalink: https://mycroft.ai/blog/were-hiring/
+permalink: http://mycroft.ai/blog/were-hiring/
 published: true
 post_date: 2018-11-19 14:00:06
 ---
