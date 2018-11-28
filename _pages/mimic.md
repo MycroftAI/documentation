@@ -89,7 +89,7 @@ In order to build Mimic, you will need the following:
 
 First, install Brew:
 
-`$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`
+`$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 Then, install `pkg-config`, `automake`, `libtool`, `icu` and `PortAudio`
 
