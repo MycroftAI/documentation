@@ -13,18 +13,18 @@ post_date: 2018-11-16 07:27:11
 
 - [Common Play Framework](#common-play-framework)
   * [Introduction](#introduction)
-  * [Basing your Skill on the `CommonPlaySkill` class instead of `MycroftSkill`](#basing-your-skill-on-the--commonplayskill--class-instead-of--mycroftskill-)
+  * [Basing your Skill on the `CommonPlaySkill` class instead of `MycroftSkill`](#basing-your-skill-on-the-commonplayskill-class-instead-of-mycroftskill)
   * [CPS_match_query_phrase](#cps-match-query-phrase)
   * [CPS_start](#cps-start)
-  * [Worked example of `CommonPlaySkill`](#worked-example-of--commonplayskill-)
+  * [Example implementation of `CommonPlaySkill`](#example-implementation-of-commonplayskill)
   * [Where to go for more assistance](#where-to-go-for-more-assistance)
 
 
 ## Introduction
 
-Over time, many **Skills** are likely to use similar keywords - called `Intents` - to triggers actions. One of the most frequently used keywords is `play`. This means that several **Skills** can all use the word `play` in their `Intents` - causing something called an _intent collision_ - where Mycroft doesn't know which **Skill** to invoke because there are so many to choose from. 
+Over time, many **Skills** are likely to use similar keywords - called `Intents` - to triggers actions. One of the most frequently used keywords is `play`. This means that several **Skills** can all use the word `play` in their `Intents` - causing something called an _intent collision_ - where Mycroft doesn't know which **Skill** to invoke because there are so many to choose from.
 
-The **Common Play Framework** solves this problem by allowing Mycroft to infer a _confidence score_ from an `Intent` which uses the `play` keyword. The _confidence score_ is designed so that there is a much higher probability of the right **Skill** being invoked to handle an `Intent` which has the keyword `play` in it. 
+The **Common Play Framework** solves this problem by allowing Mycroft to infer a _confidence score_ from an `Intent` which uses the `play` keyword. The _confidence score_ is designed so that there is a much higher probability of the right **Skill** being invoked to handle an `Intent` which has the keyword `play` in it.
 
 To take advantage of the **Common Play Framework**, your **Skill** needs to be written in a specific way - outlined below:
 
@@ -68,15 +68,15 @@ def create_skill():
 
 ## CPS_match_query_phrase
 
-The argument `phrase` is sent from the `PlaybackControlSkill`, and is the entire phrase said by the user with the `play` keyword stripped out. So if the user says 
+The argument `phrase` is sent from the `PlaybackControlSkill`, and is the entire phrase said by the user with the `play` keyword stripped out. So if the user says
 
-> "Play something by Professor Elemental" 
+> "Play something by Professor Elemental"
 
-the `phrase` argument will contain 
+the `phrase` argument will contain
 
 > "something by Professor Elemental"
 
-Using this phrase the Skill Author should now determine if the **Skill** can play this phrase and return the matched phrase and the confidence level. The confidence level is reported using the `CPSMatchLevel` enum type. 
+Using this phrase the Skill Author should now determine if the **Skill** can play this phrase and return the matched phrase and the confidence level. The confidence level is reported using the `CPSMatchLevel` enum type.
 
 Possible values are:
 
@@ -108,11 +108,11 @@ The data is then passed to the `CPS_start()` method as an argument.
 
 ## CPS_start
 
-`CPS_start` simply starts the playback using the data and/or the phrase to determine what to play. 
+`CPS_start` simply starts the playback using the data and/or the phrase to determine what to play.
 
 For convenience the `self.audioservice` object can be used to start playback or queue up tracks.
 
-## Worked example of `CommonPlaySkill`
+## Example implementation of `CommonPlaySkill`
 
 Let's fill in the blanks in the the above base and create a **Skill** to play the best (according to yours truly, @forslund) Commodore 64 remixes!
 
@@ -159,7 +159,7 @@ then we update the `CPS_match_query_phrase` method to use it to select the best 
             return None
 ```
 
-This will include the url of the selected file as "track" in the data received by the `CPS_start` method. 
+This will include the url of the selected file as "track" in the data received by the `CPS_start` method.
 
 Which simply becomes
 
