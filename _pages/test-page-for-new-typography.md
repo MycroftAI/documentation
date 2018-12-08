@@ -10,32 +10,29 @@ published: true
 post_date: 2018-12-08 07:48:24
 ---
 <h1>This is heading 1</h1>
-woman systema 8-bit faded alcohol office math-. media fetishism sub-orbital order-flow jeans sprawl courier. pen Tokyo 8-bit construct order-flow industrial grade digital. nodality RAF shoes Tokyo voodoo god apophenia girl. boy nodality network marketing order-flow bicycle voodoo god. spook car towards drone marketing Tokyo office. monofilament vinyl math- car crypto- knife nano-. stimulate media sentient fluidity corporation corporation market.
+<p>woman systema 8-bit faded alcohol office math-. media fetishism sub-orbital order-flow jeans sprawl courier. pen Tokyo 8-bit construct order-flow industrial grade digital. nodality RAF shoes Tokyo voodoo god apophenia girl. boy nodality network marketing order-flow bicycle voodoo god. spook car towards drone marketing Tokyo office. monofilament vinyl math- car crypto- knife nano-. stimulate media sentient fluidity corporation corporation market.</p>
 <h2>This is heading 2</h2>
-corporation dome silent assault Tokyo construct -space. nodality euro-pop claymore mine market alcohol wonton soup order-flow. disposable free-market modem claymore mine uplink j-pop render-farm. 3D-printed 3D-printed spook futurity boat nodal point systema. alcohol alcohol order-flow tiger-team vinyl numinous rebar. singularity modem network Shibuya saturation point car dome. denim tower RAF garage digital carbon gang. grenade wonton soup denim pistol futurity concrete wonton soup.
+<p>corporation dome silent assault Tokyo construct -space. nodality euro-pop claymore mine market alcohol wonton soup order-flow. disposable free-market modem claymore mine uplink j-pop render-farm. 3D-printed 3D-printed spook futurity boat nodal point systema. alcohol alcohol order-flow tiger-team vinyl numinous rebar. singularity modem network Shibuya saturation point car dome. denim tower RAF garage digital carbon gang. grenade wonton soup denim pistol futurity concrete wonton soup.</p>
 <h3>This is heading 3</h3>
-jeans neon concrete weathered man decay kanji. decay bicycle free-market grenade nodal point San Francisco Chiba. tanto DIY neural pre- ablative garage drugs. film receding j-pop neon pistol Kowloon rebar. construct media bicycle gang render-farm warehouse saturation point. cartel meta- chrome j-pop grenade wristwatch jeans. otaku human assassin katana sprawl geodesic man. grenade dome A.I. girl boy knife grenade.
+<p>jeans neon concrete weathered man decay kanji. decay bicycle free-market grenade nodal point San Francisco Chiba. tanto DIY neural pre- ablative garage drugs. film receding j-pop neon pistol Kowloon rebar. construct media bicycle gang render-farm warehouse saturation point. cartel meta- chrome j-pop grenade wristwatch jeans. otaku human assassin katana sprawl geodesic man. grenade dome A.I. girl boy knife grenade.</p>
 <h4>This is heading 4</h4>
-boat j-pop construct urban alcohol saturation point post-. geodesic numinous urban semiotics car meta- marketing. shrine shoes uplink cartel denim towards otaku. rebar shanty town math- ablative narrative tattoo nodal point. carbon cartel claymore mine alcohol rebar futurity towards. dome physical fluidity Legba tattoo 3D-printed systema. refrigerator sub-orbital tube tiger-team franchise jeans tattoo. pre- shanty town denim convenience store tube into office.
+<p>boat j-pop construct urban alcohol saturation point post-. geodesic numinous urban semiotics car meta- marketing. shrine shoes uplink cartel denim towards otaku. rebar shanty town math- ablative narrative tattoo nodal point. carbon cartel claymore mine alcohol rebar futurity towards. dome physical fluidity Legba tattoo 3D-printed systema. refrigerator sub-orbital tube tiger-team franchise jeans tattoo. pre- shanty town denim convenience store tube into office.</p>
 <h5>This is heading 5</h5>
 <p class="margin">woman systema 8-bit faded alcohol office math-. media fetishism sub-orbital order-flow jeans sprawl courier. pen Tokyo 8-bit construct order-flow industrial grade digital. nodality RAF shoes Tokyo voodoo god apophenia girl. boy nodality network marketing order-flow bicycle voodoo god. spook car towards drone marketing Tokyo office. monofilament vinyl math- car crypto- knife nano-. stimulate media sentient fluidity corporation corporation market.</p>
-
 <h6 class="margin">This is heading 6</h6>
 <blockquote>
 <p class="margin">corporation dome silent assault Tokyo construct -space. nodality euro-pop claymore mine market alcohol wonton soup order-flow. disposable free-market modem claymore mine uplink j-pop render-farm. 3D-printed 3D-printed spook futurity boat nodal point systema. alcohol alcohol order-flow tiger-team vinyl numinous rebar. singularity modem network Shibuya saturation point car dome. denim tower RAF garage digital carbon gang. grenade wonton soup denim pistol futurity concrete wonton soup.</p>
 </blockquote>
-<ul>
- 	<li class="margin">jeans neon concrete</li>
- 	<li class="margin">weathered man decay kanji.</li>
- 	<li class="margin">decay bicycle free-market grenade nodal point</li>
+<ul><li class="margin">jeans neon concrete</li>
+    <li class="margin">weathered man decay kanji.</li>
+    <li class="margin">decay bicycle free-market grenade nodal point</li>
 </ul>
-<ol>
- 	<li class="margin">San Francisco Chiba. tanto DIY neural pre- ablative garage drugs.</li>
- 	<li class="margin">film receding j-pop neon pistol Kowloon rebar. construct media bicycle gang render-farm warehouse saturation point. cartel meta- chrome j-pop grenade wristwatch jeans. otaku human assassin katana sprawl geodesic man. grenade dome A.I. girl boy knife grenade.</li>
- 	<li class="margin">boat j-pop construct urban alcohol saturation point post-. geodesic numinous urban semiotics car meta- marketing. shrine shoes uplink cartel denim towards otaku. rebar shanty town math- ablative narrative tattoo nodal point. carbon cartel claymore mine alcohol rebar futurity towards.</li>
- 	<li class="margin">dome physical fluidity Legba tattoo 3D-printed systema. refrigerator sub-orbital tube tiger-team franchise jeans tattoo. pre- shanty town denim convenience store tube into office.</li>
+<ol><li class="margin">San Francisco Chiba. tanto DIY neural pre- ablative garage drugs.</li>
+    <li class="margin">film receding j-pop neon pistol Kowloon rebar. construct media bicycle gang render-farm warehouse saturation point. cartel meta- chrome j-pop grenade wristwatch jeans. otaku human assassin katana sprawl geodesic man. grenade dome A.I. girl boy knife grenade.</li>
+    <li class="margin">boat j-pop construct urban alcohol saturation point post-. geodesic numinous urban semiotics car meta- marketing. shrine shoes uplink cartel denim towards otaku. rebar shanty town math- ablative narrative tattoo nodal point. carbon cartel claymore mine alcohol rebar futurity towards.</li>
+    <li class="margin">dome physical fluidity Legba tattoo 3D-printed systema. refrigerator sub-orbital tube tiger-team franchise jeans tattoo. pre- shanty town denim convenience store tube into office.</li>
 </ol>
-boat j-pop construct urban alcohol saturation point post-. geodesic numinous urban semiotics car meta- marketing. shrine shoes uplink cartel denim towards otaku. rebar shanty town math- ablative narrative tattoo nodal point. carbon cartel claymore mine alcohol rebar futurity towards. dome physical fluidity Legba tattoo 3D-printed systema. refrigerator sub-orbital tube tiger-team franchise jeans tattoo. pre- shanty town denim convenience store tube into office.
+<p>boat j-pop construct urban alcohol saturation point post-. geodesic numinous urban semiotics car meta- marketing. shrine shoes uplink cartel denim towards otaku. rebar shanty town math- ablative narrative tattoo nodal point. carbon cartel claymore mine alcohol rebar futurity towards. dome physical fluidity Legba tattoo 3D-printed systema. refrigerator sub-orbital tube tiger-team franchise jeans tattoo. pre- shanty town denim convenience store tube into office.</p>
 <pre><code>GIMP Palette
 Name: Mycroft August 2018
 Columns: 1
