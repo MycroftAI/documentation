@@ -17,7 +17,6 @@ Our documentation, just like our source code, is open source, [and you can contr
 - [Documentation Home](#documentation-home)
   * [About Mycroft](#about-mycroft)
       + [Contributing](#contributing)
-      + [Release notes](#release-notes)
       + [Roadmap](#roadmap)
       + [Glossary](#glossary)
   * [Getting Mycroft](#getting-mycroft)
@@ -74,10 +73,6 @@ This is a useful starting point, and provides an overview of all the elements of
 ### [Contributing](https://mycroft.ai/documentation/contributing/)
 
 Aimed at developers, our Contributing section provides detailed instructions on how to contribute to Mycroft.
-
-### [Release notes](https://mycroft.ai/documentation/release-notes/)
-
-Release notes for Mycroft software releases.
 
 ### [Roadmap](https://mycroft.ai/documentation/mycroft-roadmap/)
 
