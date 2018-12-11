@@ -32,6 +32,7 @@ Our documentation, just like our source code, is open source, [and you can contr
   * [Mycroft for Docker](#mycroft-for-docker)
   * [Mycroft for Android](#mycroft-for-android)
   * [`mycroft-conf` file](#mycroft-conf-file)
+  * [Mycroft Logs](#mycroft-logs)
   * [Mycroft Skills](#mycroft-skills)
       + [Developing Skills for Mycroft](#developing-skills-for-mycroft)
       + [Introduction to developing Skills for Mycroft](#introduction-to-developing-skills-for-mycroft)
@@ -133,6 +134,10 @@ In depth information on the Mycroft companion app for Android.
 ## [`mycroft-conf` file](https://mycroft.ai/documentation/mycroft-conf/)
 
 Learn about the `mycroft.conf` file and the settings it contains. 
+
+## [Mycroft Logs](https://mycroft.ai/documentation/logs/)
+
+Information about which logs Mycroft keeps, where they are located, and useful diagnostic commands.
 
 ## [Mycroft Skills](https://mycroft.ai/documentation/skills/)
 
