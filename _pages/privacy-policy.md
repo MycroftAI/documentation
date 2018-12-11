@@ -7,6 +7,7 @@ By using our software, using a Mycroft Mark device, otherwise using the Services
 
 When you use our Services including the Mycroft Voice Assistant, your voice and audio commands are transmitted to our Servers for processing.
 
+## Contents
 * [The Information We Collect About You](#about-you)
   * [Registration and Account Profile](#profile)
   * [Voice Commands](#voice-commands)
