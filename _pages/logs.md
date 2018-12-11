@@ -10,6 +10,20 @@ post_date: 2018-12-11 07:20:23
 ---
 # Mycroft logs
 
+- [Mycroft logs](#mycroft-logs)
+  * [About the Mycroft logs](#about-the-mycroft-logs)
+    + [How to find the Mycroft logs](#how-to-find-the-mycroft-logs)
+  * [Log file descriptions](#log-file-descriptions)
+    + [audio.log](#audiolog)
+    + [bus.log](#buslog)
+    + [enclosure.log](#enclosurelog)
+    + [skills.log](#skillslog)
+    + [update.log](#updatelog)
+    + [voice.log](#voicelog)
+  * [Useful diagnostic commands](#useful-diagnostic-commands)
+    + [Errors in a Skill](#errors-in-a-skill)
+    + [Tailing the skills.log](#tailing-the-skillslog)
+  * [Log rotation](#log-rotation)
 
 If you request Support from Mycroft, through the [Mycroft Forum](https://community.mycroft.ai), through [Mycroft Chat](https://chat.mycroft.ai) or by [contacting us](https://mycroft.ai/contact/), it is likely we will ask you for _logs_ to help us diagnose the problem. 
 
