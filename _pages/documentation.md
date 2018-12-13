@@ -49,13 +49,7 @@ Our documentation, just like our source code, is open source, [and you can contr
 	  + [Common Play Framework](#common-play-framework)
   * [Mycroft Skill Manager](#mycroft-skill-manager)
   * [Message Bus](#message-bus)
-  * [Language support in Mycroft](#language-support-in-mycroft)
-      + [Adding a new language to Mycroft](#adding-a-new-language-to-mycroft)
-      + [Configuring Mycroft for French language support](#configuring-mycroft-for-french-language-support)
-      + [Configuring Mycroft for Italian language support](#configuring-mycroft-for-italian-language-support)
-      + [Configuring Mycroft for German language support](#configuring-mycroft-for-german-language-support)
-      + [Configuring Mycroft for Spanish language support](#configuring-mycroft-for-spanish-language-support)
-      + [Configuring Mycroft for Portuguese language support](#configuring-mycroft-for-portuguese-language-support)
+  * [Other languages in Mycroft](#language-support-in-mycroft)
   * [Adapt](#adapt)
       + [Adapt examples](#adapt-examples)
       + [Adapt tutorial](#adapt-tutorial)
@@ -203,33 +197,9 @@ Learn how to use `msm` to install, search and update **Skills**. Includes a comp
 
 Aimed at advanced Skill Authors, learn how the Mycroft `MessageBus` is used to emit and consume messages. 
 
-## [Language support in Mycroft](https://mycroft.ai/documentation/language-support/)
+## [Mycroft in other languages](https://mycroft.ai/documentation/languages)
 
-Learn more about languages support in Mycroft.
-
-### [Adding a new language to Mycroft](https://mycroft.ai/documentation/language-support/adding-language/)
-
-Adding a new language to Mycroft is complex; this documentation takes you through the different layers of the voice stack that need to be adapted for a new language. 
-
-### [Configuring Mycroft for French language support](https://mycroft.ai/documentation/language-support/french/)
-
-Parlez-vous français? Follow these steps to change Mycroft's language to French (BCP 47: fr)
-
-### [Configuring Mycroft for Italian language support](https://mycroft.ai/documentation/language-support/italian/)
-
-Parli italiano? Follow these steps to change Mycroft's language to Italian (BCP 47: it)
-
-### [Configuring Mycroft for German language support](https://mycroft.ai/documentation/language-support/german/)
-
-Sprechen Sie Deutsch? Follow these steps to change Mycroft's language to German (BCP 47: de)
-
-### [Configuring Mycroft for Spanish language support](https://mycroft.ai/documentation/language-support/spanish/)
-
-Puedes hablar español? Follow these steps to change Mycroft's language to Spanish (BCP 47: es)
-
-### [Configuring Mycroft for Portuguese language support](http://mycroft.ai/documentation/language-support/portuguese/)
-
-Olá, falas Português? Follow these steps to change Mycroft's language to Portuguese (BCP 47:`pt`)
+Learn more about languages in Mycroft, and all the components that have to be in place to support additional languages.
 
 ## [Adapt](https://mycroft.ai/documentation/adapt/)
 
