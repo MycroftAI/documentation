@@ -79,7 +79,7 @@ The STT options you can select from are;
 
 Unfortunately, STT engines aren't available for every language in the world. 
 
-We recommend that you request your language at [Mozilla's Common Voice project](https://voice.mozilla.org/en/language). 
+We recommend that you request your language at [Mozilla's Common Voice project](https://voice.mozilla.org/en/languages). 
 
 ### Changing TTS settings to support a different language
 
