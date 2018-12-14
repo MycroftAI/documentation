@@ -143,6 +143,7 @@ Instead, the Skill Management Team will seek assistance from the Community, and 
 
 #### Python code checks of the Skill
 
+* Is an appropriate LICENSE file used in the repo - such as Apache2 or GPL? 
 * Inline documentation - is the code documented in line?
 * Libraries - does the Skill include the correct libraries? Does it use too many libraries or dependencies?
 * Callback check - do we need to do a check for the callback error that was in the Spotify Skill?
