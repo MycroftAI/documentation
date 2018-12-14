@@ -15,7 +15,7 @@ post_date: 2018-09-07 12:00:06
 <h1>Testing the Audio on the Mark II Board</h1>
 <span style="font-weight: 400;">We were able to test the microphones successfully and play music to test the audio performance. Previously we tested the audio chamber with the Rohm amplifier dev board, but this was the first time using the pre-production boards. I’m happy to report the audio sounds just as good as it did in our previous tests.</span>
 
-We had a video of this but got flagged for a copyright claim. We were so excited we just reached for a favorite song, instead of grabbing something that was CC Licensed. We'll have a video with something royalty-free up soon.
+We had a video of this but got flagged for a copyright claim. We were so excited we just reached for a favorite song, instead of grabbing something that was CC Licensed. We'll have a video with something royalty-free up soon. -- UPDATE -- The copyright holder finally monetized the video for themselves and allowed it to be republished. <a href="https://www.youtube.com/watch?v=iJyVeX0v8D4" target="_blank" rel="noopener">Here is the September audio test</a>.
 <h1>Final Assembly Tweaks</h1>
 <span style="font-weight: 400;">We are at a point now we can continue testing the final assembly. Using the pre-production board prototypes we created a new assembly prototype that is the closest to production we have created so far. Everything is looking great, but as expected we will need to tweak the enclosure design a little. We need to add more clearance in a few places, especially around the connectors for the loudspeaker design and microphone cable.</span>
 
