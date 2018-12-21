@@ -10,39 +10,19 @@ post_date: 2017-12-02 22:35:25
 ---
 # Picroft
 
-- [Picroft](#picroft)
-    + [Prerequisites](#prerequisites)
-      - [Hardware prerequisites](#hardware-prerequisites)
-        * [Required](#required)
-        * [Optional](#optional)
-      - [Hardware recommendations](#hardware-recommendations)
-        * [Working Microphones](#working-microphones)
-        * [Incompatible Microphones](#incompatible-microphones)
-        * [Working Speakers](#working-speakers)
-    + [Getting Started](#getting-started)
-      - [Downloading the disk image](#downloading-the-disk-image)
-      - [Burn the disk image to the Micro SD card](#burn-the-disk-image-to-the-micro-sd-card)
-      - [Booting up Picroft](#booting-up-picroft)
-      - [Getting Picroft connected to the internet using a network cable](#getting-picroft-connected-to-the-internet-using-a-network-cable)
-      - [Getting Picroft connected to the internet using Wifi](#getting-picroft-connected-to-the-internet-using-wifi)
-    + [Pairing the Picroft](#pairing-the-picroft)
-      - [Connecting to Picroft via SSH](#connecting-to-picroft-via-ssh)
-      - [How to reimage a Picroft Device](#how-to-reimage-a-picroft-device)
-      - [Keeping your Picroft updated](#keeping-your-picroft-updated)
-      - [How to switch your Picroft to the `unstable` branch to test new releases](#how-to-switch-your-picroft-to-the-unstable-branch-to-test-new-releases)
-      - [Connecting Picroft to a keyboard and/or monitor](#connecting-picroft-to-a-keyboard-and-monitor)
-      - [Important file locations for Picroft](#important-file-locations-for-picroft)
-    + [Next steps](#next-steps)
-      - [Using the GPIO pins on the Raspberry Pi 3](#using-the-gpio-pins-on-the-raspberry-pi-3)
-    + [Common issues on Picroft Devices](#common-issues-on-picroft-devices)
-      - [Audio issues](#audio-issues)
-        * [Check which audio playback and recording devices are being recognized](#check-which-audio-playback-and-recording-devices-are-being-recognized)
+## Quick links
 
-Picroft is an **Enclosure** for Mycroft, designed to the run on Raspberry Pi 3 or newer models. Mycroft provides the software for Picroft, in the form of a disk image, but you will need to burn this to an SD card.
+* [Picroft stable disk image](https://mycroft.ai/to/picroft-image)
+* [Picroft unstable disk image](https://mycroft.ai/to/picroft-unstable)
+* [`enclosure-picroft` repo on GitHub](https://github.com/MycroftAI/enclosure-picroft)
+
+## About Picroft
+
+Picroft is a ready-made way to run Mycroft on a Raspberry Pi 3 or Raspberry Pi 3B+ and is provided as a disk image that you can burn to a Micro SD card. _Picroft will not work properly on other Raspberry Pi models_.
 
 Picroft is based on [Raspbian Stretch Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
 
-**PICROFT will not work on earlier models of Raspberry Pi, because they do not have enough processing power.**
+Picroft is entirely open source, and PRs and Issues are warmly welcomed on the [Picroft GitHub repo](https://github.com/MycroftAI/enclosure-picroft).
 
 ### Prerequisites
 
@@ -115,13 +95,13 @@ The [Raspberry Pi official documentation provides an excellent tutorial](https:/
 
 ![Etcher SD card image burning tool](https://mycroft.ai/wp-content/uploads/2017/12/etcher-screenshot.png "Etcher SD card image burning tool")
 
-If you prefer to use the Linux command line tool `dd` to burn the disk image instead, follow these instructions: 
+If you prefer to use the Linux command line tool `dd` to burn the disk image instead, follow these instructions:
 
 1. Download the [Picroft disk image](https://mycroft.ai/to/picroft-image)
-2. Insert the Micro SD card you wish to burn the image to. It must have a storage capacity of 8GB or higher. 
+2. Insert the Micro SD card you wish to burn the image to. It must have a storage capacity of 8GB or higher.
 3. Identify the path where the MicroSD card is mounted by running the command `sudo fdisk -l`. You will be able to tell the path based on the storage size of the device.
 4. Keep a note of this - it will be something like `/dev/sdb1`
-5. Unmount the disk so that no other operation can write to the device while it is being imaged using the command `sudo umount /dev/sdb1`. Make sure to substitute for the location of your device. 
+5. Unmount the disk so that no other operation can write to the device while it is being imaged using the command `sudo umount /dev/sdb1`. Make sure to substitute for the location of your device.
 5. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitute the location of your device, and the path to the `.img` file you downloaded.
 6. This will take several minutes to run. The command prompt will return if successful, otherwise an error message will be displayed on your terminal.
 
@@ -131,7 +111,7 @@ Once you've burned the disk image to the Micro SD card, insert the Micro SD card
 
 Next, plug in the power and switch the power on.
 
-Our next step is to connect Picroft to the internet. 
+Our next step is to connect Picroft to the internet.
 
 ####  Getting Picroft connected to the internet using a network cable
 
@@ -198,11 +178,11 @@ The easiest way to keep your Picroft updated is to burn a new disk image to your
 
 #### How to switch your Picroft to the `unstable` branch to test new releases
 
-If you want to help us test the next release of Picroft early, swap your `source` on the Raspberry Pi. 
+If you want to help us test the next release of Picroft early, swap your `source` on the Raspberry Pi.
 
 _NOTE: This is the same as the `dev` branch on GitHub for `mycroft-core`._
 
-Using a text editor, edit your `/etc/apt/sources.list.d/repo.mycroft.ai.list` file: 
+Using a text editor, edit your `/etc/apt/sources.list.d/repo.mycroft.ai.list` file:
 
 By default it points to:
 
@@ -210,25 +190,25 @@ By default it points to:
 deb http://repo.mycroft.ai/repos/apt/debian debian main
 ```
 
-If you want to try the `unstable` version, edit the file so that it reads: 
+If you want to try the `unstable` version, edit the file so that it reads:
 
 ```
 deb http://repo.mycroft.ai/repos/apt/debian debian-unstable main
 ```
 
-You will then need to run `sudo apt-get update && sudo apt-get upgrade` for the change to take effect. 
+You will then need to run `sudo apt-get update && sudo apt-get upgrade` for the change to take effect.
 
 #### Connecting Picroft to a keyboard and monitor
 
-If you would like to see the output of Picroft on a monitor (rather than SSH'ing in to Picroft), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi. 
+If you would like to see the output of Picroft on a monitor (rather than SSH'ing in to Picroft), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi.
 
-If you would like to connect a keyboard or mouse (rather than SSH'ing in to Picroft), connect them via the USB slots on the Raspberry Pi. 
+If you would like to connect a keyboard or mouse (rather than SSH'ing in to Picroft), connect them via the USB slots on the Raspberry Pi.
 
-In our experience, we've found most monitors, keyboards and mice are plug-and-play - ie. you shouldn't have to install any additional drivers. 
+In our experience, we've found most monitors, keyboards and mice are plug-and-play - ie. you shouldn't have to install any additional drivers.
 
 #### Important file locations for Picroft
 
-If you plan to do **Skills** development work, or other development work with Picroft, you'll find knowing these file locations useful. 
+If you plan to do **Skills** development work, or other development work with Picroft, you'll find knowing these file locations useful.
 
 * Skills - have a shortcut in `/home/pi` that points to `opt/mycroft/skills`
 * `mycroft-core` - is located at `/usr/local/lib/python2.7/site-packages/mycroft_core`
@@ -248,17 +228,17 @@ For more help or ideas, consider joining our [Picroft channel on Mycroft Chat](h
 
 One common question we get is - "Can I use the [general purpose input output pins (GPIO)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi 3 with Picroft?".
 
-The answer is 'Yes' - but this requires some additional configuration. 
+The answer is 'Yes' - but this requires some additional configuration.
 
-You need to add the `mycroft` user to the `gpio` group with the command 
+You need to add the `mycroft` user to the `gpio` group with the command
 
 `sudo usermod -g gpio mycroft`
 
-You also need to install some additional packages: 
+You also need to install some additional packages:
 
 `sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
 
-This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill. 
+This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill.
 
 ### Common issues on Picroft Devices
 
@@ -316,3 +296,45 @@ Using a program like _vi_ or _nano_, add a line to the end of the file as follow
 ```
 
 Make sure to set the device number to the correct device.
+
+
+
+
+
+
+=========================================================================
+
+That's all, setup is complete!  Now we'll pull down the latest software
+updates and start Mycroft.  You'll be prompted to pair this device with
+an account at https://home.mycroft.ai, then you'll be set to enjoy your
+Picroft!
+
+To rerun this setup, type 'mycroft-setup-wizard' and reboot.
+
+Press any key to launch Mycroft...
+
+
+Mycroft is your open source voice assistant.  Full source
+can be found at: /home/pi/mycroft-core
+
+Mycroft-specific commands you can use from the Linux command prompt:
+  mycroft-cli-client       command line client, useful for debugging
+  mycroft-msm              Mycroft Skills Manager, to manage your Skills
+  mycroft-msk              Mycroft Skills Kit, create and share Skills
+
+Scripting Utilities:
+  mycroft-speak <phr>      have Mycroft speak a phrase to the user
+  mycroft-say-to <utt>     send an utterance to Mycroft as if spoken by a user
+
+Mycroft's Python Virtual Environment (venv) control:
+  mycroft-venv-activate    enter the venv
+  mycroft-venv-deactivate  exit the venv
+  mycroft-pip              install a Python package within the venv
+
+Other:
+  mycroft-mic-test         record and playback to directly test microphone
+  mycroft-help             display this message
+
+For more information, see https://mycroft.ai and https://github.com/MycroftAI
+
+***********************************************************************
