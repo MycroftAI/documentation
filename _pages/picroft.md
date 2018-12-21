@@ -60,23 +60,20 @@ _NOTE: We do not gain any profit or benefit from the links below, they are provi
 
 | Type of component       | Model           | Where to buy                                                                                                                                                                                                                                                                                                                                                                                                               | Notes |
 |-------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| Microphone              | Blue Snowball   |  United States [Amazon.com],  (https://www.amazon.com/Blue-Snowball-Microphone-Textured-White/dp/B000EOPQ7E) Australia [JB Hifi](https://www.jbhifi.com.au/blue-mic/blue-snowball-ice-usb-microphone-blackout/770060/), United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Blue-Microphones-Snowball-Omnidirectional-Microphone/dp/B000EOPQ7E)                                                                              |       |
-| Microphone (and camera) | PS3 Eye         | United Stats Amazon.com - https://www.amazon.com/Sony-PlayStation-Camera-Bulk-Packaging-Pc/dp/B0072I2240                                                                                                                                                                                                                                                                                                                   |       |
-| Microphone and speaker  | Jabra Speak 410 |  United States - Amazon.com - https://www.amazon.com/Jabra-PHS001U-Speakerphone-Retail-Packaging/dp/B007SHJIO2/ref=sr_1_3?ie=UTF8&qid=1545394940&sr=8-3&keywords=jabra+speak+410 Australia - ITSPOT.com.au - https://www.itspot.com.au/jabra-speak-410-uc-speakerphone-p466658.html?ref=ShopBot  United Kingdom - Amazon.co.uk - https://www.amazon.co.uk/Jabra-Conference-Speakerphone-optimised-Microsoft/dp/B004ELA7TA  |       |
-| Speaker                 | Logitech Z50    |  United States - Amazon.com - https://www.amazon.com/Z50-smartphone-tablet-laptop-Grey-x/dp/B00EZ9XLF8 Australia - Good Guys - https://www.thegoodguys.com.au/logitech-computer-speaker-z50-blue-2453262  United Kingdom - Amazon.co.uk - https://www.amazon.co.uk/Logitech-Z50-Speaker-Ocean-Blue/dp/B00FSF2ODS                                                                                                           |       |
-|                         |                 |                                                                                                                                                                                                                                                                                                                                                                                                                            |       |
-|                         |                 |                                                                                                                                                                                                                                                                                                                                                                                                                            |       |
+| Microphone              | Blue Snowball   |  United States [Amazon.com](https://www.amazon.com/Blue-Snowball-Microphone-Textured-White/dp/B000EOPQ7E), Australia [JB Hifi](https://www.jbhifi.com.au/blue-mic/blue-snowball-ice-usb-microphone-blackout/770060/), United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Blue-Microphones-Snowball-Omnidirectional-Microphone/dp/B000EOPQ7E)                                                                              |       |
+| Microphone (and camera) | PS3 Eye         | United States [Amazon.com](https://www.amazon.com/Sony-PlayStation-Camera-Bulk-Packaging-Pc/dp/B0072I2240)                                                                                                                                                                                                                                                                                                                    | An excellent introductory model if you are just checking Picroft out.       |
+| Microphone and speaker  | Jabra Speak 410 |  United States - [Amazon.com](https://www.amazon.com/Jabra-PHS001U-Speakerphone-Retail-Packaging/dp/B007SHJIO2/ref=sr_1_3?ie=UTF8&qid=1545394940&sr=8-3&keywords=jabra+speak+410), Australia - [ITSPOT.com.au](https://www.itspot.com.au/jabra-speak-410-uc-speakerphone-p466658.html?ref=ShopBot), United Kingdom - [Amazon.co.uk](https://www.amazon.co.uk/Jabra-Conference-Speakerphone-optimised-Microsoft/dp/B004ELA7TA)   |  Premium microphone and speaker combination.     |
+| Speaker                 | Logitech Z50    |  United States [Amazon.com](https://www.amazon.com/Z50-smartphone-tablet-laptop-Grey-x/dp/B00EZ9XLF8), Australia - [Good Guys](https://www.thegoodguys.com.au/logitech-computer-speaker-z50-blue-2453262 ),  United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Logitech-Z50-Speaker-Ocean-Blue/dp/B00FSF2ODS )                                                                                                           |       |
 
+## Getting started with Picroft
 
-### Getting Started
-
-#### Downloading the disk image
+### Downloading the disk image
 
 First, download the [Picroft disk image](https://mycroft.ai/to/picroft-image).
 
 We also have a [Picroft disk image](https://mycroft.ai/to/picroft-unstable) available of our `unstable` branch if desired.
 
-#### Burn the disk image to the Micro SD card
+### Burn the disk image to the Micro SD card
 
 Next, the disk image needs to be burnt to the Micro SD card.
 
@@ -94,47 +91,117 @@ If you prefer to use the Linux command line tool `dd` to burn the disk image ins
 5. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitute the location of your device, and the path to the `.img` file you downloaded.
 6. This will take several minutes to run. The command prompt will return if successful, otherwise an error message will be displayed on your terminal.
 
-#### Booting up Picroft
+### Seeing the output from Picroft
 
-Once you've burned the disk image to the Micro SD card, insert the Micro SD card into the Micro SD card slot on the Raspberry Pi. Plug in your microphone, speakers, and if you're using a monitor and/or keyboard, plug these in too.
+There are two ways to see the output from a Picroft **Device**:
 
-Next, plug in the power and switch the power on.
+1. Plug Picroft into a HDMI monitor or television, and attach a USB keyboard.  If you are planning to connect Picroft to a WiFi network, you will first need to connect to a HDMI monitor or television so that you can manually configure Picroft's WiFi settings.
+2. `ssh` into Picroft once Picroft is connected to a wired or wireless network
 
-Our next step is to connect Picroft to the internet.
+## Connecting Picroft to a wired or WiFi network
 
-####  Getting Picroft connected to the internet using a network cable
+### To connect to a wired network
 
-Plug the Picroft into your router using an ethernet cable plugged into the RJ45 port on the Raspberry Pi.
+Simply plug the ethernet cable into the RJ45 (ethernet) socket on the RPi. Picroft will then attempt to connect to the network, and request a DHCP address.
 
-When Picroft boots, it will look for a network connection and will prompt you to set up a WiFi connection if a wired connection is not found.
+_You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
 
-#### Getting Picroft connected to the internet using Wifi
+### To connect to a WiFi network
 
-Using your computer or a mobile device, connect to the Wifi SSID `MYCROFT` using the password `12345678`. Once you are connected to this SSID, go to the web page [http://start.mycroft.ai](https://start.mycroft.ai). A list of available WiFi networks will be presented. Select the WiFi network that you wish to connect the Picroft to, and enter the WiFi password. Picroft will attempt to connect to the WiFi network.
+By default, Picroft is **not** configured for WiFi. Picroft can connect to most 2.4GHz WiFi networks, but this has to be manually configured.
+
+First, you need to be able to edit files on the filesystem of the Picroft. There are two ways to do this.
+
+1. Plug the Picroft into a keyboard and HDMI monitor then type `Ctrl + C` to get to the command line _or_
+2. _if you are already connected using a wired connection **and** you know the Picroft's IP address_, [SSH in to the Picroft device ](https://mycroft.ai/documentation/picroft/#connecting-to-picroft-via-ssh)
+
+#### Editing the `wpa_supplicant.conf` file
+
+Next, we edit the `wpa_supplicant.conf` file. This file controls WiFi connections for the Raspberry Pi.
+
+1. Type `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
+2. Using the down arrow key, navigate to the bottom of the file, and add credentials for your SSID
+
+```
+    network={
+            ssid="MyNetworkSSID"
+            psk="mypassword"
+    }
+```
+
+3. Type `Ctrl + X` to exit and `Y` then `Enter` to save your changes.
+4. Type `sudo reboot now`
+
+_You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
+
+##### Manually configuring WPA2 Enterprise WiFi with MSCHAPV2 authentication
+
+If you are on an enterprise network, your network security might use WPA2 with MSCHAPV2 authentication. Configuring Picroft to use MSCHAPV2 is similar to the above, but requires some additional steps.
+
+First, we need to generate a hash of your SSID's password.
+
+```
+echo -n your_password| iconv -t utf16le | openssl md4
+```
+
+This will use the [NTLM hash](https://en.wikipedia.org/wiki/NT_LAN_Manager) which is a 16 bit MD4 hash.  Make sure to copy this as we will need it for later steps.
+
+Next, run the following commands:
+
+```
+cd /etc/wpa_supplicant
+sudo nano wpa_supplicant.conf
+```
+
+Add the following to the bottom of the `wpa_supplicant.conf` file, replacing `ssid` with your SSID name, `identity` with your username and `password` with the hash generated earlier. Type `Ctrl + O` to save, then `Ctrl + x` to exit.
+
+```
+network={
+    ssid="ssid network name"
+	priority=1
+	proto=RSN
+	key_mgmt=WPA-EAP
+	pairwise=CCMP
+	auth_alg=OPEN
+	eap=PEAP
+	identity="user_name"
+	password=hash:hash_key_here
+	phase1="peaplabel=0"
+	phase2="auth=MSCHAPV2"
+}
+```
+
+Next, reboot the Picroft using `sudo reboot now`. If these steps have worked, you will be connected to your enterprise WiFi shortly after rebooting.
+
+_You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
+
+#### Known errors with Picroft and WiFi
 
 _NOTE: Picroft cannot connect to WiFi networks that operate in the 5GHz band. You must select a WiFi network that operates in the 2.4GHz band._
 
-_NOTE: Picroft cannot connect to WiFi networks that operate on Channels 12 or 13 (2467MHz and 2472MHz frequencies). Please configure your SSID to use a different channel or frequency._
+_NOTE: Picroft cannot connect to WiFi networks that operate on Channels 12 or 13 (2467MHz and 2472MHz frequencies). Please configure your SSID to use a different channel or frequency. These channels are often used in Germany and other European countries._
 
-If you're concerned about privacy with Picroft's WiFi setup, you can inspect our [Wifi Client code on GitHub](https://github.com/MycroftAI/mycroft-wifi-setup).
+### Booting up Picroft
 
-### Pairing the Picroft
+Once you've burned the disk image to the Micro SD card, insert the Micro SD card into the Micro SD card slot on the Raspberry Pi. Plug in your microphone, speakers, and if you're using a monitor and/or keyboard, plug these in too.
 
-Once the Picroft is connected to the internet, a **Registration Code** will be Spoken.
+Next, plug in the power and connect the Micro USB cable to the RPi. This "power on" the device.
 
-[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](http://mycroft.ai/documentation/home-mycroft-ai-pairing/).
+If you have a HDMI monitor connected,  you should start to see some output on screen.
 
-Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/) to get started.
+If you're going to `ssh` into Picroft, do the following:
 
-#### Connecting to Picroft via SSH
+## `ssh` into Picroft
 
 SSH access to Picroft is enabled by default, so you don't have to enable SSH access.
 
-* Ensure you know the IP address of your Picroft Device on your network. A handy way to do this is to install the IP Address **Skill**, and then Speak:
+* Ensure you know the IP address of your Picroft Device on your network. If your Picroft is already _paired_, then a handy way to do this is to install the IP Address **Skill**, and then Speak:
 
 > Hey Mycroft, what's your IP address?
 
 `"here are my available IP addresses: wlan IP address ... Those are all my available IP addresses"`
+
+If not, you will need to know what IP address your Picroft has.
 
 * Open up your favorite terminal program, like PuTTy on Windows, or a new terminal on Linux
 * `ssh pi@IPADDRESS`
@@ -156,6 +223,27 @@ pi@mark_1:~ $
 ```
 
 You are now connected to Picroft via SSH.
+
+### First steps with Picroft
+
+On first boot, you will see a screen which looks similar to the one below:
+
+![Picroft initial boot screen](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-13-36.png "Picroft initial boot screen")
+
+
+
+
+
+
+### Pairing the Picroft
+
+Once the Picroft is connected to the internet, a **Registration Code** will be Spoken.
+
+[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](http://mycroft.ai/documentation/home-mycroft-ai-pairing/).
+
+Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/) to get started.
+
+
 
 #### How to reimage a Picroft Device
 
