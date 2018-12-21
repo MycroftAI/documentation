@@ -15,6 +15,8 @@ post_date: 2017-12-02 22:35:25
 * [Picroft stable disk image](https://mycroft.ai/to/picroft-image)
 * [Picroft unstable disk image](https://mycroft.ai/to/picroft-unstable)
 * [`enclosure-picroft` repo on GitHub](https://github.com/MycroftAI/enclosure-picroft)
+* [Picroft topic on the Mycroft Community Forum](https://community.mycroft.ai/c/mycroft-project/Raspberry-Pi)
+* [Picroft chatroom in Mycroft Chat](https://chat.mycroft.ai/community/channels/picroft)
 
 ## About Picroft
 
@@ -24,60 +26,47 @@ Picroft is based on [Raspbian Stretch Lite](http://downloads.raspberrypi.org/ras
 
 Picroft is entirely open source, and PRs and Issues are warmly welcomed on the [Picroft GitHub repo](https://github.com/MycroftAI/enclosure-picroft).
 
-### Prerequisites
+## What do I need to run Picroft?
 
-This section of documentation assumes the following:
+In order to set up Picroft, you will need to have a basic understanding of the Linux (Raspbian) command line, be comfortable connecting devices to WiFi networks, and have a little patience when setting up audio devices.
 
-* That you have the hardware prerequisites for running Picroft
-* That you are comfortable connecting devices to WiFi networks
-* That you are comfortable issuing basic Linux commands from a **terminal** or **shell prompt**
+### Hardware requirements and compatibility chart
 
-#### Hardware prerequisites
+| Model                    | Level of support                            |
+|--------------------------|---------------------------------------------|
+| Pi3 B+                   | Supported                                   |
+| Pi3 B                    | Supported                                   |
+| Pi 2                     | Functions very slowly, limited wifi support |
+| Pi B                     | Not supported                               |
+| Pi A+                    | Not supported                               |
+| Pi Zero, Zero W, Zero WH | Not supported                               |
 
-##### Raspberry Pi compatibility chart
+As well as a Raspberry Pi, you will also need:
 
-* Pi3 B+ : SUPPORTED <-- You should get this device if you want to work on Picroft
-* Pi3 B : SUPPORTED <-- You should get this device if you want to work on Picroft
-* Pi2 : functions but very slow, limited wifi support.  Not recommended.
-* Pi B/A+/Zero/Zero W/Zero WH : NOT SUPPORTED
-
-##### Required
-
-* Raspberry Pi 3/3B+ (see compatibility chart above)
 * Micro SD card, 8GB or larger _highly_ recommended
 * Power adapter with micro USB for your country. [The Raspberry Pi Foundation has some excellent recommendations](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
-* An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi 3
+* An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi 3 _or_ a USB Speaker  (_Bluetooth on Picroft is difficult to get working and is not recommended_)
 * USB Microphone
 
-
-##### Optional
+Installing Picroft may be easier if you also have:
 
 * USB keyboard
 * Monitor or TV connected via HDMI cable
 * Ethernet cable (if not connecting via WiFi)
 
-At the time of writing, a Picroft hardware kit is **not available** in the Mycroft Shop, but we are considering it. Please [see this Mycroft Forum discussion on which microphones and speakers are best used with Picroft](https://community.mycroft.ai/t/easiest-mic-speaker-option-for-raspberry-pi-3/1246).
+While we don't currently offer a Picroft kit with microphone and speaker to purchase [from our Shop](https://mycroft.ai/shop), we've provided links below to components we know to work "out of the box".
 
-#### Hardware recommendations
+_NOTE: We do not gain any profit or benefit from the links below, they are provided only to assist you in acquiring compatible components._
 
-Below is information on specific hardware that has been tested with Picroft. If you have further recommendations, please raise an Issue or a Pull Request (PR) on this page.
+| Type of component       | Model           | Where to buy                                                                                                                                                                                                                                                                                                                                                                                                               | Notes |
+|-------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| Microphone              | Blue Snowball   |  United States [Amazon.com],  (https://www.amazon.com/Blue-Snowball-Microphone-Textured-White/dp/B000EOPQ7E) Australia [JB Hifi](https://www.jbhifi.com.au/blue-mic/blue-snowball-ice-usb-microphone-blackout/770060/), United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Blue-Microphones-Snowball-Omnidirectional-Microphone/dp/B000EOPQ7E)                                                                              |       |
+| Microphone (and camera) | PS3 Eye         | United Stats Amazon.com - https://www.amazon.com/Sony-PlayStation-Camera-Bulk-Packaging-Pc/dp/B0072I2240                                                                                                                                                                                                                                                                                                                   |       |
+| Microphone and speaker  | Jabra Speak 410 |  United States - Amazon.com - https://www.amazon.com/Jabra-PHS001U-Speakerphone-Retail-Packaging/dp/B007SHJIO2/ref=sr_1_3?ie=UTF8&qid=1545394940&sr=8-3&keywords=jabra+speak+410 Australia - ITSPOT.com.au - https://www.itspot.com.au/jabra-speak-410-uc-speakerphone-p466658.html?ref=ShopBot  United Kingdom - Amazon.co.uk - https://www.amazon.co.uk/Jabra-Conference-Speakerphone-optimised-Microsoft/dp/B004ELA7TA  |       |
+| Speaker                 | Logitech Z50    |  United States - Amazon.com - https://www.amazon.com/Z50-smartphone-tablet-laptop-Grey-x/dp/B00EZ9XLF8 Australia - Good Guys - https://www.thegoodguys.com.au/logitech-computer-speaker-z50-blue-2453262  United Kingdom - Amazon.co.uk - https://www.amazon.co.uk/Logitech-Z50-Speaker-Ocean-Blue/dp/B00FSF2ODS                                                                                                           |       |
+|                         |                 |                                                                                                                                                                                                                                                                                                                                                                                                                            |       |
+|                         |                 |                                                                                                                                                                                                                                                                                                                                                                                                                            |       |
 
-##### Working Microphones
-
-* **Blue Snoball/Snoball Ice** - Works very well
-* **CM108 Based Mics** - The CM108 chip drives many low-priced microphones in various form-factors (if you run `lsusb` you'll see them as _C-Media Electronics, Inc. CM108 Audio Controller_.  All work, but some are better than others for Picroft purposes.
-   * eBerry Plug and Play Home Studio - decent experience, fair range
-   * Kinobo Makio - functional, but only works at close range
-* **[Jabra Speak410 USB Speakerphone](http://amzn.to/2kriCvh)** - Microphone and Speaker in the same device. Microphone range is good and speaker sound is loud and crisp.
-* **[mVox USB Speakerphone](http://amzn.to/2jYCxR3)** - Microphone and Speaker in the same device. Microphone range is poor and speaker sound is bad compared to the Jabra Speak410.
-* **[PS3 Eye Camera](http://amzn.to/2jFC6MP)** - Affordable and microphone range is good.
-
-##### Incompatible Microphones
-* _None at this point_
-
-##### Working Speakers
-
-* **Logitech Z50** - Mono speaker, wired, simple, can be found for cheap.
 
 ### Getting Started
 
