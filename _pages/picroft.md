@@ -382,10 +382,6 @@ To keep `mycroft-core` and the Skills on your Picroft updated, first `ssh` in to
 
 This script will update both `mycroft-core` and the **Skills** on your Picroft device.
 
-
-
-
-
 ## Important file locations for Picroft
 
 If you plan to do **Skills** development work, or other development work with Picroft, you'll find knowing these file locations useful.
@@ -413,7 +409,12 @@ There are several commands that are packaged into Picroft to help you with advan
 * `mycroft-venv-deactivate`: This command deactivates the Mycroft Python `virtual environment` and is useful if you want to install other software on the Picroft device.
 * `mycroft-wipe`: This command wipes Picroft back to factory default status. This will unpair the device and remove any configuration changes you have made.
 
-### Next steps
+## Building your own Picroft image
+
+The Picroft image building instructions can now be found on GitHub at;
+[https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image_recipe.md](https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image_recipe.md)
+
+## Next steps
 
 Congratulations! You now have a fully functional Picroft, and can start exploring all the options you now have. Consider using it as a stand-alone voice assistant, or connect it to a monitor and keyboard, and develop straight away. If you don't have a monitor and keybaord, SSH is enabled by default so you can remotely connect to it straight away.
 
@@ -421,7 +422,7 @@ Picroft uses a Raspbian Stretch Lite image under the hood - with Mycroft pre-ins
 
 For more help or ideas, consider joining our [Picroft channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/picroft) or reading through our [Picroft topic on the Mycroft Forum](https://community.mycroft.ai/c/mycroft-project/Raspberry-Pi).
 
-#### Using the GPIO pins on the Raspberry Pi 3
+### Using the GPIO pins on the Raspberry Pi 3
 
 One common question we get is - "Can I use the [general purpose input output pins (GPIO)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi 3 with Picroft?".
 
