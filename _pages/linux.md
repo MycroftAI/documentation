@@ -221,10 +221,6 @@ _NOTE: depending on your system, you may need to run the commands below with `su
 
 `rm -R ~/.mycroft`
 
-* Next, remove the `virtualenv`: 
-
-`rm -R ~/.virtualenvs/mycroft`
-
 ### Common issues with Mycroft for Linux
 
 #### Removing and rebuilding your `virtualenv`
