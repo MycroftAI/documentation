@@ -26,6 +26,8 @@ Picroft is based on [Raspbian Stretch Lite](http://downloads.raspberrypi.org/ras
 
 Picroft is entirely open source, and PRs and Issues are warmly welcomed on the [Picroft GitHub repo](https://github.com/MycroftAI/enclosure-picroft).
 
+As of December 2018, Picroft includes built-in support for the Google AIY voice HAT.
+
 ## What do I need to run Picroft?
 
 In order to set up Picroft, you will need to have a basic understanding of the Linux (Raspbian) command line, be comfortable connecting devices to WiFi networks, and have a little patience when setting up audio devices.
@@ -201,7 +203,7 @@ SSH access to Picroft is enabled by default, so you don't have to enable SSH acc
 
 `"here are my available IP addresses: wlan IP address ... Those are all my available IP addresses"`
 
-If not, you will need to know what IP address your Picroft has.
+If not, you will need to know what IP address your Picroft has. You may need to log in to your router to find out the IP address of your Picroft.
 
 * Open up your favorite terminal program, like PuTTy on Windows, or a new terminal on Linux
 * `ssh pi@IPADDRESS`
@@ -209,7 +211,7 @@ If not, you will need to know what IP address your Picroft has.
 * If you have successfully logged in via SSH you will see a command prompt like the one below:
 
 ```
-$ ssh pi@192.168.0.13
+$ ssh pi@192.168.0.13                 <-- in this case, the IP address was 192.168.0.13, your IP address may vary
 pi@192.168.0.13's password:
 
 The programs included with the Debian GNU/Linux system are free software;
@@ -224,28 +226,141 @@ pi@mark_1:~ $
 
 You are now connected to Picroft via SSH.
 
-### First steps with Picroft
+### Setting up Picroft
 
 On first boot, you will see a screen which looks similar to the one below:
 
 ![Picroft initial boot screen](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-13-36.png "Picroft initial boot screen")
 
+Picroft will then ask you whether you would like to do the guided setup, or drop straight to a command line. If you are new to Picroft, we recommend that you complete the guided setup.
 
+#### Selecting audio output and audio input
 
+_NOTE: Audio output and audio input is the single most problematic part of Picroft setup; we've tried to provide lots of guidance here to get you up and running, but you may need to experiment to find a solution for your chosen audio output and input devices._
 
+The guided setup will then ask you to select your audio output device, as shown below:
 
+![Picroft select audio output](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-17-42.png "Picroft select audio output")
 
-### Pairing the Picroft
+Enter the number `1`, `2`,  `3` or `4` corresponding to:
 
-Once the Picroft is connected to the internet, a **Registration Code** will be Spoken.
+```
+1) Speakers via 3.5mm output (aka 'audio jack' or 'headphone jack')
+2) HDMI audio (e.g. a TV or monitor with built-in speakers)
+3) USB audio (e.g. a USB soundcard or USB mic/speaker combo)
+4) Google AIY Voice HAT and microphone board (Voice Kit v1)
+```
+
+Next, test and adjust the volume. You may need to reboot your Picroft in order for the audio output device to be correctly selected.
+
+The final step of the guided setup is microphone configuration. You will be asked to select your audio input device, as shown below:
+
+![Picroft select audio input](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-18-27.png "Picroft select audio input")
+
+Enter the number `1`, `2`,  `3` or `4` corresponding to:
+
+```
+1) PlayStation Eye (USB)
+2) Blue Snoball ICE (USB)
+3) Google AIY Voice HAT and microphone board (Voice Kit v1)
+4) Matrix Voice HAT.
+5) Other (unsupported -- good luck!)
+```
+
+The guided setup will then do a microphone test to ensure your chosen microphone is working OK.
+
+#### What can I do if the guided setup doesn't set my audio input or output device correctly?
+
+There are a few tricks that we know of to get your audio input or output device working correctly - however, these are somewhat technical and will require typing commands on the Linux command line interface (CLI).
+
+##### Alsamixer
+
+`alsamixer` is a utility provided by the ALSA sound system on Raspbian Stretch that allows you to select an audio playback (output) and input (capture) device.
+
+To run `alsamixer`, type `Ctrl +C` to exit the guided setup and you will be at the Linux command line. Type `alsamixer` as shown below:
+
+```bash
+(.venv) pi@picroft:~ $ alsamixer
+```
+
+You will see a screen similar to the one below, and may have different options depending on which audio devices you have connected.
+
+![Picroft alsamixer initial screen](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-12.png "Picroft alsamixer initial screen")
+
+Different devices will have a different command key for choosing 'Capture' devices, in this case it is `F4`.
+
+If you do not see any capture devices, as shown below, then you may need to select a different sound card.
+
+![Picroft alsamixer no audio capture device](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-25.png "Picroft alsamixer no audio capture device")
+
+To select a different sound card, follow the instructions on your version of `alsamixer`. In this case, the command key for choosing 'Select sound card' is `F6`.  Use the arrow keys on your keyboard to navigate up and down the list to choose your preferred soundcard.
+
+![Picroft alsamixer select sound card](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-52.png "Picroft alsamixer select sound card")
+
+`alsamixer` usually has an option to see **all** capture and playback devices. In this case, the command key to see all devices is `F5`.
+
+![Picroft alsamixer show all audio capture and playback devices](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-06-09.png "Picroft alsamixer show all audio capture and playback devices")
+
+##### pulseaudio
+
+If `alsamixer` does not work for you, then you may have some success with `pulseaudio`. We've recently updated the Picroft repo to include `pulseaudio`, but if you haven't updated for a little while then you may need to manually install it.
+
+```bash
+(.venv) pi@picroft:~ $ sudo apt-get install pulseaudio
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  fontconfig-config fonts-dejavu-core libasound2-plugins libavcodec57
+  libavresample3 libavutil55 libcairo2 libdrm-amdgpu1 libdrm-freedreno1
+  libdrm-nouveau2 libdrm-radeon1 libfontconfig1 libgl1-mesa-dri
+  libgl1-mesa-glx libglapi-mesa libgsm1 libllvm3.9 libmp3lame0 libopenjp2-7
+  libopus0 liborc-0.4-0 libpixman-1-0 libpulsedsp libsensors4 libshine3
+  libsnappy1v5 libsoxr0 libspeex1 libspeexdsp1 libswresample2 libtdb1
+  libtheora0 libtwolame0 libtxc-dxtn-s2tc libva-drm1 libva-x11-1 libva1
+  libvdpau-va-gl1 libvdpau1 libvpx4 libwavpack1 libwebp6 libwebpmux2
+  libwebrtc-audio-processing1 libx264-148 libx265-95 libxcb-dri2-0
+  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shm0
+  libxcb-sync1 libxdamage1 libxfixes3 libxrender1 libxshmfence1 libxvidcore4
+  libxxf86vm1 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers
+  pulseaudio-utils rtkit va-driver-all vdpau-driver-all
+Suggested packages:
+  opus-tools lm-sensors speex pavumeter pavucontrol paman paprefs
+The following NEW packages will be installed:
+  fontconfig-config fonts-dejavu-core libasound2-plugins libavcodec57
+  libavresample3 libavutil55 libcairo2 libdrm-amdgpu1 libdrm-freedreno1
+  libdrm-nouveau2 libdrm-radeon1 libfontconfig1 libgl1-mesa-dri
+  libgl1-mesa-glx libglapi-mesa libgsm1 libllvm3.9 libmp3lame0 libopenjp2-7
+  libopus0 liborc-0.4-0 libpixman-1-0 libpulsedsp libsensors4 libshine3
+  libsnappy1v5 libsoxr0 libspeex1 libspeexdsp1 libswresample2 libtdb1
+  libtheora0 libtwolame0 libtxc-dxtn-s2tc libva-drm1 libva-x11-1 libva1
+  libvdpau-va-gl1 libvdpau1 libvpx4 libwavpack1 libwebp6 libwebpmux2
+  libwebrtc-audio-processing1 libx264-148 libx265-95 libxcb-dri2-0
+  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shm0
+  libxcb-sync1 libxdamage1 libxfixes3 libxrender1 libxshmfence1 libxvidcore4
+  libxxf86vm1 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers
+  pulseaudio pulseaudio-utils rtkit va-driver-all vdpau-driver-all
+0 upgraded, 68 newly installed, 0 to remove and 0 not upgraded.
+Need to get 30.2 MB of archives.
+After this operation, 221 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+```
+
+## Pairing the Picroft
+
+Once the Picroft is connected to the internet, and you have run through the guided setup, Picroft will reboot. Picroft will boot into the `mycroft-cli-client` screen, and a **Registration Code** will be spoken, and will also be shown on the `mycroft-cli-client` screen, as shown below:
+
+![Picroft pairing](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-53-32.png "Picroft pairing")
 
 [View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](http://mycroft.ai/documentation/home-mycroft-ai-pairing/).
 
-Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/) to get started.
+Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/) to get started. For example, you can ask questions like 'Tell me about Abraham Lincoln' - shown below:
 
+![Picroft basic commands](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-21-04-21-07.png "Picroft basic commands")
 
+## Maintaining your Picroft
 
-#### How to reimage a Picroft Device
+### How to reimage a Picroft Device
 
 To reimage a Picroft **Device**, [download the latest disk image](https://mycroft.ai/to/picroft-image). Burn that to a MicroSD card using Etcher, and insert the burned MicroSD card into the Raspberry Pi, then connect the Raspberry Pi to power.
 
