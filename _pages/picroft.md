@@ -100,6 +100,14 @@ There are two ways to see the output from a Picroft **Device**:
 1. Plug Picroft into a HDMI monitor or television, and attach a USB keyboard.  If you are planning to connect Picroft to a WiFi network, you will first need to connect to a HDMI monitor or television so that you can manually configure Picroft's WiFi settings.
 2. `ssh` into Picroft once Picroft is connected to a wired or wireless network
 
+#### Connecting Picroft to a keyboard and monitor
+
+If you would like to see the output of Picroft on a monitor (rather than SSH'ing in to Picroft), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi.
+
+If you would like to connect a keyboard or mouse (rather than SSH'ing in to Picroft), connect them via the USB slots on the Raspberry Pi.
+
+In our experience, we've found most monitors, keyboards and mice are plug-and-play - ie. you shouldn't have to install any additional drivers.
+
 ## Connecting Picroft to a wired or WiFi network
 
 ### To connect to a wired network
@@ -364,49 +372,46 @@ Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/bas
 
 To reimage a Picroft **Device**, [download the latest disk image](https://mycroft.ai/to/picroft-image). Burn that to a MicroSD card using Etcher, and insert the burned MicroSD card into the Raspberry Pi, then connect the Raspberry Pi to power.
 
-#### Keeping your Picroft updated
+### Keeping your Picroft updated
 
-The easiest way to keep your Picroft updated is to burn a new disk image to your Micro SD card, and re-pair your Picroft Device.
+To keep `mycroft-core` and the Skills on your Picroft updated, first `ssh` in to Picroft, then run the `update.sh` script:
 
-#### How to switch your Picroft to the `unstable` branch to test new releases
-
-If you want to help us test the next release of Picroft early, swap your `source` on the Raspberry Pi.
-
-_NOTE: This is the same as the `dev` branch on GitHub for `mycroft-core`._
-
-Using a text editor, edit your `/etc/apt/sources.list.d/repo.mycroft.ai.list` file:
-
-By default it points to:
-
-```
-deb http://repo.mycroft.ai/repos/apt/debian debian main
+```bash
+(.venv) pi@picroft:~ $ bash update.sh
 ```
 
-If you want to try the `unstable` version, edit the file so that it reads:
+This script will update both `mycroft-core` and the **Skills** on your Picroft device.
 
-```
-deb http://repo.mycroft.ai/repos/apt/debian debian-unstable main
-```
 
-You will then need to run `sudo apt-get update && sudo apt-get upgrade` for the change to take effect.
 
-#### Connecting Picroft to a keyboard and monitor
 
-If you would like to see the output of Picroft on a monitor (rather than SSH'ing in to Picroft), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi.
 
-If you would like to connect a keyboard or mouse (rather than SSH'ing in to Picroft), connect them via the USB slots on the Raspberry Pi.
-
-In our experience, we've found most monitors, keyboards and mice are plug-and-play - ie. you shouldn't have to install any additional drivers.
-
-#### Important file locations for Picroft
+## Important file locations for Picroft
 
 If you plan to do **Skills** development work, or other development work with Picroft, you'll find knowing these file locations useful.
 
-* Skills - have a shortcut in `/home/pi` that points to `opt/mycroft/skills`
-* `mycroft-core` - is located at `/usr/local/lib/python2.7/site-packages/mycroft_core`
-* Logs - are located at `/var/log`
+* Skills - have a shortcut in `/home/pi` that points to `/opt/mycroft/skills`
+* `mycroft-core` - is located at `/home/pi/mycroft-core`
+* Logs - are located at `/var/log/mycroft/`
 * `mycroft.conf` - is located at `/home/mycroft/.mycroft/mycroft.conf`
 * Identity file (do not share) - is located at `/home/mycroft/.mycroft/identity/identity2.json`
+
+## Useful commands for Picroft
+
+There are several commands that are packaged into Picroft to help you with advanced functionality:
+
+* `mycroft-cli=client`: This command will start the Mycroft CLI client if you are on the Linux command line
+* `mycroft-help`: This command brings up help information
+* `mycroft-mic-test`: This command re-runs the microphone test from the guided setup
+* `mycroft-msk`: This command runs the [Mycroft Skills Kit](https://mycroft.ai/documentation/skills/msk/)
+* `mycroft-msm`: This command runs the [Mycroft Skills Manager](https://mycroft.ai/documentation/msm/)
+* `mycroft-pip`: This command runs `pip` within the Mycroft Python `virtual environment` (`venv`). This is useful if you are installing dependencies for **Skills**.
+* `mycroft-say-to`:  This command sends a command to Picroft, just like you had 'spoken' a command. This is useful if your microphone is not working.
+* `mycroft-setup-wizard`: This command re-runs the guided setup
+* `mycroft-skill-testrunner`: This command runs the `testrunner` - used to run unit tests for a **Skill**. This is useful if you are doing **Skills** development with Mycroft
+* `mycroft-speak`: This command gets Mycroft to 'speak' using Text to Speech.
+* `mycroft-venv-deactivate`: This command deactivates the Mycroft Python `virtual environment` and is useful if you want to install other software on the Picroft device.
+* `mycroft-wipe`: This command wipes Picroft back to factory default status. This will unpair the device and remove any configuration changes you have made.
 
 ### Next steps
 
@@ -431,102 +436,3 @@ You also need to install some additional packages:
 `sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
 
 This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill.
-
-### Common issues on Picroft Devices
-
-#### Audio issues
-
-By far the most common issue on Picroft **Devices** are audio issues - with audio devices not being recognized, audio levels not being high enough and so on. There are a couple of tricks that can help.
-
-##### Check which audio playback and recording devices are being recognized
-
-By default, Picroft uses the PulseAudio subsystem (as opposed to Alsa).
-
-To identify which playback and recording devices are recognized on your Picroft system, use the command:
-
-`pacmd list-sources`
-
-If you are attempting to have one of your audio devices set as the primary device, take note of its number.
-
-To change the device that is used as the default source, using the command:
-
-`pacmd set-default-source 1`
-
-where 1 is the number of the audio device when sources were listed.
-
-
-If you prefer the Alsa sound subsystem, then you can accomplish the same task using the commands below.
-
-To identify which playback and recording devices are recognized on your Picroft system, use the command:
-
-`alsamixer `
-
-You can also run a similar command line command:
-
-`aplay -L`
-
-which shows playback devices, and
-
-`arecord -L`
-
-which shows recording devices.
-
-To edit your default audio device with Also, you will have to manually edit your
-
-`mycroft.conf`
-
-This file is located at:
-
-`~/.mycroft/mycroft.conf`
-
-Using a program like _vi_ or _nano_, add a line to the end of the file as follows:
-
-```json
- "listener": {  
-    "device_index":0  
-}
-```
-
-Make sure to set the device number to the correct device.
-
-
-
-
-
-
-=========================================================================
-
-That's all, setup is complete!  Now we'll pull down the latest software
-updates and start Mycroft.  You'll be prompted to pair this device with
-an account at https://home.mycroft.ai, then you'll be set to enjoy your
-Picroft!
-
-To rerun this setup, type 'mycroft-setup-wizard' and reboot.
-
-Press any key to launch Mycroft...
-
-
-Mycroft is your open source voice assistant.  Full source
-can be found at: /home/pi/mycroft-core
-
-Mycroft-specific commands you can use from the Linux command prompt:
-  mycroft-cli-client       command line client, useful for debugging
-  mycroft-msm              Mycroft Skills Manager, to manage your Skills
-  mycroft-msk              Mycroft Skills Kit, create and share Skills
-
-Scripting Utilities:
-  mycroft-speak <phr>      have Mycroft speak a phrase to the user
-  mycroft-say-to <utt>     send an utterance to Mycroft as if spoken by a user
-
-Mycroft's Python Virtual Environment (venv) control:
-  mycroft-venv-activate    enter the venv
-  mycroft-venv-deactivate  exit the venv
-  mycroft-pip              install a Python package within the venv
-
-Other:
-  mycroft-mic-test         record and playback to directly test microphone
-  mycroft-help             display this message
-
-For more information, see https://mycroft.ai and https://github.com/MycroftAI
-
-***********************************************************************
