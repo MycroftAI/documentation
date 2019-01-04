@@ -10,6 +10,32 @@ post_date: 2017-12-02 22:35:25
 ---
 # Picroft
 
+* [Picroft](#Picroft)
+	* [Quick links](#Quick-links)
+	* [About Picroft](#About-Picroft)
+	* [What do I need to run Picroft?](#What-do-I-need-to-run-Picroft?)
+		* [Hardware requirements and compatibility chart](#Hardware-requirements-and-compatibility-chart)
+	* [Getting started with Picroft](#Getting-started-with-Picroft)
+		* [Downloading the disk image](#Downloading-the-disk-image)
+		* [Burn the disk image to the Micro SD card](#Burn-the-disk-image-to-the-Micro-SD-card)
+		* [Seeing the output from Picroft](#Seeing-the-output-from-Picroft)
+	* [Connecting Picroft to a wired or WiFi network](#Connecting-Picroft-to-a-wired-or-WiFi-network)
+		* [To connect to a wired network](#To-connect-to-a-wired-network)
+		* [To connect to a WiFi network](#To-connect-to-a-WiFi-network)
+		* [Booting up Picroft](#Booting-up-Picroft)
+	* [`ssh` into Picroft](#`ssh`-into-Picroft)
+		* [Setting up Picroft](#Setting-up-Picroft)
+	* [Pairing the Picroft](#Pairing-the-Picroft)
+	* [Maintaining your Picroft](#Maintaining-your-Picroft)
+		* [How to reimage a Picroft Device](#How-to-reimage-a-Picroft-Device)
+		* [Keeping your Picroft updated](#Keeping-your-Picroft-updated)
+	* [Important file locations for Picroft](#Important-file-locations-for-Picroft)
+	* [Useful commands for Picroft](#Useful-commands-for-Picroft)
+	* [Building your own Picroft image](#Building-your-own-Picroft-image)
+	* [Next steps](#Next-steps)
+		* [Using the GPIO pins on the Raspberry Pi 3](#Using-the-GPIO-pins-on-the-Raspberry-Pi-3)
+
+
 ## Quick links
 
 * [Picroft stable disk image](https://mycroft.ai/to/picroft-image)
