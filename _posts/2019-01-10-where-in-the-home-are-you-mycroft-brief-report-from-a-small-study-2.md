@@ -7,12 +7,12 @@ author: David Smehlik
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/where-in-the-home-are-you-mycroft-brief-report-from-a-small-study-2/
+  https://mycroft.ai/blog/where-in-the-home-are-you-mycroft-brief-report-from-a-small-study-2/
 published: true
 post_date: 2019-01-10 14:42:30
 ---
 <!-- wp:paragraph -->
-<p><em>How do we use these new kinds of voice devices? With the approaching arrival of the Mark II, I cut out a tiny subset of that question and took a closer look. The structure of the report takes inspiration from scientific literature (I study molecular biology on a side).</em></p>
+<p><em>How do we use these new kinds of voice devices? With the approaching arrival of the Mark II, I cut out a tiny subset of that question and took a closer look. The structure of the report takes inspiration from scientific literature (I am second-skilling in molecular biology on a side).</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
