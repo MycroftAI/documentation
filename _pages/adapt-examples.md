@@ -5,16 +5,16 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/documentation/adapt/adapt-examples/
+  https://mycroft.ai/documentation/adapt/adapt-examples/
 published: true
 post_date: 2017-12-03 05:17:36
 ---
 # Adapt Examples
 
 - [Adapt Examples](#adapt-examples)
-  * [Single intent Parser](#single-intent-parser)
-  * [Multi-intent Parser](#multi-intent-parser)
-  * [Regular Expression (regex) Intent Parser](#regular-expression-regex-intent-parser)
+* [Single intent Parser](#single-intent-parser)
+* [Multi-intent Parser](#multi-intent-parser)
+* [Regular Expression (regex) Intent Parser](#regular-expression-regex-intent-parser)
 
 There are several **Intent Parser** examples for Adapt on GitHub, and this page walks you through what they are, and where you might use them.
 
@@ -35,3 +35,5 @@ This sample **Intent Parser** uses multiple **Intents**, and disambiguates betwe
 [See the Regex Intent Parser code on GitHub](https://github.com/MycroftAI/adapt/blob/master/examples/regex_intent_parser.py)
 
 This sample **Intent Parser** uses a regular expression entity to extract location from a query. This type of **Intent Parser** is useful where a parameter needs to be extracted from a query and it takes a form that can be expressed in regex. Other parameters that are often expressed in regex are IP address, names of people and colors.
+
+...
