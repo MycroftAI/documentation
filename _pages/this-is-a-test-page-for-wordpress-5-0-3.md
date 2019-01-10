@@ -5,7 +5,7 @@ author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  https://mycroft.ai/this-is-a-test-page-for-wordpress-5-0-3/
+  http://mycroft.ai/this-is-a-test-page-for-wordpress-5-0-3/
 published: true
 post_date: 2019-01-10 09:25:31
 ---
