@@ -7,7 +7,7 @@ author: David Smehlik
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/where-in-the-home-are-you-mycroft-brief-report-from-a-small-study-2/
+  https://mycroft.ai/blog/where-in-the-home-are-you-mycroft-brief-report-from-a-small-study-2/
 published: true
 post_date: 2019-01-10 14:42:30
 ---
