@@ -143,12 +143,12 @@ Once you've found an TTS engine for your language, you will need to configure My
 Locate your `mycroft.conf` file, and open it for editing on the Linux command line, using a tool like `vi` or `nano`.
 
 ```json
-{
-  “tts”: {
-  “module”: “google”,
-  “lang": "hi"
+  "tts": {
+    "module": "google",
+    "google": {
+      "lang": "hi"
+    }
   }
-}
 ```
 
 The TTS options you can select from are;
