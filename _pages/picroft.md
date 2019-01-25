@@ -93,6 +93,27 @@ _NOTE: We do not gain any profit or benefit from the links below, they are provi
 | Microphone and speaker  | Jabra Speak 410 |  United States - [Amazon.com](https://www.amazon.com/Jabra-PHS001U-Speakerphone-Retail-Packaging/dp/B007SHJIO2/ref=sr_1_3?ie=UTF8&qid=1545394940&sr=8-3&keywords=jabra+speak+410), Australia - [ITSPOT.com.au](https://www.itspot.com.au/jabra-speak-410-uc-speakerphone-p466658.html?ref=ShopBot), United Kingdom - [Amazon.co.uk](https://www.amazon.co.uk/Jabra-Conference-Speakerphone-optimised-Microsoft/dp/B004ELA7TA)   |  Premium microphone and speaker combination.     |
 | Speaker                 | Logitech Z50    |  United States [Amazon.com](https://www.amazon.com/Z50-smartphone-tablet-laptop-Grey-x/dp/B00EZ9XLF8), Australia - [Good Guys](https://www.thegoodguys.com.au/logitech-computer-speaker-z50-blue-2453262 ),  United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Logitech-Z50-Speaker-Ocean-Blue/dp/B00FSF2ODS )                                                                                                           |       |
 
+### A note on USB speaker/headphones/soundcards
+
+If mycroft audio output fails (No speech or audio) when using some sort of USB soundcard for output it might be worth trying to reset the play commandlines used by mycroft.
+
+To accomplish this, edit `/home/pi/.mycroft/mycroft.conf` and insert
+
+```
+  "play_wav_cmdline": "aplay %1",
+  "play_mp3_cmdline": "mpg123 %1",
+```
+
+If no other edits has been applied to the file it should look something like
+
+```json
+{
+  "max_allowed_core_version": 18.8,
+  "play_wav_cmdline": "aplay %1",
+  "play_mp3_cmdline": "mpg123 %1",
+}
+```
+
 ## Getting started with Picroft
 
 ### Downloading the disk image
