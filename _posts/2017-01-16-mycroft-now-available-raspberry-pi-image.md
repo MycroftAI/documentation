@@ -1,6 +1,6 @@
 ---
 ID: 2149
-post_title: Mycroft Available as Raspberry Pi Image
+post_title: 'Mycroft Available as Raspberry Pi Image &#8211; Picroft'
 author: Joshua Montgomery
 post_excerpt: "The open source Mycroft voice assistant is now available as an easy to install Raspberry Pi image. Hackers, developers and makers can now download and deploy the world's first full feature open source voice assistant."
 layout: post
