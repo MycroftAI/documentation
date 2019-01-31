@@ -13,7 +13,7 @@ post_date: 2019-01-03 12:00:10
 ---
 In our second “Day in the Life” post, we’re highlighting another team member pivotal to supporting our Community on the front lines – Director of Developer Relations, Kathy Reid.
 
-<a href="https://mycroft.ai/blog/mycoft-director-of-developer-relations-2/" target="_blank" rel="noopener">Kathy joined the team in September 2017</a>, bringing open source prowess from her role as President of Linux Australia, with technical background from years bringing digital transformation to the education space in Australia. Read through to the bottom of the post for a special note from Mycroft to Kathy.
+<a href="https://mycroft.ai/blog/mycoft-director-of-developer-relations-2/" target="_blank" rel="noopener">Kathy joined the team in September 2017</a>, bringing open source prowess from her role as President of Linux Australia, bringing technical background from years of digital transformation work in the education space in Australia. Read through to the bottom of the post for a special note from Mycroft to Kathy.
 <h4><strong>So Kathy, where do you hail from?</strong></h4>
 <em>I’m from a city called Geelong, about an hour and a half west of Melbourne, in Australia. Geelong is gorgeous, it’s right on the water. It’s also a <a href="https://www.geelongcityofdesign.com.au/" target="_blank" rel="noopener">UNESCO Creative City of Design</a>, with a really emerging advanced manufacturing and technology-based economy. The cost of living is a lot cheaper than Melbourne, so you get a lot more value for money.</em>
 <h4><b>Give us a little background on you.</b></h4>
