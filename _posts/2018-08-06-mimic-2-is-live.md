@@ -1,6 +1,6 @@
 ---
 ID: 39772
-post_title: Mimic 2 is LIVE!
+post_title: Mimic2 is LIVE!
 author: Michael Nguyen
 post_excerpt: "Mycroft announces Version 2 Beta of Mycroft's Mimic Text to Speech engine. Version 2 is an entirely new architecture and sounds far more natural."
 layout: post
