@@ -29,7 +29,7 @@ It's important that you prepare your **Skill** for submission to the Mycroft Ski
 * Your **Skill** is well documented for people who may wish to use it.
 
 ### Generate a README.md file for your **Skill**
-First, you need to generate the README.md file for your **Skill** using the [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html). Fill out all the relevant fields, and it will generate the Markdown to put into your README.md file. Save your README.md file.
+First, you need to generate the README.md file for your **Skill** using the [Meta Editor](https://raw.githack.com/MycroftAI/mycroft-skills/18.08/meta_editor.html). Fill out all the relevant fields, and it will generate the Markdown to put into your README.md file. Save your README.md file.
 
 _NOTE: This following sections of documentation assume that you have set up a `remote` for your Git repository. If you have been developing locally, please pause here, and push your local development to a remote repository on GitHub. [New to working with remotes? Here's a handy guide](https://help.github.com/articles/adding-a-remote/)._
 
@@ -74,7 +74,7 @@ Next, we need to submit a Pull Request (PR) in GitHub to have your **Skill** lis
 		## Description:
 		Short description of your skill and what it does
 		## Checklist:
-  			- [ ] Used [Meta Editor](http://rawgit.com/MycroftAI/mycroft-skills/master/meta_editor.html) to generate the skill README
+  			- [ ] Used [Meta Editor](https://raw.githack.com/MycroftAI/mycroft-skills/18.08/meta_editor.html) to generate the skill README
   			- [ ] Skill has been tested and works
 			- [ ] Read and verified approval process - https://mycroft.ai/documentation/skills/skills-acceptance-process (Can require a community member vouching for skill)
   			- [ ] .gitmodules has been updated with the following:
