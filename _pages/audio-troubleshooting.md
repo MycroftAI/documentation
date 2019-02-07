@@ -86,9 +86,9 @@ For mycroft, the lines most relevant are the Default Source: and Default Sink:.
   Cookie: ab8a:0b4d
 ```
 
-##### List available input devices
+##### List available output devices
 
-Use `pactl list sinks short` to list devices available to the current user:
+Use `pactl list sinks short` to list output devices available to the current user:
 
 ```
 picroft:~$ pactl list sinks short
@@ -97,9 +97,9 @@ picroft:~$ pactl list sinks short
 
 
 
-##### List available output devices
+##### List available input devices
 
-`pactl list sources short` will list outputs, or sinks, available to the current user:
+`pactl list sources short` will list input devices available to the current user:
 
 ```
 picroft:~$ pactl list sources short
@@ -111,11 +111,11 @@ picroft:~$ pactl list sources short
 
 If you need to adjust the device you're using for input or output, first determine the number of the source or sink you wish to set it to.  Then use `pactl set-default-source` (for input) or `pactl set-default-sink` (for output) to update:
 ```
-$ pactl set-default-source 3
+$ pactl set-default-source 2
 $ pactl set-default-sink 1
 ```
 
-This would set the default input to be device 3 and the default output device to be 1.  Your numbers will vary.  A succsessful change will not have any additional output listed.  Verify with `pactl info`
+This would set the default input to be device 2 and the default output device to be 1.  Your numbers will vary.  A succsessful change will not have any additional output listed.  Verify with `pactl info`
 
 ##### Echo cancellation
 
