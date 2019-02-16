@@ -72,7 +72,7 @@ Adapt has a number of features.
 
 Adapt is written to run on embedded system with limited resources. Adapt can be used as the engine to parse natural language on IoT devices like remote controls and hubs.
 
-@TODO are there minimum requirements for installing Adapt - both software and hardware?
+[//]: # (@TODO are there minimum requirements for installing Adapt - both software and hardware?)
 
 ### Portable
 
