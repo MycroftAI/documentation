@@ -36,4 +36,4 @@ In return we can provide;
  	<li>Mentoring from Kathy, who currently leads our Skill Testing efforts and can provide one on one coaching</li>
  	<li>A rundown on common errors found during Skill Testing so you know exactly what to be on the lookout for</li>
 </ul>
-If you're interested, drop <span style="text-decoration: line-through;">@kathy-mycroft</span> @gez-mycroft a line in <a href="https://chat.mycroft.ai">Mycroft Chat</a>.
+If you're interested, <a href="https://goo.gl/forms/mTSRlAsMaMjelX482" target="_blank" rel="noopener">fill out this form</a>. If you have other questions, drop <span style="text-decoration: line-through;">@kathy-mycroft</span> @gez-mycroft a line in <a href="https://chat.mycroft.ai">Mycroft Chat</a>.
