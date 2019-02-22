@@ -1,6 +1,6 @@
 ---
 ID: 44378
-post_title: 'Music for Mycroft &#8211; What does the Commuinty want?'
+post_title: 'Music for Mycroft &#8211; What does the Community want?'
 author: Eric Jurgeson
 post_excerpt: ""
 layout: post
