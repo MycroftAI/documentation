@@ -9,7 +9,7 @@ permalink: >
 published: true
 post_date: 2019-02-21 12:18:32
 ---
-2018 was quite a year for Mycroft. Two crowdfunding efforts, a banner AMA, over 60 press articles written, and more. Let's take some time to reflect on Mycroft’s 2018.
+2018 was quite a year for Mycroft. Two crowdfunding efforts, a banner AMA, over <a href="https://mycroft.ai/blog/tag/press/" target="_blank" rel="noopener">60 press articles written</a>, and more. Let's take some time to reflect on Mycroft’s 2018.
 <h2>Top Skills</h2>
 I wanted to lead with the top skills used by our Opted-In users for the year. We’ll ignore System skills like Stop, Configuration, Skill Installer, and Volume.
 
