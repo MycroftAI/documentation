@@ -22,6 +22,8 @@ They all make sense when you hear them, but you've had at least a decade (probab
 
 <strong>Help us to turbocharge Mycroft's learning by telling us new phrases that make sense for you.</strong>
 
+&lt;&lt;ADD BETTER INSTRUCTIONS&gt;&gt;
+
 For each Skill you would like to make a suggestion for, please submit a new copy of the form.
 
 [ninja_form id=2]
