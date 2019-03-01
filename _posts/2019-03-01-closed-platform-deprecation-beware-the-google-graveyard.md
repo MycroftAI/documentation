@@ -1,0 +1,24 @@
+---
+ID: 44184
+post_title: 'Closed Platform Deprecation &#8211; Beware the Google Graveyard'
+author: Joshua Montgomery
+post_excerpt: ""
+layout: post
+permalink: >
+  https://mycroft.ai/blog/closed-platform-deprecation-beware-the-google-graveyard/
+published: true
+post_date: 2019-03-01 11:00:08
+---
+<span style="font-weight: 400;">In 2005 I set out to build my dream internet service provider (ISP). I wanted to provide a service that had ultra-fast connectivity, reflective speeds (the same speed up/down), no bandwidth caps, and reasonable pricing. The ISP eventually became <a href="http://www.lawrencefreenet.org/index.php" target="_blank" rel="noopener">Wicked Broadband</a>. We've been providing Gigabit fiber-optic broadband in Lawrence, KS long before Google came to Kansas City and made it cool. And unlike Google, Wicked has had the stamina to continue expanding its service despite operating in a difficult market controlled by cable providers who are de-facto monopolies.</span>
+
+<span style="font-weight: 400;">Google? They gave up on building a nationwide broadband network. One day they were making announcements and planting rainbow-colored rabbit signs everywhere. The next day they went silent and <a href="https://www.theverge.com/2019/2/7/18215743/google-fiber-leaving-louisville-service-ending" target="_blank" rel="noopener">expansion stopped</a>. Some of their retreat was simply the result of bad strategy while some was due to changes in management. One day their fiber network was a pillar of their future strategy, the next it was a backwater.</span>
+
+<span style="font-weight: 400;">This same pattern has played out time and time again across Google’s product line. Did you build a community on Google+? You remember Google+. It was destined to be a key part of every major Google service – and now <a href="https://www.theverge.com/2018/12/10/18134541/google-plus-privacy-api-data-leak-developers" target="_blank" rel="noopener">it’s being shut down</a>. Did you build a messaging service dependent on Google Hangouts? The service has more than a billion installed users globally, but if you built your business on the platform you’re now screwed. <a href="https://arstechnica.com/gadgets/2019/01/the-great-google-hangouts-shutdown-begins-october-2019/" target="_blank" rel="noopener">It is being shut down as well</a>.</span>
+
+<span style="font-weight: 400;">You’d think that companies would learn from these experiences, but apparently not. Google Assistant and Google Home have recently been a significant focus of Google’s marketing machine. They want everyone to build integrations, and have been building partnerships for everything from music to e-commerce in the hopes of beating Amazon. Both would like to become the one voice assistant to rule them all. You’d think companies would learn from Google’s past behavior and be wary. At the very least, you'd think they would demand long term support, data ownership, and the escrow of key software and data. But yet again, they are rushing onto the platform like sheep to the slaughter.</span>
+
+<span style="font-weight: 400;">One of two things is going to happen. Either the service will become hugely valuable like search (google.com), video (youtube.com) and maps (maps.google.com); in which case Google will gradually change the rules so that any money the technology generates flows to them instead of their partners. Or, as with Hangouts, Google+, Google Wave and dozens of other technologies, Google will simply shut it down and move on to the next shiny object.</span>
+
+<span style="font-weight: 400;">When that happens, I hope there are other players left in the market to provide companies with the technologies they need. At Wicked we found Google’s marketing of their fiber network to be extremely helpful. Community leaders finally understood that Internet access is a right and that we should make sure every single person has equal access to information. Unfortunately, failure on Google's part may also destroy competition and cede the market to the other player. After all, the birth of Google+ killed dozens of social media startups. Its failure has now left Facebook standing as the only global alternative.</span>
+
+<span style="font-weight: 400;">Why any company would engage with Google, Amazon, Apple or Facebook continues to mystify me. In various combinations, these companies have a long track record of abusing vendors, wrecking partners, abusing labor, and treating their user’s data as a commodity to be monetized and sold. Companies who want to succeed long term should embrace open standards, develop on open platforms. Stay clear of initiatives from companies like Google and Amazon that couldn’t care less what shutting down their services means to customers and partners.</span>
