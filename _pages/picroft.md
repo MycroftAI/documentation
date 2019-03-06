@@ -101,7 +101,7 @@ To accomplish this, edit `/home/pi/.mycroft/mycroft.conf` and insert
 
 ```
   "play_wav_cmdline": "aplay %1",
-  "play_mp3_cmdline": "mpg123 %1",
+  "play_mp3_cmdline": "mpg123 %1"
 ```
 
 If no other edits has been applied to the file it should look something like
@@ -110,7 +110,7 @@ If no other edits has been applied to the file it should look something like
 {
   "max_allowed_core_version": 18.8,
   "play_wav_cmdline": "aplay %1",
-  "play_mp3_cmdline": "mpg123 %1",
+  "play_mp3_cmdline": "mpg123 %1"
 }
 ```
 
