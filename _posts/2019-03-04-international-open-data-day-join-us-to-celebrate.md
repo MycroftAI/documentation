@@ -5,21 +5,17 @@ author: Kris Gesling
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/international-open-data-day-join-us-to-celebrate/
+  http://mycroft.ai/blog/international-open-data-day-join-us-to-celebrate/
 published: true
 post_date: 2019-03-04 10:00:22
 ---
 You may not have had a public holiday, or a big house party, but we think this is still one worth celebrating!<!--more-->
-
-&nbsp;
 <h2>What is open data?</h2>
 The Open Knowledge Foundation defines open data as that which “can be <b>freely used, modified, and shared</b> by <b>anyone</b> for <b>any purpose</b>”.
 
 This can include broad information from websites, structured data sets such as those published by government bodies, or data sets intentionally compiled by communities like <a href="https://www.openstreetmap.org/">openstreetmap.org</a>.
 
 Just like “open source” how you can use that data depends on the license that is applied by its creator.
-
-&nbsp;
 <h2>Why is that important for Mycroft?</h2>
 Many of the components that make up Mycroft require large data sets. Large established companies collect this from their users, often without their knowledge via unintelligible End User License Agreements. They also keep this data totally inaccessible to researchers outside of their organisation, giving them an incredible advantage in the machine learning world.
 
@@ -33,16 +29,12 @@ OpenWeatherMap.org has your back.</p>
 <p style="padding-left: 30px;"><i>“Hey Mycroft, what is a recurrent neural network?”
 </i>Here’s a <b>very </b>short summary courtesy of Wikipedia.</p>
 Every day human beings all around the world are creating, improving, and making open data more available. I am deeply appreciative for these contributions to collective human knowledge. It is impossible to predict all the ways that open data will be used. The only way to know is to put it out there and see what happens.
-
-&nbsp;
 <h2>How does Mycroft give back?</h2>
 Mycroft has benefited greatly from all of this open data, and where appropriate we also like to pay it forward. Our code is open source, and we work closely with other organisations like Mozilla to create the next generation of open data sets.
 
 The benefits of openness must however be balanced with the need for privacy and user choice. Our strong stance on this principle is why our company exists, and one of the key reasons our users trust Mycroft.
 
 That is why we use an “Opt-In” data collection model. Unless you explicitly give Mycroft permission to use your data, we never keep it around.
-
-&nbsp;
 <h2>How can I help?</h2>
 <h3><b>Join the Mycroft Open Dataset</b></h3>
 The easiest way to help, if you’re happy to share some data for the common good, is to Opt-In to the Open Dataset through your <a href="https://home.mycroft.ai/#/setting/basic">personal settings page at home.mycroft.ai</a>. Opting-in grants Mycroft the permission to retain data, such as samples of what you say to your device. These samples are then de-identified before being added to a data set. Should you choose to Opt-Out at a later date, any data originating from your account will be deleted.
@@ -53,5 +45,3 @@ Common Voice is Mozilla’s speech recognition initiative. It aims to provide a 
 <h3><b>Beyond our open data, there are other ways to contribute too.
 </b></h3>
 Join the community in our <a href="https://community.mycroft.ai">Forums</a> or <a href="https://chat.mycroft.ai">Chat</a> and help guide the future direction of Mycroft AI.
-
-&nbsp;
