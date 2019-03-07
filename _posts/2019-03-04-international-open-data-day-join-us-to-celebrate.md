@@ -9,6 +9,8 @@ permalink: >
 published: true
 post_date: 2019-03-04 10:00:22
 ---
+<a href="https://opendataday.org/" target="_blank" rel="noopener">International Open Data Day</a> was Saturday, March 2, 2019.
+
 You may not have had a public holiday, or a big house party, but we think this is still one worth celebrating!<!--more-->
 <h2>What is open data?</h2>
 The Open Knowledge Foundation defines open data as that which “can be <b>freely used, modified, and shared</b> by <b>anyone</b> for <b>any purpose</b>”.
