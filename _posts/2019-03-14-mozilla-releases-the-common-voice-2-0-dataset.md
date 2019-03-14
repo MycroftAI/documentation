@@ -17,6 +17,8 @@ On February 28, Mozilla officially released the <a href="https://voice.mozilla.o
 
 Mozilla has made this data truly public domain by releasing it under a <a href="https://creativecommons.org/share-your-work/public-domain/cc0/" target="_blank" rel="noopener">CC0 “No Rights Reserved” license</a>. This, according to Creative Commons, provides the best opportunity for others to “freely build upon, enhance and reuse the works for any purposes.”
 
+Congratulations to Mozilla for this achievement! If you're a Mycroft Community member who's unfamiliar with the Common Voice project, head to <a href="http://voice.mozilla.org" target="_blank" rel="noopener">voice.mozilla.org</a> to contribute to the Common Voice dataset. You can donate your voice or validate recordings for accuracy.
+
 [caption id="attachment_45620" align="alignnone" width="1440"]<a href="https://mycroft.ai/wp-content/uploads/2019/03/common-voice_datasets.gif"><img class="size-full wp-image-45620" src="https://mycroft.ai/wp-content/uploads/2019/03/common-voice_datasets.gif" alt="Mozilla's Common Voice Dataset provides the largest public domain dataset of tagged speech in the world" width="1440" height="850" /></a> Image: Mozilla[/caption]
 <h2>Why do I care?</h2>
 Large established companies have a big advantage when it comes to machine learning, through their access to data. Providing open data sets allows any researchers, projects, companies, or even hobbyists to drive innovation in voice technology forward. That’s certainly something we love here at Mycroft.
