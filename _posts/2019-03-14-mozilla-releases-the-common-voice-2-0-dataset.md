@@ -7,7 +7,7 @@ author: Kris Gesling
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mozilla-releases-the-common-voice-2-0-dataset/
+  http://mycroft.ai/blog/mozilla-releases-the-common-voice-2-0-dataset/
 published: true
 post_date: 2019-03-14 16:00:34
 ---
