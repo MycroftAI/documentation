@@ -10,4 +10,4 @@ permalink: http://mycroft.ai/subscribe/
 published: true
 post_date: 2018-02-26 12:17:47
 ---
-[activecampaign form=24]
+[activecampaign form=50]
