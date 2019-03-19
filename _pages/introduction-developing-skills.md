@@ -86,7 +86,7 @@ Checking connectivity... done.
 
 Now, we'll made a new repository for your **Skill**. The new repository has to follow a strict file structure. A **Template Skill** is available to clone from. If you're new to GitHub, you might find this guide on [how to make a repo](https://help.github.com/articles/create-a-repo/) useful.
 
-[Example Skill Template](https://github.com/MycroftAI/mycroft-skills/tree/master/00__skill_template)  
+[Example Skill Template](https://github.com/MycroftAI/mycroft-skills/tree/19.02/00__skill_template)  
 
 Copy the Template Skill into a new directory. Here, we've called the new Skill `skill-training`, but your **Skill** will have a different name.
 
