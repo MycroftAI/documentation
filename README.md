@@ -1,18 +1,26 @@
-# Mycroft Documentation
 
-- [Mycroft Documentation](#mycroft-documentation)
-  * [Objective](#objective)
-  * [Project lead and key contact](#project-lead-and-key-contact)
-  * [Branches](#branches)
-  * [Documentation standards](#documentation-standards)
-    + [Conventions](#conventions)
-      - [Styling conventions](#styling-conventions)
-        * [How voice interactions are presented in documentation](#how-voice-interactions-are-presented-in-documentation)
-        * [How to present a User Speaking](#how-to-present-a-user-speaking)
-    + [Tone of voice](#tone-of-voice)
-    + [Documentation checklist](#documentation-checklist)
-  * [Contributing](#contributing)
-  * [License](#license)
+Mycroft Documentation 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) 
+[![Join chat](https://img.shields.io/badge/Mattermost-join_chat-brightgreen.svg)](https://chat.mycroft.ai/community/channels/documentation)
+[![CLA Required](https://img.shields.io/badge/CLA%3F-Required-blue.svg)](https://mycroft.ai/cla) 
+==========
+
+Head to https://mycroft.ai/documentation for all public facing documentation.  
+The website is automatically updated from this repo.
+
+## Table of Contents
+- [Objective](#objective)
+- [Project lead and key contact](#project-lead-and-key-contact)
+- [Branches](#branches)
+- [Documentation standards](#documentation-standards)
+  * [Conventions](#conventions)
+    + [Styling conventions](#styling-conventions)
+      - [How voice interactions are presented in documentation](#how-voice-interactions-are-presented-in-documentation)
+      - [How to present a User Speaking](#how-to-present-a-user-speaking)
+  * [Tone of voice](#tone-of-voice)
+  * [Documentation checklist](#documentation-checklist)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Objective
 The purpose of this repo is to unify all the documentation for the public-facing components of Mycroft.AI, and to reduce the fragmentation of documentation.
@@ -21,7 +29,7 @@ It is intended that the Markdown in this repo will be consumed by transformation
 
 ## Project lead and key contact
 
-@kathyreid - Kathy Reid (mailto:kathy.reid@mycroft.ai)
+@krisgesling - Kris Gesling [kris.gesling@mycroft.ai](mailto:kris.gesling@mycroft.ai)
 
 ## Branches
 
