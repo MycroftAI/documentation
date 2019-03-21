@@ -1,11 +1,11 @@
 ---
 ID: 45750
 post_title: 'Mark II Architecture Change &#8211; A Note from the CEO'
-author: Eric Jurgeson
+author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mark-ii-architecture-change/
+  http://mycroft.ai/blog/mark-ii-architecture-change/
 published: true
 post_date: 2019-03-20 18:30:03
 ---
