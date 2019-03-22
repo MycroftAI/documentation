@@ -28,7 +28,7 @@ Moving to a platform that has been the basis for other voice solutions in the pa
 
 One benefit of this approach is that outside developers will be able to participate in the effort without waiting for production hardware. Once we can confidently say we’ll be able to deliver using this solution, developers will be able to compile a prototype with off-the-shelf components and our supplied hardware schematics and software.
 
-We already have a prototype of the new solution operational and will soon have the first run at the plastics printed. Chief of Design Derick Schweppe has an update with details that will be published this coming Friday. We’ll keep you posted on further progress as we make this change.
+We already have a prototype of the new solution operational and will soon have the first run at the plastics printed. Chief of Design Derick Schweppe has an update with details that will be published this coming Friday. (Derick's post is now live. <a href="https://mycroft.ai/blog/mark-ii-update-revised-architecture/" target="_blank" rel="noopener noreferrer">Read it here.</a>) We’ll keep you posted on further progress as we make this change.
 
 As always, we appreciate everyone’s support as we work through these challenges. Hardware is hard and we’re glad to have so many cheerleaders supporting our efforts.
 
