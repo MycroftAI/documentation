@@ -175,13 +175,18 @@ Rather than writing out all combinations of possibilities, you can embed them in
 (Order | Grab) some {food} (from {place} | )
 ```
 
-Note that at this time, only one layer of parentheses is supported meaning the following will not work:
+Nested parentheses are supported to create even more complex combinations, such as the following:
 
 ```
 (Look (at | for) | Find) {object}.
 ```
 
-We'd love a community contribution to add support for this if you are up for it.
+Which would expand to:
+```
+Look at {object}
+Look for {object}
+Find {object}
+```
 
 ### Number matching
 
