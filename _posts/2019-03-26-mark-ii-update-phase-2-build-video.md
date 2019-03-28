@@ -9,7 +9,7 @@ permalink: >
 published: true
 post_date: 2019-03-26 14:20:43
 ---
-There have been many requests to show the making of the new Rockchip based prototypes. So we put together a quick montage showing some assembly of the Proof of Concept prototype and the Phase II prototype. The Proof of Concept utilizes a combination of laser cut panels and 3D printed parts, and the Phase 2 prototype is almost entirely 3D printed. In the video that Sam (our multi-talented Designer) put together you can see our Production Guru, Darren Courtney, assembling the prototypes.
+There have been many requests to show the making of the new Rockchip based prototypes. So we put together a quick montage showing some assembly of the Proof of Concept prototype and the Phase 2 prototype. The Proof of Concept utilizes a combination of laser cut panels and 3D printed parts, and the Phase 2 prototype is almost entirely 3D printed. In the video that Sam (our multi-talented Designer) put together you can see our Production Guru, Darren Courtney, assembling the prototypes.
 
 <iframe src="https://www.youtube.com/embed/j374zoy2jZA" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
