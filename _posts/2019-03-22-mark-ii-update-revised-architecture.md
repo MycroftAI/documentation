@@ -17,14 +17,14 @@ We were confident that everything would work out until we ran into a big roadblo
 
 We are confident that switching to a Rockchip design will accelerate our development because Rockchip is already proven in the Smart Speaker, IoT, and hobby spaces. They also have established compatibility with a wide variety of displays. We are being very careful to avoid the pitfalls of our previous development efforts. Instead of going straight to a production design, we are going through four phases to get to a production level product. We will be sharing our progress through these four phases in more detail than we ever have before.
 
-Phase 1: Proof of Concept
-Phase 2: Optimized Audio Prototype
-Phase 3: Engineering Validation
-Phase 4: Production Validation
+Phase I: Proof of Concept
+Phase II: Optimized Audio Prototype
+Phase III: Engineering Validation
+Phase IV: Production Validation
 
 Our Strategy going forward is to do as much validation and testing as possible with off the shelf development boards and parts before we invest in any custom design or pre-production prototypes. We know this means our early prototypes will be maybe roughly 20% <a href="https://www.theverge.com/2019/3/19/18263844/apple-iphone-prototype-m68-original-development-board-red" target="_blank" rel="noopener noreferrer">larger than the production version</a>, and they may not look exactly like the production version either. We will have to work around the limitations of the off-the-shelf hardware. Our first and foremost goal is to get the system working well, and then we will migrate to a production design.
 <h2>Phase I - Proof of Concept</h2>
-We are moving fast, and Phase 1 is already complete. This is a Proof of Concept prototype (sometimes abbreviated as POC). This was built quickly to validate the microphone design. It consists of a development board with a Rockchip SoC and a 6-microphone design, a separate class-d amplifier, a 3D printed and laser cut enclosure, and multiple power supplies. To get it all working we needed a new software image of Mycroft that took advantage of the microphone technology. Since we are a voice-first company we omitted the display in this design. This follows our new strategy of validating systems individually before combining into a fully working prototype. Hands down, concentrating on the voice interface is the most important part.
+We are moving fast, and Phase I is already complete. This is a Proof of Concept prototype (sometimes abbreviated as POC). This was built quickly to validate the microphone design. It consists of a development board with a Rockchip SoC and a 6-microphone design, a separate class-d amplifier, a 3D printed and laser cut enclosure, and multiple power supplies. To get it all working we needed a new software image of Mycroft that took advantage of the microphone technology. Since we are a voice-first company we omitted the display in this design. This follows our new strategy of validating systems individually before combining into a fully working prototype. Hands down, concentrating on the voice interface is the most important part.
 
 <a href="https://mycroft.ai/wp-content/uploads/2019/03/Mark-IIr_P1.png"><img class="alignnone size-full wp-image-45784" src="https://mycroft.ai/wp-content/uploads/2019/03/Mark-IIr_P1.png" alt="" width="1920" height="1081" /></a>
 <h2>Phase II - Optimized Audio Prototype</h2>
