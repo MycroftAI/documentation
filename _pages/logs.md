@@ -140,7 +140,7 @@ On Picroft and Mark 1 **Devices**, _log rotation_ is implemented using the `logr
 
 On Linux installations, _log rotation_ is **not** implemented, so you may have to manually delete logs from time to time if they are taking up too much space. 
 
-If you accidentally delete you log files, they will be recreated the next time the Mycroft services are started.
+If you accidentally delete your log files, they will be recreated the next time the Mycroft services are started.
 
 Here is an example of a Mark 1's `/var/log/mycroft` directory, showing log rotation:
 
