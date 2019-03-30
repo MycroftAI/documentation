@@ -1,11 +1,11 @@
 ---
-ID: 45983
+ID: 44428
 post_title: '19.02 Release Notes &#8211; Mycroft Major Release'
-author: Kris Gesling
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/19-02-release-notes-mycroft-major-release-2/
+  https://test.mycroft.ai/blog/19-02-release-notes-mycroft-major-release/
 published: true
 post_date: 2019-03-07 11:30:15
 ---

@@ -1,11 +1,11 @@
 ---
-ID: 45981
+ID: 44426
 post_title: 'International Open Data Day: Join us to celebrate'
-author: Kris Gesling
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/international-open-data-day-join-us-to-celebrate-2/
+  https://test.mycroft.ai/blog/international-open-data-day-join-us-to-celebrate/
 published: true
 post_date: 2019-03-04 10:00:22
 ---

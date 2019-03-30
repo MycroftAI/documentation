@@ -1,11 +1,11 @@
 ---
-ID: 45987
+ID: 44432
 post_title: 'Mark II Architecture Change &#8211; A Note from the CEO'
-author: Kris Gesling
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mark-ii-architecture-change-a-note-from-the-ceo/
+  https://test.mycroft.ai/blog/mark-ii-architecture-change-a-note-from-the-ceo/
 published: true
 post_date: 2019-03-20 18:30:03
 ---

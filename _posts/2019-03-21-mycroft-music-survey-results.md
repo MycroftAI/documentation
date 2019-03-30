@@ -1,11 +1,11 @@
 ---
-ID: 45989
+ID: 44434
 post_title: Mycroft Music Survey Results
-author: Kris Gesling
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycroft-music-survey-results-2/
+  https://test.mycroft.ai/blog/mycroft-music-survey-results/
 published: true
 post_date: 2019-03-21 14:00:21
 ---

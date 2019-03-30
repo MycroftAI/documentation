@@ -1,11 +1,11 @@
 ---
-ID: 45975
+ID: 44419
 post_title: 'Music for Mycroft &#8211; What does the Community want?'
-author: Kris Gesling
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/music-for-mycroft-what-does-the-community-want/
+  https://test.mycroft.ai/blog/music-for-mycroft-what-does-the-community-want/
 published: true
 post_date: 2019-02-22 11:29:34
 ---

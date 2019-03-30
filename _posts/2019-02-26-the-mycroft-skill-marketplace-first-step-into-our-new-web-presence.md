@@ -1,11 +1,11 @@
 ---
-ID: 45977
+ID: 44421
 post_title: 'The Mycroft Skill Marketplace &#8211; First step into our new web presence'
-author: Kris Gesling
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/the-mycroft-skill-marketplace-first-step-into-our-new-web-presence-2/
+  https://test.mycroft.ai/blog/the-mycroft-skill-marketplace-first-step-into-our-new-web-presence/
 published: true
 post_date: 2019-02-26 16:54:11
 ---

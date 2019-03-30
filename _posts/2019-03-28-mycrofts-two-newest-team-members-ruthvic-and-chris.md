@@ -1,11 +1,11 @@
 ---
-ID: 45995
+ID: 44440
 post_title: 'Mycroft&#8217;s Two Newest Team Members &#8211; Ruthvic and Chris'
-author: Kris Gesling
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycrofts-two-newest-team-members-ruthvic-and-chris/
+  https://test.mycroft.ai/blog/mycrofts-two-newest-team-members-ruthvic-and-chris/
 published: true
 post_date: 2019-03-28 12:00:20
 ---
