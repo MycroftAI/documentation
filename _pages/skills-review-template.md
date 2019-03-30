@@ -1,11 +1,11 @@
 ---
 ID: 44396
 post_title: Skills Review Template
-author: Kathy Reid
+author: Kris Gesling
 post_excerpt: ""
 layout: page
 permalink: >
-  https://test.mycroft.ai/skills-review-template/
+  https://mycroft.ai/documentation/skills/skills-review-template/
 published: true
 post_date: 2019-03-29 12:13:25
 ---
