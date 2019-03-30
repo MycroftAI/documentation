@@ -1,9 +1,11 @@
 ---
+ID: 46035
 post_title: Mycroft AI Privacy Policy
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: https://mycroft.ai/privacy/
+permalink: >
+  http://mycroft.ai/mycroft-ai-privacy-policy/
 published: true
 post_date: 2017-09-15 10:00:00
 ---
