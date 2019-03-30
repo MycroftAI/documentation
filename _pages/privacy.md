@@ -43,7 +43,7 @@ post_date: 2019-03-29 22:05:37
 <p>When you use our Services, your audio commands are transmitted to Mycroft for processing, as part of the Services. We may also collect other metadata about your audio commands, such as the time and location.</p>
 <h3>Your Devices.</h3>
 <p>When you download our software or otherwise use or register a device with us, we collect information about your device, including platform type and location.</p>
-<h3>Other Indformation We Collect from You.</h3>
+<h3>Other Information We Collect from You.</h3>
 <p>If you comment or post content to the Services, we may gather data about the content you post.</p>
 <h3>Other Information We Collect Automatically Through Our Services.</h3>
 <p>We automatically collect information about you through your use of our Site and Services, including log files, IP address, app identifier, advertising ID, location info, browser type, device type, domain name, the website that led you to our Services, the website to which you go after leaving our Services, the dates and times you access our Services, and the links you click and your other activities within the Services. Please see the section “Cookies and Other Tracking Mechanisms” below for more information.</p>
