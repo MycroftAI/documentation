@@ -1,11 +1,11 @@
 ---
-ID: 45300
+ID: 44402
 post_title: Teaching Mycroft New Vocabulary
-author: Kris Gesling
+author: Kathy Reid
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/get-involved/teaching-mycroft-new-vocabulary/
+  https://test.mycroft.ai/teaching-mycroft-new-vocabulary/
 published: true
 post_date: 2019-02-28 20:41:08
 ---

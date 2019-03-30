@@ -1,15 +1,15 @@
 ---
-ID: 45211
+ID: 44426
 post_title: 'International Open Data Day: Join us to celebrate'
-author: Kris Gesling
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/international-open-data-day-join-us-to-celebrate/
+  https://test.mycroft.ai/blog/international-open-data-day-join-us-to-celebrate/
 published: true
 post_date: 2019-03-04 10:00:22
 ---
-<a href="https://opendataday.org/" target="_blank" rel="noopener">International Open Data Day</a> was Saturday, March 2, 2019.
+<a href="https://opendataday.org/" target="_blank" rel="noopener noreferrer">International Open Data Day</a> was Saturday, March 2, 2019.
 
 You may not have had a public holiday, or a big house party, but we think this is still one worth celebrating!<!--more-->
 <h2>What is open data?</h2>

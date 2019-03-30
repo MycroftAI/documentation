@@ -1,11 +1,11 @@
 ---
-ID: 45919
+ID: 44440
 post_title: 'Mycroft&#8217;s Two Newest Team Members &#8211; Ruthvic and Chris'
-author: Eric Jurgeson
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycrofts-two-newest-team-members/
+  https://test.mycroft.ai/blog/mycrofts-two-newest-team-members-ruthvic-and-chris/
 published: true
 post_date: 2019-03-28 12:00:20
 ---

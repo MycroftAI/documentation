@@ -1,11 +1,11 @@
 ---
-ID: 45775
+ID: 44436
 post_title: 'Mark II Update: Revised Architecture and Prototype Phases'
-author: Derick Schweppe
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mark-ii-update-revised-architecture/
+  https://test.mycroft.ai/blog/mark-ii-update-revised-architecture-and-prototype-phases/
 published: true
 post_date: 2019-03-22 15:22:48
 ---

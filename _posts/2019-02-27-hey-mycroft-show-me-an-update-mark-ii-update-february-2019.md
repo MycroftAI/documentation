@@ -1,11 +1,11 @@
 ---
-ID: 45175
+ID: 44423
 post_title: 'Hey Mycroft, Show me an Update &#8211; Mark II Update February 2019'
-author: Steve Penrod
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/hey-mycroft-show-me-an-update-mark-ii-update-february-2019/
+  https://test.mycroft.ai/blog/hey-mycroft-show-me-an-update-mark-ii-update-february-2019/
 published: true
 post_date: 2019-02-27 16:00:51
 ---

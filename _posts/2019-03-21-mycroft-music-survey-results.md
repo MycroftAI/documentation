@@ -1,11 +1,11 @@
 ---
-ID: 45763
+ID: 44434
 post_title: Mycroft Music Survey Results
-author: Eric Jurgeson
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycroft-music-survey-results/
+  https://test.mycroft.ai/blog/mycroft-music-survey-results/
 published: true
 post_date: 2019-03-21 14:00:21
 ---

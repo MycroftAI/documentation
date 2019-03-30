@@ -1,11 +1,11 @@
 ---
-ID: 45860
+ID: 44438
 post_title: 'Mark II Update: Phase 2 Build Video'
-author: Derick Schweppe
+author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  http://mycroft.ai/blog/mark-ii-update-phase-2-build-video/
+  https://test.mycroft.ai/blog/mark-ii-update-phase-2-build-video/
 published: true
 post_date: 2019-03-26 14:20:43
 ---
