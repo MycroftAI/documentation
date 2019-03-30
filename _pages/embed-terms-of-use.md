@@ -4,7 +4,7 @@ post_title: Terms of Use
 author: Kris Gesling
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/terms-of-use-embed/
+permalink: http://mycroft.ai/embed-terms-of-use/
 published: true
 post_date: 2019-03-30 03:34:01
 ---
