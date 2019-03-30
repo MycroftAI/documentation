@@ -1,3 +1,12 @@
+---
+post_title: Mycroft AI Privacy Policy
+author: Kathy Reid
+post_excerpt: ""
+layout: page
+permalink: https://mycroft.ai/privacy/
+published: true
+post_date: 2017-09-15 10:00:00
+---
 #  Mycroft AI Privacy Policy
 ### EFFECTIVE DATE: September 15, 2017
 Mycroft AI Inc. (“Mycroft”, “we”, “us”, or “our”) values your privacy. In this Privacy Policy (“Policy”), we describe how we collect, use, and disclose information that we obtain about users of Mycroft AI and the related services (the “Services”), as well as visitors to or users of our website home.mycroft.ai (the “Site”).
@@ -34,7 +43,7 @@ When you use our Services, your audio commands are transmitted to Mycroft for pr
 
 ### Your Devices.  
 When you download our software or otherwise use or register a device with us, we collect information about your device, including platform type and location.
-  
+
 ### Other Information We Collect from You.  
 If you comment or post content to the Services, we may gather data about the content you post.
 
