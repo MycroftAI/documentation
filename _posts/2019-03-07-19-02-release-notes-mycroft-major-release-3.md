@@ -1,11 +1,11 @@
 ---
-ID: 44428
+ID: 46005
 post_title: '19.02 Release Notes &#8211; Mycroft Major Release'
 author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://test.mycroft.ai/blog/19-02-release-notes-mycroft-major-release/
+  http://mycroft.ai/blog/19-02-release-notes-mycroft-major-release-3/
 published: true
 post_date: 2019-03-07 11:30:15
 ---

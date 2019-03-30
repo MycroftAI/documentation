@@ -1,11 +1,11 @@
 ---
-ID: 44434
+ID: 46011
 post_title: Mycroft Music Survey Results
 author: Kathy Reid
 post_excerpt: ""
 layout: post
 permalink: >
-  https://test.mycroft.ai/blog/mycroft-music-survey-results/
+  http://mycroft.ai/blog/mycroft-music-survey-results-3/
 published: true
 post_date: 2019-03-21 14:00:21
 ---
