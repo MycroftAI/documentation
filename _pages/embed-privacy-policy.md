@@ -4,7 +4,7 @@ post_title: Privacy Policy
 author: Kathy Reid
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/privacy/
+permalink: http://mycroft.ai/embed-privacy-policy/
 published: true
 post_date: 2017-09-15 10:00:00
 ---
