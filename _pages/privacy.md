@@ -8,4 +8,4 @@ permalink: http://test.mycroft.ai/privacy/
 published: true
 post_date: 2019-03-29 22:05:37
 ---
-[github_markdown repo=”MycroftAI/documentation” file=”_pages/privacy-policy.md”]
+[github_markdown repo=”MycroftAI/documentation” file=”SUPPORT.md”]
