@@ -1,6 +1,6 @@
 ---
 ID: 46035
-post_title: Mycroft AI Privacy Policy
+post_title: Privacy Policy
 author: Kathy Reid
 post_excerpt: ""
 layout: page
@@ -9,7 +9,7 @@ permalink: >
 published: true
 post_date: 2017-09-15 10:00:00
 ---
-#  Mycroft AI Privacy Policy
+# Mycroft AI Privacy Policy
 ### EFFECTIVE DATE: September 15, 2017
 Mycroft AI Inc. (“Mycroft”, “we”, “us”, or “our”) values your privacy. In this Privacy Policy (“Policy”), we describe how we collect, use, and disclose information that we obtain about users of Mycroft AI and the related services (the “Services”), as well as visitors to or users of our website home.mycroft.ai (the “Site”).
 
@@ -18,18 +18,18 @@ By using our software, using a Mycroft Mark device, otherwise using the Services
 **When you use our Services including the Mycroft Voice Assistant, your voice and audio commands are transmitted to our Servers for processing.**
 
 * The Information We Collect About You
-  * Registration and Account Profile
-  * Voice Commands
-  * Your Devices
-  * Other Information We Collect From You
-  * Other Information We Collect Automatically Through Our Services
+* Registration and Account Profile
+* Voice Commands
+* Your Devices
+* Other Information We Collect From You
+* Other Information We Collect Automatically Through Our Services
 * How We Use Your Information
 * How We Share Your Information
 * Our Use of Cookies and Other Tracking Mechanisms
 * Third-Party Links
 * Security of My Personal Information
 * Access To My Personal Information
-  * Communications Choices
+* Communications Choices
 * Children Under 13
 * Contact Us
 * Changes to this Policy
@@ -43,10 +43,10 @@ To register or manage a device or otherwise access most of the Services you must
 ### Voice Commands.
 When you use our Services, your audio commands are transmitted to Mycroft for processing, as part of the Services. We may also collect other metadata about your audio commands, such as the time and location.
 
-### Your Devices.  
+### Your Devices.
 When you download our software or otherwise use or register a device with us, we collect information about your device, including platform type and location.
 
-### Other Information We Collect from You.  
+### Other Information We Collect from You.
 If you comment or post content to the Services, we may gather data about the content you post.
 
 ### Other Information We Collect Automatically Through Our Services.
@@ -84,7 +84,7 @@ We may share aggregate or de-identified information about users with third parti
 ## Our Use of Cookies and Other Tracking Mechanisms
 We and our third party service providers use cookies and other tracking mechanisms to track information about your use of our Site or Services. We may combine this information with other personal information we collect from you (and our third party service providers may do so on our behalf).
 
-### Cookies.  
+### Cookies.
 Cookies are alphanumeric identifiers that we transfer to your computer’s hard drive through your web browser for record-keeping purposes. Some cookies allow us to make it easier for you to navigate our Site and Services, while others are used to enable a faster log-in process or to allow us to track your activities at our Site and Service. Most web browsers automatically accept cookies, but if you prefer, you can edit your browser options to block them in the future. The Help portion of the toolbar on most browsers will tell you how to control cookies through that browser. Visitors to our Site who disable cookies will be able to browse certain areas of the Site, but some features may not function.
 
 ### Clear GIFs, pixel tags and other technologies.
@@ -96,7 +96,7 @@ We use automated devices and applications, such as Google Analytics, to evaluate
 ### Do Not Track.
 Currently, our Site does not recognize browser “do-not-track” requests. You may, however, disable certain tracking as discussed in this section (e.g., by disabling cookies).
 
-##  Third-Party Links
+## Third-Party Links
 Our Site and Services may contain links to third-party websites. Any access to and use of such linked websites is not governed by this Policy, but instead is governed by the privacy policies of those third party websites. We are not responsible for the information practices of such third party websites.
 
 ## Security of My Personal Information
