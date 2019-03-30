@@ -1,13 +1,13 @@
 ---
-ID: 44430
+ID: 45985
 post_title: >
   Mozilla Releases the Common Voice 2.0
   Dataset
-author: Kathy Reid
+author: Kris Gesling
 post_excerpt: ""
 layout: post
 permalink: >
-  https://test.mycroft.ai/blog/mozilla-releases-the-common-voice-2-0-dataset/
+  https://mycroft.ai/blog/mozilla-releases-the-common-voice-2-0-dataset-2/
 published: true
 post_date: 2019-03-14 16:00:34
 ---

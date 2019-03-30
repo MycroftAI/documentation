@@ -1,11 +1,11 @@
 ---
-ID: 44436
+ID: 45991
 post_title: 'Mark II Update: Revised Architecture and Prototype Phases'
-author: Kathy Reid
+author: Kris Gesling
 post_excerpt: ""
 layout: post
 permalink: >
-  https://test.mycroft.ai/blog/mark-ii-update-revised-architecture-and-prototype-phases/
+  https://mycroft.ai/blog/mark-ii-update-revised-architecture-and-prototype-phases/
 published: true
 post_date: 2019-03-22 15:22:48
 ---

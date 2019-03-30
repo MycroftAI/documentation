@@ -1,11 +1,11 @@
 ---
-ID: 44438
+ID: 45993
 post_title: 'Mark II Update: Phase 2 Build Video'
-author: Kathy Reid
+author: Kris Gesling
 post_excerpt: ""
 layout: post
 permalink: >
-  https://test.mycroft.ai/blog/mark-ii-update-phase-2-build-video/
+  https://mycroft.ai/blog/mark-ii-update-phase-2-build-video-2/
 published: true
 post_date: 2019-03-26 14:20:43
 ---
