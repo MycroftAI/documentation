@@ -1,11 +1,11 @@
 ---
 ID: 33031
-post_title: Home.mycroft home screen members
+post_title: 'Home.mycroft home screen members &#8212; copy'
 author: Nate Tomasi
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/tartarus-splash-member/
+  http://mycroft.ai/tartarus-splash-member-1/
 published: true
 post_date: 2017-11-16 09:57:55
 ---
