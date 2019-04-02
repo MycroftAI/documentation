@@ -5,7 +5,7 @@ author: David Smehlik
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/tartarus-splash-non-member-2/
+  http://mycroft.ai/tartarus-splash-non-member/
 published: true
 post_date: 2017-11-14 13:27:13
 ---
