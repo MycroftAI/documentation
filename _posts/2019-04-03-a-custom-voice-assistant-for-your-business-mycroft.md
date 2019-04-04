@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/a-custom-voice-assistant-for-your-business-mycroft/
+  http://mycroft.ai/blog/a-custom-voice-assistant-for-your-business-mycroft/
 published: true
 post_date: 2019-04-03 12:00:13
 ---
@@ -28,3 +28,5 @@ Here at Mycroft, we’ve built a platform that puts these concerns to rest. The 
 One of the big issues Mycroft puts to rest is predictability around technological availability. The core software is open, and the back-end software can be run on-premises or in a private cloud. This means companies have complete control of the stack and know that they’ll continue to have access to the technology regardless of any changes to Mycroft’s business model.
 
 All in all, companies who are looking to deploy voice technology in call centers, automobiles, consumer goods, and anywhere else would be well-served to look at the Mycroft stack as a possible solution. Open solutions have often been widely adopted by industry with great results and the Mycroft Community stands ready to provide one for this new and fast-growing market.
+<h2>Want to learn more?</h2>
+If your company is one of the 60% who are <a href="https://voicebot.ai/2019/02/22/nearly-half-of-u-s-small-businesses-say-alexa-has-best-marketing-potential-among-voice-assistants-followed-by-google-assistant/" target="_blank" rel="noopener noreferrer">beginning to strategize around voice for </a>marketing or the 38% of <a href="https://www.gartner.com/en/newsroom/press-releases/2018-08-30-gartner-2018-hype-cycle-for-the-digital-workplace-classifies-seven-technologies-to-reach-mainstream-adoption-within-the-next-two-to-five-years" target="_blank" rel="noopener noreferrer">enterprise CIOs planning on deploying virtual assistants in the coming years,</a> get in touch with Mycroft. You can find out more at https://mycroft.ai/enterprise/ or by emailing enterprise@mycroft.ai.
