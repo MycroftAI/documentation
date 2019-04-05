@@ -13,7 +13,7 @@ post_date: 2019-04-04 13:50:03
 
 <span style="font-weight: 400;">These goals are generally putting deliverables to points from our existing <a href="https://mycroft.ai/blog/many-roads-one-destination/" target="_blank" rel="noopener noreferrer">Roadmap(s)</a><span style="font-weight: 400;">. They will provide measurable outcomes to guide the development team for the next six months. They include some looks at exciting additions to Mycroft we’re making in the coming months, like deployment of the <a href="https://mycroft.ai/blog/building-strong-ai-strategy/#single-interaction" target="_blank" rel="noopener noreferrer">Persona engine</a></span><span style="font-weight: 400;"> and more focus on <a href="https://mycroft.ai/blog/introducing-mycroft-translate/" target="_blank" rel="noopener noreferrer">Internationalization</a></span><span style="font-weight: 400;">.</span></span>
 
-<span style="font-weight: 400;">Think we missed something? Let us know below.</span>
+<span style="font-weight: 400;">Think we missed something? Let us know <a href="https://community.mycroft.ai/t/mycrofts-goals-for-19-08/6249" target="_blank" rel="noopener noreferrer">on the forum</a>.</span>
 <h3><span style="font-weight: 400;">Core Tech - Speech Synthesis</span></h3>
 <span style="font-weight: 400;">The speech synthesis should be of sufficient quality that it is not a distraction to end users. Deploy at least one Mimic II voice using new female recordings.</span>
 
@@ -49,4 +49,4 @@ Automate DeepSpeech verification and submission process.
 
 <span style="font-weight: 400;">The response to Mycroft Translate has really been incredible. For 19.08, we’ll have all of the frameworks in place for the Community to fully deploy Mycroft in their language. We’ll confirm this by testing Mycroft in at least one non-English language for 19.08.</span>
 
-<span style="font-weight: 400;">Those are our goals for our 19.08 release. But that’s what we think is needed. What do </span><i><span style="font-weight: 400;">you </span></i><span style="font-weight: 400;">think? Leave a comment below and let us know where Mycroft should go.</span>
+<span style="font-weight: 400;">Those are our goals for our 19.08 release. But that’s what we think is needed. What do </span><i><span style="font-weight: 400;">you </span></i><span style="font-weight: 400;">think? <a href="https://community.mycroft.ai/t/mycrofts-goals-for-19-08/6249" target="_blank" rel="noopener noreferrer">Head over to the forum</a> and let us know where Mycroft should go.</span>
