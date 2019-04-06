@@ -17,9 +17,12 @@ When creating your skill, the [Mycroft Skills Kit](https://mycroft.ai/documentat
 
 ## Top tips for a great README  
 - The title should not include the word Skill  
-- There is limited space on the Skill Card in the Marketplace. Long titles, on-line descriptions and intent examples will be truncated (cut off). Try to keep these clear and concise.  
-- Note: the one-line description is the text between the Skill title and the "About" section.  
-- Only the first Example Intent will be shown on the Skills Card in the Marketplace. This should be short and make sense as a single phrase.  
+- There is limited space on the Skill Card in the Marketplace. Try to keep Skill titles, one-line descriptions and intent examples clear and concise. Longer strings of text will be truncated (cut off). Lengths depend on the characters used however try to keep:
+  - Titles under 22 characters
+  - One-line descriptions under 50 characters
+  - First example under 40 characters (this will be shown on the Card view and should be make sense as a single phrase)
+  - All examples under 50 characters
+- Note: The one-line description is the text between the Skill title and the "About" section.
 - The primary category, being the category in bold, is where the Skill will be displayed in the Marketplace by default.
 
 ## Suggesting changes to an existing README  
@@ -28,7 +31,7 @@ A Github account is required, please register for an account now if needed. Then
 ### Edit and make a pull request (PR)  
 This is the most direct and simplest method for Skill Authors if you have a clear idea of what changes need to be made.
 
-README.md files are writting using the Markdown syntax, which is a way to style text on the web. If you aren't familiar with Markdown formatting, Github has an excellent [3 minute guide](https://guides.github.com/features/mastering-markdown/) to get you started.
+README.md files are written using the Markdown syntax, which is a way to style text on the web. If you aren't familiar with Markdown formatting, Github has an excellent [3 minute guide](https://guides.github.com/features/mastering-markdown/) to get you started.
 
 #### How to  
 **1. Edit the file**  
