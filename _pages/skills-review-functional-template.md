@@ -5,7 +5,7 @@ author: Kris Gesling
 post_excerpt: ""
 layout: page
 permalink: >
-  http://mycroft.ai/documentation/skills/skills-acceptance-process/skills-functional-review-template/
+  http://mycroft.ai/documentation/skills/skills-acceptance-process/skills-review-functional-template/
 published: true
 post_date: 2019-04-05 22:02:43
 ---
