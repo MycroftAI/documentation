@@ -1,6 +1,6 @@
 ---
 ID: 46221
-post_title: Skills Review Code Template
+post_title: Skills Code Review Template
 author: Kris Gesling
 post_excerpt: ""
 layout: page
