@@ -1,11 +1,10 @@
 ---
 ID: 45337
-post_title: 'Mycroft – Open Source Voice Assistant &#8212; 3-2019 UPDATE'
+post_title: Mycroft – Open Source Voice Assistant
 author: Derick Schweppe
 post_excerpt: ""
 layout: page
-permalink: >
-  http://mycroft.ai/mycroft-open-source-voice-assistant/
+permalink: http://mycroft.ai/
 published: true
 post_date: 2019-04-10 17:49:18
 ---
