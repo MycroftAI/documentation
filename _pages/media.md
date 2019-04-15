@@ -11,10 +11,7 @@ post_date: 2018-02-15 12:22:46
 [vc_row type="full_width_background" full_screen_row_position="middle" bg_color="#22a7f0" scene_position="center" text_color="light" text_align="left" top_padding="5%" bottom_padding="5%" overlay_strength="0.3" shape_divider_position="bottom" bg_image_animation="none"][vc_column column_padding="padding-2-percent" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_link_target="_self" column_shadow="none" column_border_radius="none" width="1/1" tablet_width_inherit="default" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" bg_image_animation="none"][vc_column_text]
 <h1>Mycroft Mark II</h1>
 <h3>Media Kit</h3>
-[/vc_column_text][divider line_type="No Line" custom_height="20"][vc_column_text]
-<h2>LIVE on Indiegogo!</h2>
-<h4><span style="font-weight: 400;">The Mark II is the second smart speaker from Mycroft AI.  Mycroft is an open voice assistant that designed with privacy and user agency in mind.</span></h4>
-[/vc_column_text][divider line_type="No Line" custom_height="30"][nectar_btn size="large" open_new_tab="true" button_style="regular" button_color_2="Extra-Color-3" icon_family="none" url="https://www.indiegogo.com/projects/mycroft-mark-ii-the-open-voice-assistant/x/18123242#/mycroft-home-page" text="Go To Indiegogo Page"][divider line_type="No Line" custom_height="30"][vc_column_text]<span style="color: #ffffff;"><b>In this Media Kit you’ll find:</b></span>
+[/vc_column_text][divider line_type="No Line" custom_height="30"][vc_column_text]<span style="color: #ffffff;"><b>In this Media Kit you’ll find:</b></span>
 <ul>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#media-contact"><span style="font-weight: 400;">Media Contact</span></a></span></li>
  	<li><span style="color: #ffffff;"><a style="color: #ffffff;" href="#images-and-assets"><span style="font-weight: 400;">Images and Assets</span></a></span></li>
@@ -31,16 +28,16 @@ post_date: 2018-02-15 12:22:46
 <h3><strong>or call 816.287.1992</strong></h3>
 <span style="font-weight: 400;">To learn more, please visit </span><a href="https://mycroft.ai/"><span style="font-weight: 400;">mycroft.ai</span></a><span style="font-weight: 400;"> and be sure to follow our socials!</span>
 <ul>
- 	<li><a href="http://www.facebook.com/aiforeveryone/" target="_blank" rel="noopener"><span style="font-weight: 400;">Facebook</span></a></li>
- 	<li><a href="https://twitter.com/mycroft_ai" target="_blank" rel="noopener"><span style="font-weight: 400;">Twitter</span></a></li>
- 	<li><a href="https://www.instagram.com/mycroft_ai/" target="_blank" rel="noopener"><span style="font-weight: 400;">Instagram</span></a></li>
- 	<li><a href="https://www.linkedin.com/company/10255844/" target="_blank" rel="noopener"><span style="font-weight: 400;">LinkedIn</span></a></li>
- 	<li><a href="https://www.youtube.com/channel/UC1dlmB1lup9RwFQBSGnhA-g" target="_blank" rel="noopener"><span style="font-weight: 400;">Youtube</span></a></li>
- 	<li><a href="https://www.reddit.com/r/Mycroftai/" target="_blank" rel="noopener"><span style="font-weight: 400;">Reddit</span></a></li>
- 	<li><a href="https://plus.google.com/+MycroftAIForEveryone" target="_blank" rel="noopener"><span style="font-weight: 400;">G+</span></a></li>
- 	<li><a href="https://www.crunchbase.com/organization/mycroft-ai-inc" target="_blank" rel="noopener"><span style="font-weight: 400;">Crunchbase</span></a></li>
- 	<li><a href="https://chat.mycroft.ai" target="_blank" rel="noopener"><span style="font-weight: 400;">Mycroft Community Chat </span></a></li>
- 	<li><a href="https://community.mycroft.ai/" target="_blank" rel="noopener"><span style="font-weight: 400;">Mycroft Forum</span></a></li>
+ 	<li><a href="http://www.facebook.com/aiforeveryone/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Facebook</span></a></li>
+ 	<li><a href="https://twitter.com/mycroft_ai" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Twitter</span></a></li>
+ 	<li><a href="https://www.instagram.com/mycroft_ai/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Instagram</span></a></li>
+ 	<li><a href="https://www.linkedin.com/company/10255844/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">LinkedIn</span></a></li>
+ 	<li><a href="https://www.youtube.com/channel/UC1dlmB1lup9RwFQBSGnhA-g" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Youtube</span></a></li>
+ 	<li><a href="https://www.reddit.com/r/Mycroftai/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Reddit</span></a></li>
+ 	<li><a href="https://plus.google.com/+MycroftAIForEveryone" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">G+</span></a></li>
+ 	<li><a href="https://www.crunchbase.com/organization/mycroft-ai-inc" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Crunchbase</span></a></li>
+ 	<li><a href="https://chat.mycroft.ai" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Mycroft Community Chat </span></a></li>
+ 	<li><a href="https://community.mycroft.ai/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Mycroft Forum</span></a></li>
 </ul>
 [/vc_column_text][/vc_column][/vc_row][vc_row type="full_width_background" full_screen_row_position="middle" equal_height="yes" bg_color="#f4f4f4" scene_position="center" text_color="dark" text_align="left" top_padding="10%" bottom_padding="10%" overlay_strength="0.3" shape_divider_position="bottom" bg_image_animation="none"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_link_target="_self" column_shadow="none" column_border_radius="none" width="1/1" tablet_width_inherit="default" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid" bg_image_animation="none"][vc_row_inner equal_height="yes" column_margin="default" text_align="left"][vc_column_inner column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" column_link_target="_self" width="1/1" tablet_width_inherit="default" column_border_width="none" column_border_style="solid" bg_image_animation="none"][vc_column_text]
 <h1>Images and Assets</h1>
@@ -117,34 +114,34 @@ https://angel.co/mycroft-a-i/jobs
 </span></h1>
 <h3>General coverage of Mycroft</h3>
 <ul>
- 	<li><a href="http://money.cnn.com/gallery/technology/2018/01/13/ces-2018-gadgets/13.html" target="_blank" rel="noopener">CNN Tech</a></li>
- 	<li><a href="https://www.popsci.com/ultimate-diy-ai" target="_blank" rel="noopener"><span style="font-weight: 400;">Popular Science</span></a></li>
- 	<li><a href="https://www.forbes.com/sites/janakirammsv/2015/08/20/meet-mycroft-the-open-source-alternative-to-amazon-echo/#1d6882c362a2" target="_blank" rel="noopener"><span style="font-weight: 400;">Forbes</span></a></li>
- 	<li><a href="https://www.technologyreview.com/s/607892/an-open-source-and-cute-alternative-to-amazon-echo/" target="_blank" rel="noopener"><span style="font-weight: 400;">MIT Technology Review</span></a></li>
- 	<li><a href="http://www.jupiterbroadcasting.com/86422/vulkan-the-metal-slayer-lup-105/" target="_blank" rel="noopener"><span style="font-weight: 400;">Jupiter Broadcasting</span></a></li>
- 	<li><a href="http://www.cnet.com/products/mycroft-smart-home-ai-platform/" target="_blank" rel="noopener"><span style="font-weight: 400;">CNet</span></a></li>
- 	<li><a href="http://www.zdnet.com/article/meet-mycroft-the-open-source-ai-who-wants-to-rival-siri-cortana-and-alexa/" target="_blank" rel="noopener"><span style="font-weight: 400;">ZDNet</span></a></li>
- 	<li><a href="https://www.inc.com/matt-hunckler/these-5-artificial-intelligence-startups-are-trans.html" target="_blank" rel="noopener"><span style="font-weight: 400;">Inc.</span></a></li>
- 	<li><a href="https://www.cio.com/article/3017983/linux/2015s-most-exciting-linux-devices.html#slide2" target="_blank" rel="noopener"><span style="font-weight: 400;">CIO</span></a></li>
- 	<li><a href="http://news.softpedia.com/news/mycroft-is-an-ai-for-your-home-powered-by-raspberry-pi-2-and-ubuntu-snappy-489280.shtml" target="_blank" rel="noopener"><span style="font-weight: 400;">Softpedia</span></a></li>
- 	<li><a href="https://mycroft.ai/blog/le-monde-science-health/" target="_blank" rel="noopener"><span style="font-weight: 400;">Le Monde</span></a></li>
- 	<li><span style="font-weight: 400;"><a href="https://techcrunch.com/video/mycroft-open-source-voice-assistant/59c2b725c214e377dac11512/" target="_blank" rel="noopener">Techcrunch</a></span><a href="https://techcrunch.com/video/mycroft-open-source-voice-assistant/59c2b725c214e377dac11512/" target="_blank" rel="noopener"><span style="font-weight: 400;">
+ 	<li><a href="http://money.cnn.com/gallery/technology/2018/01/13/ces-2018-gadgets/13.html" target="_blank" rel="noopener noreferrer">CNN Tech</a></li>
+ 	<li><a href="https://www.popsci.com/ultimate-diy-ai" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Popular Science</span></a></li>
+ 	<li><a href="https://www.forbes.com/sites/janakirammsv/2015/08/20/meet-mycroft-the-open-source-alternative-to-amazon-echo/#1d6882c362a2" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Forbes</span></a></li>
+ 	<li><a href="https://www.technologyreview.com/s/607892/an-open-source-and-cute-alternative-to-amazon-echo/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">MIT Technology Review</span></a></li>
+ 	<li><a href="http://www.jupiterbroadcasting.com/86422/vulkan-the-metal-slayer-lup-105/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Jupiter Broadcasting</span></a></li>
+ 	<li><a href="http://www.cnet.com/products/mycroft-smart-home-ai-platform/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">CNet</span></a></li>
+ 	<li><a href="http://www.zdnet.com/article/meet-mycroft-the-open-source-ai-who-wants-to-rival-siri-cortana-and-alexa/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">ZDNet</span></a></li>
+ 	<li><a href="https://www.inc.com/matt-hunckler/these-5-artificial-intelligence-startups-are-trans.html" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Inc.</span></a></li>
+ 	<li><a href="https://www.cio.com/article/3017983/linux/2015s-most-exciting-linux-devices.html#slide2" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">CIO</span></a></li>
+ 	<li><a href="http://news.softpedia.com/news/mycroft-is-an-ai-for-your-home-powered-by-raspberry-pi-2-and-ubuntu-snappy-489280.shtml" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Softpedia</span></a></li>
+ 	<li><a href="https://mycroft.ai/blog/le-monde-science-health/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Le Monde</span></a></li>
+ 	<li><span style="font-weight: 400;"><a href="https://techcrunch.com/video/mycroft-open-source-voice-assistant/59c2b725c214e377dac11512/" target="_blank" rel="noopener noreferrer">Techcrunch</a></span><a href="https://techcrunch.com/video/mycroft-open-source-voice-assistant/59c2b725c214e377dac11512/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">
 </span></a></li>
  	<li><a href="https://www.entrepreneur.com/article/314181">Entrepreneur</a></li>
 </ul>
 <h3>Coverage of our Mark II Campaign,</h3>
-Find a larger list <em><a href="https://mycroft.ai/blog/mycroft-news-read-coverage-mark-ii-launch/" target="_blank" rel="noopener">here</a>.</em>
+Find a larger list <em><a href="https://mycroft.ai/blog/mycroft-news-read-coverage-mark-ii-launch/" target="_blank" rel="noopener noreferrer">here</a>.</em>
 <ul>
- 	<li><a href="https://www.fastcompany.com/40522226/can-mycrofts-privacy-centric-voice-assistant-take-on-alexa-and-google" target="_blank" rel="noopener">FastCompany</a></li>
- 	<li><a href="https://www.digitaltrends.com/cool-tech/mycroft-mark-ii-assistant/" target="_blank" rel="noopener">Digital Trends</a></li>
- 	<li><a href="https://www.slashgear.com/mycroft-mark-ii-the-open-source-amazon-echo-youve-always-wanted-29517303/" target="_blank" rel="noopener">Slash Gear</a></li>
- 	<li><a href="http://www.autonews.com/article/20180120/OEM06/180129987/with-ai-digital-assistant-drivers-talk-to-their-cars" target="_blank" rel="noopener">Automotive News</a></li>
- 	<li><a href="http://www.cbc.ca/radio/spark/383-dangerous-data-libraries-and-more-1.4516637/the-privacy-first-smart-speaker-taking-on-the-likes-of-apple-and-amazon-1.4516676" target="_blank" rel="noopener">CBC Radio</a></li>
+ 	<li><a href="https://www.fastcompany.com/40522226/can-mycrofts-privacy-centric-voice-assistant-take-on-alexa-and-google" target="_blank" rel="noopener noreferrer">FastCompany</a></li>
+ 	<li><a href="https://www.digitaltrends.com/cool-tech/mycroft-mark-ii-assistant/" target="_blank" rel="noopener noreferrer">Digital Trends</a></li>
+ 	<li><a href="https://www.slashgear.com/mycroft-mark-ii-the-open-source-amazon-echo-youve-always-wanted-29517303/" target="_blank" rel="noopener noreferrer">Slash Gear</a></li>
+ 	<li><a href="http://www.autonews.com/article/20180120/OEM06/180129987/with-ai-digital-assistant-drivers-talk-to-their-cars" target="_blank" rel="noopener noreferrer">Automotive News</a></li>
+ 	<li><a href="http://www.cbc.ca/radio/spark/383-dangerous-data-libraries-and-more-1.4516637/the-privacy-first-smart-speaker-taking-on-the-likes-of-apple-and-amazon-1.4516676" target="_blank" rel="noopener noreferrer">CBC Radio</a></li>
  	<li><a href="https://blog.hackster.io/mycroft-announces-a-kickstarter-campaign-for-the-mark-ii-ai-assistant-39e406368d4a">Hackster.io</a></li>
  	<li><a href="https://itsfoss.com/mycroft-mark-2/">It's FOSS</a></li>
- 	<li><a href="https://www.stuff.tv/hot-stuff/smart-home/mycroft-mark-ii-voice-assistant-can-be-extended-and-customised-wont-share-your" target="_blank" rel="noopener">Stuff</a></li>
- 	<li><a href="https://www.open-electronics.org/mycroft-mark-ii-the-open-source-voice-assistant/" target="_blank" rel="noopener">Open Electronics</a></li>
- 	<li><a href="https://www.trendhunter.com/trends/mycroft-mark-ii" target="_blank" rel="noopener">Trend Hunter</a></li>
+ 	<li><a href="https://www.stuff.tv/hot-stuff/smart-home/mycroft-mark-ii-voice-assistant-can-be-extended-and-customised-wont-share-your" target="_blank" rel="noopener noreferrer">Stuff</a></li>
+ 	<li><a href="https://www.open-electronics.org/mycroft-mark-ii-the-open-source-voice-assistant/" target="_blank" rel="noopener noreferrer">Open Electronics</a></li>
+ 	<li><a href="https://www.trendhunter.com/trends/mycroft-mark-ii" target="_blank" rel="noopener noreferrer">Trend Hunter</a></li>
  	<li><a href="https://www.voicebot.ai/2018/01/25/mycroft-mark-ii-smart-display-puts-privacy-first/">Voicebot.ai</a></li>
  	<li><a href="https://androidmarvel.com/mycroft-mark-ii-open-answer-amazon-echo-google-home/">Android Marvel</a></li>
  	<li><a href="https://liliputing.com/2018/01/mycroft-mark-ii-smart-speaker-open-source-voice-assistant-crowdfunding.html">Liliputing</a></li>
