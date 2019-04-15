@@ -25,7 +25,6 @@ post_date: 2018-02-15 12:22:46
 <h2 id="#mediakit">Media Contact</h2>
 <h4><span style="font-weight: 400;">For more information or any press inquiries, please contact:</span></h4>
 <h3><strong><a href="mailto:media@mycroft.ai">media@mycroft.ai</a> </strong></h3>
-<h3><strong>or call 816.287.1992</strong></h3>
 <span style="font-weight: 400;">To learn more, please visit </span><a href="https://mycroft.ai/"><span style="font-weight: 400;">mycroft.ai</span></a><span style="font-weight: 400;"> and be sure to follow our socials!</span>
 <ul>
  	<li><a href="http://www.facebook.com/aiforeveryone/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Facebook</span></a></li>
