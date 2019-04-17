@@ -7,7 +7,7 @@ author: Eric Jurgeson
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/yes-humans-listen-to-smart-speaker-recordings-can-it-be-done-right/
+  http://mycroft.ai/blog/yes-humans-listen-to-smart-speaker-recordings-can-it-be-done-right/
 published: true
 post_date: 2019-04-17 13:00:22
 ---
