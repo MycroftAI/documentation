@@ -9,7 +9,7 @@ permalink: >
 published: true
 post_date: 2019-04-18 15:31:13
 ---
-Over the last few months, we have been working on a major overhaul of our Home (home.mycroft.ai) site. The project is nearly complete technically, so we would like to invite the Community into the Mycroft Home Beta to kick the tires and give feedback before we officially launch.
+Over the last few months, we have been working on a major overhaul of our Mycroft Home site. The project is nearly complete technically, so we would like to invite the Community into the Mycroft Home Beta to kick the tires and give feedback before we officially launch.
 
 We are approaching this in three phases:
 <ul>
@@ -43,3 +43,4 @@ With a paired device, the Skills settings will be fully available. There are no 
 
 We welcome any and all feedback during this preview period. Post your comments and suggestions to the <a href="https://chat.mycroft.ai/community/channels/home-troubleshooting" target="_blank" rel="noopener noreferrer">~home-troubleshooting</a> channel in Mattermost. We will also use this channel to update you on any new functionality or bug fixes released during the preview. Without further ado, please enjoy the...
 <h1><a href="https://account.mycroft-test.net/" target="_blank" rel="noopener noreferrer">Home Beta Preview</a></h1>
+(https://account.mycroft-test.net/)
