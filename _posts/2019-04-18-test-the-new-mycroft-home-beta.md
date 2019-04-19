@@ -32,7 +32,7 @@ Switch your device to the 'dev' branch. For a Mark 1 run <code>mycroft-use unsta
 Edit your mycroft.conf to point to the new server: <code>sudo nano /etc/mycroft/mycroft.conf</code>
 <pre>{
   "server": {
-    "url": "http://api.mycroft-test.net"
+    "url": "https://api.mycroft-test.net"
   },
   ... whatever is already in the mycroft.con ...
 }
