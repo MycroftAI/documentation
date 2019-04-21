@@ -122,7 +122,7 @@ This log contains information on actions such as:
 
 To find the errors related to a particular **Skill**, use this command once you have created an `ssh` connection: 
 
-`cat /var/log/mycroft-skills.log | grep -i error | grep -i SKILLNAME`
+`cat /var/log/mycroft/skills.log | grep -i error | grep -i SKILLNAME`
 
 where `SKILLNAME` is the name of the **Skill**. 
 
@@ -130,7 +130,7 @@ where `SKILLNAME` is the name of the **Skill**.
 
 If you are [developing new Skills for Mycroft](https://mycroft.ai/documentation/skills/developing-skills/), then we strongly recommend that you `tail` the `skills.log` log file as you are doing development work, so that you can easily observe any errors that your **Skill** is throwing. To do this, use this command: 
 
-`tail -f /var/log/skills.log`
+`tail -f /var/log/mycroft/skills.log`
 
 To stop `tail`ing the log, press Ctrl + C. 
 
