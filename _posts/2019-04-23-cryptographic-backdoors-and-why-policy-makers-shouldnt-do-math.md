@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/cryptographic-backdoors-and-why-policy-makers-shouldnt-do-math/
+  http://mycroft.ai/blog/cryptographic-backdoors-and-why-policy-makers-shouldnt-do-math/
 published: true
 post_date: 2019-04-23 10:00:33
 ---
