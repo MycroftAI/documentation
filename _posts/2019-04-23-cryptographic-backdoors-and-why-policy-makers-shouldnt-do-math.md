@@ -9,7 +9,7 @@ permalink: >
 published: true
 post_date: 2019-04-23 10:00:33
 ---
-<span style="font-weight: 400;">Generally speaking, I don’t trust policymakers to do math. This isn’t a new thing. In 1894, the Indiana State Legislature <a href="https://en.wikipedia.org/wiki/Indiana_Pi_Bill" target="_blank" rel="noopener noreferrer">attempted to set the value of Pi to 3.2</a></span><span style="font-weight: 400;"> via legislative fiat. Fortunately, there was a professor from Perdue there to set them straight, but it was a close call. National governments haven’t gotten any better at math since.</span>
+<span style="font-weight: 400;">Generally speaking, I don’t trust policymakers to do math. This isn’t a new thing. In 1894, the Indiana State Legislature <a href="https://en.wikipedia.org/wiki/Indiana_Pi_Bill" target="_blank" rel="noopener noreferrer">attempted to set the value of Pi to 3.2</a></span><span style="font-weight: 400;"> via legislative fiat. Fortunately, there was a professor from Purdue there to set them straight, but it was a close call. National governments haven’t gotten any better at math since.</span>
 <h2>Cryptography is math, and it's hard</h2>
 <span style="font-weight: 400;">As anyone in the world of computer science knows, cryptography is math. In its simplest form - the <a href="http://www.practicalcryptography.com/ciphers/caesar-cipher/" target="_blank" rel="noopener noreferrer">Caesar Cypher</a></span><span style="font-weight: 400;"> - cleartext can be encoded simply by adding an integer to the letter and shifting the representation by that many steps of the alphabet. Modern cyphers are made far more complex through the use of Modular Arithmetic and Matrix Algebra, but ultimately all encryption is based on math.</span>
 
