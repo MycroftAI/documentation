@@ -5,7 +5,7 @@ author: Steve Penrod
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/the-mycroft-gui-the-screen-is-dead-long-live-the-screen/
+  http://mycroft.ai/blog/the-mycroft-gui-the-screen-is-dead-long-live-the-screen/
 published: true
 post_date: 2019-04-26 12:00:56
 ---
@@ -63,7 +63,7 @@ With just those basic hooks, you have what you need to display nearly anything y
 <h2>Screens Anywhere</h2>
 One of the most powerful things about this GUI design is that you don't even need to have a device with a screen. Other devices can register on the Mycroft Messagebus, allowing for future devices to show a GUI on things like a TV connected to a Raspberry Pi or a streaming media player which implements the Mycroft GUI protocols. Mycroft will be able to take advantage of whatever screens are visible to the user!
 <h2>Documentation and More Examples</h2>
-You can learn more about the Mycroft GUI by reading the <a href="https://github.com/mycroftai/mycroft-gui/blob/master/documentations" target="_blank" rel="noopener noreferrer">tutorial on Github</a>, and by examining the code of our examples. There is excellent documentation for the <a href="https://doc.qt.io/qt-5/qml-tutorial.html" target="_blank" rel="noopener noreferrer">QML markup language</a> and the <a href="https://www.kde.org/products/kirigami/" target="_blank" rel="noopener noreferrer">Kirigami visual framework</a>.
+You can learn more about the Mycroft GUI by reading the <a href="https://github.com/mycroftai/mycroft-gui/blob/master/documentation" target="_blank" rel="noopener noreferrer">tutorial on Github</a>, and by examining the code of our examples. There is excellent documentation for the <a href="https://doc.qt.io/qt-5/qml-tutorial.html" target="_blank" rel="noopener noreferrer">QML markup language</a> and the <a href="https://www.kde.org/products/kirigami/" target="_blank" rel="noopener noreferrer">Kirigami visual framework</a>.
 
 See the <a href="https://github.com/mycroftai/skill-date-time" target="_blank" rel="noopener noreferrer">Date-Time</a> and <a href="https://github.com/mycroftai/skill-weather" target="_blank" rel="noopener noreferrer">Weather</a> skills for examples of what is possible, and the <a href="https://github.com/MycroftAI/mycroft-core/blob/dev/mycroft/skills/core.py#L219" target="_blank" rel="noopener noreferrer">SkillGUI</a> class for complete details.
 <h2>Have fun!</h2>
