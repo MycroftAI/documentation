@@ -5,7 +5,7 @@ author: Joshua Montgomery
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mycroft-ai-at-voice-summit-2019/
+  http://mycroft.ai/blog/mycroft-ai-at-voice-summit-2019/
 published: true
 post_date: 2019-05-01 17:00:24
 ---
