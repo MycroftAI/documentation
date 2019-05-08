@@ -4,7 +4,7 @@ post_title: Get Started
 author: Sam Ritchie
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/get-started/
+permalink: http://mycroft.ai/get-started-zzz/
 published: true
 post_date: 2018-09-14 13:32:22
 ---
