@@ -4,7 +4,7 @@ post_title: Get Started
 author: David Smehlik
 post_excerpt: ""
 layout: page
-permalink: http://mycroft.ai/get-started-3/
+permalink: http://mycroft.ai/get-started/
 published: true
 post_date: 2019-05-08 11:32:51
 ---
