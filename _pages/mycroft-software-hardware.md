@@ -17,8 +17,6 @@ Welcome to Mycroft.
 
 Mycroft is the name of a suite of software and hardware tools that use [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing) and [machine learning](https://en.wikipedia.org/wiki/Machine_learning) to provide an open source voice assistant.
 
-As of late 2017, Mycroft is undergoing heavy development. It is at a level of maturity where developers and hardware hobbyists will be able to use it effectively. However, it is not yet ready for mainstream adoption.
-
 [This video provides a quick overview](https://youtu.be/m4L0QfzUeEI) of our vision for Mycroft.
 
 ## Mycroft components
