@@ -37,9 +37,7 @@ post_date: 2017-12-02 22:35:25
 
 The Mark 1 device is an **Enclosure** for Mycroft, based on Raspberry Pi. It is designed as a reference hardware device, and is able to be easily modified, hacked and extended.
 
-[Mark 1 devices are available in the Mycroft Shop](https://mycroft.ai/shop/?add-to-cart=31440).
-
-_NOTE: Mark 1 devices are currently suitable for hardware hobbyists, developers and hackers. They are not average-consumer ready, but we are anticipating they will be in early 2018. If you have a Mark 1 and you're a general consumer, please leave Mark 1 on a shelf for a few months._)
+[Mark 1 devices are now available in the Mycroft Shop](https://mycroft.ai/shop/?add-to-cart=31440).
 
 ### Prerequisites
 
