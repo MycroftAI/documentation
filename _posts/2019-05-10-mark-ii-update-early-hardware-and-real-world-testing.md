@@ -5,7 +5,7 @@ author: Nate Tomasi
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/mark-ii-update-early-hardware-and-real-world-testing/
+  http://mycroft.ai/blog/mark-ii-update-early-hardware-and-real-world-testing/
 published: true
 post_date: 2019-05-10 17:15:50
 ---
