@@ -139,7 +139,7 @@ total 36
 4 -rw-rw-r--   1 kathyreid kathyreid   21 Jun  7 05:20 .gitignore
 4 -rw-rw-r--   1 kathyreid kathyreid  379 Jun  7 05:18 __init__.py
 4 -rw-rw-r--   1 kathyreid kathyreid  434 Jun  7 05:20 README.md
-4 -rw-rw-r--   1 kathyreid kathyreid 1301 Jun  7 05:20 settingsmeta.json
+4 -rw-rw-r--   1 kathyreid kathyreid 1301 Jun  7 05:20 settingsmeta.yaml
 4 drwxrwxr-x   3 kathyreid kathyreid 4096 Jun  7 05:20 vocab
 ```
 

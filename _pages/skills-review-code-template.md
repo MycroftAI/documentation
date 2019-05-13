@@ -44,7 +44,7 @@ Check `requirements.txt` and `requirements.sh` - are the required dependencies l
 >
 
 - [ ] **Settings**  
-Is the `settingsmeta.json` file well laid out? If settings are not used, has the default file been deleted? If it is the default file, the first setting section will be called "Options << Name of section". >
+Is the `settingsmeta` file well laid out? If settings are not used, has the default file been deleted? If it is the default file, the first setting section will be called "Options << Name of section". >
 
 - [ ] **Integration Tests**  
 Does the skill include sufficient integration tests, included in the `test` folder?

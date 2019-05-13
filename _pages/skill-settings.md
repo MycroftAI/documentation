@@ -15,8 +15,8 @@ post_date: 2017-12-02 22:35:25
   * [How do I use Skill Settings?](#how-do-i-use-skill-settings)
     + [More information on Skill Settings](#more-information-on-skill-settings)
   * [settings.json](#settingsjson)
-  * [Web configurable Settings with `settingsmeta.json`](#web-configurable-settings-with-settingsmetajson)
-    + [More information on the `settingsmeta.json` file](#more-information-on-the-settingsmetajson-file)
+  * [Web configurable Settings with `settingsmeta` file](#web-configurable-settings-with-settingsmeta)
+    + [More information on the `settingsmeta` file](#more-information-on-the-settingsmeta-file)
       - [name (String)](#name-string)
       - [skillMetadata (Object)](#skillmetadata-object)
       - [sections (Array)](#sections-array)
@@ -33,9 +33,7 @@ They are a simple extension of the [Python `dict`](https://docs.python.org/2/lib
 
 class. Skill settings can also interact with a backend system to provide a graphical user interface (GUI) for Skills configuration. Skills configuration is done through metadata described in an optional
 
-`settingsmeta.json`
-
-file.
+`settingsmeta.json` or `settingsmeta.yaml` file.  
 
 ## How do I use Skill Settings?
 
@@ -79,15 +77,15 @@ _NOTE: The Skill directory should be owned by user `mycroft` and have group owne
 
 When a **Skill** is shut down - which usually happens when restarting a service, or reloading a **Skill** - it will create a `settings.json` file and store the dict data there. When a **Skill** loads, it reads the `settings.json` file and loads the settings into the **Skill**. Knowing this makes it easier to build and test **Skills**, because you can create the `settings.json` file first with settings in it, and use these in your Skills development, and then add in code later on that _writes_ to `settings.json`.
 
-## Web configurable Settings with `settingsmeta.json`
+## Web configurable Settings with `settingsmeta` file
 
 For some **Skills**, the User may need to configure them before they are usable. Examples include **Skills** where an API token or login is required.
 
-This functionality is provided by the `settingsmeta.json` file. This file defines settings and their values that the User can configure on [home.mycroft.ai](https://home.mycroft.ai). Mycroft will automatically synchronize the `settings.json` file with the settings that the User can configure on [home.mycroft.ai](https://home.mycroft.ai).
+This functionality is provided by the `settingsmeta` file. This file defines settings and their values that the User can configure on [home.mycroft.ai](https://home.mycroft.ai). Mycroft will automatically synchronize the `settings.json` file with the settings that the User can configure on [home.mycroft.ai](https://home.mycroft.ai).
 
-To use this feature, you need to have a `settingsmeta.json` file in the root directory of the **Skill**. The `settingsmeta.json` file _must_ follow a specific structure.
+To use this feature, you need to have a `settingsmeta.json` or `settingsmeta.yaml` file in the root directory of the **Skill**. The `settingsmeta` file _must_ follow a specific structure.
 
-Below is an example of this structure from the `pianobar-skill`. You can see the [code for this **Skill**](https://github.com/ethanaward/pianobar-skill) - it has excellent example on how to use web configurable **Skill Settings**.
+Below is a JSON example of this structure from the `pianobar-skill`. You can see the [code for this **Skill**](https://github.com/ethanaward/pianobar-skill) - it has excellent example on how to use web configurable **Skill Settings**.
 
 ```json
 {
@@ -115,7 +113,26 @@ Below is an example of this structure from the `pianobar-skill`. You can see the
     }
 }
 ```
-### More information on the `settingsmeta.json` file
+Here is the same set of settings, as it would be configured with YAML:
+
+```yaml
+name: Pandora
+skillMetadata:
+   sections:
+      - name: Login
+        fields:
+          - name: email
+            type: email
+            label: Email
+            value: ""
+          - name: password
+            type: password
+            label: Password
+            value: ""
+```
+### More information on the `settingsmeta` file
+
+You may use JSON or YAML to define your `settingsmeta` file. We recommend YAML, as most people find it easier to work with.
 
 #### name (String)
 The display name for this **Skill Setting** block. This will be shown on the [home.mycroft.ai](https://home.mycroft.ai) Skills page. The `name` can be multiple words, but should display on a single line.
