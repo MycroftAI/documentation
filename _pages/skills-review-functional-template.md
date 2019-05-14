@@ -33,7 +33,7 @@ Check that the Skill installs using voice commands. Mycroft will get the user to
 > ```
 
 - [ ] **Settings**  
-If Skill includes a `settingsmeta.json` file - are the settings well laid out? Does the placeholder text make sense? This can also be checked on [home.mycroft.ai/#/skill](https://home.mycroft.ai/#/skill)
+If Skill includes a `settingsmeta` file - are the settings well laid out? Does the placeholder text make sense? This can also be checked on [home.mycroft.ai/#/skill](https://home.mycroft.ai/#/skill)
 
 >
 
