@@ -21,6 +21,4 @@ This update gives us the base we need to continue adding functionality to Mycrof
 
 You can expect a more stable connection between Home and your device, Single Sign-On to more Mycroft web properties, deeper integrations with the Marketplace, a fresh visual interface, and even some new features.
 
-Once the update is complete, we hope you'll explore the new site and try some of the new features. If you run into any issues or have any comments, please let us know below.
-
-&nbsp;
+Once the update is complete, we hope you'll explore the new site and try some of the new features. If you run into any issues or have any comments, please let us know <a href="https://community.mycroft.ai/t/scheduled-maintenance-mycroft-and-mycroft-home/6616" target="_blank" rel="noopener noreferrer">on this forum post</a>.
