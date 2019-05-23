@@ -101,7 +101,8 @@ Class name: FeedTheCorgiSkill
 Repo name: feed-the-corgi-skill
 
 Looks good? (Y/n) Y
-Enter a one line description for your skill (ie. Orders fresh pizzas from the store): Reminds you to feed your poor starving Corgi
+Enter a one line description for your skill (ie. Orders fresh pizzas from the store): 
+- Reminds you to feed your poor starving Corgi
 Enter a long description:
 > Every 24 hours, Mycroft will send you a reminder to feed your Corgi, and tell you what your Corgi was fed the previous day, so you can provide a different delicious meal for your precious Corgi.
 >
@@ -111,6 +112,18 @@ Enter some example phrases to trigger your skill:
 - Remind me to feed the Corgi at 5pm
 -
 Enter author: YourGitHubUserName
+
+Categories define where the skill will display in the Marketplace. It must be one of the following: 
+Daily, Configuration, Entertainment, Information, IoT, Music & Audio, Media, Productivity, Transport. 
+Enter the primary category for your skill: 
+- Daily
+Enter additional categories (optional):
+- Productivity
+- 
+Enter tags to make it easier to search for your skill (optional):
+- Dogs
+- 
+
 Would you like to create a GitHub repo for it? (Y/n) Y
 === GitHub Credentials ===
 Username: YourGitHubUserName
@@ -327,5 +340,4 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 ## Join our Skills Authoring Community
 
-[Join other Skill Authors in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills). 
-
+[Join other Skill Authors in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
