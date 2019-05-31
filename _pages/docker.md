@@ -39,7 +39,7 @@ Mycroft is available for `Docker`. You have two options for a `Docker` installat
 
 This documentation assumes the following:  
 
-* You have already installed `Docker` on your machine based on the operating syste you are running.
+* You have already installed `Docker` on your machine based on the operating system you are running.
 
 ## Getting Started
 
