@@ -18,15 +18,15 @@ It is vital that Mycroft Skills exhibit high quality, and are well tested to enc
 ## Overview
  
 The process consists of 6 stages:
-1. Submitting your Skill
-2. Automatic testing
-3. Review by Skill Testing Team
+1. [Submitting your Skill](https://mycroft.ai/documentation/skills/skills-acceptance-process/#1-submitting-your-skill)
+2. [Automatic testing](https://mycroft.ai/documentation/skills/skills-acceptance-process/#2-automatic-testing-of-skills)
+3. [Review by Skill Testing Team](https://mycroft.ai/documentation/skills/skills-acceptance-process/#3-review-by-skill-testing-team)
    - Code Review
    - Information Review
    - Functional Review
-4. Review by Mycroft AI
-5. Deployment
-6. Promotion
+4. [Review by Mycroft AI](https://mycroft.ai/documentation/skills/skills-acceptance-process/#4-review-by-mycroft-ai)
+5. [Deployment](https://mycroft.ai/documentation/skills/skills-acceptance-process/#5-deployment)
+6. [Promotion](https://mycroft.ai/documentation/skills/skills-acceptance-process/#6-promotion)
 
 ## Submission
 ### 1. Submitting your Skill
