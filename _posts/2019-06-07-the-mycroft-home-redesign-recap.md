@@ -5,7 +5,7 @@ author: Chris Veilleux
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/the-mycroft-home-redesign-recap/
+  http://mycroft.ai/blog/the-mycroft-home-redesign-recap/
 published: true
 post_date: 2019-06-07 16:00:06
 ---
