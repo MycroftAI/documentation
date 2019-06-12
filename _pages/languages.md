@@ -1,7 +1,7 @@
 ---
 ID: 42297
 post_title: Mycroft in other languages
-author: Kris Gesling
+author: Kathy Reid
 post_excerpt: >
   Learn about foreign language support in
   Mycroft, and how to approach configuring
@@ -10,15 +10,15 @@ layout: page
 permalink: >
   http://mycroft.ai/documentation/languages/
 published: true
-post_date: 2019-06-12 10:59:07
+post_date: 2019-06-10 10:59:07
 ---
 # Mycroft in other languages
 
 In order to support other languages, several components have to be in place in the end to end [Mycroft Voice Stack](https://mycroft.ai/voice-stack-introduction/). Adding language support for Mycroft means that each of those components has to support the new language. This page walks you what has to be done for each of the elements.
 
-> **Important note:**   
+_**Important note:**   
 At present English is the only officially supported language.  
-Using a language other than English will require at least some editing via the commandline, and likely general troubleshooting. Adding support for a new language is a significant undertaking; it is complex and will require some development and Linux system administration knowledge.
+Using a language other than English will require at least some editing via the commandline, and likely general troubleshooting. Adding support for a new language is a significant undertaking; it is complex and will require some development and Linux system administration knowledge._
 
 For Mycroft to be usable in a language we need to look at six components.
 1. [Language setting](#1-language-setting): To inform each of the following components which language we are using, we must set our overall language setting.
@@ -26,7 +26,7 @@ For Mycroft to be usable in a language we need to look at six components.
 3. [Speech to Text](#3-speech-to-text-stt): Mycroft is designed to be modular, so you can choose which Speech to Text engine you use. You need to find and configure a Speech to Text engine for your language.
 4. [Text to Speech](#4-text-to-speech-tts): Again, Mycroft is designed to be modular, so you can choosen which Text to Speech engine you use. You need to find and configure a Text to Speech engine for your language.
 5. [Skills](#5-skills): To support a language, a Skill must have `vocab` and `dialog` entries for that language.
-6. [Mycroft Core](#6-mycroft-core---lingua-franca-library): To support a new language, `mycroft-core` needs to have supporting files added to the [Lingua Franca library](https://github.com/MycroftAI/lingua-franca).
+6. [Mycroft Core](#6-mycroft-core-lingua-franca-library): To support a new language, `mycroft-core` needs to have supporting files added to the [Lingua Franca library](https://github.com/MycroftAI/lingua-franca).
 
 ## 1. Language setting
 Your primary language is set within your `mycroft.conf` file. Full [mycroft.conf documentation](https://mycroft.ai/documentation/mycroft-conf/) is also available. To set your default language edit your `~/.mycroft/mycroft.conf` file. This might look like:
@@ -108,7 +108,7 @@ the JSON configuration should look like this:
         "type": "service_account",
         "project_id": "xxxxxxxxxx",
         "private_key_id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "private_key": "-----BEGIN PRIVATE KEY-----\nxxxxxxxxxxxxxxxx\n-----END PRIVATE KEY-----\n",
+        "private_key": "-----BEGIN PRIVATE KEY-----nxxxxxxxxxxxxxxxxn-----END PRIVATE KEY-----n",
         "client_email": "xxxx@xxxx.iam.gserviceaccount.com",
         "client_id": "xxxxxxxxxxxxxxxxxxxxx",
         "auth_uri": "https://accounts.google.com/o/oauth2/auth",
