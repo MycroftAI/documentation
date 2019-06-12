@@ -14,12 +14,13 @@ post_date: 2019-06-10 10:59:07
 ---
 # Mycroft in other languages
 
-In order to support other languages, several components have to be in place in the end to end [Mycroft Voice Stack](https://mycroft.ai/voice-stack-introduction/). Adding language support for Mycroft means that each of those components has to support the new language. This page walks you what has to be done for each of the elements.
+In order to support other languages, several components have to be in place in the end to end [Mycroft Voice Stack](https://mycroft.ai/voice-stack-introduction/). Adding language support for Mycroft means that each of those components has to support the new language. This page walks you what has to be done for each of the elements. 
 
-_**Important note:**   
-At present English is the only officially supported language.  
-Using a language other than English will require at least some editing via the commandline, and likely general troubleshooting. Adding support for a new language is a significant undertaking; it is complex and will require some development and Linux system administration knowledge._
+At present English is the only officially supported language. Using a language other than English will require at least some editing via the commandline, and likely general troubleshooting. If you are not familiar with Mycroft's configuration files, please see our [dedicated documentation for `mycroft.conf`](https://mycroft.ai/documentation/mycroft-conf/). 
 
+Adding support for a new language is a significant undertaking. It is complex and will require some development and Linux system administration knowledge.
+
+## Overview
 For Mycroft to be usable in a language we need to look at six components.
 1. [Language setting](#1-language-setting): To inform each of the following components which language we are using, we must set our overall language setting.
 2. [Wake Word](#2-wake-word): When you Speak 'Hey Mycroft, do something', you are invoking a Wake Word. To change your Wake Word to another language, you need to change the Wake Word phrase that is used.
@@ -29,7 +30,7 @@ For Mycroft to be usable in a language we need to look at six components.
 6. [Mycroft Core](#6-mycroft-core-lingua-franca-library): To support a new language, `mycroft-core` needs to have supporting files added to the [Lingua Franca library](https://github.com/MycroftAI/lingua-franca).
 
 ## 1. Language setting
-Your primary language is set within your `mycroft.conf` file. Full [mycroft.conf documentation](https://mycroft.ai/documentation/mycroft-conf/) is also available. To set your default language edit your `~/.mycroft/mycroft.conf` file. This might look like:
+Your primary language is set within your `mycroft.conf` file. Setting this at the user level `~/.mycroft/mycroft.conf` file might look like:
 ```json
 {
   "max_allowed_core_version": 19.2,
