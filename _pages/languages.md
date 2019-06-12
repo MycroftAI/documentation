@@ -64,7 +64,7 @@ Unfortunately, STT engines aren't available for every language in the world.
 
 We recommend that you request your language at [Mozilla's Common Voice project](https://voice.mozilla.org/en/languages).
 
-### Setting your STT engine in `mycroft.conf`
+### Setting your STT engine
 
 Locate your `mycroft.conf` file, and open it for editing on the Linux command line, using a tool like `vi` or `nano`.
 
@@ -156,7 +156,7 @@ Unfortunately, TTS engines aren't available for every language in the world.
 
 If you would like to build a TTS for your language, then we recommend you check out [Mimic Recording Studio](https://mycroft.ai/documentation/mimic-recording-studio/). Mimic Recording Studio facilitates the recording of phrases based on a _corpus_, and the recordings can be used to train a voice with the `mimic2` TTS software.
 
-### Setting your TTS engine in `mycroft.conf` to specify a different language for TTS
+### Setting your TTS engine
 
 Locate your `mycroft.conf` file, and open it for editing on the Linux command line, using a tool like `vi` or `nano`.
 
