@@ -10,7 +10,7 @@ published: true
 post_date: 2019-06-13 01:59:09
 ---
 <h1>Internationalization (i18n) Team</h1>
-The Internationalization (i18n) Team provide strategic guidance and oversight of the internationalization of Mycroft AI. This includes governance of <a href="https://translate.mycroft.ai">Mycroft Translate</a>, <a href="https://github.com/MycroftAI/lingua-franca">Lingua Franca</a> our text parsing and formatting library, and informing the continued development of all <a href="https://mycroft.ai/initiatives/">Mycroft technologies</a> to better meet the needs of our global Community.
+The Internationalization (i18n) Team provide strategic guidance and oversight of the internationalization of Mycroft AI. This includes the moderation of <a href="https://translate.mycroft.ai">Mycroft Translate</a>, and informing the continued development of <a href="https://github.com/MycroftAI/lingua-franca">Lingua Franca</a> our text parsing and formatting library and other <a href="https://mycroft.ai/initiatives/">Mycroft technologies</a> to better meet the needs of our global Community.
 
 <em>To find out more about using Mycroft in languages other than English, see our <a href="https://mycroft.ai/documentation/languages/">languages documentation.</a></em>
 <h3>Now Recruiting</h3>
