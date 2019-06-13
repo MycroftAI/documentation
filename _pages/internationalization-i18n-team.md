@@ -14,7 +14,7 @@ The Internationalization (i18n) Team provide strategic guidance and oversight of
 
 <em>To find out more about using Mycroft in languages other than English, see our <a href="https://mycroft.ai/documentation/languages/">languages documentation.</a></em>
 <h3>Now Recruiting</h3>
-We are now recruiting for the first i18n Team. Nominations are open to any Mycroft Community member that meets the requirements listed below.
+We are now recruiting for the first i18n Team.
 <h4>Requirements</h4>
 Nominating members must:
 <ul>
