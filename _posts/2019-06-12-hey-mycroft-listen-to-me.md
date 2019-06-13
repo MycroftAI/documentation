@@ -5,7 +5,7 @@ author: Nate Tomasi
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/hey-mycroft-listen-to-me/
+  http://mycroft.ai/blog/hey-mycroft-listen-to-me/
 published: true
 post_date: 2019-06-12 16:00:49
 ---
