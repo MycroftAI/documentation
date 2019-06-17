@@ -17,6 +17,7 @@ post_date: 2018-11-16 07:27:11
   * [CPS_match_query_phrase](#cps-match-query-phrase)
   * [CPS_start](#cps-start)
   * [Example implementation of `CommonPlaySkill`](#example-implementation-of-commonplayskill)
+  * [Technical Documentation](#technical-documentation)
   * [Where to go for more assistance](#where-to-go-for-more-assistance)
 
 
@@ -176,6 +177,9 @@ Which simply becomes
 ```
 
 The complete source code can be found [here](https://github.com/forslund/common-play-tutorial)
+
+## Technical Documentation
+More information on the Common Play Framework can be found in the [Mycroft Technical Documentation](https://mycroft-core.readthedocs.io/en/master/source/mycroft.html#commonplayskill-class).
 
 ## Where to go for more assistance
 
