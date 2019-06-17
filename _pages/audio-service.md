@@ -17,6 +17,7 @@ post_date: 2017-12-03 01:42:34
   * [More technical information](#more-technical-information)
   * [The backends](#the-backends)
   * [PulseAudio features](#pulseaudio-features)
+  * [AudioService Technical Documentation](#audioservice-technical-documentation)
 
 The audio service handles playback and queueing of tracks. The `mycroft-core` distribution of Mycroft includes a _Playback Skill_ which can be used to control playback after it has been started. This means that playback only needs to be started in the **Skill**. Controlling playback can then be done through the _Playback Skill_.
 
@@ -36,7 +37,7 @@ Then in the `initialize()` method of your **Skill**, instantiate an `AudioServic
 
 ```python
     def initialize(self):
-        self.audio_service = AudioService(self.emitter)
+        self.audio_service = AudioService(self.bus)
 
         #Other initialize code
         [...]
@@ -92,3 +93,6 @@ The audio service hooks into the PulseAudio controls and can mute playback of so
     "pulseaudio": "mute"
   }
 ```
+
+## AudioService Technical Documentation
+More information on AudioService methods can be found in the [Mycroft Technical Documentation](https://mycroft-core.readthedocs.io/en/master/source/mycroft.html#audioservice-class).
