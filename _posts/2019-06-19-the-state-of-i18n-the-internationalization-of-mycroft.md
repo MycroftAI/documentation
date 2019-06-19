@@ -5,7 +5,7 @@ author: Kris Gesling
 post_excerpt: ""
 layout: post
 permalink: >
-  https://mycroft.ai/blog/the-state-of-i18n-the-internationalization-of-mycroft/
+  http://mycroft.ai/blog/the-state-of-i18n-the-internationalization-of-mycroft/
 published: true
 post_date: 2019-06-19 10:00:20
 ---
