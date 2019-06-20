@@ -134,7 +134,7 @@ Using the default "Hey Mycroft" as an example, this might look like:
 ```
 
 ### Precise Wake Word Models
-Training your own custom Wake Word model for Precise requires at least functional experience using Linux and an understanding of basic machine learning concepts. It requires time and training data. 
+Training your own custom Wake Word model for Precise requires at least functional experience using the Linux commandline and an understanding of basic machine learning concepts. It requires time and training data. 
 
 An instructional overview is available on the [Precise repository on Github](https://github.com/MycroftAI/mycroft-precise/wiki/Training-your-own-wake-word#how-to-train-your-own-wake-word). Community member El-tocino has also provided a short write up of their [tips for getting the best result](https://github.com/el-tocino/localcroft/blob/master/precise/Precise.md).
 
