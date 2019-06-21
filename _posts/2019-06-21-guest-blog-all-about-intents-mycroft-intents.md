@@ -102,8 +102,8 @@ class LearnPortugueseSkill(MycroftSkill):
         os.system(get_sentence)
         play_mp3(self.path_translated_file)
 
-	@intent_file_handler("hello_in_portuguese.intent")
-	def handle_hello(self, message):
+@intent_file_handler("hello_in_portuguese.intent")
+def handle_hello(self, message):
         # wait=True makes mycroft wait until speech is finished playing before continuing
         self.speak_dialog("hello_in_portuguese", wait=True)
         self.speak_portuguese("olá")
