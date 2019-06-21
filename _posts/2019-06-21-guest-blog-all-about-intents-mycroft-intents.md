@@ -240,8 +240,8 @@ For this I will be using <a href="https://pypi.org/project/PyDictionary/" target
 I always recommend you use Padatious, but sometimes regex is a necessary evil and <a href="https://pythex.org/" target="_blank" rel="noopener noreferrer">Pythex</a> is useful to check your regex.
 
 Make a file named <code>dictionary.rx</code>
-<pre>explain (?P.*) in portuguese
-  meaning of (?P.*) in portuguese
+<pre>explain (?P<SampleWord>.*) in portuguese
+  meaning of (?P<SampleWord>.*) in portuguese
 </pre>
 Just require and use the regex capture group as a normal Adapt keyword.
 <pre>@intent_handler(IntentBuilder("ExplainInPortugueseIntent")
