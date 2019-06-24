@@ -37,7 +37,7 @@ The Mycroft Skills Kit - `msk` - is a Python-based utility that has been created
 
 _NOTE: `msk` has only been tested on Linux systems_
 
-`msk` comes pre installed on the [Mark 1](https://mycroft.ai/documentation/mark-1), [Picroft](https://mycroft.ai/documentation/picroft) and in the `venv` of the Mycroft `git` installation as of v18.2.9b. The utility is self-contained and can be installed separately using `pip` by typing the following line into the terminal on your Linux system:
+`msk` comes pre installed on the [Mark 1](https://mycroft.ai/documentation/mark-1), [Picroft](https://mycroft.ai/documentation/picroft) and the `git` installation of Mycroft-core. The utility is self-contained and can be installed separately using `pip` by typing the following line into the terminal on your Linux system:
 
 ```bash
 pip3 install msk
@@ -72,7 +72,7 @@ To check that the installation was successful `msk --help` can be run and should
 
 
 ## Usage
-
+The normal commands for `msk` are:
 ```bash
 msk create
 msk create-test /opt/mycroft/skills/myskill
@@ -80,15 +80,15 @@ msk upload /opt/mycroft/skills/myskill
 msk upgrade /opt/mycroft/skills/myskill
 ```
 
+If using the built-in installation of `msk` with a Mycroft device or Mycroft git installation, use `mycroft-msk` in place of `msk`:
+```bash
+mycroft-msk create
+mycroft-msk create-test /opt/mycroft/skills/myskill
+mycroft-msk upload /opt/mycroft/skills/myskill
+mycroft-msk upgrade /opt/mycroft/skills/myskill
+```
+
 ## Create
-
-Please see this ASCII Cinema video to see the process for using `msk create`:
-
-[![msk-create](https://images2.imgbox.com/ab/25/6kbqKbXh_o.gif)](https://asciinema.org/a/X5pWLPOpsMLUPYp5kgswNm5Zu?speed=1.5)
-
-If using the msk delivered with the `mycroft-core` `git` installation, the Python _virtual environment_ needs to be activated. From the `mycroft-core` directory run
-
-`$ source .venv/bin/activate`
 
 Next, we use the `msk create` function. You will be prompted to enter the required information to help set up your **Skill**.
 
@@ -173,7 +173,7 @@ Please see this ASCII Cinema video to see the process for using `msk create-test
 
 [![msk-create-test](https://images2.imgbox.com/9c/c8/gLRS7xuL_o.gif)](https://asciinema.org/a/Ayzaj6QJbKGBfs2eIQWr11idH?speed=1.5)
 
-As before if the mycroft-core github installation is used make sure to activate the mycroft-core Python _virtual environment_. From the mycroft-core folder
+As before if the mycroft-core github installation is used make sure to use `mycroft-msk` or activate the mycroft-core Python _virtual environment_. From the mycroft-core folder
 
 `$ source .venv/bin/activate`
 
@@ -218,7 +218,7 @@ Please see this ASCII Cinema video to see the process for using `msk upload`:
 
 [![msk-upload](https://images2.imgbox.com/35/5d/BCVxUxuh_o.gif)](https://asciinema.org/a/Bp1sORVnmVz9wYjZXfempTPoO?speed=1.5)
 
-If using the msk delivered with the mycroft-core github installation the Python _virtual environment_ needs to be activated. From the mycroft-core directory run
+If using the msk delivered with the mycroft-core github installation be sure to use `mycroft-msk` or activate the mycroft-core Python _virtual environment_. From the mycroft-core folder
 
 `$ source .venv/bin/activate`
 
