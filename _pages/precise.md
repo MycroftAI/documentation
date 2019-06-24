@@ -115,26 +115,10 @@ Unlike other accurate hotword detection products, Mycroft Precise is fully open 
 
 The simplest method to add a custom Wake Word to Mycroft is to use PocketSphinx. This is done by defining the phonemes that make up the Wake Word, so does not require any training.
 
-First decide what your wake word will be and get the string of phonemes using the [CMU Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). Then add a `hotwords` block to your [`mycroft.conf` file](https://mycroft.ai/documentation/mycroft-conf/).
-
-Using the default "Hey Mycroft" as an example, this might look like:
-
-```json
-{
-  "max_allowed_core_version": 19.2,
-  "hotwords": {
-    "hey mycroft": {
-      "module": "pocketsphinx",
-      "phonemes": "HH EY . M AY K R AO F T",
-      "threshold": 1e-90,
-      "lang": "en-us"
-    }
-  }
-}
-```
+First decide what your wake word will be and get the string of phonemes using the [CMU Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). Then add a `hotwords` block to your [`mycroft.conf` file](https://mycroft.ai/documentation/mycroft-conf/#changing-your-wake-word).
 
 ### Precise Wake Word Models
-Training your own custom Wake Word model for Precise requires at least functional experience using the Linux commandline and an understanding of basic machine learning concepts. It requires time and training data. 
+Training your own custom Wake Word model for Precise requires at least functional experience using the Linux commandline and an understanding of basic machine learning concepts. It requires time and training data.
 
 An instructional overview is available on the [Precise repository on Github](https://github.com/MycroftAI/mycroft-precise/wiki/Training-your-own-wake-word#how-to-train-your-own-wake-word). Community member El-tocino has also provided a short write up of their [tips for getting the best result](https://github.com/el-tocino/localcroft/blob/master/precise/Precise.md).
 
