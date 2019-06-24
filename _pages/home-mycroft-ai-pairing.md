@@ -24,7 +24,7 @@ Pairing is also used for services that require API authentication, such as
 * Weather Skill API and OpenWeather
 
 ## On this page
-- [Creating a home.mycroft.ai account](#creating-a-homemycroftai-account)
+- [Creating a home.mycroft.ai account](#creating-a-home-mycroft-ai-account)
 - [Adding a Device](#adding-a-device)
 	- [Getting a Registration Code](#getting-a-registration-code)
 		- [Mark 1](#mark-1)
@@ -32,7 +32,7 @@ Pairing is also used for services that require API authentication, such as
 		- [Linux](#linux)
 	- [Pairing your Device(s) to your home.mycroft.ai account](#pairing-your-devices-to-your-homemycroftai-account)
 	- [Where is my identity information stored in the Mycroft code?](#where-is-my-identity-information-stored-in-the-mycroft-code)
-- [home.mycroft.ai device settings](#homemycroftai-device-settings)
+- [home.mycroft.ai device settings](#home-mycroft-ai-device-settings)
 	- [Devices](#devices)
 	- [Preferences](#preferences)
 	- [Defaults](#defaults)
