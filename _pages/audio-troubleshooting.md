@@ -13,9 +13,10 @@ post_date: 2018-03-27 08:51:07
 
   * [Troubleshooting Audio](#troubleshooting-audio)
     + [Missing pulseaudio](#missing-pulseaudio)
-    + [Microphone can't hear me or CLI show no change in meter while speaking](#mic-cant-hear-me)
+    + [Microphone can't hear me or CLI show no change in meter while speaking](#microphone-cant-hear-me-or-cli-show-no-change-in-meter-while-speaking)
     + [Dev instance audio test](#dev-instance-audio-test)
     + [Test your mic](#test-your-mic)
+	+ [Microphone working but Mycroft does not trigger on Wake Word](#microphone-working-but-mycroft-does-not-trigger-on-wake-word)
   * [Pulseaudio settings](#pulseaudio-settings)
     + [Show current settings and info](#show-current-settings-and-info)
     + [List available input devices](#list-available-input-devices)
@@ -57,6 +58,9 @@ The following command will start recording for ten seconds on the default input 
 
 You can play it back to hear what is recorded with
 `aplay test.wav`
+
+#### Microphone working but Mycroft does not trigger on Wake Word
+If the microphone has been verified to be working using the audiotest. It may be that the mic level is set too high. Reduce the mic level between 25-50% and attempt to speak again.
 
 ## Pulseaudio settings
 
