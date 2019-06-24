@@ -11,19 +11,19 @@ post_date: 2017-12-13 07:51:51
 ---
 # mycroft.conf and mycroft_web_cache.json
 
-- [mycroft.conf and mycroft_web_cache.json](#mycroftconf-and-mycroftwebcachejson)
-	- [What is `mycroft.conf`?](#what-is-mycroftconf)
-	- [What is `mycroft_web_cache.json`?](#what-is-mycroftwebcachejson)
-	- [How are `mycroft.conf` and `mycroft_web_cache.json` updated?](#how-are-mycroftconf-and-mycroftwebcachejson-updated)
-	- [Where is the `mycroft.conf` file stored?](#where-is-the-mycroftconf-file-stored)
-	- [A look at the inside of `mycroft.conf`](#a-look-at-the-inside-of-mycroftconf)
-	- [Where is the `mycroft_web_cache.json` file stored?](#where-is-the-mycroftwebcachejson-file-stored)
-	- [A look at the inside of `mycroft_web_cache.json`](#a-look-at-the-inside-of-mycroftwebcachejson)
+- [mycroft.conf and mycroft_web_cache.json](#mycroft-conf-and-mycroftwebcache-json)
+	- [What is `mycroft.conf`?](#what-is-mycroft-conf)
+	- [What is `mycroft_web_cache.json`?](#what-is-mycroftwebcache-json)
+	- [How are `mycroft.conf` and `mycroft_web_cache.json` updated?](#how-are-mycroft-conf-and-mycroftwebcache-json-updated)
+	- [Where is the `mycroft.conf` file stored?](#where-is-the-mycroft-conf-file-stored)
+	- [A look at the inside of `mycroft.conf`](#a-look-at-the-inside-of-mycroft-conf)
+	- [Where is the `mycroft_web_cache.json` file stored?](#where-is-the-mycroftwebcache-json-file-stored)
+	- [A look at the inside of `mycroft_web_cache.json`](#a-look-at-the-inside-of-mycroftwebcache-json)
 - [Advanced Configuration Options](#advanced-configuration-options)
 	- [Changing your Wake Word](#changing-your-wake-word)
 		- [About Phonemes](#about-phonemes)
 		- [Other Settings](#other-settings)
-		- [Adding Wake Word Settings to `mycroft.conf`](#adding-wake-word-settings-to-mycroftconf)
+		- [Adding Wake Word Settings to `mycroft.conf`](#adding-wake-word-settings-to-mycroft-conf)
 		- [Telling Mycroft to pick up the new settings](#telling-mycroft-to-pick-up-the-new-settings)
 
 ### What is `mycroft.conf`?
