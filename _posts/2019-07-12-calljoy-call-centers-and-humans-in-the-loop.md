@@ -11,7 +11,7 @@ permalink: >
 published: true
 post_date: 2019-07-12 11:38:08
 ---
-<span style="font-weight: 400;">One of the experiences that caused me to found Mycroft was a short call I had with the Wichita Hyatt.  I had a rather complex question so when the automated attendant answered </span><a href="https://www.conversational.com/3-reasons-people-hate-automated-phone-systems/"><span style="font-weight: 400;"> I prepared myself for frustration</span></a><span style="font-weight: 400;">.  As it turned out, however, theie automated attendant they was capable of dealing with my problem without human intervention.</span>
+<span style="font-weight: 400;">One of the experiences that caused me to found Mycroft was a short call I had with the Wichita Hyatt.  I had a rather complex question so when the automated attendant answered </span><a href="https://www.conversational.com/3-reasons-people-hate-automated-phone-systems/"><span style="font-weight: 400;"> I prepared myself for frustration</span></a><span style="font-weight: 400;">.  As it turned out, however, their automated attendant they was capable of dealing with my problem without human intervention.</span>
 
 <span style="font-weight: 400;"><a href="https://mycroft.ai/wp-content/uploads/2019/07/Downtown_ICT_Night350.jpg"><img class="size-full wp-image-48502 alignright" src="https://mycroft.ai/wp-content/uploads/2019/07/Downtown_ICT_Night350.jpg" alt="" width="350" height="232" /></a>This experience hinted that true conversational AI was just around the corner.  Someone was going to build one, why not me?</span>
 
