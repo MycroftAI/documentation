@@ -221,18 +221,6 @@ from mycroft.util.log import getLogger
 
 This section of code imports the required _libraries_. These libraries will be required on every **Skill**. Your skill may need to import additional libraries.
 
-```python
-__author__ = 'eward'
-```
-
-This section defines the _author_ of the **Skill**. This value is usually set to the GitHub username of the author.
-
-```python
-LOGGER = getLogger(__name__)
-```
-
-This section starts logging of the **Skill** in the `mycroft-skills.log` file. If you remove this line, your **Skill** will not log any errors, and you will have difficulty debugging.
-
 The
 
 `class`
