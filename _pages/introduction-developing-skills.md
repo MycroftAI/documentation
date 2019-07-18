@@ -88,7 +88,7 @@ Now, we'll made a new repository for your **Skill**. The new repository has to f
 
 [Example Skill Template](https://github.com/MycroftAI/mycroft-skills/tree/19.02/00__skill_template)  
 
-Copy the Template Skill into a new directory. Here, we've called the new Skill `skill-training`, but your **Skill** will have a different name.
+Copy the Template Skill into a new directory. Here, we've called the new Skill `skill-hello-world`, but your **Skill** will have a different name.
 
 ```
 $ cp -R 00__skill_template skill-hello-world
