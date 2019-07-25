@@ -12,6 +12,7 @@ post_date: 2017-12-02 22:35:25
 
 - [Mycroft for Linux](#mycroft-for-linux)
     + [Prerequisites](#prerequisites)
+	  - [System Requirements](#system-requirements)
     + [Getting Started](#getting-started)
       - [Installing via git clone](#installing-via-git-clone)
     + [Running Mycroft for Linux](#running-mycroft-for-linux)
@@ -46,6 +47,12 @@ This section of documentation assumes the following:
 * That you are comfortable issuing basic Linux commands from a **terminal** or **shell prompt**
 * That your device has a built-in microphone and speakers, or, you have successfully connected microphone and speakers to your device.
 * That your device already has `git` installed and working. If you don't already have `git` installed, [here is a great set of instructions](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
+
+#### System Requirements
+
+Whilst Mycroft runs on a Raspberry Pi 3B or above, this is achieved through a custom release of Raspbian Lite significantly reducing the system overhead by not running a desktop environment and other unnecessary processes. Mycroft will run on older hardware however your experience may vary significantly. 
+
+Our [Precise wake word engine](https://github.com/MycroftAI/mycroft-precise#mycroft-precise) also relies upon TensorFlow which requires a CPU that supports the AVX instruction set. To ensure your system supports AVX open a terminal and run: `grep avx /proc/cpuinfo`. AVX should be listed under the flags for each CPU core. If nothing is returned it is most likely that your system does not support AVX. Technical users may be able to build an older version of TensorFlow (1.13) from source using the [instructions provided on their website](https://www.tensorflow.org/install/source). Alternatively you may use Mycroft with the PocketSphinx wake word engine.
 
 ### Getting Started
 
