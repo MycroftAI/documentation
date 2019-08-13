@@ -82,3 +82,19 @@ If you chose not to add the executables to `$PATH` during installation, you can 
 ### Start automatically on boot of Ubuntu
 Run this command to make Mycroft start up on boot:
 `echo "mycroft-start debug" >> ~/.bashrc`
+
+## (Optional) SSH Setup
+If you want to be able to start the VM in headless mode and interact through SSH you will need to add port forwarding to the network configuration. You will also need OpenSSH which can be installed with `sudo apt-get install openssh-server`.
+
+First get the IP address of the VM with `ifconfig | grep inet`. Should be 10.0.2.x. Then open the VM settings, go to the Network tab, expand the Advanced section and click the Port Forwarding button. Then enter these settings:
+
+```
+Name: SSH
+Protocol: TCP
+Host IP: 127.0.0.1
+Host Port: 2222
+Guest IP: 10.0.2.15 # replace this with the IP address you just obtained
+Guest Port: 22
+```
+
+Reboot and VM and you will be able to SSH in with this command: `ssh username@localhost -p 2222`. You can also select the Start dropdown menu to start the VM in Headless mode.
