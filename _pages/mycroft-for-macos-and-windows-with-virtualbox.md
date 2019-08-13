@@ -93,7 +93,7 @@ Name: SSH
 Protocol: TCP
 Host IP: 127.0.0.1
 Host Port: 2222
-Guest IP: 10.0.2.15
+Guest IP: 10.0.2.15 # replace this with the IP address you just obtained
 Guest Port: 22
 ```
 
