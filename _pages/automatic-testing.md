@@ -135,7 +135,7 @@ print("Initiated by the test runner")
 And the message regular expression from the `regex/en-us` directory is:
 ```add (?P.+) to (?P.+) list$```
 
-The `AddTaksToListKeyword` is `Add`, defined in the `vocab/en-us` directory.
+The `AddTaskToListKeyword` is `Add`, defined in the `vocab/en-us` directory.
 
 With this knowledge, let us walk through the test case.
 
@@ -168,7 +168,7 @@ The `expected_dialog` takes the dialog file (without the `.dialog`) in the same 
 
 In the example above the ```changed_context``` and ```assert``` actually does the same thing, it is mentioned as an example only. The ```assert``` shows the internal rule format (see the next paragraph).
 
-A test case succeeds if all test are passed for the **Intent**. And in that case the Integration Test Runner immediately continues to the next test. If all tests have not succeeded 30 seconds after the **Utterance**, the test is failed. In the example above the timeout is reduced to 10 seconds to catch errors faster.
+A test case succeeds if all tests are passed for the **Intent**. And in that case the Integration Test Runner immediately continues to the next test. If all tests have not succeeded 30 seconds after the **Utterance**, the test is failed. In the example above the timeout is reduced to 10 seconds to catch errors faster.
 
 ## The internal rule format
 
