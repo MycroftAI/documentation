@@ -57,7 +57,7 @@ The Integration Test Runner is part of the `mycroft-core` package. It consists o
 
 The most interesting files from a Skill Author's perspective are:
 
-The ```runner.py``` is can be copied to the Skill Author's working directory, where the **Skill's** ```__init__.py``` file exists or invoked directly with the skill path as argument. Running ```runner.py``` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill**, it will search any subdirectory.
+The ```runner.py``` can be copied to the Skill Author's working directory, where the **Skill's** ```__init__.py``` file exists or invoked directly with the skill path as argument. Running ```runner.py``` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill**, it will search any subdirectory.
 
 The ```discover_test.py``` is the Python file that runs integration tests on all **Skills** in ```/opt/mycroft/skills```. It is intended for debugging that all your tests are found by the test runner.
 
@@ -83,7 +83,7 @@ ls test/intent
 050.GetToken.intent.json
 ```
 
-A test case file understand the following `JSON` keywords:
+A test case file understands the following `JSON` keywords:
 
 | Keyword | Description |
 |---------|-------------|
