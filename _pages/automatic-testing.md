@@ -57,7 +57,7 @@ The Integration Test Runner is part of the `mycroft-core` package. It consists o
 
 The most interesting files from a Skill Author's perspective are:
 
-The ```runner.py``` is can be copied to the Skill Author's working directory, where the **Skill's** ```__init__.py``` file exists or invoked directly with the skill path as argument. Running ```runner.py``` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill**, it will search any subdirectory.
+The ```runner.py``` can be copied to the Skill Author's working directory, where the **Skill's** ```__init__.py``` file exists or invoked directly with the skill path as argument. Running ```runner.py``` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill**, it will search any subdirectory.
 
 The ```discover_test.py``` is the Python file that runs integration tests on all **Skills** in ```/opt/mycroft/skills```. It is intended for debugging that all your tests are found by the test runner.
 
@@ -83,7 +83,7 @@ ls test/intent
 050.GetToken.intent.json
 ```
 
-A test case file understand the following `JSON` keywords:
+A test case file understands the following `JSON` keywords:
 
 | Keyword | Description |
 |---------|-------------|
@@ -135,7 +135,7 @@ print("Initiated by the test runner")
 And the message regular expression from the `regex/en-us` directory is:
 ```add (?P.+) to (?P.+) list$```
 
-The `AddTaksToListKeyword` is `Add`, defined in the `vocab/en-us` directory.
+The `AddTaskToListKeyword` is `Add`, defined in the `vocab/en-us` directory.
 
 With this knowledge, let us walk through the test case.
 
@@ -168,7 +168,7 @@ The `expected_dialog` takes the dialog file (without the `.dialog`) in the same 
 
 In the example above the ```changed_context``` and ```assert``` actually does the same thing, it is mentioned as an example only. The ```assert``` shows the internal rule format (see the next paragraph).
 
-A test case succeeds if all test are passed for the **Intent**. And in that case the Integration Test Runner immediately continues to the next test. If all tests have not succeeded 30 seconds after the **Utterance**, the test is failed. In the example above the timeout is reduced to 10 seconds to catch errors faster.
+A test case succeeds if all tests are passed for the **Intent**. And in that case the Integration Test Runner immediately continues to the next test. If all tests have not succeeded 30 seconds after the **Utterance**, the test is failed. In the example above the timeout is reduced to 10 seconds to catch errors faster.
 
 ## The internal rule format
 
