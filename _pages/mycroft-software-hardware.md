@@ -29,13 +29,13 @@ Mycroft is modular. Some components can be easily 'swapped out' for others:
 
 ### Wake Word detection
 
-A Wake Word is a phrase you use to tell Mycroft you're about to issue a command. By default this is `Hey Mycroft`, but you can configure your own **Wake Word** in your [Mycroft Home](https://home.mycroft.ai) account.
+A Wake Word is a phrase you use to tell Mycroft you're about to issue a command. By default, this is `Hey Mycroft`, but you can configure your own **Wake Word** in your [Mycroft Home](https://home.mycroft.ai) account.
 
 There are two technologies that Mycroft.AI currently uses for **Wake Word** detection:
 
 * [PocketSphinx](https://github.com/cmusphinx/pocketsphinx): PocketSphinx is part of the broader [CMUSphinx package](https://cmusphinx.github.io/), developed by [Carnegie Mellon University](https://www.cmu.edu). PocketSphinx is a lightweight speech recognition engine, specifically tuned for handheld and mobile devices.
 
-Because PocketSphinx is trained on English speech, your **Wake Word** currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well. 
+Because PocketSphinx is trained on English speech, your **Wake Word** currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well.
 
 * [Precise](https://mycroft.ai/documentation/precise): Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what *words* you want to use for your **Wake Word**. Instead, you train it on *sounds*. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise has been the default **Wake Word** Listener for each Mycroft Device since mid-March 2018. Prior to this date, PocketSphinx was the default.
 
@@ -69,7 +69,7 @@ An **intent parser** can then match the *intent* with a suitable **Skill** to ha
 
 ### Text to Speech
 
-Text to Speech (TTS) software takes written text, such as as in text files on a computer, and uses a *voice* to *speak* the text. Text to Speech can have different voices, dependenting on the TTS engine used.
+Text to Speech (TTS) software takes written text, such as text files on a computer, and uses a *voice* to *speak* the text. Text to Speech can have different voices, depending on the TTS engine used.
 
 * [Mimic](https://github.com/MycroftAI/mimic): Mycroft's default text to speech (TTS) engine, based on CMU's Flite (Festival Lite)
 
@@ -114,7 +114,7 @@ While alternative tools are readily available, and easy to use, they come with s
 
 Mycroft is open source. This means that the code used by Mycroft can be inspected, copied, modified, and contributed back to the Mycroft community for everyone to enjoy.
 
-Tools like Amazon™ Alexa™, Google Assistant™, Microsoft Cortana™ or Apple's Siri™ are _black boxes_. That is, you can't look inside them, and see what they do - or importantly - _how_ they do it. And while they may allow you some flexibility to create new **Skills**, these are usually strictly controlled. Mycroft gives you freedom, flexibility and control over how your want _your_ voice assistant to work. Mycroft is AI for _everyone_.
+Tools like Amazon™ Alexa™, Google Assistant™, Microsoft Cortana™ or Apple's Siri™ are _black boxes_. That is, you can't look inside them, and see what they do - or importantly - _how_ they do it. And while they may allow you some flexibility to create new **Skills**, these are usually strictly controlled. Mycroft gives you freedom, flexibility and control over how you want _your_ voice assistant to work. Mycroft is AI for _everyone_.
 
 Mycroft code is licensed under the [Apache 2 open source license](https://en.wikipedia.org/wiki/Apache_License).
 
