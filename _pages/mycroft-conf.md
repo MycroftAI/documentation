@@ -580,12 +580,12 @@ For the "Yo Mike" example we started with, an example `~/.mycroft/mycroft.conf` 
   "max_allowed_core_version": 19.2,
   "listener": {
     "wake_word": "yo mike",
-    "phonemes": "Y OW . M AY K .",
     "threshold": 1e-18
   },
   "hotwords": {
     "yo mike": {
-      "module": "pocketsphinx"
+      "module": "pocketsphinx",
+      "phonemes": "Y OW . M AY K ."
     }
   }
 }
