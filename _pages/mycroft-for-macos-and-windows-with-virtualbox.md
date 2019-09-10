@@ -18,7 +18,6 @@ _**TL;DR** - Get an Ubuntu VM up and running, install alsa and pulseaudio, set u
 - [Installing Ubuntu in VirtualBox](#installing-ubuntu-in-virtualbox)
 - [Installing Mycroft](#installing-mycroft)
 - [Running Mycroft](#running-mycroft)
-  + [Start automatically on boot of Ubuntu](#start-automatically-on-boot-of-ubuntu)
 
 Thanks to Mycroft Community Member (Mycroft SysAdmin in a former life) [@arron](https://github.com/aatchison) for getting this working!
 
@@ -78,10 +77,6 @@ Or to start it and launch the CLI interface:
 `mycroft-start debug`
 
 If you chose not to add the executables to `$PATH` during installation, you can manually run `./start-mycroft.sh` from your `mycroft-core` directory.
-
-### Start automatically on boot of Ubuntu
-Run this command to make Mycroft start up on boot:
-`echo "mycroft-start debug" >> ~/.bashrc`
 
 ## (Optional) SSH Setup
 If you want to be able to start the VM in headless mode and interact through SSH you will need to add port forwarding to the network configuration. You will also need OpenSSH which can be installed with `sudo apt-get install openssh-server`.
