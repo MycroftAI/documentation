@@ -21,21 +21,22 @@
     * [Picroft](configuration/troubleshooting/specific-platforms/picroft.md)
   * [Getting more support]()
 
-* Skill Development
-  * [Introduction](skill-dev/introduction.md)
-  * [Mycroft Skills Kit](skill-dev/msk.md)
-  * [Your First Skill](skill-dev/your-first-skill.md)
-  * [Skill Types]()
-    - [Fallback Skill]()
-    - [Common Play Framework]()
-    - [Common IoT Framework]()
+## Skill Development
+* [Introduction](skill-dev/introduction.md)
+* [Mycroft Skills Kit](skill-dev/msk.md)
+* [Your First Skill](skill-dev/your-first-skill.md)
+* [Next Steps]()
   * [Intent types](skill-dev/intent-types.md)
   * [Skill Settings](skill-dev/skill-settings.md)
-  * [Marketplace Submission](skill-dev/marketplace.md)
-    * [Skill README.md](skill-dev/skill-readme-md.md)
-    * [Skills Acceptance Process](skill-dev/marketplace-submission/skills-acceptance-process.md)
+* [Skill Types]()
+  - [Fallback Skill]()
+  - [Common Play Framework]()
+  - [Common IoT Framework]()
+* [Marketplace Submission](skill-dev/marketplace.md)
+  * [Skill README.md](skill-dev/skill-readme-md.md)
+  * [Skills Acceptance Process](skill-dev/marketplace-submission/skills-acceptance-process.md)
 
-Mycroft Technologies
+## Mycroft Technologies
 * [Adapt](technologies/adapt.md)
 * [Padatious]()
 * [Precise]()
