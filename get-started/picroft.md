@@ -1,40 +1,40 @@
 ---
-ID: 32434
-post_title: Picroft
-author: Kathy Reid
-post_excerpt: ""
+post_excerpt: ''
 layout: page
-permalink: http://mycroft.ai/documentation/picroft/
+author: Kathy Reid
+permalink: 'http://mycroft.ai/documentation/picroft/'
+post_date: '2017-12-02T22:35:25.000Z'
 published: true
-post_date: 2017-12-02 22:35:25
+post_title: Picroft
+ID: 32434
 ---
+
 # Picroft
 
-* [Picroft](#picroft)
-	* [Quick links](#quick-links)
-	* [About Picroft](#about-picroft)
-	* [What do I need to run Picroft?](#what-do-i-need-to-run-picroft?)
-		* [Hardware requirements and compatibility chart](#hardware-requirements-and-compatibility-chart)
-	* [Getting started with Picroft](#getting-started-with-picroft)
-		* [Downloading the disk image](#downloading-the-disk-image)
-		* [Burn the disk image to the Micro SD card](#burn-the-disk-image-to-the-micro-sd-card)
-		* [Seeing the output from Picroft](#seeing-the-output-from-picroft)
-	* [Connecting Picroft to a wired or WiFi network](#connecting-picroft-to-a-wired-or-wifi-network)
-		* [To connect to a wired network](#to-connect-to-a-wired-network)
-		* [To connect to a WiFi network](#to-connect-to-a-wifi-network)
-		* [Booting up Picroft](#booting-up-picroft)
-	* [`ssh` into Picroft](#`ssh`-into-picroft)
-		* [Setting up Picroft](#setting-up-picroft)
-	* [Pairing the Picroft](#pairing-the-picroft)
-	* [Maintaining your Picroft](#maintaining-your-picroft)
-		* [How to reimage a Picroft Device](#how-to-reimage-a-picroft-device)
-		* [Keeping your Picroft updated](#keeping-your-picroft-updated)
-	* [Important file locations for Picroft](#important-file-locations-for-picroft)
-	* [Useful commands for Picroft](#useful-commands-for-picroft)
-	* [Building your own Picroft image](#building-your-own-picroft-image)
-	* [Next steps](#next-steps)
-		* [Using the GPIO pins on the Raspberry Pi 3](#using-the-gpio-pins-on-the-raspberry-pi-3)
-
+* [Picroft](picroft.md#picroft)
+  * [Quick links](picroft.md#quick-links)
+  * [About Picroft](picroft.md#about-picroft)
+  * [What do I need to run Picroft?](picroft.md#what-do-i-need-to-run-picroft?)
+    * [Hardware requirements and compatibility chart](picroft.md#hardware-requirements-and-compatibility-chart)
+  * [Getting started with Picroft](picroft.md#getting-started-with-picroft)
+    * [Downloading the disk image](picroft.md#downloading-the-disk-image)
+    * [Burn the disk image to the Micro SD card](picroft.md#burn-the-disk-image-to-the-micro-sd-card)
+    * [Seeing the output from Picroft](picroft.md#seeing-the-output-from-picroft)
+  * [Connecting Picroft to a wired or WiFi network](picroft.md#connecting-picroft-to-a-wired-or-wifi-network)
+    * [To connect to a wired network](picroft.md#to-connect-to-a-wired-network)
+    * [To connect to a WiFi network](picroft.md#to-connect-to-a-wifi-network)
+    * [Booting up Picroft](picroft.md#booting-up-picroft)
+  * [`ssh` into Picroft](picroft.md#%60ssh%60-into-picroft)
+    * [Setting up Picroft](picroft.md#setting-up-picroft)
+  * [Pairing the Picroft](picroft.md#pairing-the-picroft)
+  * [Maintaining your Picroft](picroft.md#maintaining-your-picroft)
+    * [How to reimage a Picroft Device](picroft.md#how-to-reimage-a-picroft-device)
+    * [Keeping your Picroft updated](picroft.md#keeping-your-picroft-updated)
+  * [Important file locations for Picroft](picroft.md#important-file-locations-for-picroft)
+  * [Useful commands for Picroft](picroft.md#useful-commands-for-picroft)
+  * [Building your own Picroft image](picroft.md#building-your-own-picroft-image)
+  * [Next steps](picroft.md#next-steps)
+    * [Using the GPIO pins on the Raspberry Pi 3](picroft.md#using-the-gpio-pins-on-the-raspberry-pi-3)
 
 ## Quick links
 
@@ -56,57 +56,57 @@ As of December 2018, Picroft includes built-in support for the Google AIY voice 
 
 ## What do I need to run Picroft?
 
-In order to set up Picroft, you will need to have a basic understanding of the Linux (Raspbian) command line, be comfortable connecting devices to WiFi networks, and have a little patience when setting up audio devices.
+In order to set up Picroft, you will need to have a basic understanding of the Linux \(Raspbian\) command line, be comfortable connecting devices to WiFi networks, and have a little patience when setting up audio devices.
 
 ### Hardware requirements and compatibility chart
 
-| Model                    | Level of support                            |
-|--------------------------|---------------------------------------------|
-| Pi3 B+                   | Supported                                   |
-| Pi3 B                    | Supported                                   |
-| Pi 2                     | Functions very slowly, limited wifi support |
-| Pi B                     | Not supported                               |
-| Pi A+                    | Not supported                               |
-| Pi Zero, Zero W, Zero WH | Not supported                               |
+| Model | Level of support |
+| :--- | :--- |
+| Pi3 B+ | Supported |
+| Pi3 B | Supported |
+| Pi 2 | Functions very slowly, limited wifi support |
+| Pi B | Not supported |
+| Pi A+ | Not supported |
+| Pi Zero, Zero W, Zero WH | Not supported |
 
 As well as a Raspberry Pi, you will also need:
 
 * Micro SD card, 8GB or larger _highly_ recommended
 * Power adapter with micro USB for your country. [The Raspberry Pi Foundation has some excellent recommendations](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
-* An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi 3 _or_ a USB Speaker  (_Bluetooth on Picroft is difficult to get working and is not recommended_)
+* An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi 3 _or_ a USB Speaker  \(_Bluetooth on Picroft is difficult to get working and is not recommended_\)
 * USB Microphone
 
 Installing Picroft may be easier if you also have:
 
 * USB keyboard
 * Monitor or TV connected via HDMI cable
-* Ethernet cable (if not connecting via WiFi)
+* Ethernet cable \(if not connecting via WiFi\)
 
 While we don't currently offer a Picroft kit with microphone and speaker to purchase [from our Shop](https://mycroft.ai/shop), we've provided links below to components we know to work "out of the box".
 
 _NOTE: We do not gain any profit or benefit from the links below, they are provided only to assist you in acquiring compatible components._
 
-| Type of component       | Model           | Status | Where to buy                                                                                                                                                                                                                                                                                                                                                                                                               | Notes |
-|-------------------------|-----------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| Microphone              | Blue Snowball   | Working | United States [Amazon.com](https://www.amazon.com/Blue-Snowball-Microphone-Textured-White/dp/B000EOPQ7E), Australia [JB Hifi](https://www.jbhifi.com.au/blue-mic/blue-snowball-ice-usb-microphone-blackout/770060/), United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Blue-Microphones-Snowball-Omnidirectional-Microphone/dp/B000EOPQ7E)                                                                              |       |
-| Microphone (and camera) | PS3 Eye         | Working | United States [Amazon.com](https://www.amazon.com/Sony-PlayStation-Camera-Bulk-Packaging-Pc/dp/B0072I2240)                                                                                                                                                                                                                                                                                                                    | An excellent introductory model if you are just checking Picroft out.       |
-| Microphone and speaker  | Jabra Speak 410 | [Problems reported](https://community.mycroft.ai/t/no-audio-output-on-picroft-with-jabra-410/3415) | United States - [Amazon.com](https://www.amazon.com/Jabra-PHS001U-Speakerphone-Retail-Packaging/dp/B007SHJIO2/ref=sr_1_3?ie=UTF8&qid=1545394940&sr=8-3&keywords=jabra+speak+410), Australia - [ITSPOT.com.au](https://www.itspot.com.au/jabra-speak-410-uc-speakerphone-p466658.html?ref=ShopBot), United Kingdom - [Amazon.co.uk](https://www.amazon.co.uk/Jabra-Conference-Speakerphone-optimised-Microsoft/dp/B004ELA7TA)   |  Premium microphone and speaker combination.     |
-| Speaker                 | Logitech Z50    | Working | United States [Amazon.com](https://www.amazon.com/Z50-smartphone-tablet-laptop-Grey-x/dp/B00EZ9XLF8), Australia - [Good Guys](https://www.thegoodguys.com.au/logitech-computer-speaker-z50-blue-2453262 ),  United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Logitech-Z50-Speaker-Ocean-Blue/dp/B00FSF2ODS )                                                                                                           |       |
+| Type of component | Model | Status | Where to buy | Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| Microphone | Blue Snowball | Working | United States [Amazon.com](https://www.amazon.com/Blue-Snowball-Microphone-Textured-White/dp/B000EOPQ7E), Australia [JB Hifi](https://www.jbhifi.com.au/blue-mic/blue-snowball-ice-usb-microphone-blackout/770060/), United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Blue-Microphones-Snowball-Omnidirectional-Microphone/dp/B000EOPQ7E) |  |
+| Microphone \(and camera\) | PS3 Eye | Working | United States [Amazon.com](https://www.amazon.com/Sony-PlayStation-Camera-Bulk-Packaging-Pc/dp/B0072I2240) | An excellent introductory model if you are just checking Picroft out. |
+| Microphone and speaker | Jabra Speak 410 | [Problems reported](https://community.mycroft.ai/t/no-audio-output-on-picroft-with-jabra-410/3415) | United States - [Amazon.com](https://www.amazon.com/Jabra-PHS001U-Speakerphone-Retail-Packaging/dp/B007SHJIO2/ref=sr_1_3?ie=UTF8&qid=1545394940&sr=8-3&keywords=jabra+speak+410), Australia - [ITSPOT.com.au](https://www.itspot.com.au/jabra-speak-410-uc-speakerphone-p466658.html?ref=ShopBot), United Kingdom - [Amazon.co.uk](https://www.amazon.co.uk/Jabra-Conference-Speakerphone-optimised-Microsoft/dp/B004ELA7TA) | Premium microphone and speaker combination. |
+| Speaker | Logitech Z50 | Working | United States [Amazon.com](https://www.amazon.com/Z50-smartphone-tablet-laptop-Grey-x/dp/B00EZ9XLF8), Australia - [Good Guys](https://www.thegoodguys.com.au/logitech-computer-speaker-z50-blue-2453262%20),  United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Logitech-Z50-Speaker-Ocean-Blue/dp/B00FSF2ODS%20) |  |
 
 ### A note on USB speaker/headphones/soundcards
 
-If mycroft audio output fails (No speech or audio) when using some sort of USB soundcard for output it might be worth trying to reset the play commandlines used by mycroft.
+If mycroft audio output fails \(No speech or audio\) when using some sort of USB soundcard for output it might be worth trying to reset the play commandlines used by mycroft.
 
 To accomplish this, edit `/home/pi/.mycroft/mycroft.conf` and insert
 
-```
+```text
   "play_wav_cmdline": "aplay %1",
   "play_mp3_cmdline": "mpg123 %1"
 ```
 
 If no other edits has been applied to the file it should look something like
 
-```json
+```javascript
 {
   "max_allowed_core_version": 18.8,
   "play_wav_cmdline": "aplay %1",
@@ -128,7 +128,7 @@ Next, the disk image needs to be burnt to the Micro SD card.
 
 The [Raspberry Pi official documentation provides an excellent tutorial](https://www.raspberrypi.org/documentation/installation/installing-images/) on this, using Etcher software. We recommend that you burn the Picroft image to the Micro SD card using Etcher.
 
-![Etcher SD card image burning tool](https://mycroft.ai/wp-content/uploads/2017/12/etcher-screenshot.png "Etcher SD card image burning tool")
+![Etcher SD card image burning tool](https://mycroft.ai/wp-content/uploads/2017/12/etcher-screenshot.png)
 
 If you prefer to use the Linux command line tool `dd` to burn the disk image instead, follow these instructions:
 
@@ -137,8 +137,8 @@ If you prefer to use the Linux command line tool `dd` to burn the disk image ins
 3. Identify the path where the MicroSD card is mounted by running the command `sudo fdisk -l`. You will be able to tell the path based on the storage size of the device.
 4. Keep a note of this - it will be something like `/dev/sdb1`
 5. Unmount the disk so that no other operation can write to the device while it is being imaged using the command `sudo umount /dev/sdb1`. Make sure to substitute for the location of your device.
-5. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitute the location of your device, and the path to the `.img` file you downloaded.
-6. This will take several minutes to run. The command prompt will return if successful, otherwise an error message will be displayed on your terminal.
+6. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitute the location of your device, and the path to the `.img` file you downloaded.
+7. This will take several minutes to run. The command prompt will return if successful, otherwise an error message will be displayed on your terminal.
 
 ### Seeing the output from Picroft
 
@@ -149,9 +149,9 @@ There are two ways to see the output from a Picroft **Device**:
 
 #### Connecting Picroft to a keyboard and monitor
 
-If you would like to see the output of Picroft on a monitor (rather than SSH'ing in to Picroft), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi.
+If you would like to see the output of Picroft on a monitor \(rather than SSH'ing in to Picroft\), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi.
 
-If you would like to connect a keyboard or mouse (rather than SSH'ing in to Picroft), connect them via the USB slots on the Raspberry Pi.
+If you would like to connect a keyboard or mouse \(rather than SSH'ing in to Picroft\), connect them via the USB slots on the Raspberry Pi.
 
 In our experience, we've found most monitors, keyboards and mice are plug-and-play - ie. you shouldn't have to install any additional drivers.
 
@@ -159,7 +159,7 @@ In our experience, we've found most monitors, keyboards and mice are plug-and-pl
 
 ### To connect to a wired network
 
-Simply plug the ethernet cable into the RJ45 (ethernet) socket on the RPi. Picroft will then attempt to connect to the network, and request a DHCP address.
+Simply plug the ethernet cable into the RJ45 \(ethernet\) socket on the RPi. Picroft will then attempt to connect to the network, and request a DHCP address.
 
 _You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
 
@@ -179,52 +179,52 @@ Next, we edit the `wpa_supplicant.conf` file. This file controls WiFi connection
 1. Type `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
 2. Using the down arrow key, navigate to the bottom of the file, and add credentials for your SSID
 
-```
+```text
     network={
             ssid="MyNetworkSSID"
             psk="mypassword"
     }
 ```
 
-3. Type `Ctrl + X` to exit and `Y` then `Enter` to save your changes.
-4. Type `sudo reboot now`
+1. Type `Ctrl + X` to exit and `Y` then `Enter` to save your changes.
+2. Type `sudo reboot now`
 
 _You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
 
-##### Manually configuring WPA2 Enterprise WiFi with MSCHAPV2 authentication
+**Manually configuring WPA2 Enterprise WiFi with MSCHAPV2 authentication**
 
 If you are on an enterprise network, your network security might use WPA2 with MSCHAPV2 authentication. Configuring Picroft to use MSCHAPV2 is similar to the above, but requires some additional steps.
 
 First, we need to generate a hash of your SSID's password.
 
-```
+```text
 echo -n your_password| iconv -t utf16le | openssl md4
 ```
 
-This will use the [NTLM hash](https://en.wikipedia.org/wiki/NT_LAN_Manager) which is a 16 bit MD4 hash.  Make sure to copy this as we will need it for later steps.
+This will use the [NTLM hash](https://en.wikipedia.org/wiki/NT_LAN_Manager) which is a 16 bit MD4 hash. Make sure to copy this as we will need it for later steps.
 
 Next, run the following commands:
 
-```
+```text
 cd /etc/wpa_supplicant
 sudo nano wpa_supplicant.conf
 ```
 
 Add the following to the bottom of the `wpa_supplicant.conf` file, replacing `ssid` with your SSID name, `identity` with your username and `password` with the hash generated earlier. Type `Ctrl + O` to save, then `Ctrl + x` to exit.
 
-```
+```text
 network={
     ssid="ssid network name"
-	priority=1
-	proto=RSN
-	key_mgmt=WPA-EAP
-	pairwise=CCMP
-	auth_alg=OPEN
-	eap=PEAP
-	identity="user_name"
-	password=hash:hash_key_here
-	phase1="peaplabel=0"
-	phase2="auth=MSCHAPV2"
+    priority=1
+    proto=RSN
+    key_mgmt=WPA-EAP
+    pairwise=CCMP
+    auth_alg=OPEN
+    eap=PEAP
+    identity="user_name"
+    password=hash:hash_key_here
+    phase1="peaplabel=0"
+    phase2="auth=MSCHAPV2"
 }
 ```
 
@@ -236,7 +236,7 @@ _You will need to connect to your router, or use other networking diagnostics, t
 
 _NOTE: Picroft cannot connect to WiFi networks that operate in the 5GHz band. You must select a WiFi network that operates in the 2.4GHz band._
 
-_NOTE: Picroft cannot connect to WiFi networks that operate on Channels 12 or 13 (2467MHz and 2472MHz frequencies). Please configure your SSID to use a different channel or frequency. These channels are often used in Germany and other European countries._
+_NOTE: Picroft cannot connect to WiFi networks that operate on Channels 12 or 13 \(2467MHz and 2472MHz frequencies\). Please configure your SSID to use a different channel or frequency. These channels are often used in Germany and other European countries._
 
 ### Booting up Picroft
 
@@ -244,7 +244,7 @@ Once you've burned the disk image to the Micro SD card, insert the Micro SD card
 
 Next, plug in the power and connect the Micro USB cable to the RPi. This "power on" the device.
 
-If you have a HDMI monitor connected,  you should start to see some output on screen.
+If you have a HDMI monitor connected, you should start to see some output on screen.
 
 If you're going to `ssh` into Picroft, do the following:
 
@@ -265,7 +265,7 @@ If not, you will need to know what IP address your Picroft has. You may need to 
 * The default password is `mycroft`, so enter this when prompted.
 * If you have successfully logged in via SSH you will see a command prompt like the one below:
 
-```
+```text
 $ ssh pi@192.168.0.13                 <-- in this case, the IP address was 192.168.0.13, your IP address may vary
 pi@192.168.0.13's password:
 
@@ -285,7 +285,7 @@ You are now connected to Picroft via SSH.
 
 On first boot, you will see a screen which looks similar to the one below:
 
-![Picroft initial boot screen](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-13-36.png "Picroft initial boot screen")
+![Picroft initial boot screen](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-13-36.png)
 
 Picroft will then ask you whether you would like to do the guided setup, or drop straight to a command line. If you are new to Picroft, we recommend that you complete the guided setup.
 
@@ -295,11 +295,11 @@ _NOTE: Audio output and audio input is the single most problematic part of Picro
 
 The guided setup will then ask you to select your audio output device, as shown below:
 
-![Picroft select audio output](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-17-42.png "Picroft select audio output")
+![Picroft select audio output](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-17-42.png)
 
-Enter the number `1`, `2`,  `3` or `4` corresponding to:
+Enter the number `1`, `2`, `3` or `4` corresponding to:
 
-```
+```text
 1) Speakers via 3.5mm output (aka 'audio jack' or 'headphone jack')
 2) HDMI audio (e.g. a TV or monitor with built-in speakers)
 3) USB audio (e.g. a USB soundcard or USB mic/speaker combo)
@@ -310,11 +310,11 @@ Next, test and adjust the volume. You may need to reboot your Picroft in order f
 
 The final step of the guided setup is microphone configuration. You will be asked to select your audio input device, as shown below:
 
-![Picroft select audio input](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-18-27.png "Picroft select audio input")
+![Picroft select audio input](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-18-27.png)
 
-Enter the number `1`, `2`,  `3` or `4` corresponding to:
+Enter the number `1`, `2`, `3` or `4` corresponding to:
 
-```
+```text
 1) PlayStation Eye (USB)
 2) Blue Snoball ICE (USB)
 3) Google AIY Voice HAT and microphone board (Voice Kit v1)
@@ -326,11 +326,11 @@ The guided setup will then do a microphone test to ensure your chosen microphone
 
 #### What can I do if the guided setup doesn't set my audio input or output device correctly?
 
-There are a few tricks that we know of to get your audio input or output device working correctly - however, these are somewhat technical and will require typing commands on the Linux command line interface (CLI).
+There are a few tricks that we know of to get your audio input or output device working correctly - however, these are somewhat technical and will require typing commands on the Linux command line interface \(CLI\).
 
-##### Alsamixer
+**Alsamixer**
 
-`alsamixer` is a utility provided by the ALSA sound system on Raspbian Stretch that allows you to select an audio playback (output) and input (capture) device.
+`alsamixer` is a utility provided by the ALSA sound system on Raspbian Stretch that allows you to select an audio playback \(output\) and input \(capture\) device.
 
 To run `alsamixer`, type `Ctrl +C` to exit the guided setup and you will be at the Linux command line. Type `alsamixer` as shown below:
 
@@ -340,23 +340,23 @@ To run `alsamixer`, type `Ctrl +C` to exit the guided setup and you will be at t
 
 You will see a screen similar to the one below, and may have different options depending on which audio devices you have connected.
 
-![Picroft alsamixer initial screen](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-12.png "Picroft alsamixer initial screen")
+![Picroft alsamixer initial screen](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-12.png)
 
 Different devices will have a different command key for choosing 'Capture' devices, in this case it is `F4`.
 
 If you do not see any capture devices, as shown below, then you may need to select a different sound card.
 
-![Picroft alsamixer no audio capture device](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-25.png "Picroft alsamixer no audio capture device")
+![Picroft alsamixer no audio capture device](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-25.png)
 
-To select a different sound card, follow the instructions on your version of `alsamixer`. In this case, the command key for choosing 'Select sound card' is `F6`.  Use the arrow keys on your keyboard to navigate up and down the list to choose your preferred soundcard.
+To select a different sound card, follow the instructions on your version of `alsamixer`. In this case, the command key for choosing 'Select sound card' is `F6`. Use the arrow keys on your keyboard to navigate up and down the list to choose your preferred soundcard.
 
-![Picroft alsamixer select sound card](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-52.png "Picroft alsamixer select sound card")
+![Picroft alsamixer select sound card](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-52.png)
 
 `alsamixer` usually has an option to see **all** capture and playback devices. In this case, the command key to see all devices is `F5`.
 
-![Picroft alsamixer show all audio capture and playback devices](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-06-09.png "Picroft alsamixer show all audio capture and playback devices")
+![Picroft alsamixer show all audio capture and playback devices](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-06-09.png)
 
-##### pulseaudio
+**pulseaudio**
 
 If `alsamixer` does not work for you, then you may have some success with `pulseaudio`. We've recently updated the Picroft repo to include `pulseaudio`, but if you haven't updated for a little while then you may need to manually install it.
 
@@ -405,13 +405,13 @@ Do you want to continue? [Y/n] Y
 
 Once the Picroft is connected to the internet, and you have run through the guided setup, Picroft will reboot. Picroft will boot into the `mycroft-cli-client` screen, and a **Registration Code** will be spoken, and will also be shown on the `mycroft-cli-client` screen, as shown below:
 
-![Picroft pairing](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-53-32.png "Picroft pairing")
+![Picroft pairing](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-20-23-53-32.png)
 
 [View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](http://mycroft.ai/documentation/home-mycroft-ai-pairing/).
 
 Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/) to get started. For example, you can ask questions like 'Tell me about Abraham Lincoln' - shown below:
 
-![Picroft basic commands](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-21-04-21-07.png "Picroft basic commands")
+![Picroft basic commands](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-21-04-21-07.png)
 
 ## Maintaining your Picroft
 
@@ -437,7 +437,7 @@ If you plan to do **Skills** development work, or other development work with Pi
 * `mycroft-core` - is located at `/home/pi/mycroft-core`
 * Logs - are located at `/var/log/mycroft/`
 * `mycroft.conf` - is located at `/home/mycroft/.mycroft/mycroft.conf`
-* Identity file (do not share) - is located at `/home/mycroft/.mycroft/identity/identity2.json`
+* Identity file \(do not share\) - is located at `/home/mycroft/.mycroft/identity/identity2.json`
 
 ## Useful commands for Picroft
 
@@ -448,7 +448,7 @@ There are several commands that are packaged into Picroft to help you with advan
 * `mycroft-mic-test`: This command re-runs the microphone test from the guided setup
 * `mycroft-msk`: This command runs the [Mycroft Skills Kit](https://mycroft.ai/documentation/skills/msk/)
 * `mycroft-msm`: This command runs the [Mycroft Skills Manager](https://mycroft.ai/documentation/msm/)
-* `mycroft-pip`: This command runs `pip` within the Mycroft Python `virtual environment` (`venv`). This is useful if you are installing dependencies for **Skills**.
+* `mycroft-pip`: This command runs `pip` within the Mycroft Python `virtual environment` \(`venv`\). This is useful if you are installing dependencies for **Skills**.
 * `mycroft-say-to`:  This command sends a command to Picroft, just like you had 'spoken' a command. This is useful if your microphone is not working.
 * `mycroft-setup-wizard`: This command re-runs the guided setup
 * `mycroft-skill-testrunner`: This command runs the `testrunner` - used to run unit tests for a **Skill**. This is useful if you are doing **Skills** development with Mycroft
@@ -458,8 +458,7 @@ There are several commands that are packaged into Picroft to help you with advan
 
 ## Building your own Picroft image
 
-The Picroft image building instructions can now be found on GitHub at;
-[https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image_recipe.md](https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image_recipe.md)
+The Picroft image building instructions can now be found on GitHub at; [https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image\_recipe.md](https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image_recipe.md)
 
 ## Next steps
 
@@ -471,7 +470,7 @@ For more help or ideas, consider joining our [Picroft channel on Mycroft Chat](h
 
 ### Using the GPIO pins on the Raspberry Pi 3
 
-One common question we get is - "Can I use the [general purpose input output pins (GPIO)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi 3 with Picroft?".
+One common question we get is - "Can I use the [general purpose input output pins \(GPIO\)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi 3 with Picroft?".
 
 The answer is 'Yes' - but this requires some additional configuration.
 
@@ -484,3 +483,4 @@ You also need to install some additional packages:
 `sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
 
 This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill.
+

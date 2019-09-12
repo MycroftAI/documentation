@@ -1,45 +1,46 @@
 ---
-ID: 32430
-post_title: Mark 1
-author: Kathy Reid
-post_excerpt: ""
+post_excerpt: ''
 layout: page
-permalink: http://mycroft.ai/documentation/mark-1/
+author: Kathy Reid
+permalink: 'http://mycroft.ai/documentation/mark-1/'
+post_date: '2017-12-02T22:35:25.000Z'
 published: true
-post_date: 2017-12-02 22:35:25
+post_title: Mark 1
+ID: 32430
 ---
+
 # Mark 1
 
-- [Mark 1](#mark-1)
-    + [Prerequisites](#prerequisites)
-    + [Getting Started](#getting-started)
-      - [Getting Mark 1 connected to the internet using a network cable](#getting-mark-1-connected-to-the-internet-using-a-network-cable)
-      - [Getting Mark 1 connected to the internet using Wifi](#getting-mark-1-connected-to-the-internet-using-wifi)
-    + [Pairing the Mark 1](#pairing-the-mark-1)
-    + [Mark 1 menu options](#mark-1-menu-options)
-    + [Mark 1 boot sequence](#mark-1-boot-sequence)
-    + [Hardware information](#hardware-information)
-    + [Common tasks performed on the Mark 1](#common-tasks-performed-on-the-mark-1)
-      - [Installing Skills on the Mark 1](#installing-skills-on-the-mark-1)
-      - [Connecting to the Mark 1 via SSH](#connecting-to-the-mark-1-via-ssh)
-      - [Setting up SSH to the Mark 1 using SSH keys](#setting-up-ssh-to-the-mark-1-using-ssh-keys)
-      - [Accessing the command line interface (CLI) of the Mark 1](#accessing-the-command-line-interface-cli-of-the-mark-1)
-      - [Enabling the LEARN function](#enabling-the-learn-function)
-      - [Upgrading to the latest version from a 2017 Mark 1](#upgrading-to-the-latest-version-from-a-2017-mark-1)
-      - [How to reimage a Mark 1 Device](#how-to-reimage-a-mark-1-device)
-        * [Prerequisites](#prerequisites-2)
-        * [Reimaging steps](#reimaging-steps)
-        * [What should I do if reimaging doesn't work?](#what-should-i-do-if-reimaging-doesnt-work)
-      - [Keeping your Mark 1 Device updated](#keeping-your-mark-1-device-updated)
-	  - [Downgrading your Mark 1 Device to a lower version](#downgrading-your-mark-1-device-to-a-lower-version)
-    + [Common issues on Mark 1 Devices](#common-issues-on-mark-1-devices)
-    + [Hardware Hacking your Mark 1 Device](#hardware-hacking-your-mark-1-device)
+* [Mark 1](mark-1.md#mark-1)
+  * [Prerequisites](mark-1.md#prerequisites)
+  * [Getting Started](mark-1.md#getting-started)
+    * [Getting Mark 1 connected to the internet using a network cable](mark-1.md#getting-mark-1-connected-to-the-internet-using-a-network-cable)
+    * [Getting Mark 1 connected to the internet using Wifi](mark-1.md#getting-mark-1-connected-to-the-internet-using-wifi)
+  * [Pairing the Mark 1](mark-1.md#pairing-the-mark-1)
+  * [Mark 1 menu options](mark-1.md#mark-1-menu-options)
+  * [Mark 1 boot sequence](mark-1.md#mark-1-boot-sequence)
+  * [Hardware information](mark-1.md#hardware-information)
+  * [Common tasks performed on the Mark 1](mark-1.md#common-tasks-performed-on-the-mark-1)
+    * [Installing Skills on the Mark 1](mark-1.md#installing-skills-on-the-mark-1)
+    * [Connecting to the Mark 1 via SSH](mark-1.md#connecting-to-the-mark-1-via-ssh)
+    * [Setting up SSH to the Mark 1 using SSH keys](mark-1.md#setting-up-ssh-to-the-mark-1-using-ssh-keys)
+    * [Accessing the command line interface \(CLI\) of the Mark 1](mark-1.md#accessing-the-command-line-interface-cli-of-the-mark-1)
+    * [Enabling the LEARN function](mark-1.md#enabling-the-learn-function)
+    * [Upgrading to the latest version from a 2017 Mark 1](mark-1.md#upgrading-to-the-latest-version-from-a-2017-mark-1)
+    * [How to reimage a Mark 1 Device](mark-1.md#how-to-reimage-a-mark-1-device)
+      * [Prerequisites](mark-1.md#prerequisites-2)
+      * [Reimaging steps](mark-1.md#reimaging-steps)
+      * [What should I do if reimaging doesn't work?](mark-1.md#what-should-i-do-if-reimaging-doesnt-work)
+    * [Keeping your Mark 1 Device updated](mark-1.md#keeping-your-mark-1-device-updated)
+    * [Downgrading your Mark 1 Device to a lower version](mark-1.md#downgrading-your-mark-1-device-to-a-lower-version)
+  * [Common issues on Mark 1 Devices](mark-1.md#common-issues-on-mark-1-devices)
+  * [Hardware Hacking your Mark 1 Device](mark-1.md#hardware-hacking-your-mark-1-device)
 
 The Mark 1 device is an **Enclosure** for Mycroft, based on Raspberry Pi. It is designed as a reference hardware device, and is able to be easily modified, hacked and extended.
 
 [Mark 1 devices are now available in the Mycroft Shop](https://mycroft.ai/shop/?add-to-cart=31440).
 
-### Prerequisites
+## Prerequisites
 
 This section of documentation assumes the following:
 
@@ -47,9 +48,9 @@ This section of documentation assumes the following:
 * That you are comfortable connecting devices to WiFi networks
 * That you are comfortable issuing basic Linux commands
 
-### Getting Started
+## Getting Started
 
-When you received your Mark 1, you would have received a [blue-colored Getting Started guide (PDF, 290Kb)](https://mycroft.ai/wp-content/uploads/2017/06/Mark_1_User_Guide.pdf).
+When you received your Mark 1, you would have received a [blue-colored Getting Started guide \(PDF, 290Kb\)](https://mycroft.ai/wp-content/uploads/2017/06/Mark_1_User_Guide.pdf).
 
 Connect the Mark 1 power supply to a power outlet, and to the Mark 1 device. _NOTE: If you are in a country other than the USA, you will need a power adapter to convert from the US power supply the Mark 1 ships with. Alternatively, use a 12V, 1A power supply for your country's power outlets._
 
@@ -57,19 +58,19 @@ The Mark 1 will boot up. It will then Speak:
 
 `"I need to be connected to the internet. Plug in a network cable, or connect to the SSID Mycroft with the password 12345678 and go to http://start.mycroft.ai"`
 
-#### Getting Mark 1 connected to the internet using a network cable
+### Getting Mark 1 connected to the internet using a network cable
 
 Plug the Mark 1 into your router using an ethernet cable. The network should be automatically detected.
 
-#### Getting Mark 1 connected to the internet using Wifi
+### Getting Mark 1 connected to the internet using Wifi
 
 Using your computer or a mobile device, connect to the Wifi SSID `MYCROFT` using the password "12345678". Once you are connected to this SSID, go to the web page [http://start.mycroft.ai](https://start.mycroft.ai). A list of available WiFi networks will be presented. Select the WiFi network that you wish to connect the Mark 1 to, and enter the WiFi password. Mark 1 will attempt to connect to the WiFi network.
 
 _NOTE: Mark 1 cannot connect to WiFi networks that operate in the 5GHz band. You must select a WiFi network that operates in the 2.4GHz band._
 
-_NOTE: Mark 1 cannot connect to WiFi networks that operate on Channels 12 or 13 (2467MHz and 2472MHz frequencies). Please configure your SSID to use a different channel or frequency._
+_NOTE: Mark 1 cannot connect to WiFi networks that operate on Channels 12 or 13 \(2467MHz and 2472MHz frequencies\). Please configure your SSID to use a different channel or frequency._
 
-### Pairing the Mark 1
+## Pairing the Mark 1
 
 Once the Mark 1 is connected to the internet, a **Registration Code** will be Spoken, and displayed on the Mark 1's LED panel.
 
@@ -77,53 +78,41 @@ Once the Mark 1 is connected to the internet, a **Registration Code** will be Sp
 
 Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/).
 
-### Mark 1 menu options
+## Mark 1 menu options
 
-You can access the Mark 1 menu by pressing the top button for two seconds. Turn the top button anti-clockwise to scroll through menu options, then press the button to select that option.  
+You can access the Mark 1 menu by pressing the top button for two seconds. Turn the top button anti-clockwise to scroll through menu options, then press the button to select that option.
 
 The available menu options are:
 
-* ILLUM: This option allows you to control the brightness of Mark 1's Eyes, on a scale of 0 (eyes off) to 30 (maximum brightness). The *Auto* setting will set the brightness to 30, which is the maximum setting.
-
+* ILLUM: This option allows you to control the brightness of Mark 1's Eyes, on a scale of 0 \(eyes off\) to 30 \(maximum brightness\). The _Auto_ setting will set the brightness to 30, which is the maximum setting.
 * WIFI: This option allows you to connect or re-connect Mark 1 to your WiFi. This option is useful if your router changes, or your WiFi password changes, or you're moving your Mark 1 to a new location.
-
 * REBOOT: This option will reboot your Mark 1. _NOTE: The reboot is immediate_. This option is useful if you're experiencing issues with your Mark 1, or may be required as part of troubleshooting measures.
-
 * OFF: This option will put your Mark 1 into Standby Mode. You won't be able to use the **Wake Word** or make **Utterances** while Mark 1 is in Standby Mode. To wake Mark 1 up from Standby, press the top button for two seconds.
-
 * TEST: This option will immediately run a test sequence on your Mark 1. This option may be required as part of troubleshooting measures. To move through each of the tests, press the top button. Continue pressing the top button to exit the test sequence.
-
 * SSH: This option allows you to enable [SSH](https://en.wikipedia.org/wiki/Secure_Shell) connections to the Mark 1 Device, or to block SSH if it's enabled.
-
 * LEARN: This option allows you to enable the Learn functionality within Mycroft. If you've also opted-in on home.mycroft.ai, and Learn functionality is enabled, then Mycroft will record your voice when Speaking the **Wake Word** and **Utterances**. This data is then used anonymously to _train_ Mycroft to better recognize the **Wake Word** and **Utterances**.
-
 * RESET: This option resets Mark 1 back to a factory default state. You may need to do this for troubleshooing, or if you're giving your Mark 1 to someone else. _NOTE: If you're resetting your Mark 1, remember to remove the Device from home.mycroft.ai so that the Pairing is removed also_
+* DEMO: If this option is selected, Mark 1 will provide a short demonstration of functionality, whilst channelling his secret desire to be Eminem :-\)
 
-* DEMO: If this option is selected, Mark 1 will provide a short demonstration of functionality, whilst channelling his secret desire to be Eminem :-)
+## Mark 1 boot sequence
 
-### Mark 1 boot sequence
+When you power on your Mark 1, the eyes on the Mark 1 will go through a series of color changes. They are explained in more detail here.
 
-When you power on your Mark 1, the eyes on the Mark 1 will go through a series of color changes. They are explained in more detail here. 
+* NO EYES SHOWN: If your Mark 1 is not showing any LED pixels light up on its eyes when the power is plugged in, this means that the Arduino that powers the Neopixel eyes hasn't booted correctly. Try unplugging the power, waiting 30 seconds and then plugging the power back in.
+* GREY SPINNEY EYES: On first boot, Mark 1 will show grey spinning eyes. During this time, both the Raspberry Pi 3 board, and the Arduino used to control the [Neopixel](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels) eyes are powering up. If your Mark 1 is stuck at this stage, try unplugging the power, waiting 30 seconds and then plugging the power back in.
+* SOLID GREY EYES: After around 10 seconds, the grey spinning eyes may turn into solid grey eyes. During this time, the Raspberry Pi 3 board is writing code to the Arduino board that controls the Neopixel eyes.
+* SOLID YELLOW EYES: On boot, Mark 1 will check that its software is up to date. First, it will do a [network time protocol](https://en.wikipedia.org/wiki/Network_Time_Protocol) sync to ensure that the system clock is synchronised, during which you will see the word `<<< SYNC <<<` appear on the LED display. Next, Mark 1 will attempt to update the Skills that are installed on the **Device**. If your Mark 1 gets stuck at this stage, it is likely an issue with updating software or Skills. A reboot may assist, but if it does not then please contact us via [Chat](https://mycroft.ai/chat) or the [Forum](https://community.mycroft.ai) and we can assist further.
+* SOLID BLUE EYES \(or color you have eyes set to in your home.mycroft.ai preferences\): after Mark 1 has finished booting and is ready for your voice commands, it will show solid blue eyes, or the solid color you have chosen in your home.mycroft.ai preferences.
 
-* NO EYES SHOWN: If your Mark 1 is not showing any LED pixels light up on its eyes when the power is plugged in, this means that the Arduino that powers the Neopixel eyes hasn't booted correctly. Try unplugging the power, waiting 30 seconds and then plugging the power back in. 
+## Hardware information
 
-* GREY SPINNEY EYES: On first boot, Mark 1 will show grey spinning eyes. During this time, both the Raspberry Pi 3 board, and the Arduino used to control the [Neopixel](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels) eyes are powering up. If your Mark 1 is stuck at this stage, try unplugging the power, waiting 30 seconds and then plugging the power back in. 
+## Common tasks performed on the Mark 1
 
-* SOLID GREY EYES: After around 10 seconds, the grey spinning eyes may turn into solid grey eyes. During this time, the Raspberry Pi 3 board is writing code to the Arduino board that controls the Neopixel eyes. 
-
-* SOLID YELLOW EYES: On boot, Mark 1 will check that its software is up to date. First, it will do a [network time protocol](https://en.wikipedia.org/wiki/Network_Time_Protocol) sync to ensure that the system clock is synchronised, during which you will see the word `<<< SYNC <<<` appear on the LED display. Next, Mark 1 will attempt to update the Skills that are installed on the **Device**. If your Mark 1 gets stuck at this stage, it is likely an issue with updating software or Skills. A reboot may assist, but if it does not then please contact us via [Chat](https://mycroft.ai/chat) or the [Forum](https://community.mycroft.ai) and we can assist further. 
-
-* SOLID BLUE EYES (or color you have eyes set to in your home.mycroft.ai preferences): after Mark 1 has finished booting and is ready for your voice commands, it will show solid blue eyes, or the solid color you have chosen in your home.mycroft.ai preferences. 
-
-### Hardware information
-
-### Common tasks performed on the Mark 1
-
-#### Installing Skills on the Mark 1
+### Installing Skills on the Mark 1
 
 [Please refer to the information here](http://mycroft.ai/documentation/skills/)
 
-#### Connecting to the Mark 1 via SSH
+### Connecting to the Mark 1 via SSH
 
 * First, ensure that you've enabled SSH access. To do this hold down Mycroft's button until you see the menu. Twist till you see  SSH, press the button again. Twist to Allow, then press again. Mycroft will then say "SSH Logins are now allowed".
 * Ensure you know the IP address of your Mark 1 Device on your network. A handy way to do this is to install the IP Address **Skill**, and then Speak:
@@ -137,7 +126,7 @@ When you power on your Mark 1, the eyes on the Mark 1 will go through a series o
 * The default password is `mycroft`, so enter this when prompted.
 * If you have successfully logged in via SSH you will see a command prompt like the one below:
 
-```
+```text
 $ ssh pi@192.168.0.13
 pi@192.168.0.13's password:
 
@@ -151,23 +140,23 @@ Last login: Wed Oct 18 13:02:44 2017
 pi@mark_1:~ $
 ```
 
-You are now connected to the Mark 1 via SSH.  
+You are now connected to the Mark 1 via SSH.
 
-#### Setting up SSH to the Mark 1 using SSH keys
+### Setting up SSH to the Mark 1 using SSH keys
 
-If you would like to set up SSH access to  your Mark 1 device using SSH keys instead of a password, then follow [this guide on the Raspberry Pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
+If you would like to set up SSH access to your Mark 1 device using SSH keys instead of a password, then follow [this guide on the Raspberry Pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
 
-#### Accessing the command line interface (CLI) of the Mark 1
+### Accessing the command line interface \(CLI\) of the Mark 1
 
-If you are SSH'd into the Mark 1 device, you are able to issue commands using the command line interface (CLI) instead of using voice. This bypasses the Speech To Text (STT) component of Mycroft.
+If you are SSH'd into the Mark 1 device, you are able to issue commands using the command line interface \(CLI\) instead of using voice. This bypasses the Speech To Text \(STT\) component of Mycroft.
 
 `mycroft-cli-client`
 
 You will now be able to type **Utterances** into the CLI.
 
-![Issuing commands to Mark 1 from the command line](https://mycroft.ai/wp-content/uploads/2017/12/mark1-utterances-from-command-line.png "Issuing commands to Mark 1 from the command line")
+![Issuing commands to Mark 1 from the command line](https://mycroft.ai/wp-content/uploads/2017/12/mark1-utterances-from-command-line.png)
 
-#### Enabling the LEARN function
+### Enabling the LEARN function
 
 The Learn functionality
 
@@ -175,19 +164,19 @@ If you've also opted-in on home.mycroft.ai, and Learn functionality is enabled, 
 
 To enable the Learn functionality:
 
-1. Make sure that you've checked the 'Opt In' checkbox at [home.mycroft.ai](https://home.mycroft.ai), Settings -> Basic.
+1. Make sure that you've checked the 'Opt In' checkbox at [home.mycroft.ai](https://home.mycroft.ai), Settings -&gt; Basic.
 
-![Adding a new Device](https://mycroft.ai/wp-content/uploads/2017/12/opting-in-open-dataset.png "Opting in to help build the Mycroft Open Dataset")
+![Opting in to help build the Mycroft Open Dataset](https://mycroft.ai/wp-content/uploads/2017/12/opting-in-open-dataset.png)
 
-2. Next press the top button on your Mark 1. Turn the button to LEARN. Press the top button again. Turn the button to ALLOW. Mycroft will Speak:
+1. Next press the top button on your Mark 1. Turn the button to LEARN. Press the top button again. Turn the button to ALLOW. Mycroft will Speak:
 
 `"I will now upload interaction data to help make me smarter"`
 
-#### Upgrading to the latest version from a 2017 Mark 1
+### Upgrading to the latest version from a 2017 Mark 1
 
 If you were one of the original Kickstarter backers or ordered a Mark 1 in 2017 your Mark 1 may be running an old version. In this case you will need to manually update your Mark 1 to the latest version. Once you complete these steps Mark 1 will automatically update in the future. There are two recommended options for updating. Option 1 is recommended for Makers, and those used to ‘tinkering’ with RPi 3 and related open hardware.
 
-##### Option 1: Burn a new disk image to the Micro SD card
+#### Option 1: Burn a new disk image to the Micro SD card
 
 You will need:
 
@@ -212,9 +201,9 @@ Method
 * Follow [the instructions to connect Mark 1 to WiFi](https://mycroft.ai/documentation/mark-1/#getting-mark-1-connected-to-the-internet-using-a-network-cable), or connect an ethernet cable to the ethernet socket on the back of the device.
 * Once you are connected to WiFi, Mark 1 will advise that you need to pair the device. Pair the device on home.mycroft.ai
 
-That’s it! Once your Mark 1 is paired, you’ll be able to use all the default Skills that come with the device, and you’ll also be able to install your own from the list at: https://mycroft.ai/documentation/skills/#community-developed-skills
+That’s it! Once your Mark 1 is paired, you’ll be able to use all the default Skills that come with the device, and you’ll also be able to install your own from the list at: [https://mycroft.ai/documentation/skills/\#community-developed-skills](https://mycroft.ai/documentation/skills/#community-developed-skills)
 
-##### Option 2: Update the Mark 1 using voice commands
+#### Option 2: Update the Mark 1 using voice commands
 
 This option is recommended if you aren't comfortable taking apart your Mark 1 device.
 
@@ -227,7 +216,7 @@ Method
 
 [Follow along with Kathy](https://drive.google.com/a/mycroft.ai/file/d/1bJ_aPT-bplQElSoZcZ_FQUruWa3iFJZ5/view?usp=sharing), our Community Manager, as she guides you through the upgrade process via voice.
 
-* Take your Mark 1 out of its box, and give it a wipe over with a damp (not wet) cotton cloth, to remove dust. Be careful as the acrylic front plate can scratch if you use an abrasive cloth. Gently blow into the ports on the back of the device, and the ventilation holes on the top and bottom, to blow away excess dust.
+* Take your Mark 1 out of its box, and give it a wipe over with a damp \(not wet\) cotton cloth, to remove dust. Be careful as the acrylic front plate can scratch if you use an abrasive cloth. Gently blow into the ports on the back of the device, and the ventilation holes on the top and bottom, to blow away excess dust.
 * Plug Mark 1 into power
 * The Mark 1 device will power on with ‘white spinning eyes’. This will last around 20 seconds to 1 minute. Mark 1 will then have ‘full blue eyes’.
 * Mark 1 will then advise that it needs to be connected to WiFi. 
@@ -243,9 +232,9 @@ Method
 * Mark 1 will reboot after the update is complete.
 * After the reboot, Mark 1 will show ‘white spinning eyes’ then ‘yellow eyes’ with ‘UPDATING’ on screen. When Mark 1 is ready to respond to voice commands, the device will show ‘full blue eyes’. 
 
-#### How to reimage a Mark 1 Device
+### How to reimage a Mark 1 Device
 
-##### Prerequisites
+#### Prerequisites
 
 To reimage a Mark 1 **Device**, you will need:
 
@@ -253,7 +242,7 @@ To reimage a Mark 1 **Device**, you will need:
 * You will need [Etcher](https://etcher.io/), a disk image writer, or equivalent software that writes disk images to a MicroSD card
 * A torque screwdriver to unscrew the torque screws on the Mark 1 **Device**
 
-##### Reimaging steps
+#### Reimaging steps
 
 * Download the software image. Save it to your computer. [The Mark 1 disk image is available here](https://mycroft.ai/to/mark-1-image)
 * Disconnect your Mark 1 from the power supply.
@@ -267,17 +256,17 @@ To reimage a Mark 1 **Device**, you will need:
 
 For more information, [see the original forum post by Barney Woodrow](https://community.mycroft.ai/t/how-to-re-image-mark1s-sd-card/2106).
 
-If you prefer to use the Linux command line tool `dd` to burn the disk image instead, follow these instructions: 
+If you prefer to use the Linux command line tool `dd` to burn the disk image instead, follow these instructions:
 
 1. Download the [Mark 1 disk image](https://mycroft.ai/to/mark-1-image)
 2. Insert the Micro SD card you wish to burn the image to. It must have a storage capacity of 8GB or higher. 
 3. Identify the path where the MicroSD card is mounted by running the command `sudo fdisk -l`. You will be able to tell the path based on the storage size of the device.
 4. Keep a note of this - it will be something like `/dev/sdb1`
 5. Unmount the disk so that no other operation can write to the device while it is being imaged using the command `sudo umount /dev/sdb1`. Make sure to substitute for the location of your device. 
-5. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitute the location of your device, and the path to the `.img` file you downloaded.
-6. This will take several minutes to run. The command prompt will return if successful, otherwise an error message will be displayed on your terminal.
+6. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitute the location of your device, and the path to the `.img` file you downloaded.
+7. This will take several minutes to run. The command prompt will return if successful, otherwise an error message will be displayed on your terminal.
 
-##### What should I do if reimaging doesn't work?
+#### What should I do if reimaging doesn't work?
 
 Micro SD cards have a finite lifespan. It is possible that the Micro SD card inside the Raspberry Pi inside the Mark 1 unit has suffered hardware failure. If this occurs, you will see symptoms such as:
 
@@ -285,26 +274,26 @@ Micro SD cards have a finite lifespan. It is possible that the Micro SD card ins
 * Strange appearance of _eyes_ and _mouth_
 * Mark 1 will be unresponsive to voice commands
 
-If you believe your Micro SD card might have failed, [please make contact with us so we can look into the issue further with you](https://mycroft.ai/contact/), and if warranted, provide a replacement.   
+If you believe your Micro SD card might have failed, [please make contact with us so we can look into the issue further with you](https://mycroft.ai/contact/), and if warranted, provide a replacement.
 
-#### Keeping your Mark 1 Device updated
+### Keeping your Mark 1 Device updated
 
 Your Mark 1 device will check for updates around every hour. If new software is available, Mark 1 will automatically download the updates and apply them.
 
 There's nothing else you need to do.
 
-#### Downgrading your Mark 1 Device to a lower version
+### Downgrading your Mark 1 Device to a lower version
 
-The `apt` repo use to store the Mark 1 package, `mycroft-core` - does not store package versions. However, the Mark 1 **does** cache `apt` packages on the **Device** at: 
+The `apt` repo use to store the Mark 1 package, `mycroft-core` - does not store package versions. However, the Mark 1 **does** cache `apt` packages on the **Device** at:
 
 `/var/cache/apt/archives`
 
-So, in order to downgrade the Mark 1 **Device**, we need to do two things: 
+So, in order to downgrade the Mark 1 **Device**, we need to do two things:
 
 * remove the current `mycroft-core` package
 * manually install the archived package using `dpkg`
 
-First, we remove the current `mycroft-core` package. In the example below, the version is given as `0.9.12`, but use the version you currently have installed. 
+First, we remove the current `mycroft-core` package. In the example below, the version is given as `0.9.12`, but use the version you currently have installed.
 
 `sudo apt-get remove mycroft-core=0.9.12`
 
@@ -316,19 +305,20 @@ Then, use `dpkg` to install the archive
 
 `sudo dpkg -i /path/to/file`
 
-You should then reboot the Mark 1. 
+You should then reboot the Mark 1.
 
-### Common issues on Mark 1 Devices
+## Common issues on Mark 1 Devices
 
 There are several common issues with Mark 1 Devices. They are documented here to help you.
 
-#### Mark 1 Device is frozen
+### Mark 1 Device is frozen
 
 If your Mark 1 Device is frozen, reboot it by:
 
 1. Pressing the top button for 2 seconds, scrolling the button to select REBOOT then pressing the top button again to reboot.
 2. If this does not work, disconnect your Mark 1 **Device** from the power source, wait 10 seconds, then plug the Mark 1 back into the power source.
 
-### Hardware Hacking your Mark 1 Device
+## Hardware Hacking your Mark 1 Device
 
 If you're interested in hardware hacking on your Mark 1 **Device**, the [hardware schematics](https://github.com/MycroftAI/hardware-mycroft-mark-1) are open source and available for download.
+

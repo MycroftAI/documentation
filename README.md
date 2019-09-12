@@ -1,54 +1,54 @@
+# Introduction
 
-Mycroft Documentation 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) 
-[![Join chat](https://img.shields.io/badge/Mattermost-join_chat-brightgreen.svg)](https://chat.mycroft.ai/community/channels/documentation)
-[![CLA Required](https://img.shields.io/badge/CLA%3F-Required-blue.svg)](https://mycroft.ai/cla) 
-==========
+Mycroft Documentation [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) [![Join chat](https://img.shields.io/badge/Mattermost-join_chat-brightgreen.svg)](https://chat.mycroft.ai/community/channels/documentation)
 
-Head to https://mycroft.ai/documentation for all public facing documentation.  
+## [![CLA Required](https://img.shields.io/badge/CLA%3F-Required-blue.svg)](https://mycroft.ai/cla)
+
+Head to [https://mycroft.ai/documentation](https://mycroft.ai/documentation) for all public facing documentation.  
 The website is automatically updated from this repo.
 
-## Table of Contents
-- [Objective](#objective)
-- [Project lead and key contact](#project-lead-and-key-contact)
-- [Branches](#branches)
-- [Documentation standards](#documentation-standards)
-  * [Conventions](#conventions)
-    + [Styling conventions](#styling-conventions)
-      - [How voice interactions are presented in documentation](#how-voice-interactions-are-presented-in-documentation)
-      - [How to present a User Speaking](#how-to-present-a-user-speaking)
-  * [Tone of voice](#tone-of-voice)
-  * [Documentation checklist](#documentation-checklist)
-- [Contributing](#contributing)
-- [License](#license)
+### Table of Contents
 
-## Objective
+* [Objective](./#objective)
+* [Project lead and key contact](./#project-lead-and-key-contact)
+* [Branches](./#branches)
+* [Documentation standards](./#documentation-standards)
+  * [Conventions](./#conventions)
+    * [Styling conventions](./#styling-conventions)
+      * [How voice interactions are presented in documentation](./#how-voice-interactions-are-presented-in-documentation)
+      * [How to present a User Speaking](./#how-to-present-a-user-speaking)
+  * [Tone of voice](./#tone-of-voice)
+  * [Documentation checklist](./#documentation-checklist)
+* [Contributing](./#contributing)
+* [License](./#license)
+
+### Objective
+
 The purpose of this repo is to unify all the documentation for the public-facing components of Mycroft.AI, and to reduce the fragmentation of documentation.
 
 It is intended that the Markdown in this repo will be consumed by transformation layers or integrations to present the documentation in a user-friendly way.
 
-## Project lead and key contact
+### Project lead and key contact
 
 @krisgesling - Kris Gesling [kris.gesling@mycroft.ai](mailto:kris.gesling@mycroft.ai)
 
-## Branches
+### Branches
 
 At the time of writing, the Docs Repository has only a single branch, `master`. This is the default branch for the repo.
 
-## Documentation standards
+### Documentation standards
 
-### Conventions
+#### Conventions
 
-The following conventions are observed in Mycroft documentation:  
+The following conventions are observed in Mycroft documentation:
 
 * All code is presented `like this`
 * All Mycroft-specific terms are **bolded**
 * Information is presented in 'inverted pyramid format'. This means an overview is given first, then more detailed information, then more granular information.
 * Human-written documentation is done in Markdown, on GitHub
-* Documentation of code is done through Google DocStrings format https://google.github.io/styleguide/pyguide.html#Comments and this then passed to documentation generators.
+* Documentation of code is done through Google DocStrings format [https://google.github.io/styleguide/pyguide.html\#Comments](https://google.github.io/styleguide/pyguide.html#Comments) and this then passed to documentation generators.
 
-
-#### Styling conventions
+**Styling conventions**
 
 The following conventions are used for styling technical terms and related phrases.
 
@@ -62,11 +62,11 @@ The following conventions are used for styling technical terms and related phras
 * **Speak** is always capitalized given the importance of Speaking in a voice interface.
 * **User** is always capitalized as a sign of respect for our Users.
 
-##### How voice interactions are presented in documentation
+**How voice interactions are presented in documentation**
 
 To make documentation easier to read, voice interactions should be presented in a consistent style.
 
-##### How to present a User Speaking
+**How to present a User Speaking**
 
 When a User Speaks, it is always presented in the style of a quote:
 
@@ -76,7 +76,7 @@ When Mycroft Speaks, it is always presented in quote marks in preformatted style
 
 `"The time is 12.30"`
 
-### Tone of voice
+#### Tone of voice
 
 Mycroft documentation is written with the following tone of voice:
 
@@ -84,18 +84,21 @@ Mycroft documentation is written with the following tone of voice:
 * Helpful but encouraging of self-discovery
 * Easily readable, but not dumbed down
 
-### Documentation checklist
+#### Documentation checklist
 
 Use this handy checklist when creating or modifying documentation:
 
-- [ ] Have you checked for duplicate documentation?
-- [ ] Has the documentation been verified for accuracy?
-- [ ] Does the documentation comply with the Style Guide?
-- [ ] Does the documentation comply with tone of voice?
-- [ ] Has the Table of Contents for the documentation been re-generated with [markdown-toc](https://github.com/jonschlinkert/markdown-toc)?
+* [ ] Have you checked for duplicate documentation?
+* [ ] Has the documentation been verified for accuracy?
+* [ ] Does the documentation comply with the Style Guide?
+* [ ] Does the documentation comply with tone of voice?
+* [ ] Has the Table of Contents for the documentation been re-generated with [markdown-toc](https://github.com/jonschlinkert/markdown-toc)?
 
-## Contributing
-[See the Contributing Guide for Mycroft Documentation](CONTRIBUTING.md)
+### Contributing
 
-## License
-[See the License for Mycroft Documenation](LICENSE.md)
+[See the Contributing Guide for Mycroft Documentation](https://github.com/krisgesling/docs-rewrite/tree/3a9b5229006324bcbdd1cf99d711d1940737225e/CONTRIBUTING.md)
+
+### License
+
+[See the License for Mycroft Documenation](https://github.com/krisgesling/docs-rewrite/tree/3a9b5229006324bcbdd1cf99d711d1940737225e/LICENSE.md)
+

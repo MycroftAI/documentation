@@ -1,27 +1,23 @@
-# Summary
+# Table of contents
 
-* Get Started
-Want to give Mycroft a try? Mycroft is open source software that runs where you want it to, whether it’s on your own hardware or one of our dedicated devices.
-  * [Mark 1](setup-mycroft/mark-1.md)
-  * [Picroft](setup-mycroft/picroft.md)
-  * [Linux](setup-mycroft/linux.md)
-  * [Mac OS and Windows with VirtualBox](setup-mycroft/mycroft-for-macos-and-windows-with-virtualbox.md)
-  * [Docker](setup-mycroft/docker.md)
-  * [Android](setup-mycroft/android.md)
+* [Introduction](README.md)
+* [Get Started](get-started/README.md)
+  * [Mark 1](get-started/mark-1.md)
+  * [Picroft](get-started/picroft.md)
+  * [Linux](get-started/linux.md)
+  * [Mac OS and Windows with VirtualBox](get-started/mycroft-for-macos-and-windows-with-virtualbox.md)
+  * [Docker](get-started/docker.md)
+  * [Android](get-started/android.md)
 
 ## Configuration
-* [Mycroft.conf](configure/mycroft-conf.md)
 
-* [Troubleshooting](troubleshooting/troubleshooting.md)
-  * [General Troubleshooting](troubleshooting/general.md)
-  * [Audio Troubleshooting](troubleshooting/audio-troubleshooting.md)
-  * [Log Files](troubleshooting/logs.md)
-  * [Support Skill](troubleshooting/support-skill.md)
-  * Specific Platforms
-    - [Mark 1](troubleshooting/mark-1-troubleshooting.md)
-    - [Picroft](troubleshooting/picroft-troubleshooting.md)
+* [Mycroft.conf](configuration/mycroft-conf.md)
+* [Troubleshooting](configuration/troubleshooting/README.md)
+  * [General Troubleshooting](configuration/troubleshooting/general-troubleshooting.md)
+  * [Audio Troubleshooting](configuration/troubleshooting/audio-troubleshooting.md)
+  * [Log Files](configuration/troubleshooting/log-files.md)
+  * [Support Skill](configuration/troubleshooting/support-skill.md)
+  * [Specific Platforms](configuration/troubleshooting/specific-platforms/README.md)
+    * [Mark 1](configuration/troubleshooting/specific-platforms/mark-1.md)
+    * [Picroft](configuration/troubleshooting/specific-platforms/picroft.md)
 
-
-## Skill Development
-
-## Technologies

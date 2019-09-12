@@ -1,30 +1,31 @@
 ---
-ID: 33724
-post_title: The `mycroft.conf` file
-author: Kathy Reid
-post_excerpt: ""
+post_excerpt: ''
 layout: page
-permalink: >
+author: Kathy Reid
+permalink: |
   http://mycroft.ai/documentation/mycroft-conf/
+post_date: '2017-12-13T07:51:51.000Z'
 published: true
-post_date: 2017-12-13 07:51:51
+post_title: The `mycroft.conf` file
+ID: 33724
 ---
-# mycroft.conf and mycroft_web_cache.json
 
-- [mycroft.conf and mycroft_web_cache.json](#mycroft-conf-and-mycroftwebcache-json)
-	- [What is `mycroft.conf`?](#what-is-mycroft-conf)
-	- [What is `mycroft_web_cache.json`?](#what-is-mycroftwebcache-json)
-	- [How are `mycroft.conf` and `mycroft_web_cache.json` updated?](#how-are-mycroft-conf-and-mycroftwebcache-json-updated)
-	- [Where is the `mycroft.conf` file stored?](#where-is-the-mycroft-conf-file-stored)
-	- [A look at the inside of `mycroft.conf`](#a-look-at-the-inside-of-mycroft-conf)
-	- [Where is the `mycroft_web_cache.json` file stored?](#where-is-the-mycroftwebcache-json-file-stored)
-	- [A look at the inside of `mycroft_web_cache.json`](#a-look-at-the-inside-of-mycroftwebcache-json)
-- [Advanced Configuration Options](#advanced-configuration-options)
-	- [Changing your Wake Word](#changing-your-wake-word)
-		- [About Phonemes](#about-phonemes)
-		- [Other Settings](#other-settings)
-		- [Adding Wake Word Settings to `mycroft.conf`](#adding-wake-word-settings-to-mycroft-conf)
-		- [Telling Mycroft to pick up the new settings](#telling-mycroft-to-pick-up-the-new-settings)
+# Mycroft.conf
+
+* [mycroft.conf and mycroft\_web\_cache.json](mycroft-conf.md#mycroft-conf-and-mycroftwebcache-json)
+  * [What is `mycroft.conf`?](mycroft-conf.md#what-is-mycroft-conf)
+  * [What is `mycroft_web_cache.json`?](mycroft-conf.md#what-is-mycroftwebcache-json)
+  * [How are `mycroft.conf` and `mycroft_web_cache.json` updated?](mycroft-conf.md#how-are-mycroft-conf-and-mycroftwebcache-json-updated)
+  * [Where is the `mycroft.conf` file stored?](mycroft-conf.md#where-is-the-mycroft-conf-file-stored)
+  * [A look at the inside of `mycroft.conf`](mycroft-conf.md#a-look-at-the-inside-of-mycroft-conf)
+  * [Where is the `mycroft_web_cache.json` file stored?](mycroft-conf.md#where-is-the-mycroftwebcache-json-file-stored)
+  * [A look at the inside of `mycroft_web_cache.json`](mycroft-conf.md#a-look-at-the-inside-of-mycroftwebcache-json)
+* [Advanced Configuration Options](mycroft-conf.md#advanced-configuration-options)
+  * [Changing your Wake Word](mycroft-conf.md#changing-your-wake-word)
+    * [About Phonemes](mycroft-conf.md#about-phonemes)
+    * [Other Settings](mycroft-conf.md#other-settings)
+    * [Adding Wake Word Settings to `mycroft.conf`](mycroft-conf.md#adding-wake-word-settings-to-mycroft-conf)
+    * [Telling Mycroft to pick up the new settings](mycroft-conf.md#telling-mycroft-to-pick-up-the-new-settings)
 
 ### What is `mycroft.conf`?
 
@@ -32,7 +33,7 @@ post_date: 2017-12-13 07:51:51
 
 ### What is `mycroft_web_cache.json`?
 
-`mycroft_web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft **Device**, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on  your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ (which determines _Time Zone_), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
+`mycroft_web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft **Device**, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ \(which determines _Time Zone_\), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
 
 Both of these files are regularly used in troubleshooting, so it's useful to know what information they hold, and where they are stored on your **Device**.
 
@@ -57,7 +58,7 @@ Mycroft implements an order of precedence; settings at a User level override tho
 
 Here is an example System level `mycroft.conf` from a Mark 1 **Device**:
 
-```
+```text
 pi@mark_1:/etc/mycroft $ cat mycroft.conf
 {
   "enclosure": {
@@ -79,7 +80,7 @@ pi@mark_1:/etc/mycroft $ cat mycroft.conf
 
 and here is an example `mycroft.conf` file from Mycroft for Linux, User-level:
 
-```
+```text
 {
   // Definition and documentation of all variables used by mycroft-core.
   //
@@ -383,7 +384,7 @@ on the **Device**.
 
 Here is an example `mycroft_web_cache.json`. _NOTE: Your settings will be different._
 
-```
+```text
 {
   "date_format": "DMY",
   "tts": {
@@ -542,40 +543,35 @@ We then need to identify the **phoneme** sounds for this **Wake Word** using the
 Remember that the period, or full stop, indicates the end of a word.
 
 #### About Phonemes
+
 Phonemes are basic units of sound. They are a way to represent the different sounds in speech in a standard way. English spelling varies so much that it cannot be used for this purpose. For example, the "j" sound in "juice" is the same as the "g" sound in "giant".
 
 You can see the similarity when these words are written as phonemes:
 
-* `JH UW S .`
-=  juice
-
-* `JH AY AH N T .`
-= giant
+* `JH UW S .` = juice
+* `JH AY AH N T .` = giant
 
 The period, or full stop, indicates the end of the word.
 
 #### Other Settings
-Other settings are available to further tune how sensitive the Speech to Text (STT) engine is in recognizing the **Wake Word**.
 
-* **Sample rate (Hz)**: The rate at which the audio stream is sampled. The default is 16KHz. You shouldn't need to change this, unless the microphone you are using needs a much higher or lower sample rate.
+Other settings are available to further tune how sensitive the Speech to Text \(STT\) engine is in recognizing the **Wake Word**.
 
+* **Sample rate \(Hz\)**: The rate at which the audio stream is sampled. The default is 16KHz. You shouldn't need to change this, unless the microphone you are using needs a much higher or lower sample rate.
 * **Channels**: The audio channel that should be sampled for the **Wake Word**. The default is 1, and you shouldn't have to change this unless your microphone is not operating on audio channel 1.
-
 * **Wake Word**: In plain English text, the Wake Word that Mycroft should listen for.
+* **Phonemes**: The **phonemes** corresponding to the **Wake Word**. If your Wake Word phrase is more than one word, remember to include a period \(.\) at the end of each phoneme.
+* **Threshold \(scientific notation\)**: The level of sensitivity at which the **Wake Word** should trigger Mycroft to respond. To _increase_ the sensitivity, _reduce_ the Threshold. The Threshold is given in [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation). Use this [handy converter](http://www.easysurf.cc/scintd.htm) to convert between decimal and scientific notation.
+* **Threshold multiplier \(float\)**: This multiplier acts on the **Threshold**, and may be an easier way to make adjustments rather than scientific notation.
+* **Dynamic Energy Ratio \(float\)**: Dynamic Energy Ratio \(DER\) is one signal feature used in [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) to identify characteristics of audio, such as whether a person has stopped or started speaking. DER is similar to signal-to-noise-ratio. A high ratio indicates a high difference in signal between speech and no speech, and a low ratio indicates a small difference in signal between speech and no speech.
 
-* **Phonemes**: The **phonemes** corresponding to the **Wake Word**. If your Wake Word phrase is more than one word, remember to include a period (.) at the end of each phoneme.
-
-* **Threshold (scientific notation)**: The level of sensitivity at which the **Wake Word** should trigger Mycroft to respond. To *increase* the sensitivity, *reduce* the Threshold. The Threshold is given in [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation). Use this [handy converter](http://www.easysurf.cc/scintd.htm) to convert between decimal and scientific notation.
-
-* **Threshold multiplier (float)**: This multiplier acts on the **Threshold**, and may be an easier way to make adjustments rather than scientific notation.
-
-* **Dynamic Energy Ratio (float)**: Dynamic Energy Ratio (DER) is one signal feature used in [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) to identify characteristics of audio, such as whether a person has stopped or started speaking. DER is similar to signal-to-noise-ratio. A high ratio indicates a high difference in signal between speech and no speech, and a low ratio indicates a small difference in signal between speech and no speech.
-
-If Mycroft is being *too sensitive*, reduce this value. If Mycroft *is not being sensitive enough*, increase this value.
+If Mycroft is being _too sensitive_, reduce this value. If Mycroft _is not being sensitive enough_, increase this value.
 
 #### Adding Wake Word Settings to `mycroft.conf`
+
 For the "Yo Mike" example we started with, an example `~/.mycroft/mycroft.conf` file might look like:
-```json
+
+```javascript
 {
   "max_allowed_core_version": 19.2,
   "listener": {
@@ -598,3 +594,4 @@ Mycroft doesn't automatically fetch the new settings. You need to tell Mycroft t
 > Hey Mycroft, configuration update
 
 Mycroft will then pull the new Settings configuration down.
+
