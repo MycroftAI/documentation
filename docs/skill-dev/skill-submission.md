@@ -58,6 +58,10 @@ file and added something similar to the bottom of the file:
  +	url = URL.FOR.YOUR.SKILL.git
 ```
 
+If changes are made to your skill repo after the submodule has been added, you can update the submodule to your latest commit by using the command:
+
+`git submodule update --recursive --remote`
+
 ### Submit a PR (Pull Request) in GitHub to have your **Skill** listed
 
 Next, we need to submit a Pull Request (PR) in GitHub to have your **Skill** listed.
