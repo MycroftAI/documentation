@@ -1,2 +1,0 @@
-# Mimic Recording Studio
-
