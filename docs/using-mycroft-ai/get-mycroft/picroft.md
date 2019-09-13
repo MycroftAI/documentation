@@ -122,89 +122,6 @@ If you would like to connect a keyboard or mouse \(rather than SSH'ing in to Pic
 
 In our experience, we've found most monitors, keyboards and mice are plug-and-play - ie. you shouldn't have to install any additional drivers.
 
-## Connecting Picroft to a wired or WiFi network
-
-### To connect to a wired network
-
-Simply plug the ethernet cable into the RJ45 \(ethernet\) socket on the RPi. Picroft will then attempt to connect to the network, and request a DHCP address.
-
-_You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
-
-### To connect to a WiFi network
-
-By default, Picroft is **not** configured for WiFi. Picroft can connect to most 2.4GHz WiFi networks, but this has to be manually configured.
-
-First, you need to be able to edit files on the filesystem of the Picroft. There are two ways to do this.
-
-1. Plug the Picroft into a keyboard and HDMI monitor then type `Ctrl + C` to get to the command line _or_
-2. _if you are already connected using a wired connection **and** you know the Picroft's IP address_, [SSH in to the Picroft device ](https://mycroft.ai/documentation/picroft/#connecting-to-picroft-via-ssh)
-
-#### Editing the `wpa_supplicant.conf` file
-
-Next, we edit the `wpa_supplicant.conf` file. This file controls WiFi connections for the Raspberry Pi.
-
-1. Type `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
-2. Using the down arrow key, navigate to the bottom of the file, and add credentials for your SSID
-
-```text
-    network={
-            ssid="MyNetworkSSID"
-            psk="mypassword"
-    }
-```
-
-1. Type `Ctrl + X` to exit and `Y` then `Enter` to save your changes.
-2. Type `sudo reboot now`
-
-_You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
-
-**Manually configuring WPA2 Enterprise WiFi with MSCHAPV2 authentication**
-
-If you are on an enterprise network, your network security might use WPA2 with MSCHAPV2 authentication. Configuring Picroft to use MSCHAPV2 is similar to the above, but requires some additional steps.
-
-First, we need to generate a hash of your SSID's password.
-
-```text
-echo -n your_password| iconv -t utf16le | openssl md4
-```
-
-This will use the [NTLM hash](https://en.wikipedia.org/wiki/NT_LAN_Manager) which is a 16 bit MD4 hash. Make sure to copy this as we will need it for later steps.
-
-Next, run the following commands:
-
-```text
-cd /etc/wpa_supplicant
-sudo nano wpa_supplicant.conf
-```
-
-Add the following to the bottom of the `wpa_supplicant.conf` file, replacing `ssid` with your SSID name, `identity` with your username and `password` with the hash generated earlier. Type `Ctrl + O` to save, then `Ctrl + x` to exit.
-
-```text
-network={
-    ssid="ssid network name"
-    priority=1
-    proto=RSN
-    key_mgmt=WPA-EAP
-    pairwise=CCMP
-    auth_alg=OPEN
-    eap=PEAP
-    identity="user_name"
-    password=hash:hash_key_here
-    phase1="peaplabel=0"
-    phase2="auth=MSCHAPV2"
-}
-```
-
-Next, reboot the Picroft using `sudo reboot now`. If these steps have worked, you will be connected to your enterprise WiFi shortly after rebooting.
-
-_You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
-
-#### Known errors with Picroft and WiFi
-
-_NOTE: Picroft cannot connect to WiFi networks that operate in the 5GHz band. You must select a WiFi network that operates in the 2.4GHz band._
-
-_NOTE: Picroft cannot connect to WiFi networks that operate on Channels 12 or 13 \(2467MHz and 2472MHz frequencies\). Please configure your SSID to use a different channel or frequency. These channels are often used in Germany and other European countries._
-
 ### Booting up Picroft
 
 Once you've burned the disk image to the Micro SD card, insert the Micro SD card into the Micro SD card slot on the Raspberry Pi. Plug in your microphone, speakers, and if you're using a monitor and/or keyboard, plug these in too.
@@ -215,7 +132,7 @@ If you have a HDMI monitor connected, you should start to see some output on scr
 
 If you're going to `ssh` into Picroft, do the following:
 
-## `ssh` into Picroft
+### `ssh` into Picroft
 
 SSH access to Picroft is enabled by default, so you don't have to enable SSH access.
 
@@ -248,7 +165,7 @@ pi@mark_1:~ $
 
 You are now connected to Picroft via SSH.
 
-### Setting up Picroft
+## Setting up Picroft
 
 On first boot, you will see a screen which looks similar to the one below:
 
@@ -368,7 +285,7 @@ After this operation, 221 MB of additional disk space will be used.
 Do you want to continue? [Y/n] Y
 ```
 
-## Pairing the Picroft
+### Pairing the Picroft
 
 Once the Picroft is connected to the internet, and you have run through the guided setup, Picroft will reboot. Picroft will boot into the `mycroft-cli-client` screen, and a **Registration Code** will be spoken, and will also be shown on the `mycroft-cli-client` screen, as shown below:
 
@@ -380,23 +297,115 @@ Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/bas
 
 ![Picroft basic commands](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-21-04-21-07.png)
 
-## Maintaining your Picroft
+### Connecting Picroft to a wired or WiFi network
 
-### How to reimage a Picroft Device
+#### To connect to a wired network
 
-To reimage a Picroft **Device**, [download the latest disk image](https://mycroft.ai/to/picroft-image). Burn that to a MicroSD card using Etcher, and insert the burned MicroSD card into the Raspberry Pi, then connect the Raspberry Pi to power.
+Simply plug the ethernet cable into the RJ45 \(ethernet\) socket on the RPi. Picroft will then attempt to connect to the network, and request a DHCP address.
 
-### Keeping your Picroft updated
+_You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
 
-To keep `mycroft-core` and the Skills on your Picroft updated, first `ssh` in to Picroft, then run the `update.sh` script:
+#### To connect to a WiFi network
 
-```bash
-(.venv) pi@picroft:~ $ bash update.sh
+By default, Picroft is **not** configured for WiFi. Picroft can connect to most 2.4GHz WiFi networks, but this has to be manually configured.
+
+First, you need to be able to edit files on the filesystem of the Picroft. There are two ways to do this.
+
+1. Plug the Picroft into a keyboard and HDMI monitor then type `Ctrl + C` to get to the command line _or_
+2. _if you are already connected using a wired connection **and** you know the Picroft's IP address_, [SSH in to the Picroft device ](https://mycroft.ai/documentation/picroft/#connecting-to-picroft-via-ssh)
+
+#### Editing the `wpa_supplicant.conf` file
+
+Next, we edit the `wpa_supplicant.conf` file. This file controls WiFi connections for the Raspberry Pi.
+
+1. Type `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
+2. Using the down arrow key, navigate to the bottom of the file, and add credentials for your SSID
+
+```text
+    network={
+            ssid="MyNetworkSSID"
+            psk="mypassword"
+    }
 ```
 
-This script will update both `mycroft-core` and the **Skills** on your Picroft device.
+1. Type `Ctrl + X` to exit and `Y` then `Enter` to save your changes.
+2. Type `sudo reboot now`
 
-## Important file locations for Picroft
+_You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
+
+**Manually configuring WPA2 Enterprise WiFi with MSCHAPV2 authentication**
+
+If you are on an enterprise network, your network security might use WPA2 with MSCHAPV2 authentication. Configuring Picroft to use MSCHAPV2 is similar to the above, but requires some additional steps.
+
+First, we need to generate a hash of your SSID's password.
+
+```text
+echo -n your_password| iconv -t utf16le | openssl md4
+```
+
+This will use the [NTLM hash](https://en.wikipedia.org/wiki/NT_LAN_Manager) which is a 16 bit MD4 hash. Make sure to copy this as we will need it for later steps.
+
+Next, run the following commands:
+
+```text
+cd /etc/wpa_supplicant
+sudo nano wpa_supplicant.conf
+```
+
+Add the following to the bottom of the `wpa_supplicant.conf` file, replacing `ssid` with your SSID name, `identity` with your username and `password` with the hash generated earlier. Type `Ctrl + O` to save, then `Ctrl + x` to exit.
+
+```text
+network={
+    ssid="ssid network name"
+    priority=1
+    proto=RSN
+    key_mgmt=WPA-EAP
+    pairwise=CCMP
+    auth_alg=OPEN
+    eap=PEAP
+    identity="user_name"
+    password=hash:hash_key_here
+    phase1="peaplabel=0"
+    phase2="auth=MSCHAPV2"
+}
+```
+
+Next, reboot the Picroft using `sudo reboot now`. If these steps have worked, you will be connected to your enterprise WiFi shortly after rebooting.
+
+_You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
+
+#### Known errors with Picroft and WiFi
+
+_NOTE: Picroft cannot connect to WiFi networks that operate in the 5GHz band. You must select a WiFi network that operates in the 2.4GHz band._
+
+_NOTE: Picroft cannot connect to WiFi networks that operate on Channels 12 or 13 \(2467MHz and 2472MHz frequencies\). Please configure your SSID to use a different channel or frequency. These channels are often used in Germany and other European countries._
+
+## Next steps
+
+Congratulations! You now have a fully functional Picroft, and can start exploring all the options you now have. Consider using it as a stand-alone voice assistant, or connect it to a monitor and keyboard, and develop straight away. If you don't have a monitor and keybaord, SSH is enabled by default so you can remotely connect to it straight away.
+
+Picroft uses a Raspbian Stretch Lite image under the hood - with Mycroft pre-installed - so everything you can do with Raspbian, you can do with Picroft. You can download other packages, get it running as a server - or more!
+
+For more help or ideas, consider joining our [Picroft channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/picroft) or reading through our [Picroft topic on the Mycroft Forum](https://community.mycroft.ai/c/mycroft-project/Raspberry-Pi).
+
+### Useful commands for Picroft
+
+There are several commands that are packaged into Picroft to help you with advanced functionality:
+
+* `mycroft-cli=client`: This command will start the Mycroft CLI client if you are on the Linux command line
+* `mycroft-help`: This command brings up help information
+* `mycroft-mic-test`: This command re-runs the microphone test from the guided setup
+* `mycroft-msk`: This command runs the [Mycroft Skills Kit](../../skill-development/mycroft-skills-kit.md)
+* `mycroft-msm`: This command runs the [Mycroft Skills Manager](../../mycroft-technologies/mycroft-core/msm.md)
+* `mycroft-pip`: This command runs `pip` within the Mycroft Python `virtual environment` \(`venv`\). This is useful if you are installing dependencies for **Skills**.
+* `mycroft-say-to`:  This command sends a command to Picroft, just like you had 'spoken' a command. This is useful if your microphone is not working.
+* `mycroft-setup-wizard`: This command re-runs the guided setup
+* `mycroft-skill-testrunner`: This command runs the `testrunner` - used to run unit tests for a **Skill**. This is useful if you are doing **Skills** development with Mycroft
+* `mycroft-speak`: This command gets Mycroft to 'speak' using Text to Speech.
+* `mycroft-venv-deactivate`: This command deactivates the Mycroft Python `virtual environment` and is useful if you want to install other software on the Picroft device.
+* `mycroft-wipe`: This command wipes Picroft back to factory default status. This will unpair the device and remove any configuration changes you have made.
+
+### Important file locations for Picroft
 
 If you plan to do **Skills** development work, or other development work with Picroft, you'll find knowing these file locations useful.
 
@@ -406,34 +415,25 @@ If you plan to do **Skills** development work, or other development work with Pi
 * `mycroft.conf` - is located at `/home/mycroft/.mycroft/mycroft.conf`
 * Identity file \(do not share\) - is located at `/home/mycroft/.mycroft/identity/identity2.json`
 
-## Useful commands for Picroft
+### Maintaining your Picroft
 
-There are several commands that are packaged into Picroft to help you with advanced functionality:
+#### How to reimage a Picroft Device
 
-* `mycroft-cli=client`: This command will start the Mycroft CLI client if you are on the Linux command line
-* `mycroft-help`: This command brings up help information
-* `mycroft-mic-test`: This command re-runs the microphone test from the guided setup
-* `mycroft-msk`: This command runs the [Mycroft Skills Kit](https://mycroft.ai/documentation/skills/msk/)
-* `mycroft-msm`: This command runs the [Mycroft Skills Manager](https://mycroft.ai/documentation/msm/)
-* `mycroft-pip`: This command runs `pip` within the Mycroft Python `virtual environment` \(`venv`\). This is useful if you are installing dependencies for **Skills**.
-* `mycroft-say-to`:  This command sends a command to Picroft, just like you had 'spoken' a command. This is useful if your microphone is not working.
-* `mycroft-setup-wizard`: This command re-runs the guided setup
-* `mycroft-skill-testrunner`: This command runs the `testrunner` - used to run unit tests for a **Skill**. This is useful if you are doing **Skills** development with Mycroft
-* `mycroft-speak`: This command gets Mycroft to 'speak' using Text to Speech.
-* `mycroft-venv-deactivate`: This command deactivates the Mycroft Python `virtual environment` and is useful if you want to install other software on the Picroft device.
-* `mycroft-wipe`: This command wipes Picroft back to factory default status. This will unpair the device and remove any configuration changes you have made.
+To reimage a Picroft **Device**, [download the latest disk image](https://mycroft.ai/to/picroft-image). Burn that to a MicroSD card using Etcher, and insert the burned MicroSD card into the Raspberry Pi, then connect the Raspberry Pi to power.
 
-## Building your own Picroft image
+#### Keeping your Picroft updated
+
+To keep `mycroft-core` and the Skills on your Picroft updated, first `ssh` in to Picroft, then run the `update.sh` script:
+
+```bash
+(.venv) pi@picroft:~ $ bash update.sh
+```
+
+This script will update both `mycroft-core` and the **Skills** on your Picroft device.
+
+#### Building your own Picroft image
 
 The Picroft image building instructions can now be found on GitHub at; [https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image\_recipe.md](https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image_recipe.md)
-
-## Next steps
-
-Congratulations! You now have a fully functional Picroft, and can start exploring all the options you now have. Consider using it as a stand-alone voice assistant, or connect it to a monitor and keyboard, and develop straight away. If you don't have a monitor and keybaord, SSH is enabled by default so you can remotely connect to it straight away.
-
-Picroft uses a Raspbian Stretch Lite image under the hood - with Mycroft pre-installed - so everything you can do with Raspbian, you can do with Picroft. You can download other packages, get it running as a server - or more!
-
-For more help or ideas, consider joining our [Picroft channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/picroft) or reading through our [Picroft topic on the Mycroft Forum](https://community.mycroft.ai/c/mycroft-project/Raspberry-Pi).
 
 ### Using the GPIO pins on the Raspberry Pi 3
 
