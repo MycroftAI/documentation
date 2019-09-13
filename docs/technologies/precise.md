@@ -57,17 +57,12 @@ _NOTE: As Precise is installing, it will download a 40Mb file to your **Device**
 ## Other hotword detection technologies
 Unlike other accurate hotword detection products, Mycroft Precise is fully open source.
 
-[//]: # "Note: Edit table using http://truben.no/table/"
-[//]: # "============================ Table Start =================================="
-
 |   | Open Source | Accurate | Languages | Model Trainer | Commercial Use | GitHub |
 | - | ----------- | -------- | --------- | ------------- | -------------- | ------ |
 | **Precise** | ![Yes][yes] | ![Yes][yes] | Python | [Open Source Script][precise-train] | Permitted | [MycroftAI/mycroft-precise][precise-github] |
 | **Snowboy** | ![No][no] | ![Yes][yes] | Node, Java, Python, GO, Perl, iOS, Android | [Web API][snowboy-train] | [License Fee][snowboy-license] | [Kitt-AI/snowboy][snowboy-github] |
 | **Porcupine** | ![No][no] | ![Yes][yes] | C, Python, Android | [Closed Binary][porcupine-train] | [License Fee][porcupine-license] | [Picovoice/Porcupine][porcupine-github] |
 | **PocketSphinx** | ![Yes][yes] | ![No][no] | Almost all | [Open Source Script][pocketsphinx-train] | Permitted                                                                                                   | [cmusphinx/pocketsphinx][pocketsphinx-github] |
-
-[//]: # "============================= Table End ==================================="
 
 [open-source]: https://images2.imgbox.com/ef/76/SevHcNcX_o.png
 [closed-source]: https://images2.imgbox.com/5b/24/h1uct6GA_o.png
