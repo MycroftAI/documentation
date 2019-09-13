@@ -1,21 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/conversational-context/
-post_date: '2017-12-02T22:35:25.000Z'
-published: true
-post_title: Conversational Context
-ID: 33179
+description: >-
+  A Skill can add context to the Intent Parser to create more natural interaction with Mycroft.
 ---
 
 # Conversational Context
-
-* [Conversational Context](conversational-context.md#conversational-context)
-  * [Using context to enable **Intents**](conversational-context.md#using-context-to-enable-intents)
-
-A **Skill** can add context to the **Intent Parser** to create more natural interaction with Mycroft.
 
 _NOTE: Conversational context is currently only available with the_ [_Adapt_](https://mycroft.ai/documentation/adapt) _Intent Parser, and is not yet available for_ [_Padatious_](https://mycroft.ai/documentation/padatious)
 
@@ -168,4 +156,3 @@ class TeaSkill(MycroftSkill):
 When starting up only the `TeaIntent` will be available. When that has been triggered and _MilkContext_ is added the `MilkYesIntent` and `MilkNoIntent` are available since the _MilkContext_ is set. when a _yes_ or _no_ is received the _MilkContext_ is removed and can't be accessed. In it's place the _HoneyContext_ is added making the `YesHoneyIntent` and `NoHoneyIntent` available.
 
 As you can see, Conversational Context lends itself well to implementing a [dialog tree or conversation tree](https://en.wikipedia.org/wiki/Dialog_tree).
-

@@ -1,25 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/common-play-framework/
-post_date: '2018-11-16T07:27:11.000Z'
-published: true
-post_title: Common Play Framework
-ID: 41539
+description: >-
+
 ---
 
 # Common Play Framework
-
-* [Common Play Framework](common-play-framework.md#common-play-framework)
-  * [Introduction](common-play-framework.md#introduction)
-  * [Basing your Skill on the `CommonPlaySkill` class instead of `MycroftSkill`](common-play-framework.md#basing-your-skill-on-the-commonplayskill-class-instead-of-mycroftskill)
-  * [CPS\_match\_query\_phrase](common-play-framework.md#cps-match-query-phrase)
-  * [CPS\_start](common-play-framework.md#cps-start)
-  * [Example implementation of `CommonPlaySkill`](common-play-framework.md#example-implementation-of-commonplayskill)
-  * [Technical Documentation](common-play-framework.md#technical-documentation)
-  * [Where to go for more assistance](common-play-framework.md#where-to-go-for-more-assistance)
 
 ## Introduction
 
@@ -185,4 +169,3 @@ More information on the Common Play Framework can be found in the [Mycroft Techn
 ## Where to go for more assistance
 
 Join us in the [Skills Mycroft Chat room](https://chat.mycroft.ai/community/channels/skills) or join us in the [Mycroft Forum](https://community.mycroft.ai).
-

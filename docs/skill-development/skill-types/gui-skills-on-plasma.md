@@ -1,32 +1,9 @@
 ---
-ID: 39182
-post_title: Mycroft for KDE Plasma
-author: Kathy Reid
-post_excerpt: 'Learn how to create Skills for Mycroft for Plasma - Mycroft on the KDE Plasma desktop environment. '
-layout: page
-permalink: http://mycroft.ai/documentation/plasma/
-published: true
-post_date: 2018-06-29 12:29:29
----
-# Mycroft for Plasma
+description: >-
 
-- [Mycroft for Plasma](#mycroft-for-plasma)
-  * [Getting started](#getting-started)
-    + [Distribution packages](#distribution-packages)
-    + [KDE Neon git unstable](#kde-neon-git-unstable)
-  * [Mycroft for Plasma installer](#mycroft-for-plasma-installer)
-    + [Mycroft for Plasma installer scripts](#mycroft-for-plasma-installer-scripts)
-    + [Mycroft for Plasma manual installation](#mycroft-for-plasma-manual-installation)
-  * [The Mycroft for Plasma interface](#the-mycroft-for-plasma-interface)
-  * [Troubleshooting Mycroft for Plasma](#troubleshooting-mycroft-for-plasma)
-    + [Debugging connection errors](#debugging-connection-errors)
-  * [The visual display](#the-visual-display)
-    + [HTML-based visual Skill generation](#html-based-visual-skill-generation)
-      - [Wikipedia Skill HTML Example](#wikipedia-skill-html-example)
-      - [CSS file](#css-file)
-  * [QML based visual Skill generation](#qml-based-visual-skill-generation)
-    + [Wikipedia Skill QML Example](#wikipedia-skill-qml-example)
-  * [Mycroft for Plasma native visual Skill](#mycroft-for-plasma-native-visual-skill)
+---
+
+# Mycroft for Plasma
 
 This is a general installation and user guide for Plasma Mycroft on the [KDE Plasma Desktop platform](https://www.kde.org/plasma-desktop).
 
@@ -34,7 +11,7 @@ This is a general installation and user guide for Plasma Mycroft on the [KDE Pla
 
 ### Distribution packages
 
-Check your Linux distribution for `mycroft-core` and `plasma-mycroft` packages. 
+Check your Linux distribution for `mycroft-core` and `plasma-mycroft` packages.
 
 ### KDE Neon git unstable
 
@@ -86,18 +63,18 @@ sudo chmod +x /usr/share/plasma/plasmoids/org.kde.plasma.mycroftplasmoid/content
 
 ### Debugging connection errors
 
-Follow these steps to debug connection errors. 
+Follow these steps to debug connection errors.
 
-* First, check that your `mycroft-core` location is correctly set in your Mycroft for Plasma settings. By default, Mycroft for Plasma searches for `mycroft-core` in your `$HOME` path - ie. `/home/$USER/mycroft-core`. 
+* First, check that your `mycroft-core` location is correctly set in your Mycroft for Plasma settings. By default, Mycroft for Plasma searches for `mycroft-core` in your `$HOME` path - ie. `/home/$USER/mycroft-core`.
 * Next, check if `mycroft-core` is able to start manually using the `debug` console - `./start-mycroft.sh debug`
-* Next, check to see if your firewall is blocking incoming connections to the `mycroft-core` websocket address. By default, `mycroft-core` listens on port 8181. 
+* Next, check to see if your firewall is blocking incoming connections to the `mycroft-core` websocket address. By default, `mycroft-core` listens on port 8181.
 * Next, check the `mycroft-bus.log` file to see if there are any errors blocking your connection. [See here for more information on the location of log files on Linux](https://mycroft.ai/documentation/troubleshooting/#linux).
-* Next, check to see if the Mycroft for Plasma start and stop scripts have 'execute' filesystem permissions. They are located at: 
+* Next, check to see if the Mycroft for Plasma start and stop scripts have 'execute' filesystem permissions. They are located at:
 
 * `/usr/share/plasma/plasmoids/org.kde.plasma.mycroftplasmoid/contents/code/startservice.sh` (start)
 * `/usr/share/plasma/plasmoids/org.kde.plasma.mycroftplasmoid/contents/code/stopservice.sh` (stop)
 
-## The visual display 
+## The visual display
 
 The Mycroft for Plasma desktop `enclosure` provides Skill Authors with a visual display platform to showcase **Skill** results and data in the form of interactive visual cards that can be created by the Skill Authors using popular UI/UX technologies such as `html` and `QML`.
 
@@ -105,9 +82,9 @@ The Mycroft for Plasma desktop `enclosure` provides Skill Authors with a visual 
 
 #### Wikipedia Skill HTML Example
 
-First, create a `html` folder inside your **Skill** folder. Next, we map the path to the folder. 
+First, create a `html` folder inside your **Skill** folder. Next, we map the path to the folder.
 
-```{.XML} 
+```{.XML}
 class WikipediaSkill(MycroftSkill):
 def __init__(self):
 ....
@@ -118,7 +95,7 @@ self.css_index = dirname(__file__) + '/html/wiki.css'# Location of your main.css
 Next, we create a `__genwebview()` function. This function is used to generate the `html` page within the **Skill**.
 
 ```
-{.XML} 
+{.XML}
 def __genwebview(self, sm, imagemain, title):
 simg = imagemain # Image url received from wikipedia api
 smry = sm.encode('utf-8') # Summary received from wikipedia api encoded to utf8
@@ -142,9 +119,9 @@ avoided and should be placed in the HTML folder as external files. Example JS
 inclusion would have a self.js_index which could be passed to  insidef.write(wrapper) f.close()
 ```
 
-Next, we call the `__genwebview(self)` function from `handle_intent()`. 
+Next, we call the `__genwebview(self)` function from `handle_intent()`.
 
-``` 
+```
 {.XML}
 def handle_intent(self, message):
 try:
@@ -160,7 +137,7 @@ available
 Next, we send the URL to the `enclosure` for handling via the `self_enclosure.ws.emit()` function.
 
 ```
-{.XML} 
+{.XML}
 # Requires import: from mycroft.messagebus.message import Message
 def handle_intent(self, message):
 try:
@@ -178,7 +155,7 @@ self.speak(summary)
 The CSS file should be manually generated by the Skill Author.
 
 ```
-{.XML} 
+{.XML}
 html, body { margin: 0; padding: 0 } # Important to include in your css to avoid whitespace borders
 
 # CSS for your view should be responsive, Fixed sizes and non responsive layouts will break on different screen sizes.
@@ -188,10 +165,10 @@ html, body { margin: 0; padding: 0 } # Important to include in your css to avoid
 
 ### Wikipedia Skill QML Example
 
-First, create a `qml` folder inside your **Skill** folder and then map the path to the folder. 
+First, create a `qml` folder inside your **Skill** folder and then map the path to the folder.
 
 ```
-{.XML} 
+{.XML}
 
 class WikipediaSkill(MycroftSkill):
 def __init__(self):
@@ -199,10 +176,10 @@ def __init__(self):
 self.qml_index = dirname(__file__) + '/qml/' # Location where the qml files will be generated
 ```
 
-Next, create a `__genvisualobjecttemplate()` function. This function is used to generate the QML visual object within the **Skill**. 
+Next, create a `__genvisualobjecttemplate()` function. This function is used to generate the QML visual object within the **Skill**.
 
 ```
-{.XML} 
+{.XML}
 def __genvisualobjecttemplate(self, sm, imagemain, title):
 simg = imagemain # Image url received from wikipedia api
 smry = sm.encode('utf-8') # Summary received from wikipedia api encoded to utf8
@@ -238,10 +215,10 @@ f.write(wrapper) # The wrapper is where you define your basic QM layout for the 
 f.close()
 ```
 
-Next, call the `__genvisualobjecttemplate(self)` function from the `handle_intent()` function. 
+Next, call the `__genvisualobjecttemplate(self)` function from the `handle_intent()` function.
 
 ```
-{.XML} 
+{.XML}
 def handle_intent(self, message):
 try:
 ....
@@ -253,10 +230,10 @@ self.__genbvisualobjecttemplate(sm, imagemain, title) # Calling the function to 
 
 ```
 
-Next, send the QML file location to the `enclosure` for handling via the `self_enclosure.ws.emit()` function. 
+Next, send the QML file location to the `enclosure` for handling via the `self_enclosure.ws.emit()` function.
 
 ```
-{.XML} 
+{.XML}
 #Requires import: from mycroft.messagebus.message import Message
 
 def handle_intent(self, message):
@@ -272,7 +249,7 @@ self.speak(summary)
 
 The Mycroft for Plasma `enclosure` also provides Skill Authors the ability to natively implement visual design for their **Skill** by providing a simple Object to the plasmoid.
 
-First, create a custom visual object, and emit it to the plasmoid. 
+First, create a custom visual object, and emit it to the plasmoid.
 
 ```
 def handle_intent(self, message):

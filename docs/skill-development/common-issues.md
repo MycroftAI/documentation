@@ -1,13 +1,6 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/common-issues-in-skills-development/
-post_date: '2017-12-03T06:24:16.000Z'
-published: true
-post_title: Common issues in Skills development
-ID: 32446
+description: >-
+  Having trouble with your Skill? Here are a few things that we often see.
 ---
 
 # Common Issues
@@ -21,4 +14,3 @@ ID: 32446
 3-Wrong order of files directories is a very common mistake! You have to make a language subfolder inside dialog and inside vocab folder, which holds .voc and .dialog files. So make sure that your .voc files and .dialog files inside a language subfolder!
 
 @TODO I need more information on issues that Skill developers have
-

@@ -1,28 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: 'http://mycroft.ai/documentation/msm/'
-post_date: '2017-12-12T10:56:48.000Z'
-published: true
-post_title: Mycroft Skills Manager – msm
-ID: 33749
+description: >-
+  Mycroft Skills Manager \(msm\) is a command line tool used to add, manage and remove Skills on any Mycroft installation.
 ---
 
 # Mycroft Skills Manager
-
-* [Mycroft Skills Manager - msm](msm.md#mycroft-skills-manager---msm)
-  * [What is Mycroft Skills Manager - msm?](msm.md#what-is-mycroft-skills-manager---msm-)
-  * [Using Mycroft Skills Manager - msm](msm.md#using-mycroft-skills-manager---msm)
-  * [`msm` errors](msm.md#-msm--errors)
-    * [Git authentication failed](msm.md#git-authentication-failed)
-    * [Uncommitted changes](msm.md#uncommitted-changes)
-    * [Git command error - not something we can merge](msm.md#git-command-error---not-something-we-can-merge)
-    * [Git command error - failed to update repo](msm.md#git-command-error---failed-to-update-repo)
-  * [Other techniques to resolve Skill installation dependencies](msm.md#other-techniques-to-resolve-skill-installation-dependencies)
-    * [Forcing the re-installation of dependencies](msm.md#forcing-the-re-installation-of-dependencies)
-
-## What is Mycroft Skills Manager - msm?
 
 Mycroft Skills Manager \(msm\) is a command line tool used to add, manage and remove **Skills** on any Mycroft installation. It can install any **Skill** listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills). `msm` is a handy tool for Developers and those who may frequently reconfigure, install and uninstall **Skills**.
 
@@ -204,4 +185,3 @@ To trigger a `pip` re-installing **Skill** dependencies, do the following:
 This will force both a **Skills** update and the re-installation of dependencies when the `mycroft-skills` service is re-started.
 
 You can also use the utility `mycroft-pip` which will install dependencies into the Mycroft _virtual environment_ without activation \(ie. the 'activate' command\). Use `mycroft-pip` as you would regular `pip` for installing Python libraries on which your **Skill** depends.
-

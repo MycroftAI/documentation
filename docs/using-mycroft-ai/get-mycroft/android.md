@@ -1,8 +1,7 @@
 ---
 description: >-
   Mycroft for Android is a Community led project. It is a proof of concept and
-  is not ready for general use. There is no .apk available. You will need to be
-  familiar with [Android Studio](https://develo
+  is not ready for general use. There is no .apk available.
 ---
 
 # Android
@@ -52,4 +51,3 @@ The easiest way to keep Mycroft for Android updated is to clone the `git` repo w
 ## Common issues with Mycroft for Android
 
 @TODO link to Troubleshooting
-

@@ -1,33 +1,11 @@
 ---
-post_excerpt: >-
-  In this introduction to developing Skills for Mycroft, learn the prerequisites
-  you'll need, and step through the basic anatomy of a Mycroft Skill.
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/introduction-developing-skills/
-post_date: '2017-12-02T22:35:25.000Z'
-published: true
-post_title: Introduction to developing Skills
-ID: 32444
+description: >-
+  In this introduction to developing Skills for Mycroft, learn the prerequisites you'll need, and step through the basic anatomy of a Mycroft Skill.
 ---
 
 # Your First Skill
 
-* [Developing a new **Skill**](your-first-skill.md#developing-a-new-skill)
-  * [Prerequisites](your-first-skill.md#prerequisites)
-  * [Skill terminology](your-first-skill.md#skill-terminology)
-  * [Make a new repo using the Template Skill](your-first-skill.md#make-a-new-repo-using-the-template-skill)
-    * [Structure of the **Skill** repo](your-first-skill.md#structure-of-the-skill-repo)
-      * [`dialog` directory](your-first-skill.md#dialog-directory)
-      * [vocab directory and defining Intents](your-first-skill.md#vocab-directory-and-defining-intents)
-      * [**init**.py](your-first-skill.md#init-py)
-  * [Simplifying your Skill code with `intent_handler` _decorators_](your-first-skill.md#simplifying-your-skill-code-with-intent_handler-decorators)
-  * [How do I disable a Skill?](your-first-skill.md#how-do-i-disable-a-skill)
-  * [How to increase the priority of **Skills** during loading](your-first-skill.md#how-to-increase-the-priority-of-skills-during-loading)
-  * [How do I find more information on Mycroft functions?](your-first-skill.md#how-do-i-find-more-information-on-mycroft-functions)
-
-This page will walk you through developing a new Mycroft **Skill**. It assumes you have read through the [basic skills information](https://mycroft.ai/documentation/skills/developing-skills/)
+This page will walk you through developing a new Mycroft **Skill**.
 
 ## Prerequisites
 
@@ -207,7 +185,7 @@ Mycroft will match this to the
 
 **intent** in the **Skill**.
 
-_NOTE: One of the most common mistakes when getting started with **Skills** is that the **vocab** file doesn't include all the phrases that the User might use to trigger the **intent**._ 
+_NOTE: One of the most common mistakes when getting started with **Skills** is that the **vocab** file doesn't include all the phrases that the User might use to trigger the **intent**._
 
 #### **init**.py
 
@@ -548,4 +526,3 @@ Search for the string `priority` in the file. Then, edit the line below to inclu
 ## How do I find more information on Mycroft functions?
 
 You can find documentation on Mycroft functions and helper methods at the [Mycroft Core API documentation](https://mycroft-core.readthedocs.io/en/master/)
-

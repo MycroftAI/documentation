@@ -1,31 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/mycroft-conf/
-post_date: '2017-12-13T07:51:51.000Z'
-published: true
-post_title: The `mycroft.conf` file
-ID: 33724
+description: >-
+
 ---
 
 # mycroft.conf
-
-* [mycroft.conf and mycroft\_web\_cache.json](mycroft-conf.md#mycroft-conf-and-mycroftwebcache-json)
-  * [What is `mycroft.conf`?](mycroft-conf.md#what-is-mycroft-conf)
-  * [What is `mycroft_web_cache.json`?](mycroft-conf.md#what-is-mycroftwebcache-json)
-  * [How are `mycroft.conf` and `mycroft_web_cache.json` updated?](mycroft-conf.md#how-are-mycroft-conf-and-mycroftwebcache-json-updated)
-  * [Where is the `mycroft.conf` file stored?](mycroft-conf.md#where-is-the-mycroft-conf-file-stored)
-  * [A look at the inside of `mycroft.conf`](mycroft-conf.md#a-look-at-the-inside-of-mycroft-conf)
-  * [Where is the `mycroft_web_cache.json` file stored?](mycroft-conf.md#where-is-the-mycroftwebcache-json-file-stored)
-  * [A look at the inside of `mycroft_web_cache.json`](mycroft-conf.md#a-look-at-the-inside-of-mycroftwebcache-json)
-* [Advanced Configuration Options](mycroft-conf.md#advanced-configuration-options)
-  * [Changing your Wake Word](mycroft-conf.md#changing-your-wake-word)
-    * [About Phonemes](mycroft-conf.md#about-phonemes)
-    * [Other Settings](mycroft-conf.md#other-settings)
-    * [Adding Wake Word Settings to `mycroft.conf`](mycroft-conf.md#adding-wake-word-settings-to-mycroft-conf)
-    * [Telling Mycroft to pick up the new settings](mycroft-conf.md#telling-mycroft-to-pick-up-the-new-settings)
 
 ### What is `mycroft.conf`?
 
@@ -594,4 +572,3 @@ Mycroft doesn't automatically fetch the new settings. You need to tell Mycroft t
 > Hey Mycroft, configuration update
 
 Mycroft will then pull the new Settings configuration down.
-

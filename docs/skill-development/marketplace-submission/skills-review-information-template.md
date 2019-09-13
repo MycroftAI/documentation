@@ -1,14 +1,9 @@
 ---
-ID: 46224
-post_title: Skills Information Review Template
-author: Kris Gesling
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/skills/skills-acceptance-process/skills-review-information-template/
-published: true
-post_date: 2019-04-05 21:59:33
+description: >-
+  Template for the Information Review component of the Skills Acceptance Process.
 ---
+# Skills Information Review Template
+
 ## Meta  
 * Who: [@your-github-handle](https://github.com/your-github-handle) / @your-mycroft-chat-handle  
 * Datestamp: run `date +%Y-%m-%d_%H:%M:%S_%Z`  

@@ -1,31 +1,10 @@
 ---
-post_excerpt: >-
-  Learn how to use the Mycroft Skills Kit - msk - to make the creation, testing
-  and submission of Skills a lot easier. 
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/msk/
-post_date: '2018-06-06T12:29:25.000Z'
-published: true
-post_title: Mycroft Skills Kit – msk
-ID: 38649
+description: >-
+  Learn how to use the Mycroft Skills Kit - MSK - to make the creation, testing
+  and submission of Skills a lot easier.
 ---
 
 # Mycroft Skills Kit
-
-* [Mycroft Skills Kit - msk](mycroft-skills-kit.md#mycroft-skills-kit---msk)
-  * [Introduction](mycroft-skills-kit.md#introduction)
-  * [Installing msk](mycroft-skills-kit.md#installing-msk)
-  * [Usage](mycroft-skills-kit.md#usage)
-  * [Create](mycroft-skills-kit.md#create)
-  * [Create test](mycroft-skills-kit.md#create-test)
-  * [Upload Skill](mycroft-skills-kit.md#upload-skill)
-  * [Upgrade Skill](mycroft-skills-kit.md#upgrade-skill)
-    * [Before you upgrade](mycroft-skills-kit.md#before-you-upgrade)
-  * [Join our Skills Authoring Community](mycroft-skills-kit.md#join-our-skills-authoring-community)
-
-## Introduction
 
 The Mycroft Skills Kit - `msk` - is a Python-based utility that has been created to make it easier for **Skill** Authors to create, test and submit **Skills** to the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills). We hope this utility helps to shorten the development cycle, and remove some of the tedious parts of **Skill** creation.
 
@@ -106,7 +85,7 @@ Class name: FeedTheCorgiSkill
 Repo name: feed-the-corgi-skill
 
 Looks good? (Y/n) Y
-Enter a one line description for your skill (ie. Orders fresh pizzas from the store): 
+Enter a one line description for your skill (ie. Orders fresh pizzas from the store):
 - Reminds you to feed your poor starving Corgi
 Enter a long description:
 > Every 24 hours, Mycroft will send you a reminder to feed your Corgi, and tell you what your Corgi was fed the previous day, so you can provide a different delicious meal for your precious Corgi.
@@ -118,16 +97,16 @@ Enter some example phrases to trigger your skill:
 -
 Enter author: YourGitHubUserName
 
-Categories define where the skill will display in the Marketplace. It must be one of the following: 
-Daily, Configuration, Entertainment, Information, IoT, Music & Audio, Media, Productivity, Transport. 
-Enter the primary category for your skill: 
+Categories define where the skill will display in the Marketplace. It must be one of the following:
+Daily, Configuration, Entertainment, Information, IoT, Music & Audio, Media, Productivity, Transport.
+Enter the primary category for your skill:
 - Daily
 Enter additional categories (optional):
 - Productivity
-- 
+-
 Enter tags to make it easier to search for your skill (optional):
 - Dogs
-- 
+-
 
 Would you like to create a GitHub repo for it? (Y/n) Y
 === GitHub Credentials ===
@@ -265,17 +244,17 @@ Once your changes are committed, you can then use `msk upgrade` by passing the l
 (.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
 === GitHub Credentials ===
 Username: KathyReid
-Password: 
+Password:
 Counting objects: 3, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 877 bytes | 877.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-remote: 
+remote:
 remote: Create a pull request for 'upgrade-kathy-msk-test-skill' on GitHub by visiting:
 remote:      https://github.com/KathyReid/mycroft-skills/pull/new/upgrade-kathy-msk-test-skill
-remote: 
+remote:
 To https://github.com/KathyReid/mycroft-skills
  * [new branch]      upgrade-kathy-msk-test-skill -> upgrade-kathy-msk-test-skill
 Branch 'upgrade-kathy-msk-test-skill' set up to track remote branch 'upgrade-kathy-msk-test-skill' from 'fork'.
@@ -293,14 +272,14 @@ Created PR at: https://github.com/MycroftAI/mycroft-skills/pull/661
 
 `msk upgrade` will create a new PR on the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills), and this will be reviewed using the [Skills Acceptance process](https://mycroft.ai/documentation/skills/skills-acceptance-process/).
 
-* If you try to run `msk upgrade` and your Skill has not yet been merged, you will receive the error: 
+* If you try to run `msk upgrade` and your Skill has not yet been merged, you will receive the error:
 
 ```text
 (.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
 NotUploaded: The skill kathy-msk-test-skill has not yet been uploaded to the skill store
 ```
 
-* If have uncommitted items, you will receive the error: 
+* If have uncommitted items, you will receive the error:
 
 ```text
 (.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
@@ -326,7 +305,7 @@ You need to ensure that your changes are committed:
  1 file changed, 3 insertions(+)
 (.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ git push -u origin master
 Username for 'https://github.com': KathyReid
-Password for 'https://KathyReid@github.com': 
+Password for 'https://KathyReid@github.com':
 Counting objects: 3, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (3/3), done.
@@ -341,4 +320,3 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 ## Join our Skills Authoring Community
 
 [Join other Skill Authors in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
-

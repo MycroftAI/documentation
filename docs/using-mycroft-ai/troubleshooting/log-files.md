@@ -1,36 +1,13 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: 'http://mycroft.ai/documentation/logs/'
-post_date: '2018-12-11T07:20:23.000Z'
-published: true
-post_title: Mycroft logs
-ID: 40001
+description: >-
+  Information on the different log files Mycroft uses, where the logs files are located on a Mycroft Device, the sort of data that you will find in them, and some common commands to use to aid diagnosis of common issues with Skills and Skill Authoring.
 ---
 
 # Log Files
 
-* [Mycroft logs](log-files.md#mycroft-logs)
-  * [About the Mycroft logs](log-files.md#about-the-mycroft-logs)
-    * [How to find the Mycroft logs](log-files.md#how-to-find-the-mycroft-logs)
-  * [Log file descriptions](log-files.md#log-file-descriptions)
-    * [audio.log](log-files.md#audiolog)
-    * [bus.log](log-files.md#buslog)
-    * [enclosure.log](log-files.md#enclosurelog)
-    * [skills.log](log-files.md#skillslog)
-    * [update.log](log-files.md#updatelog)
-    * [voice.log](log-files.md#voicelog)
-  * [Useful diagnostic commands](log-files.md#useful-diagnostic-commands)
-    * [Errors in a Skill](log-files.md#errors-in-a-skill)
-    * [Tailing the skills.log](log-files.md#tailing-the-skillslog)
-  * [Log rotation](log-files.md#log-rotation)
-
 If you request Support from Mycroft, through the [Mycroft Forum](https://community.mycroft.ai), through [Mycroft Chat](https://chat.mycroft.ai) or by [contacting us](https://mycroft.ai/contact/), it is likely we will ask you for _logs_ to help us diagnose the problem.
 
 The [Support Skill](https://market.mycroft.ai/skill/mycroft-support-helper) automatically generates links to log files - so if you prefer a less detailed approach, then please use the Support Skill.
-
-This page provides information on the different log files Mycroft uses, where the logs files are located on a Mycroft **Device**, the sort of data that you will find in them, and some common commands to use to aid diagnosis of common issues with Skills and Skill Authoring.
 
 ## About the Mycroft logs
 
@@ -193,4 +170,3 @@ total 89816
     4 -rw-r--r-- 1 mycroft root     1788 Dec  1 06:25 voice.log.8
     4 -rw-r--r-- 1 mycroft root     1720 Nov 30 06:25 voice.log.9
 ```
-

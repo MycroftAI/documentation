@@ -1,30 +1,11 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/automatic-testing/
-post_date: '2018-04-04T07:57:16.000Z'
-published: true
-post_title: Automatic testing of your Mycroft Skill
-ID: 36968
+description: >-
+  Mycroft has a built-in mechanism to help you automatically test your Skill. 
 ---
 
 # Automatic Testing
 
-* [Automatic testing of your Mycroft Skill](automatic-testing.md#automatic-testing-of-your-mycroft-skill)
-  * [Overview](automatic-testing.md#overview)
-  * [The Integration Test Runner files](automatic-testing.md#the-integration-test-runner-files)
-  * [How to define tests for your Skill](automatic-testing.md#how-to-define-tests-for-your-skill)
-  * [The internal rule format](automatic-testing.md#the-internal-rule-format)
-  * [Handling Skills with side effects](automatic-testing.md#handling-skills-with-side-effects)
-  * [Executing the Integration Test Runner](automatic-testing.md#executing-the-integration-test-runner)
-  * [Troubleshooting tests](automatic-testing.md#troubleshooting-tests)
-    * [Example of a failing test](automatic-testing.md#example-of-a-failing-test)
-  * [Test coverage](automatic-testing.md#test-coverage)
-  * [What should I do if the tests that are failing are not within my control?](automatic-testing.md#what-should-i-do-if-the-tests-that-are-failing-are-not-within-my-control)
-
-Mycroft has a built-in mechanism to help you automatically test your **Skill**. Automatic testing of **Skills** helps increase the quality of the Mycroft ecosystem overall, and helps assure you that your **Skill** is performing as intended. Tests are required to be passing before your **Skill** will be accepted into the [Mycroft **Skill**](https://github.com/MycroftAI/mycroft-skills) repository on GitHub.
+Automatic testing of **Skills** helps increase the quality of the Mycroft ecosystem overall, and helps assure you that your **Skill** is performing as intended. Tests are required to be passing before your **Skill** will be accepted into the [Mycroft **Skill**](https://github.com/MycroftAI/mycroft-skills) repository on GitHub.
 
 ## Overview
 
@@ -335,4 +316,3 @@ Please paste a copy of the automated **Skill** testing output as a comment in th
 ## Where can I go to get more assistance?
 
 Join us in the [~skills channel in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
-

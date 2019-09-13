@@ -1,5 +1,5 @@
 ---
-post_excerpt: >-
+description: >-
   A Message Bus is mechanism for independent systems to communicate with each
   other using a set of _messages_ for common commands or notifiers. In the
   Mycroft ecosystem, the Messagebus is a websocket and the messages contain a
@@ -8,26 +8,9 @@ post_excerpt: >-
   occurred or are about to occur. The Messagebus connects the `mycroft-core`
   processes and the **Skills**, and can also be joined by outside systems such
   as the CLI.
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/message-bus/
-post_date: '2018-07-04T05:37:00.000Z'
-published: true
-post_title: Message Bus
-ID: 39264
 ---
 
 # MessageBus
-
-* [Introduction to the Message Bus](message-bus.md#introduction-to-the-message-bus)
-  * [What is a Message Bus?](message-bus.md#what-is-a-message-bus)
-  * [Mycroft Messagebus messages](message-bus.md#mycroft-messagebus-messages)
-  * [Guidelines for Mycroft Messagebus usage](message-bus.md#guidelines-for-mycroft-messagebus-usage)
-  * [Command line invocation syntax](message-bus.md#command-line-invocation-syntax)
-  * [Connecting message handlers within a MycroftSkill](message-bus.md#connecting-message-handlers-within-a-mycroftskill)
-  * [Generating messages within a MycroftSkill](message-bus.md#generating-messages-within-a-mycroftskill)
-  * [Connecting to the Mycroft Messagebus in Python](message-bus.md#connecting-to-the-mycroft-messagebus-in-python)
 
 ## What is a Message Bus?
 
@@ -194,4 +177,3 @@ ws.close()
 Unfortunately, we cannot provide support or examples for other languages.
 
 If you have further questions, then the best place to ask them is our [Community Forum](https://community.mycroft.ai) or in the [~dev Channel](https://chat.mycroft.ai/community/channels/dev) on Mycroft Chat.
-

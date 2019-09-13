@@ -1,2 +1,0 @@
-# Specific Platforms
-

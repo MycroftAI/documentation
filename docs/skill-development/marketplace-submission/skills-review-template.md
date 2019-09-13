@@ -1,15 +1,9 @@
 ---
-ID: 44396
-post_title: Skills Review Template
-author: Eric Jurgeson
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/skills/skills-acceptance-process/skills-review-template/
-published: true
-post_date: 2019-03-29 12:13:25
+description: >-
+  Complete template for the Skills Acceptance Process.
 ---
-# Skills Review Template  
+
+# Combined Skills Review Template  
 The overall [Skills Acceptance Process](https://mycroft.ai/documentation/skills/skills-acceptance-process/) is outlined in the Mycroft Documentation.
 
 This template is provided to make it easier for testers to complete the process and provide relevant feedback to Skill Authors. An example of the completed process can be found on [this Pull Request](https://github.com/MycroftAI/mycroft-skills/pull/844#issuecomment-460913234). If you have any other questions or comments, please raise them in the [Skill Testing Team Chat](https://chat.mycroft.ai/community/channels/skill-testing-team).

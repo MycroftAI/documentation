@@ -1,17 +1,9 @@
 ---
-ID: 32420
-post_title: Mycroft Glossary
-author: Kathy Reid
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/glossary/
-published: true
-post_date: 2017-12-02 22:35:25
+description: >-
+  Use our Glossary to learn more about the specialist terms that we use in natural language processing generally, and more specifically with Mycroft software and hardware.
 ---
-# Mycroft Glossary
 
-Use our Glossary to learn more about the specialist terms that we use in natural language processing generally, and more specifically with Mycroft software and hardware.
+# Mycroft Glossary
 
 * **Device** - the platform you have Mycroft installed on. This might be using an **Enclosure**, like the Mark 1, or on a Raspberry Pi, or it might be on a Linux desktop. Each **Device**  needs to be **Paired** with your Mycroft Home account before it can be used.
 

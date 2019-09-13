@@ -1,13 +1,6 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/repurposing-skills/
-post_date: '2017-12-02T22:35:25.000Z'
-published: true
-post_title: Repurposing **Skills** developed for other platforms
-ID: 32448
+description: >-
+  Have experience building Voice Skills on other platforms?
 ---
 
 # Repurposing Skills
@@ -17,4 +10,3 @@ It is not straightforward to repurpose **Skills** developed for other platforms,
 That said, having the _structure_ or _logical flow_ of your **Skill** well defined already makes it easier to start development of your Mycroft **Skills**.
 
 Want to know more about Mycroft Skills? Ask our friendly community over on [Mycroft Mattermost Chat](https://chat.mycroft.ai).
-

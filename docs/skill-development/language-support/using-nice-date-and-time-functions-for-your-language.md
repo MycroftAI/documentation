@@ -1,42 +1,9 @@
 ---
-ID: 38898
-post_title: >
-  Using nice date and time functions for
-  your language
-author: Kathy Reid
-post_excerpt: "If you're building Skills that support multiple languages, use this documentation to help you ensure that spoken phrases associated with numbers, times, and dates are customized for your language. "
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/language-support/using-nice-date-and-time-functions-for-your-language/
-published: true
-post_date: 2018-06-15 14:03:04
+description: >-
+  If you're building Skills that support multiple languages, use this documentation to help you ensure that spoken phrases associated with numbers, times, and dates are customized for your language.
 ---
+
 # Configuring some of the “nice” functions for a language
-
-- [Configuring some of the “nice” functions for a language](#configuring-some-of-the-nice-functions-for-a-language)
-  * [Configuration files in the file system](#configuration-files-in-the-file-system)
-  * [The configuration file](#the-configuration-file)
-    + [The building blocks](#the-building-blocks)
-      - [The decade_format](#the-decade_format)
-        * [Components in the decade format](#components-in-the-decade-format)
-    + [The hundreds format](#the-hundreds-format)
-        * [Components in the hundreds format](#components-in-the-hundreds-format)
-    + [The thousands_format](#the-thousands_format)
-        * [Components in the thousand format](#components-in-the-thousand-format)
-    + [The year_format](#the-year_format)
-        * [Components in the year template](#components-in-the-year-template)
-    + [The date_format](#the-date_format)
-        * [Components in the date template](#components-in-the-date-template)
-    + [The date_time_format](#the-date_time_format)
-      - [Arguments to format templates](#arguments-to-format-templates)
-  * [Maps](#maps)
-    + [The weekday section](#the-weekday-section)
-    + [The date section](#the-date-section)
-    + [The month section](#the-month-section)
-  * [Unit testing](#unit-testing)
-  * [Configuration file for en-us](#configuration-file-for-en-us)
-  * [Test file for en-us](#test-file-for-en-us)
-
 
 The following functions are used to convert a Python datetime to a pronounceable string, for a given language [please refer to the Mycroft API documentation](http://mycroft-core.readthedocs.io/en/stable/))
 

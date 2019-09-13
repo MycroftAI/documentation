@@ -1,38 +1,13 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: 'http://mycroft.ai/documentation/adapt/'
-post_date: '2017-12-03T05:09:17.000Z'
-published: true
-post_title: Adapt
-ID: 33104
+description: >-
+Adapt is an _intent parser_ - meaning that it is a library for converting natural language into machine-readable data structures, such as JSON.
 ---
 
 # Adapt
 
-* [What is the Adapt Intent Parser?](./#what-is-the-adapt-intent-parser)
-* [Is Adapt right for me or my use cases?](./#is-adapt-right-for-me-or-my-use-cases)
-  * [Lightweight](./#lightweight)
-  * [Portable](./#portable)
-  * [Reliable](./#reliable)
-  * [Open source](./#open-source)
-* [Who developed Adapt?](./#who-developed-adapt)
-* [How do I install Adapt Intent Parser?](./#how-do-i-install-adapt-intent-parser)
-  * [Requirements](./#requirements)
-  * [`pip` installation](./#pip-installation)
-    * [Installing `pip` for Ubuntu / Debian based Linux](./#installing-pip-for-ubuntu-debian-based-linux)
-    * [Installing `pip` for Fedora / RPM based Linux](./#installing-pip-for-fedora-rpm-based-linux)
-  * [Installing Adapt Intent Parser](./#installing-adapt-intent-parser)
-    * [Installing Adapt for Ubuntu, Debian or Raspbian](./#installing-adapt-for-ubuntu-debian-or-raspbian)
-* [How do I contribute to Adapt Intent Parser?](./#how-do-i-contribute-to-adapt-intent-parser)
-  * [For Ubuntu, Debian and Raspbian based Linux](./#for-ubuntu-debian-and-raspbian-based-linux)
-  * [For Fedora / RPM based Linux](./#for-fedora-rpm-based-linux)
-  * [For MacOS X](./#for-macos-x)
-
 ## What is the Adapt Intent Parser?
 
-Adapt is an _intent parser_ - meaning that it is a library for converting natural language into machine-readable data structures, such as JSON. The Adapt Intent Parser is open source software. It is lightweight and is designed to run on devices with limited computing resources, such as embedded devices.
+The Adapt Intent Parser is open source software. It is lightweight and is designed to run on devices with limited computing resources, such as embedded devices.
 
 [You may prefer to watch this video which provides an overview of the Adapt Intent Parser](https://www.youtube.com/watch?v=zR9xvPtM6Ro).
 
@@ -218,4 +193,3 @@ Verify the installation by running the example code from the Adapt repository.
 $ cd ~/adapt
 PYTHONPATH=. python examples/multi_intent_parser.py "play some music by the clash"
 ```
-

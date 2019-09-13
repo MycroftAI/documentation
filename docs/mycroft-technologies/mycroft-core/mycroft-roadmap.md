@@ -1,13 +1,6 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/mycroft-roadmap/
-post_date: '2017-12-02T22:35:25.000Z'
-published: true
-post_title: Mycroft Roadmap
-ID: 32418
+description: >-
+A list of roadmaps to help you see where Mycroft's technology is headed. Note that with the pace of change, these documents can become dated quickly.
 ---
 
 # Roadmap
@@ -22,4 +15,3 @@ We now have both a **Master Roadmap**, and associated voice stack Roadmaps to he
 * [`mycroft-core` Roadmap](https://docs.google.com/document/d/1GvhoqC9mUTEDLrwXVSEQ4JecuUMKaTpE1l1FNE6mMTA/edit#heading=h.ck6l3z2vlex4)
 * [Languages Roadmap](https://docs.google.com/document/d/1otSj9YBEASCPAgD7MZmUR4m5Nal5O0fjN67y3gJRfNg/edit#heading=h.ck6l3z2vlex4)
 * [Personal / Standalone Server Roadmap](https://docs.google.com/document/d/1VJsk9xmFig1qAP-wH_SAB-3xyKRx28Z47IwlJWJMqOM/edit#heading=h.ck6l3z2vlex4)
-

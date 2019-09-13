@@ -1,14 +1,9 @@
 ---
-ID: 46221
-post_title: Skills Code Review Template
-author: Kris Gesling
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/skills/skills-acceptance-process/skills-review-code-template/
-published: true
-post_date: 2019-04-05 21:55:18
+description: >-
+  Template for the Code Review component of the Skills Acceptance Process.
 ---
+# Skills Code Review Template
+
 ## Meta  
 * Platform:  
 * Mycroft-core version:  

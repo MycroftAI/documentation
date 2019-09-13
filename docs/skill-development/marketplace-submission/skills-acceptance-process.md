@@ -1,18 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/skills-acceptance-process/
-post_date: '2018-04-04T08:43:20.000Z'
-published: true
-post_title: Skills Acceptance Process
-ID: 36808
+description: >-
+  The Skills Acceptance Process outlines how Skills are tested, reviewed, deployed and promoted through the Mycroft Marketplace.
 ---
 
 # Skills Acceptance Process
-
-The Skills Acceptance Process outlines how Skills are tested, reviewed, deployed and promoted through the Mycroft Marketplace.
 
 It is vital that Mycroft Skills exhibit high quality, and are well tested to encourage adoption, and ongoing development of the platform. This process contributes to that goal by providing a structured framework to follow to ensure repeatable outcomes.
 
@@ -35,7 +26,7 @@ Before submitting your Skill we assume you have:
 
 * Create your README.md using the [Skill Meta Editor](https://mycroft.ai/skill-meta-editor). We also have some [additional tips for a great README](http://mycroft.ai/documentation/skills/skills-readme-md/).
 * Personally tested your Skills functionality to ensure it is working as expected. For a detailed testing overview, see stage three below.
-* It is also a great idea to post a link to you Skill in the [Skill Feedback category of the Forums](https://community.mycroft.ai/c/skill-feedback) to let others test your Skill on different platforms. 
+* It is also a great idea to post a link to you Skill in the [Skill Feedback category of the Forums](https://community.mycroft.ai/c/skill-feedback) to let others test your Skill on different platforms.
 * Ensure any Python or other packages required to run your Skill are included in your requirements.txt or equivalent.
 * Run the [automated testing](https://mycroft.ai/documentation/skills/automatic-testing/) on your own machine using the command:
 
@@ -115,4 +106,3 @@ Instead, the Skill Management Team will seek assistance from the Community, and 
 Head to our [contribute page](https://mycroft.ai/contribute/#suggest-and-test-skills) to submit an application and see the many other ways you can be involved.
 
 Our Skills Testing Team are a fantastic group of community members who ensure that all Skills are secure, stable, accurate, and intuitive. The team has members with a range of skills and communicate through a private channel on [chat.mycroft.ai](https://chat.mycroft.ai/).
-

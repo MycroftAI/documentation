@@ -1,13 +1,6 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/legacy-repo/
-post_date: '2017-12-03T07:05:27.000Z'
-published: true
-post_title: Legacy Repo Shout-out
-ID: 33224
+description: >-
+  Maintaining the history of Mycroft contributions to our legacy repo.
 ---
 
 # Legacy Repo
@@ -43,4 +36,3 @@ seanfitz@r2d2:~/development/mycroft (master u=)$ git summary
      1    Nathan Dyer             0.2%
      1    Åke Forslund           0.2%
 ```
-

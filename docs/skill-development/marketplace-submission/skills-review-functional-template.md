@@ -1,14 +1,9 @@
 ---
-ID: 46228
-post_title: Skills Functional Review Template
-author: Kris Gesling
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/skills/skills-acceptance-process/skills-review-functional-template/
-published: true
-post_date: 2019-04-05 22:02:43
+description: >-
+  Template for the Functional Review component of the Skills Acceptance Process.
 ---
+# Skills Functional Review Template
+
 ## Meta  
 * Who: [@your-github-handle](https://github.com/your-github-handle) / @your-mycroft-chat-handle  
 * Datestamp: run `date +%Y-%m-%d_%H:%M:%S_%Z`  

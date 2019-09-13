@@ -1,30 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/skill-settings/
-post_date: '2017-12-02T22:35:25.000Z'
-published: true
-post_title: Skill Settings
-ID: 32919
+description: >-
+  Have you ever wanted to store settings for a Skill locally to a Device? For instance, you might want the User to specify a preference the first time they use a Skill, and then store that preference for subsequent uses.
 ---
 
 # Skill Settings
-
-* [Skill Settings](skill-settings.md#skill-settings)
-  * [How do I use Skill Settings?](skill-settings.md#how-do-i-use-skill-settings)
-    * [More information on Skill Settings](skill-settings.md#more-information-on-skill-settings)
-  * [settings.json](skill-settings.md#settingsjson)
-  * [Web configurable Settings with `settingsmeta` file](skill-settings.md#web-configurable-settings-with-settingsmeta)
-    * [More information on the `settingsmeta` file](skill-settings.md#more-information-on-the-settingsmeta-file)
-      * [name \(String\)](skill-settings.md#name-string)
-      * [skillMetadata \(Object\)](skill-settings.md#skillmetadata-object)
-      * [sections \(Array\)](skill-settings.md#sections-array)
-      * [sections &gt; name \(String\)](skill-settings.md#sections--name-string)
-      * [sections &gt; fields \(Array\)](skill-settings.md#sections--fields-array)
-
-Have you ever wanted to store settings for a **Skill** locally to a Device? For instance, you might want the User to specify a preference the first time they use a **Skill**, and then store that preference for subsequent uses.
 
 **Skill Settings** provide this ability.
 
@@ -182,4 +161,3 @@ _Optional_ The initial value for the field.
 * sections &gt; fields &gt; field &gt; placeholder \(String\)
 
 _Optional_ Placeholder text to show before data is entered in the field \(or possibly as a tooltip\)
-

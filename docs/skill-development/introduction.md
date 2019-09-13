@@ -1,13 +1,6 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/developing-skills/
-post_date: '2017-12-03T06:39:38.000Z'
-published: true
-post_title: Developing Skills for Mycroft
-ID: 32442
+description: >-
+  
 ---
 
 # Introduction to Skill Development
@@ -39,4 +32,3 @@ If you have an idea for a **Skill**, it's a great idea to join [Mycroft Chat](ht
 ## The Mycroft Skill Manager \(MSM\)
 
 The [Mycroft Skills Manager](https://mycroft.ai/documentation/msm/) - MSM - is a tool that is being increasingly used to find, deploy and resolve dependencies within **Skills**. It is important that you make your Skills compliant with `msm` so that they are easy to find and install in the future.
-

@@ -1,29 +1,9 @@
 ---
-ID: 32414
-post_title: Contributing to Mycroft
-author: Kathy Reid
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/contributing/
-published: true
-post_date: 2017-12-02 22:35:25
+description: >-
+  We value and recognise your contributions. Mycroft is artificial intelligence for _everyone_ and we warmly welcome both non-technical and technical contributions.
 ---
+
 # Contributing to Mycroft
-
-- [Contributing to Mycroft](#contributing-to-mycroft)
-  * [I'm non-technical, how do I contribute?](#im-non-technical-how-do-i-contribute)
-  * [I'm technically minded, how do I contribute?](#im-technically-minded-how-do-i-contribute)
-    + [Reporting Issues](#reporting-issues)
-      - [A description of the Issue in object-deviation format](#a-description-of-the-issue-in-object-deviation-format)
-      - [The Enclosure or Device you are using, and the version of Mycroft you are using](#the-enclosure-or-device-you-are-using-and-the-version-of-mycroft-you-are-using)
-        * [Mark 1 and Picroft](#mark-1-and-picroft)
-          + [Mycroft for Linux](#mycroft-for-linux)
-    + [Making changes](#making-changes)
-  * [Submitting changes for review](#submitting-changes-for-review)
-  * [Additional Resources](#additional-resources)
-
-We value and recognise your contributions. Mycroft is artificial intelligence for _everyone_ and we warmly welcome both non-technical and technical contributions.
 
 ## I'm non-technical, how do I contribute?
 

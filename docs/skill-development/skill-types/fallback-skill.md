@@ -1,22 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/skills/fallback-skill/
-post_date: '2017-12-03T02:20:53.000Z'
-published: true
-post_title: Fallback Skill
-ID: 33182
+description: >-
+  A Fallback Skill is a Skill that will be called if no Intent is matched to the Utterance.
 ---
 
 # Fallback Skill
-
-* [Fallback Skill](fallback-skill.md#fallback-skill)
-  * [Fallback **Skill** order of precedence](fallback-skill.md#fallback-skill-order-of-precedence)
-  * [Creating a Fallback **Skill**](fallback-skill.md#creating-a-fallback-skill)
-
-A Fallback **Skill** is a **Skill** that will be called if no **Intent** is matched to the **Utterance**. Previously, Wolfram Alpha was the only Fallback **Skill**, finding answers for general queries. Recently a [system for multiple Fallback Skills was added](https://github.com/MycroftAI/mycroft-core/pull/938).
 
 ## Fallback **Skill** order of precedence
 
@@ -65,10 +52,10 @@ Implement the fallback handler \(the method that will be called to potentially h
             and everything.
         """
         utterance = message.data.get("utterance")
-        if 'what' in utterance 
-            and 'meaning' in utterance 
-            and ('life' in utterance 
-                or 'universe' in utterance 
+        if 'what' in utterance
+            and 'meaning' in utterance
+            and ('life' in utterance
+                or 'universe' in utterance
                 or 'everything' in utterance):
             self.speak('42')
             return True
@@ -95,4 +82,3 @@ def create_skill():
 ```
 
 The above example can be found [here](https://github.com/forslund/fallback-meaning).
-

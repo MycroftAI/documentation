@@ -1,2 +1,0 @@
-# Getting more support
-

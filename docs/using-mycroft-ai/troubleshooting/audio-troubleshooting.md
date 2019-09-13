@@ -1,32 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: |
-  http://mycroft.ai/documentation/troubleshooting/audio-troubleshooting/
-post_date: '2018-03-27T08:51:07.000Z'
-published: true
-post_title: Audio troubleshooting
-ID: 36769
+description: >-
+
 ---
 
 # Audio Troubleshooting
-
-* [Troubleshooting Audio](audio-troubleshooting.md#troubleshooting-audio)
-  * [Missing pulseaudio](audio-troubleshooting.md#missing-pulseaudio)
-  * [Microphone can't hear me or CLI show no change in meter while speaking](audio-troubleshooting.md#microphone-cant-hear-me-or-cli-show-no-change-in-meter-while-speaking)
-  * [Dev instance audio test](audio-troubleshooting.md#dev-instance-audio-test)
-  * [Test your mic](audio-troubleshooting.md#test-your-mic)
-  * [Microphone working but Mycroft does not trigger on Wake Word](audio-troubleshooting.md#microphone-working-but-mycroft-does-not-trigger-on-wake-word)
-* [Pulseaudio settings](audio-troubleshooting.md#pulseaudio-settings)
-  * [Show current settings and info](audio-troubleshooting.md#show-current-settings-and-info)
-  * [List available input devices](audio-troubleshooting.md#list-available-input-devices)
-  * [List available output devices](audio-troubleshooting.md#list-available-output-devices)
-  * [Changing pulseaudio input and output](audio-troubleshooting.md#changing-pulseaudio-input-and-output)
-  * [Echo cancellation](audio-troubleshooting.md#echo-cancellation)
-  * [Pulseaudio modules](audio-troubleshooting.md#pulseaudio-modules)
-* [Other useful commands](audio-troubleshooting.md#other-useful-commands)
-* [Will my device work](audio-troubleshooting.md#will-my-device-work)
 
 ## Troubleshooting Audio
 
@@ -184,4 +161,3 @@ Where "DEVICE\_NAME" is taken from the audio device output. As this file is writ
 Maybe.
 
 Most USB mics and speakers are usable with pulseaudio. In general, if your OS can recognize the device as an audio endpoint pulse will be able to connect it. A variety of mics including the PS3 Eye, Blue snowballs, Jabra 410, various web cams, the movo mc1000, gaming headsets, and even the AIY hat have been used successfully. If you have the device on hand, try it out and see. If the information above isn't able to get it going, try asking on the chat server or the forum. Always check the volume levels if everything else seems to be set correctly.
-

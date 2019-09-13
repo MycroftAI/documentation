@@ -1,17 +1,11 @@
 ---
-ID: 46174
-post_title: Skills README.md
-author: Kris Gesling
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/skills/skills-readme-md/
-published: true
-post_date: 2019-04-04 20:27:47
+description: >-
+  The README.md file in each Skill repository is used to provide an overview of the Skill and its functionality.
 ---
+
 # Skills README.md
 
-The README.md file in each Skill repository is used to provide an overview of the Skill and its functionality. This file is used by the [Skills Marketplace](https://market.mycroft.ai/) to display the appropriate information including the [Card view](https://market.mycroft.ai/skills) and [Details view](https://market.mycroft.ai/skill/mycroft-weather).
+This file is used by the [Skills Marketplace](https://market.mycroft.ai/) to display the appropriate information including the [Card view](https://market.mycroft.ai/skills) and [Details view](https://market.mycroft.ai/skill/mycroft-weather).
 
 When creating your skill, the [Mycroft Skills Kit](https://mycroft.ai/documentation/skills/msk/) will automatically generate your first README.md for you. Alternatively you can use the [Skills Meta Editor](https://mycroft.ai/skill-meta-editor) to generate a compatible README.md and ensure all the relevant information is included.
 
