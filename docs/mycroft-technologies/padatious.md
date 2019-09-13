@@ -1,6 +1,6 @@
 # Padatious
 
-Padatious has a number of key benefits over other intent parsing technologies:
+Padatious has a number of key benefits over other intent parsing technologies.
 
 * With Padatious, **Intents** are easy to create
 * The machine learning model in Padatious requires a relatively small amount of data
