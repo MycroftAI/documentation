@@ -58,7 +58,7 @@
   * [Adapt Examples](technologies/adapt-examples.md)
   * [Adapt Tutorial](technologies/adapt-tutorial.md)
 * [Lingua Franca]()
-* [Mimic](technologies/mimic.md)
+* [Mimic]()
   * [Mimic Recording Studio](technologies/mimic-recording-studio.md)
 * [Padatious]()
 * [Precise]()
