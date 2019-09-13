@@ -215,7 +215,7 @@ Let's take a look:
 
 ```python
 from adapt.intent import IntentBuilder
-from mycroft.skills.core import MycroftSkill
+from mycroft import MycroftSkill
 from mycroft.util.log import getLogger
 ```
 
