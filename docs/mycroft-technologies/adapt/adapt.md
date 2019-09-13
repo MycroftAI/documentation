@@ -1,6 +1,6 @@
 ---
 description: >-
-Adapt is an _intent parser_ - meaning that it is a library for converting natural language into machine-readable data structures, such as JSON.
+Adapt is an intent parser - meaning that it is a library for converting natural language into machine-readable data structures, such as JSON.
 ---
 
 # Adapt
