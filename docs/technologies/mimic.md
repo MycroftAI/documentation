@@ -1,6 +1,6 @@
 ---
 description: >-
-Mimic is a fast, light-weight Text to Speech (TTS) engine developed by Mycroft AI and VocaliD
+Mimic is a fast, light-weight Text to Speech engine developed by Mycroft AI and VocaliD.
 ---
 # Mimic
 
