@@ -4,7 +4,9 @@ description: ''
 
 # Introduction to Skill Development
 
+{% hint style="info" %}
 Are you looking for the [system-generated documentation for the Mycroft Skills API?](http://mycroft-core.readthedocs.io/en/stable/)
+{% endhint %}
 
 ## Prerequisites
 
