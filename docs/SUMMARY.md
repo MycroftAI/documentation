@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Documentation](README.md)
 
 ## Using Mycroft AI
 
