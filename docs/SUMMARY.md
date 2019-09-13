@@ -13,6 +13,7 @@
   * [Android](using-mycroft-ai/get-mycroft/android.md)
 * [Connecting to Home.Mycroft.AI](using-mycroft-ai/home-mycroft-ai.md)
 * [Basic Commands](using-mycroft-ai/basic-commands.md)
+* [Installing New Skills](using-mycroft-ai/installing-new-skills.md)
 * [Customizations](using-mycroft-ai/customizations/README.md)
   * [Languages](using-mycroft-ai/customizations/languages.md)
   * [mycroft.conf](using-mycroft-ai/customizations/mycroft-conf.md)

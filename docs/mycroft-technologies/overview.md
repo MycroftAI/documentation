@@ -4,7 +4,7 @@ layout: page
 author: Kathy Reid
 permalink: |
   http://mycroft.ai/documentation/mycroft-software-hardware/
-post_date: 2017-12-02T22:35:25.000Z
+post_date: '2017-12-02T22:35:25.000Z'
 published: true
 post_title: About Mycroft
 ID: 32412

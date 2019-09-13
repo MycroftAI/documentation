@@ -25,11 +25,13 @@ The Mark 1 will boot up. It will then Speak:
 
 `"I need to be connected to the internet. Plug in a network cable, or connect to the SSID Mycroft with the password 12345678 and go to http://start.mycroft.ai"`
 
-### Getting Mark 1 connected to the internet using a network cable
+### Connect to the internet
+
+#### Using a network cable
 
 Plug the Mark 1 into your router using an ethernet cable. The network should be automatically detected.
 
-### Getting Mark 1 connected to the internet using Wifi
+#### Using Wifi
 
 Using your computer or a mobile device, connect to the Wifi SSID `MYCROFT` using the password "12345678". Once you are connected to this SSID, go to the web page [http://start.mycroft.ai](https://start.mycroft.ai). A list of available WiFi networks will be presented. Select the WiFi network that you wish to connect the Mark 1 to, and enter the WiFi password. Mark 1 will attempt to connect to the WiFi network.
 
@@ -37,13 +39,17 @@ _NOTE: Mark 1 cannot connect to WiFi networks that operate in the 5GHz band. You
 
 _NOTE: Mark 1 cannot connect to WiFi networks that operate on Channels 12 or 13 \(2467MHz and 2472MHz frequencies\). Please configure your SSID to use a different channel or frequency._
 
-## Pairing the Mark 1
+### Pairing the Mark 1
 
 Once the Mark 1 is connected to the internet, a **Registration Code** will be Spoken, and displayed on the Mark 1's LED panel.
 
-[View the home.mycroft.ai documentation to learn how to add your **Device** to home.mycroft.ai](http://mycroft.ai/documentation/home-mycroft-ai-pairing/).
+View the home.mycroft.ai documentation to learn how to add your Device to home.mycroft.ai.
 
-Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/basic-commands/).
+{% page-ref page="../home-mycroft-ai.md" %}
+
+Once paired, you can then use basic Skills that come on the device.
+
+{% page-ref page="../basic-commands.md" %}
 
 ## Mark 1 menu options
 
@@ -73,11 +79,13 @@ When you power on your Mark 1, the eyes on the Mark 1 will go through a series o
 
 ## Hardware information
 
+The Mark 1 is completely open source hardware. All of the schematics and specifications can be found [on our Github](https://github.com/MycroftAI/hardware-mycroft-mark-1).
+
 ## Common tasks performed on the Mark 1
 
 ### Installing Skills on the Mark 1
 
-[Please refer to the information here](http://mycroft.ai/documentation/skills/)
+{% page-ref page="../installing-new-skills.md" %}
 
 ### Connecting to the Mark 1 via SSH
 
@@ -153,7 +161,7 @@ You will need:
 
 Method
 
-* Download the [18.02b Mark 1 disk image](https://mycroft.ai/to/mark-1-image) from the mycroft website.
+* Download the [latest image from the Mycroft website](https://mycroft.ai/to/mark-1-image).
 * Unplug the Mark 1 from the power supply.
 * Remove the four rubber feet from the Mark 1, and put them in a safe place.
 * Gently remove the base of the Mark 1.
@@ -165,8 +173,10 @@ Method
 * Plug in the power supply.
 * The Mark 1 device will power on with ‘white spinning eyes’. This will last around 20 seconds to 1 minute. Mark 1 will then have ‘full blue eyes’.
 * Mark 1 will then advise that it needs to be connected to WiFi.
-* Follow [the instructions to connect Mark 1 to WiFi](https://mycroft.ai/documentation/mark-1/#getting-mark-1-connected-to-the-internet-using-a-network-cable), or connect an ethernet cable to the ethernet socket on the back of the device.
-* Once you are connected to WiFi, Mark 1 will advise that you need to pair the device. Pair the device on home.mycroft.ai
+* Follow the instructions to connect Mark 1 to the internet.
+* Once you are connected, Mark 1 will advise that you need to pair the device. Pair the device on home.mycroft.ai
+
+{% page-ref page="../home-mycroft-ai.md" %}
 
 That’s it! Once your Mark 1 is paired, you’ll be able to use all the default Skills that come with the device, and you’ll also be able to install your own from the list at: [https://mycroft.ai/documentation/skills/\#community-developed-skills](https://mycroft.ai/documentation/skills/#community-developed-skills)
 

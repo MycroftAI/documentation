@@ -3,7 +3,7 @@ post_excerpt: ''
 layout: page
 author: Kathy Reid
 permalink: 'http://mycroft.ai/documentation/msm/'
-post_date: 2017-12-12T10:56:48.000Z
+post_date: '2017-12-12T10:56:48.000Z'
 published: true
 post_title: Mycroft Skills Manager – msm
 ID: 33749
