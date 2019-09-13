@@ -1,8 +1,6 @@
 ---
 description: >-
-  The Mark 1 device is an Enclosure for Mycroft, based on Raspberry Pi. It is
-  designed as a reference hardware device, and is able to be easily modified,
-  hacked and extended.
+  The Mark 1 device is an Enclosure for Mycroft, based on Raspberry Pi. It is designed as a reference hardware device, and is able to be easily modified, hacked and extended.
 ---
 
 # Mark 1
