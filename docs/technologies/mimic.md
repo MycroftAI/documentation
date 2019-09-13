@@ -1,8 +1,12 @@
+---
+description: >-
+Mimic is a fast, light-weight Text to Speech (TTS) engine developed by Mycroft AI and VocaliD
+---
 # Mimic
 
 ## What is Mimic?
 
-Mimic is based on [Carnegie Mellon University's FLITE software](http://cmuflite.org/). Mimic uses text as an input, and outputs speech using the chosen _voice_.
+Mimic is a fast, light-weight [Text to Speech (TTS)](https://en.wikipedia.org/wiki/Speech_synthesis) engine based on [Carnegie Mellon University's FLITE software](http://cmuflite.org/). Mimic uses text as an input, and outputs speech using the chosen _voice_.
 
 ![Video overview of Mimic](https://www.youtube.com/watch?v=gvnhcNdXJsk)
 
@@ -14,7 +18,7 @@ Mimic works on Linux, Android and Windows currently, and other platforms may be 
 
 ## The partnership between Mycroft.AI's Mimic and VocaliD
 
-Mimic is a powerful TTS tool, however it can also help solve other important problems. That's why Mycroft.AI has partnered with VocaliD to help [Dr. Rupal Patel](https://www.linkedin.com/in/rupalvocalid/) and her team bring realistic TTS voices to people with speech disorders. VocaliD's technology creates customized voices that better represent the people who use them. To use these voices, VocaliD's clients need a fast, lightweight, cross-platform engine. That's where Mimic comes in! VocaliD’s clients can use Mimic as the engine that empowers them to speak with their own unique voice.
+Mimic is a powerful TTS tool, however it can also help solve other important problems. That's why Mycroft.AI has partnered with [VocaliD](https://www.vocalid.co/) to help [Dr. Rupal Patel](https://www.linkedin.com/in/rupalvocalid/) and her team bring realistic TTS voices to people with speech disorders. VocaliD's technology creates customized voices that better represent the people who use them. To use these voices, VocaliD's clients need a fast, lightweight, cross-platform engine. That's where Mimic comes in! VocaliD’s clients can use Mimic as the engine that empowers them to speak with their own unique voice.
 
 [You may enjoy the overview video from VocaliD](https://youtu.be/b6QhgQqxdew).
 
