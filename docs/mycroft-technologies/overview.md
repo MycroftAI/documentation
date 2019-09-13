@@ -6,7 +6,7 @@ description: A broad overview of the technology that makes up Mycroft AI.
 
 Mycroft is the name of a suite of software and hardware tools that use [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing) and [machine learning](https://en.wikipedia.org/wiki/Machine_learning) to provide an open source voice assistant.
 
-[This video provides a quick overview](https://youtu.be/m4L0QfzUeEI) of our vision for Mycroft.
+{% embed url="https://www.youtube.com/watch?v=m4L0QfzUeEI" caption="Our vision for Mycroft" %}
 
 ## Mycroft components
 

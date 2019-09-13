@@ -10,7 +10,7 @@ description: >-
 
 The Adapt Intent Parser is open source software. It is lightweight and is designed to run on devices with limited computing resources, such as embedded devices.
 
-[You may prefer to watch this video which provides an overview of the Adapt Intent Parser](https://www.youtube.com/watch?v=zR9xvPtM6Ro).
+{% embed url="https://www.youtube.com/watch?v=zR9xvPtM6Ro" %}
 
 Adapt takes in natural language as an input, and outputs a data structure that includes
 
