@@ -2,6 +2,7 @@
 description: >-
 	Precise is a **Wake Word Listener**. Like its name suggests, a **Wake Word Listener**'s job is to continually listen to sounds and speech around the **Device**, and activate when the sounds or speech match a **Wake Word**. Unlike other hotword detection products, Mycroft Precise is fully open source.
 ---
+
 # Precise
 
 ## Precise vs PocketSphinx
