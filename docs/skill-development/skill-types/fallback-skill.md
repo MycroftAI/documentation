@@ -1,26 +1,26 @@
 ---
-ID: 33182
-post_title: Fallback Skill
-author: Kathy Reid
-post_excerpt: ""
+post_excerpt: ''
 layout: page
-permalink: >
+author: Kathy Reid
+permalink: |
   http://mycroft.ai/documentation/skills/fallback-skill/
+post_date: '2017-12-03T02:20:53.000Z'
 published: true
-post_date: 2017-12-03 02:20:53
+post_title: Fallback Skill
+ID: 33182
 ---
+
 # Fallback Skill
 
-- [Fallback Skill](#fallback-skill)
-  * [Fallback **Skill** order of precedence](#fallback-skill-order-of-precedence)
-  * [Creating a Fallback **Skill**](#creating-a-fallback-skill)
+* [Fallback Skill](fallback-skill.md#fallback-skill)
+  * [Fallback **Skill** order of precedence](fallback-skill.md#fallback-skill-order-of-precedence)
+  * [Creating a Fallback **Skill**](fallback-skill.md#creating-a-fallback-skill)
 
 A Fallback **Skill** is a **Skill** that will be called if no **Intent** is matched to the **Utterance**. Previously, Wolfram Alpha was the only Fallback **Skill**, finding answers for general queries. Recently a [system for multiple Fallback Skills was added](https://github.com/MycroftAI/mycroft-core/pull/938).
 
-
 ## Fallback **Skill** order of precedence
 
-The Fallback **Skills** all have a priority and will be checked in order from low priority value to high priority value. If a Fallback **Skill** can handle the **Utterance** it will create a response and return `True`. After this no other Fallback **Skills** are tried. This means the priority for Fallbacks that can handle a *broad* range of queries should be *high* (80-100) and Fallbacks that only responds to a very specific range of queries should be higher (20-80). The more specific, the lower the priority value.
+The Fallback **Skills** all have a priority and will be checked in order from low priority value to high priority value. If a Fallback **Skill** can handle the **Utterance** it will create a response and return `True`. After this no other Fallback **Skills** are tried. This means the priority for Fallbacks that can handle a _broad_ range of queries should be _high_ \(80-100\) and Fallbacks that only responds to a very specific range of queries should be higher \(20-80\). The more specific, the lower the priority value.
 
 ## Creating a Fallback **Skill**
 
@@ -56,7 +56,7 @@ _Note: a `FallbackSkill` can register any number of fallback handlers_
          # Any other initialize code you like can be placed here
 ```
 
-Implement the fallback handler (the method that will be called to potentially handle the **Utterance**). The method implements logic to determine if the **Utterance** can be handled and shall output speech if itcan handle the query. It shall return Boolean `True` if the **Utterance** was handled and Boolean `False` if not.
+Implement the fallback handler \(the method that will be called to potentially handle the **Utterance**\). The method implements logic to determine if the **Utterance** can be handled and shall output speech if itcan handle the query. It shall return Boolean `True` if the **Utterance** was handled and Boolean `False` if not.
 
 ```python
     def handle_fallback(self, message):
@@ -95,3 +95,4 @@ def create_skill():
 ```
 
 The above example can be found [here](https://github.com/forslund/fallback-meaning).
+

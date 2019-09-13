@@ -1,22 +1,23 @@
 ---
-ID: 33179
-post_title: Conversational Context
-author: Kathy Reid
-post_excerpt: ""
+post_excerpt: ''
 layout: page
-permalink: >
+author: Kathy Reid
+permalink: |
   http://mycroft.ai/documentation/skills/conversational-context/
+post_date: '2017-12-02T22:35:25.000Z'
 published: true
-post_date: 2017-12-02 22:35:25
+post_title: Conversational Context
+ID: 33179
 ---
+
 # Conversational Context
 
-- [Conversational Context](#conversational-context)
-  * [Using context to enable **Intents**](#using-context-to-enable-intents)
+* [Conversational Context](conversational-context.md#conversational-context)
+  * [Using context to enable **Intents**](conversational-context.md#using-context-to-enable-intents)
 
 A **Skill** can add context to the **Intent Parser** to create more natural interaction with Mycroft.
 
-_NOTE: Conversational context is currently only available with the [Adapt](https://mycroft.ai/documentation/adapt) Intent Parser, and is not yet available for [Padatious](https://mycroft.ai/documentation/padatious)_
+_NOTE: Conversational context is currently only available with the_ [_Adapt_](https://mycroft.ai/documentation/adapt) _Intent Parser, and is not yet available for_ [_Padatious_](https://mycroft.ai/documentation/padatious)
 
 > How tall is John Cleese?
 
@@ -44,7 +45,7 @@ Consider the following intent handlers:
 
 To interact with the above handlers the user would need to say
 
-```
+```text
 User: How tall is John Cleese?
 Mycroft: John Cleese is 196 centimeters
 User: Where is John Cleese from?
@@ -74,12 +75,15 @@ When either of the methods are called the `PythonPerson` keyword is added to Myc
 > User: How tall is John Cleese?
 
 Mycroft detects the `Length` keyword and the `PythonPerson` keyword
+
 > Mycroft: 196 centimeters
 
 John Cleese is added to the current context
+
 > User: Where's he from?
 
 Mycroft detects the `WhereFrom` keyword but not any `PythonPerson` keyword. The Context Manager is activated and returns the latest entry of `PythonPerson` which is _John Cleese_
+
 > Mycroft: He's from England
 
 The context isn't limited by the keywords provided by the current **Skill**. For example
@@ -96,7 +100,7 @@ The context isn't limited by the keywords provided by the current **Skill**. For
 
 Enables conversations with other **Skills** as well.
 
-```
+```text
 User: Where is John Cleese from?
 Mycroft: He's from England
 User: What's the weather like over there?
@@ -107,7 +111,7 @@ Mycroft: Raining and 14 degrees...
 
 To make sure certain **Intents** can't be triggered unless some previous stage in aconversation has occured. Context can be used to create "bubbles" of available intent handlers.
 
-```
+```text
 User: Hey Mycroft, bring me some Tea
 Mycroft: Of course, would you like Milk with that?
 User: No
@@ -164,3 +168,4 @@ class TeaSkill(MycroftSkill):
 When starting up only the `TeaIntent` will be available. When that has been triggered and _MilkContext_ is added the `MilkYesIntent` and `MilkNoIntent` are available since the _MilkContext_ is set. when a _yes_ or _no_ is received the _MilkContext_ is removed and can't be accessed. In it's place the _HoneyContext_ is added making the `YesHoneyIntent` and `NoHoneyIntent` available.
 
 As you can see, Conversational Context lends itself well to implementing a [dialog tree or conversation tree](https://en.wikipedia.org/wiki/Dialog_tree).
+

@@ -1,7 +1,9 @@
 ---
 description: >-
-  A step by step tutorial in using Adapt Intent Parser, using the `single_intent_parser.py` file as a starting point.
+  A step by step tutorial in using Adapt Intent Parser, using the
+  `single_intent_parser.py` file as a starting point.
 ---
+
 # Adapt Tutorial
 
 ## Prerequisites
@@ -28,7 +30,7 @@ import json
 import sys
 ```
 
-Next, we import the `IntentBuilder` and `IntentDeterminationEngine.
+Next, we import the `IntentBuilder` and \`IntentDeterminationEngine.
 
 ```python
 from adapt.intent import IntentBuilder
@@ -97,14 +99,14 @@ weather_intent = IntentBuilder("WeatherIntent")
     .require("Location")
     .build()
 ```
+
 Next, we register the `intent parser` with the `engine`.
 
 ```python
 engine.register_intent_parser(weather_intent)
 ```
 
-We then declare an entry point for the script.
-@TODO - need to explain here what an entry point is.
+We then declare an entry point for the script. @TODO - need to explain here what an entry point is.
 
 ```python
 if __name__ == "__main__":
@@ -116,7 +118,7 @@ Next, pass the command line arguments to this script as an **Utterance** into `e
 for intent in engine.determine_intent(' '.join(sys.argv[1:])):
 ```
 
-If the confidence is >0, this is a valid **Intent**.
+If the confidence is &gt;0, this is a valid **Intent**.
 
 ```python
 if intent.get('confidence') > 0:
@@ -129,3 +131,4 @@ print(json.dumps(intent, indent=4))
 ```
 
 Of course, you don't just have to output the **Intent** to `stdout` - you can use it to build all sorts of tools.
+

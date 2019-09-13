@@ -1,15 +1,16 @@
 ---
 description: >-
-  Now that your Mycroft is now **Paired** with home.mycroft.ai, you can begin issuing commands. Try these to get started.
+  Now that your Mycroft is now **Paired** with home.mycroft.ai, you can begin
+  issuing commands. Try these to get started.
 ---
-# Basic commands to get started with your Mycroft
+
+# Basic Commands
 
 ## Default **Skills** installed with Mycroft
 
 ### Alarms
 
-> Hey Mycroft, set an alarm for two hours
-> Hey Mycroft, set an alarm for 3pm
+> Hey Mycroft, set an alarm for two hours Hey Mycroft, set an alarm for 3pm
 
 ### Audio record
 
@@ -21,8 +22,7 @@ description: >-
 
 ### DuckDuckGo
 
-> Hey Mycroft, what is Frankenstein?
-> Hey Mycroft, who is Kathryn Johnson?
+> Hey Mycroft, what is Frankenstein? Hey Mycroft, who is Kathryn Johnson?
 
 ### Hello World
 
@@ -58,9 +58,7 @@ description: >-
 
 ### Support information
 
-> Create a support ticket
-> You're not working!
-> Send me debug info
+> Create a support ticket You're not working! Send me debug info
 
 ### Version checker
 
@@ -68,8 +66,7 @@ description: >-
 
 ### Volume
 
-> Hey Mycroft, increase volume
-> Hey Mycroft, decrease volume
+> Hey Mycroft, increase volume Hey Mycroft, decrease volume
 
 ### Weather
 
@@ -77,22 +74,19 @@ description: >-
 
 ### Wikipedia
 
-> Hey Mycroft, tell me about artificial intelligence
-> Hey Mycroft, tell me about Grace Hopper
-
+> Hey Mycroft, tell me about artificial intelligence Hey Mycroft, tell me about Grace Hopper
 
 ## Installing new **Skills**
 
 To install new **Skills** onto Mycroft, speak:
 
-> install [skillname]
+> install \[skillname\]
 
 For example:
 
-> install coinflip
-> install easter eggs
-> install home assistant
+> install coinflip install easter eggs install home assistant
 
 ## More information on Skills
 
 For more information on Skills, please see the [Skills section](http://mycroft.ai/documentation/skills/)
+

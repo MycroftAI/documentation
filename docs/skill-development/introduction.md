@@ -10,7 +10,7 @@ post_title: Developing Skills for Mycroft
 ID: 32442
 ---
 
-# Introduction
+# Introduction to Skill Development
 
 Are you looking for the [system-generated documentation for the Mycroft Skills API?](http://mycroft-core.readthedocs.io/en/stable/)
 

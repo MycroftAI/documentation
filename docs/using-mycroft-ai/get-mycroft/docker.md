@@ -1,6 +1,8 @@
 ---
 description: >-
-  Learn how to install Mycroft for Docker either from a Docker Hub install, or by building the image. Many thanks to Brian Hopkins (@btotharye) for this documentation.
+  Learn how to install Mycroft for Docker either from a Docker Hub install, or
+  by building the image. Many thanks to Brian Hopkins (@btotharye) for this
+  documentation.
 ---
 
 # Docker
@@ -147,3 +149,4 @@ This would remove the above Basic Helper Skill.
 ## Getting help
 
 Mycroft for Docker is community-supported. You are welcome to join the [Mycroft Chat Docker channel](https://chat.mycroft.ai/community/channels/docker).
+

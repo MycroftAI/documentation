@@ -5,11 +5,12 @@ description: >-
   devices.
 ---
 
-# Get started with Mycroft AI
+# Get Mycroft
 
 You can purchase a dedicated Mycroft device, or download Mycroft and run it on your own hardware, be it a Raspberry Pi, computer, or an Android phone.
 
 ## Download
+
 You can download Mycroft and run it on your own hardware, be it a Raspberry Pi, computer, or an Android phone.
 
 ### Picroft
@@ -43,13 +44,16 @@ However you can run Mycroft on MacOS and Windows inside a virtual machine using 
 Get a dedicated device, a voice assistant with no hassles. Plug in, connect to WiFi and go.
 
 ### Mark II
+
 Mark II is the next incarnation of Mycroft. It sports a 4-inch display to accompany the voice interaction with a visual interface. Microphone and speaker components have also been updated. Best for those who want a ‘works out of the box’ solution.
 
 You can [reserve your own Mark II](https://mycroft.ai/product/reserve-your-mark-ii-with-a-small-deposit/) with a small deposit.
 
 ### Mark 1
+
 Mark 1 is a no-fuss way to get started. It has been designed specifically to work with Mycroft’s capabilities as a standalone device. Great for those who aren’t super technical, but it can be easily extended, altered, modified, and hacked.
 
 _The Mark 1 is currently sold out._
 
 [Mark 1 documentation](mark-1.md)
+

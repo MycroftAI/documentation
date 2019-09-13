@@ -1,6 +1,7 @@
 ---
 description: >-
-  Install Mycroft on Linux, learn how to start and stop services, configure proxies, or remove Mycroft from your system.
+  Install Mycroft on Linux, learn how to start and stop services, configure
+  proxies, or remove Mycroft from your system.
 ---
 
 # Linux
@@ -238,3 +239,4 @@ Warning: Failed to install all requirements. Continue? y/N
 ```
 
 If you can't install to a path without spaces, you will have to manually verify the `requirements.txt` entries are installed to your virtual environment.
+

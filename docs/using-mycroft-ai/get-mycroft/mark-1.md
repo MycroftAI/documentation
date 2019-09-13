@@ -1,6 +1,8 @@
 ---
 description: >-
-  The Mark 1 device is an Enclosure for Mycroft, based on Raspberry Pi. It is designed as a reference hardware device, and is able to be easily modified, hacked and extended.
+  The Mark 1 device is an Enclosure for Mycroft, based on Raspberry Pi. It is
+  designed as a reference hardware device, and is able to be easily modified,
+  hacked and extended.
 ---
 
 # Mark 1
@@ -286,3 +288,4 @@ If your Mark 1 Device is frozen, reboot it by:
 ## Hardware Hacking your Mark 1 Device
 
 If you're interested in hardware hacking on your Mark 1 **Device**, the [hardware schematics](https://github.com/MycroftAI/hardware-mycroft-mark-1) are open source and available for download.
+

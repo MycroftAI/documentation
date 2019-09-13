@@ -1,26 +1,29 @@
 ---
-ID: 38649
-post_title: Mycroft Skills Kit – msk
-author: Kathy Reid
-post_excerpt: 'Learn how to use the Mycroft Skills Kit - msk - to make the creation, testing and submission of Skills a lot easier. '
+post_excerpt: >-
+  Learn how to use the Mycroft Skills Kit - msk - to make the creation, testing
+  and submission of Skills a lot easier. 
 layout: page
-permalink: >
+author: Kathy Reid
+permalink: |
   http://mycroft.ai/documentation/skills/msk/
+post_date: '2018-06-06T12:29:25.000Z'
 published: true
-post_date: 2018-06-06 12:29:25
+post_title: Mycroft Skills Kit – msk
+ID: 38649
 ---
-# Mycroft Skills Kit - msk
 
-- [Mycroft Skills Kit - msk](#mycroft-skills-kit---msk)
-  * [Introduction](#introduction)
-  * [Installing msk](#installing-msk)
-  * [Usage](#usage)
-  * [Create](#create)
-  * [Create test](#create-test)
-  * [Upload Skill](#upload-skill)
-  * [Upgrade Skill](#upgrade-skill)
-    + [Before you upgrade](#before-you-upgrade)
-  * [Join our Skills Authoring Community](#join-our-skills-authoring-community)
+# Mycroft Skills Kit
+
+* [Mycroft Skills Kit - msk](mycroft-skills-kit.md#mycroft-skills-kit---msk)
+  * [Introduction](mycroft-skills-kit.md#introduction)
+  * [Installing msk](mycroft-skills-kit.md#installing-msk)
+  * [Usage](mycroft-skills-kit.md#usage)
+  * [Create](mycroft-skills-kit.md#create)
+  * [Create test](mycroft-skills-kit.md#create-test)
+  * [Upload Skill](mycroft-skills-kit.md#upload-skill)
+  * [Upgrade Skill](mycroft-skills-kit.md#upgrade-skill)
+    * [Before you upgrade](mycroft-skills-kit.md#before-you-upgrade)
+  * [Join our Skills Authoring Community](mycroft-skills-kit.md#join-our-skills-authoring-community)
 
 ## Introduction
 
@@ -28,10 +31,10 @@ The Mycroft Skills Kit - `msk` - is a Python-based utility that has been created
 
 `msk` currently supports the following features:
 
-- Create a new **Skill**
-- Create an `Intent` test for a **Skill**
-- Upload a **Skill**
-- Upgrade an existing **Skill**
+* Create a new **Skill**
+* Create an `Intent` test for a **Skill**
+* Upload a **Skill**
+* Upgrade an existing **Skill**
 
 ## Installing msk
 
@@ -70,9 +73,10 @@ Successfully installed GitPython-2.1.10 gitdb2-2.0.3 msk-0.3.8 msm-0.5.14 pygith
 
 To check that the installation was successful `msk --help` can be run and should list the arguments and options for the utility.
 
-
 ## Usage
+
 The normal commands for `msk` are:
+
 ```bash
 msk create
 msk create-test /opt/mycroft/skills/myskill
@@ -81,6 +85,7 @@ msk upgrade /opt/mycroft/skills/myskill
 ```
 
 If using the built-in installation of `msk` with a Mycroft device or Mycroft git installation, use `mycroft-msk` in place of `msk`:
+
 ```bash
 mycroft-msk create
 mycroft-msk create-test /opt/mycroft/skills/myskill
@@ -162,7 +167,6 @@ total 12
 4 drwxrwxr-x 2 kathyreid kathyreid 4096 Jun  7 05:20 .
 4 drwxrwxr-x 3 kathyreid kathyreid 4096 Jun  7 05:20 ..
 4 -rw-rw-r-- 1 kathyreid kathyreid   16 Jun  7 05:20 corgi.the.feed.intent
-
 ```
 
 ## Create test
@@ -201,7 +205,7 @@ Generated test file: /opt/mycroft/skills/feed-the-corgi-skill/test/intent/corgi.
 
 If we have a look inside the `corgi.the.feed.intent.0.intent.json` file we can see that the test has been created for us.
 
-```json
+```javascript
 $ cat /opt/mycroft/skills/feed-the-corgi-skill/test/intent/corgi.the.feed.intent.0.intent.json
 {
     "intent_type": "corgi.the.feed",
@@ -212,7 +216,7 @@ $ cat /opt/mycroft/skills/feed-the-corgi-skill/test/intent/corgi.the.feed.intent
 
 ## Upload Skill
 
-`msk` also provides a function for uploading a **Skill** to the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills), as part of our [Skill Submission Process] (https://mycroft.ai/documentation/skills/skill-submission/).
+`msk` also provides a function for uploading a **Skill** to the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills), as part of our \[Skill Submission Process\] \([https://mycroft.ai/documentation/skills/skill-submission/](https://mycroft.ai/documentation/skills/skill-submission/)\).
 
 Please see this ASCII Cinema video to see the process for using `msk upload`:
 
@@ -222,7 +226,7 @@ If using the msk delivered with the mycroft-core github installation be sure to 
 
 `$ source .venv/bin/activate`
 
-You will now see that your `bash` prompt is prefixed with `(venv)`. 
+You will now see that your `bash` prompt is prefixed with `(venv)`.
 
 Next, we use the `msk upload` command with the path to the **Skill**:
 
@@ -246,18 +250,18 @@ Created pull request:  https://github.com/MycroftAI/mycroft-skills/pull/392
 
 ## Upgrade Skill
 
-`msk` also provides a function for upgrading a **Skill** once it has been merged into the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills), as part of our [Skill Submission Process] (https://mycroft.ai/documentation/skills/skill-submission/).
+`msk` also provides a function for upgrading a **Skill** once it has been merged into the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills), as part of our \[Skill Submission Process\] \([https://mycroft.ai/documentation/skills/skill-submission/](https://mycroft.ai/documentation/skills/skill-submission/)\).
 
 ### Before you upgrade
 
-Before you can use `msk upgrade`, you must ensure: 
+Before you can use `msk upgrade`, you must ensure:
 
 * That your **Skill** has already been merged with the `mycroft-skills` repo.
 * That you have made changes to your **Skill** and that these changes have been committed to the **Skill's** `git` repository.
 
 Once your changes are committed, you can then use `msk upgrade` by passing the location of the Skill folder. Generally we find it's easiest to be inside the Skill's folder in `/opt/mycroft/skills/SKILL-NAME` and then use the current directory symbol, period `.`.
 
-```
+```text
 (.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
 === GitHub Credentials ===
 Username: KathyReid
@@ -287,20 +291,18 @@ Branch 'upgrade-kathy-msk-test-skill' set up to track remote branch 'upgrade-kat
 Created PR at: https://github.com/MycroftAI/mycroft-skills/pull/661
 ```
 
-`msk upgrade` will create a new PR on the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills), and this will be reviewed using the [Skills Acceptance process](https://mycroft.ai/documentation/skills/skills-acceptance-process/). 
-
+`msk upgrade` will create a new PR on the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills), and this will be reviewed using the [Skills Acceptance process](https://mycroft.ai/documentation/skills/skills-acceptance-process/).
 
 * If you try to run `msk upgrade` and your Skill has not yet been merged, you will receive the error: 
 
-```
+```text
 (.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
 NotUploaded: The skill kathy-msk-test-skill has not yet been uploaded to the skill store
-
 ```
 
 * If have uncommitted items, you will receive the error: 
 
-```
+```text
 (.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
 AlreadyUpdated: The latest version of kathy-msk-test-skill is already uploaded to the skill repo
 (.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ git status
@@ -311,14 +313,14 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   README.md
+    modified:   README.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-You need to ensure that your changes are committed: 
+You need to ensure that your changes are committed:
 
-```
+```text
 (.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ git commit -a
 [master 6d0e355] test for msk
  1 file changed, 3 insertions(+)
@@ -336,8 +338,7 @@ To https://github.com/KathyReid/kathy-msk-test-skill
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 
-
-
 ## Join our Skills Authoring Community
 
 [Join other Skill Authors in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
+

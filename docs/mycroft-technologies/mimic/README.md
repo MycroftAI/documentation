@@ -1,13 +1,14 @@
 ---
 description: >-
-  Mimic is a fast, light-weight Text to Speech engine developed by Mycroft AI and VocaliD.
+  Mimic is a fast, light-weight Text to Speech engine developed by Mycroft AI
+  and VocaliD.
 ---
 
 # Mimic
 
 ## What is Mimic?
 
-Mimic is a fast, light-weight [Text to Speech (TTS)](https://en.wikipedia.org/wiki/Speech_synthesis) engine based on [Carnegie Mellon University's FLITE software](http://cmuflite.org/). Mimic uses text as an input, and outputs speech using the chosen _voice_.
+Mimic is a fast, light-weight [Text to Speech \(TTS\)](https://en.wikipedia.org/wiki/Speech_synthesis) engine based on [Carnegie Mellon University's FLITE software](http://cmuflite.org/). Mimic uses text as an input, and outputs speech using the chosen _voice_.
 
 ![Video overview of Mimic](https://www.youtube.com/watch?v=gvnhcNdXJsk)
 
@@ -31,7 +32,7 @@ Creating realistic voices also requires everyday people to share their voice wit
 
 _NOTE: If you are installing a Mycroft build for Linux or Picroft, Mimic will be installed as part of the installation dependencies - you don't need to build it separately. Follow the instructions below if you want to build Mimic as a standalone component._
 
-Currently, Mimic runs on Linux (ARM & Intel architectures), Mac OSX, and Windows. It has been untested on Android, and we have plans to make it available on iOS.
+Currently, Mimic runs on Linux \(ARM & Intel architectures\), Mac OSX, and Windows. It has been untested on Android, and we have plans to make it available on iOS.
 
 ### Installation prerequisites
 
@@ -45,19 +46,19 @@ In order to build Mimic, you will need the following:
 
 #### Install dependencies
 
-##### On Ubuntu or Debian Linux
+**On Ubuntu or Debian Linux**
 
 `$ sudo apt-get install gcc make pkg-config automake libtool libicu-dev libpcre2-dev libasound2-dev`
 
-##### On Fedora Linux
+**On Fedora Linux**
 
 `$ sudo dnf install gcc make pkgconfig automake libtool libicu-devel alsa-lib-devel`
 
-##### On Arch Linux
+**On Arch Linux**
 
 `$ sudo pacman -S --needed install gcc make pkg-config automake libtool icu alsa-lib`
 
-##### On Mac OSX
+**On Mac OSX**
 
 First, install Brew:
 
@@ -67,19 +68,19 @@ Then, install `pkg-config`, `automake`, `libtool`, `icu` and `PortAudio`
 
 `$ brew install pkg-config automake libtool portaudio icu4c`
 
-##### On Windows
+**On Windows**
 
-###### Cross-compiling from Linux
+**Cross-compiling from Linux**
 
 The fastest and most straightforward way to build Mimic for Windows is by [cross-compilation](https://en.wikipedia.org/wiki/Cross_compiler) from Linux. That is, we build Mimic on Linux _for_ Windows.
 
 This requires additional packages to be installed.
 
-On Ubuntu 16.04 (xenial):
+On Ubuntu 16.04 \(xenial\):
 
 `sudo apt-get install gcc make pkg-config automake libtool libicu-dev libpcre2-dev wine binutils-mingw-w64-i686 mingw-w64-i686-dev gcc-mingw-w64-i686 g++-mingw-w64-i686`
 
-On Ubuntu 14.04 (trusty):
+On Ubuntu 14.04 \(trusty\):
 
 `sudo apt-get install gcc make pkg-config automake libtool libicu-dev libpcre2-dev mingw32 mingw32-runtime wine`
 
@@ -93,7 +94,7 @@ Test that the build executed correctly. The directory into which Mimic was insta
 
 To distribute the compiled Mimic executable, add everything in the `install/winbuild/bin` directory to a `.zip` file. Copy it to your Windows machine via the cloud, USB file etc.
 
-###### Building on Windows natively
+**Building on Windows natively**
 
 _NOTE: The build process is **much** slower on Windows, and we strongly recommend cross-compiling from Linux._
 
@@ -131,7 +132,7 @@ Install the compiled code:
 
 ## Using Mimic
 
-By default, Mimic will play the text using the selected audio device. Alternatively, Mimic can output the wave file in RIFF format (.wav).
+By default, Mimic will play the text using the selected audio device. Alternatively, Mimic can output the wave file in RIFF format \(.wav\).
 
 ### Reading text with Mimic
 
@@ -199,7 +200,7 @@ _Example:_
 
 ### Notes on Mimic Voices
 
-Mimic offers several different Voices. They use different speech modelling techniques (_diphone, clustern, hts_ for example). Voices differ a lot on size, how human they sound and how easy they are to understand.
+Mimic offers several different Voices. They use different speech modelling techniques \(_diphone, clustern, hts_ for example\). Voices differ a lot on size, how human they sound and how easy they are to understand.
 
 _Diphone_ Voices are less computationally expensive and quite intelligible, but they sound very robotic.
 
@@ -223,9 +224,9 @@ _Example:_
 
 #### Are Voices compiled or loaded from a file?
 
-Voices can be compiled (built-in) into Mimic or loaded from a `.flitevox` file. The only exception are `hts` Voices. `hts` Voices combine both a compiled function with a voice data file, `.htsvoice`. Mimic will look for the `.htsvoice` file when the `hts` voice is loaded, looking in the current working directory, the `voices` subdirectory and the `$prefix/share/mimic/voices` directory if it exists.
+Voices can be compiled \(built-in\) into Mimic or loaded from a `.flitevox` file. The only exception are `hts` Voices. `hts` Voices combine both a compiled function with a voice data file, `.htsvoice`. Mimic will look for the `.htsvoice` file when the `hts` voice is loaded, looking in the current working directory, the `voices` subdirectory and the `$prefix/share/mimic/voices` directory if it exists.
 
-Voice names are identified as loadable files if the name includes a "/" (slash) otherwise they are treated as internal compiled-in voices.
+Voice names are identified as loadable files if the name includes a "/" \(slash\) otherwise they are treated as internal compiled-in voices.
 
 The `voices/` directory contains several `flitevox` voices. Existing Flite voices can be found [here](http://www.festvox.org/flite/packed/flite-2.0/voices/). The voice referenced via a URL will be downloaded on the fly.
 
@@ -262,3 +263,4 @@ To print Mimic help information:
 ## How do I create my own custom voice to use with Mimic?
 
 Creating a custom Voice is a large undertaking, and requires recording a large _corpora_ of audio material. We recommend contacting [VocaliD](https://www.vocalid.co/) if you are interested in a custom Voice for Mimic.
+

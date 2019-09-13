@@ -4,7 +4,7 @@ layout: page
 author: Kathy Reid
 permalink: |
   http://mycroft.ai/documentation/skills/skills-acceptance-process/
-post_date: 2018-04-04T08:43:20.000Z
+post_date: '2018-04-04T08:43:20.000Z'
 published: true
 post_title: Skills Acceptance Process
 ID: 36808

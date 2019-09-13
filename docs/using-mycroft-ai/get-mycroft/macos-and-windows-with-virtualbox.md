@@ -1,13 +1,14 @@
 ---
 description: >-
-  TL;DR: Get an Ubuntu VM up and running, install alsa and pulseaudio, set up mycroft-core, reboot and enjoy!
+  TL;DR: Get an Ubuntu VM up and running, install alsa and pulseaudio, set up
+  mycroft-core, reboot and enjoy!
 ---
 
 # Mac OS and Windows with VirtualBox
 
-* [Installing Ubuntu in VirtualBox](mycroft-for-macos-and-windows-with-virtualbox.md#installing-ubuntu-in-virtualbox)
-* [Installing Mycroft](mycroft-for-macos-and-windows-with-virtualbox.md#installing-mycroft)
-* [Running Mycroft](mycroft-for-macos-and-windows-with-virtualbox.md#running-mycroft)
+* [Installing Ubuntu in VirtualBox](macos-and-windows-with-virtualbox.md#installing-ubuntu-in-virtualbox)
+* [Installing Mycroft](macos-and-windows-with-virtualbox.md#installing-mycroft)
+* [Running Mycroft](macos-and-windows-with-virtualbox.md#running-mycroft)
 
 Thanks to Mycroft Community Member \(Mycroft SysAdmin in a former life\) [@arron](https://github.com/aatchison) for getting this working!
 
@@ -95,3 +96,4 @@ Guest Port: 22
 ```
 
 Reboot and VM and you will be able to SSH in with this command: `ssh username@localhost -p 2222`. You can also select the Start dropdown menu to start the VM in Headless mode.
+

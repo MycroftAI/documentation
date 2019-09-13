@@ -1,6 +1,7 @@
 ---
 description: >-
-  Picroft is a ready-made way to run Mycroft on a Raspberry Pi 3 or Raspberry Pi 3B+ and is provided as a disk image that you can burn to a Micro SD card.
+  Picroft is a ready-made way to run Mycroft on a Raspberry Pi 3 or Raspberry Pi
+  3B+ and is provided as a disk image that you can burn to a Micro SD card.
 ---
 
 # Picroft
@@ -449,3 +450,4 @@ You also need to install some additional packages:
 `sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
 
 This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill.
+

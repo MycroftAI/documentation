@@ -1,25 +1,25 @@
 ---
-ID: 41539
-post_title: Common Play Framework
-author: Kathy Reid
-post_excerpt: ""
+post_excerpt: ''
 layout: page
-permalink: >
+author: Kathy Reid
+permalink: |
   http://mycroft.ai/documentation/skills/common-play-framework/
+post_date: '2018-11-16T07:27:11.000Z'
 published: true
-post_date: 2018-11-16 07:27:11
+post_title: Common Play Framework
+ID: 41539
 ---
+
 # Common Play Framework
 
-- [Common Play Framework](#common-play-framework)
-  * [Introduction](#introduction)
-  * [Basing your Skill on the `CommonPlaySkill` class instead of `MycroftSkill`](#basing-your-skill-on-the-commonplayskill-class-instead-of-mycroftskill)
-  * [CPS_match_query_phrase](#cps-match-query-phrase)
-  * [CPS_start](#cps-start)
-  * [Example implementation of `CommonPlaySkill`](#example-implementation-of-commonplayskill)
-  * [Technical Documentation](#technical-documentation)
-  * [Where to go for more assistance](#where-to-go-for-more-assistance)
-
+* [Common Play Framework](common-play-framework.md#common-play-framework)
+  * [Introduction](common-play-framework.md#introduction)
+  * [Basing your Skill on the `CommonPlaySkill` class instead of `MycroftSkill`](common-play-framework.md#basing-your-skill-on-the-commonplayskill-class-instead-of-mycroftskill)
+  * [CPS\_match\_query\_phrase](common-play-framework.md#cps-match-query-phrase)
+  * [CPS\_start](common-play-framework.md#cps-start)
+  * [Example implementation of `CommonPlaySkill`](common-play-framework.md#example-implementation-of-commonplayskill)
+  * [Technical Documentation](common-play-framework.md#technical-documentation)
+  * [Where to go for more assistance](common-play-framework.md#where-to-go-for-more-assistance)
 
 ## Introduction
 
@@ -28,7 +28,6 @@ Over time, many **Skills** are likely to use similar keywords - called `Intents`
 The **Common Play Framework** solves this problem by allowing Mycroft to infer a _confidence score_ from an `Intent` which uses the `play` keyword. The _confidence score_ is designed so that there is a much higher probability of the right **Skill** being invoked to handle an `Intent` which has the keyword `play` in it.
 
 To take advantage of the **Common Play Framework**, your **Skill** needs to be written in a specific way - outlined below:
-
 
 ## Basing your Skill on the `CommonPlaySkill` class instead of `MycroftSkill`
 
@@ -66,8 +65,7 @@ def create_skill():
     return TutorialSkill()
 ```
 
-
-## CPS_match_query_phrase
+## CPS\_match\_query\_phrase
 
 The argument `phrase` is sent from the `PlaybackControlSkill`, and is the entire phrase said by the user with the `play` keyword stripped out. So if the user says
 
@@ -81,16 +79,17 @@ Using this phrase the Skill Author should now determine if the **Skill** can pla
 
 Possible values are:
 
-- `CPSMatchLevel.EXACT` (The input matches exact)
-- `CPSMatchLevel.MULTI_KEY` (The input contains multiple matches such as Artist and Album title)
-- `CPSMatchLevel.TITLE` (The phrase contains a matching title)
-- `CPSMatchLevel.ARTIST` (The phrase contains a matching artist)
-- `CPSMatchLevel.CATEGORY` (The phrase contains a category supported by the skill, Rock, bitpop, Podcast etc.)
-- `CPSMatchLevel.GENERIC` (Generic match, maybe contains the skill title but no media match)
+* `CPSMatchLevel.EXACT` \(The input matches exact\)
+* `CPSMatchLevel.MULTI_KEY` \(The input contains multiple matches such as Artist and Album title\)
+* `CPSMatchLevel.TITLE` \(The phrase contains a matching title\)
+* `CPSMatchLevel.ARTIST` \(The phrase contains a matching artist\)
+* `CPSMatchLevel.CATEGORY` \(The phrase contains a category supported by the skill, Rock, bitpop, Podcast etc.\)
+* `CPSMatchLevel.GENERIC` \(Generic match, maybe contains the skill title but no media match\)
 
 where `CPSMatchLevel.EXACT` is the greatest confidence and the `CPSMatchLevel.GENERIC` is lowest.
 
 Example:
+
 ```python
         return (matched_phrase, CPSMatchLevel.TITLE)
 ```
@@ -98,6 +97,7 @@ Example:
 The method can also return data that will be needed when starting the playback. This is very useful if the skill can play a variety of things of various types. The data is added as a third element in the return tuple and has to be a simple python dict.
 
 Example:
+
 ```python
         data = {
             "track": "my_music.mp3"
@@ -107,7 +107,7 @@ Example:
 
 The data is then passed to the `CPS_start()` method as an argument.
 
-## CPS_start
+## CPS\_start
 
 `CPS_start` simply starts the playback using the data and/or the phrase to determine what to play.
 
@@ -115,7 +115,7 @@ For convenience the `self.audioservice` object can be used to start playback or 
 
 ## Example implementation of `CommonPlaySkill`
 
-Let's fill in the blanks in the the above base and create a **Skill** to play the best (according to yours truly, @forslund) Commodore 64 remixes!
+Let's fill in the blanks in the the above base and create a **Skill** to play the best \(according to yours truly, @forslund\) Commodore 64 remixes!
 
 We add a nice safe data structure to the **Skill** file:
 
@@ -179,8 +179,10 @@ Which simply becomes
 The complete source code can be found [here](https://github.com/forslund/common-play-tutorial)
 
 ## Technical Documentation
+
 More information on the Common Play Framework can be found in the [Mycroft Technical Documentation](https://mycroft-core.readthedocs.io/en/master/source/mycroft.html#commonplayskill-class).
 
 ## Where to go for more assistance
 
 Join us in the [Skills Mycroft Chat room](https://chat.mycroft.ai/community/channels/skills) or join us in the [Mycroft Forum](https://community.mycroft.ai).
+

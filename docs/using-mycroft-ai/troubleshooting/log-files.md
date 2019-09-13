@@ -1,35 +1,36 @@
 ---
-ID: 40001
-post_title: Mycroft logs
-author: Kathy Reid
-post_excerpt: ""
+post_excerpt: ''
 layout: page
-permalink: http://mycroft.ai/documentation/logs/
+author: Kathy Reid
+permalink: 'http://mycroft.ai/documentation/logs/'
+post_date: '2018-12-11T07:20:23.000Z'
 published: true
-post_date: 2018-12-11 07:20:23
+post_title: Mycroft logs
+ID: 40001
 ---
-# Mycroft logs
 
-- [Mycroft logs](#mycroft-logs)
-  * [About the Mycroft logs](#about-the-mycroft-logs)
-    + [How to find the Mycroft logs](#how-to-find-the-mycroft-logs)
-  * [Log file descriptions](#log-file-descriptions)
-    + [audio.log](#audiolog)
-    + [bus.log](#buslog)
-    + [enclosure.log](#enclosurelog)
-    + [skills.log](#skillslog)
-    + [update.log](#updatelog)
-    + [voice.log](#voicelog)
-  * [Useful diagnostic commands](#useful-diagnostic-commands)
-    + [Errors in a Skill](#errors-in-a-skill)
-    + [Tailing the skills.log](#tailing-the-skillslog)
-  * [Log rotation](#log-rotation)
+# Log Files
 
-If you request Support from Mycroft, through the [Mycroft Forum](https://community.mycroft.ai), through [Mycroft Chat](https://chat.mycroft.ai) or by [contacting us](https://mycroft.ai/contact/), it is likely we will ask you for _logs_ to help us diagnose the problem. 
+* [Mycroft logs](log-files.md#mycroft-logs)
+  * [About the Mycroft logs](log-files.md#about-the-mycroft-logs)
+    * [How to find the Mycroft logs](log-files.md#how-to-find-the-mycroft-logs)
+  * [Log file descriptions](log-files.md#log-file-descriptions)
+    * [audio.log](log-files.md#audiolog)
+    * [bus.log](log-files.md#buslog)
+    * [enclosure.log](log-files.md#enclosurelog)
+    * [skills.log](log-files.md#skillslog)
+    * [update.log](log-files.md#updatelog)
+    * [voice.log](log-files.md#voicelog)
+  * [Useful diagnostic commands](log-files.md#useful-diagnostic-commands)
+    * [Errors in a Skill](log-files.md#errors-in-a-skill)
+    * [Tailing the skills.log](log-files.md#tailing-the-skillslog)
+  * [Log rotation](log-files.md#log-rotation)
 
-The [Support Skill](https://market.mycroft.ai/skill/mycroft-support-helper) automatically generates links to log files - so if you prefer a less detailed approach, then please use the Support Skill. 
+If you request Support from Mycroft, through the [Mycroft Forum](https://community.mycroft.ai), through [Mycroft Chat](https://chat.mycroft.ai) or by [contacting us](https://mycroft.ai/contact/), it is likely we will ask you for _logs_ to help us diagnose the problem.
 
-This page provides information on the different log files Mycroft uses, where the logs files are located on a Mycroft **Device**, the sort of data that you will find in them, and some common commands to use to aid diagnosis of common issues with Skills and Skill Authoring. 
+The [Support Skill](https://market.mycroft.ai/skill/mycroft-support-helper) automatically generates links to log files - so if you prefer a less detailed approach, then please use the Support Skill.
+
+This page provides information on the different log files Mycroft uses, where the logs files are located on a Mycroft **Device**, the sort of data that you will find in them, and some common commands to use to aid diagnosis of common issues with Skills and Skill Authoring.
 
 ## About the Mycroft logs
 
@@ -38,7 +39,6 @@ The Mycroft logs each follow a standard format, being:
 * A timestamp
 * The function or action that was called
 * The **level** of the error, which can be one of:
-
   * DEBUG - incidental information used for debugging purposes
   * INFO - informational log entries which do not indicate an error  
   * WARNING - an error occurred, but it did not stop execution of the **Skill** or process
@@ -47,17 +47,17 @@ The Mycroft logs each follow a standard format, being:
 
 ### How to find the Mycroft logs
 
-The logs on all **Devices** are held at `/var/log/mycroft/`. 
+The logs on all **Devices** are held at `/var/log/mycroft/`.
 
-To access the logs, you will need to `ssh` into the **Device**. You can find [`ssh` instructions for Mark 1](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh) and [`ssh` instructions for Picroft](https://mycroft.ai/documentation/picroft/#connecting-to-picroft-via-ssh) on this site also. 
+To access the logs, you will need to `ssh` into the **Device**. You can find [`ssh` instructions for Mark 1](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh) and [`ssh` instructions for Picroft](https://mycroft.ai/documentation/picroft/#connecting-to-picroft-via-ssh) on this site also.
 
 To find what Mycroft logs are available, run the following Linux command:
 
 `ls -las /var/log/mycroft/`
 
-Example (from a Ubuntu Linux install):
+Example \(from a Ubuntu Linux install\):
 
-  ```
+```text
 kathyreid@kathyreid-N76VZ:~$ ls -las /var/log/mycroft
 total 2384
    4 drwxrwxrwx  2 root      root         4096 Aug  8 02:01 .
@@ -66,7 +66,7 @@ total 2384
  408 -rw-rw-r--  1 kathyreid kathyreid  415043 Aug  8 10:10 bus.log
 1940 -rw-rw-r--  1 kathyreid kathyreid 1982758 Aug  8 10:10 skills.log
   12 -rw-rw-r--  1 kathyreid kathyreid    8738 Aug  8 02:05 voice.log
-  ```
+```
 
 ## Log file descriptions
 
@@ -76,7 +76,7 @@ This log contains information on actions such as:
 
 * When Mycroft loads audio services
 * When Mycroft speaks
-* When the Text to Speech (TTS) cache is hit
+* When the Text to Speech \(TTS\) cache is hit
 * When volume is increased or decreased
 
 ### bus.log
@@ -99,13 +99,13 @@ This log contains information on actions such as:
 
 This log contains information on actions such as:
 
-* The outcome of Mycroft attempting to load **Skills**, such as whether a Skill was successfully loaded, blacklisted (disabled by Mycroft) or failed to load
+* The outcome of Mycroft attempting to load **Skills**, such as whether a Skill was successfully loaded, blacklisted \(disabled by Mycroft\) or failed to load
 * When an **Utterance** is spoken, which **Skill** it was matched with, and the information provided to the **Skill**
-* Information related to the Mycroft Skill Manager (msm), including an msm-specific error code.
+* Information related to the Mycroft Skill Manager \(msm\), including an msm-specific error code.
 
 ### update.log
 
-Some **Enclosures**, like the [Mark 1](https://mycroft.ai/documentation/mark-1/) and [Picroft](https://mycroft.ai/documentation/picroft/) will automatically try to update their software periodically. This log is the output of the update process, and has similar output to what you would see if you manually ran `apt-get update`. This includes the number of packages updated, which packages were removed, and which packages were held back. 
+Some **Enclosures**, like the [Mark 1](https://mycroft.ai/documentation/mark-1/) and [Picroft](https://mycroft.ai/documentation/picroft/) will automatically try to update their software periodically. This log is the output of the update process, and has similar output to what you would see if you manually ran `apt-get update`. This includes the number of packages updated, which packages were removed, and which packages were held back.
 
 ### voice.log
 
@@ -113,38 +113,38 @@ This log contains information on actions such as:
 
 * Registration and activation of Wake Words
 * Any errors associated with the [Precise](https://mycroft.ai/documentation/precise) Wake Word listener functionality
-* Transcriptions from the Speech to Text (STT) service
-* When the Text to Speech (TTS) service was activated
+* Transcriptions from the Speech to Text \(STT\) service
+* When the Text to Speech \(TTS\) service was activated
 
 ## Useful diagnostic commands
 
 ### Errors in a Skill
 
-To find the errors related to a particular **Skill**, use this command once you have created an `ssh` connection: 
+To find the errors related to a particular **Skill**, use this command once you have created an `ssh` connection:
 
 `cat /var/log/mycroft/skills.log | grep -i error | grep -i SKILLNAME`
 
-where `SKILLNAME` is the name of the **Skill**. 
+where `SKILLNAME` is the name of the **Skill**.
 
 ### Tailing the skills.log
 
-If you are [developing new Skills for Mycroft](https://mycroft.ai/documentation/skills/developing-skills/), then we strongly recommend that you `tail` the `skills.log` log file as you are doing development work, so that you can easily observe any errors that your **Skill** is throwing. To do this, use this command: 
+If you are [developing new Skills for Mycroft](https://mycroft.ai/documentation/skills/developing-skills/), then we strongly recommend that you `tail` the `skills.log` log file as you are doing development work, so that you can easily observe any errors that your **Skill** is throwing. To do this, use this command:
 
 `tail -f /var/log/mycroft/skills.log`
 
-To stop `tail`ing the log, press Ctrl + C. 
+To stop `tail`ing the log, press Ctrl + C.
 
 ## Log rotation
 
-On Picroft and Mark 1 **Devices**, _log rotation_ is implemented using the `logrotate` utility. This means that log files are _rotated_ every 24 hours to a new file. When a log file is rotated, it is given a name with a number suffix. Yesterday's log file is `logname.log.1` and the day before yesterday's is named `logname.log.2` and so on. This makes it easier to troubleshoot an error to the time or date that it occurred, and also ensures that disk space on the **Device** is not exhausted. 
+On Picroft and Mark 1 **Devices**, _log rotation_ is implemented using the `logrotate` utility. This means that log files are _rotated_ every 24 hours to a new file. When a log file is rotated, it is given a name with a number suffix. Yesterday's log file is `logname.log.1` and the day before yesterday's is named `logname.log.2` and so on. This makes it easier to troubleshoot an error to the time or date that it occurred, and also ensures that disk space on the **Device** is not exhausted.
 
-On Linux installations, _log rotation_ is **not** implemented, so you may have to manually delete logs from time to time if they are taking up too much space. 
+On Linux installations, _log rotation_ is **not** implemented, so you may have to manually delete logs from time to time if they are taking up too much space.
 
 If you accidentally delete your log files, they will be recreated the next time the Mycroft services are started.
 
 Here is an example of a Mark 1's `/var/log/mycroft` directory, showing log rotation:
 
-```
+```text
 pi@mark_1:/var/log/mycroft $ ls -las
 total 89816
     4 drwxr-xr-x 2 root    root     4096 Dec 10 06:25 .
@@ -192,5 +192,5 @@ total 89816
     8 -rw-r--r-- 1 mycroft root     6849 Dec  2 06:25 voice.log.7
     4 -rw-r--r-- 1 mycroft root     1788 Dec  1 06:25 voice.log.8
     4 -rw-r--r-- 1 mycroft root     1720 Nov 30 06:25 voice.log.9
-
 ```
+

@@ -1,27 +1,28 @@
 ---
-ID: 36968
-post_title: Automatic testing of your Mycroft Skill
-author: Kathy Reid
-post_excerpt: ""
+post_excerpt: ''
 layout: page
-permalink: >
+author: Kathy Reid
+permalink: |
   http://mycroft.ai/documentation/skills/automatic-testing/
+post_date: '2018-04-04T07:57:16.000Z'
 published: true
-post_date: 2018-04-04 07:57:16
+post_title: Automatic testing of your Mycroft Skill
+ID: 36968
 ---
-# Automatic testing of your Mycroft Skill
 
-- [Automatic testing of your Mycroft Skill](#automatic-testing-of-your-mycroft-skill)
-  * [Overview](#overview)
-  * [The Integration Test Runner files](#the-integration-test-runner-files)
-  * [How to define tests for your Skill](#how-to-define-tests-for-your-skill)
-  * [The internal rule format](#the-internal-rule-format)
-  * [Handling Skills with side effects](#handling-skills-with-side-effects)
-  * [Executing the Integration Test Runner](#executing-the-integration-test-runner)
-  * [Troubleshooting tests](#troubleshooting-tests)
-    + [Example of a failing test](#example-of-a-failing-test)
-  * [Test coverage](#test-coverage)
-  * [What should I do if the tests that are failing are not within my control?](#what-should-i-do-if-the-tests-that-are-failing-are-not-within-my-control)
+# Automatic Testing
+
+* [Automatic testing of your Mycroft Skill](automatic-testing.md#automatic-testing-of-your-mycroft-skill)
+  * [Overview](automatic-testing.md#overview)
+  * [The Integration Test Runner files](automatic-testing.md#the-integration-test-runner-files)
+  * [How to define tests for your Skill](automatic-testing.md#how-to-define-tests-for-your-skill)
+  * [The internal rule format](automatic-testing.md#the-internal-rule-format)
+  * [Handling Skills with side effects](automatic-testing.md#handling-skills-with-side-effects)
+  * [Executing the Integration Test Runner](automatic-testing.md#executing-the-integration-test-runner)
+  * [Troubleshooting tests](automatic-testing.md#troubleshooting-tests)
+    * [Example of a failing test](automatic-testing.md#example-of-a-failing-test)
+  * [Test coverage](automatic-testing.md#test-coverage)
+  * [What should I do if the tests that are failing are not within my control?](automatic-testing.md#what-should-i-do-if-the-tests-that-are-failing-are-not-within-my-control)
 
 Mycroft has a built-in mechanism to help you automatically test your **Skill**. Automatic testing of **Skills** helps increase the quality of the Mycroft ecosystem overall, and helps assure you that your **Skill** is performing as intended. Tests are required to be passing before your **Skill** will be accepted into the [Mycroft **Skill**](https://github.com/MycroftAI/mycroft-skills) repository on GitHub.
 
@@ -33,14 +34,14 @@ The Integration Test Runner can test:
 
 * That the expected **Intent** in the **Skill** is activated
 * That the expected parameters are extracted from the **Utterance**
-* That Mycroft *contexts* are set or removed
-* That the **Skill** speaks the intended *dialog*
+* That Mycroft _contexts_ are set or removed
+* That the **Skill** speaks the intended _dialog_
 * The content of any message exchanged between the **Skill** and Mycroft Core
 
 To initialize a test, the Integration Test Runner can:
 
 * Send an **Utterance** - that is, a phrase the User would normally speak
-* Set up and remove *context*
+* Set up and remove _context_
 * Set up a custom timeout for the Integration Test Runner, to allow for **Skills** that run for a very long time
 
 _NOTE: If you have submitted your Skill to the `mycroft-skills` repo and wish to run tests to ensure they are still passing, you can add the comment `Run test` to the PR and this will automatically initiate a Jenkins CI runthrough of the tests in the Skill._
@@ -57,23 +58,23 @@ The Integration Test Runner is part of the `mycroft-core` package. It consists o
 
 The most interesting files from a Skill Author's perspective are:
 
-The ```runner.py``` can be copied to the Skill Author's working directory, where the **Skill's** ```__init__.py``` file exists or invoked directly with the skill path as argument. Running ```runner.py``` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill**, it will search any subdirectory.
+The `runner.py` can be copied to the Skill Author's working directory, where the **Skill's** `__init__.py` file exists or invoked directly with the skill path as argument. Running `runner.py` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill**, it will search any subdirectory.
 
-The ```discover_test.py``` is the Python file that runs integration tests on all **Skills** in ```/opt/mycroft/skills```. It is intended for debugging that all your tests are found by the test runner.
+The `discover_test.py` is the Python file that runs integration tests on all **Skills** in `/opt/mycroft/skills`. It is intended for debugging that all your tests are found by the test runner.
 
-The ```message_tester.py``` is a utility that can test a single message against the internal rule format used by the `skill_tester`. It is intended for debugging rules.
+The `message_tester.py` is a utility that can test a single message against the internal rule format used by the `skill_tester`. It is intended for debugging rules.
 
-The ```test_all_skills.py``` tests all **Skills** at the **Skill** level, where ```discover_tests.py``` tests at the **Intent** level. Because of that, ```test_all_skills.py``` not only runs all the **Intent** tests, it also determines if all **Intents** in a **Skill** are tested, i.e. if any test cases are missing. It prints a list of missing test cases for each **Skill**, and fails if it finds any.
+The `test_all_skills.py` tests all **Skills** at the **Skill** level, where `discover_tests.py` tests at the **Intent** level. Because of that, `test_all_skills.py` not only runs all the **Intent** tests, it also determines if all **Intents** in a **Skill** are tested, i.e. if any test cases are missing. It prints a list of missing test cases for each **Skill**, and fails if it finds any.
 
 ## How to define tests for your Skill
 
-A **Skill** can define a test suite consisting of a number of files (test cases), which are placed in the **Skill's** ```test/intent``` directory. Each test case corresponds to one **Utterance**. All parts of the test case are *optional*, except the **Utterance**. The test case files are executed by the Integration Test Runner, one after another, and they are executed in alphabetical order. Alphabetic ordering can be used for compensating (trans)actions, for instance first add to a list, then remove from a list, to leave the list unchanged.
+A **Skill** can define a test suite consisting of a number of files \(test cases\), which are placed in the **Skill's** `test/intent` directory. Each test case corresponds to one **Utterance**. All parts of the test case are _optional_, except the **Utterance**. The test case files are executed by the Integration Test Runner, one after another, and they are executed in alphabetical order. Alphabetic ordering can be used for compensating \(trans\)actions, for instance first add to a list, then remove from a list, to leave the list unchanged.
 
-The test case files in the ```test/intent``` directory are written in `JSON` format, and must be named to match the pattern ```*.intent.json```
+The test case files in the `test/intent` directory are written in `JSON` format, and must be named to match the pattern `*.intent.json`
 
 An example test suite might look like this:
 
-```
+```text
 ls test/intent
 001.AddTaskToList.intent.json
 002.FindTaskOnList.intent.json
@@ -86,22 +87,23 @@ ls test/intent
 A test case file understands the following `JSON` keywords:
 
 | Keyword | Description |
-|---------|-------------|
-|utterance |The text to send to the skill, like it was a spoken command|
-|remove_context|A list of contexts to remove before sending the utterance|
-|set_context|A list of contexts and corresponding strings to set before sending the utterance|
-|intent_type|Assert that this intent name, as defined in the skills ```__init__.py``` code, is used|
-|intent.parameter|Assert that a message parameter has a certain value. Repeating field.|
-|expected_response|Assert that the skill speaks a response that matches this regular expression|
-|expected_dialog|Assert that the skill responds with a response from a certain dialog file|
-|expected_data|Assert that a message is sent with the expected data. Takes a sub dictionary as argument|
-|evaluation_timeout|The default timeout is 30 seconds. If a skill takes longer than this to finish, the evaluation_timeout can be set|
-|changed_context|Assert that a list of contexts was set or removed|
-|assert|Assert that a rule, expressed in the internal test runner format, is true|
-|settings|Provides a custom temporary settings structure for the test, replacing the normal settings.json.|
+| :--- | :--- |
+| utterance | The text to send to the skill, like it was a spoken command |
+| remove\_context | A list of contexts to remove before sending the utterance |
+| set\_context | A list of contexts and corresponding strings to set before sending the utterance |
+| intent\_type | Assert that this intent name, as defined in the skills `__init__.py` code, is used |
+| intent.parameter | Assert that a message parameter has a certain value. Repeating field. |
+| expected\_response | Assert that the skill speaks a response that matches this regular expression |
+| expected\_dialog | Assert that the skill responds with a response from a certain dialog file |
+| expected\_data | Assert that a message is sent with the expected data. Takes a sub dictionary as argument |
+| evaluation\_timeout | The default timeout is 30 seconds. If a skill takes longer than this to finish, the evaluation\_timeout can be set |
+| changed\_context | Assert that a list of contexts was set or removed |
+| assert | Assert that a rule, expressed in the internal test runner format, is true |
+| settings | Provides a custom temporary settings structure for the test, replacing the normal settings.json. |
 
 Below is an example test case file:
-```
+
+```text
 {
 "utterance": "add milk to the grocery list",
 "remove_context": ["UndoContext", "ConfirmContext"],
@@ -123,7 +125,7 @@ In the example above, some of the things asserted are not really needed, they ar
 
 A snippet of the **Intent** to be tested looks like this:
 
-```
+```text
 @intent_handler(IntentBuilder('AddTaskToListIntent').require('AddTaskToListKeyword').require(TASK_PARAMETER).
 require(LIST_PARAMETER).optionally('_TestRunner').build())
 def add_task_to_list_intent(self, message):
@@ -132,51 +134,52 @@ if message.data.get('_TestRunner'):
 print("Initiated by the test runner")
 ```
 
-And the message regular expression from the `regex/en-us` directory is:
-```add (?P.+) to (?P.+) list$```
+And the message regular expression from the `regex/en-us` directory is: `add (?P.+) to (?P.+) list$`
 
 The `AddTaskToListKeyword` is `Add`, defined in the `vocab/en-us` directory.
 
 With this knowledge, let us walk through the test case.
 
 The test case to simulate the user **Utterance**:
+
 > add milk to the grocery list
 
 Assuming other tests were run before this example, the `UndoContext` and the `ConfirmContext` may have been set, but to be sure they are removed, we remove them before the test starts.
 
-The ```set_context``` can be used to test **Intents** that require a context. In the example above the `_TestRunner` context is set to "data". When the **Skill** has side effects that are unwanted when testing, this trick allows us to test for the `_TestRunner` context in the **Intent**, and behave accordingly, for instance not executing code with side effects. Of course, other tests are then required to test the inner working of the **Intent**.
+The `set_context` can be used to test **Intents** that require a context. In the example above the `_TestRunner` context is set to "data". When the **Skill** has side effects that are unwanted when testing, this trick allows us to test for the `_TestRunner` context in the **Intent**, and behave accordingly, for instance not executing code with side effects. Of course, other tests are then required to test the inner working of the **Intent**.
 
-The ```intent_type``` is used to verify that the **Utterance** is passed to the right **Intent**, hence it must the ```IntentBuilder()``` parameter. In this case `AddTaskToListIntent`.
+The `intent_type` is used to verify that the **Utterance** is passed to the right **Intent**, hence it must the `IntentBuilder()` parameter. In this case `AddTaskToListIntent`.
 
-The ```intent``` is a list of key/values that must match the ```IntentBuilder().require()``` or similar parameters. This is used for testing that the right part of the **Utterance** is passed as parameters to the **Skill**.
+The `intent` is a list of key/values that must match the `IntentBuilder().require()` or similar parameters. This is used for testing that the right part of the **Utterance** is passed as parameters to the **Skill**.
 
-The ```expected response``` is a regular expression that must match the answer that is Spoken by the **Intent**.
+The `expected response` is a regular expression that must match the answer that is Spoken by the **Intent**.
 
-The ```changed_context``` is a list of contexts, that the **Intent** has set or removed. It is not possible to distinguish between set or remove context.
+The `changed_context` is a list of contexts, that the **Intent** has set or removed. It is not possible to distinguish between set or remove context.
 
 The `expected_data` can be used to check for specific data content, for example the content of a message parsed with [Padatious](https://mycroft.ai/documentation/padatious/). The example test case below will pass if a message contains an "ampm" value equal to **"pm"** and a "time" value equal to **6**. Note that the "ampm" value is a string literal, and is quoted, while the "time" value is an integer value and is _not_ quoted.
 
-```json
+```javascript
   "expected_data": {
     "ampm": "pm",
     "time": 6
    }
- ```
+```
+
 Note that the message can contain additional fields without the test failing.
 
-The `expected_dialog` takes the dialog file (without the `.dialog`) in the same manner as when using the dialog in the **Skill**. See [skill-personal](https://github.com/MycroftAI/skill-personal/blob/0a056a0f13fa3ad2ff5d3f685be0bf99244bca1e/test/intent/what.are.you.intent.json) for an example.
+The `expected_dialog` takes the dialog file \(without the `.dialog`\) in the same manner as when using the dialog in the **Skill**. See [skill-personal](https://github.com/MycroftAI/skill-personal/blob/0a056a0f13fa3ad2ff5d3f685be0bf99244bca1e/test/intent/what.are.you.intent.json) for an example.
 
-In the example above the ```changed_context``` and ```assert``` actually does the same thing, it is mentioned as an example only. The ```assert``` shows the internal rule format (see the next paragraph).
+In the example above the `changed_context` and `assert` actually does the same thing, it is mentioned as an example only. The `assert` shows the internal rule format \(see the next paragraph\).
 
 A test case succeeds if all tests are passed for the **Intent**. And in that case the Integration Test Runner immediately continues to the next test. If all tests have not succeeded 30 seconds after the **Utterance**, the test is failed. In the example above the timeout is reduced to 10 seconds to catch errors faster.
 
 ## The internal rule format
 
-If the standard keywords in the test case file does not suffice, it is possible to write tests in the internal rule format, using the ```assert``` keyword. The standard keywords and values are translated into the internal rule format by the Integration Test Runner as well.
+If the standard keywords in the test case file does not suffice, it is possible to write tests in the internal rule format, using the `assert` keyword. The standard keywords and values are translated into the internal rule format by the Integration Test Runner as well.
 
 The example test case above is actually transformed into:
 
-```
+```text
 [
 ['and',
 ['endsWith', 'intent_type', 'AddTaskToListIntent'], ['equal', 'listName', 'none'],
@@ -191,11 +194,11 @@ The example test case above is actually transformed into:
 ]
 ```
 
-The double test of contexts in the end is due to both using ```changed_context``` and ```assert```, one of which is of course not needed.
+The double test of contexts in the end is due to both using `changed_context` and `assert`, one of which is of course not needed.
 
 The internal test format above is actually quite powerful. The code already supports that operations can be nested to any depth, for instance:
 
-```
+```text
 [['and',
 ['endsWith', 'type', 'AddTaskToListIntent'],
 ['or',
@@ -214,31 +217,32 @@ As mentioned in the example above, context can be used to make an **Intent** awa
 
 ## Executing the Integration Test Runner
 
-The ```discover_tests.py``` is intended to be run like a Python unit test, please refer to [https://docs.python.org/2/library/unittest.html](https://docs.python.org/2/library/unittest.html). Most IDEs have an easy way to run unit tests, and create nice structured test reports.
+The `discover_tests.py` is intended to be run like a Python unit test, please refer to [https://docs.python.org/2/library/unittest.html](https://docs.python.org/2/library/unittest.html). Most IDEs have an easy way to run unit tests, and create nice structured test reports.
 
-The ```runner.py``` is intended to run with a skill directory as parameter,
+The `runner.py` is intended to run with a skill directory as parameter,
 
-```shell
+```text
 ake@Woodstock:~/projects/python/mycroft-core$ source venv-activate.sh
 ake@Woodstock:~/projects/python/mycroft-core$ python -m test.integrationtests.skills.runner PATH/TO/SKILL
 ```
+
 or directly in the **Skill** directory:
 
-```shell
+```text
 ake@Woodstock:~/projects/python/mycroft-core$ source venv-activate.sh
 ake@Woodstock:~/projects/python/mycroft-core$ cd /PATH/TO/SKILL
 ake@Woodstock:/PATH/TO/SKILL$ python -m test.integrationtests.skills.runner
 ```
 
-When run, it will search the directory it is in, and subdirectories, until it finds an ```__init__.py``` file. When it does, it will not traverse further down from that directory, but it will search sibling directories. In effect, it will only test one **Skill**, if it is run in that **Skill's** directory. ```runner.py``` is an excellent tool when developing a **Skill** and wanting to run only the tests for that **Skill**.
+When run, it will search the directory it is in, and subdirectories, until it finds an `__init__.py` file. When it does, it will not traverse further down from that directory, but it will search sibling directories. In effect, it will only test one **Skill**, if it is run in that **Skill's** directory. `runner.py` is an excellent tool when developing a **Skill** and wanting to run only the tests for that **Skill**.
 
 ## Troubleshooting tests
 
-Each message event is tested by the rules. When all rules have succeeded, the test ends. When a rule succeeds, the string ”Succeeded” is appended to the rule (see the "Rule status" in the test case output file below). During execution, the test runner prints the messages received from the **Skill**. An example test run is shown below (some output has been left out to keep the example short):
+Each message event is tested by the rules. When all rules have succeeded, the test ends. When a rule succeeds, the string ”Succeeded” is appended to the rule \(see the "Rule status" in the test case output file below\). During execution, the test runner prints the messages received from the **Skill**. An example test run is shown below \(some output has been left out to keep the example short\):
 
 Test case output file:
 
-```
+```text
 /opt/mycroft/skills/skill-pairing/test/intent/sample1.intent.json
 Test case: {u'intent': {u'DevicePairingPhrase': u'pair my device'}, u'intent_type': u'PairingIntent', u'utterance': u"let's pair my device"}
 Rule created [['and', ['endsWith', 'intent_type', 'PairingIntent'], ['equal', 'DevicePairingPhrase', 'pair my device']]]
@@ -258,10 +262,11 @@ AssertionError
 
 In the first line the test case is printed, in the second line the rules created from the test case are printed. Then comes a number of “Evaluating message” lines, that each represent a message event. Near the end we find the “Rule status” which shows what rules succeeded.
 
-In the rule status we find ```['endsWith', 'intent_type', 'PairingIntent', 'succeeded']``` which means that the **Intent** type was found, since “succeeded” was appended to that rule part. However, we did not find the ```DevicePairingPhrase``` in the same message. We expect the ```DevicePairingPhrase``` in the same message because of the “and” operator. And if we look at the messages in the log above, we can’t find a message where the ```DevicePairingPhrase``` appear.
+In the rule status we find `['endsWith', 'intent_type', 'PairingIntent', 'succeeded']` which means that the **Intent** type was found, since “succeeded” was appended to that rule part. However, we did not find the `DevicePairingPhrase` in the same message. We expect the `DevicePairingPhrase` in the same message because of the “and” operator. And if we look at the messages in the log above, we can’t find a message where the `DevicePairingPhrase` appear.
 
 To see this more clearly, it sometimes pays off to reformat the rule status:
-```
+
+```text
 [
 ['and',
 ['endsWith', 'intent_type', 'PairingIntent', 'succeeded'],
@@ -270,9 +275,9 @@ To see this more clearly, it sometimes pays off to reformat the rule status:
 ]
 ```
 
-The ```message_tester.py``` tool is able to evaluate one message event at a time, for instance:
+The `message_tester.py` tool is able to evaluate one message event at a time, for instance:
 
-![message tester](../img/message-tester.png)
+![message tester](https://github.com/krisgesling/docs-rewrite/tree/25ceee7aa077ac43ee0d8b4493556761ffbbc0bc/docs/skill-development/img/message-tester.png)
 
 Not surprisingly it yields the same result as the Integration Test Runner.
 
@@ -280,7 +285,7 @@ Not surprisingly it yields the same result as the Integration Test Runner.
 
 This is an example of a failing test where the **Skill** can't be found:
 
-```
+```text
 self =
 loader =
 def run(self, loader):
@@ -329,4 +334,5 @@ Please paste a copy of the automated **Skill** testing output as a comment in th
 
 ## Where can I go to get more assistance?
 
-Join us in the [~skills channel in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills). 
+Join us in the [~skills channel in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
+
