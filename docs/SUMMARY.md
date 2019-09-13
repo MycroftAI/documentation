@@ -4,15 +4,18 @@
 
 ## Using Mycroft AI
 
-* [Get Started](using-mycroft-ai/get-started/README.md)
+* [Get Mycroft](using-mycroft-ai/get-started/get-mycroft.md)
   * [Mark 1](using-mycroft-ai/get-started/mark-1.md)
   * [Picroft](using-mycroft-ai/get-started/picroft.md)
   * [Linux](using-mycroft-ai/get-started/linux.md)
-  * [Mac OS and Windows with VirtualBox](using-mycroft-ai/get-started/mycroft-for-macos-and-windows-with-virtualbox.md)
+  * [Mac OS and Windows with VirtualBox](using-mycroft-ai/get-started/macos-and-windows-with-virtualbox.md)
   * [Docker](using-mycroft-ai/get-started/docker.md)
   * [Android](using-mycroft-ai/get-started/android.md)
-* [Using Skills](using-mycroft-ai/using-skills.md)
-* [Advanced Configuration](using-mycroft-ai/mycroft-conf.md)
+* [Connecting to Home.Mycroft.AI](using-mycroft-ai/home-mycroft-ai.md)
+* [Basic Commands](using-mycroft-ai/basic-commands.md)
+* Customizations
+  * [Languages](using-mycroft-ai/customizations/languages.md)
+  * [mycroft.conf](using-mycroft-ai/customizations/mycroft-conf.md)
 * [Troubleshooting](using-mycroft-ai/troubleshooting/README.md)
   * [General Troubleshooting](using-mycroft-ai/troubleshooting/general-troubleshooting.md)
   * [Audio Troubleshooting](using-mycroft-ai/troubleshooting/audio-troubleshooting.md)
@@ -31,19 +34,18 @@
 * [Next Steps](skill-development/next-steps/README.md)
   * [Intent types](skill-development/next-steps/intent-types.md)
   * [Skill Settings](skill-development/next-steps/skill-settings.md)
-* [Skill Types](skill-development/skill-types/README.md)
+* [Skill Types]()
   * [Fallback Skill](skill-development/skill-types/fallback-skill.md)
   * [Common Play Framework](skill-development/skill-types/common-play-framework.md)
-  * [Common IoT Framework](skill-development/skill-types/common-iot-framework.md)
+  * [Common IoT Framework]()
 * [Marketplace Submission](skill-development/marketplace-submission/README.md)
   * [Skill README.md](skill-development/marketplace-submission/skill-readme.md.md)
   * [Skills Acceptance Process](skill-development/marketplace-submission/skills-acceptance-process.md)
 
 ## Mycroft Technologies
 
-* [Adapt](mycroft-technologies/adapt.md)
-* [Padatious](mycroft-technologies/padatious.md)
-* [Precise](mycroft-technologies/precise.md)
-* [Mimic](mycroft-technologies/mimic/README.md)
-  * [Mimic Recording Studio](mycroft-technologies/mimic/mimic-recording-studio.md)
-
+* [Adapt](technologies/adapt.md)
+* [Padatious](technologies/padatious.md)
+* [Precise](technologies/precise.md)
+* [Mimic](technologies/mimic.md)
+  * [Mimic Recording Studio](technologies/mimic-recording-studio.md)

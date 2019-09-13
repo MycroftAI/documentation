@@ -1,19 +1,8 @@
 ---
-ID: 32428
-post_title: >
-  Basic commands to get started with
-  Mycroft
-author: Kathy Reid
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/basic-commands/
-published: true
-post_date: 2017-12-02 22:35:25
+description: >-
+  Now that your Mycroft is now **Paired** with home.mycroft.ai, you can begin issuing commands. Try these to get started.
 ---
 # Basic commands to get started with your Mycroft
-
-Now that your Mycroft is now **Paired** with home.mycroft.ai, you can begin issuing commands. Try these to get started.
 
 ## Default **Skills** installed with Mycroft
 
@@ -67,7 +56,7 @@ Now that your Mycroft is now **Paired** with home.mycroft.ai, you can begin issu
 
 > Hey Mycroft, remind me to turn off the oven in 5 minutes
 
-### Support information 
+### Support information
 
 > Create a support ticket
 > You're not working!
