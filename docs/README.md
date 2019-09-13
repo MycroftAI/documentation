@@ -1,8 +1,7 @@
 ---
 description: >-
-  Step by step instructions to get you started using Mycroft AI, developing of
-  your own Voice Skills, or learning about the technology that makes it all
-  happen.
+  Step by step instructions to get you started using Mycroft AI, developing your
+  own Voice Skills, or learning about the technology that makes it all happen.
 ---
 
 # Documentation
