@@ -1,6 +1,5 @@
 ---
-description: >-
-
+description: ''
 ---
 
 # Common Play Framework
@@ -169,3 +168,4 @@ More information on the Common Play Framework can be found in the [Mycroft Techn
 ## Where to go for more assistance
 
 Join us in the [Skills Mycroft Chat room](https://chat.mycroft.ai/community/channels/skills) or join us in the [Mycroft Forum](https://community.mycroft.ai).
+

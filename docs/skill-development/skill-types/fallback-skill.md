@@ -1,6 +1,7 @@
 ---
 description: >-
-  A Fallback Skill is a Skill that will be called if no Intent is matched to the Utterance.
+  A Fallback Skill is a Skill that will be called if no Intent is matched to the
+  Utterance.
 ---
 
 # Fallback Skill
@@ -82,3 +83,4 @@ def create_skill():
 ```
 
 The above example can be found [here](https://github.com/forslund/fallback-meaning).
+

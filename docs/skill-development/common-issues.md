@@ -1,6 +1,5 @@
 ---
-description: >-
-  Having trouble with your Skill? Here are a few things that we often see.
+description: Having trouble with your Skill? Here are a few things that we often see.
 ---
 
 # Common Issues
@@ -14,3 +13,4 @@ description: >-
 3-Wrong order of files directories is a very common mistake! You have to make a language subfolder inside dialog and inside vocab folder, which holds .voc and .dialog files. So make sure that your .voc files and .dialog files inside a language subfolder!
 
 @TODO I need more information on issues that Skill developers have
+

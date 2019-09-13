@@ -1,6 +1,8 @@
 ---
 description: >-
-  Pairing makes information available to your Device to personalise your experience, such as which units of measurement you prefer, and your general location.
+  Pairing makes information available to your Device to personalise your
+  experience, such as which units of measurement you prefer, and your general
+  location.
 ---
 
 # Connecting to Home.Mycroft.AI
@@ -134,3 +136,4 @@ The Device Default settings define your base configuration and will be used for 
 ### Advanced settings
 
 Advanced users may configure additional options using an on-device configuration file. This includes setting an alternative speech-to-text engine, text-to-speech engine, or wake word listener. See the [`mycroft.conf` documentation](https://mycroft.ai/documentation/mycroft-conf/) for more detail.
+

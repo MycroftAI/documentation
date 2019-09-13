@@ -1,6 +1,5 @@
 ---
-description: >-
-
+description: ''
 ---
 
 # Audio Troubleshooting
@@ -161,3 +160,4 @@ Where "DEVICE\_NAME" is taken from the audio device output. As this file is writ
 Maybe.
 
 Most USB mics and speakers are usable with pulseaudio. In general, if your OS can recognize the device as an audio endpoint pulse will be able to connect it. A variety of mics including the PS3 Eye, Blue snowballs, Jabra 410, various web cams, the movo mc1000, gaming headsets, and even the AIY hat have been used successfully. If you have the device on hand, try it out and see. If the information above isn't able to get it going, try asking on the chat server or the forum. Always check the volume levels if everything else seems to be set correctly.
+

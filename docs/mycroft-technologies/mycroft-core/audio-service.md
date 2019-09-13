@@ -1,9 +1,9 @@
 ---
-description: >-
-  The audio service handles playback and queueing of tracks. 
+description: The audio service handles playback and queueing of tracks.
 ---
 
 # Audio Service
+
 The `mycroft-core` distribution of Mycroft includes a _Playback Skill_ which can be used to control playback after it has been started. This means that playback only needs to be started in the **Skill**. Controlling playback can then be done through the _Playback Skill_.
 
 ## How to set up the Audio Service
@@ -83,3 +83,4 @@ The audio service hooks into the PulseAudio controls and can mute playback of so
 ## AudioService Technical Documentation
 
 More information on AudioService methods can be found in the [Mycroft Technical Documentation](https://mycroft-core.readthedocs.io/en/master/source/mycroft.html#audioservice-class).
+

@@ -1,6 +1,7 @@
 ---
 description: >-
-  The Skills Acceptance Process outlines how Skills are tested, reviewed, deployed and promoted through the Mycroft Marketplace.
+  The Skills Acceptance Process outlines how Skills are tested, reviewed,
+  deployed and promoted through the Mycroft Marketplace.
 ---
 
 # Skills Acceptance Process
@@ -106,3 +107,4 @@ Instead, the Skill Management Team will seek assistance from the Community, and 
 Head to our [contribute page](https://mycroft.ai/contribute/#suggest-and-test-skills) to submit an application and see the many other ways you can be involved.
 
 Our Skills Testing Team are a fantastic group of community members who ensure that all Skills are secure, stable, accurate, and intuitive. The team has members with a range of skills and communicate through a private channel on [chat.mycroft.ai](https://chat.mycroft.ai/).
+

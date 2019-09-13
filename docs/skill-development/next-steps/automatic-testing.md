@@ -1,6 +1,5 @@
 ---
-description: >-
-  Mycroft has a built-in mechanism to help you automatically test your Skill. 
+description: Mycroft has a built-in mechanism to help you automatically test your Skill.
 ---
 
 # Automatic Testing
@@ -316,3 +315,4 @@ Please paste a copy of the automated **Skill** testing output as a comment in th
 ## Where can I go to get more assistance?
 
 Join us in the [~skills channel in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
+

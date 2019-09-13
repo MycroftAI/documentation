@@ -320,3 +320,4 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 ## Join our Skills Authoring Community
 
 [Join other Skill Authors in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
+

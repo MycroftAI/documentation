@@ -1,6 +1,7 @@
 ---
 description: >-
-  A Skill can add context to the Intent Parser to create more natural interaction with Mycroft.
+  A Skill can add context to the Intent Parser to create more natural
+  interaction with Mycroft.
 ---
 
 # Conversational Context
@@ -156,3 +157,4 @@ class TeaSkill(MycroftSkill):
 When starting up only the `TeaIntent` will be available. When that has been triggered and _MilkContext_ is added the `MilkYesIntent` and `MilkNoIntent` are available since the _MilkContext_ is set. when a _yes_ or _no_ is received the _MilkContext_ is removed and can't be accessed. In it's place the _HoneyContext_ is added making the `YesHoneyIntent` and `NoHoneyIntent` available.
 
 As you can see, Conversational Context lends itself well to implementing a [dialog tree or conversation tree](https://en.wikipedia.org/wiki/Dialog_tree).
+

@@ -1,6 +1,5 @@
 ---
-description: >-
-  Have experience building Voice Skills on other platforms?
+description: Have experience building Voice Skills on other platforms?
 ---
 
 # Repurposing Skills
@@ -10,3 +9,4 @@ It is not straightforward to repurpose **Skills** developed for other platforms,
 That said, having the _structure_ or _logical flow_ of your **Skill** well defined already makes it easier to start development of your Mycroft **Skills**.
 
 Want to know more about Mycroft Skills? Ask our friendly community over on [Mycroft Mattermost Chat](https://chat.mycroft.ai).
+

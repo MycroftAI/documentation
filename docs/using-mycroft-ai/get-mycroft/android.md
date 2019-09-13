@@ -51,3 +51,4 @@ The easiest way to keep Mycroft for Android updated is to clone the `git` repo w
 ## Common issues with Mycroft for Android
 
 @TODO link to Troubleshooting
+

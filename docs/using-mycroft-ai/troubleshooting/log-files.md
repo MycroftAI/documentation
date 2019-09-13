@@ -1,6 +1,8 @@
 ---
 description: >-
-  Information on the different log files Mycroft uses, where the logs files are located on a Mycroft Device, the sort of data that you will find in them, and some common commands to use to aid diagnosis of common issues with Skills and Skill Authoring.
+  Information on the different log files Mycroft uses, where the logs files are
+  located on a Mycroft Device, the sort of data that you will find in them, and
+  some common commands to use to aid diagnosis
 ---
 
 # Log Files
@@ -170,3 +172,4 @@ total 89816
     4 -rw-r--r-- 1 mycroft root     1788 Dec  1 06:25 voice.log.8
     4 -rw-r--r-- 1 mycroft root     1720 Nov 30 06:25 voice.log.9
 ```
+

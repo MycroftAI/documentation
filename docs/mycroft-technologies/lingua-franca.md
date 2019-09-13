@@ -1,30 +1,35 @@
 ---
 description: >-
-  Lingua Franca is our multilingual language parsing and formatting library. This is what allows Mycroft to both understand and respond with naturally expressed dates, numbers and times.
+  Lingua Franca is our multilingual language parsing and formatting library.
+  This is what allows Mycroft to both understand and respond with naturally
+  expressed dates, numbers and times.
 ---
 
 # Lingua Franca
 
-Lingua Franca _(noun)_
+Lingua Franca _\(noun\)_
 
 > a framework that is adopted as the common language between speakers with different native tongues
 
 [Lingua Franca Github repo](https://github.com/MycroftAI/lingua-franca#lingua-franca)
 
 ## Supported Languages
+
 Currently supported languages include:
-- English
-- French
-- German
-- Hungarian
-- Italian
-- Portuguese
-- Swedish
+
+* English
+* French
+* German
+* Hungarian
+* Italian
+* Portuguese
+* Swedish
 
 There is also active progress being made on:
-- Danish
-- Dutch
-- Spanish
+
+* Danish
+* Dutch
+* Spanish
 
 ## Formatting
 
@@ -201,5 +206,5 @@ testExtract("set an alarm for tonight 9:30",
             "2017-06-27 21:30:00", "set alarm")
 testExtract("on the evening of june 5th 2017 remind me to call my mother",
             "2017-06-05 19:00:00", "remind me to call my mother")
-
 ```
+

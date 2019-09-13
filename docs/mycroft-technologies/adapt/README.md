@@ -1,3 +1,9 @@
+---
+description: >-
+  Adapt is an intent parser - meaning that it is a library for converting
+  natural language into machine-readable data structures, such as JSON.
+---
+
 # Adapt
 
 ## What is the Adapt Intent Parser?
@@ -188,3 +194,4 @@ Verify the installation by running the example code from the Adapt repository.
 $ cd ~/adapt
 PYTHONPATH=. python examples/multi_intent_parser.py "play some music by the clash"
 ```
+

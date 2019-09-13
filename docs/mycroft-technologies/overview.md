@@ -1,6 +1,5 @@
 ---
-description: >-
-  A broad overview of the technology that makes up Mycroft AI.
+description: A broad overview of the technology that makes up Mycroft AI.
 ---
 
 # Technology Overview
@@ -88,3 +87,4 @@ Mycroft is designed to run on many different platforms - called **Devices**, wit
 * **Mark 1** - a software image of Mycroft designed to be installed on the Mycroft Mark 1 - a reference hardware device
 * **Picroft** - a software image of Mycroft designed to be installed on Raspberry Pi 3
 * **Android** - a software image of Mycroft designed to be installed on Android devices
+

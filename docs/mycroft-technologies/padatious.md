@@ -1,12 +1,18 @@
+---
+description: 'Padatious is a machine-learning, neural-network based intent parser.'
+---
+
 # Padatious
+
+Padatious is a [machine-learning](https://en.wikipedia.org/wiki/Machine_learning), [neural-network](https://en.wikipedia.org/wiki/Artificial_neural_network) based _intent parser_. It is an alternative to the [Adapt intent parser](https://mycroft.ai/documentation/adapt/). Unlike Adapt, which uses small groups of unique words, Padatious is trained on the sentence as a whole.
 
 Padatious has a number of key benefits over other intent parsing technologies.
 
 * With Padatious, **Intents** are easy to create
 * The machine learning model in Padatious requires a relatively small amount of data
-* Machine learning models need to be *trained*. The model used by Padatious is quick and easy to train.
+* Machine learning models need to be _trained_. The model used by Padatious is quick and easy to train.
 * Intents run independently of each other. This allows quickly installing new skills without retraining all other skill intents.
-* With Padatious, you can easily extract entities and then use these in **Skills**. For example, "Find the nearest gas station" -> `{ "place":"gas station"}`
+* With Padatious, you can easily extract entities and then use these in **Skills**. For example, "Find the nearest gas station" -&gt; `{ "place":"gas station"}`
 
 ## System generated documentation
 
@@ -14,31 +20,31 @@ Padatious has a number of key benefits over other intent parsing technologies.
 
 ## What is an **Intent**? What is an **Intent parser**?
 
-In speech recognition and voice assistance, an **intent** is the task the user *intends* to accomplish. A user can accomplish the same task in multiple ways. The role of the **intent parser** is to extract from the user's speech key data elements that specify their intent in more detail. This data can then be passed to other services, such as **Skills** to help the user accomplish their intended task.
+In speech recognition and voice assistance, an **intent** is the task the user _intends_ to accomplish. A user can accomplish the same task in multiple ways. The role of the **intent parser** is to extract from the user's speech key data elements that specify their intent in more detail. This data can then be passed to other services, such as **Skills** to help the user accomplish their intended task.
 
-*Example*: Julie wants to know about today's weather in her current location, which is Melbourne, Australia.
+_Example_: Julie wants to know about today's weather in her current location, which is Melbourne, Australia.
 
 * `hey mycroft, what's today's weather like?`
 * `hey mycroft, what's the weather like in Melbourne?`
 * `hey mycroft, weather`
 
-Each of these examples has very similar *intent*. The role of Padatious is to determine intent programmatically.
+Each of these examples has very similar _intent_. The role of Padatious is to determine intent programmatically.
 
 In the example above, we would extract data elements like:
 
-* **weather** - we know that Julie wants to know about the weather, but she has not been specific about the type of weather, such as *wind*, *precipitation*, *snowfall* or the risk of *fire danger* from bushfires. Melbourne, Australia rarely experiences snowfall, but falls under bushfire risk every summer.
+* **weather** - we know that Julie wants to know about the weather, but she has not been specific about the type of weather, such as _wind_, _precipitation_, _snowfall_ or the risk of _fire danger_ from bushfires. Melbourne, Australia rarely experiences snowfall, but falls under bushfire risk every summer.
 * **location** - Julie has stipulated her location as Melbourne, but she does not state that she means Melbourne, Australia. How do we distinguish this from Melbourne, Florida, United States?
-* **date** - Julie has been specific about the *timeframe* she wants weather data for - today. But how do we know what today means in Julie's timezone. Melbourne, Australia is between 14-18 hours ahead of the United States. We don't want to give Julie yesterday's weather, particularly as Melbourne is renowned for having changeable weather.
+* **date** - Julie has been specific about the _timeframe_ she wants weather data for - today. But how do we know what today means in Julie's timezone. Melbourne, Australia is between 14-18 hours ahead of the United States. We don't want to give Julie yesterday's weather, particularly as Melbourne is renowned for having changeable weather.
 
 ## Creating **Intents**
 
 Padatious uses a series of example sentences to train a machine learning model to identify an intent.
 
-The examples are stored in a **Skill's** `vocab[lang]` directory, in files ending in the file extension `.intent`. For example, if you were to create a *tomato* **Skill** to respond to questions about a *tomato*, you would create the file
+The examples are stored in a **Skill's** `vocab[lang]` directory, in files ending in the file extension `.intent`. For example, if you were to create a _tomato_ **Skill** to respond to questions about a _tomato_, you would create the file
 
 `vocab/en-us/what.is.intent`
 
-This file would contain examples of questions asking what a *tomato* is.
+This file would contain examples of questions asking what a _tomato_ is.
 
 * `What would you say a tomato is?`
 * `What's a tomato?`
@@ -54,7 +60,6 @@ with examples of questions about mycroft's opinion about tomatoes:
 * Are you fond of tomatoes?
 * Do you like tomatoes?
 * What are your thoughts on tomatoes?
-
 * Are you fond of `{type}` tomatoes?
 * Do you like `{type}` tomatoes?
 * What are your thoughts on `{type}` tomatoes?
@@ -71,7 +76,7 @@ In the above example, `{type}` will match anything. While this makes the intent 
 
 which would contain something like:
 
-```
+```text
 red
 reddish
 green
@@ -91,7 +96,7 @@ A skill using Padatious is no different than previous skills except that `self.r
 
 For example, the Tomato Skill would be written as:
 
-```
+```text
 from mycroft.skills.core import MycroftSkill
 
 class TomatoSkill(MycroftSkill):
@@ -115,8 +120,8 @@ class TomatoSkill(MycroftSkill):
 
 The `register_intent_file(intent_file, handler)` methods arguments are:
 
-* intent_file: the filename of above mentioned intent files with the .intent as argument.
-* handler: the method/function that the examples in the intent_file should map to
+* intent\_file: the filename of above mentioned intent files with the .intent as argument.
+* handler: the method/function that the examples in the intent\_file should map to
 
 The corresponding decorator is also available:
 
@@ -124,7 +129,7 @@ The corresponding decorator is also available:
 
 In the handler method the wild card words can be fetched from the message using
 
-```
+```text
 def handler(self, message):
         word = message.data.get('your_keyword') # if not present will return None
 ```
@@ -135,27 +140,28 @@ def handler(self, message):
 
 Sometimes you might find yourself writing a lot of variations of the same thing. For example, to write a skill that orders food, you might write the following intent:
 
-```
+```text
 Order some {food}.
 Order some {food} from {place}.
 Grab some {food}.
 Grab some {food} from {place}.
 ```
 
-Rather than writing out all combinations of possibilities, you can embed them into a single line by writing each possible option inside parentheses with | in between each part. For example, that same intent above could be written as:
+Rather than writing out all combinations of possibilities, you can embed them into a single line by writing each possible option inside parentheses with \| in between each part. For example, that same intent above could be written as:
 
-```
+```text
 (Order | Grab) some {food} (from {place} | )
 ```
 
 Nested parentheses are supported to create even more complex combinations, such as the following:
 
-```
+```text
 (Look (at | for) | Find) {object}.
 ```
 
 Which would expand to:
-```
+
+```text
 Look at {object}
 Look for {object}
 Find {object}
@@ -165,14 +171,14 @@ Find {object}
 
 Let's say you are writing an **Intent** to call a phone number. You can make it only match specific formats of numbers by writing out possible arrangements using `#` where a number would go. For example, with the following intent:
 
-```
+```text
 Call {number}.
 Call the phone number {number}.
 ```
 
 the number.entity could be written as:
 
-```
+```text
 +### (###) ###-####
 +## (###) ###-####
 +# (###) ###-####
@@ -188,7 +194,7 @@ the number.entity could be written as:
 
 Let's say you wanted to create an intent to match places:
 
-```
+```text
 Directions to {place}.
 Navigate me to {place}.
 Open maps to {place}.
@@ -198,7 +204,7 @@ How do I get to {place}?
 
 This alone will work, but it will still get a high confidence with a phrase like "How do I get to the boss in my game?". We can try creating a `.entity` file with things like:
 
-```
+```text
 New York City
 #### Georgia Street
 San Francisco
@@ -206,7 +212,7 @@ San Francisco
 
 The problem is, now anything that is not specifically a mix of New York City, San Francisco, or something on Georgia Street won't match. Instead, we can specify an unknown word with :0. This would would be written as:
 
-```
+```text
 :0 :0 City
 #### :0 Street
 :0 :0
@@ -218,9 +224,10 @@ _NOTE: Currently, the number of :0 words is not fully taken into consideration s
 
 ## API Example
 
-_NOTE: This section is of use if you are using Padatious on a project other than Mycroft. If you're developing [Skills for Mycroft](https://mycroft.ai/documentation/skills), you don't need to worry about this_
+_NOTE: This section is of use if you are using Padatious on a project other than Mycroft. If you're developing_ [_Skills for Mycroft_](https://mycroft.ai/documentation/skills)_, you don't need to worry about this_
 
 **program.py**:
+
 ```python
 from padatious.intent_container import IntentContainer
 
@@ -234,13 +241,15 @@ print(data.name)
 ```
 
 **hello.intent**:
-```
+
+```text
 Hi there!
 Hello.
 ```
 
 **goodbye.intent**:
-```
+
+```text
 See you!
 Goodbye!
 ```
@@ -253,26 +262,28 @@ python3 program.py
 
 ## Installing Padatious
 
-_NOTE: This section is of use if you are using Padatious on a project other than Mycroft. If you're developing [Skills for Mycroft](https://mycroft.ai/documentation/skills), you don't need to worry about this_
+_NOTE: This section is of use if you are using Padatious on a project other than Mycroft. If you're developing_ [_Skills for Mycroft_](https://mycroft.ai/documentation/skills)_, you don't need to worry about this_
 
 ### Prerequisites
 
 Padatious is designed to be run in Linux. Padatious requires the following native packages to be installed:
 
- - [`FANN`](https://github.com/libfann/fann) (with dev headers)
- - Python development headers
- - `pip3`
- - `swig`
+* [`FANN`](https://github.com/libfann/fann) \(with dev headers\)
+* Python development headers
+* `pip3`
+* `swig`
 
 To install these packages on a Ubuntu system, run this command:
 
-```
+```text
 sudo apt-get install libfann-dev python3-dev python3-pip swig
 ```
 
 Next, install Padatious via `pip3`:
 
-```
+```text
 pip3 install padatious
 ```
+
 Padatious also works in Python 2 if you are unable to upgrade.
+

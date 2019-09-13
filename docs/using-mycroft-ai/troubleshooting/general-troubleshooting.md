@@ -1,9 +1,8 @@
 ---
-description: >-
-  Troubleshooting tips and known errors
+description: Troubleshooting tips and known errors
 ---
 
-# Troubleshooting
+# General Troubleshooting
 
 This section is grouped by Device to help you quickly find the information you need.
 
@@ -15,7 +14,7 @@ When you contact Mycroft for support, we may ask for some of the following infor
 * Whether your **Device** was **Paired**
 * Your home.mycroft.ai account details
 * Information from your Mycroft logs
-* Information generated from the [Support Skill](./#using-the-support-skill)
+* Information generated from the [Support Skill](https://github.com/krisgesling/docs-rewrite/tree/176ae0df61c549a0327446919daf7686dc76bb46/docs/using-mycroft-ai/troubleshooting/README.md#using-the-support-skill)
 
 ## Using the Support Skill
 
@@ -161,3 +160,4 @@ If your permissions are different to those shown above, change them by running t
 cd /opt/mycroft/skills/
 sudo chown mycroft:mycroft -R your-skill-name
 ```
+

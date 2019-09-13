@@ -1,6 +1,7 @@
 ---
 description: >-
-  Mycroft Skills Manager \(msm\) is a command line tool used to add, manage and remove Skills on any Mycroft installation.
+  Mycroft Skills Manager \(msm\) is a command line tool used to add, manage and
+  remove Skills on any Mycroft installation.
 ---
 
 # Mycroft Skills Manager
@@ -185,3 +186,4 @@ To trigger a `pip` re-installing **Skill** dependencies, do the following:
 This will force both a **Skills** update and the re-installation of dependencies when the `mycroft-skills` service is re-started.
 
 You can also use the utility `mycroft-pip` which will install dependencies into the Mycroft _virtual environment_ without activation \(ie. the 'activate' command\). Use `mycroft-pip` as you would regular `pip` for installing Python libraries on which your **Skill** depends.
+

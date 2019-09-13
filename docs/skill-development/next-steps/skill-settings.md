@@ -1,6 +1,8 @@
 ---
 description: >-
-  Have you ever wanted to store settings for a Skill locally to a Device? For instance, you might want the User to specify a preference the first time they use a Skill, and then store that preference for subsequent uses.
+  Have you ever wanted to store settings for a Skill locally to a Device? For
+  instance, you might want the User to specify a preference the first time they
+  use a Skill, and then store that preference fo
 ---
 
 # Skill Settings
@@ -161,3 +163,4 @@ _Optional_ The initial value for the field.
 * sections &gt; fields &gt; field &gt; placeholder \(String\)
 
 _Optional_ Placeholder text to show before data is entered in the field \(or possibly as a tooltip\)
+

@@ -1,6 +1,7 @@
 ---
 description: >-
-  Learn about foreign language support in Mycroft, and how to approach configuring Mycroft to support other languages.
+  Learn about foreign language support in Mycroft, and how to approach
+  configuring Mycroft to support other languages.
 ---
 
 # Languages
@@ -246,3 +247,4 @@ This configuration has not changed the Wake Word, so the device will continue re
 You're welcome to post questions and queries to the [Languages topic on the Mycroft Forum](https://community.mycroft.ai/c/languages) or join our [Languages chatroom at Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) to connect with others from around the world.
 
 We also have a number of [language-specific channels in Chat](https://mycroft.ai/contribute/#translate-to-new-languages).
+
