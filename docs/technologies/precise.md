@@ -1,26 +1,8 @@
 ---
-ID: 32976
-post_title: Precise
-author: Kathy Reid
-post_excerpt: ""
-layout: page
-permalink: http://mycroft.ai/documentation/precise/
-published: true
-post_date: 2017-12-03 05:40:08
+description: >-
+	Precise is a **Wake Word Listener**. Like its name suggests, a **Wake Word Listener**'s job is to continually listen to sounds and speech around the **Device**, and activate when the sounds or speech match a **Wake Word**. Unlike other hotword detection products, Mycroft Precise is fully open source.
 ---
 # Precise
-
-Precise is a **Wake Word Listener**. Like its name suggests, a **Wake Word Listener**'s job is to continually listen to sounds and speech around the **Device**, and activate when the sounds or speech match a **Wake Word**. Unlike other hotword detection products, Mycroft Precise is fully open source.
-
-- [Precise vs PocketSphinx](#precise-vs-pocketsphinx)
-	- [How do I change the **Wake Word Listener** to PocketSphinx](#how-do-i-change-the-wake-word-listener-to-pocketsphinx)
-	- [How do I tell which **Wake Word Listener** my Mycroft **Device** is using?](#how-do-i-tell-which-wake-word-listener-my-mycroft-device-is-using)
-	- [How do I install Precise as my **Wake Word Listener**?](#how-do-i-install-precise-as-my-wake-word-listener)
-- [Other hotword detection technologies](#other-hotword-detection-technologies)
-- [Adding Custom Wake Words](#adding-custom-wake-words)
-	- [PocketSphinx Wake Words](#pocketsphinx-wake-words)
-	- [Precise Wake Word Models](#precise-wake-word-models)
-- [Additional Support](#additional-support)
 
 ## Precise vs PocketSphinx
 

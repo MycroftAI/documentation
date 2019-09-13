@@ -1,22 +1,8 @@
 ---
-ID: 33171
-post_title: Adapt Examples
-author: Kathy Reid
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/adapt/adapt-examples/
-published: true
-post_date: 2017-12-03 05:17:36
+description: >-
+  There are several **Intent Parser** examples for Adapt on GitHub, and this page walks you through what they are, and where you might use them.
 ---
 # Adapt Examples
-
-- [Adapt Examples](#adapt-examples)
-* [Single intent Parser](#single-intent-parser)
-* [Multi-intent Parser](#multi-intent-parser)
-* [Regular Expression (regex) Intent Parser](#regular-expression-regex-intent-parser)
-
-There are several **Intent Parser** examples for Adapt on GitHub, and this page walks you through what they are, and where you might use them.
 
 ## Single intent Parser
 

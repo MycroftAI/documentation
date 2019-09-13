@@ -1,17 +1,8 @@
 ---
-ID: 33102
-post_title: Adapt Tutorial
-author: Kathy Reid
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/adapt/adapt-tutorial/
-published: true
-post_date: 2017-12-03 05:21:08
+description: >-
+  A step by step tutorial in using Adapt Intent Parser, using the `single_intent_parser.py` file as a starting point.
 ---
 # Adapt Tutorial
-
-This page provides a step by step tutorial in using Adapt Intent Parser, using the `single_intent_parser.py` file as a starting point.
 
 ## Prerequisites
 

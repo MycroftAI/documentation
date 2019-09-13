@@ -1,12 +1,4 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: 'http://mycroft.ai/documentation/mark-1/'
-post_date: '2017-12-02T22:35:25.000Z'
-published: true
-post_title: Mark 1
-ID: 32430
 description: >-
   The Mark 1 device is an Enclosure for Mycroft, based on Raspberry Pi. It is
   designed as a reference hardware device, and is able to be easily modified,
@@ -162,15 +154,15 @@ You will need:
 Method
 
 * Download the [18.02b Mark 1 disk image](https://mycroft.ai/to/mark-1-image) from the mycroft website.
-* Unplug the Mark 1 from the power supply. 
-* Remove the four rubber feet from the Mark 1, and put them in a safe place. 
+* Unplug the Mark 1 from the power supply.
+* Remove the four rubber feet from the Mark 1, and put them in a safe place.
 * Gently remove the base of the Mark 1.
-* Gently unseat the Micro SD card. 
-* Using Etcher, burn the disk image to the Micro SD card. Allow Etcher to complete verification. 
-* Gently re-seat the Micro SD card in the Mark 1. 
-* Gently place the base of the Mark 1 back, and screw in the four screws. 
-* Replace the four rubber feet. 
-* Plug in the power supply. 
+* Gently unseat the Micro SD card.
+* Using Etcher, burn the disk image to the Micro SD card. Allow Etcher to complete verification.
+* Gently re-seat the Micro SD card in the Mark 1.
+* Gently place the base of the Mark 1 back, and screw in the four screws.
+* Replace the four rubber feet.
+* Plug in the power supply.
 * The Mark 1 device will power on with ‘white spinning eyes’. This will last around 20 seconds to 1 minute. Mark 1 will then have ‘full blue eyes’.
 * Mark 1 will then advise that it needs to be connected to WiFi.
 * Follow [the instructions to connect Mark 1 to WiFi](https://mycroft.ai/documentation/mark-1/#getting-mark-1-connected-to-the-internet-using-a-network-cable), or connect an ethernet cable to the ethernet socket on the back of the device.
@@ -185,7 +177,7 @@ This option is recommended if you aren't comfortable taking apart your Mark 1 de
 You will need:
 
 * An internet connection
-* About 20 minutes to do the update - parts of the update take over an hour but you can do other things while the updates are happening. 
+* About 20 minutes to do the update - parts of the update take over an hour but you can do other things while the updates are happening.
 
 Method
 
@@ -194,7 +186,7 @@ Method
 * Take your Mark 1 out of its box, and give it a wipe over with a damp \(not wet\) cotton cloth, to remove dust. Be careful as the acrylic front plate can scratch if you use an abrasive cloth. Gently blow into the ports on the back of the device, and the ventilation holes on the top and bottom, to blow away excess dust.
 * Plug Mark 1 into power
 * The Mark 1 device will power on with ‘white spinning eyes’. This will last around 20 seconds to 1 minute. Mark 1 will then have ‘full blue eyes’.
-* Mark 1 will then advise that it needs to be connected to WiFi. 
+* Mark 1 will then advise that it needs to be connected to WiFi.
 * Follow [the instructions to connect Mark 1 to WiFi](https://mycroft.ai/documentation/mark-1/#getting-mark-1-connected-to-the-internet-using-a-network-cable), or connect an ethernet cable to the ethernet socket on the back of the device.
 * Once you are connected to WiFi, Mark 1 will advise that you need to pair the device. Pair the device on home.mycroft.ai [following these instructions.](https://mycroft.ai/documentation/mark-1/#pairing-the-mark-1)
 * If you hear the message Error occurred in processing pairing Skill, don’t worry, this is common for Mark 1 that are doing their first update in a little while.
@@ -203,9 +195,9 @@ Method
 * You will see ‘grey spinny eyes’ then ‘full blue eyes’ after about 20 seconds to 1 minute
 * Speak the command Install platform patch. Mycroft will respond with installing.
 * Mark 1 will then show ‘blue eye’ and display ‘UPDATING’ on screen.
-* Updating will take between 15 minutes and 90 minutes depending on your internet connection. 
+* Updating will take between 15 minutes and 90 minutes depending on your internet connection.
 * Mark 1 will reboot after the update is complete.
-* After the reboot, Mark 1 will show ‘white spinning eyes’ then ‘yellow eyes’ with ‘UPDATING’ on screen. When Mark 1 is ready to respond to voice commands, the device will show ‘full blue eyes’. 
+* After the reboot, Mark 1 will show ‘white spinning eyes’ then ‘yellow eyes’ with ‘UPDATING’ on screen. When Mark 1 is ready to respond to voice commands, the device will show ‘full blue eyes’.
 
 ### How to reimage a Mark 1 Device
 
@@ -234,10 +226,10 @@ For more information, [see the original forum post by Barney Woodrow](https://co
 If you prefer to use the Linux command line tool `dd` to burn the disk image instead, follow these instructions:
 
 1. Download the [Mark 1 disk image](https://mycroft.ai/to/mark-1-image)
-2. Insert the Micro SD card you wish to burn the image to. It must have a storage capacity of 8GB or higher. 
+2. Insert the Micro SD card you wish to burn the image to. It must have a storage capacity of 8GB or higher.
 3. Identify the path where the MicroSD card is mounted by running the command `sudo fdisk -l`. You will be able to tell the path based on the storage size of the device.
 4. Keep a note of this - it will be something like `/dev/sdb1`
-5. Unmount the disk so that no other operation can write to the device while it is being imaged using the command `sudo umount /dev/sdb1`. Make sure to substitute for the location of your device. 
+5. Unmount the disk so that no other operation can write to the device while it is being imaged using the command `sudo umount /dev/sdb1`. Make sure to substitute for the location of your device.
 6. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitute the location of your device, and the path to the `.img` file you downloaded.
 7. This will take several minutes to run. The command prompt will return if successful, otherwise an error message will be displayed on your terminal.
 
@@ -296,4 +288,3 @@ If your Mark 1 Device is frozen, reboot it by:
 ## Hardware Hacking your Mark 1 Device
 
 If you're interested in hardware hacking on your Mark 1 **Device**, the [hardware schematics](https://github.com/MycroftAI/hardware-mycroft-mark-1) are open source and available for download.
-

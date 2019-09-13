@@ -1,33 +1,9 @@
 ---
-post_excerpt: >
-  Learn how to install Mycroft for Docker either from a Docker Hub install, or
-  by building the image. Many thanks to Brian Hopkins (@btotharye) for this
-  documentation.
-layout: page
-author: Kathy Reid
-permalink: 'http://mycroft.ai/documentation/docker/'
-post_date: '2018-07-10T16:27:19.000Z'
-published: true
-post_title: Mycroft for Docker
-ID: 39407
+description: >-
+  Learn how to install Mycroft for Docker either from a Docker Hub install, or by building the image. Many thanks to Brian Hopkins (@btotharye) for this documentation.
 ---
 
 # Docker
-
-* [Mycroft for Docker](docker.md#mycroft-for-docker)
-  * [Prerequisites](docker.md#prerequisites)
-  * [Getting Started](docker.md#getting-started)
-    * [Installing from Docker Hub](docker.md#installing-from-docker-hub)
-    * [Installing via building the Docker image](docker.md#installing-via-building-the-docker-image)
-  * [Running Mycroft for Docker](docker.md#running-mycroft-for-docker)
-    * [Pairing Mycroft for Docker](docker.md#pairing-mycroft-for-docker)
-  * [Interacting With Mycroft on Docker](docker.md#interacting-with-mycroft-on-docker)
-    * [Accessing Mycroft Logs](docker.md#accessing-mycroft-logs)
-  * [CLI Access](docker.md#cli-access)
-    * [Accessing Mycroft CLI](docker.md#accessing-mycroft-cli)
-      * [Installing Skills on Docker Mycroft](docker.md#installing-skills-on-docker-mycroft)
-      * [Removing Skills on Docker Mycroft](docker.md#removing-skills-on-docker-mycroft)
-  * [Getting help](docker.md#getting-help)
 
 Mycroft is available for `Docker`. You have two options for a `Docker` installation:
 
@@ -171,4 +147,3 @@ This would remove the above Basic Helper Skill.
 ## Getting help
 
 Mycroft for Docker is community-supported. You are welcome to join the [Mycroft Chat Docker channel](https://chat.mycroft.ai/community/channels/docker).
-

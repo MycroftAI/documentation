@@ -1,25 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: 'http://mycroft.ai/documentation/android/'
-post_date: '2017-12-02T22:35:25.000Z'
-published: true
-post_title: Mycroft for Android
-ID: 32438
+description: >-
+  Mycroft for Android is a Community led project. It is a proof of concept and is not ready for general use. There is no .apk available. You will need to be familiar with [Android Studio](https://developer.android.com/studio/index.html).
 ---
 
 # Android
-
-## Mycroft for Android is still in proof of concept and is not ready for general use. There is no .apk available, and to use Mycroft for Android at the moment, you will need to be familiar with [Android Studio](https://developer.android.com/studio/index.html).
-
-* [Mycroft for Android](android.md#mycroft-for-android)
-  * [Prerequisites](android.md#prerequisites)
-  * [Getting Started](android.md#getting-started)
-  * [Connecting to a `mycroft-core` instance](android.md#connecting-to-a-mycroft-core-instance)
-  * [Pairing Mycroft for Android](android.md#pairing-mycroft-for-android)
-    * [Keeping Mycroft for Android updated](android.md#keeping-mycroft-for-android-updated)
-  * [Common issues with Mycroft for Android](android.md#common-issues-with-mycroft-for-android)
 
 There are two components to Mycroft for Android:
 
@@ -66,4 +50,3 @@ The easiest way to keep Mycroft for Android updated is to clone the `git` repo w
 ### Common issues with Mycroft for Android
 
 @TODO link to Troubleshooting
-

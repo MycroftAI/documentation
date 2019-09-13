@@ -1,33 +1,10 @@
 ---
-ID: 32454
-post_title: Padatious
-author: Kathy Reid
-post_excerpt: ""
-layout: page
-permalink: >
-  http://mycroft.ai/documentation/padatious/
-published: true
-post_date: 2017-12-03 05:48:00
+description: >-
+Padatious is a [machine-learning](https://en.wikipedia.org/wiki/Machine_learning), [neural-network](https://en.wikipedia.org/wiki/Artificial_neural_network) based *intent parser*. It is an alternative to the [Adapt intent parser](https://mycroft.ai/documentation/adapt/). Unlike Adapt, which uses small groups of unique words, Padatious is trained on the sentence as a whole.
 ---
 # Padatious
 
-- [Padatious](#padatious)
-  * [System generated documentation](#system-generated-documentation)
-  * [What is an **Intent**? What is an **Intent parser**?](#what-is-an-intent-what-is-an-intent-parser)
-  * [Creating **Intents**](#creating-intents)
-  * [Creating Entities](#creating-entities)
-  * [Creating a skill](#creating-a-skill)
-  * [Advanced Usage](#advanced-usage)
-    + [Parentheses Expansion](#parentheses-expansion)
-    + [Number matching](#number-matching)
-    + [Entities with unknown tokens](#entities-with-unknown-tokens)
-  * [API Example](#api-example)
-  * [Installing Padatious](#installing-padatious)
-    + [Prerequisites](#prerequisites)
-
-Padatious is a [machine-learning](https://en.wikipedia.org/wiki/Machine_learning), [neural-network](https://en.wikipedia.org/wiki/Artificial_neural_network) based *intent parser*. It is an alternative to the [Adapt intent parser](https://mycroft.ai/documentation/adapt/). Unlike Adapt, which uses small groups of unique words, Padatious is trained on the sentence as a whole.
-
-Padatious has a number of key benefits:
+Padatious has a number of key benefits over other intent parsing technologies:
 
 * With Padatious, **Intents** are easy to create
 * The machine learning model in Padatious requires a relatively small amount of data
@@ -116,7 +93,7 @@ Now, we can say things like Do you like greenish red tomatoes? and it will tag t
 
 A skill using Padatious is no different than previous skills except that `self.register_intent_file()` is used instead of `self.register_intent()`. To register a `.entity file`, use `self.register_entity_file()`.
 
-For example, the Tomato Skill would be written as: 
+For example, the Tomato Skill would be written as:
 
 ```
 from mycroft.skills.core import MycroftSkill

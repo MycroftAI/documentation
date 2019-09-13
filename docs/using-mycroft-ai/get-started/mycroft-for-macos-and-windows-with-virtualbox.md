@@ -1,19 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kris Gesling
-permalink: |
-  http://mycroft.ai/documentation/mycroft-for-macos-and-windows-with-virtualbox/
-post_date: '2019-08-08T22:17:08.000Z'
-published: true
-post_title: |
-  Mycroft for MacOS and Windows with VirtualBox
-ID: 48848
+description: >-
+  TL;DR: Get an Ubuntu VM up and running, install alsa and pulseaudio, set up mycroft-core, reboot and enjoy!
 ---
 
 # Mac OS and Windows with VirtualBox
-
-_**TL;DR** - Get an Ubuntu VM up and running, install alsa and pulseaudio, set up mycroft-core, reboot and enjoy!_
 
 * [Installing Ubuntu in VirtualBox](mycroft-for-macos-and-windows-with-virtualbox.md#installing-ubuntu-in-virtualbox)
 * [Installing Mycroft](mycroft-for-macos-and-windows-with-virtualbox.md#installing-mycroft)
@@ -25,14 +15,14 @@ Thanks to Mycroft Community Member \(Mycroft SysAdmin in a former life\) [@arron
 
 Running Mycroft using this method has been tested on:
 
-* 2017 MacBook Pro running Mojave 
+* 2017 MacBook Pro running Mojave
 * Lenovo Ideapad 300-15isk running Windows 10
 
 #### Known issues
 
 So far Mycroft seems to work well on both platforms, although at least two issues have come up with this approach and more may show up as others use this virtualization approach to running Mycroft.
 
-1. While the TTS \(text-to-speech\) audio and Spotify audio sounds good the News Skills has issues with playback. 
+1. While the TTS \(text-to-speech\) audio and Spotify audio sounds good the News Skills has issues with playback.
 2. The audio process has crashed unexpectedly, although only once. This can be restarted by running: `mycroft-start restart audio`
 
 ## Installing Ubuntu in VirtualBox
@@ -105,4 +95,3 @@ Guest Port: 22
 ```
 
 Reboot and VM and you will be able to SSH in with this command: `ssh username@localhost -p 2222`. You can also select the Start dropdown menu to start the VM in Headless mode.
-

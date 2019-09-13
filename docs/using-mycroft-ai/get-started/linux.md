@@ -1,34 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: 'http://mycroft.ai/documentation/linux/'
-post_date: '2017-12-02T22:35:25.000Z'
-published: true
-post_title: Mycroft for Linux
-ID: 32436
+description: >-
+  Install Mycroft on Linux, learn how to start and stop services, configure proxies, or remove Mycroft from your system.
 ---
 
 # Linux
-
-* [Mycroft for Linux](linux.md#mycroft-for-linux)
-  * [Prerequisites](linux.md#prerequisites)
-    * [System Requirements](linux.md#system-requirements)
-  * [Getting Started](linux.md#getting-started)
-    * [Installing via git clone](linux.md#installing-via-git-clone)
-  * [Running Mycroft for Linux](linux.md#running-mycroft-for-linux)
-    * [start-mycroft.sh](linux.md#start-mycroftsh)
-      * [To start all Mycroft services at once](linux.md#to-start-all-mycroft-services-at-once)
-      * [To start individual Mycroft services](linux.md#to-start-individual-mycroft-services)
-    * [Stopping Mycroft services](linux.md#stopping-mycroft-services)
-  * [Pairing Mycroft for Linux](linux.md#pairing-mycroft-for-linux)
-  * [Using Mycroft behind a proxy](linux.md#using-mycroft-behind-a-proxy)
-  * [Using Mycroft behind a proxy without authentication](linux.md#using-mycroft-behind-a-proxy-without-authentication)
-  * [Using Mycroft behind an authenticated proxy](linux.md#using-mycroft-behind-an-authenticated-proxy)
-    * [Keeping Mycroft for Linux updated](linux.md#keeping-mycroft-for-linux-updated)
-  * [Removing Mycroft for Linux from your system](linux.md#removing-mycroft-for-linux-from-your-system)
-  * [Common issues with Mycroft for Linux](linux.md#common-issues-with-mycroft-for-linux)
-    * [Removing and rebuilding your `virtualenv`](linux.md#removing-and-rebuilding-your-virtualenv)
 
 Mycroft is available for Linux, and can be installed via several methods.
 
@@ -207,10 +182,10 @@ $  export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,0.0.0.0,::
 Keeping your `mycroft-core` installation up to date is simple.
 
 1. Change to the directory where your `mycroft-core` installation is. This is most likely at `~/mycroft-core`
-2. Type `git stash` - this preserves your Mycroft configuration. `git` may prompt you to [set up an identity](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup). 
-3. Type `git pull` to get the latest code. By default, using a `git` installation will bring down the `dev` branch of the repo. If you want to pull down another branch - for instance to test it - use `git pull origin BRANCH_NAME`. 
+2. Type `git stash` - this preserves your Mycroft configuration. `git` may prompt you to [set up an identity](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
+3. Type `git pull` to get the latest code. By default, using a `git` installation will bring down the `dev` branch of the repo. If you want to pull down another branch - for instance to test it - use `git pull origin BRANCH_NAME`.
 4. Type `git stash pop` to return the configuration that was stashed with `git stash`
-5. Type `./update_dev.sh` to update your `virtualenv` - it's a good idea to do this if you update your `mycroft-core` installation. 
+5. Type `./update_dev.sh` to update your `virtualenv` - it's a good idea to do this if you update your `mycroft-core` installation.
 6. Type `./start-mycroft.sh all` to restart the services
 
 ## Removing Mycroft for Linux from your system
@@ -219,15 +194,15 @@ If you have installed `mycroft-core` using the `git-clone` method, then removing
 
 _NOTE: depending on your system, you may need to run the commands below with `sudo`_
 
-* Remove the `mycroft-core` directory from wherever you installed it: 
+* Remove the `mycroft-core` directory from wherever you installed it:
 
 `rm -R ~/yourpath/to/mycroft-core`
 
-* Next, remove the **Skills** directories: 
+* Next, remove the **Skills** directories:
 
 `rm -R /opt/mycroft`
 
-* Next, remove the Mycroft settings: 
+* Next, remove the Mycroft settings:
 
 `rm -R ~/.mycroft`
 
@@ -263,4 +238,3 @@ Warning: Failed to install all requirements. Continue? y/N
 ```
 
 If you can't install to a path without spaces, you will have to manually verify the `requirements.txt` entries are installed to your virtual environment.
-

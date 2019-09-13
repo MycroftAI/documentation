@@ -1,40 +1,9 @@
 ---
-post_excerpt: ''
-layout: page
-author: Kathy Reid
-permalink: 'http://mycroft.ai/documentation/picroft/'
-post_date: '2017-12-02T22:35:25.000Z'
-published: true
-post_title: Picroft
-ID: 32434
+description: >-
+  Picroft is a ready-made way to run Mycroft on a Raspberry Pi 3 or Raspberry Pi 3B+ and is provided as a disk image that you can burn to a Micro SD card.
 ---
 
 # Picroft
-
-* [Picroft](picroft.md#picroft)
-  * [Quick links](picroft.md#quick-links)
-  * [About Picroft](picroft.md#about-picroft)
-  * [What do I need to run Picroft?](picroft.md#what-do-i-need-to-run-picroft?)
-    * [Hardware requirements and compatibility chart](picroft.md#hardware-requirements-and-compatibility-chart)
-  * [Getting started with Picroft](picroft.md#getting-started-with-picroft)
-    * [Downloading the disk image](picroft.md#downloading-the-disk-image)
-    * [Burn the disk image to the Micro SD card](picroft.md#burn-the-disk-image-to-the-micro-sd-card)
-    * [Seeing the output from Picroft](picroft.md#seeing-the-output-from-picroft)
-  * [Connecting Picroft to a wired or WiFi network](picroft.md#connecting-picroft-to-a-wired-or-wifi-network)
-    * [To connect to a wired network](picroft.md#to-connect-to-a-wired-network)
-    * [To connect to a WiFi network](picroft.md#to-connect-to-a-wifi-network)
-    * [Booting up Picroft](picroft.md#booting-up-picroft)
-  * [`ssh` into Picroft](picroft.md#%60ssh%60-into-picroft)
-    * [Setting up Picroft](picroft.md#setting-up-picroft)
-  * [Pairing the Picroft](picroft.md#pairing-the-picroft)
-  * [Maintaining your Picroft](picroft.md#maintaining-your-picroft)
-    * [How to reimage a Picroft Device](picroft.md#how-to-reimage-a-picroft-device)
-    * [Keeping your Picroft updated](picroft.md#keeping-your-picroft-updated)
-  * [Important file locations for Picroft](picroft.md#important-file-locations-for-picroft)
-  * [Useful commands for Picroft](picroft.md#useful-commands-for-picroft)
-  * [Building your own Picroft image](picroft.md#building-your-own-picroft-image)
-  * [Next steps](picroft.md#next-steps)
-    * [Using the GPIO pins on the Raspberry Pi 3](picroft.md#using-the-gpio-pins-on-the-raspberry-pi-3)
 
 ## Quick links
 
@@ -46,13 +15,9 @@ ID: 32434
 
 ## About Picroft
 
-Picroft is a ready-made way to run Mycroft on a Raspberry Pi 3 or Raspberry Pi 3B+ and is provided as a disk image that you can burn to a Micro SD card. _Picroft will not work properly on other Raspberry Pi models_.
-
 Picroft is based on [Raspbian Stretch Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
 
 Picroft is entirely open source, and PRs and Issues are warmly welcomed on the [Picroft GitHub repo](https://github.com/MycroftAI/enclosure-picroft).
-
-As of December 2018, Picroft includes built-in support for the Google AIY voice HAT.
 
 ## What do I need to run Picroft?
 
@@ -62,6 +27,7 @@ In order to set up Picroft, you will need to have a basic understanding of the L
 
 | Model | Level of support |
 | :--- | :--- |
+| Pi4 | [Not yet supported](https://community.mycroft.ai/t/will-picroft-work-with-the-new-raspberry-pi-4/6847/) |
 | Pi3 B+ | Supported |
 | Pi3 B | Supported |
 | Pi 2 | Functions very slowly, limited wifi support |
@@ -483,4 +449,3 @@ You also need to install some additional packages:
 `sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
 
 This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill.
-
