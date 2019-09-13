@@ -45,7 +45,7 @@ Once the Mark 1 is connected to the internet, a **Registration Code** will be Sp
 
 View the home.mycroft.ai documentation to learn how to add your Device to home.mycroft.ai.
 
-{% page-ref page="../home-mycroft-ai.md" %}
+{% page-ref page="../pairing-your-device.md" %}
 
 Once paired, you can then use basic Skills that come on the device.
 
@@ -176,7 +176,7 @@ Method
 * Follow the instructions to connect Mark 1 to the internet.
 * Once you are connected, Mark 1 will advise that you need to pair the device. Pair the device on home.mycroft.ai
 
-{% page-ref page="../home-mycroft-ai.md" %}
+{% page-ref page="../pairing-your-device.md" %}
 
 That’s it! Once your Mark 1 is paired, you’ll be able to use all the default Skills that come with the device, and you’ll also be able to install your own from the list at: [https://mycroft.ai/documentation/skills/\#community-developed-skills](https://mycroft.ai/documentation/skills/#community-developed-skills)
 

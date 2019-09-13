@@ -11,7 +11,7 @@
   * [Mac OS and Windows with VirtualBox](using-mycroft-ai/get-mycroft/macos-and-windows-with-virtualbox.md)
   * [Docker](using-mycroft-ai/get-mycroft/docker.md)
   * [Android](using-mycroft-ai/get-mycroft/android.md)
-* [Connecting to Home.Mycroft.AI](using-mycroft-ai/home-mycroft-ai.md)
+* [Pairing Your Device](using-mycroft-ai/pairing-your-device.md)
 * [Basic Commands](using-mycroft-ai/basic-commands.md)
 * [Installing New Skills](using-mycroft-ai/installing-new-skills.md)
 * [Customizations](using-mycroft-ai/customizations/README.md)

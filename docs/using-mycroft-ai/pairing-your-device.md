@@ -5,7 +5,7 @@ description: >-
   location.
 ---
 
-# Connecting to Home.Mycroft.AI
+# Pairing Your Device
 
 Each of your Mycroft **Device\(s\)** must be **Paired** with your [home.mycroft.ai](https://home.mycroft.ai) account.
 
@@ -16,22 +16,6 @@ Pairing is also used for services that require API authentication, such as
 * Wolfram Alpha
 * Google Speech to Text
 * Weather Skill API and OpenWeather
-
-## On this page
-
-* [Creating a home.mycroft.ai account](home-mycroft-ai.md#creating-a-home-mycroft-ai-account)
-* [Adding a Device](home-mycroft-ai.md#adding-a-device)
-  * [Getting a Registration Code](home-mycroft-ai.md#getting-a-registration-code)
-    * [Mark 1](home-mycroft-ai.md#mark-1)
-    * [Picroft](home-mycroft-ai.md#picroft)
-    * [Linux](home-mycroft-ai.md#linux)
-  * [Pairing your Device\(s\) to your home.mycroft.ai account](home-mycroft-ai.md#pairing-your-devices-to-your-homemycroftai-account)
-  * [Where is my identity information stored in the Mycroft code?](home-mycroft-ai.md#where-is-my-identity-information-stored-in-the-mycroft-code)
-* [home.mycroft.ai device settings](home-mycroft-ai.md#home-mycroft-ai-device-settings)
-  * [Devices](home-mycroft-ai.md#devices)
-  * [Preferences](home-mycroft-ai.md#preferences)
-  * [Defaults](home-mycroft-ai.md#defaults)
-  * [Advanced settings](home-mycroft-ai.md#advanced-settings)
 
 ## Creating a home.mycroft.ai account
 
@@ -82,7 +66,7 @@ After your Mycroft for Linux installation is successfully installed, Mycroft wil
 
 Once you have your Registration Code, you can then go to home.mycroft.ai -&gt; Add Device.
 
-Use your Pairing Code, and provide a meaningful name and location for the Device. This will help you in the future if you have multiple devices. All other options will be pre-filled from your [default device settings](home-mycroft-ai.md#defaults), but can be changed for each individual device.
+Use your Pairing Code, and provide a meaningful name and location for the Device. This will help you in the future if you have multiple devices. All other options will be pre-filled from your [default device settings](pairing-your-device.md#defaults), but can be changed for each individual device.
 
 !\[Adding a new Device\]\([https://mycroft.ai/wp-content/uploads/2019/06/Add-device.png](https://mycroft.ai/wp-content/uploads/2019/06/Add-device.png)"\)
 
@@ -100,7 +84,7 @@ DO NOT SHARE THIS INFORMATION WITH OTHERS - IT IS YOUR MYCROFT IDENTITY
 
 You may be asked for this information by Mycroft support staff while troubleshooting Device and/or Pairing issues.
 
-## home.mycroft.ai device settings
+## Device Settings
 
 From the User menu in the top right, choose 'Devices'.
 
@@ -114,7 +98,7 @@ Settings available:
 * **Placement** - location of your device e.g. Kitchen, Bedroom or Office. This is in place for location based utterances such as "turn off the light" which should only turn off lights in the current location, not all lights connected to your account.
 * **Geographical Location** - your devices approximate geographical location, used for queries such as the local weather and time.
 * **Voice** - By default, Mycroft will use the `American Male` voice, however you are free to choose other voices.
-* **Wake Word** - By default, Mycroft will listen for "Hey Mycroft" to activate. A number of other pre-trained Wake Words are available. Additional configuration options are available through [advanced settings](home-mycroft-ai.md#advanced-settings) or by training your own [Precise](https://mycroft.ai/documentation/precise) Wake Word model.
+* **Wake Word** - By default, Mycroft will listen for "Hey Mycroft" to activate. A number of other pre-trained Wake Words are available. Additional configuration options are available through [advanced settings](pairing-your-device.md#advanced-settings) or by training your own [Precise](https://mycroft.ai/documentation/precise) Wake Word model.
 
 ### Preferences
 
