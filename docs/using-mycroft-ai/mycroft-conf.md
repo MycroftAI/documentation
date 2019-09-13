@@ -10,7 +10,7 @@ post_title: The `mycroft.conf` file
 ID: 33724
 ---
 
-# Mycroft.conf
+# Advanced Configuration
 
 * [mycroft.conf and mycroft\_web\_cache.json](mycroft-conf.md#mycroft-conf-and-mycroftwebcache-json)
   * [What is `mycroft.conf`?](mycroft-conf.md#what-is-mycroft-conf)

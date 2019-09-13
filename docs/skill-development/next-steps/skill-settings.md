@@ -1,27 +1,28 @@
 ---
-ID: 32919
-post_title: Skill Settings
-author: Kathy Reid
-post_excerpt: ""
+post_excerpt: ''
 layout: page
-permalink: >
+author: Kathy Reid
+permalink: |
   http://mycroft.ai/documentation/skills/skill-settings/
+post_date: '2017-12-02T22:35:25.000Z'
 published: true
-post_date: 2017-12-02 22:35:25
+post_title: Skill Settings
+ID: 32919
 ---
+
 # Skill Settings
 
-- [Skill Settings](#skill-settings)
-  * [How do I use Skill Settings?](#how-do-i-use-skill-settings)
-    + [More information on Skill Settings](#more-information-on-skill-settings)
-  * [settings.json](#settingsjson)
-  * [Web configurable Settings with `settingsmeta` file](#web-configurable-settings-with-settingsmeta)
-    + [More information on the `settingsmeta` file](#more-information-on-the-settingsmeta-file)
-      - [name (String)](#name-string)
-      - [skillMetadata (Object)](#skillmetadata-object)
-      - [sections (Array)](#sections-array)
-      - [sections > name (String)](#sections--name-string)
-      - [sections > fields (Array)](#sections--fields-array)
+* [Skill Settings](skill-settings.md#skill-settings)
+  * [How do I use Skill Settings?](skill-settings.md#how-do-i-use-skill-settings)
+    * [More information on Skill Settings](skill-settings.md#more-information-on-skill-settings)
+  * [settings.json](skill-settings.md#settingsjson)
+  * [Web configurable Settings with `settingsmeta` file](skill-settings.md#web-configurable-settings-with-settingsmeta)
+    * [More information on the `settingsmeta` file](skill-settings.md#more-information-on-the-settingsmeta-file)
+      * [name \(String\)](skill-settings.md#name-string)
+      * [skillMetadata \(Object\)](skill-settings.md#skillmetadata-object)
+      * [sections \(Array\)](skill-settings.md#sections-array)
+      * [sections &gt; name \(String\)](skill-settings.md#sections--name-string)
+      * [sections &gt; fields \(Array\)](skill-settings.md#sections--fields-array)
 
 Have you ever wanted to store settings for a **Skill** locally to a Device? For instance, you might want the User to specify a preference the first time they use a **Skill**, and then store that preference for subsequent uses.
 
@@ -31,9 +32,9 @@ They are a simple extension of the [Python `dict`](https://docs.python.org/2/lib
 
 `MycroftSkill`
 
-class. Skill settings can also interact with a backend system to provide a graphical user interface (GUI) for Skills configuration. Skills configuration is done through metadata described in an optional
+class. Skill settings can also interact with a backend system to provide a graphical user interface \(GUI\) for Skills configuration. Skills configuration is done through metadata described in an optional
 
-`settingsmeta.json` or `settingsmeta.yaml` file.  
+`settingsmeta.json` or `settingsmeta.yaml` file.
 
 ## How do I use Skill Settings?
 
@@ -44,6 +45,7 @@ print(self.settings.get('meaning of life')) # outputs None... oh.. :(
 self.settings['meaning of life'] = 42
 print(self.settings.get('meaning of life')) # outputs 42! yay
 ```
+
 ### More information on Skill Settings
 
 ## settings.json
@@ -56,7 +58,7 @@ file is created at the root level of the **Skill's** directory. The file is crea
 
 Here is an example directory listing of a **Skill** that has a
 
-`settings.json'
+\`settings.json'
 
 file:
 
@@ -87,7 +89,7 @@ To use this feature, you need to have a `settingsmeta.json` or `settingsmeta.yam
 
 Below is a JSON example of this structure from the `pianobar-skill`. You can see the [code for this **Skill**](https://github.com/ethanaward/pianobar-skill) - it has excellent example on how to use web configurable **Skill Settings**.
 
-```json
+```javascript
 {
     "name": "Pandora",
     "skillMetadata": {
@@ -113,6 +115,7 @@ Below is a JSON example of this structure from the `pianobar-skill`. You can see
     }
 }
 ```
+
 Here is the same set of settings, as it would be configured with YAML:
 
 ```yaml
@@ -130,50 +133,53 @@ skillMetadata:
             label: Password
             value: ""
 ```
+
 ### More information on the `settingsmeta` file
 
 You may use JSON or YAML to define your `settingsmeta` file. We recommend YAML, as most people find it easier to work with.
 
-#### name (String)
+#### name \(String\)
+
 The display name for this **Skill Setting** block. This will be shown on the [home.mycroft.ai](https://home.mycroft.ai) Skills page. The `name` can be multiple words, but should display on a single line.
 
-#### skillMetadata (Object)
+#### skillMetadata \(Object\)
+
 An Object containing one or more `sections` elements.
 
-#### sections (Array)
+#### sections \(Array\)
+
 An Array containing each of the elements the **Settings** needs to function.
 
-#### sections > name (String)
+#### sections &gt; name \(String\)
+
 The group name used as a display lable on the [home.mycroft.ai](https://home.mycroft.ai) Skills page.
 
-#### sections > fields (Array)
+#### sections &gt; fields \(Array\)
+
 Array of Field Objects. Each Field Object takes four properties:
 
-* sections > fields > field > name	(String)
+* sections &gt; fields &gt; field &gt; name    \(String\)
 
-The `name` of the `field` is used by the **Skill** to set the value of the `field`. Not defined for `field` > `type` = "Label". The generated `settings.json` file will use this name for the entered data.
+The `name` of the `field` is used by the **Skill** to set the value of the `field`. Not defined for `field` &gt; `type` = "Label". The generated `settings.json` file will use this name for the entered data.
 
-* sections > fields > field > label	(String)
+* sections &gt; fields &gt; field &gt; label    \(String\)
 
-Text to be displayed above the data entry box on the **Skills** page on home.mycroft.ai (or by itself, for `field` > `type` = "Label").
+Text to be displayed above the data entry box on the **Skills** page on home.mycroft.ai \(or by itself, for `field` &gt; `type` = "Label"\).
 
-* sections > fields > field > type	(Enum)
+* sections &gt; fields &gt; field &gt; type    \(Enum\)
 
-_NOTE: Any combination of uppercase and/or lowercase is acceptable._
-The data type of this field. The supported types are:
+_NOTE: Any combination of uppercase and/or lowercase is acceptable._ The data type of this field. The supported types are:
 
-  * Text: (any kind of text)
-  * Email: (text validated as an email address)
-  * Checkbox: (boolean, True or False)
-  * Number: (text validated as a number)
-  * Password: (text hidden from view by default)
+* Text: \(any kind of text\)
+* Email: \(text validated as an email address\)
+* Checkbox: \(boolean, True or False\)
+* Number: \(text validated as a number\)
+* Password: \(text hidden from view by default\)
+* sections &gt; fields &gt; field &gt; value    \(String\)
 
-* sections > fields > field > value	(String)
+_Optional_ The initial value for the field.
 
-_Optional_
-The initial value for the field.
+* sections &gt; fields &gt; field &gt; placeholder \(String\)
 
-* sections > fields > field > placeholder (String)
+_Optional_ Placeholder text to show before data is entered in the field \(or possibly as a tooltip\)
 
-_Optional_
-Placeholder text to show before data is entered in the field (or possibly as a tooltip)

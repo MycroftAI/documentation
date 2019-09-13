@@ -43,7 +43,7 @@ So far Mycroft seems to work well on both platforms, although at least two issue
 
    ![](https://mycroft.ai/wp-content/uploads/2019/08/VB-Screenshot-1.jpg)
 
-4. Continue through the rest of the VM configuration screens using the default selections. More RAM would not hurt, but 1GB should be fine. 
+4. Continue through the rest of the VM configuration screens using the default selections. More RAM would not hurt, but 1GB should be fine.
 5. Download the [Ubuntu Server ISO](https://ubuntu.com/download/server) \(18.04 LTS and 19.04 both work\) and put it in the folder of the VM you created \(e.g. ~/VirtualBox VMs/Mycroft-Ubuntu\)
 
    \(Optional\) You can install [Ubuntu Desktop](https://ubuntu.com/download/desktop) instead of Ubuntu Server if you would like a complete Linux desktop environment, however this is not required to run Mycroft and uses significantly more system resources including RAM.
@@ -57,7 +57,7 @@ So far Mycroft seems to work well on both platforms, although at least two issue
 
    ![](https://mycroft.ai/wp-content/uploads/2019/08/VB-Screenshot-3.jpg)
 
-9. Ubuntu will start up and you will have to go through the default setup. Again, defaults should be good the whole way through. 
+9. Ubuntu will start up and you will have to go through the default setup. Again, defaults should be good the whole way through.
 
    ![](https://mycroft.ai/wp-content/uploads/2019/08/VB-Screenshot-4.jpg)
 

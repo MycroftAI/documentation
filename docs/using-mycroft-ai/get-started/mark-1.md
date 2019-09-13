@@ -7,38 +7,13 @@ post_date: '2017-12-02T22:35:25.000Z'
 published: true
 post_title: Mark 1
 ID: 32430
+description: >-
+  The Mark 1 device is an Enclosure for Mycroft, based on Raspberry Pi. It is
+  designed as a reference hardware device, and is able to be easily modified,
+  hacked and extended.
 ---
 
 # Mark 1
-
-* [Mark 1](mark-1.md#mark-1)
-  * [Prerequisites](mark-1.md#prerequisites)
-  * [Getting Started](mark-1.md#getting-started)
-    * [Getting Mark 1 connected to the internet using a network cable](mark-1.md#getting-mark-1-connected-to-the-internet-using-a-network-cable)
-    * [Getting Mark 1 connected to the internet using Wifi](mark-1.md#getting-mark-1-connected-to-the-internet-using-wifi)
-  * [Pairing the Mark 1](mark-1.md#pairing-the-mark-1)
-  * [Mark 1 menu options](mark-1.md#mark-1-menu-options)
-  * [Mark 1 boot sequence](mark-1.md#mark-1-boot-sequence)
-  * [Hardware information](mark-1.md#hardware-information)
-  * [Common tasks performed on the Mark 1](mark-1.md#common-tasks-performed-on-the-mark-1)
-    * [Installing Skills on the Mark 1](mark-1.md#installing-skills-on-the-mark-1)
-    * [Connecting to the Mark 1 via SSH](mark-1.md#connecting-to-the-mark-1-via-ssh)
-    * [Setting up SSH to the Mark 1 using SSH keys](mark-1.md#setting-up-ssh-to-the-mark-1-using-ssh-keys)
-    * [Accessing the command line interface \(CLI\) of the Mark 1](mark-1.md#accessing-the-command-line-interface-cli-of-the-mark-1)
-    * [Enabling the LEARN function](mark-1.md#enabling-the-learn-function)
-    * [Upgrading to the latest version from a 2017 Mark 1](mark-1.md#upgrading-to-the-latest-version-from-a-2017-mark-1)
-    * [How to reimage a Mark 1 Device](mark-1.md#how-to-reimage-a-mark-1-device)
-      * [Prerequisites](mark-1.md#prerequisites-2)
-      * [Reimaging steps](mark-1.md#reimaging-steps)
-      * [What should I do if reimaging doesn't work?](mark-1.md#what-should-i-do-if-reimaging-doesnt-work)
-    * [Keeping your Mark 1 Device updated](mark-1.md#keeping-your-mark-1-device-updated)
-    * [Downgrading your Mark 1 Device to a lower version](mark-1.md#downgrading-your-mark-1-device-to-a-lower-version)
-  * [Common issues on Mark 1 Devices](mark-1.md#common-issues-on-mark-1-devices)
-  * [Hardware Hacking your Mark 1 Device](mark-1.md#hardware-hacking-your-mark-1-device)
-
-The Mark 1 device is an **Enclosure** for Mycroft, based on Raspberry Pi. It is designed as a reference hardware device, and is able to be easily modified, hacked and extended.
-
-[Mark 1 devices are now available in the Mycroft Shop](https://mycroft.ai/shop/?add-to-cart=31440).
 
 ## Prerequisites
 

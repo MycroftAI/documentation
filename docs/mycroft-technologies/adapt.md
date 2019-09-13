@@ -1,33 +1,34 @@
 ---
-ID: 33104
-post_title: Adapt
-author: Kathy Reid
-post_excerpt: ""
+post_excerpt: ''
 layout: page
-permalink: http://mycroft.ai/documentation/adapt/
+author: Kathy Reid
+permalink: 'http://mycroft.ai/documentation/adapt/'
+post_date: '2017-12-03T05:09:17.000Z'
 published: true
-post_date: 2017-12-03 05:09:17
+post_title: Adapt
+ID: 33104
 ---
+
 # Adapt
 
-- [What is the Adapt Intent Parser?](#what-is-the-adapt-intent-parser)
-- [Is Adapt right for me or my use cases?](#is-adapt-right-for-me-or-my-use-cases)
-  * [Lightweight](#lightweight)
-  * [Portable](#portable)
-  * [Reliable](#reliable)
-  * [Open source](#open-source)
-- [Who developed Adapt?](#who-developed-adapt)
-- [How do I install Adapt Intent Parser?](#how-do-i-install-adapt-intent-parser)
-  * [Requirements](#requirements)
-  * [`pip` installation](#pip-installation)
-    + [Installing `pip` for Ubuntu / Debian based Linux](#installing-pip-for-ubuntu-debian-based-linux)
-    + [Installing `pip` for Fedora / RPM based Linux](#installing-pip-for-fedora-rpm-based-linux)
-  * [Installing Adapt Intent Parser](#installing-adapt-intent-parser)
-    + [Installing Adapt for Ubuntu, Debian or Raspbian](#installing-adapt-for-ubuntu-debian-or-raspbian)
-- [How do I contribute to Adapt Intent Parser?](#how-do-i-contribute-to-adapt-intent-parser)
-  * [For Ubuntu, Debian and Raspbian based Linux](#for-ubuntu-debian-and-raspbian-based-linux)
-  * [For Fedora / RPM based Linux](#for-fedora-rpm-based-linux)
-  * [For MacOS X](#for-macos-x)
+* [What is the Adapt Intent Parser?](adapt.md#what-is-the-adapt-intent-parser)
+* [Is Adapt right for me or my use cases?](adapt.md#is-adapt-right-for-me-or-my-use-cases)
+  * [Lightweight](adapt.md#lightweight)
+  * [Portable](adapt.md#portable)
+  * [Reliable](adapt.md#reliable)
+  * [Open source](adapt.md#open-source)
+* [Who developed Adapt?](adapt.md#who-developed-adapt)
+* [How do I install Adapt Intent Parser?](adapt.md#how-do-i-install-adapt-intent-parser)
+  * [Requirements](adapt.md#requirements)
+  * [`pip` installation](adapt.md#pip-installation)
+    * [Installing `pip` for Ubuntu / Debian based Linux](adapt.md#installing-pip-for-ubuntu-debian-based-linux)
+    * [Installing `pip` for Fedora / RPM based Linux](adapt.md#installing-pip-for-fedora-rpm-based-linux)
+  * [Installing Adapt Intent Parser](adapt.md#installing-adapt-intent-parser)
+    * [Installing Adapt for Ubuntu, Debian or Raspbian](adapt.md#installing-adapt-for-ubuntu-debian-or-raspbian)
+* [How do I contribute to Adapt Intent Parser?](adapt.md#how-do-i-contribute-to-adapt-intent-parser)
+  * [For Ubuntu, Debian and Raspbian based Linux](adapt.md#for-ubuntu-debian-and-raspbian-based-linux)
+  * [For Fedora / RPM based Linux](adapt.md#for-fedora-rpm-based-linux)
+  * [For MacOS X](adapt.md#for-macos-x)
 
 ## What is the Adapt Intent Parser?
 
@@ -49,7 +50,7 @@ Adapt is useful for interpreting natural language input. For example, you might 
 
 The Adapt Intent Parser takes this input and generates a JSON data structure like this:
 
-```JSON
+```javascript
 {
     "confidence": 0.61,
     "target": null,
@@ -71,8 +72,6 @@ Adapt has a number of features.
 ### Lightweight
 
 Adapt is written to run on embedded system with limited resources. Adapt can be used as the engine to parse natural language on IoT devices like remote controls and hubs.
-
-[//]: # (@TODO are there minimum requirements for installing Adapt - both software and hardware?)
 
 ### Portable
 
@@ -194,6 +193,7 @@ Next, install Adapt dependencies with `brew` and `python-pip`.
 $ brew install git python
 $ pip install python virtualenv
 ```
+
 To develop with the latest Adapt, install it via `pip` into your project's `virtualenv`:
 
 ```bash
@@ -218,3 +218,4 @@ Verify the installation by running the example code from the Adapt repository.
 $ cd ~/adapt
 PYTHONPATH=. python examples/multi_intent_parser.py "play some music by the clash"
 ```
+
