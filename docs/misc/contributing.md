@@ -49,7 +49,7 @@ Below, you'll find instructions to identify the version of Mycroft you're using.
 
 ##### Mark 1 and Picroft
 
-To find what version of Mycroft your Mark 1 or Picroft is running, you'll need to [SSH into the Device](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh). Run the command
+To find what version of Mycroft your Mark 1 or Picroft is running, you'll need to [SSH into the Device](/using-mycroft-ai/get-mycroft/mark-1/#connecting-to-the-mark-1-via-ssh). Run the command
 `apt list`
 
 then look through it to find the Mycroft packages that are installed.
