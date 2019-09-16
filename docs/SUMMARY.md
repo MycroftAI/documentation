@@ -37,6 +37,7 @@
   * [Skill Settings](skill-development/next-steps/skill-settings.md)
   * [Conversational Context](skill-development/next-steps/conversational-context.md)
   * [Automatic Testing](skill-development/next-steps/automatic-testing.md)
+  * [Display Control](skill-development/next-steps/display-control.md)
 * [Skill Types](skill-development/skill-types/README.md)
   * [Fallback Skill](skill-development/skill-types/fallback-skill.md)
   * [Common Play Framework](skill-development/skill-types/common-play-framework.md)
