@@ -44,7 +44,7 @@
     * [Code Review Template](skill-development/marketplace-submission/skills-acceptance-process/skills-review-code-template.md)
     * [Functional Review Template](skill-development/marketplace-submission/skills-acceptance-process/skills-review-functional-template.md)
     * [Combined Template](skill-development/marketplace-submission/skills-acceptance-process/skills-review-template.md)
-  * [Skill README.md](skill-development/marketplace-submission/skill-readme.md.md)
+  * [Skill README.md](skill-development/marketplace-submission/skill-readme-md.md)
 * [Repurposing Skills](skill-development/repurposing-skills.md)
 * [Common Issues](skill-development/common-issues.md)
 
@@ -65,4 +65,3 @@
   * [Mimic Recording Studio](mycroft-technologies/mimic/mimic-recording-studio.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
-
