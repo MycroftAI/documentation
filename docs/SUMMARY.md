@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Documentation](README.md)
+* [Why use Mycroft AI?](why-use-mycroft.md)
+* [Glossary](glossary.md)
+* [Contributing](contributing.md)
 
 ## Using Mycroft AI
 
