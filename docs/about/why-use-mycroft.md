@@ -1,6 +1,6 @@
 ---
 description: >-
-Why would you choose to use Mycroft over alternative assistants from the tech giants?
+Why would you choose to use Mycroft over alternative assistants?
 ---
 
 # Choosing to use Mycroft  
