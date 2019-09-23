@@ -119,7 +119,7 @@ A skill using Padatious is no different than previous skills except that `self.r
 For example, the Tomato Skill would be written as: 
 
 ```
-from mycroft.skills.core import MycroftSkill
+from mycroft import MycroftSkill
 
 class TomatoSkill(MycroftSkill):
     def __init__(self):
