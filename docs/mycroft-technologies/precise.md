@@ -1,5 +1,7 @@
 ---
-description: Precise is a Wake Word Listener.
+description: >-
+  Precise is a Wake Word Listener based on a neural network trained on sound
+  samples.
 ---
 
 # Precise

@@ -1,6 +1,8 @@
 ---
 description: >-
-  Use our Glossary to learn more about the specialist terms that we use in natural language processing generally, and more specifically with Mycroft software and hardware.
+  Use our Glossary to learn more about the specialist terms that we use in
+  natural language processing generally, and more specifically with Mycroft
+  software and hardware.
 ---
 
 # Mycroft Glossary
@@ -13,7 +15,7 @@ description: >-
 
 * **Intent** - when a user speaks an **Utterance** to Mycroft, Mycroft tries to interpret the **Intent** of the **Utterance**, and match the **Intent** will a **Skill**.
 
-* **Mark 1** - The Mark 1 device is an **Enclosure** for Mycroft, based on Raspberry Pi. It is designed as a reference hardware device, and is able to be easily modified, hacked and extended. [Mark 1 devices are available in the Mycroft Shop](https://mycroft.ai/shop/?add-to-cart=31440).
+* **Mark 1** - The Mark 1 device is an **Enclosure** for Mycroft, based on Raspberry Pi. It is designed as a reference hardware device, and is able to be easily modified, hacked and extended.
 
 * **Pairing** - The process of registering a **Device** to home.mycroft.ai. Each **Device** needs to be **Paired** before it can be used.
 

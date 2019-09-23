@@ -2,7 +2,7 @@
 description: >-
   A Message Bus is mechanism for independent systems to communicate with each
   other using a set of _messages_ for common commands or notifiers. In the
-  Mycroft ecosystem, the Messagebus is a websocket an
+  Mycroft ecosystem, the Messagebus is a websocket.
 ---
 
 # MessageBus
@@ -172,4 +172,3 @@ ws.close()
 Unfortunately, we cannot provide support or examples for other languages.
 
 If you have further questions, then the best place to ask them is our [Community Forum](https://community.mycroft.ai) or in the [~dev Channel](https://chat.mycroft.ai/community/channels/dev) on Mycroft Chat.
-

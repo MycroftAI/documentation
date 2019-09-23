@@ -8,7 +8,9 @@ description: Maintaining the history of Mycroft contributions to our legacy repo
 
 Prior to open-sourcing Mycroft in the mycroft-core.git repo, a number of folks were working on the mycroft.git repo. The commit history was messy, there were some API keys checked in, and we felt it was time for a fresh start. The biggest drawback is the loss of commit/contributor history. This page will at least resolve the latter. Thank you to everyone who helped us get this far!
 
-**Please note that below is a percentage of commits, and not a percentage of contribution value. Everyone below is awesome.**
+{% hint style="info" %}
+Please note that below is a percentage of commits, and not a percentage of contribution value. Everyone below is awesome.
+{% endhint %}
 
 ## Git Summary: Mycroft Legacy Repo, 20 May 2016
 
@@ -35,4 +37,3 @@ seanfitz@r2d2:~/development/mycroft (master u=)$ git summary
      1    Nathan Dyer             0.2%
      1    Åke Forslund           0.2%
 ```
-

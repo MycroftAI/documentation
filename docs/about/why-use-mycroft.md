@@ -1,6 +1,7 @@
 ---
 description: >-
-
+  Why would you choose to use Mycroft over alternatives such as Amazon™ Alexa™,
+  Google Assistant™, Microsoft Cortana™ or Apple's Siri™?
 ---
 
 # Choosing to use Mycroft  

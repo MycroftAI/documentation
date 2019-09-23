@@ -1,5 +1,5 @@
 ---
-description: ''
+description: A configuration file that contains the device and service settings.
 ---
 
 # mycroft.conf
@@ -571,4 +571,3 @@ Mycroft doesn't automatically fetch the new settings. You need to tell Mycroft t
 > Hey Mycroft, configuration update
 
 Mycroft will then pull the new Settings configuration down.
-

@@ -1,6 +1,8 @@
-# Enclosure display control
+---
+description: How to make use of the enclosure display on the Mark 1.
+---
 
-This information is of most benefit to **Skills** developers who want to control the Mark 1 **Enclosure**.
+# Enclosure display control
 
 ## About **Enclosures**
 
