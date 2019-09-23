@@ -238,7 +238,7 @@ Before you can use `msk upgrade`, you must ensure:
 * That your **Skill** has already been merged with the `mycroft-skills` repo.
 * That you have made changes to your **Skill** and that these changes have been committed to the **Skill's** `git` repository.
 
-Once your changes are committed, you can then use `msk upgrade` by passing the location of the Skill folder. Generally we find it's easiest to be inside the Skill's folder in `/opt/mycroft/skills/SKILL-NAME` and then use the current directory symbol, period `.`.
+Once your changes are committed, you can then use `msk upgrade` by passing the location of the Skill folder. Generally we find it's easiest to be inside the Skill's folder in `/opt/mycroft/skills/SKILL-NAME` and then use the current directory symbol, period `.`
 
 ```text
 (.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
@@ -320,4 +320,3 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 ## Join our Skills Authoring Community
 
 [Join other Skill Authors in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
-

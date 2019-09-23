@@ -198,7 +198,7 @@ Let's take a look:
 
 ```python
 from adapt.intent import IntentBuilder
-from mycroft.skills.core import MycroftSkill
+from mycroft import MycroftSkill
 from mycroft.util.log import getLogger
 ```
 
@@ -527,4 +527,3 @@ Search for the string `priority` in the file. Then, edit the line below to inclu
 ## How do I find more information on Mycroft functions?
 
 You can find documentation on Mycroft functions and helper methods at the [Mycroft Core API documentation](https://mycroft-core.readthedocs.io/en/master/)
-

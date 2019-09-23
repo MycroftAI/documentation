@@ -15,7 +15,7 @@ The Fallback **Skills** all have a priority and will be checked in order from lo
 Import the `FallbackSkill` base class:
 
 ```python
-from mycroft.skills.core import FallbackSkill
+from mycroft import FallbackSkill
 ```
 
 Create a derived class:
@@ -83,4 +83,3 @@ def create_skill():
 ```
 
 The above example can be found [here](https://github.com/forslund/fallback-meaning).
-

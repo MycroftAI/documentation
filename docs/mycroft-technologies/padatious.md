@@ -97,7 +97,7 @@ A skill using Padatious is no different than previous skills except that `self.r
 For example, the Tomato Skill would be written as:
 
 ```text
-from mycroft.skills.core import MycroftSkill
+from mycroft import MycroftSkill
 
 class TomatoSkill(MycroftSkill):
     def __init__(self):
@@ -286,4 +286,3 @@ pip3 install padatious
 ```
 
 Padatious also works in Python 2 if you are unable to upgrade.
-
