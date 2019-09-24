@@ -21,6 +21,7 @@
 * [Installing New Skills](using-mycroft-ai/installing-new-skills.md)
 * [Customizations](using-mycroft-ai/customizations/README.md)
   * [Languages](using-mycroft-ai/customizations/languages.md)
+  * [Configuration Manager](using-mycroft-ai/customizations/config-manager.md)
   * [mycroft.conf](using-mycroft-ai/customizations/mycroft-conf.md)
 * [Troubleshooting](using-mycroft-ai/troubleshooting/README.md)
   * [General Troubleshooting](using-mycroft-ai/troubleshooting/general-troubleshooting.md)
