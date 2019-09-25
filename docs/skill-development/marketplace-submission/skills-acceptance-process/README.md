@@ -10,14 +10,16 @@ It is vital that Mycroft Skills exhibit high quality, and are well tested to enc
 
 ## Overview
 
-The process consists of 6 stages: 1. [Submitting your Skill](https://mycroft.ai/documentation/skills/skills-acceptance-process/#1-submitting-your-skill) 2. [Automatic testing](https://mycroft.ai/documentation/skills/skills-acceptance-process/#2-automatic-testing-of-skills) 3. [Review by Skill Testing Team](https://mycroft.ai/documentation/skills/skills-acceptance-process/#3-review-by-skill-testing-team)
-
-* Code Review
-* Information Review
-* Functional Review
-  1. [Review by Mycroft AI](https://mycroft.ai/documentation/skills/skills-acceptance-process/#4-review-by-mycroft-ai)
-  2. [Deployment](https://mycroft.ai/documentation/skills/skills-acceptance-process/#5-deployment)
-  3. [Promotion](https://mycroft.ai/documentation/skills/skills-acceptance-process/#6-promotion)
+The process consists of 6 stages:
+1. [Submitting your Skill](https://mycroft.ai/documentation/skills/skills-acceptance-process/#1-submitting-your-skill)
+2. [Automatic testing](https://mycroft.ai/documentation/skills/skills-acceptance-process/#2-automatic-testing-of-skills)
+3. [Review by Skill Testing Team](https://mycroft.ai/documentation/skills/skills-acceptance-process/#3-review-by-skill-testing-team)
+    * Code Review
+    * Information Review
+    * Functional Review
+4. [Review by Mycroft AI](https://mycroft.ai/documentation/skills/skills-acceptance-process/#4-review-by-mycroft-ai)
+5. [Deployment](https://mycroft.ai/documentation/skills/skills-acceptance-process/#5-deployment)
+6. [Promotion](https://mycroft.ai/documentation/skills/skills-acceptance-process/#6-promotion)
 
 ## Submission
 
@@ -107,4 +109,3 @@ Instead, the Skill Management Team will seek assistance from the Community, and 
 Head to our [contribute page](https://mycroft.ai/contribute/#suggest-and-test-skills) to submit an application and see the many other ways you can be involved.
 
 Our Skills Testing Team are a fantastic group of community members who ensure that all Skills are secure, stable, accurate, and intuitive. The team has members with a range of skills and communicate through a private channel on [chat.mycroft.ai](https://chat.mycroft.ai/).
-
