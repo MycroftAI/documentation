@@ -10,7 +10,7 @@ description: >-
 
 Mimic is a fast, light-weight [Text to Speech \(TTS\)](https://en.wikipedia.org/wiki/Speech_synthesis) engine based on [Carnegie Mellon University's FLITE software](http://cmuflite.org/). Mimic uses text as an input, and outputs speech using the chosen _voice_.
 
-{% embed url="https://www.youtube.com/watch?v=gvnhcNdXJsk" %}
+{% embed url="https://www.youtube.com/watch?v=gvnhcNdXJsk" caption="" %}
 
 ## Why should I use Mimic instead of other open source TTS tools?
 

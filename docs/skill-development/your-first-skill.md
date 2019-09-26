@@ -527,3 +527,4 @@ Search for the string `priority` in the file. Then, edit the line below to inclu
 ## How do I find more information on Mycroft functions?
 
 You can find documentation on Mycroft functions and helper methods at the [Mycroft Core API documentation](https://mycroft-core.readthedocs.io/en/master/)
+

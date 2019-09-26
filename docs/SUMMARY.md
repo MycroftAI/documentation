@@ -3,9 +3,10 @@
 * [Documentation](README.md)
 
 ## About Mycroft AI
-* [Why use Mycroft AI?](about/why-use-mycroft.md)
-* [Glossary of terms](about/glossary.md)
-* [Contributing](about/contributing.md)
+
+* [Why use Mycroft AI?](about-mycroft-ai/why-use-mycroft.md)
+* [Glossary of terms](about-mycroft-ai/glossary.md)
+* [Contributing](about-mycroft-ai/contributing.md)
 
 ## Using Mycroft AI
 
@@ -68,7 +69,8 @@
   * [Adapt Examples](mycroft-technologies/adapt/adapt-examples.md)
   * [Adapt Tutorial](mycroft-technologies/adapt/adapt-tutorial.md)
 * [Lingua Franca](mycroft-technologies/lingua-franca.md)
-* [Mimic](mycroft-technologies/mimic/mimic-overview.md)
-  * [Mimic Recording Studio](mycroft-technologies/mimic/mimic-recording-studio.md)
+* [Mimic](mycroft-technologies/mimic-overview/README.md)
+  * [Mimic Recording Studio](mycroft-technologies/mimic-overview/mimic-recording-studio.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
+

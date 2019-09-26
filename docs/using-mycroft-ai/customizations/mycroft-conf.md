@@ -571,3 +571,4 @@ Mycroft doesn't automatically fetch the new settings. You need to tell Mycroft t
 > Hey Mycroft, configuration update
 
 Mycroft will then pull the new Settings configuration down.
+

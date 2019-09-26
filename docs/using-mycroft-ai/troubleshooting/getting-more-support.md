@@ -7,8 +7,9 @@ description: I've tried everything! Where to get further support.
 ## Does an answer already exist?
 
 Have you:
-- Searched our documentation?
-- Searched the Community Forum?
+
+* Searched our documentation?
+* Searched the Community Forum?
 
 ## Asking for help
 
@@ -26,13 +27,11 @@ Help us to help you. When you contact Mycroft for support, we may ask for some o
 
 #### Community Forums
 
-The best place to post most support questions is the Community Forums. This enables the many experienced members of our Community to assist you in a timely manner. Once a solution is found, it also means that others who may face the same problem in the future can benefit from your experience.
-Post in the Support Category of the Community Forums.
+The best place to post most support questions is the Community Forums. This enables the many experienced members of our Community to assist you in a timely manner. Once a solution is found, it also means that others who may face the same problem in the future can benefit from your experience. Post in the Support Category of the Community Forums.
 
 #### Community Chat
 
-The Community also has a real-time Chat service. This is useful to have direct discussion about your issue. Please be mindful that we are a global Community and someone may not respond immediately to your message. Be sure to provide enough detail so that when someone does come online they can understand what is happening.
-Join the Troubleshooting channel in Chat.
+The Community also has a real-time Chat service. This is useful to have direct discussion about your issue. Please be mindful that we are a global Community and someone may not respond immediately to your message. Be sure to provide enough detail so that when someone does come online they can understand what is happening. Join the Troubleshooting channel in Chat.
 
 #### Github Issues
 
@@ -41,3 +40,4 @@ If you have discovered a technical issue and are aware of which Mycroft componen
 #### Mycroft Team
 
 Where needed, the Mycroft Team are also happy to help. You can email queries to support@mycroft.ai and a team member will respond when available.
+

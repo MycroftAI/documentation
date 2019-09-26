@@ -130,3 +130,4 @@ If your permissions are different to those shown above, change them by running t
 cd /opt/mycroft/skills/
 sudo chown mycroft:mycroft -R your-skill-name
 ```
+

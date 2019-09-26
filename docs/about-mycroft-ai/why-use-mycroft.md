@@ -4,7 +4,8 @@ description: >-
   Google Assistant™, Microsoft Cortana™ or Apple's Siri™?
 ---
 
-# Choosing to use Mycroft  
+# Why use Mycroft AI?
+
 Why would you choose to use Mycroft over alternatives such as Amazon™ Alexa™, Google Assistant™, Microsoft Cortana™ or Apple's Siri™?
 
 Great question!
@@ -39,3 +40,4 @@ Mycroft has a vibrant, engaged and helpful community. You can interact with the 
 
 * Chat - [https://chat.mycroft.ai](https://chat.mycroft.ai)
 * Forum - [https://community.mycroft.ai](https://community.mycroft.ai)
+

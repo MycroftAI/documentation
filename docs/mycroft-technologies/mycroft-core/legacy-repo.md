@@ -37,3 +37,4 @@ seanfitz@r2d2:~/development/mycroft (master u=)$ git summary
      1    Nathan Dyer             0.2%
      1    Åke Forslund           0.2%
 ```
+
