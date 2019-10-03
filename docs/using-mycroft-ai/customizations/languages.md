@@ -14,7 +14,14 @@ Adding support for a new language is a significant undertaking. It is complex an
 
 ## Overview
 
-For Mycroft to be usable in a language we need to look at six components. 1. [Language setting](languages.md#1-language-setting): To inform each of the following components which language we are using, we must set our overall language setting. 2. [Wake Word](languages.md#2-wake-word): When you Speak 'Hey Mycroft, do something', you are invoking a Wake Word. To change your Wake Word to another language, you need to change the Wake Word phrase that is used. 3. [Speech to Text](languages.md#3-speech-to-text-stt): Mycroft is designed to be modular, so you can choose which Speech to Text engine you use. You need to find and configure a Speech to Text engine for your language. 4. [Text to Speech](languages.md#4-text-to-speech-tts): Again, Mycroft is designed to be modular, so you can choosen which Text to Speech engine you use. You need to find and configure a Text to Speech engine for your language. 5. [Skills](languages.md#5-skills): To support a language, a Skill must have `vocab` and `dialog` entries for that language. 6. [Mycroft Core](languages.md#6-mycroft-core-lingua-franca-library): To support a new language, `mycroft-core` needs to have supporting files added to the [Lingua Franca library](https://github.com/MycroftAI/lingua-franca).
+For Mycroft to be usable in a language we need to look at six components. 
+
+1. [Language setting](languages.md#1-language-setting): To inform each of the following components which language we are using, we must set our overall language setting. 
+2. [Wake Word](languages.md#2-wake-word): When you Speak 'Hey Mycroft, do something', you are invoking a Wake Word. To change your Wake Word to another language, you need to change the Wake Word phrase that is used. 
+3. [Speech to Text](languages.md#3-speech-to-text-stt): Mycroft is designed to be modular, so you can choose which Speech to Text engine you use. You need to find and configure a Speech to Text engine for your language. 
+4. [Text to Speech](languages.md#4-text-to-speech-tts): Again, Mycroft is designed to be modular, so you can choosen which Text to Speech engine you use. You need to find and configure a Text to Speech engine for your language. 
+5. [Skills](languages.md#5-skills): To support a language, a Skill must have `vocab` and `dialog` entries for that language. 
+6. [Mycroft Core](languages.md#6-mycroft-core-lingua-franca-library): To support a new language, `mycroft-core` needs to have supporting files added to the [Lingua Franca library](https://github.com/MycroftAI/lingua-franca).
 
 ## 1. Language setting
 
