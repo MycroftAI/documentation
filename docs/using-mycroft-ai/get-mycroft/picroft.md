@@ -441,9 +441,9 @@ One common question we get is - "Can I use the [general purpose input output pin
 
 The answer is 'Yes' - but this requires some additional configuration.
 
-You need to add the `mycroft` user to the `gpio` group with the command
+You need to add the `pi` user to the `gpio` group with the command
 
-`sudo usermod -g gpio mycroft`
+`sudo usermod -g gpio pi`
 
 You also need to install some additional packages:
 
