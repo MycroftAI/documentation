@@ -24,7 +24,7 @@ Mycroft code is licensed under the [Apache 2 open source license](https://en.wik
 
 Mycroft uses _opt-in privacy_. This means we will only record what you say to Mycroft with your explicit permission. Don't want us to record your voice? No problem! If you'd like us to help Mycroft become more accurate, you can opt in to have your voice anonymously recorded.
 
-You're welcome to view our [privacy policy](https://home.mycroft.ai/#/privacy-policy)
+You're welcome to view our [privacy policy](https://mycroft.ai/embed-privacy-policy/)
 
 ## More hardware, more choices
 
@@ -40,4 +40,3 @@ Mycroft has a vibrant, engaged and helpful community. You can interact with the 
 
 * Chat - [https://chat.mycroft.ai](https://chat.mycroft.ai)
 * Forum - [https://community.mycroft.ai](https://community.mycroft.ai)
-
