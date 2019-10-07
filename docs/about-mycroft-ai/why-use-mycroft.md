@@ -40,3 +40,4 @@ Mycroft has a vibrant, engaged and helpful community. You can interact with the 
 
 * Chat - [https://chat.mycroft.ai](https://chat.mycroft.ai)
 * Forum - [https://community.mycroft.ai](https://community.mycroft.ai)
+

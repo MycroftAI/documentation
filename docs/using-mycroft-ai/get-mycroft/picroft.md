@@ -49,37 +49,46 @@ Installing Picroft may be easier if you also have:
 * Monitor or TV connected via HDMI cable
 * Ethernet cable \(if not connecting via WiFi\)
 
-While we don't currently offer a Picroft kit with microphone and speaker to purchase [from our Shop](https://mycroft.ai/shop), we've provided links below to components we know to work "out of the box".
+### Tested hardware
 
-_NOTE: We do not gain any profit or benefit from the links below, they are provided only to assist you in acquiring compatible components._
+The following is a Community maintained list of hardware that has been used with Picroft. Whilst every effort is made to keep this list updated, upstream software changes may cause future problems with device compatibility. Mycroft can not guarantee that any specific hardware will work with Picroft.
 
-| Type of component | Model | Status | Where to buy | Notes |
+If you are looking for a low-cost option to try out Picroft, we can recommend the PlayStation Eye \(often called a PS3 Eye\).
+
+| Brand | Model | Status | Type | Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| Microphone | Blue Snowball | Working | United States [Amazon.com](https://www.amazon.com/Blue-Snowball-Microphone-Textured-White/dp/B000EOPQ7E), Australia [JB Hifi](https://www.jbhifi.com.au/blue-mic/blue-snowball-ice-usb-microphone-blackout/770060/), United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Blue-Microphones-Snowball-Omnidirectional-Microphone/dp/B000EOPQ7E) |  |
-| Microphone \(and camera\) | PS3 Eye | Working | United States [Amazon.com](https://www.amazon.com/Sony-PlayStation-Camera-Bulk-Packaging-Pc/dp/B0072I2240) | An excellent introductory model if you are just checking Picroft out. |
-| Microphone and speaker | Jabra Speak 410 | [Problems reported](https://community.mycroft.ai/t/no-audio-output-on-picroft-with-jabra-410/3415) | United States - [Amazon.com](https://www.amazon.com/Jabra-PHS001U-Speakerphone-Retail-Packaging/dp/B007SHJIO2/ref=sr_1_3?ie=UTF8&qid=1545394940&sr=8-3&keywords=jabra+speak+410), Australia - [ITSPOT.com.au](https://www.itspot.com.au/jabra-speak-410-uc-speakerphone-p466658.html?ref=ShopBot), United Kingdom - [Amazon.co.uk](https://www.amazon.co.uk/Jabra-Conference-Speakerphone-optimised-Microsoft/dp/B004ELA7TA) | Premium microphone and speaker combination. |
-| Speaker | Logitech Z50 | Working | United States [Amazon.com](https://www.amazon.com/Z50-smartphone-tablet-laptop-Grey-x/dp/B00EZ9XLF8), Australia - [Good Guys](https://www.thegoodguys.com.au/logitech-computer-speaker-z50-blue-2453262%20),  United Kingdom [Amazon.co.uk](https://www.amazon.co.uk/Logitech-Z50-Speaker-Ocean-Blue/dp/B00FSF2ODS%20) |  |
+| Blue | Snowball iCE | Working | Microphone |  |
+| Google | AIY v1 | Working | Mic and speaker |  |
+| Jabra | Speak 410 | [Problems reported](https://community.mycroft.ai/t/no-audio-output-on-picroft-with-jabra-410/3415) | Mic and speaker | Premium microphone and speaker combination |
+| Logitech | C270 | Working | Mic and camera |  |
+| Logitech | C525 | Working | Mic and camera |  |
+| Logitech | Webcam Pro 9000 | Working | Mic and camera |  |
+| Logitech | Z50 | Working | Speaker |  |
+| Matrix | Voice | Working | Mic array |  |
+| PlayStation | Eye \(PS3 Eye\) | Working | Mic and camera | An excellent introductory model if you are just checking Picroft out. |
+| Seeed Studio | Mic Array 2.0 | Working | Mic array | Premium microphone array |
 
-### A note on USB speaker/headphones/soundcards
+### Troubleshooting USB audio devices
 
-If mycroft audio output fails \(No speech or audio\) when using some sort of USB soundcard for output it might be worth trying to reset the play commandlines used by mycroft.
+If Mycroft audio output fails \(No speech or audio\) when using some sort of USB sound card for output it might be worth trying to reset the play command lines used by Mycroft.
 
-To accomplish this, edit `/home/pi/.mycroft/mycroft.conf` and insert
+To accomplish this, from your Terminal add two configuration values using the [Configuration Manager](../customizations/config-manager.md). 
 
-```text
-  "play_wav_cmdline": "aplay %1",
-  "play_mp3_cmdline": "mpg123 %1"
+```bash
+mycroft-config set play_wav_cmdline "aplay %1"
+mycroft-config set play_mp3_cmdline "mpg123 %1"
 ```
 
-If no other edits has been applied to the file it should look something like
+You can check that these have been set correctly using `mycroft-config get`
 
-```javascript
-{
-  "max_allowed_core_version": 18.8,
-  "play_wav_cmdline": "aplay %1",
-  "play_mp3_cmdline": "mpg123 %1"
-}
+```bash
+mycroft-config get play_wav_cmdline "aplay %1"
+mycroft-config get play_mp3_cmdline "mpg123 %1"
 ```
+
+If you continue to experience audio problems, please see the general [Audio Troubleshooting Guide](../troubleshooting/audio-troubleshooting.md).
+
+{% page-ref page="../troubleshooting/audio-troubleshooting.md" %}
 
 ## Getting started with Picroft
 

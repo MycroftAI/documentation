@@ -23,8 +23,7 @@ When creating your Skill, the [Mycroft Skills Kit](https://mycroft.ai/documentat
 
 ## Suggesting changes to an existing README
 
-A GitHub account is required to submit changes; please register for an account now if necessary. Then head to the Skill's GitHub repository \(repo\) to get started.
-You can always find a link to a Skill's repo in the Marketplace. Simply click on the Skill, and look for a GitHub link on the right.
+A GitHub account is required to submit changes; please register for an account now if necessary. Then head to the Skill's GitHub repository \(repo\) to get started. You can always find a link to a Skill's repo in the Marketplace. Simply click on the Skill, and look for a GitHub link on the right.
 
 ### Edit and make a pull request \(PR\)
 
@@ -73,3 +72,4 @@ This is the best option if you are unsure about what the final text should look 
 
 * Just underneath the title field is a 'Preview' tab. This lets you check the formatting of your message.  
 * Once you're happy, hit submit.
+
