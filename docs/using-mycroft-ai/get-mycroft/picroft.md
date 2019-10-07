@@ -328,9 +328,10 @@ First, you need to be able to edit files on the filesystem of the Picroft. There
 Next, we edit the `wpa_supplicant.conf` file. This file controls WiFi connections for the Raspberry Pi.
 
 1. Type `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
-2. Using the down arrow key, navigate to the bottom of the file, and add credentials for your SSID
+2. Using the down arrow key, navigate to the bottom of the file, and add credentials for your SSID. You may also need to add the relevant [two-character country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements).
 
 ```text
+    country=US
     network={
             ssid="MyNetworkSSID"
             psk="mypassword"
