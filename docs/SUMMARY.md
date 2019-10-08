@@ -34,7 +34,6 @@
 ## Skill Development
 
 * [Introduction to Skill Development](skill-development/introduction.md)
-* [Mycroft Skills Kit](skill-development/mycroft-skills-kit.md)
 * [Your First Skill](skill-development/your-first-skill.md)
 * [Next Steps](skill-development/next-steps/README.md)
   * [Intent types](skill-development/next-steps/intent-types.md)
@@ -42,6 +41,7 @@
   * [Conversational Context](skill-development/next-steps/conversational-context.md)
   * [Automatic Testing](skill-development/next-steps/automatic-testing.md)
   * [Display Control](skill-development/next-steps/display-control.md)
+  * [Mycroft Skills Kit](skill-development/mycroft-skills-kit.md)
 * [Skill Types](skill-development/skill-types/README.md)
   * [Fallback Skill](skill-development/skill-types/fallback-skill.md)
   * [Common Play Framework](skill-development/skill-types/common-play-framework.md)
