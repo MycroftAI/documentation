@@ -18,7 +18,7 @@ If you aren't familiar with the basics of Python, checkout our [list of Python t
 
 ### Github account
 
-Skills are hosted on [Github](https://github.com), so you will need to create an account there if you don't already have one. It is good to have an understanding of the [GitHub basics](https://guides.github.com/activities/hello-world/), however the [Mycroft Skills Kit](mycroft-skills-kit.md) also automates some of the more complex aspects of managing a Github repository \(or repo\).
+Skills are hosted on [Github](https://github.com), so you will need to create an account there if you don't already have one. It is good to have an understanding of the [GitHub basics](https://guides.github.com/activities/hello-world/), however the [Mycroft Skills Kit](next-steps/mycroft-skills-kit.md) also automates some of the more complex aspects of managing a Github repository \(or repo\).
 
 ### Running Mycroft
 

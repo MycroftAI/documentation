@@ -32,11 +32,11 @@ Because PocketSphinx is trained on English speech, your **Wake Word** currently 
 
 Speech to Text \(STT\) software is used to take spoken words, and turn them into text phrases that can then be acted on.
 
-Mycroft currently uses external Speech to Text software. However, we are aiming to build our own open Speech to Text solution, [OpenSTT](https://openstt.org/), by partnering with other organizations and their projects, such as [Mozilla Voice](https://voice.mozilla.org/).
+We are working with Mozilla to build [DeepSpeech](https://github.com/mozilla/DeepSpeech). A fully open source STT engine, based on Baidu’s Deep Speech architecture and implemented with Google’s [TensorFlow](https://www.tensorflow.org/) framework. 
 
-* [Google STT](https://cloud.google.com/speech/): Google STT is the default STT engine used with Mycroft. In [home.mycroft.ai](https://home.mycroft.ai), you are able to change this default.
+DeepSpeech is not yet ready for production use and Mycroft currently uses [Google STT](https://cloud.google.com/speech/) as the default STT engine.
 
-Mycroft also supports these other STT engines:
+Mycroft also supports other STT engines that can be configured using the [Configuration Manager](../using-mycroft-ai/customizations/config-manager.md):
 
 * [IBM Watson Speech to Text](https://www.ibm.com/watson/services/speech-to-text/) \(username and password required\)
 * [wit.ai Speech to Text](https://wit.ai/blog/2014/02/12/speech-api) \(wit.ai API key required\)
