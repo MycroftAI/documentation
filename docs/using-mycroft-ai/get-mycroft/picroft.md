@@ -58,6 +58,7 @@ If you are looking for a low-cost option to try out Picroft, we can recommend th
 | Brand | Model | Status | Type | Notes |
 | :--- | :--- | :--- | :--- | :--- |
 | Blue | Snowball iCE | Working | Microphone |  |
+| Creative | VF0790 | Working | Mic and camera |  |
 | Google | AIY v1 | Working | Mic and speaker |  |
 | Jabra | Speak 410 | [Problems reported](https://community.mycroft.ai/t/no-audio-output-on-picroft-with-jabra-410/3415) | Mic and speaker | Premium microphone and speaker combination |
 | Logitech | C270 | Working | Mic and camera |  |
