@@ -58,12 +58,6 @@ The script will also install and configure [virtualenv](https://virtualenv.pypa.
 
 If you are running a Linux distribution other than Ubuntu, Debian, Arch or Fedora, you may need to manually install packages as instructed by `dev_setup.sh`.
 
-_NOTE: The default branch for this repository is 'dev', which should be considered a work-in-progress. If you want to clone a more stable version, switch over to the 'master' branch._
-
-You can do this by choosing the `master` branch in GitHub instead of the default `dev` branch as shown below.
-
-![Changing from the default dev branch to master on mycroft-core](https://mycroft.ai/wp-content/uploads/2017/12/mycroft-core-switching-dev-master.png)
-
 ## Running Mycroft for Linux
 
 The Mycroft for Linux installation includes two scripts that you use to control Mycroft services.
