@@ -55,6 +55,7 @@
   * [Skill README.md](skill-development/marketplace-submission/skill-readme-md.md)
 * [Repurposing Skills](skill-development/repurposing-skills.md)
 * [Common Issues](skill-development/common-issues.md)
+* [FAQ](skill-development/faq.md)
 
 ## Mycroft Technologies
 
@@ -73,4 +74,3 @@
   * [Mimic Recording Studio](mycroft-technologies/mimic-overview/mimic-recording-studio.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
-
