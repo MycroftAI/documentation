@@ -26,6 +26,14 @@ You can [create a home.mycroft.ai account](https://home.mycroft.ai/#/signup) by 
 * Your GitHub account or;
 * By signing up with your email address and choosing a password
 
+### The Open Dataset
+
+By default, Mycroft will not store your usage data or keep any recordings of your voice.
+
+When creating an account, you will be asked if you would like to Opt-In to the Open Dataset. If you chosee to Opt-In then Mycroft will record your voice when Speaking the Wake Word and Utterances. This data is de-identified and used anonymously to _train_ Mycroft to better recognize the Wake Word and Utterances. It will also be provided to key partners such as Mozilla, to assist in the development of speech recognition tools such as [DeepSpeech](https://github.com/mozilla/DeepSpeech).
+
+If you change your mind at any time, you can change your selection under the Agreements section of [your Profile](https://account.mycroft.ai/profile).
+
 ## Adding a Device
 
 To add a Device to your home.mycroft.ai account, you will need a 6-character **Registration Code**. The Registration Code is provided in different ways depending on which **Device** you have.
@@ -120,4 +128,3 @@ The Device Default settings define your base configuration and will be used for 
 ### Advanced settings
 
 Advanced users may configure additional options using an on-device configuration file. This includes setting an alternative speech-to-text engine, text-to-speech engine, or wake word listener. See the [`mycroft.conf` documentation](https://mycroft.ai/documentation/mycroft-conf/) for more detail.
-

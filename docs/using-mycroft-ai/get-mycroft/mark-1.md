@@ -131,22 +131,6 @@ You will now be able to type **Utterances** into the CLI.
 
 ![Issuing commands to Mark 1 from the command line](https://mycroft.ai/wp-content/uploads/2017/12/mark1-utterances-from-command-line.png)
 
-### Enabling the LEARN function
-
-The Learn functionality
-
-If you've also opted-in on home.mycroft.ai, and Learn functionality is enabled, then Mycroft will record your voice when Speaking the **Wake Word** and **Utterances**. This data is then used anonymously to _train_ Mycroft to better recognize the **Wake Word** and **Utterances**.
-
-To enable the Learn functionality:
-
-1. Make sure that you've checked the 'Opt In' checkbox at [home.mycroft.ai](https://home.mycroft.ai), Settings -&gt; Basic.
-
-![Opting in to help build the Mycroft Open Dataset](https://mycroft.ai/wp-content/uploads/2017/12/opting-in-open-dataset.png)
-
-1. Next press the top button on your Mark 1. Turn the button to LEARN. Press the top button again. Turn the button to ALLOW. Mycroft will Speak:
-
-`"I will now upload interaction data to help make me smarter"`
-
 ### Upgrading to the latest version from a 2017 Mark 1
 
 If you were one of the original Kickstarter backers or ordered a Mark 1 in 2017 your Mark 1 may be running an old version. In this case you will need to manually update your Mark 1 to the latest version. Once you complete these steps Mark 1 will automatically update in the future. There are two recommended options for updating. Option 1 is recommended for Makers, and those used to ‘tinkering’ with RPi 3 and related open hardware.
@@ -298,4 +282,3 @@ If your Mark 1 Device is frozen, reboot it by:
 ## Hardware Hacking your Mark 1 Device
 
 If you're interested in hardware hacking on your Mark 1 **Device**, the [hardware schematics](https://github.com/MycroftAI/hardware-mycroft-mark-1) are open source and available for download.
-
