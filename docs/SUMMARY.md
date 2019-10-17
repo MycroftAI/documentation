@@ -35,6 +35,8 @@
 
 * [Introduction to Skill Development](skill-development/introduction.md)
 * [Your First Skill](skill-development/your-first-skill.md)
+* [Intents](skill-development/intents/introduction.md)
+  * [Padatious Intents](skill-development/intents/padatious-intents.md)
 * [Next Steps](skill-development/next-steps/README.md)
   * [Intent types](skill-development/next-steps/intent-types.md)
   * [Skill Settings](skill-development/next-steps/skill-settings.md)
