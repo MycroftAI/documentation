@@ -38,7 +38,6 @@
 * [Intents](skill-development/intents/introduction.md)
   * [Padatious Intents](skill-development/intents/padatious-intents.md)
 * [Next Steps](skill-development/next-steps/README.md)
-  * [Intent types](skill-development/next-steps/intent-types.md)
   * [Skill Settings](skill-development/next-steps/skill-settings.md)
   * [Conversational Context](skill-development/next-steps/conversational-context.md)
   * [Automatic Testing](skill-development/next-steps/automatic-testing.md)
