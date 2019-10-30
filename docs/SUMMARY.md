@@ -37,6 +37,7 @@
 * [Your First Skill](skill-development/your-first-skill.md)
 * [Intents](skill-development/intents/introduction.md)
   * [Padatious Intents](skill-development/intents/padatious-intents.md)
+  * [Adapt Intents](skill-development/intents/adapt-intents.md)
 * [Next Steps](skill-development/next-steps/README.md)
   * [Skill Settings](skill-development/next-steps/skill-settings.md)
   * [Conversational Context](skill-development/next-steps/conversational-context.md)
