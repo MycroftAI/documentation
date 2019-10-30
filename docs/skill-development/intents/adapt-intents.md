@@ -54,7 +54,7 @@ Let's consider a `type.rx` file to extract the type of potato we are interested 
 
 `.*` matches zero, one or more of any single character.
 
-`(?P<Type>.*)` is known as a Named Capturing Group. The variable name is defined between the <angle brackets>, and what is captured is defined after this name. In this case we use `.*` to capture anything.
+`(?P<Type>.*)` is known as a Named Capturing Group. The variable name is defined between the \<angle brackets\>, and what is captured is defined after this name. In this case we use `.*` to capture anything.
 
 {% hint style="info" %}
 [Learn more about Regular Expressions](https://github.com/ziishaned/learn-regex/blob/master/README.md).
