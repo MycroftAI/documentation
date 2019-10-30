@@ -5,7 +5,7 @@ Adapt is a keyword based intent parser. It determines user intent based on a lis
 {% embed url="https://www.youtube.com/watch?v=zR9xvPtM6Ro" %}
 
 {% hint style="info" %}
-For technical details or usage of Adapt outside of a Mycroft Skill, see the Adapt documentation at:
+For technical details or usage of Adapt outside of a Mycroft Skill, see the [Adapt documentation](../../mycroft-technologies/adapt/README.md).
 {% endhint %}
 
 ## Defining keywords and entities
