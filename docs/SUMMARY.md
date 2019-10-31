@@ -35,9 +35,9 @@
 
 * [Introduction to Skill Development](skill-development/introduction.md)
 * [Your First Skill](skill-development/your-first-skill.md)
-* [Intents](skill-development/introduction-1/README.md)
-  * [Padatious Intents](skill-development/introduction-1/padatious-intents.md)
-  * [Adapt Intents](skill-development/introduction-1/adapt-intents.md)
+* [Intents](skill-development/intents/README.md)
+  * [Padatious Intents](skill-development/intents/padatious-intents.md)
+  * [Adapt Intents](skill-development/intents/adapt-intents.md)
 * [Next Steps](skill-development/next-steps/README.md)
   * [Skill Settings](skill-development/next-steps/skill-settings.md)
   * [Conversational Context](skill-development/next-steps/conversational-context.md)
@@ -76,4 +76,3 @@
   * [Mimic Recording Studio](mycroft-technologies/mimic-overview/mimic-recording-studio.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
-

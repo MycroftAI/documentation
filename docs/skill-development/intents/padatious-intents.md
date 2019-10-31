@@ -171,20 +171,24 @@ There is no performance benefit to using parantheses expansion. When used approp
 
 ## Using it in a Skill
 
-The intent_file\_handler\(\) \_decorator_ tags a method to be a Padatious intent handler. This _decorator_ must be imported before it is used:
 
+The intent_handler\(\) \_decorator_ can be used to create a Padatious intent handler by passing in the filename of the `.intent` file as a string.
+
+From our first example above, we created a file `vocab/en-us/what.is.a.tomato.intent`. To register an intent using this file we can use:
 ```python
-from mycroft import intent_file_handler
+@intent_handler('what.is.a.tomato.intent')
 ```
 
-The `intent_file_handler` decorator takes a single argument, which is the filename used to define the intent.
+This _decorator_ must be imported before it is used:
+```python
+from mycroft import intent_handler
+```
 
 {% hint style="info" %}
 [Learn more about _decorators_ in Python](https://en.wikipedia.org/wiki/Python_syntax_and_semantics#Decorators).
 {% endhint %}
 
 Now we can create our Tomato Skill:
-
 ```python
 from mycroft import MycroftSkill, intent_file_handler
 
@@ -192,11 +196,11 @@ class TomatoSkill(MycroftSkill):
     def __init__(self):
         super().__init__()
 
-    @intent_file_handler('what.is.a.tomato.intent')
+    @intent_handler('what.is.a.tomato.intent')
     def handle_what_is(self, message):
         self.speak_dialog('tomato.description')
 
-    @intent_file_handler('do.you.like.intent')
+    @intent_handler('do.you.like.intent')
     def handle_do_you_like(self, message):
         tomato_type = message.data.get('type')
         if tomato_type is not None:
@@ -215,4 +219,3 @@ def create_skill():
 {% hint style="info" %}
 See a Padatious intent handler example in the [Hello World Skill](https://github.com/MycroftAI/skill-hello-world/blob/f3eb89be6d80e1834637a64566c707d05fb8e3fa/__init__.py#L42)
 {% endhint %}
-
