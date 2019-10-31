@@ -56,7 +56,7 @@ An **intent parser** can then match the _intent_ with a suitable **Skill** to ha
 
 ### Text to Speech
 
-Text to Speech \(TTS\) software takes written text, such as text files on a computer, and uses a *voice* to *speak* the text. Text to Speech can have different voices, depending on the TTS engine used.
+Text to Speech \(TTS\) software takes written text, such as text files on a computer, and uses a _voice_ to _speak_ the text. Text to Speech can have different voices, depending on the TTS engine used.
 
 * [Mimic](https://github.com/MycroftAI/mimic): Mycroft's default text to speech \(TTS\) engine, based on CMU's Flite \(Festival Lite\)
 
@@ -87,3 +87,4 @@ Mycroft is designed to run on many different platforms - called **Devices**, wit
 * **Mark 1** - a software image of Mycroft designed to be installed on the Mycroft Mark 1 - a reference hardware device
 * **Picroft** - a software image of Mycroft designed to be installed on Raspberry Pi 3
 * **Android** - a software image of Mycroft designed to be installed on Android devices
+

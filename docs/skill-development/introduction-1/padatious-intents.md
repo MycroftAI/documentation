@@ -37,8 +37,7 @@ The above example allows us to map many phrases to a single intent, however ofte
 
 ### Defining entities
 
-Let's now find out Mycroft's opinion on different types of tomatoes. To do this we will create a new intent file:
-`vocab/en-us/do.you.like.intent`
+Let's now find out Mycroft's opinion on different types of tomatoes. To do this we will create a new intent file: `vocab/en-us/do.you.like.intent`
 
 with examples of questions about mycroft's opinion about tomatoes:
 
@@ -172,7 +171,8 @@ There is no performance benefit to using parantheses expansion. When used approp
 
 ## Using it in a Skill
 
-The intent_file_handler\(\) \_decorator_ tags a method to be a Padatious intent handler. This _decorator_ must be imported before it is used:
+The intent_file\_handler\(\) \_decorator_ tags a method to be a Padatious intent handler. This _decorator_ must be imported before it is used:
+
 ```python
 from mycroft import intent_file_handler
 ```
@@ -184,6 +184,7 @@ The `intent_file_handler` decorator takes a single argument, which is the filena
 {% endhint %}
 
 Now we can create our Tomato Skill:
+
 ```python
 from mycroft import MycroftSkill, intent_file_handler
 
@@ -214,3 +215,4 @@ def create_skill():
 {% hint style="info" %}
 See a Padatious intent handler example in the [Hello World Skill](https://github.com/MycroftAI/skill-hello-world/blob/f3eb89be6d80e1834637a64566c707d05fb8e3fa/__init__.py#L42)
 {% endhint %}
+

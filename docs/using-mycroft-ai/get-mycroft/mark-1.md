@@ -282,3 +282,4 @@ If your Mark 1 Device is frozen, reboot it by:
 ## Hardware Hacking your Mark 1 Device
 
 If you're interested in hardware hacking on your Mark 1 **Device**, the [hardware schematics](https://github.com/MycroftAI/hardware-mycroft-mark-1) are open source and available for download.
+
