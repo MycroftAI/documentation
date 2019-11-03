@@ -243,5 +243,5 @@ Jump to [Skill Settings](next-steps/skill-settings.md) for more information on t
 
 ## What have we learned
 
-You have no successfully created a new Skill and have an understanding of the basic components that make up a Mycroft Skill. Next we will dive into each component in more detail.
+You have now successfully created a new Skill and have an understanding of the basic components that make up a Mycroft Skill. Next we will dive into each component in more detail.
 
