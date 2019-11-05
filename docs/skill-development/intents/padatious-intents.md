@@ -171,15 +171,16 @@ There is no performance benefit to using parantheses expansion. When used approp
 
 ## Using it in a Skill
 
-
 The `intent_handler\(\)` _decorator_ can be used to create a Padatious intent handler by passing in the filename of the `.intent` file as a string.
 
 From our first example above, we created a file `vocab/en-us/what.is.a.tomato.intent`. To register an intent using this file we can use:
+
 ```python
 @intent_handler('what.is.a.tomato.intent')
 ```
 
 This _decorator_ must be imported before it is used:
+
 ```python
 from mycroft import intent_handler
 ```
@@ -189,6 +190,7 @@ from mycroft import intent_handler
 {% endhint %}
 
 Now we can create our Tomato Skill:
+
 ```python
 from mycroft import MycroftSkill, intent_file_handler
 
@@ -219,3 +221,4 @@ def create_skill():
 {% hint style="info" %}
 See a Padatious intent handler example in the [Hello World Skill](https://github.com/MycroftAI/skill-hello-world/blob/67a972792a07da7e3406bf7f94acd54aa2674829/__init__.py#L42)
 {% endhint %}
+

@@ -35,7 +35,7 @@ If you receive a "command not found", then you will need to run `msk` manually f
 
 `mycroft-msk create` is an interactive script that asks you a few questions and generates a new Skill template. This template can immediately be used as a Skill, however you will most likely want to extend its functionaity.
 
-To create your first Skill, you will be asked for a: 
+To create your first Skill, you will be asked for a:
 
 1. Name  To be readable within the space available on the [Mycroft Skills Marketplace](https://market.mycroft.ai) the name should be short, generally under 22 characters in length. The name must also be unique. You can check the [Marketplace](https://market.mycroft.ai) to see what other Skills already exist. 
 2. Example phrases \(known as utterances\)  Utterances that you expect Users to say to Mycroft, that your Skill will respond to. 
