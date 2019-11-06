@@ -9,7 +9,7 @@ description: >-
 There are three main categories of dependencies:
 - Python packages sourced from [PyPI](https://pypi.org/).
 - Linux system packages sourced from the repositories available on the Mycroft device.
-- Other Mycroft Skills source from the [Skills Marketplace](https://market.mycroft.ai/_).
+- Other Mycroft Skills source from the [Skills Marketplace](https://market.mycroft.ai/).
 
 Some of these may already be installed on a Users device, however some may not. To make sure a system has everything that your Skill needs, we can define the dependencies or requirements of the Skill. During installation the Mycroft Skills Manager will then check that they are installed, and if not attempt to do so.
 
@@ -27,4 +27,4 @@ There are three files that we can use to define these dependencies.
 
 Which ever file you choose to use, it must be located in the root directory of your Skill.
 
-There is no limit to the number of packages you can install, however these are reviewed during the [Skills Acceptance Process](skill-development/marketplace-submission/skills-acceptance-process/README.md) to ensure they are appropriate for the Skill being installed and do not pose a security concern for Users.
+There is no limit to the number of packages you can install, however these are reviewed during the [Skills Acceptance Process](../marketplace-submission/skills-acceptance-process/README.md) to ensure they are appropriate for the Skill being installed and do not pose a security concern for Users.

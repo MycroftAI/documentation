@@ -81,7 +81,7 @@ dependencies:
     - webthings-gateway
 ```
 
-Anything listed in this section will be passed to the [Mycroft Skills Manager](../../mycroft-technologies/mycroft-core/msm) for installation. A feature of MSM is that it will search for Skills that most closely match the given string. So even though the `mozilla-webthings-gateway` Skill has not been perfectly entered, it will still match with a high enough confidence to install the Skill.
+Anything listed in this section will be passed to the [Mycroft Skills Manager](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/msm) for installation. A feature of MSM is that it will search for Skills that most closely match the given string. So even though the `mozilla-webthings-gateway` Skill has not been perfectly entered, it will still match with a high enough confidence to install the Skill.
 
 ## Example files
 
