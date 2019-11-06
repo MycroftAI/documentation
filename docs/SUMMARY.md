@@ -38,6 +38,9 @@
 * [Intents](skill-development/intents/README.md)
   * [Padatious Intents](skill-development/intents/padatious-intents.md)
   * [Adapt Intents](skill-development/intents/adapt-intents.md)
+* [Dependencies](skill-development/dependencies/README.md)
+  * [Manifest.yml](skill-development/dependencies/manifest-yml.md)
+  * [Requirements files](skill-development/dependencies/requirements-files.md)
 * [Next Steps](skill-development/next-steps/README.md)
   * [Skill Settings](skill-development/next-steps/skill-settings.md)
   * [Conversational Context](skill-development/next-steps/conversational-context.md)
@@ -76,4 +79,3 @@
   * [Mimic Recording Studio](mycroft-technologies/mimic-overview/mimic-recording-studio.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
-
