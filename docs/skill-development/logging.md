@@ -53,7 +53,7 @@ Info messages provide general information when the Skill is running as expected.
 
 ### Warning
 ```Python
-self.log.info
+self.log.warning
 ```
 
 Warning messages are used to indicate that something has gone wrong, but the Skill will continue to function.
