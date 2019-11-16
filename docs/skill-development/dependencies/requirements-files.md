@@ -25,6 +25,8 @@ If specific versions of a package are required, we can use comparison operators 
 * `requests>=2.22.0` The package must be version `2.22.0` or higher.
 * `requests<=2.22.0` The package must be version `2.22.0` or lower.
 
+It is strongly recommended to only use these operators when required. If submitting a Skill to the Marketplace, you will be asked to provide reasoning as to why a specific version of a package is necessary.
+
 ### Examples of requirements.txt
 
 * [Weather Skill](https://github.com/MycroftAI/skill-weather/blob/19.08/requirements.txt)
@@ -41,4 +43,3 @@ The contents of this file will be checked carefully if a Skill is submitted for 
 ### Examples of requirements.sh
 
 * [Zork \(adventure game\)](https://github.com/forslund/white-house-adventure/blob/6eba5df187bc8a7735b05e93a28a6390b8c6f40c/requirements.sh)
-
