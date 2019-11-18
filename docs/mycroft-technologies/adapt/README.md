@@ -59,7 +59,7 @@ Because Adapt is small enough to run locally on an embedded device, it removes t
 
 ### Open source
 
-At Mycroft.AI, we believe that artficial intelligence is too important to be controlled by a few large companies. Adapt is open source, licensed under the GNU Lesser General Public License 3.0. Anyone can access the [source code](https://github.com/mycroftai/adapt), change the software and use Adapt Intent Parser in new free and open source applications.
+At Mycroft.AI, we believe that artficial intelligence is too important to be controlled by a few large companies. Adapt is open source, licensed under the Apache v2.0 license. Anyone can access the [source code](https://github.com/mycroftai/adapt), change the software and use Adapt Intent Parser in new applications.
 
 [Open Source](https://en.wikipedia.org/wiki/Open-source_software) software powers the Internet. Artificial intelligence software, like Adapt Intent Parser, is gaining in importance. However, very few artificial intelligence software is open source. Here at Mycroft.AI, we believe that natural language processing is going to be a key component of many future technologies. By sharing our software we believe that we can help bring artificial intelligence to the open source community where it can be used to benefit millions of users world wide. We hope to work with other open source initiatives like [TensorFlow](https://www.tensorflow.org/) and [OpenAI](https://openai.com/) to ensure that the future of artificial intelligence is open for all.
 
