@@ -12,15 +12,15 @@ It is vital that Mycroft Skills exhibit high quality, and are well tested to enc
 
 The process consists of 6 stages:
 
-1. [Submitting your Skill](#1-submitting-your-skill)
-2. [Automatic testing](#2-automatic-testing-of-skills)
-3. [Review by Skill Testing Team](#3-review-by-skill-testing-team)
+1. [Submitting your Skill](./#1-submitting-your-skill)
+2. [Automatic testing](./#2-automatic-testing-of-skills)
+3. [Review by Skill Testing Team](./#3-review-by-skill-testing-team)
    * Code Review
    * Information Review
    * Functional Review
-4. [Review by Mycroft AI](#4-review-by-mycroft-ai)
-5. [Deployment](#5-deployment)
-6. [Promotion](#6-promotion)
+4. [Review by Mycroft AI](./#4-review-by-mycroft-ai)
+5. [Deployment](./#5-deployment)
+6. [Promotion](./#6-promotion)
 
 ## Submission
 
@@ -28,11 +28,11 @@ The process consists of 6 stages:
 
 Before submitting your Skill we assume you have:
 
-* Create your README.md using the [Skill Meta Editor](https://mycroft.ai/skill-meta-editor). We also have some [additional tips for a great README](skill-readme-md).
+* Create your README.md using the [Skill Meta Editor](https://mycroft.ai/skill-meta-editor). We also have some [additional tips for a great README](../skill-readme-md.md).
 * Personally tested your Skills functionality to ensure it is working as expected. For a detailed testing overview, see stage three below.
 * It is also a great idea to post a link to you Skill in the [Skill Feedback category of the Forums](https://community.mycroft.ai/c/skill-feedback) to let others test your Skill on different platforms.
 * Ensure any Python or other packages required to run your Skill are included in your requirements.txt or equivalent.
-* Run the [automated testing](../next-steps/automatic-testing) on your own machine using the command:
+* Run the [automated testing](../../next-steps/automatic-testing.md) on your own machine using the command:
 
   `mycroft-skill-testrunner /opt/mycroft/skills/your-skill-directory`
 
@@ -40,7 +40,7 @@ When you are satisfied your Skill is ready, submit it for formal review by runni
 
 ### 2. Automatic Testing of Skills
 
-We have developed an Integration Test Runner that assists you in writing tests that can be executed at both an **Intent** and a **Skill** level. [Learn more about Automatic Testing of your Mycroft Skill](../next-steps/automatic-testing).
+We have developed an Integration Test Runner that assists you in writing tests that can be executed at both an **Intent** and a **Skill** level. [Learn more about Automatic Testing of your Mycroft Skill](../../next-steps/automatic-testing.md).
 
 This automated testing is run as soon as you submit your Skill to the Mycroft-Skills repo, and with each major release of Mycroft-core.
 
@@ -50,9 +50,9 @@ This automated testing is run as soon as you submit your Skill to the Mycroft-Sk
 
 The Skill Testing Team is made up of experienced Mycroft Community Members and Mycroft AI Staff. One of the team’s responsibilities is to ensure Skills meet minimum quality, technical and functional standards to maintain the user experience with every Skill in the Marketplace. When a Skill Author submits a Skill to the [Mycroft Skills Repo](https://github.com/MycroftAI/mycroft-skills), the Skill Testing Team conducts three reviews.
 
-a. [Code Review](skills-review-code-template) - ensuring the code is stable and secure  
-b. [Information Review](skills-review-information-template) - ensuring all info is accurate and understandable  
-c. [Functional Review](skills-review-functional-template) - ensuring the experience of using the Skill is intuitive  
+a. [Code Review](skills-review-code-template.md) - ensuring the code is stable and secure  
+b. [Information Review](skills-review-information-template.md) - ensuring all info is accurate and understandable  
+c. [Functional Review](skills-review-functional-template.md) - ensuring the experience of using the Skill is intuitive
 
 The Skill Author will receive feedback and may need to solve issues identified in these reviews before it will be approved.
 
@@ -112,3 +112,4 @@ Instead, the Skill Management Team will seek assistance from the Community, and 
 Head to our [contribute page](https://mycroft.ai/contribute/#suggest-and-test-skills) to submit an application and see the many other ways you can be involved.
 
 Our Skills Testing Team are a fantastic group of community members who ensure that all Skills are secure, stable, accurate, and intuitive. The team has members with a range of skills and communicate through a private channel on [chat.mycroft.ai](https://chat.mycroft.ai/).
+

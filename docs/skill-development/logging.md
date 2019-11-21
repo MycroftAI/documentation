@@ -9,11 +9,12 @@ description: >-
 To track events and data within your Skill we can use logging. If you are new to programming, this is a way to output a message that can tell you the state of your Skill at a particular point in time, details about an error that has occured, or simply noting that a program reached a particular point in the code.
 
 ## Basic Usage
+
 A logger is available through the `MycroftSkill` base class. This means that you can use it within a Skill without needing to import the `logging` package. You can simply call `self.log` from within the class of your Skill.
 
 Here is a quick example of an `info` level message used in a Skill. We will learn more about different levels shortly.
 
-```Python
+```python
 from adapt.intent import IntentBuilder
 from mycroft import MycroftSkill, intent_handler
 
@@ -36,7 +37,8 @@ def create_skill():
 There are five types of log messages available that are used for different purposes.
 
 ### Debug
-```Python
+
+```python
 self.log.debug
 ```
 
@@ -45,33 +47,38 @@ Debug messages are used for information that will help to diagnose problems. The
 By default these messages will not be logged unless the User has explicity turned on debug level logging.
 
 ### Info
-```Python
+
+```python
 self.log.info
 ```
 
 Info messages provide general information when the Skill is running as expected. These messages will always be logged so are useful when actively developing a Skill, but should be used sparingly once a Skill is published for other people to use.
 
 ### Warning
-```Python
+
+```python
 self.log.warning
 ```
 
 Warning messages are used to indicate that something has gone wrong, but the Skill will continue to function.
 
 ### Error
-```Python
+
+```python
 self.log.error
 ```
 
 Error messages indicate that a serious problem has occured and the Skill will not be able to function. In the Mycroft CLI these messages are shown in red to make them highly visible.
 
 ### Exception
-```Python
+
+```python
 self.log.exception
 ```
+
 Exception messages are an extended form of the `error` level message. These messages include a stack trace and should only be called from an exception handler. For example:
 
-```Python
+```python
 try:
     1/0
 except ZeroDivisionError as e:
@@ -87,15 +94,16 @@ By default all info, warning, error and exception level messages will be logged.
 To return to normal logging, you can issue the `:log level info` CLI command.
 
 ## Using the logger outside the Skill class
+
 As the logger is provided by the MycroftSkill class, it is only available within that scope. If you need to log messages from outside of this class, you can import the logger manually.
 
-```Python
+```python
 from mycroft.util import LOG
 ```
 
 This can then be used outside your Skill's class. Extending our first example:
 
-```Python
+```python
 from adapt.intent import IntentBuilder
 from mycroft import MycroftSkill, intent_handler
 from mycroft.util import LOG
@@ -119,3 +127,4 @@ class LoggingSkill(MycroftSkill):
 def create_skill():
     return LoggingSkill()
 ```
+
