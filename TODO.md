@@ -2,9 +2,6 @@
 
 The objective of this file is to document the items flagged as @TODO as I go through the documentation so I come back to them and ensure they're resolved before the documentation is put live.
 
-## General things
-
-- [ ] Regenerated ToC for each file using `markdown-toc` when ready to do final import to GitHub
 
 ### About Mycroft
 
@@ -13,15 +10,12 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 
 ### Your home.mycroft.ai account
 
-- [ ] Advanced settings - need to get someone to review what I've written about things like the Threshold and Dynamic Energy Ratio.
-- [ ] Registration code for Android - not sure how this works or how Android provides a Registration Code
-- [ ] How to do multiple **Wake Words**
+- [ ] Document where different settings are located - device vs Skills
 
-### Mark 1
+### Updating 
+- [ ] Add or update instructions on how to update each device
 
-- [ ] Mark 1 - how to connect using an ethernet cable
-- [ ] Mark 1 - what are the limitations around what type of WiFi networks Mark 1 can connect to - for instance, can Mycroft connect to WEP networks, enterprise WPA2-PSK with Radius authentication etc.
-- [ ] Mark 1 - how to keep the Device updated - I've put something in there, but I'm not sure how accurate it is - needs Dev Team to give it the once over.
+### Mark 1 Display
 - [ ] Mark 1 - should the information on how to control the display for the Mark 1 Enclosure go under the Skills section instead?
 - [ ] Mark 1 - how many characters can the Mark 1 display show before text has to scroll?
 - [ ] Mark 1 - the mouth_display_png() optional parameters need to be checked - I've guess what each of them mean, but this needs to be checked.
@@ -39,6 +33,7 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 - [ ] What are the common issues with Mycroft for Linux?
 
 ### Mycroft for Android
+- [ ] Registration code for Android - not sure how this works or how Android provides a Registration Code
 
 ### Padatious
 
@@ -50,7 +45,6 @@ The objective of this file is to document the items flagged as @TODO as I go thr
 - [ ] What are the common issues in **Skills** development - ie the common problems that Developers encounter - so we can address them.
 - [ ] How are Skills developed for platforms like Alexa repurposed for Mycroft?
 - [ ] We need a guide or similar for `__init__.py` - that covers items like how to inherit from the `MycroftSkill` class, and the sorts of functions that are used. How are APIs used? What if your **Skill** needs to use another service?
-- [ ] Is the copyright notice that's in `__init__.py` legally required, or can a Community Developer release a **Skill** using a different license?
 
 ### Mycroft language support
 
@@ -68,9 +62,3 @@ NIL
 ### Audio service
 
 - [ ] what URI schemas are supported by the Playback **Skill**?
-- [ ] have the audio service backends been tested on Mark 1 yet?
-- [ ]
-
-### Configuration
-
-There is a need for documentation on `mycroft.conf`, but I'm not sure where to start with this, possibly a conversation with Steve to bring me across how it works - precedence, why the file lives in different locations etc.
