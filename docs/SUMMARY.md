@@ -33,12 +33,12 @@
 
 ## Skill Development
 
-* [Introduction to Skill Development](skill-development/introduction.md)
-* [Your First Skill](skill-development/your-first-skill.md)
+* [Introduction to Skill Development](skill-development/intro/introduction.md)
+  * [Your First Skill](skill-development/intro/your-first-skill.md)
+  * [Logging](skill-development/intro/logging.md)
 * [Intents](skill-development/intents/README.md)
   * [Padatious Intents](skill-development/intents/padatious-intents.md)
   * [Adapt Intents](skill-development/intents/adapt-intents.md)
-* [Logging](skill-development/logging.md)
 * [Skill Settings](skill-development/skill-settings.md)
 * [Dependencies](skill-development/dependencies/README.md)
   * [Manifest.yml](skill-development/dependencies/manifest-yml.md)
