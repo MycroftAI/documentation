@@ -18,11 +18,11 @@ If you aren't familiar with the basics of Python, check out our [list of Python 
 
 ### Github account
 
-Skills are hosted on [Github](https://github.com), so you will need to create an account there if you don't already have one. It is good to have an understanding of the [GitHub basics](https://guides.github.com/activities/hello-world/), however the [Mycroft Skills Kit](next-steps/mycroft-skills-kit.md) also automates some of the more complex aspects of managing a Github repository \(or repo\).
+Skills are hosted on [Github](https://github.com), so you will need to create an account there if you don't already have one. It is good to have an understanding of the [GitHub basics](https://guides.github.com/activities/hello-world/), however the [Mycroft Skills Kit](../../mycroft-technologies/mycroft-skills-kit.md) also automates some of the more complex aspects of managing a Github repository \(or repo\).
 
 ### Running Mycroft
 
-To test your Skill out, you will need to [set up a Mycroft device](../using-mycroft-ai/get-mycroft/). Mycroft can be installed on your computer, a Raspberry Pi using Picroft, or a dedicated device like the Mycroft Mark 1. Mycroft also comes with a number of helpful tools to create new Skills, host them on Github, run integration tests, and submit them for inclusion in the [Mycroft Marketplace](https://market.mycroft.ai). If you aren't yet familiar with how Mycroft works, check out the [overview of Mycroft components](http://mycroft.ai/documentation/mycroft-software-hardware/) to understand the many technologies that come together to provide an intelligent voice assistant.
+To test your Skill out, you will need to [set up a Mycroft device](../../using-mycroft-ai/get-mycroft/). Mycroft can be installed on your computer, a Raspberry Pi using Picroft, or a dedicated device like the Mycroft Mark 1. Mycroft also comes with a number of helpful tools to create new Skills, host them on Github, run integration tests, and submit them for inclusion in the [Mycroft Marketplace](https://market.mycroft.ai). If you aren't yet familiar with how Mycroft works, check out the [overview of Mycroft components](http://mycroft.ai/documentation/mycroft-software-hardware/) to understand the many technologies that come together to provide an intelligent voice assistant.
 
 ## What makes a good Skill?
 
@@ -44,5 +44,5 @@ You'll notice some new terms as you start to develop Skills.
 * **dialog** - A dialog is a phrase that is spoken by Mycroft. Different Skills will have different dialogs, depending on what the Skill does. For example, in a _weather_ Skill, a dialog might be `the.maximum.temperature.is.dialog`.
 * **intent** - Mycroft matches utterances that a User speaks with a Skill by determining an intent from the utterance. For example, if a User speaks `Hey Mycroft, what's the weather like in Toronto?` then the intent will be identified as _weather_ and matched with the _Weather Skill_. When you develop new Skills, you need to define new intents.
 
-If you encounter anything else you're not familiar with, checkout the [Mycroft Glossary](../about-mycroft-ai/glossary.md).
+If you encounter anything else you're not familiar with, checkout the [Mycroft Glossary](../../about-mycroft-ai/glossary.md).
 

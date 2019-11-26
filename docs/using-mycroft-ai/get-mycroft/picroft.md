@@ -406,7 +406,7 @@ There are several commands that are packaged into Picroft to help you with advan
 * `mycroft-cli=client`: This command will start the Mycroft CLI client if you are on the Linux command line
 * `mycroft-help`: This command brings up help information
 * `mycroft-mic-test`: This command re-runs the microphone test from the guided setup
-* `mycroft-msk`: This command runs the [Mycroft Skills Kit](../../skill-development/next-steps/mycroft-skills-kit.md)
+* `mycroft-msk`: This command runs the [Mycroft Skills Kit](../../mycroft-technologies/mycroft-skills-kit.md)
 * `mycroft-msm`: This command runs the [Mycroft Skills Manager](../../mycroft-technologies/mycroft-core/msm.md)
 * `mycroft-pip`: This command runs `pip` within the Mycroft Python `virtual environment` \(`venv`\). This is useful if you are installing dependencies for **Skills**.
 * `mycroft-say-to`:  This command sends a command to Picroft, just like you had 'spoken' a command. This is useful if your microphone is not working.

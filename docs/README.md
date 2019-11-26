@@ -16,7 +16,7 @@ Having trouble? See our range of troubleshooting guides and common issues.
 
 Want to develop your own Voice Skill? Whether you are new to coding, or a master level programmer, creating your first Mycroft Voice Skill is easy!
 
-{% page-ref page="skill-development/introduction.md" %}
+{% page-ref page="skill-development/introduction/" %}
 
 Interested in the technologies that make up Mycroft AI? We have developed a range of open source technologies to bring Mycroft to life. They are all open source, and can be used together, or independently.
 

@@ -1,78 +1,81 @@
-**Draft Version: 0.1 | Document Author: Aditya Mehra | Status: Incomplete | Last Modified: 23rd August 2019**
+---
+description: >-
+  A visual and display framework for Mycroft running on top of KDE Plasma
+  Technology and built using Kirigami, a lightweight user interface framework
+  for convergent applications empowered by Qt.
+---
+
+# GUI Framework
+
+**Draft Version: 0.1 \| Document Author: Aditya Mehra \| Status: Incomplete \| Last Modified: 23rd August 2019**
 
 In the age of information visualization is eminently essential to grab attention and create a promising communication strategy. Visual content that supports your spoken content can make it easier to present information well and more engaging for your audience and users.
 
-<img src="https://images.theconversation.com/files/205921/original/file-20180212-58348-1sbutu2.jpg?ixlib=rb-1.1.0&rect=0%2C604%2C3994%2C1994&q=45&auto=format&w=1356&h=668&fit=crop" />
+![](https://images.theconversation.com/files/205921/original/file-20180212-58348-1sbutu2.jpg?ixlib=rb-1.1.0&rect=0%2C604%2C3994%2C1994&q=45&auto=format&w=1356&h=668&fit=crop)
 
-(Image to be replaced by orignal artwork..)
+\(Image to be replaced by original artwork..\)
 
-#### INTRODUCTION TO MYCROFT-GUI
+### INTRODUCTION TO MYCROFT-GUI
 
 Mycroft-GUI is an open source visual and display framework for Mycroft running on top of KDE Plasma Technology and built using Kirigami a lightweight user interface framework for convergent applications which are empowered by Qt.
 
-#### GETTING STARTED
+### GETTING STARTED
 
 Mycroft is an open source voice assistant that can be extended and expanded to the limits of your imagination. Mycroft can run anywhere from your desktop to your automobiles or on smart devices that empower your home.
 
-Want Mycroft to do something new? Teach Mycroft a skill, share it, and improve the experience for tens of thousands of people all over the world. This guide aims to provide you with resources to create familar and consistent visual experiences with your expanding and innovative skills.
+Want Mycroft to do something new? Teach Mycroft a skill, share it, and improve the experience for tens of thousands of people all over the world. This guide aims to provide you with resources to create familiar and consistent visual experiences with your expanding and innovative skills.
 
 The Mycroft GUI Visual Skill Development Guide is divided into two sections:
 
-##### Visual Skill Development API Foundation
+#### Visual Skill Development API Foundation
 
-- Learn and familarize yourself with the basics of expanding your voice only skills with the Visual Skill Development API for devices that support displays..(Learn More Link)
+* Learn and familiarize yourself with the basics of expanding your voice only skills with the Visual Skill Development API for devices that support displays..\(Learn More Link\)
 
-##### Visual Skill Development Human Interface Guidelines
+#### Visual Skill Development Human Interface Guidelines
 
-- Learn about the best practises and design philosphy to creating consistent visual experiences..(Learn More Link)
+* Learn about the best practices and design philosophy to creating consistent visual experiences..\(Learn More Link\)
 
 ## VISUAL SKILL DEVELOPMENT API FOUNDATION
 
-Mycroft enabled devices with displays such as the Mark II, KDE Plasmoid provide skill developers the opportunity to create skills that can be empowered by both voice and screen interaction. The display interaction technology is based on the QML user interface markup language that gives you complete freedom to create in-depth innovative interactions without boundries or provide you with simple templates within the Mycroft GUI framework that allow minimalistic display of text and images based on your skill development specifics and preferences.
+Mycroft enabled devices with displays such as the Mark II, KDE Plasmoid provide skill developers the opportunity to create skills that can be empowered by both voice and screen interaction. The display interaction technology is based on the QML user interface markup language that gives you complete freedom to create in-depth innovative interactions without boundaries or provide you with simple templates within the Mycroft GUI framework that allow minimalistic display of text and images based on your skill development specifics and preferences.
 
 This section of the guide is divided into two skill examples that will show you how to create:
 
-- In-depth QML based audio and visual interaction skills
+* In-depth QML based audio and visual interaction skills
+* Simple template based text and image skills
 
-- Simple template based text and image skills
+### In-depth QML based audio and visual interaction skills
 
-#### In-depth QML based audio and visual interaction skills
+QML user interface markup language is a declarative language built on top of Qt's existing strengths designed to describe the user interface of a program: both what it looks like, and how it behaves. QML provides modules that consist of sophisticated set of graphical and behavioral building elements. In the example below we will showcase how to create a QML interface for your skill including how it interacts with your voice skill.
 
-QML user interface markup language is a declartive language built on top of Qt's existing strengths designed to describe the user interface of a program: both what it looks like, and how it behaves. QML provides modules that consist of sophisticated set of graphical and behavioral building elements. In the example below we will showcase how to create a QML interface for your skill including how it interacts with your voice skill.
+#### Before Getting Started Resources
 
-##### Before Getting Started Resources
+A collection of resources to familiarize you with QML and Kirigami Framework.
 
-A collection of resources to familarize you with QML and Kirigami Framework.
+* [Introduction to QML ](http://doc.qt.io/qt-5/qml-tutorial.html)
+* [Introduction to Kirigami](https://www.kde.org/products/kirigami/)
 
-- [Introduction to QML ](http://doc.qt.io/qt-5/qml-tutorial.html)
-
-- [Introduction to Kirigami](https://www.kde.org/products/kirigami/)
-
-##### Building your skill to support display
+#### Building your skill to support display
 
 Skills for Mycroft AI are written in Python, using the skills development guide available [here](https://mycroft.ai/documentation/skills/developing-skills/)
 
-#### Recipes Skill Example
+### Recipes Skill Example
 
 Let's walk you through some basics of writing your QML user interface, this section is divided into 5 parts:
 
-- [Importing Modules](#Importing-Modules)
+* [Importing Modules](mycroft-gui.md#Importing-Modules)
+* [Using Mycroft-GUI Framework Base Delegates](mycroft-gui.md#Using-Mycroft-GUI-Framework)
+* [Using Mycroft Framework Components](mycroft-gui.md#Using-Mycroft-Framework-Components)
+* [Event Handling](mycroft-gui.md#Event-Handling)
+* [Resting Faces](mycroft-gui.md#Resting-Faces)
 
-- [Using Mycroft-GUI Framework Base Delegates](#Using-Mycroft-GUI-Framework)
+#### Importing Modules
 
-- [Using Mycroft Framework Components](#Using-Mycroft-Framework-Components)
-
-- [Event Handling](#Event-Handling)
-
-- [Resting Faces](#Resting-Faces)
-
-##### Importing Modules
-
-A QML module provides versioned types and JavaScript resources in a type namespace which may be used by clients who import the module. Modules make use of the QML versioning system which allows modules to be independently updated. More in-depth information about QML modules can be found here [Qt Qml Modules Documentation](http://doc.qt.io/qt-5/qtqml-modules-topic.html)
+A QML module provides versioned types and JavaScript resources in a type namespace which may be used by clients who import the module. Modules make use of the QML versioning system which allows modules to be independently updated. More in-depth information about QML modules can be found here [Qt QML Modules Documentation](http://doc.qt.io/qt-5/qtqml-modules-topic.html)
 
 In the code snippet example below we will look at importing some of the common modules that provide the components required to get started with our Visual User Interface.
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -81,41 +84,41 @@ import Mycroft 1.0 as Mycroft
 import org.kde.lottie 1.0
 ```
 
-###### QTQuick Module:
+**QTQuick Module:**
 
-Qt Quick module is the standard library for writing QML applications, the module provides a visual canvas and includes types for creating and animating visual components, receiving user input, creating data models and views and delayed object instantiation. In-depth information about QTQuick can be found at [Qt Quick Documentation](https://doc.qt.io/qt-5.11/qtquick-index.html)
+Qt Quick module is the standard library for writing QML applications, the module provides a visual canvas and includes types for creating and animating visual components, receiving user input, creating data models and views and delayed object instantiation. In-depth information about QtQuick can be found at [Qt Quick Documentation](https://doc.qt.io/qt-5.11/qtquick-index.html)
 
-###### QTQuick.Controls Module:
+**QTQuick.Controls Module:**
 
 The QtQuick Controls module provides a set of controls that can be used to build complete interfaces in Qt Quick. Some of the controls provided are button controls, container controls, delegate controls, indicator controls, input controls, navigation controls and more, for a complete list of controls and components provided by QtQuick Controls you can refer to [QtQuick Controls 2 Guidelines](https://doc.qt.io/qt-5.11/qtquickcontrols2-guidelines.html)
 
-###### QtQuick.Layouts Module:
+**QtQuick.Layouts Module:**
 
-QtQuick Layouts are a set of QML types used to arrange items in a user interface. Some of the layouts provided by QtQuick Layouts are Coloumn Layout, Grid Layout, Row Layout and more, for a complete list of layouts you can refer to [QtQuick Layouts Documentation](http://doc.qt.io/qt-5/qtquicklayouts-index.html)
+QtQuick Layouts are a set of QML types used to arrange items in a user interface. Some of the layouts provided by QtQuick Layouts are Column Layout, Grid Layout, Row Layout and more, for a complete list of layouts you can refer to [QtQuick Layouts Documentation](http://doc.qt.io/qt-5/qtquicklayouts-index.html)
 
-###### Kirigami Module:
+**Kirigami Module:**
 
 [Kirigami](https://api.kde.org/frameworks/kirigami/html/index.html) is a set of QtQuick components for mobile and convergent applications. [Kirigami](https://api.kde.org/frameworks/kirigami/html/index.html) is a set of high level components to make the creation of applications that look and feel great on mobile as well as desktop devices and follow the [Kirigami Human Interface Guidelines](https://community.kde.org/KDE_Visual_Design_Group/KirigamiHIG)
 
-###### Mycroft Module:
+**Mycroft Module:**
 
-Mycroft GUI frameworks provides a set of high level components and events system for aiding in the development of mycroft visual skills. One of the controls provided by Mycroft GUI frameworks are Mycroft-GUI Framework Base Delegates [Mycroft-GUI Framework Base Delegates Documentation](#)
+Mycroft GUI frameworks provides a set of high level components and events system for aiding in the development of Mycroft visual skills. One of the controls provided by Mycroft GUI frameworks are Mycroft-GUI Framework Base Delegates [Mycroft-GUI Framework Base Delegates Documentation](mycroft-gui.md)
 
-###### QML Lottie Module:
+**QML Lottie Module:**
 
 This provides a QML `Item` to render Adobe® After Effects™ animations exported as JSON with Bodymovin using the Lottie Web library. For list of all properties supported refer [Lottie QML](https://github.com/kbroulik/lottie-qml)
 
-##### Using Mycroft-GUI Framework Base Delegates
+#### Using Mycroft-GUI Framework Base Delegates
 
-When you design your skill with QML, Mycroft-GUI frameworks provides you with some base delegates you should use when desiging your GUI skill. The base delegates provide you with a basic presentation layer for your skill with some property assignments that can help you setup background images, background dim, timeout and grace time properties to give you the control you need for rendereing an experience. In your GUI Skill you can use:
+When you design your skill with QML, Mycroft-GUI frameworks provides you with some base delegates you should use when designing your GUI skill. The base delegates provide you with a basic presentation layer for your skill with some property assignments that can help you setup background images, background dim, timeout and grace time properties to give you the control you need for rendering an experience. In your GUI Skill you can use:
 
-- Mycroft.Delegate: *Needs Description*
+* Mycroft.Delegate: _Needs Description_
 
   Simple display Image and Text Example using Mycroft.Delegate
 
-  ```
+  ```text
   import Mycroft 1.0 as Mycroft
-  
+
   Mycroft.Delegate {
       skillBackgroundSource: sessionData.exampleImage
       ColumnLayout {
@@ -136,22 +139,22 @@ When you design your skill with QML, Mycroft-GUI frameworks provides you with so
   }
   ```
 
-- Mycroft.ScrollableDelegate: *Needs Description*
+* Mycroft.ScrollableDelegate: _Needs Description_
 
   Example of using Mycroft.ScrollableDelegate
 
-  ```
+  ```text
   import QtQuick 2.4
   import QtQuick.Controls 2.2
   import QtQuick.Layouts 1.4
   import org.kde.kirigami 2.4 as Kirigami
   import Mycroft 1.0 as Mycroft
-  
+
   Mycroft.ScrollableDelegate{
       id: root
       skillBackgroundSource: sessionData.background
       property var sampleModel: sessionData.sampleBlob
-  
+
       Kirigami.CardsListView {
           id: exampleListView
           Layout.fillWidth: true
@@ -197,11 +200,11 @@ When you design your skill with QML, Mycroft-GUI frameworks provides you with so
   }
   ```
 
-##### Using Mycroft Framework Components
+#### Using Mycroft Framework Components
 
-#### Simple template based text and image skill displays
+### Simple template based text and image skill displays
 
-Designing a simple skill and only want to display text or images ? Mycroft GUI framwork and Mycroft enclosure API provides ready to use QML based template wrappers that can minimalisticly display simple skills data such as text and images. In the example below we will showcase how to create a simple voice skill that displays simple text on your mycroft enabled device with a display.
+Designing a simple skill and only want to display text or images ? Mycroft GUI framework and Mycroft enclosure API provides ready to use QML based template wrappers that can minimalisticly display simple skills data such as text and images. In the example below we will showcase how to create a simple voice skill that displays simple text on your Mycroft enabled device with a display.
 
 **Text Example:**
 
@@ -235,7 +238,7 @@ self.gui.show_url("https://mycroft.ai")
 
 **HTML Raw Example**
 
-```
+```text
 ...
 def handle_hello_world(self, message):
 ...
@@ -267,7 +270,7 @@ self.gui.show_html(rawhtmlexample)
 ...
 ```
 
-#### Advanced skill displays using QML
+### Advanced skill displays using QML
 
 **Display Lottie Animations**:
 
@@ -275,7 +278,7 @@ You can use the `LottieAnimation` item just like any other `QtQuick` element, su
 
 **QML Example**
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -301,7 +304,7 @@ Contains an image that will slowly scroll in order to be shown completely
 
 **QML Example**
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -323,7 +326,7 @@ Takes a long text and breaks it down into pages that can be horizontally swiped
 
 **QML Example**
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -340,7 +343,7 @@ Mycroft.Delegate {
 
 **Display A Vertical ListView With Information Cards**
 
-Kirigami CardsListView is a ListView which can have AbstractCard as its delegate: it will automatically assign the proper spacings and margins around the cards adhering to the design guidelines.
+Kirigami CardsListView is a ListView which can have AbstractCard as its delegate: it will automatically assign the proper spacing and margins around the cards adhering to the design guidelines.
 
 **Python Skill Example**
 
@@ -355,7 +358,7 @@ self.gui.show_page("foodplaces.qml")
 
 **QML Example**
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -436,13 +439,13 @@ Mycroft.Delegate{
 
 **Using Proportional Delegate For Simple Display Skills & Auto Layout**
 
-**ProportionalDelegate** is a delegate which has proportional paddings and a columnlayout as mainItem. The delegate supports a proportionalGridUnit which is based upon its size and the contents are supposed to be scaled proportionally to the delegate size either directly or using the proportionalGridUnit.
+**ProportionalDelegate** is a delegate which has proportional padding and a columnlayout as mainItem. The delegate supports a proportionalGridUnit which is based upon its size and the contents are supposed to be scaled proportionally to the delegate size either directly or using the proportionalGridUnit.
 
 **AutoFitLabel** is a label that will always scale its text size according to the item size rather than the other way around
 
 **QML Example**
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -472,11 +475,11 @@ Mycroft.ProportionalDelegate {
 
 **Using Slideshow Component To Show Cards Slideshow**
 
-Slideshow component lets you insert a slideshow yith your custom delegate in any skill display which can be tuned to autoplay and loop and also scrolled or flicked manually by the user.
+Slideshow component lets you insert a slideshow with your custom delegate in any skill display which can be tuned to autoplay and loop and also scrolled or flicked manually by the user.
 
 **QML Example**
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -520,13 +523,13 @@ Mycroft.Delegate {
 }
 ```
 
-##### Using AudioPlayer Component To Play Audio Files / Audio Streaming
+#### Using AudioPlayer Component To Play Audio Files / Audio Streaming
 
 AudioPlayer component is a custom wrapper around Qt Multimedia MediaPlayer, that gives the Skill Authors a basic responsive design audio player they can plug into their skills.
 
 **QML Example**
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -550,7 +553,7 @@ Mycroft.Delegate {
 }
 ```
 
-##### Event Handling
+#### Event Handling
 
 Mycroft GUI API provides an Event Handling Protocol between the skill and QML display which allow Skill Authors to forward events in either direction to an event consumer. Skill Authors have the ability to create any amount of custom events. Event names that start with "system." are available to all skills, like previous/next/pick.
 
@@ -571,7 +574,7 @@ Mycroft GUI API provides an Event Handling Protocol between the skill and QML di
 
 **QML Example**
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -607,7 +610,7 @@ Mycroft.Delegate {
 
 **QML Example**
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -630,7 +633,7 @@ Mycroft.Delegate {
 }
 ```
 
-##### Resting Faces
+#### Resting Faces
 
 The resting face API provides skill authors the ability to extend their skills to supply their own customized IDLE screens that will be displayed when there is no activity on the screen.
 
@@ -638,7 +641,7 @@ The resting face API provides skill authors the ability to extend their skills t
 
 **Python Skill Example**
 
-```
+```text
 from mycroft.skills.core import resting_screen_handler
 ...
 @resting_screen_handler('NameOfIdleScreen')
@@ -651,7 +654,7 @@ def handle_idle(self, message):
 
 **QML Example**
 
-```
+```text
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -661,7 +664,7 @@ import Mycroft 1.0 as Mycroft
 Mycroft.Delegate {
     id: root
     property var fooString: sessionData.exampleText
- 
+
     Kirigami.Heading {
         id: headerExample
         anchors.centerIn: parent
@@ -669,3 +672,4 @@ Mycroft.Delegate {
     }
 }
 ```
+

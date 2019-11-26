@@ -8,11 +8,11 @@ description: >-
 
 ## Prerequisites
 
-If you haven't already, check out our [Introduction to Skill Development](introduction.md). This walk through assumes you:
+If you haven't already, check out our [Introduction to Skill Development](./). This walk through assumes you:
 
 * Know some basic knowledge of [Python programming](https://www.python.org/),
 * have an account on [Github.com](https://github.com), and
-* have a [working version of Mycroft](../using-mycroft-ai/get-mycroft/).
+* have a [working version of Mycroft](../../using-mycroft-ai/get-mycroft/).
 
 ## Understand the flow of your Skill
 
@@ -27,7 +27,7 @@ Once you've given these some thought, you can get started.
 
 ## Mycroft Skills Kit \(MSK\)
 
-To setup the foundations of your Skill, we will use the [Mycroft Skills Kit \(MSK\)](next-steps/mycroft-skills-kit.md) that comes installed with Mycroft. If you chose the defaults during installation, you can run MSK from your Terminal using the command: `mycroft-msk`. Running this command without any arguments will provide a brief overview of what you can do with MSK.
+To setup the foundations of your Skill, we will use the [Mycroft Skills Kit \(MSK\)](../../mycroft-technologies/mycroft-skills-kit.md) that comes installed with Mycroft. If you chose the defaults during installation, you can run MSK from your Terminal using the command: `mycroft-msk`. Running this command without any arguments will provide a brief overview of what you can do with MSK.
 
 If you receive a "command not found", then you will need to run `msk` manually from your `mycroft-core` directory. Anytime you see `mycroft-msk` in our documentation you must replace this with:
 
@@ -46,7 +46,7 @@ To create your first Skill, you will be asked for a:
 7. Categories  The [Mycroft Skills Marketplace](https://market.mycroft.ai) categories your Skill belongs to. It's important to note that the first category you select will be set as the default category. This is where your Skill will most often appear in the Marketplace. 
 8. Tags  Tags provide an additional means for Users to search for or discover relevant Skills. Unlike categories, you can set your tags to anything you like.
 
-After inputting this data you will be asked if you would like a Github repo created for your Skill. This provides an easy way to store your Skill, and will be required if you choose to [publish your Skill in the Marketplace](marketplace-submission/).
+After inputting this data you will be asked if you would like a Github repo created for your Skill. This provides an easy way to store your Skill, and will be required if you choose to [publish your Skill in the Marketplace](../marketplace-submission/).
 
 If you have completed all of these steps, your Skill will have been created in the `/opt/mycroft/skills` directory on your device.
 
@@ -233,13 +233,13 @@ This file contains the full text of the license your Skill is being distributed 
 
 ### README.md
 
-The README file contains human readable information about your Skill. The information in this file is used to generate the Skills entry in the [Marketplace](https://market.mycroft.ai). More information about this file, can be found in the [Marketplace Submission section](marketplace-submission/skill-readme-md.md).
+The README file contains human readable information about your Skill. The information in this file is used to generate the Skills entry in the [Marketplace](https://market.mycroft.ai). More information about this file, can be found in the [Marketplace Submission section](../marketplace-submission/skill-readme-md.md).
 
 ### settingsmeta.yaml
 
 This file defines the settings that will be available to a User through their account on [Home.Mycroft.ai](https://home.mycroft.ai/skills).
 
-Jump to [Skill Settings](next-steps/skill-settings.md) for more information on this file and handling of Skill settings.
+Jump to [Skill Settings](../skill-settings.md) for more information on this file and handling of Skill settings.
 
 ## What have we learned
 

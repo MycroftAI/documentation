@@ -33,9 +33,9 @@
 
 ## Skill Development
 
-* [Introduction to Skill Development](skill-development/intro/introduction.md)
-  * [Your First Skill](skill-development/intro/your-first-skill.md)
-  * [Logging](skill-development/intro/logging.md)
+* [Introduction to Skill Development](skill-development/introduction/README.md)
+  * [Your First Skill](skill-development/introduction/your-first-skill.md)
+  * [Logging](skill-development/introduction/logging.md)
 * [Intents](skill-development/intents/README.md)
   * [Padatious Intents](skill-development/intents/padatious-intents.md)
   * [Adapt Intents](skill-development/intents/adapt-intents.md)
@@ -45,9 +45,9 @@
   * [Requirements files](skill-development/dependencies/requirements-files.md)
 * [User interaction](skill-development/user-interaction/README.md)
   * [Conversational Context](skill-development/user-interaction/conversational-context.md)
-* [Displaying information](skill-development/mycroft-gui/README.md)
-  * [GUI Framework](skill-development/mycroft-gui/mycroft-gui.md)
-  * [Mark 1 Display](skill-development/mycroft-gui/mark-1-display.md)
+* [Displaying information](skill-development/displaying-information/README.md)
+  * [GUI Framework](skill-development/displaying-information/mycroft-gui.md)
+  * [Mark 1 Display](skill-development/displaying-information/mark-1-display.md)
 * [Testing](skill-development/testing/README.md)
   * [Automatic Testing](skill-development/testing/automatic-testing.md)
 * [Skill Types](skill-development/skill-types/README.md)
@@ -83,3 +83,4 @@
 * [Mycroft Skills Kit](mycroft-technologies/mycroft-skills-kit.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
+

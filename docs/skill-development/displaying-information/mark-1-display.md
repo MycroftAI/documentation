@@ -2,7 +2,7 @@
 description: How to make use of the enclosure display on the Mark 1.
 ---
 
-# Display Control
+# Mark 1 Display
 
 ## About **Enclosures**
 
