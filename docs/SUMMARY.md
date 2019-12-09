@@ -7,6 +7,7 @@
 * [Why use Mycroft AI?](about-mycroft-ai/why-use-mycroft.md)
 * [Glossary of terms](about-mycroft-ai/glossary.md)
 * [Contributing](about-mycroft-ai/contributing.md)
+* [FAQ](about-mycroft-ai/faq.md)
 
 ## Using Mycroft AI
 
