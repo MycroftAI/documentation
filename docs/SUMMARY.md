@@ -63,6 +63,7 @@
     * [Combined Template](skill-development/marketplace-submission/skills-acceptance-process/skills-review-template.md)
   * [Skill README.md](skill-development/marketplace-submission/skill-readme-md.md)
 * [Repurposing Skills](skill-development/repurposing-skills.md)
+* [Python Resources](skill-development/python-resources.md)
 * [Common Issues](skill-development/common-issues.md)
 * [FAQ](skill-development/faq.md)
 
@@ -84,4 +85,3 @@
 * [Mycroft Skills Kit](mycroft-technologies/mycroft-skills-kit.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
-

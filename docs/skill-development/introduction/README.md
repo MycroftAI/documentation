@@ -14,7 +14,7 @@ Mycroft Skills are the voice applications that provide different functionality f
 
 Skills for Mycroft are written using the [Python programming language](https://www.python.org/). A simple Skill can be a great way for new developers to try Python out in a real project, whilst experienced programmers will quickly see the powerful possibilities available in a well crafted Skill.
 
-If you aren't familiar with the basics of Python, check out our [list of Python tutorials and resources](https://github.com/MycroftAI/documentation/tree/156204fdccf839a4d5c57bf46f38c17ac1fee4eb/docs/skill-development/python-resources.md) to get you started. If you've programmed in other object-oriented languages, like Javascript or C\#, then you'll be able to pick it up, but if you're totally new to programming, you might want to look at an [introductory programming course](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11).
+If you aren't familiar with the basics of Python, check out our [list of Python tutorials and resources](../python-resources.md) to get you started. If you've programmed in other object-oriented languages, like Javascript or C\#, then you'll be able to pick it up, but if you're totally new to programming, you might want to look at an [introductory programming course](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11).
 
 ### Github account
 
@@ -45,4 +45,3 @@ You'll notice some new terms as you start to develop Skills.
 * **intent** - Mycroft matches utterances that a User speaks with a Skill by determining an intent from the utterance. For example, if a User speaks `Hey Mycroft, what's the weather like in Toronto?` then the intent will be identified as _weather_ and matched with the _Weather Skill_. When you develop new Skills, you need to define new intents.
 
 If you encounter anything else you're not familiar with, checkout the [Mycroft Glossary](../../about-mycroft-ai/glossary.md).
-
