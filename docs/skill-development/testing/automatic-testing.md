@@ -72,35 +72,47 @@ A test case file understands the following `JSON` keywords:
 | Keyword | Description |
 | :--- | :--- |
 | utterance | The text to send to the skill, like it was a spoken command |
-| remove\_context | A list of contexts to remove before sending the utterance |
-| set\_context | A list of contexts and corresponding strings to set before sending the utterance |
 | intent\_type | Assert that this intent name, as defined in the skills `__init__.py` code, is used |
 | intent.parameter | Assert that a message parameter has a certain value. Repeating field. |
-| expected\_response | Assert that the skill speaks a response that matches this regular expression |
-| expected\_dialog | Assert that the skill responds with a response from a certain dialog file |
 | expected\_data | Assert that a message is sent with the expected data. Takes a sub dictionary as argument |
+| expected\_dialog | Assert that the skill responds with a response from a certain dialog file |
+| expected\_response | Assert that the skill speaks a response that matches this regular expression |
+| response | A list of strings to send as follow up responses if prompted |
 | evaluation\_timeout | The default timeout is 30 seconds. If a skill takes longer than this to finish, the evaluation\_timeout can be set |
+| set\_context | A list of contexts and corresponding strings to set before sending the utterance |
+| remove\_context | A list of contexts to remove before sending the utterance |
 | changed\_context | Assert that a list of contexts was set or removed |
 | assert | Assert that a rule, expressed in the internal test runner format, is true |
 | settings | Provides a custom temporary settings structure for the test, replacing the normal settings.json. |
 
-Below is an example test case file:
-
-```text
+Here is a simple example based on the Timer Skill:
+```JSON
 {
-"utterance": "add milk to the grocery list",
-"remove_context": ["UndoContext", "ConfirmContext"],
-"set_context": {"_TestRunner": "data", "test": ""},
-"intent_type": "AddTaskToListIntent",
-"intent": {
-"taskName": "milk",
-"listName": "grocery",
-"AddTaskToListKeyword": "add"
-},
-"expected_response": "I can't find a list called grocery.*",
-"evaluation_timeout": 10,
-"changed_context": ["UndoContext", "ConfirmContext"],
-"assert": "[['equal', 'context', 'UndoContext'], ['equal', 'context', 'ConfirmContext']]"
+  "utterance": "start a timer",
+  "intent_type": "start.timer.intent",
+  "expected_dialog": "ask.how.long",
+  "responses": ["1 minute"],
+  "expected_dialog": "started.timer"
+}
+```
+
+Or we can get more complicated:
+
+```JSON
+{
+  "utterance": "add milk to the grocery list",
+  "remove_context": ["UndoContext", "ConfirmContext"],
+  "set_context": {"_TestRunner": "data", "test": ""},
+  "intent_type": "AddTaskToListIntent",
+  "intent": {
+    "taskName": "milk",
+    "listName": "grocery",
+    "AddTaskToListKeyword": "add"
+  },
+  "expected_response": "I can't find a list called grocery.*",
+  "evaluation_timeout": 10,
+  "changed_context": ["UndoContext", "ConfirmContext"],
+  "assert": "[['equal', 'context', 'UndoContext'], ['equal', 'context', 'ConfirmContext']]"
 }
 ```
 
@@ -108,13 +120,13 @@ In the example above, some of the things asserted are not really needed, they ar
 
 A snippet of the **Intent** to be tested looks like this:
 
-```text
-@intent_handler(IntentBuilder('AddTaskToListIntent').require('AddTaskToListKeyword').require(TASK_PARAMETER).
-require(LIST_PARAMETER).optionally('_TestRunner').build())
+```Python
+@intent_handler(IntentBuilder('AddTaskToListIntent').require('AddTaskToListKeyword')
+.require(TASK_PARAMETER).require(LIST_PARAMETER).optionally('_TestRunner').build())
 def add_task_to_list_intent(self, message):
-try:
-if message.data.get('_TestRunner'):
-print("Initiated by the test runner")
+  try:
+    if message.data.get('_TestRunner'):
+    print("Initiated by the test runner")
 ```
 
 And the message regular expression from the `regex/en-us` directory is: `add (?P.+) to (?P.+) list$`
@@ -164,16 +176,16 @@ The example test case above is actually transformed into:
 
 ```text
 [
-['and',
-['endsWith', 'intent_type', 'AddTaskToListIntent'], ['equal', 'listName', 'none'],
-['equal', 'taskName', 'some'],
-['equal', 'AddTaskToListKeyword', 'add']
-],
-['match', 'utterance', "I can't find a list called none.*"],
-['equal', 'context', 'UndoContext'],
-['equal', 'context', 'ConfirmContext'],
-['equal', 'context', 'UndoContext'],
-['equal', 'context', 'ConfirmContext']
+  ['and',
+    ['endsWith', 'intent_type', 'AddTaskToListIntent'], ['equal', 'listName', 'none'],
+    ['equal', 'taskName', 'some'],
+    ['equal', 'AddTaskToListKeyword', 'add']
+  ],
+  ['match', 'utterance', "I can't find a list called none.*"],
+  ['equal', 'context', 'UndoContext'],
+  ['equal', 'context', 'ConfirmContext'],
+  ['equal', 'context', 'UndoContext'],
+  ['equal', 'context', 'ConfirmContext']
 ]
 ```
 
@@ -182,14 +194,16 @@ The double test of contexts in the end is due to both using `changed_context` an
 The internal test format above is actually quite powerful. The code already supports that operations can be nested to any depth, for instance:
 
 ```text
-[['and',
-['endsWith', 'type', 'AddTaskToListIntent'],
-['or',
-['equal', ['data', 'listName'], 'none'],
-['equal', ['data', 'taskName'], 'some']
-],
-['equal', ['data', 'AddTaskToListKeyword'], 'add']
-]]
+[
+  ['and',
+    ['endsWith', 'type', 'AddTaskToListIntent'],
+    ['or',
+    ['equal', ['data', 'listName'], 'none'],
+    ['equal', ['data', 'taskName'], 'some']
+    ],
+    ['equal', ['data', 'AddTaskToListKeyword'], 'add']
+  ]
+]
 ```
 
 and besides "and" also "or" and "not" are supported. Likewise the operations “equal”, “notEqual”, “endsWith” and “match” are supported, where match is regular expression matching.
@@ -251,10 +265,10 @@ To see this more clearly, it sometimes pays off to reformat the rule status:
 
 ```text
 [
-['and',
-['endsWith', 'intent_type', 'PairingIntent', 'succeeded'],
-['equal', 'DevicePairingPhrase', 'pair my device']
-]
+  ['and',
+    ['endsWith', 'intent_type', 'PairingIntent', 'succeeded'],
+    ['equal', 'DevicePairingPhrase', 'pair my device']
+  ]
 ]
 ```
 
@@ -318,4 +332,3 @@ Please paste a copy of the automated **Skill** testing output as a comment in th
 ## Where can I go to get more assistance?
 
 Join us in the [~skills channel in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
-
