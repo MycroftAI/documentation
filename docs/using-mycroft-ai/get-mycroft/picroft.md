@@ -16,7 +16,7 @@ description: >-
 
 ## About Picroft
 
-Picroft is based on [Raspbian Stretch Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
+Picroft is based on [Raspbian Buster Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
 
 Picroft is entirely open source, and PRs and Issues are warmly welcomed on the [Picroft GitHub repo](https://github.com/MycroftAI/enclosure-picroft).
 
@@ -28,7 +28,7 @@ In order to set up Picroft, you will need to have a basic understanding of the L
 
 | Model | Level of support |
 | :--- | :--- |
-| Pi4 | [Not yet supported](https://community.mycroft.ai/t/will-picroft-work-with-the-new-raspberry-pi-4/6847/) |
+| Pi4 | Supported |
 | Pi3 B+ | Supported |
 | Pi3 B | Supported |
 | Pi 2 | Functions very slowly, limited wifi support |
@@ -461,4 +461,3 @@ You also need to install some additional packages:
 `sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
 
 This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill.
-
