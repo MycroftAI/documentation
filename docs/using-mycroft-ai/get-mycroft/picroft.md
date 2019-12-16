@@ -403,7 +403,7 @@ For more help or ideas, consider joining our [Picroft channel on Mycroft Chat](h
 
 There are several commands that are packaged into Picroft to help you with advanced functionality:
 
-* `mycroft-cli=client`: This command will start the Mycroft CLI client if you are on the Linux command line
+* `mycroft-cli-client`: This command will start the Mycroft CLI client if you are on the Linux command line
 * `mycroft-help`: This command brings up help information
 * `mycroft-mic-test`: This command re-runs the microphone test from the guided setup
 * `mycroft-msk`: This command runs the [Mycroft Skills Kit](../../mycroft-technologies/mycroft-skills-kit.md)
