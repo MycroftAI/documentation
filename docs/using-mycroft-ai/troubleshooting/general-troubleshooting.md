@@ -92,6 +92,24 @@ Nmap done: 1 IP address (1 host up) scanned in 19.56 seconds
 
 ## Troubleshooting Linux
 
+### AttributeError: '_curses.window' object has no attribute 'get_wch' (with a custom Python installation)
+
+Some custom installations of Python (with systems such as [pyenv](https://github.com/pyenv/pyenv/)) may get this error when running the interactive Mycroft terminal client.  This error occurs because `curses` wide character support hasn't been fully built into the custom Python installation.
+
+The following explanation and instructions are specific to Ubuntu Linux (where [this issue](https://github.com/MycroftAI/mycroft-core/issues/2426) was found) but can be used as a general guide for other distributions as needed.
+
+To resolve this issue, make sure that the following packages are installed:
+
+    sudo apt install libncursesw5 libncursesw5-dev
+
+These packages provide "shared libraries for terminal handling (wide character support)".
+
+After these packages are installed, recompile your Python installation.  For pyenv, the command would be:
+
+    pyenv install <python-version>
+    
+It will ask for confirmation that you want to rebuild the Python version.  After confirming the rebuild, your new Python installation should no longer show the above error when running the Mycroft terminal client.
+
 ## Troubleshooting Skills development
 
 ### Skill fails on first run with `ERROR - Failed to load skill`
