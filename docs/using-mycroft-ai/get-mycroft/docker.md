@@ -149,8 +149,10 @@ This would remove the above Basic Helper Skill.
 ## Troubleshooting
 
 ### Text-to-speech not working
+
 There have been reports that `mimic` may not be properly added to the PATH. Restarting Mycroft within the Docker container can resolve this.
 
 ### Getting help
 
 Mycroft for Docker is community-supported. You are welcome to join the [Mycroft Chat Docker channel](https://chat.mycroft.ai/community/channels/docker).
+

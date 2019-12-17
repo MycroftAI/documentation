@@ -45,3 +45,4 @@ You'll notice some new terms as you start to develop Skills.
 * **intent** - Mycroft matches utterances that a User speaks with a Skill by determining an intent from the utterance. For example, if a User speaks `Hey Mycroft, what's the weather like in Toronto?` then the intent will be identified as _weather_ and matched with the _Weather Skill_. When you develop new Skills, you need to define new intents.
 
 If you encounter anything else you're not familiar with, checkout the [Mycroft Glossary](../../about-mycroft-ai/glossary.md).
+

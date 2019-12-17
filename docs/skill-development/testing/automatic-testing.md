@@ -86,7 +86,8 @@ A test case file understands the following `JSON` keywords:
 | settings | Provides a custom temporary settings structure for the test, replacing the normal settings.json. |
 
 Here is a simple example based on the Timer Skill:
-```JSON
+
+```javascript
 {
   "utterance": "start a timer",
   "intent_type": "start.timer.intent",
@@ -98,7 +99,7 @@ Here is a simple example based on the Timer Skill:
 
 Or we can get more complicated:
 
-```JSON
+```javascript
 {
   "utterance": "add milk to the grocery list",
   "remove_context": ["UndoContext", "ConfirmContext"],
@@ -120,7 +121,7 @@ In the example above, some of the things asserted are not really needed, they ar
 
 A snippet of the **Intent** to be tested looks like this:
 
-```Python
+```python
 @intent_handler(IntentBuilder('AddTaskToListIntent').require('AddTaskToListKeyword')
 .require(TASK_PARAMETER).require(LIST_PARAMETER).optionally('_TestRunner').build())
 def add_task_to_list_intent(self, message):
@@ -332,3 +333,4 @@ Please paste a copy of the automated **Skill** testing output as a comment in th
 ## Where can I go to get more assistance?
 
 Join us in the [~skills channel in Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
+
