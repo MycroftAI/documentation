@@ -36,6 +36,7 @@
 
 * [Introduction to Skill Development](skill-development/introduction/README.md)
   * [Your First Skill](skill-development/introduction/your-first-skill.md)
+  * [Lifecycle Methods](skill-development/introduction/lifecycle-methods.md)
   * [Logging](skill-development/introduction/logging.md)
 * [Intents](skill-development/intents/README.md)
   * [Padatious Intents](skill-development/intents/padatious-intents.md)
@@ -85,4 +86,3 @@
 * [Mycroft Skills Kit](mycroft-technologies/mycroft-skills-kit.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
-
