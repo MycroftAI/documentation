@@ -1,12 +1,12 @@
 ---
 description: >-
   Mycroft Skills provide a number of methods to perform actions at different
-  points during the lifecycle of the Class.
+  points during the lifecycle of the Class instance.
 ---
 
 # Lifecycle Methods
 
-The MycroftSkill class that all Skills inherit from contains a number of methods that can be overridden by the subclass. This enables a Skill to execute code at specific points in the lifecycle of a Skill. Each of these is optional, none are required to be defined in your Skill.
+The MycroftSkill class that all Skills inherit from contains a number of methods that can be overridden by an instance of the Class. This enables a Skill to execute code at specific points in the lifecycle of a Skill. Each of these is optional, meaning none are required to be defined in your Skill.
 
 ## **\_\_init\_\_**
 
@@ -14,7 +14,7 @@ The `__init__` method is called when the Skill is first constructed. It is often
 
 This method is optional, but if used, the `__init__` method from the Super Class \(MycroftSkill\) must be called.
 
-In the following example we assign a variable `learning` to be `True`. The variable is appended to the Skill's class using `self` so that we can access this variable in any part of our Skill.
+In the following example we assign a variable `learning` to be `True`. The variable is appended to the instance using `self` so that we can access this variable in any part of our Skill.
 
 ```python
     def __init__(self):
