@@ -30,7 +30,11 @@ An instructional overview is available on the [Precise repository on Github](htt
 
 ### Configuring Your Precise Wake Word
 
-Once you have your Wake Word model, you must tell Mycroft which model you want to use. This is done through the [`mycroft.conf` file](mycroft-conf.md).
+Once you have your Wake Word model, you must tell Mycroft which model you want to use in your [`mycroft.conf`](mycroft-conf.md) file. This is best done using the [Configuration Manager](config-manager.md). To edit your User level configuration run:
+
+```bash
+mycroft-config edit user
+```
 
 For this example we shall use a pre-trained model `computer-en.pb`.
 
@@ -158,7 +162,7 @@ For the `Yo Mike` example we started with, an example `~/.mycroft/mycroft.conf` 
 Mycroft doesn't automatically apply new settings when the `mycroft.conf` file is modified. You must restart Mycroft by rebooting the device, or using the command:
 
 ```bash
-mycroft-start restart all
+mycroft-config reload
 ```
 
 ## Switching Wake Word Listeners
