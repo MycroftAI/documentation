@@ -1,19 +1,26 @@
+---
+description: >-
+  You might want to change the Wake Word to a phrase that's easier for you to
+  speak, is more culturally appropriate, or just more personal and fun for you.
+---
+
 # Using a Custom Wake Word
 
-Like its name suggests, a Wake Word Listener's job is to continually listen to sounds and speech around the Device, and activate when the sounds or speech match a Wake Word. You might want to change the Wake Word to a phrase that's easier for you to speak, is more culturally appropriate, or just more personal and fun for you.
+Like its name suggests, a Wake Word Listener's job is to continually listen to sounds and speech around the Device, and activate when the sounds or speech match a Wake Word. 
 
 Mycroft provides an open source Wake Word Listener called Precise. However we also provide native support for PocketSphinx, and other technologies can be added and utilized. Here we will look at how to use custom Wake Words using Precise and PocketSphinx.
 
 At a high-level Precise provides more accurate and reliable results, but requires the collection of voice samples and some experience in machine learning to train a new Wake Word. PocketSphinx on the other hand can be used to quickly configure any new Wake Word through a text configuration file, but provides less reliable results.
 
 ## Precise
+
 Precise is the default Wake Word Listener and handles detection of "Hey Mycroft" for the majority of Mycroft Users.
 
 Precise is based on a neural network that is trained on _sound patterns_ rather than _word patterns_. This reduces the dependence it has on particular languages or accents.
 
 ### Available Wake Word Models
-The Mycroft Community have started a repository of Precise training data and pre-trained models that can be used. These are available at:
-https://github.com/MycroftAI/precise-community-data
+
+The Mycroft Community have started a repository of Precise training data and pre-trained models that can be used. These are available at: [https://github.com/MycroftAI/precise-community-data](https://github.com/MycroftAI/precise-community-data)
 
 ### Training a Wake Word Model
 
@@ -27,9 +34,9 @@ Once you have your Wake Word model, you must tell Mycroft which model you want t
 
 For this example we shall use a pre-trained model `computer-en.pb`.
 
-We will first define our Wake Word and any attributes we want to give it. Each hotword is declared as it's own block under the `hotwords` key. The name of this block defines the name of the Wake Word. For this example, we will call our Wake Word `computer`. Each Precise Wake Word settings block must include at least the Wake Word `module` being used (in our case `precise`), and the location of the model file on the device.
+We will first define our Wake Word and any attributes we want to give it. Each hotword is declared as it's own block under the `hotwords` key. The name of this block defines the name of the Wake Word. For this example, we will call our Wake Word `computer`. Each Precise Wake Word settings block must include at least the Wake Word `module` being used \(in our case `precise`\), and the location of the model file on the device.
 
-```JSON
+```javascript
 "hotwords": {
   "computer": {
       "module": "precise",
@@ -42,7 +49,7 @@ Multiple Wake Words can be declared in this fashion, but only one can be active 
 
 To define which Wake Word will be active, under `listener` we must add a `wake_word` attribute and provide it the name of our Wake Word. In our example it would be:
 
-```JSON
+```javascript
 "listener": {
   "wake_word": "computer"
 }
@@ -52,7 +59,7 @@ To define which Wake Word will be active, under `listener` we must add a `wake_w
 
 Putting the example above together in an otherwise unmodified User level `mycroft.conf`, would be:
 
-```JSON
+```javascript
 {
   "max_allowed_core_version": 19.8,
   "listener": {
@@ -90,26 +97,40 @@ You can see the similarity when these words are written as phonemes:
 * `JH UW S .` = juice
 * `JH AY AH N T .` = giant
 
-The period (or full stop) indicates the end of a word.
+The period \(or full stop\) indicates the end of a word.
 
 ### Other Settings
 
 Other settings are available to further tune how sensitive the Speech to Text \(STT\) engine is in recognizing the Wake Word.
 
 * **Sample rate \(Hz\)**  
+
   The rate at which the audio stream is sampled. The default is 16KHz. You shouldn't need to change this, unless the microphone you are using needs a much higher or lower sample rate.
+
 * **Channels**  
+
   The audio channel that should be sampled for the Wake Word. The default is 1, and you shouldn't have to change this unless your microphone is not operating on audio channel 1.
+
 * **Wake Word**  
+
   In plain English text, the Wake Word that Mycroft should listen for.
+
 * **Phonemes**  
+
   The phonemes corresponding to the Wake Word. If your Wake Word phrase is more than one word, remember to include a period \(.\) at the end of each phoneme.
+
 * **Threshold \(scientific notation\)**  
+
   The level of sensitivity at which the Wake Word should trigger Mycroft to respond. To _increase_ the sensitivity, _reduce_ the Threshold. The Threshold is given in [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation). Use this [handy converter](http://www.easysurf.cc/scintd.htm) to convert between decimal and scientific notation.
+
 * **Threshold multiplier \(float\)**  
+
   This multiplier acts on the Threshold, and may be an easier way to make adjustments rather than scientific notation.
+
 * **Dynamic Energy Ratio \(float\)**  
+
   Dynamic Energy Ratio \(DER\) is one signal feature used in [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) to identify characteristics of audio, such as whether a person has stopped or started speaking. DER is similar to signal-to-noise-ratio. A high ratio indicates a high difference in signal between speech and no speech, and a low ratio indicates a small difference in signal between speech and no speech.  
+
   If Mycroft is being _too sensitive_, reduce this value. If Mycroft _is not being sensitive enough_, increase this value.
 
 #### Adding PocketSphinx Settings to `mycroft.conf`
@@ -175,3 +196,4 @@ or
 If you are using Precise, Mycroft will respond:
 
 `"The current Listener is Precise"`
+
