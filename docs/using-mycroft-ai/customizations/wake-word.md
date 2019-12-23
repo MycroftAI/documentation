@@ -101,7 +101,7 @@ The period \(or full stop\) indicates the end of a word.
 
 ### Other Settings
 
-Other settings are available to further tune how sensitive the Speech to Text \(STT\) engine is in recognizing the Wake Word.
+Other settings are available to further tune how sensitive the Speech to Text \(STT\) engine is in recognizing the Wake Word. These are added to the `listener` block of your `mycroft.conf`.
 
 * **Sample rate \(Hz\)**  
 
@@ -141,13 +141,13 @@ For the `Yo Mike` example we started with, an example `~/.mycroft/mycroft.conf` 
 {
   "max_allowed_core_version": 19.2,
   "listener": {
-    "wake_word": "yo mike",
-    "threshold": 1e-18
+    "wake_word": "yo mike"
   },
   "hotwords": {
     "yo mike": {
       "module": "pocketsphinx",
-      "phonemes": "Y OW . M AY K ."
+      "phonemes": "Y OW . M AY K .",
+      "threshold": 1e-18
     }
   }
 }
