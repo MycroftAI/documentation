@@ -73,15 +73,7 @@ Unlike other accurate hotword detection products, Mycroft Precise is fully open 
 | **Porcupine** | ![](https://images2.imgbox.com/99/47/lm3vjOzO_o.png) | ![](https://images2.imgbox.com/c7/63/UVtCmPfa_o.png) | C, Python, Android | [Closed Binary](https://github.com/Picovoice/Porcupine/tree/master/tools/optimizer) | [License Fee](https://github.com/Picovoice/Porcupine#license) | [Picovoice/Porcupine](https://github.com/Picovoice/Porcupine) |
 | **PocketSphinx** | ![](https://images2.imgbox.com/c7/63/UVtCmPfa_o.png) | ![](https://images2.imgbox.com/99/47/lm3vjOzO_o.png) | Almost all | [Open Source Script](https://cmusphinx.github.io/wiki/tutorialam/) | Permitted | [cmusphinx/pocketsphinx](https://github.com/cmusphinx/pocketsphinx) |
 
-## Adding Custom Wake Words
-
-### PocketSphinx Wake Words
-
-The simplest method to add a custom Wake Word to Mycroft is to use PocketSphinx. This is done by defining the phonemes that make up the Wake Word, so does not require any training.
-
-First decide what your wake word will be and get the string of phonemes using the [CMU Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). Then add a `hotwords` block to your [`mycroft.conf` file](../using-mycroft-ai/customizations/mycroft-conf.md).
-
-### Precise Wake Word Models
+## Training Custom Wake Words
 
 Training your own custom Wake Word model for Precise requires at least functional experience using the Linux commandline and an understanding of basic machine learning concepts. It requires time and training data.
 
@@ -90,4 +82,3 @@ An instructional overview is available on the [Precise repository on Github](htt
 ## Additional Support
 
 If you have questions, you can reach out to others in the Community via the [Troubleshooting channel in Chat](https://chat.mycroft.ai/community/channels/troubleshooting).
-
