@@ -73,7 +73,15 @@ If you are looking for a low-cost option to try out Picroft, we can recommend th
 
 If Mycroft audio output fails \(No speech or audio\) when using some sort of USB sound card for output it might be worth trying to reset the play command lines used by Mycroft.
 
-To accomplish this, from your Terminal edit the file `/etc/mycroft/mycroft.conf` and set the following values as such:
+To accomplish this, from your Terminal edit the System level configuration using the [Configuration Manager](../customizations/config-manager.md) by running:
+
+```
+mycroft-config edit system
+```
+
+This file can also be edited directly at `/etc/mycroft/mycroft.conf`.
+
+In this configuration file, set the following values as such:
 
 ```json
 {
