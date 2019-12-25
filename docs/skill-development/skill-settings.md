@@ -72,7 +72,6 @@ Below is a JSON example of this structure from the `pianobar-skill`. You can see
 
 ```javascript
 {
-    "name": "Pandora",
     "skillMetadata": {
         "sections": [
             {
@@ -100,7 +99,6 @@ Below is a JSON example of this structure from the `pianobar-skill`. You can see
 Here is the same set of settings, as it would be configured with YAML:
 
 ```yaml
-name: Pandora
 skillMetadata:
    sections:
       - name: Login
@@ -118,10 +116,6 @@ skillMetadata:
 ### More information on the `settingsmeta` file
 
 You may use JSON or YAML to define your `settingsmeta` file. We recommend YAML, as most people find it easier to work with.
-
-#### name \(String\)
-
-The display name for this **Skill Setting** block. This will be shown on the [home.mycroft.ai](https://home.mycroft.ai) Skills page. The `name` can be multiple words, but should display on a single line.
 
 #### skillMetadata \(Object\)
 
