@@ -4,17 +4,21 @@ description: A configuration file that contains the device and service settings.
 
 # mycroft.conf
 
-### What is `mycroft.conf`?
+{% hint style="info" %}
+See a [list of all variables available within `mycroft.conf`](https://github.com/MycroftAI/mycroft-core/blob/master/mycroft/configuration/mycroft.conf)
+{% endhint %}
+
+## What is `mycroft.conf`?
 
 `mycroft.conf` is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft **Device**, such as Picroft or Mark 1. `mycroft-conf` contains information about the **Device** itself, like what type of **Device** and **Enclosure** it is, as well as information about user preferences. If you haven't specified preferences, then `mycroft.conf` will contain some default values. Your **Device**, and **Skills** installed on your **Device**, use `mycroft.conf` to provide additional functionality.
 
-### What is `mycroft_web_cache.json`?
+## What is `mycroft_web_cache.json`?
 
 `mycroft_web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft **Device**, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ \(which determines _Time Zone_\), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
 
 Both of these files are regularly used in troubleshooting, so it's useful to know what information they hold, and where they are stored on your **Device**.
 
-### How are `mycroft.conf` and `mycroft_web_cache.json` updated?
+## How are `mycroft.conf` and `mycroft_web_cache.json` updated?
 
 When you update settings at [home.mycroft.ai](https://home.mycroft.ai), your **Device** will periodically pull them down. However, this may not be fast enough to do what you want to do. To refresh your `mycroft.conf` from [home.mycroft.ai](https://home.mycroft.ai), Speak:
 
@@ -22,7 +26,7 @@ When you update settings at [home.mycroft.ai](https://home.mycroft.ai), your **D
 
 Mycroft will then pull the files down to your **Device**.
 
-### Where is the `mycroft.conf` file stored?
+## Where is the `mycroft.conf` file stored?
 
 The `mycroft.conf` file is stored in different locations on different **Devices**, including:
 
@@ -31,7 +35,7 @@ The `mycroft.conf` file is stored in different locations on different **Devices*
 
 Mycroft implements an order of precedence; settings at a User level override those at a System level.
 
-### A look at the inside of `mycroft.conf`
+## A look at the inside of `mycroft.conf`
 
 Here is an example System level `mycroft.conf` from a Mark 1 **Device**:
 
@@ -59,7 +63,7 @@ pi@mark_1:/etc/mycroft $ cat mycroft.conf
 See a [list of all variables available within `mycroft.conf`](https://github.com/MycroftAI/mycroft-core/blob/master/mycroft/configuration/mycroft.conf)\`\`
 {% endhint %}
 
-### Where is the `mycroft_web_cache.json` file stored?
+## Where is the `mycroft_web_cache.json` file stored?
 
 This file is stored at:
 
@@ -67,7 +71,7 @@ This file is stored at:
 
 on the **Device**.
 
-### A look at the inside of `mycroft_web_cache.json`
+## A look at the inside of `mycroft_web_cache.json`
 
 Here is an example `mycroft_web_cache.json`. _NOTE: Your settings will be different._
 
@@ -208,3 +212,4 @@ Here is an example `mycroft_web_cache.json`. _NOTE: Your settings will be differ
   "system_unit": "metric"
 }
 ```
+
