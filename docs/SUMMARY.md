@@ -75,6 +75,7 @@
 * [Mycroft Core](mycroft-technologies/mycroft-core/README.md)
   * [Audio Service](mycroft-technologies/mycroft-core/audio-service.md)
   * [MessageBus](mycroft-technologies/mycroft-core/message-bus.md)
+  * [Message Types](mycroft-technologies/mycroft-core/message-types.md)
   * [Mycroft Skills Manager](mycroft-technologies/mycroft-core/msm.md)
   * [Roadmap](mycroft-technologies/mycroft-core/mycroft-roadmap.md)
   * [Legacy Repo](mycroft-technologies/mycroft-core/legacy-repo.md)
