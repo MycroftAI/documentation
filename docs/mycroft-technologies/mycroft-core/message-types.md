@@ -323,3 +323,318 @@ Pairing Skill
 `client/speech/main.py`
 {% endtab %}
 {% endtabs %}
+
+## Audio Playback
+
+### mycroft.audio.service.play
+
+{% tabs %}
+{% tab title="Description" %}
+Start playback of tracklist
+{% endtab %}
+
+{% tab title="Producer" %}
+`skills/audioservice.py`
+playback-control
+{% endtab %}
+
+{% tab title="Consumer" %}
+`audio/main.py`
+{% endtab %}
+{% endtabs %}
+
+### mycroft.audio.service.stop
+
+{% tabs %}
+{% tab title="Description" %}
+Stop playback
+{% endtab %}
+
+{% tab title="Producer" %}
+`skills/audioservice.py`
+playback-control
+{% endtab %}
+
+{% tab title="Consumer" %}
+`audio/main.py`
+{% endtab %}
+{% endtabs %}
+
+### mycroft.audio.service.pause
+
+{% tabs %}
+{% tab title="Description" %}
+Pause playback (if supported)
+{% endtab %}
+
+{% tab title="Producer" %}
+`skills/audioservice.py`
+playback-control
+{% endtab %}
+
+{% tab title="Consumer" %}
+`audio/main.py`
+{% endtab %}
+{% endtabs %}
+
+### mycroft.audio.service.resume
+
+{% tabs %}
+{% tab title="Description" %}
+Resume playback (if supported)
+{% endtab %}
+
+{% tab title="Producer" %}
+`skills/audioservice.py`
+playback-control
+{% endtab %}
+
+{% tab title="Consumer" %}
+`audio/main.py`
+{% endtab %}
+{% endtabs %}
+
+### mycroft.audio.service.next
+
+{% tabs %}
+{% tab title="Description" %}
+Skip to next track
+{% endtab %}
+
+{% tab title="Producer" %}
+`skills/audioservice.py`
+playback-control
+{% endtab %}
+
+{% tab title="Consumer" %}
+`audio/main.py`
+{% endtab %}
+{% endtabs %}
+
+### mycroft.audio.service.prev
+
+{% tabs %}
+{% tab title="Description" %}
+Skip to previous track
+{% endtab %}
+
+{% tab title="Producer" %}
+`skills/audioservice.py`
+playback-control
+{% endtab %}
+
+{% tab title="Consumer" %}
+`audio/main.py`
+{% endtab %}
+{% endtabs %}
+
+### mycroft.audio.service.track_info
+
+{% tabs %}
+{% tab title="Description" %}
+Request track info from audio service
+{% endtab %}
+
+{% tab title="Producer" %}
+`skills/audioservice.py`
+playback-control
+{% endtab %}
+
+{% tab title="Consumer" %}
+`audio/main.py`
+{% endtab %}
+{% endtabs %}
+
+### mycroft.audio.service.track_info_reply
+
+{% tabs %}
+{% tab title="Description" %}
+Reply to track info request
+{% endtab %}
+
+{% tab title="Producer" %}
+`audio/main.py`
+{% endtab %}
+
+{% tab title="Consumer" %}
+`skills/audioservice.py`
+{% endtab %}
+{% endtabs %}
+
+### mycroft.audio.service.list_backends
+
+{% tabs %}
+{% tab title="Description" %}
+Returns list of available backends.
+{% endtab %}
+
+{% tab title="Producer" %}
+`skills/audioservice.py`
+playback-control
+{% endtab %}
+
+{% tab title="Consumer" %}
+`audio/main.py`
+{% endtab %}
+{% endtabs %}
+
+## Volume Control
+
+### mycroft.volume.increase
+
+{% tabs %}
+{% tab title="Description" %}
+Enclosure Volume up
+{% endtab %}
+
+{% tab title="Data" %}
+```
+{"play_sound": True}
+```
+{% endtab %}
+
+{% tab title="Producer" %}
+`client/enclosure/__init__.py`
+{% endtab %}
+
+{% tab title="Consumer" %}
+Volume Skill
+{% endtab %}
+{% endtabs %}
+
+### mycroft.volume.decrease
+
+{% tabs %}
+{% tab title="Description" %}
+Enclosure Volume down
+{% endtab %}
+
+{% tab title="Data" %}
+```
+{"play_sound": True}
+```
+{% endtab %}
+
+{% tab title="Producer" %}
+`client/enclosure/__init__.py`
+{% endtab %}
+
+{% tab title="Consumer" %}
+Volume Skill
+{% endtab %}
+{% endtabs %}
+
+### mycroft.volume.mute
+
+{% tabs %}
+{% tab title="Description" %}
+Enclosure Volume muted
+{% endtab %}
+
+{% tab title="Data" %}
+```
+{"speak_message": True}
+```
+{% endtab %}
+
+{% tab title="Producer" %}
+skill-naptime
+{% endtab %}
+
+{% tab title="Consumer" %}
+Volume Skill
+{% endtab %}
+{% endtabs %}
+
+### mycroft.volume.unmute
+
+{% tabs %}
+{% tab title="Description" %}
+Enclosure Volume unmuted
+{% endtab %}
+
+{% tab title="Data" %}
+```
+{"speak_message": True}
+```
+{% endtab %}
+
+{% tab title="Producer" %}
+skill-naptime
+{% endtab %}
+
+{% tab title="Consumer" %}
+Volume Skill
+{% endtab %}
+{% endtabs %}
+
+### mycroft.volume.set
+
+{% tabs %}
+{% tab title="Description" %}
+Set enclosure volume (0.0 = no output, 1.0 = loudest possible)
+{% endtab %}
+
+{% tab title="Data" %}
+```
+{"percent": float}
+```
+{% endtab %}
+
+{% tab title="Consumer" %}
+Volume Skill
+{% endtab %}
+{% endtabs %}
+
+### mycroft.volume.get
+
+{% tabs %}
+{% tab title="Description" %}
+Request volume level
+{% endtab %}
+{% endtabs %}
+
+### mycroft.volume.get.response
+
+{% tabs %}
+{% tab title="Description" %}
+
+{% endtab %}
+
+{% tab title="Data" %}
+```
+{
+    "percent": <volume percentage>,
+    "muted": <true/false>
+}
+```
+{% endtab %}
+
+{% tab title="Consumer" %}
+Enclosure (skill-mark-2)
+{% endtab %}
+{% endtabs %}
+
+### mycroft.volume.duck
+
+{% tabs %}
+{% tab title="Description" %}
+Reduce the volume level temporarilly
+{% endtab %}
+
+{% tab title="Consumer" %}
+Enclosure (skill-mark-2)
+{% endtab %}
+{% endtabs %}
+
+### mycroft.volume.unduck
+
+{% tabs %}
+{% tab title="Description" %}
+Restore the volume level
+{% endtab %}
+
+{% tab title="Consumer" %}
+Enclosure (skill-mark-2)
+{% endtab %}
+{% endtabs %}
