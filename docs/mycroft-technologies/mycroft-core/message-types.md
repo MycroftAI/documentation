@@ -15,23 +15,19 @@ See the [MessageBus documentation](message-bus.md) for further information on th
 
 ### speak
 
-{% tabs %}
-{% tab title="Description" %}
-Request to speak utterance
-{% endtab %}
+Request to speak utterance.
 
-{% tab title="Data" %}
-```
+**Data:**
+
+```text
 {"utterance": "words to be spoken", "lang": "en-us"}
 ```
-{% endtab %}
-{% endtabs %}
 
 ### mycroft.internet.connected
 
 {% tabs %}
 {% tab title="Description" %}
-Internet connection is now available (only generated on initial connection)
+Internet connection is now available \(only generated on initial connection\)
 {% endtab %}
 {% endtabs %}
 
@@ -55,7 +51,7 @@ Pairing Skill
 
 {% tabs %}
 {% tab title="Description" %}
-Stop command (e.g. button pressed)
+Stop command \(e.g. button pressed\)
 {% endtab %}
 {% endtabs %}
 
@@ -67,9 +63,7 @@ Start the pairing process when this event is emitted.
 {% endtab %}
 
 {% tab title="Producer" %}
-Pairing Skill
-Weather Skill
-Wolfram Alpha Skill
+Pairing Skill Weather Skill Wolfram Alpha Skill
 {% endtab %}
 
 {% tab title="Consumer" %}
@@ -89,7 +83,7 @@ Pairing Skill
 {% endtab %}
 
 {% tab title="Consumer" %}
-```
+```text
 skills/skill_manager.py
 enclosure/mark1/__init__.py
 enclosure/generic/__init__.py
@@ -111,11 +105,12 @@ Has come out of sleep mode
 {% tabs %}
 {% tab title="Description" %}
 Log `level` can be:
-- CRITICAL
-- ERROR
-- WARNING
-- INFO
-- DEBUG
+
+* CRITICAL
+* ERROR
+* WARNING
+* INFO
+* DEBUG
 
 These correspond to the Python logging object.
 
@@ -123,7 +118,7 @@ The `bus` parameter allows turning the logging of all bus messages on/off.
 {% endtab %}
 
 {% tab title="Data" %}
-```
+```text
 {
    ""level"" : <log level>,
    ""bus"": <True/False>
@@ -144,7 +139,7 @@ mycroft-mark-1
 {% endtab %}
 {% endtabs %}
 
-### complete_intent_failure
+### complete\_intent\_failure
 
 {% tabs %}
 {% tab title="Description" %}
@@ -162,7 +157,7 @@ Notification to services that the configuration has changed and needs reloaded
 
 ## Recognizer
 
-### recognizer_loop:wakeword
+### recognizer\_loop:wakeword
 
 {% tabs %}
 {% tab title="Description" %}
@@ -170,7 +165,7 @@ Wakeword was heard
 {% endtab %}
 
 {% tab title="Data" %}
-```
+```text
 {
     "utterance": <wakeword heard>,
     "session": <session ID>,
@@ -183,7 +178,7 @@ Wakeword was heard
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:record_begin
+### recognizer\_loop:record\_begin
 
 {% tabs %}
 {% tab title="Description" %}
@@ -195,7 +190,7 @@ Recording has started
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:record_end
+### recognizer\_loop:record\_end
 
 {% tabs %}
 {% tab title="Description" %}
@@ -207,46 +202,88 @@ Recording has ended
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:utterance
+### recognizer\_loop:utterance
 
-{% tabs %}
-{% tab title="Description" %}
 STT has detected the given text or text was injected as an utterance via the CLI.
-{% endtab %}
 
-{% tab title="Data" %}
-```
+**Data:**
+
+```text
 {
     "utterances": [text],
     "lang": self.stt.lang,
     "session": session_id
 }
 ```
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>client/speech/__main__.py</code>
+        </p>
+        <p><code>client/speech/listener.py</code>
+        </p>
+        <p><code>client/text/text_client.py</code>
+        </p>
+        <p><code>skills/__main__.py</code>
+        </p>
+      </td>
+      <td style="text-align:left">
+        <p><code>client/text/text_client.py</code>
+        </p>
+        <p><code>messagebus/client/client.py</code>
+        </p>
+        <p><code>skills/intent_service.py</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>**Usage:**
+
+{% tabs %}
+{% tab title="Message handler in MycroftSkill" %}
+```python
+...  
+def initialize(self):  
+    self.add_event('recognizer_loop:utterance',  
+                   self.handle_utterance)
+
+def handle_utterance(self, message):  
+    # code to excecute when recognizer_loop:utterance detected...
+...
+```
 {% endtab %}
 
-{% tab title="Producer" %}
-```
-client/speech/__main__.py
-client/speech/listener.py
-client/text/text_client.py
-skills/__main__.py
+{% tab title="Generating Message from MycroftSkill" %}
+```python
+...  
+def some_method(self):  
+    self.emitter.emit(Message('recognizer_loop:utterance',  
+                              {'utterances': ["inject a user utterance"],  
+                               'lang': 'en-us'}))  
+...
 ```
 {% endtab %}
 
-{% tab title="Consumer" %}
-```
-client/text/text_client.py
-messagebus/client/client.py
-skills/intent_service.py
+{% tab title="Command line invocation" %}
+```bash
+python3 -m mycroft.messagebus.send 'recognizer_loop:utterance' '{"utterances": ["inject a user utterance"], "lang": "en-us"}'
 ```
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:audio_output_start
+### recognizer\_loop:audio\_output\_start
 
 {% tabs %}
 {% tab title="Description" %}
-Text output (TTS) has started
+Text output \(TTS\) has started
 {% endtab %}
 
 {% tab title="Producer" %}
@@ -254,11 +291,11 @@ Text output (TTS) has started
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:audio_output_end
+### recognizer\_loop:audio\_output\_end
 
 {% tabs %}
 {% tab title="Description" %}
-Text output (TTS) has ended
+Text output \(TTS\) has ended
 {% endtab %}
 
 {% tab title="Producer" %}
@@ -266,15 +303,15 @@ Text output (TTS) has ended
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:sleep
+### recognizer\_loop:sleep
 
 {% tabs %}
 {% tab title="Description" %}
-Go into "sleep" mode.  Everything except "Hey Mycroft, wake up" will be ignored.
+Go into "sleep" mode. Everything except "Hey Mycroft, wake up" will be ignored.
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:wake_up
+### recognizer\_loop:wake\_up
 
 {% tabs %}
 {% tab title="Description" %}
@@ -296,7 +333,7 @@ Begin recording for STT processing
 
 {% tabs %}
 {% tab title="Description" %}
-Turn off the mic (no wakeword or STT processing)
+Turn off the mic \(no wakeword or STT processing\)
 {% endtab %}
 
 {% tab title="Producer" %}
@@ -312,7 +349,7 @@ Pairing Skill
 
 {% tabs %}
 {% tab title="Description" %}
-Turn on the mic (enable wakeword and STT processing)
+Turn on the mic \(enable wakeword and STT processing\)
 {% endtab %}
 
 {% tab title="Producer" %}
@@ -334,8 +371,7 @@ Start playback of tracklist
 {% endtab %}
 
 {% tab title="Producer" %}
-`skills/audioservice.py`
-playback-control
+`skills/audioservice.py` playback-control
 {% endtab %}
 
 {% tab title="Consumer" %}
@@ -351,8 +387,7 @@ Stop playback
 {% endtab %}
 
 {% tab title="Producer" %}
-`skills/audioservice.py`
-playback-control
+`skills/audioservice.py` playback-control
 {% endtab %}
 
 {% tab title="Consumer" %}
@@ -364,12 +399,11 @@ playback-control
 
 {% tabs %}
 {% tab title="Description" %}
-Pause playback (if supported)
+Pause playback \(if supported\)
 {% endtab %}
 
 {% tab title="Producer" %}
-`skills/audioservice.py`
-playback-control
+`skills/audioservice.py` playback-control
 {% endtab %}
 
 {% tab title="Consumer" %}
@@ -381,12 +415,11 @@ playback-control
 
 {% tabs %}
 {% tab title="Description" %}
-Resume playback (if supported)
+Resume playback \(if supported\)
 {% endtab %}
 
 {% tab title="Producer" %}
-`skills/audioservice.py`
-playback-control
+`skills/audioservice.py` playback-control
 {% endtab %}
 
 {% tab title="Consumer" %}
@@ -402,8 +435,7 @@ Skip to next track
 {% endtab %}
 
 {% tab title="Producer" %}
-`skills/audioservice.py`
-playback-control
+`skills/audioservice.py` playback-control
 {% endtab %}
 
 {% tab title="Consumer" %}
@@ -419,8 +451,7 @@ Skip to previous track
 {% endtab %}
 
 {% tab title="Producer" %}
-`skills/audioservice.py`
-playback-control
+`skills/audioservice.py` playback-control
 {% endtab %}
 
 {% tab title="Consumer" %}
@@ -428,7 +459,7 @@ playback-control
 {% endtab %}
 {% endtabs %}
 
-### mycroft.audio.service.track_info
+### mycroft.audio.service.track\_info
 
 {% tabs %}
 {% tab title="Description" %}
@@ -436,8 +467,7 @@ Request track info from audio service
 {% endtab %}
 
 {% tab title="Producer" %}
-`skills/audioservice.py`
-playback-control
+`skills/audioservice.py` playback-control
 {% endtab %}
 
 {% tab title="Consumer" %}
@@ -445,7 +475,7 @@ playback-control
 {% endtab %}
 {% endtabs %}
 
-### mycroft.audio.service.track_info_reply
+### mycroft.audio.service.track\_info\_reply
 
 {% tabs %}
 {% tab title="Description" %}
@@ -461,7 +491,7 @@ Reply to track info request
 {% endtab %}
 {% endtabs %}
 
-### mycroft.audio.service.list_backends
+### mycroft.audio.service.list\_backends
 
 {% tabs %}
 {% tab title="Description" %}
@@ -469,8 +499,7 @@ Returns list of available backends.
 {% endtab %}
 
 {% tab title="Producer" %}
-`skills/audioservice.py`
-playback-control
+`skills/audioservice.py` playback-control
 {% endtab %}
 
 {% tab title="Consumer" %}
@@ -488,7 +517,7 @@ Enclosure Volume up
 {% endtab %}
 
 {% tab title="Data" %}
-```
+```text
 {"play_sound": True}
 ```
 {% endtab %}
@@ -510,7 +539,7 @@ Enclosure Volume down
 {% endtab %}
 
 {% tab title="Data" %}
-```
+```text
 {"play_sound": True}
 ```
 {% endtab %}
@@ -532,7 +561,7 @@ Enclosure Volume muted
 {% endtab %}
 
 {% tab title="Data" %}
-```
+```text
 {"speak_message": True}
 ```
 {% endtab %}
@@ -554,7 +583,7 @@ Enclosure Volume unmuted
 {% endtab %}
 
 {% tab title="Data" %}
-```
+```text
 {"speak_message": True}
 ```
 {% endtab %}
@@ -572,11 +601,11 @@ Volume Skill
 
 {% tabs %}
 {% tab title="Description" %}
-Set enclosure volume (0.0 = no output, 1.0 = loudest possible)
+Set enclosure volume \(0.0 = no output, 1.0 = loudest possible\)
 {% endtab %}
 
 {% tab title="Data" %}
-```
+```text
 {"percent": float}
 ```
 {% endtab %}
@@ -602,7 +631,7 @@ Request volume level
 {% endtab %}
 
 {% tab title="Data" %}
-```
+```text
 {
     "percent": <volume percentage>,
     "muted": <true/false>
@@ -611,7 +640,7 @@ Request volume level
 {% endtab %}
 
 {% tab title="Consumer" %}
-Enclosure (skill-mark-2)
+Enclosure \(skill-mark-2\)
 {% endtab %}
 {% endtabs %}
 
@@ -623,7 +652,7 @@ Reduce the volume level temporarilly
 {% endtab %}
 
 {% tab title="Consumer" %}
-Enclosure (skill-mark-2)
+Enclosure \(skill-mark-2\)
 {% endtab %}
 {% endtabs %}
 
@@ -635,6 +664,7 @@ Restore the volume level
 {% endtab %}
 
 {% tab title="Consumer" %}
-Enclosure (skill-mark-2)
+Enclosure \(skill-mark-2\)
 {% endtab %}
 {% endtabs %}
+
