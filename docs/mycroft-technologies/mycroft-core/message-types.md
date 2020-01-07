@@ -3522,7 +3522,7 @@ python3 -m mycroft.messagebus.send 'reconnecting'
 
 ## System Administrative Actions
 
-### system.wifi.setup / mycroft.wifi.start
+### system.wifi.setup
 
 Kick off a a wifi-setup session
 
@@ -3552,11 +3552,11 @@ Kick off a a wifi-setup session
 ```python
 ...
 def initialize(self):
-    self.add_event('system.wifi.setup / mycroft.wifi.start',
-                   self.handler_system_wifi_setup / mycroft_wifi_start)
+    self.add_event('system.wifi.setup',
+                   self.handler_system_wifi_setup)
 
-def handler_system_wifi_setup / mycroft_wifi_start(self, message):
-    # code to excecute when system.wifi.setup / mycroft.wifi.start message detected...
+def handler_system_wifi_setup(self, message):
+    # code to excecute when system.wifi.setup message detected...
 ...
 ```
 {% endtab %}
@@ -3565,19 +3565,19 @@ def handler_system_wifi_setup / mycroft_wifi_start(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.wifi.setup / mycroft.wifi.start'))
+    self.emitter.emit(Message('system.wifi.setup'))
 ...
 ```
 {% endtab %}
 
 {% tab title="Command line invocation" %}
 ```bash
-python3 -m mycroft.messagebus.send 'system.wifi.setup / mycroft.wifi.start'
+python3 -m mycroft.messagebus.send 'system.wifi.setup'
 ```
 {% endtab %}
 {% endtabs %}
 
-### system.wifi.reset / mycroft.wifi.reset
+### system.wifi.reset
 
 Clear the saved wifi settings
 
@@ -3607,11 +3607,11 @@ Clear the saved wifi settings
 ```python
 ...
 def initialize(self):
-    self.add_event('system.wifi.reset / mycroft.wifi.reset',
-                   self.handler_system_wifi_reset / mycroft_wifi_reset)
+    self.add_event('system.wifi.reset',
+                   self.handler_system_wifi_reset)
 
-def handler_system_wifi_reset / mycroft_wifi_reset(self, message):
-    # code to excecute when system.wifi.reset / mycroft.wifi.reset message detected...
+def handler_system_wifi_reset(self, message):
+    # code to excecute when system.wifi.reset message detected...
 ...
 ```
 {% endtab %}
@@ -3620,14 +3620,14 @@ def handler_system_wifi_reset / mycroft_wifi_reset(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.wifi.reset / mycroft.wifi.reset'))
+    self.emitter.emit(Message('system.wifi.reset'))
 ...
 ```
 {% endtab %}
 
 {% tab title="Command line invocation" %}
 ```bash
-python3 -m mycroft.messagebus.send 'system.wifi.reset / mycroft.wifi.reset'
+python3 -m mycroft.messagebus.send 'system.wifi.reset'
 ```
 {% endtab %}
 {% endtabs %}
@@ -3687,7 +3687,7 @@ python3 -m mycroft.messagebus.send 'system.ntp.sync'
 {% endtab %}
 {% endtabs %}
 
-### system.ssh.enable / mycroft.enable.ssh
+### system.ssh.enable
 
 Configure system to allow SSH connections
 
@@ -3717,11 +3717,11 @@ Configure system to allow SSH connections
 ```python
 ...
 def initialize(self):
-    self.add_event('system.ssh.enable / mycroft.enable.ssh',
-                   self.handler_system_ssh_enable / mycroft_enable_ssh)
+    self.add_event('system.ssh.enable',
+                   self.handler_system_ssh_enable)
 
-def handler_system_ssh_enable / mycroft_enable_ssh(self, message):
-    # code to excecute when system.ssh.enable / mycroft.enable.ssh message detected...
+def handler_system_ssh_enable(self, message):
+    # code to excecute when system.ssh.enable message detected...
 ...
 ```
 {% endtab %}
@@ -3730,19 +3730,19 @@ def handler_system_ssh_enable / mycroft_enable_ssh(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.ssh.enable / mycroft.enable.ssh'))
+    self.emitter.emit(Message('system.ssh.enable'))
 ...
 ```
 {% endtab %}
 
 {% tab title="Command line invocation" %}
 ```bash
-python3 -m mycroft.messagebus.send 'system.ssh.enable / mycroft.enable.ssh'
+python3 -m mycroft.messagebus.send 'system.ssh.enable'
 ```
 {% endtab %}
 {% endtabs %}
 
-### system.ssh.disable / mycroft.disable.ssh
+### system.ssh.disable
 
 Configure system to block SSH connections
 
@@ -3772,11 +3772,11 @@ Configure system to block SSH connections
 ```python
 ...
 def initialize(self):
-    self.add_event('system.ssh.disable / mycroft.disable.ssh',
-                   self.handler_system_ssh_disable / mycroft_disable_ssh)
+    self.add_event('system.ssh.disable',
+                   self.handler_system_ssh_disable)
 
-def handler_system_ssh_disable / mycroft_disable_ssh(self, message):
-    # code to excecute when system.ssh.disable / mycroft.disable.ssh message detected...
+def handler_system_ssh_disable(self, message):
+    # code to excecute when system.ssh.disable message detected...
 ...
 ```
 {% endtab %}
@@ -3785,14 +3785,14 @@ def handler_system_ssh_disable / mycroft_disable_ssh(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.ssh.disable / mycroft.disable.ssh'))
+    self.emitter.emit(Message('system.ssh.disable'))
 ...
 ```
 {% endtab %}
 
 {% tab title="Command line invocation" %}
 ```bash
-python3 -m mycroft.messagebus.send 'system.ssh.disable / mycroft.disable.ssh'
+python3 -m mycroft.messagebus.send 'system.ssh.disable'
 ```
 {% endtab %}
 {% endtabs %}
