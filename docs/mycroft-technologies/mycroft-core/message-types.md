@@ -1,8 +1,8 @@
 ---
 description: >-
   Messages are used to communicate information between Mycroft services and
-  other components. This list of Message types outlines their meaning, expected
-  JSON data, standard producer and consumer.
+  other components. This list of Message types outlines the details and provides
+  sample code for each.
 ---
 
 # Message Types
@@ -110,10 +110,10 @@ Sent by start-up sequence when everything is ready for user interaction
   <tbody>
     <tr>
       <td style="text-align:left">
-        skills/padatious_service.py
+        <p><code>skills/padatious_service.py</code></p>
       </td>
       <td style="text-align:left">
-        Pairing Skill
+        <p>Pairing Skill</p>
       </td>
     </tr>
   </tbody>
@@ -201,12 +201,12 @@ Start the pairing process when this event is emitted.
   <tbody>
     <tr>
       <td style="text-align:left">
-        Pairing Skill
-Weather Skill
-Wolfram Alpha Skill
+        <p>Pairing Skill</p>
+        <p>Weather Skill</p>
+        <p>Wolfram Alpha Skill</p>
       </td>
       <td style="text-align:left">
-        Pairing Skill
+        <p>Pairing Skill</p>
       </td>
     </tr>
   </tbody>
@@ -258,13 +258,13 @@ Pairing has completed
   <tbody>
     <tr>
       <td style="text-align:left">
-        Pairing Skill
+        <p>Pairing Skill</p>
       </td>
       <td style="text-align:left">
-        skills/skill_manager.py
-enclosure/mark1/__init__.py
-enclosure/generic/__init__.py
-client/speech/__main__.py
+        <p><code>skills/skill_manager.py</code></p>
+        <p><code>enclosure/mark1/__init__.py</code></p>
+        <p><code>enclosure/generic/__init__.py</code></p>
+        <p><code>client/speech/__main__.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -482,6 +482,25 @@ Wakeword was heard
 
 ```
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>client/speech/main.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 **Usage:**
 
 {% tabs %}
@@ -521,6 +540,25 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:wakeword' '{ "utterance": <w
 
 Recording has started
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>client/speech/main.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 **Usage:**
 
 {% tabs %}
@@ -556,6 +594,25 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:record_begin'
 ### recognizer_loop:record_end
 
 Recording has ended
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>client/speech/main.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Usage:**
 
@@ -613,16 +670,16 @@ STT has detected the given text or text was injected as an utterance via the CLI
   <tbody>
     <tr>
       <td style="text-align:left">
-        client/speech/__main__.py
-client/speech/listener.py
-client/text/text_client.py
-skills/__main__.py
+        <p><code>client/speech/__main__.py</code></p>
+        <p><code>client/speech/listener.py</code></p>
+        <p><code>client/text/text_client.py</code></p>
+        <p><code>skills/__main__.py</code></p>
       </td>
       <td style="text-align:left">
-        client/text/text_client.py
-messagebus/client/client.py
-skills/intent_service.py
-
+        <p><code>client/text/text_client.py</code></p>
+        <p><code>messagebus/client/client.py</code></p>
+        <p><code>skills/intent_service.py</code></p>
+        <p></p>
       </td>
     </tr>
   </tbody>
@@ -667,6 +724,25 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:utterance' '{ "utterances": 
 
 Text output (TTS) has begun
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>audio/speech.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 **Usage:**
 
 {% tabs %}
@@ -702,6 +778,25 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:audio_output_start'
 ### recognizer_loop:audio_output_end
 
 Text output (TTS) has ended
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>audio/speech.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Usage:**
 
@@ -813,6 +908,25 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:wake_up'
 
 Detetected a connection error during STT
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>audio/speech.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 **Usage:**
 
 {% tabs %}
@@ -919,7 +1033,7 @@ Change eyes to default color
 
       </td>
       <td style="text-align:left">
-        mycroft-mark-1
+        <p>mycroft-mark-1</p>
       </td>
     </tr>
   </tbody>
@@ -1009,10 +1123,10 @@ Turn off the mic (no wakeword or STT processing)
   <tbody>
     <tr>
       <td style="text-align:left">
-        Pairing Skill
+        <p>Pairing Skill</p>
       </td>
       <td style="text-align:left">
-        client/speech/main.py
+        <p><code>client/speech/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1064,10 +1178,10 @@ Turn on the mic (enable wakeword and STT processing)
   <tbody>
     <tr>
       <td style="text-align:left">
-        Pairing Skill
+        <p>Pairing Skill</p>
       </td>
       <td style="text-align:left">
-        client/speech/main.py
+        <p><code>client/speech/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1121,10 +1235,11 @@ Start playback of tracklist
   <tbody>
     <tr>
       <td style="text-align:left">
-        skills/audioservice.py / playback-control
+        <p><code>skills/audioservice.py</code></p>
+        <p>playback-control</p>
       </td>
       <td style="text-align:left">
-        audio/main.py
+        <p><code>audio/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1176,10 +1291,11 @@ Stop playback
   <tbody>
     <tr>
       <td style="text-align:left">
-        skills/audioservice.py / playback-control
+        <p><code>skills/audioservice.py</code></p>
+        <p>playback-control</p>
       </td>
       <td style="text-align:left">
-        audio/main.py
+        <p><code>audio/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1231,10 +1347,11 @@ Pause playback (if supported)
   <tbody>
     <tr>
       <td style="text-align:left">
-        skills/audioservice.py / playback-control
+        <p><code>skills/audioservice.py</code></p>
+        <p>playback-control</p>
       </td>
       <td style="text-align:left">
-        audio/main.py
+        <p><code>audio/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1286,10 +1403,11 @@ Resume playback (if supported by backend)
   <tbody>
     <tr>
       <td style="text-align:left">
-        skills/audioservice.py / playback-control
+        <p><code>skills/audioservice.py</code></p>
+        <p>playback-control</p>
       </td>
       <td style="text-align:left">
-        audio/main.py
+        <p><code>audio/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1341,10 +1459,11 @@ Skip to next track
   <tbody>
     <tr>
       <td style="text-align:left">
-        skills/audioservice.py / playback-control
+        <p><code>skills/audioservice.py</code></p>
+        <p>playback-control</p>
       </td>
       <td style="text-align:left">
-        audio/main.py
+        <p><code>audio/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1396,10 +1515,11 @@ Skip to previous track
   <tbody>
     <tr>
       <td style="text-align:left">
-        skills/audioservice.py / playback-control
+        <p><code>skills/audioservice.py</code></p>
+        <p>playback-control</p>
       </td>
       <td style="text-align:left">
-        audio/main.py
+        <p><code>audio/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1451,10 +1571,11 @@ Request track info from audio service
   <tbody>
     <tr>
       <td style="text-align:left">
-        skills/audioservice.py / playback-control
+        <p><code>skills/audioservice.py</code></p>
+        <p>playback-control</p>
       </td>
       <td style="text-align:left">
-        audio/main.py
+        <p><code>audio/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1506,10 +1627,10 @@ Reply to track info request
   <tbody>
     <tr>
       <td style="text-align:left">
-        audio/main.py
+        <p><code>audio/main.py</code></p>
       </td>
       <td style="text-align:left">
-        skills/audioservice.py
+        <p><code>skills/audioservice.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1561,10 +1682,10 @@ Returns list of available backends.
   <tbody>
     <tr>
       <td style="text-align:left">
-        skills/audioservice.py
+        <p><code>skills/audioservice.py</code></p>
       </td>
       <td style="text-align:left">
-        audio/main.py
+        <p><code>audio/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -1624,10 +1745,10 @@ Enclosure Volume up
   <tbody>
     <tr>
       <td style="text-align:left">
-        client/enclosure/__init__.py
+        <p><code>client/enclosure/__init__.py</code></p>
       </td>
       <td style="text-align:left">
-        Volume Skill
+        <p>Volume Skill</p>
       </td>
     </tr>
   </tbody>
@@ -1686,10 +1807,10 @@ Enclosure Volume down
   <tbody>
     <tr>
       <td style="text-align:left">
-        client/enclosure/__init__.py
+        <p><code>client/enclosure/__init__.py</code></p>
       </td>
       <td style="text-align:left">
-        Volume Skill
+        <p>Volume Skill</p>
       </td>
     </tr>
   </tbody>
@@ -1748,10 +1869,10 @@ Enclosure Volume muted
   <tbody>
     <tr>
       <td style="text-align:left">
-        skill-naptime
+        <p>skill-naptime</p>
       </td>
       <td style="text-align:left">
-        Volume Skill
+        <p>Volume Skill</p>
       </td>
     </tr>
   </tbody>
@@ -1810,10 +1931,10 @@ Enclosure Volume unmuted
   <tbody>
     <tr>
       <td style="text-align:left">
-        skill-naptime
+        <p>skill-naptime</p>
       </td>
       <td style="text-align:left">
-        Volume Skill
+        <p>Volume Skill</p>
       </td>
     </tr>
   </tbody>
@@ -1875,7 +1996,7 @@ Set enclosure volume (0.0 = no output, 1.0 = loudest possible)
 
       </td>
       <td style="text-align:left">
-        Volume Skill
+        <p>Volume Skill</p>
       </td>
     </tr>
   </tbody>
@@ -1976,7 +2097,7 @@ python3 -m mycroft.messagebus.send 'mycroft.volume.get'
 
       </td>
       <td style="text-align:left">
-        Enclosure (skill-mark-2)
+        <p>Enclosure (skill-mark-2)</p>
       </td>
     </tr>
   </tbody>
@@ -2033,7 +2154,7 @@ Reduce the volume level temporarilly
 
       </td>
       <td style="text-align:left">
-        Enclosure (skill-mark-2)
+        <p>Enclosure (skill-mark-2)</p>
       </td>
     </tr>
   </tbody>
@@ -2088,7 +2209,7 @@ Restore the volume level
 
       </td>
       <td style="text-align:left">
-        Enclosure (skill-mark-2)
+        <p>Enclosure (skill-mark-2)</p>
       </td>
     </tr>
   </tbody>
@@ -2230,7 +2351,7 @@ Enable disabled intent
 
       </td>
       <td style="text-align:left">
-        mycroft/skills/core.py
+        <p><code>mycroft/skills/core.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -2292,7 +2413,7 @@ Disable intent
 
       </td>
       <td style="text-align:left">
-        mycroft/skills/core.py
+        <p><code>mycroft/skills/core.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -2356,10 +2477,10 @@ A Skill has been loaded
   <tbody>
     <tr>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
       <td style="text-align:left">
-        mycroft/skills/intent_service.py
+        <p><code>mycroft/skills/intent_service.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -2414,6 +2535,25 @@ A Skill has failed to load
 }
 ```
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>skills/main.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 **Usage:**
 
 {% tabs %}
@@ -2460,6 +2600,25 @@ A Skill has shutdown
     "folder": <skill directory>
 }
 ```
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>skills/main.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Usage:**
 
@@ -2509,10 +2668,10 @@ Upon startup, all skills have been loaded
   <tbody>
     <tr>
       <td style="text-align:left">
-        mycroft/skills/skill_manager.py
+        <p><code>mycroft/skills/skill_manager.py</code></p>
       </td>
       <td style="text-align:left">
-        mycroft/skills/padatious_service.py
+        <p><code>mycroft/skills/padatious_service.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -2559,6 +2718,25 @@ List of loaded skills (response to 'skillmanager.list')
 ```JSON
 {"skills": [<list of skill IDs>] }
 ```
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>skills/main.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Usage:**
 
@@ -2607,10 +2785,10 @@ Pull new skill settings from the server
   <tbody>
     <tr>
       <td style="text-align:left">
-        Configuration Skill
+        <p>Configuration Skill</p>
       </td>
       <td style="text-align:left">
-        mycroft/skills/settings.py
+        <p><code>mycroft/skills/settings.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -2664,10 +2842,10 @@ MSM install has begun
   <tbody>
     <tr>
       <td style="text-align:left">
-        msm.sh
+        <p><code>msm.sh</code></p>
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -2719,10 +2897,10 @@ MSM update has begun
   <tbody>
     <tr>
       <td style="text-align:left">
-        msm.sh
+        <p><code>msm.sh</code></p>
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -2780,10 +2958,10 @@ MSM install succeeded for given skill
   <tbody>
     <tr>
       <td style="text-align:left">
-        msm.sh
+        <p><code>msm.sh</code></p>
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -2845,10 +3023,10 @@ MSM install failed for given skill
   <tbody>
     <tr>
       <td style="text-align:left">
-        msm.sh
+        <p><code>msm.sh</code></p>
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -2902,10 +3080,10 @@ MSM install is complete
   <tbody>
     <tr>
       <td style="text-align:left">
-        msm.sh
+        <p><code>msm.sh</code></p>
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -2957,10 +3135,10 @@ MSM update is complete
   <tbody>
     <tr>
       <td style="text-align:left">
-        msm.sh
+        <p><code>msm.sh</code></p>
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3012,10 +3190,10 @@ MSM remove has begun
   <tbody>
     <tr>
       <td style="text-align:left">
-        msm.sh
+        <p><code>msm.sh</code></p>
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3073,10 +3251,10 @@ MSM remove succeeded for given skill
   <tbody>
     <tr>
       <td style="text-align:left">
-        msm.sh
+        <p><code>msm.sh</code></p>
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3138,10 +3316,10 @@ MSM remove failed for given skill
   <tbody>
     <tr>
       <td style="text-align:left">
-        msm.sh
+        <p><code>msm.sh</code></p>
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3195,10 +3373,10 @@ MSM remove is complete
   <tbody>
     <tr>
       <td style="text-align:left">
-        msm.sh
+        <p><code>msm.sh</code></p>
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3258,10 +3436,10 @@ Deactivate a skill.  Activate by typing ":deactivate <skill>" in the CLI
   <tbody>
     <tr>
       <td style="text-align:left">
-        CLI (client/text/main.py)
+        <p>CLI (<code>client/text/main.py</code>)</p>
       </td>
       <td style="text-align:left">
-        skills/skill_manager.py
+        <p><code>skills/skill_manager.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3314,10 +3492,10 @@ List installed skills.  Activate by typing ":list" in the CLI
   <tbody>
     <tr>
       <td style="text-align:left">
-        CLI (client/text/main.py)
+        <p>CLI (<code>client/text/main.py</code>)</p>
       </td>
       <td style="text-align:left">
-        skills/skill_manager.py
+        <p><code>skills/skill_manager.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3372,7 +3550,7 @@ Request immediate update of all skills
 
       </td>
       <td style="text-align:left">
-        skills/main.py
+        <p><code>skills/main.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3416,6 +3594,25 @@ python3 -m mycroft.messagebus.send 'skillmanager.update'
 
 websocket connection has closed
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>messagebus\client\ws.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 **Usage:**
 
 {% tabs %}
@@ -3452,6 +3649,25 @@ python3 -m mycroft.messagebus.send 'open'
 
 websocket connection was lost, reconnecting
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>messagebus\client\ws.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 **Usage:**
 
 {% tabs %}
@@ -3487,6 +3703,25 @@ python3 -m mycroft.messagebus.send 'close'
 ### reconnecting
 
 websocket connection has opened
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Producer</th>
+      <th style="text-align:left">Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><code>messagebus\client\ws.py</code></p>
+      </td>
+      <td style="text-align:left">
+
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Usage:**
 
@@ -3539,7 +3774,7 @@ Kick off a a wifi-setup session
 
       </td>
       <td style="text-align:left">
-        mycroft-wifi-setup: mycroft_admin_service.py
+        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3594,7 +3829,7 @@ Clear the saved wifi settings
 
       </td>
       <td style="text-align:left">
-        mycroft-wifi-setup: mycroft_admin_service.py
+        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3649,7 +3884,7 @@ Force the system clock to synchronize with NTP servers
 
       </td>
       <td style="text-align:left">
-        mycroft-wifi-setup: mycroft_admin_service.py
+        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3704,7 +3939,7 @@ Configure system to allow SSH connections
 
       </td>
       <td style="text-align:left">
-        mycroft-wifi-setup: mycroft_admin_service.py
+        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3759,7 +3994,7 @@ Configure system to block SSH connections
 
       </td>
       <td style="text-align:left">
-        mycroft-wifi-setup: mycroft_admin_service.py
+        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3814,7 +4049,7 @@ Force a Linux reboot
 
       </td>
       <td style="text-align:left">
-        mycroft-wifi-setup: mycroft_admin_service.py
+        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3869,7 +4104,7 @@ Force a Linux shutdown
 
       </td>
       <td style="text-align:left">
-        mycroft-wifi-setup: mycroft_admin_service.py
+        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
       </td>
     </tr>
   </tbody>
@@ -3924,7 +4159,7 @@ python3 -m mycroft.messagebus.send 'system.shutdown'
 
       </td>
       <td style="text-align:left">
-        mycroft-wifi-setup: mycroft_admin_service.py
+        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
       </td>
     </tr>
   </tbody>
