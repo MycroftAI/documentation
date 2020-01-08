@@ -1,8 +1,8 @@
 ---
 description: >-
   A Message Bus is mechanism for independent systems to communicate with each
-  other using a set of _messages_ for common commands or notifiers. In the
-  Mycroft ecosystem, the Messagebus is a websocket.
+  other using a set of Messages for common commands or notifiers. In the Mycroft
+  ecosystem, the Messagebus is a websocket.
 ---
 
 # MessageBus
@@ -58,11 +58,11 @@ def some_method(self):
 
 The Mycroft MessageBus Client is a Python module providing a simple interface for the Mycroft MessageBus. It can be used to connect to Mycroft, send messages, and react to messages sent by the Mycroft system.
 
-### MycroftBusClient\(\)
+#### MycroftBusClient\(\)
 
 The `MycroftBusClient()` object can be setup to connect to any host and port as well as any endpont on that host. this makes it quite versitile and will work on the main bus as well as on a gui bus. If no arguments are provided it will try to connect to a local instance of mycroftr core on the default endpoint and port.
 
-### Message\(\)
+#### Message\(\)
 
 The `Message` object is a representation of the messagebus message, this will always contain a message type but can also contain data and context. Data is usually real information while the context typically contain information on where the message originated or who the intended recipient is.
 
@@ -70,11 +70,9 @@ The `Message` object is a representation of the messagebus message, this will al
 Message('MESSAGE_TYPE', data={'meaning': 42}, context={'origin': 'A.Dent'})
 ```
 
-### Examples
+### Sending a Message
 
-Below are some a couple of simple cases for sending a message on the bus as well as reacting to messages on the bus
-
-#### Sending a message on the bus.
+In the following example we setup an instance of the MessageBusClient then emit a `speak` Message with a data payload. Mycroft would consume this Message and speak "Hello World".
 
 ```python
 from mycroft_bus_client import MessageBusClient, Message
@@ -87,7 +85,11 @@ print('Sending speak message...')
 client.emit(Message('speak', data={'utterance': 'Hello World'}))
 ```
 
-#### Catching a message on the messagebus
+### Listening for a Message
+
+In the following example we setup an instance of the MessageBusClient. We then define a function `print_utterance` that prints the `utterance` from a Message. This is registered as a handler for the `speak` Message. Finally we call the `run_forever()` method to keep the `client` running.
+
+If this code had run before the example above, it would catch the `speak` Message we emitted and print: `Mycroft said "Hello World"`
 
 ```python
 from mycroft_bus_client import MessageBusClient, Message
@@ -96,7 +98,7 @@ print('Setting up client to connect to a local mycroft instance')
 client = MessageBusClient()
 
 def print_utterance(message):
-    print('Mycroft said "{}".format(message.data.get('utterance')))
+    print('Mycroft said "{}"'.format(message.data.get('utterance')))
 
 
 print('Registering handler for speak message...')
@@ -105,7 +107,7 @@ client.on('speak', print_utterance)
 client.run_forever()
 ```
 
-### Manually connecting
+### Manually connecting to the MessageBus
 
 Here is an example Python script to connect to the `messagebus`:
 
@@ -146,7 +148,7 @@ or
 python3 -m mycroft.messagebus.send xxx.yyy.zzz '{"name": "value"}'
 ```
 
-## Guidelines for Message usage
+## Guidelines for Message Usage
 
 Private messages can be placed on the Messagebus following these naming conventions:  
 `subsystem.message` or `skill.skillname.message`
