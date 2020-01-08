@@ -56,7 +56,9 @@ def some_method(self):
 
 ## Mycroft MessageBus Client
 
-The Mycroft MessageBus Client is a Python module providing a simple interface for the Mycroft MessageBus. It can be used to connect to Mycroft, send messages, and react to messages sent by the Mycroft system.
+The [Mycroft MessageBus Client](https://github.com/MycroftAI/mycroft-messagebus-client) is a Python module providing a simple interface for the Mycroft MessageBus. It can be used to connect to Mycroft, send messages, and react to messages sent by the Mycroft system.
+
+The module is available through [PyPI.org](https://pypi.org/project/mycroft-messagebus-client/) or directly [on Github](https://github.com/MycroftAI/mycroft-messagebus-client).
 
 #### MycroftBusClient\(\)
 
