@@ -38,7 +38,7 @@ DeepSpeech is not yet ready for production use and Mycroft currently uses [Googl
 
 Mycroft also supports other STT engines that can be configured using the [Configuration Manager](../using-mycroft-ai/customizations/config-manager.md):
 
-* [IBM Watson Speech to Text](https://www.ibm.com/watson/services/speech-to-text/) \(username and password required\)
+* [IBM Watson Speech to Text](https://www.ibm.com/watson/services/speech-to-text/) \(IBM API key required\)
 * [wit.ai Speech to Text](https://wit.ai/blog/2014/02/12/speech-api) \(wit.ai API key required\)
 
 ### Intent parser
