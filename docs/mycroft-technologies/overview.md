@@ -78,7 +78,7 @@ The Mycroft middleware has two components:
 
 [Mycroft Skills](https://github.com/MycroftAI/mycroft-skills) are like 'add-ons' or 'plugins' that provide additional functionality. **Skills** can be developed by Mycroft Developers, or by Community Developers, and vary in their functionality and maturity.
 
-[Mycroft Skills Management \(msm\)](https://github.com/MycroftAI/msm) is a set of helper scripts that assist in the installation and management of **Skills**.
+[Mycroft Skills Management \(msm\)](https://github.com/MycroftAI/mycroft-skills-kit) is a tool assisting with the installation and management of **Skills**.
 
 ### Devices and Enclosures
 
