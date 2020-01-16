@@ -58,14 +58,14 @@ An **intent parser** can then match the _intent_ with a suitable **Skill** to ha
 
 Text to Speech \(TTS\) software takes written text, such as text files on a computer, and uses a _voice_ to _speak_ the text. Text to Speech can have different voices, depending on the TTS engine used.
 
-* [Mimic](https://github.com/MycroftAI/mimic): Mycroft's default text to speech \(TTS\) engine, based on CMU's Flite \(Festival Lite\)
+* [Mimic](https://github.com/MycroftAI/mimic): Mycroft's default local text to speech \(TTS\) engine, based on CMU's Flite \(Festival Lite\)
+* [Mimic2](https://github.com/MycroftAI/mimic2): Mycroft's own cloud based text to speech \(TTS\) engine, based on Tacotron providing a much better voice quality.
 
-In your home.mycroft.ai account, you can select several other TTS engines if you don't wish to use Mimic.
+In your home.mycroft.ai account, you can select voices from these as well as
 
-* [eSpeak](http://espeak.sourceforge.net/): you need to choose which [voice](http://espeak.sourceforge.net/voices.html) to use
-* [MaryTTS](http://mary.dfki.de/): you need to choose which voice to use
 * [Google TTS](https://play.google.com/store/apps/details?id=com.google.android.tts): you need to choose which voice to use
-* FATTS: you need to choose which voice to use
+
+even more tts engines are available but require manual configuration.
 
 ### Middleware
 
