@@ -6,11 +6,13 @@ description: >-
 
 # Speech-To-Text Engines
 
-Many Mycroft users do not want to use the default STT engine, and like most of Mycroft's technology stack, this too can be customized.
+Many users want to use a specific STT engine rather than the default. Like most of Mycroft's technology stack, this too can be customized.
 
 ## Default Engine
 
-To be useful for a voice assistant like Mycroft, speech recognition must be performed very quickly and with a high degree of accuracy. For this reason, Mycroft by default uses Google's STT engine. In order to provide an additional layer of privacy for our users, we proxy all STT requests through Mycroft's servers. This prevents Google's service from profiling Mycroft users or connecting voice recordings to their identities. Only the voice recording is sent to Google, no other identifying information is included in the request. Therefore Google's STT service does not know if an individual person is making thousands of requests, or if thousands of people are making a small number of requests each.
+For a voice assistant like Mycroft, speech recognition must be performed very quickly and with a high degree of accuracy. For this reason, Mycroft by default uses Google's STT engine.
+
+In order to provide an additional layer of privacy for our users, we proxy all STT requests through Mycroft's servers. This prevents Google's service from profiling Mycroft users or connecting voice recordings to their identities. Only the voice recording is sent to Google, no other identifying information is included in the request. Therefore Google's STT service does not know if an individual person is making thousands of requests, or if thousands of people are making a small number of requests each.
 
 By supporting Mozilla's DeepSpeech project we are aiming to provide a competitive open source alternative. The accuracy of DeepSpeech is not yet sufficient to provide a quality experience for Mycroft users. However we will be switching to DeepSpeech by default as soon as we have achieved an acceptable level of accuracy.
 
@@ -75,33 +77,6 @@ To our existing configuration values we will add the following:
 ```
 
 ## Cloud-based
-
-### Microsoft Azure
-
-STT provided by the Microsoft Azure Speech Services. Formerly known as Bing STT.
-
-#### Account Setup
-
-Create a [Microsoft Azure account](https://azure.microsoft.com/en-us/services/cognitive-services/speech-services/) and get a server access token.
-
-#### Mycroft Configuration
-
-Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
-```bash
-mycroft-config edit user
-```
-
-To our existing configuration values we will add the following:
-```JSON
-"stt": {
-  "bing": {
-    "credential": {
-      "token": "xxxxx"
-    }
-  },
-  "module": "bing"
-}
-```
 
 ### GoVivaci
 
@@ -274,6 +249,33 @@ To our existing configuration values we will add the following:
     "password": "xxxxx"
   },
   "module": "ibm"
+}
+```
+
+### Microsoft Azure
+
+STT provided by the Microsoft Azure Speech Services. Formerly known as Bing STT.
+
+#### Account Setup
+
+Create a [Microsoft Azure account](https://azure.microsoft.com/en-us/services/cognitive-services/speech-services/) and get a server access token.
+
+#### Mycroft Configuration
+
+Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
+```bash
+mycroft-config edit user
+```
+
+To our existing configuration values we will add the following:
+```JSON
+"stt": {
+  "bing": {
+    "credential": {
+      "token": "xxxxx"
+    }
+  },
+  "module": "bing"
 }
 ```
 
