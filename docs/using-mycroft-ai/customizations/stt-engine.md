@@ -22,12 +22,12 @@ The following are some of the available STT options. Each provides details on ho
 
 Mycroft has been supporting Mozilla's efforts to build DeepSpeech, an open Speech-to-Text technology. It is a fully open source STT engine, based on Baidu’s Deep Speech architecture and implemented with Google’s TensorFlow framework. Being open source means that if you have the hardware, it can be run within your own network providing additional privacy and control for you and your family.
 
-### Server Setup
+#### Server Setup
 You can test DeepSpeech using their pre-trained model by following the instructions on the [DeepSpeech Github repository](https://github.com/mozilla/DeepSpeech#project-deepspeech).
 
 To setup a DeepSpeech server that Mycroft can use, try the [deepspeech-server project on PyPI](https://pypi.org/project/deepspeech-server/). Once you have this up and running, we can configure Mycroft to use this server.
 
-### Mycroft Configuration
+#### Mycroft Configuration
 Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
 ```bash
 mycroft-config edit user
@@ -43,7 +43,7 @@ To our existing configuration values we will add the following:
   }
 ```
 
-### Community Support
+#### Community Support
 
 If you are interested in the continued development of the DeepSpeech STT engine, please join our the [DeepSpeech channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/deepspeech-stt).
 
@@ -53,12 +53,12 @@ If you are interested in the continued development of the DeepSpeech STT engine,
 
 Kaldi can be run on a Linux cluster or an individual machine, making it another option for those wanting local network speech-to-text.
 
-### Server Setup
+#### Server Setup
 First be sure to read the [system requirements in the Kaldi documentation](https://kaldi-asr.org/doc/dependencies.html).
 
 The latest installation instructions can be found on the [Kaldi Github repository](https://github.com/kaldi-asr/kaldi#kaldi-speech-recognition-toolkit).
 
-### Mycroft Configuration
+#### Mycroft Configuration
 Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
 ```bash
 mycroft-config edit user
@@ -78,12 +78,12 @@ To our existing configuration values we will add the following:
 
 [GoVivaci](https://www.govivace.com/) is a for-profit company that has a [proprietary STT engine](https://www.govivace.com/products/automatic-speech-recognition-asr/).
 
-### Account Setup
+#### Account Setup
 The software is available in both 32 and 64-bit versions for Linux, Windows, and Mac platforms. A minimum of 4GB of RAM and a 2.0GHz processor is recommended. A [UniMRCP server plugin](https://www.unimrcp.org/govivacesr) is also available.
 
 See [their website](https://www.govivace.com/products/automatic-speech-recognition-asr/) for more details.
 
-### Mycroft Configuration
+#### Mycroft Configuration
 Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
 ```bash
 mycroft-config edit user
@@ -108,7 +108,7 @@ The credential token will be provided to you by GoVivaci.
 
 The standard [Google Cloud Speech-To-Text API](https://cloud.google.com/speech-to-text/).
 
-### Account Setup
+#### Account Setup
 
 A [Google Cloud account](https://cloud.google.com/) with active billing is required. Please carefully consider the [financial cost of using this service](https://cloud.google.com/speech-to-text/pricing).
 
@@ -127,7 +127,7 @@ To obtain the required credential JSON data, you must create a Google API Consol
 
 Remember to activate the API in the [GCP Console](https://console.developers.google.com/apis/library/speech.googleapis.com?)
 
-### Mycroft Configuration
+#### Mycroft Configuration
 
 Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
 ```bash
@@ -162,11 +162,11 @@ To our existing configuration values we will add the following:
 
 A streaming STT interface for the Google Cloud Speech-To-Text API.
 
-### Account Setup
+#### Account Setup
 
 A [Google Cloud account](https://cloud.google.com/) with active billing is required. Please carefully consider the [financial cost of using this service](https://cloud.google.com/speech-to-text/pricing).
 
-### Mycroft Configuration
+#### Mycroft Configuration
 
 Install `google-cloud-speech` in the Mycroft Virtual environment using:
 ```
@@ -194,7 +194,7 @@ To our existing configuration values we will add the following:
 
 STT provided by Houndify.
 
-### Account Setup
+#### Account Setup
 
 Create a [Houndify account](https://www.houndify.com/), then:
 * Create a New Client from your dashboard
@@ -202,7 +202,7 @@ Create a [Houndify account](https://www.houndify.com/), then:
 * Enable the "Speech To Text Only" domain for your Client.
 * Get the `Client ID` and `Client Key` from your Client Information panel.
 
-### Mycroft Configuration
+#### Mycroft Configuration
 
 Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
 ```bash
@@ -226,11 +226,11 @@ To our existing configuration values we will add the following:
 
 Speech-to-text using the IBM Watson cloud.
 
-### Account Setup
+#### Account Setup
 
 Create an account at [IBM.com/cloud](https://www.ibm.com/cloud/watson-speech-to-text).
 
-### Mycroft Configuration
+#### Mycroft Configuration
 
 Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
 ```bash
@@ -252,11 +252,11 @@ To our existing configuration values we will add the following:
 
 STT provided by the Microsoft Azure Speech Services. Formerly known as Bing STT.
 
-### Account Setup
+#### Account Setup
 
 Create a [Microsoft Azure account](https://azure.microsoft.com/en-us/services/cognitive-services/speech-services/) and get a server access token.
 
-### Mycroft Configuration
+#### Mycroft Configuration
 
 Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
 ```bash
@@ -279,11 +279,11 @@ To our existing configuration values we will add the following:
 
 A natural langauge platform owned by Facebook.
 
-### Account Setup
+#### Account Setup
 
 Create an account at [Wit.ai](https://wit.ai/) then create a new app to get your server access token. See the [Wit.ai documentation](https://wit.ai/docs) for further details.
 
-### Mycroft Configuration
+#### Mycroft Configuration
 
 Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
 ```bash
@@ -306,7 +306,7 @@ To our existing configuration values we will add the following:
 
 A natural langauge platform owned by Facebook.
 
-### Account Setup
+#### Account Setup
 
 Create a [Yandex Cloud account](https://cloud.yandex.com/services/speechkit), then:
 * [Create a billing account](https://cloud.yandex.com/docs/billing/quickstart/#create_billing_account) - you can activate a free period in the console.
@@ -316,7 +316,7 @@ Create a [Yandex Cloud account](https://cloud.yandex.com/services/speechkit), th
 
 See the [Yandex Identity and Access Management documentation](https://cloud.yandex.com/docs/iam/) for further details.
 
-### Mycroft Configuration
+#### Mycroft Configuration
 
 Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
 ```bash
