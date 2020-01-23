@@ -25,22 +25,18 @@ For Mycroft to be usable in a language we need to look at six components.
 
 ## 1. Language setting
 
-Your primary language is set within your `mycroft.conf` file. Setting this at the user level `~/.mycroft/mycroft.conf` file might look like:
-
-```javascript
-{
-  "max_allowed_core_version": 19.2,
-  "lang": "it-it"
-}
+Your primary language is set within your `mycroft.conf` file. Using the [Configuration Manager](config-manager.md) we can set the language by running:
+```bash
+mycroft-config set lang "it-it"
 ```
-
-_Please note that all configuration changes must result in a valid JSON file. If a change to your config does not seem to be working or you are unsure, please check the contents of your `mycroft.conf` file with one of the many JSON validators available online. A single misplaced comma can cause hours of frustration._
 
 ## 2. Wake Word
 
 Changing your wake word is not necessary, however may be desirable in order to wake the device with a phrase that is more appropriate or relevant in your language. By default, Mycroft will continue to be awoken by the phrase _"Hey Mycroft"_.
 
-[See our documentation on changing your Wake Word, and select a Wake Word that suits your language](https://mycroft.ai/documentation/home-mycroft-ai-pairing/#changing-your-wake-word).
+[See our documentation on changing your Wake Word, and select a Wake Word that suits your language](https://mycroft.ai/documentation/home-mycroft-ai-pairing/#changing-your-wake-word). Alternatively you can create a custom wake word:
+
+{% page-ref page="wake-word.md" %}
 
 ## 3. Speech to Text \(STT\)
 
@@ -89,9 +85,14 @@ If you would like to build a TTS for your language, then we recommend you check 
 
 ### Setting your TTS engine
 
-Locate your `mycroft.conf` file, and open it for editing on the Linux command line, using a tool like `vi` or `nano`.
+Using the [Configuration Manager](config-manager.md) we can edit the User-level `mycroft.conf` file by running:
+```bash
+mycroft-config edit user
+```
 
-```javascript
+We can then add our TTS configuration values.
+
+```JSON
   "tts": {
     "module": "google",
     "google": {
@@ -125,7 +126,7 @@ You can modify the individual `dialog` and `vocab` files for a Skill on your own
 
 In addition to the above, `mycroft-core` also requires localization, in particular to extract dates and numbers.
 
-[For more information, have a look at the `lang` directory within `mycroft/util` in `mycroft-core`](https://github.com/MycroftAI/mycroft-core/tree/dev/mycroft/util/lang). This is also maintained as a stand-alone repository called [Lingua Franca](https://github.com/MycroftAI/lingua-franca).
+For more information, see the [Lingua Franca Github repository](https://github.com/MycroftAI/lingua-franca).
 
 Some common files for each language are:
 
