@@ -26,6 +26,7 @@ For Mycroft to be usable in a language we need to look at six components.
 ## 1. Language setting
 
 Your primary language is set within your `mycroft.conf` file. Using the [Configuration Manager](config-manager.md) we can set the language by running:
+
 ```bash
 mycroft-config set lang "it-it"
 ```
@@ -48,8 +49,8 @@ In order to support a new language, a Speech to Text engine \(STT engine\) must 
 
 STT engines are made available by different vendors, and they each have different licenses and usage restrictions.
 
-* [List of languages supported by Google STT](https://stackoverflow.com/questions/14257598/what-are-language-codes-in-chromes-implementation-of-the-html5-speech-recogniti)
-* [List of languages supported by IBM Watson Bluemix](https://www.ibm.com/watson/developercloud/speech-to-text/api/v1/#sessionless_methods)
+* [List of languages supported by Google STT](https://cloud.google.com/speech-to-text/docs/languages)
+* [List of languages supported by IBM Watson](https://cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-models#models)
 * [List of languages supported by Wit.AI](https://wit.ai/faq)
 
 See the full range of supported STT engines and how to configure Mycroft to use them:
@@ -86,13 +87,14 @@ If you would like to build a TTS for your language, then we recommend you check 
 ### Setting your TTS engine
 
 Using the [Configuration Manager](config-manager.md) we can edit the User-level `mycroft.conf` file by running:
+
 ```bash
 mycroft-config edit user
 ```
 
 We can then add our TTS configuration values.
 
-```JSON
+```javascript
   "tts": {
     "module": "google",
     "google": {
@@ -185,3 +187,4 @@ This configuration has not changed the Wake Word, so the device will continue re
 You're welcome to post questions and queries to the [Languages topic on the Mycroft Forum](https://community.mycroft.ai/c/languages) or join our [Languages chatroom at Mycroft Chat](https://chat.mycroft.ai/community/channels/languages) to connect with others from around the world.
 
 We also have a number of [language-specific channels in Chat](https://mycroft.ai/contribute/#translate-to-new-languages).
+
