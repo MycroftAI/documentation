@@ -7,9 +7,9 @@ description: >-
 # Skill Settings
 
 Skill settings provide the ability for users to configure a Skill using a web-based interface. This is often used to:
-- change default behaviors such as the alarm sound
-- authenticate with external services such as Spotify
-- enter longer data as text rather than by voice, such as the IP address of their Home Assistant server.
+- Change default behaviors - such as the sound used for users alarms.
+- Authenticate with external services - such as Spotify
+- Enter longer data as text rather than by voice - such as the IP address of the users Home Assistant server.
 
 Skill settings are completely optional.
 
