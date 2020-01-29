@@ -1,93 +1,37 @@
 ---
 description: >-
-  Have you ever wanted to store settings for a Skill locally to a Device? For
-  instance, you might want the User to specify a preference the first time they
-  use a Skill, and then store that preference fo
+  Skill settings allow users to customize their experience or authenticate with
+  external services. Learn how to create and use settings in your Skill.
 ---
 
 # Skill Settings
 
-**Skill Settings** provide this ability.
+Skill settings provide the ability for users to configure a Skill using a web-based interface. This is often used to:
+- change default behaviors such as the alarm sound
+- authenticate with external services such as Spotify
+- enter longer data as text rather than by voice, such as the IP address of their Home Assistant server.
 
-They are a simple extension of the [Python `dict`](https://docs.python.org/2/library/stdtypes.html#typesmapping) that enables local storage of settings. Skill settings can be accessed from the
+Skill settings are completely optional.
 
-`MycroftSkill`
+## Define settings for a Skill
 
-class. Skill settings can also interact with a backend system to provide a graphical user interface \(GUI\) for Skills configuration. Skills configuration is done through metadata described in an optional
+To define our Skills settings we use a `settingsmeta.json` or `settingsmeta.yaml` file. This file must be in the root directory of the Skill and must follow a specific structure.
 
-`settingsmeta.json` or `settingsmeta.yaml` file.
+### Example settings file
+To see it in action, lets look at a simple example from the [Mycroft Date-Time Skill](https://github.com/MycroftAI/skill-date-time). First using the JSON syntax as a `settingsmeta.json` file:
 
-## How do I use Skill Settings?
-
-**Skill Settings** inherit from a Python dict. This means that you can use it just like you would any other Python dictionary.
-
-```python
-print(self.settings.get('meaning of life')) # outputs None... oh.. :(
-self.settings['meaning of life'] = 42
-print(self.settings.get('meaning of life')) # outputs 42! yay
-```
-
-### More information on Skill Settings
-
-## settings.json
-
-The
-
-`settings.json`
-
-file is created at the root level of the **Skill's** directory. The file is created when a **Skill** uses the **Skill Settings** feature.
-
-Here is an example directory listing of a **Skill** that has a
-
-\`settings.json'
-
-file:
-
-```bash
-4 drwxr-xr-x  4 mycroft mycroft  4096 Nov 24 14:34 .
-4 drwxrwxrwx 38 mycroft mycroft  4096 Nov 27 12:50 ..
-4 drwxr-xr-x  3 mycroft mycroft  4096 Nov 23 16:57 dialog
-4 drwxr-xr-x  8 mycroft mycroft  4096 Nov 27 12:36 .git
-4 -rw-r--r--  1 mycroft mycroft    20 Nov 23 16:57 .gitignore
-8 -rw-r--r--  1 mycroft mycroft  6265 Nov 23 16:57 init.py
-8 -rw-r--r--  1 mycroft mycroft  7509 Nov 24 14:34 init.pyc
-12 -rw-r--r--  1 mycroft mycroft 11357 Nov 23 16:57 LICENSE
-4 -rw-r--r--  1 mycroft mycroft   695 Nov 24 14:33 README.md
-4 -rw-r--r--  1 mycroft mycroft    35 Nov 25 19:28 settings.json
-```
-
-_NOTE: The Skill directory should be owned by user `mycroft` and have group ownership of `mycroft` with file system permissions as shown above - that is, all files should have permissions 644 and all directories should have permission 755._
-
-When a **Skill** is shut down - which usually happens when restarting a service, or reloading a **Skill** - it will create a `settings.json` file and store the dict data there. When a **Skill** loads, it reads the `settings.json` file and loads the settings into the **Skill**. Knowing this makes it easier to build and test **Skills**, because you can create the `settings.json` file first with settings in it, and use these in your Skills development, and then add in code later on that _writes_ to `settings.json`.
-
-## Web configurable Settings with `settingsmeta` file
-
-For some **Skills**, the User may need to configure them before they are usable. Examples include **Skills** where an API token or login is required.
-
-This functionality is provided by the `settingsmeta` file. This file defines settings and their values that the User can configure on [home.mycroft.ai](https://home.mycroft.ai). Mycroft will automatically synchronize the `settings.json` file with the settings that the User can configure on [home.mycroft.ai](https://home.mycroft.ai).
-
-To use this feature, you need to have a `settingsmeta.json` or `settingsmeta.yaml` file in the root directory of the **Skill**. The `settingsmeta` file _must_ follow a specific structure.
-
-Below is a JSON example of this structure from the `pianobar-skill`. You can see the [code for this **Skill**](https://github.com/ethanaward/pianobar-skill) - it has excellent example on how to use web configurable **Skill Settings**.
-
-```javascript
+```JSON
 {
     "skillMetadata": {
         "sections": [
             {
-                "name": "Login",
+                "name": "Display",
                 "fields": [
                     {
-                        "name": "email",
-                        "type": "email",
-                        "label": "Email",
-                        "value": ""
-                    },
-                    {
-                        "name": "password",
-                        "type": "password",
-                        "label": "Password",
-                        "value": ""
+                        "name": "show_time",
+                        "type": "checkbox",
+                        "label": "Show digital clock when idle",
+                        "value": "false"
                     }
                 ]
             }
@@ -96,65 +40,343 @@ Below is a JSON example of this structure from the `pianobar-skill`. You can see
 }
 ```
 
-Here is the same set of settings, as it would be configured with YAML:
+Now, here is the same settings, as it would be defined with YAML in a `settingsmeta.yaml` file:
 
 ```yaml
 skillMetadata:
    sections:
-      - name: Login
+      - name: Display
         fields:
-          - name: email
-            type: email
-            label: Email
-            value: ""
-          - name: password
-            type: password
-            label: Password
-            value: ""
+          - name: show_time
+            type: checkbox
+            label: Show digital clock when idle
+            value: "false"
+```
+Notice that the value of `false` is surrounded by "quotation marks". This is because Mycroft expects a string of `"true"` or `"false"` rather than a Boolean.
+
+Both of these files would result in the same settings block.
+
+![Date Time Skill Settings](/img/Date-Time-Settings.png)
+
+It is up to your personal preference which syntax you choose.
+
+### Structure of the settingsmeta file
+
+Whilst the syntax differs, the structure of these two filetypes is the same. This starts at the top level of the file by defining a `skillMetadata` object. This object must contain one or more `sections` elements.
+
+#### Sections
+
+Each section represents a group of settings that logically sit together. This enables us to display the settings more clearly in the web interface for users.
+
+In the simple example above we have just one section. However the [Spotify Skill settings](https://github.com/forslund/spotify-skill/blob/19.08/settingsmeta.json) contains two sections. The first is for Spotify Account authentication, and the second section contains settings to define your default playback device.
+
+Each section must contain a `name` attribute that is used as the heading for that section, and an Array of `fields`.
+
+#### Fields
+
+Each section has one or more `fields`. Each field is a setting available to the user. Each field takes four properties:
+- `name`    \(String\)  
+  The `name` of the `field` is used by the Skill to get and set the value of the `field`. It will not usually be displayed to the user, unless the `label` property has not been set.
+- `type`    \(Enum\)  
+  The data type of this field. The supported types are:
+  * `text`: any kind of text
+  * `email`: text validated as an email address
+  * `checkbox`: boolean, True or False
+  * `number`: text validated as a number
+  * `password`: text hidden from view by default
+  * `label`: special field to display text for information purposes only. No name or value is required for a `label` field.
+
+
+- `label`    \(String\)  
+  The text to be displayed above the setting field.
+- `value`    \(String\)
+  The initial value of the field.
+
+Examples for each type of field are provided in JSON and YAML at the end of this page.
+
+## Using settings in your Skill
+
+Once settings have been defined using a `settingsmeta` file, they will be presented to the user on their personal [Skill Settings page](https://home.mycroft.ai/skills).
+
+When settings are fetched from the Mycroft server, they are saved into a `settings.json` file, also in the Skills root directory. This file is automatically created when a Skill is loaded even if the Skill does not have any settings. Your Skill then accesses the settings from this file.
+
+### Reading settings
+
+Skill settings are available on the MycroftSkill class and inherit from a Python dict. This means that you can use it just like you would any other Python dictionary.
+
+To access the `show_time` variable from our example above we would use the following:
+
+```python
+self.settings.get('show_time')
 ```
 
-### More information on the `settingsmeta` file
+We can also provide a default value, in case the setting is not available by adding a second parameter to the `get` method.
 
-You may use JSON or YAML to define your `settingsmeta` file. We recommend YAML, as most people find it easier to work with.
+```python
+self.settings.get('show_time', False)
+```
 
-#### skillMetadata \(Object\)
+We recommend using the `get` method above rather than accessing the setting directly with:
+```Python
+self.settings['show_time']
+```
+Directly referencing the value may throw a KeyError if the setting has not yet been fetched from the server.
 
-An Object containing one or more `sections` elements.
+It is also important to note that the `settings` dictionary will not be available in your Skills `__init__` method as this is setting up your Skills Class. You should instead use an `initialize` method which is called after the Skill is fully constructed and registered with the system. More detail is available at:
 
-#### sections \(Array\)
+{% page-ref page="introduction/lifecycle-methods.md" %}
 
-An Array containing each of the elements the **Settings** needs to function.
 
-#### sections &gt; name \(String\)
+#### Handling settings changes
 
-The group name used as a display lable on the [home.mycroft.ai](https://home.mycroft.ai) Skills page.
+Each Mycroft device will check for updates to a users settings regularly, and write these to the Skills `settings.json`. To perform some action when settings are updated, you can register a callback function in your Skill.
 
-#### sections &gt; fields \(Array\)
+```Python
+def initialize(self):
+  self.settings_change_callback = self.on_settings_changed
+  self.on_settings_changed()
 
-Array of Field Objects. Each Field Object takes four properties:
+def on_settings_changed(self):
+  show_time = self.settings.get('show_time', False)
+  self.trigger_time_display(show_time)
+```
+In the example above, we have registered the `on_settings_changed` method to be our callback function. We have then immediately called the method to perform the relevant actions when the Skill is being initialized even though the Skills settings have not changed.
 
-* sections &gt; fields &gt; field &gt; name    \(String\)
+In the `on_settings_changed` method we have assigned the value of the `show_time` setting to a local variable. Then we have passed it as an argument to another method in our Skill that will trigger the display of the time based on its value.
 
-The `name` of the `field` is used by the **Skill** to set the value of the `field`. Not defined for `field` &gt; `type` = "Label". The generated `settings.json` file will use this name for the entered data.
+### Writing settings value from a Skill
 
-* sections &gt; fields &gt; field &gt; label    \(String\)
+Your Skill can reassign a setting locally, however these values remain local and cannot be pushed to the server. To do this we assign a value like you would with any other dictionary key.
 
-Text to be displayed above the data entry box on the **Skills** page on home.mycroft.ai \(or by itself, for `field` &gt; `type` = "Label"\).
+```Python
+self.settings['show_time'] = True
+```
 
-* sections &gt; fields &gt; field &gt; type    \(Enum\)
+The new value for the `show_time` setting will persist until a new setting is assigned locally by the Skill, or remotely by the user clicking `save` on the web view.
 
-_NOTE: Any combination of uppercase and/or lowercase is acceptable._ The data type of this field. The supported types are:
 
-* Text: \(any kind of text\)
-* Email: \(text validated as an email address\)
-* Checkbox: \(boolean, True or False\)
-* Number: \(text validated as a number\)
-* Password: \(text hidden from view by default\)
-* sections &gt; fields &gt; field &gt; value    \(String\)
+## Field Examples
 
-_Optional_ The initial value for the field.
+### Label Field
+{% tabs %}
+{% tab title="JSON" %}
+```JSON
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Label Field Example",
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": "This is descriptive text."
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+{% endtab %}
 
-* sections &gt; fields &gt; field &gt; placeholder \(String\)
+{% tab title="YAML" %}
+```yaml
+skillMetadata:
+   sections:
+      - name: Label Field Example
+        fields:
+          - type: label
+            label: This is descriptive text.
+```
+{% endtab %}
+{% endtabs %}
 
-_Optional_ Placeholder text to show before data is entered in the field \(or possibly as a tooltip\)
+### Text Field
+{% tabs %}
+{% tab title="JSON" %}
+```JSON
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Text Field Example",
+                "fields": [
+                    {
+                        "name": "my_string",
+                        "type": "text",
+                        "label": "Enter any text",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+{% endtab %}
 
+{% tab title="YAML" %}
+```yaml
+skillMetadata:
+   sections:
+      - name: Text Field Example
+        fields:
+          - name: my_string
+            type: text
+            label: Enter any text
+            value:
+```
+{% endtab %}
+{% endtabs %}
+
+### Email
+{% tabs %}
+{% tab title="JSON" %}
+```JSON
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Email Field Example",
+                "fields": [
+                    {
+                        "name": "my_email_address",
+                        "type": "email",
+                        "label": "Enter your email address",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+{% endtab %}
+
+{% tab title="YAML" %}
+```yaml
+skillMetadata:
+   sections:
+      - name: Email Field Example
+        fields:
+          - name: my_email_address
+            type: email
+            label: Enter your email address
+            value:
+```
+{% endtab %}
+{% endtabs %}
+
+### Checkbox
+{% tabs %}
+{% tab title="JSON" %}
+```JSON
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Checkbox Field Example",
+                "fields": [
+                    {
+                        "name": "my_boolean",
+                        "type": "checkbox",
+                        "label": "This is an example checkbox. It creates a Boolean value.",
+                        "value": "false"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+{% endtab %}
+
+{% tab title="YAML" %}
+```yaml
+skillMetadata:
+   sections:
+      - name: Checkbox Field Example
+        fields:
+          - name: my_boolean
+            type: checkbox
+            label: This is an example checkbox. It creates a Boolean value.
+            value: "false"
+```
+{% endtab %}
+{% endtabs %}
+
+### Number
+{% tabs %}
+{% tab title="JSON" %}
+```JSON
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Number Field Example",
+                "fields": [
+                    {
+                        "name": "my_number",
+                        "type": "number",
+                        "label": "Enter any number",
+                        "value": "7"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+{% endtab %}
+
+{% tab title="YAML" %}
+```yaml
+skillMetadata:
+   sections:
+      - name: Number Field Example
+        fields:
+          - name: my_number
+            type: number
+            label: Enter any number
+            value: 7
+```
+{% endtab %}
+{% endtabs %}
+
+### Password
+{% tabs %}
+{% tab title="JSON" %}
+```JSON
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Password Field Example",
+                "fields": [
+                    {
+                        "name": "my_password",
+                        "type": "password",
+                        "label": "Enter your password",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+{% endtab %}
+
+{% tab title="YAML" %}
+```yaml
+skillMetadata:
+   sections:
+      - name: Password Field Example
+        fields:
+          - name: my_password
+            type: password
+            label: Enter your password
+            value:
+```
+{% endtab %}
+{% endtabs %}
