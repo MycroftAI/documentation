@@ -7,9 +7,10 @@ description: >-
 # Skill Settings
 
 Skill settings provide the ability for users to configure a Skill using a web-based interface. This is often used to:
-- Change default behaviors - such as the sound used for users alarms.
-- Authenticate with external services - such as Spotify
-- Enter longer data as text rather than by voice - such as the IP address of the users Home Assistant server.
+
+* Change default behaviors - such as the sound used for users alarms.
+* Authenticate with external services - such as Spotify
+* Enter longer data as text rather than by voice - such as the IP address of the users Home Assistant server.
 
 Skill settings are completely optional.
 
@@ -18,9 +19,10 @@ Skill settings are completely optional.
 To define our Skills settings we use a `settingsmeta.json` or `settingsmeta.yaml` file. This file must be in the root directory of the Skill and must follow a specific structure.
 
 ### Example settings file
+
 To see it in action, lets look at a simple example from the [Mycroft Date-Time Skill](https://github.com/MycroftAI/skill-date-time). First using the JSON syntax as a `settingsmeta.json` file:
 
-```JSON
+```javascript
 {
     "skillMetadata": {
         "sections": [
@@ -52,11 +54,12 @@ skillMetadata:
             label: Show digital clock when idle
             value: "false"
 ```
+
 Notice that the value of `false` is surrounded by "quotation marks". This is because Mycroft expects a string of `"true"` or `"false"` rather than a Boolean.
 
 Both of these files would result in the same settings block.
 
-![Date Time Skill Settings](/img/Date-Time-Settings.png)
+![Date Time Skill Settings](../.gitbook/assets/date-time-settings.png)
 
 It is up to your personal preference which syntax you choose.
 
@@ -75,10 +78,15 @@ Each section must contain a `name` attribute that is used as the heading for tha
 #### Fields
 
 Each section has one or more `fields`. Each field is a setting available to the user. Each field takes four properties:
-- `name`    \(String\)  
+
+* `name`    \(String\)  
+
   The `name` of the `field` is used by the Skill to get and set the value of the `field`. It will not usually be displayed to the user, unless the `label` property has not been set.
-- `type`    \(Enum\)  
+
+* `type`    \(Enum\)  
+
   The data type of this field. The supported types are:
+
   * `text`: any kind of text
   * `email`: text validated as an email address
   * `checkbox`: boolean, True or False
@@ -86,10 +94,12 @@ Each section has one or more `fields`. Each field is a setting available to the 
   * `password`: text hidden from view by default
   * `label`: special field to display text for information purposes only. No name or value is required for a `label` field.
 
+* `label`    \(String\)  
 
-- `label`    \(String\)  
   The text to be displayed above the setting field.
-- `value`    \(String\)
+
+* `value`    \(String\)
+
   The initial value of the field.
 
 Examples for each type of field are provided in JSON and YAML at the end of this page.
@@ -116,22 +126,27 @@ We can also provide a default value, in case the setting is not available by add
 self.settings.get('show_time', False)
 ```
 
+{% hint style="warning" %}
+**A few warnings**
+{% endhint %}
+
 We recommend using the `get` method above rather than accessing the setting directly with:
-```Python
+
+```python
 self.settings['show_time']
 ```
+
 Directly referencing the value may throw a KeyError if the setting has not yet been fetched from the server.
 
 It is also important to note that the `settings` dictionary will not be available in your Skills `__init__` method as this is setting up your Skills Class. You should instead use an `initialize` method which is called after the Skill is fully constructed and registered with the system. More detail is available at:
 
 {% page-ref page="introduction/lifecycle-methods.md" %}
 
-
-#### Handling settings changes
+### Handling settings changes
 
 Each Mycroft device will check for updates to a users settings regularly, and write these to the Skills `settings.json`. To perform some action when settings are updated, you can register a callback function in your Skill.
 
-```Python
+```python
 def initialize(self):
   self.settings_change_callback = self.on_settings_changed
   self.on_settings_changed()
@@ -140,27 +155,28 @@ def on_settings_changed(self):
   show_time = self.settings.get('show_time', False)
   self.trigger_time_display(show_time)
 ```
+
 In the example above, we have registered the `on_settings_changed` method to be our callback function. We have then immediately called the method to perform the relevant actions when the Skill is being initialized even though the Skills settings have not changed.
 
 In the `on_settings_changed` method we have assigned the value of the `show_time` setting to a local variable. Then we have passed it as an argument to another method in our Skill that will trigger the display of the time based on its value.
 
-### Writing settings value from a Skill
+### Writing to settings
 
 Your Skill can reassign a setting locally, however these values remain local and cannot be pushed to the server. To do this we assign a value like you would with any other dictionary key.
 
-```Python
+```python
 self.settings['show_time'] = True
 ```
 
 The new value for the `show_time` setting will persist until a new setting is assigned locally by the Skill, or remotely by the user clicking `save` on the web view.
 
-
-## Field Examples
+## Settings Field Examples
 
 ### Label Field
+
 {% tabs %}
 {% tab title="JSON" %}
-```JSON
+```javascript
 {
     "skillMetadata": {
         "sections": [
@@ -192,9 +208,10 @@ skillMetadata:
 {% endtabs %}
 
 ### Text Field
+
 {% tabs %}
 {% tab title="JSON" %}
-```JSON
+```javascript
 {
     "skillMetadata": {
         "sections": [
@@ -230,9 +247,10 @@ skillMetadata:
 {% endtabs %}
 
 ### Email
+
 {% tabs %}
 {% tab title="JSON" %}
-```JSON
+```javascript
 {
     "skillMetadata": {
         "sections": [
@@ -268,9 +286,10 @@ skillMetadata:
 {% endtabs %}
 
 ### Checkbox
+
 {% tabs %}
 {% tab title="JSON" %}
-```JSON
+```javascript
 {
     "skillMetadata": {
         "sections": [
@@ -306,9 +325,10 @@ skillMetadata:
 {% endtabs %}
 
 ### Number
+
 {% tabs %}
 {% tab title="JSON" %}
-```JSON
+```javascript
 {
     "skillMetadata": {
         "sections": [
@@ -344,9 +364,10 @@ skillMetadata:
 {% endtabs %}
 
 ### Password
+
 {% tabs %}
 {% tab title="JSON" %}
-```JSON
+```javascript
 {
     "skillMetadata": {
         "sections": [
@@ -380,3 +401,4 @@ skillMetadata:
 ```
 {% endtab %}
 {% endtabs %}
+
