@@ -198,13 +198,21 @@ _NOTE: depending on your system, you may need to run the commands below with `su
 
 `rm -R ~/yourpath/to/mycroft-core`
 
-* Next, remove the **Skills** directories:
+* Remove the **Skills** directories:
 
 `rm -R /opt/mycroft`
 
-* Next, remove the Mycroft settings:
+* Remove the Mycroft settings:
 
 `rm -R ~/.mycroft`
+
+* Remove the Mycroft log files:
+
+`rm -R /var/log/mycroft`
+
+* Remove the Mycroft system level configuration, if it was created:
+
+`rm -R /etc/mycroft`
 
 ## Common issues with Mycroft for Linux
 
