@@ -190,40 +190,48 @@ Keeping your `mycroft-core` installation up to date is simple.
 
 ## Removing Mycroft for Linux from your system
 
-If you have installed `mycroft-core` using the `git-clone` method, then removing it requires a couple of steps.
+If you have installed `mycroft-core` using the `git-clone` method, you can remove all files and directories that have been created by Mycroft using the `--clean` flag:
 
-_NOTE: depending on your system, you may need to run the commands below with `sudo`_
+```bash
+cd ~/mycroft-core # or the path to your mycroft-core installation
+./dev_setup --clean
+```
 
-* Remove the `mycroft-core` directory from wherever you installed it:
+This does not remove the cloned `mycroft-core` project directory. If cloned directly into the home directory, this can be removed with:
 
-`rm -R ~/yourpath/to/mycroft-core`
+```text
+rm -rf ~/mycroft-core 
+```
 
-* Remove the **Skills** directories:
+{% hint style="danger" %}
+**Warning: always be very careful when running `rm -rf` commands. Running this command on the wrong directory can delete your entire filesystem. Run `rm --help` for more details.**
+{% endhint %}
 
-`rm -R /opt/mycroft`
+Alternatively you can manually remove these files using the following commands:
 
-* Remove the Mycroft settings:
+```bash
+sudo rm -rf /var/log/mycroft # Log files
+rm -f /var/tmp/mycroft_web_cache.json # Configuration from Home.mycroft.ai
+rm -rf "${TMPDIR:-/tmp}/mycroft" # Temp files
+rm -rf "$HOME/.mycroft" # User level configuration
+sudo rm -rf /opt/mycroft # Mycroft Skills directory
+rm -rf "$HOME/mycroft-core" # Mycroft-core installation
+```
 
-`rm -R ~/.mycroft`
-
-* Remove the Mycroft log files:
-
-`rm -R /var/log/mycroft`
-
-* Remove the Mycroft system level configuration, if it was created:
-
-`rm -R /etc/mycroft`
+{% hint style="info" %}
+Depending on your system, you may need to run the commands with `sudo`
+{% endhint %}
 
 ## Common issues with Mycroft for Linux
 
-### Removing and rebuilding your `virtualenv`
+### Removing and rebuilding your virtual environment
 
 If your CLI won't run, it is highly likely to be an issue with the Mycroft virtual environment. The easiest solution we've found has been to remove and reinstall the virtual environment.
 
 First, delete the existing virtual environment:
 
 ```bash
-sudo rm -R ~/.virtualenvs/mycroft
+sudo rm -r ~/mycroft-core/.venv/
 ```
 
 Next, we run the setup script again:
@@ -232,9 +240,7 @@ Next, we run the setup script again:
 mycroft-core$ ./dev_setup.sh
 ```
 
-This will rebuild your
-
-`virtualenv`
+This will rebuild your virtual environment.
 
 ### Installation warns about bad interpreter
 
