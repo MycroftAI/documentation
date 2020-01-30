@@ -92,6 +92,7 @@ Each section has one or more `fields`. Each field is a setting available to the 
   * `checkbox`: boolean, True or False
   * `number`: text validated as a number
   * `password`: text hidden from view by default
+  * `select`: a drop-down menu of options
   * `label`: special field to display text for information purposes only. No name or value is required for a `label` field.
 
 * `label`    \(String\)  
@@ -112,25 +113,27 @@ When settings are fetched from the Mycroft server, they are saved into a `settin
 
 ### Reading settings
 
-Skill settings are available on the MycroftSkill class and inherit from a Python dict. This means that you can use it just like you would any other Python dictionary.
+Skill settings are available on the MycroftSkill class and inherit from a Python Dict. This means that you can use it just like you would any other Python dictionary.
 
-To access the `show_time` variable from our example above we would use the following:
+To access the `show_time` variable from our example above we would use the `Dict.get` method:
 
 ```python
 self.settings.get('show_time')
 ```
 
-We can also provide a default value, in case the setting is not available by adding a second parameter to the `get` method.
+If the setting we are trying to access is not available, the `get` method will return `None`. Instead of assigning this to a variable and then testing for `None`, we can provide a default value as the second argument to the `get` method.
 
 ```python
 self.settings.get('show_time', False)
 ```
 
+In this example, if the settings have not been received, or the `show_time` setting has not been assigned, it will return the default value `False`.
+
 {% hint style="warning" %}
 **A few warnings**
 {% endhint %}
 
-We recommend using the `get` method above rather than accessing the setting directly with:
+We recommend using the `Dict.get` method above rather than accessing the setting directly with:
 
 ```python
 self.settings['show_time']
@@ -402,3 +405,44 @@ skillMetadata:
 {% endtab %}
 {% endtabs %}
 
+
+### Select
+
+{% tabs %}
+{% tab title="JSON" %}
+```javascript
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Select Field Example",
+                "fields": [
+                    {
+                      "name": "my_selected_option",
+                      "type": "select",
+                      "label": "Select an option",
+                      "options": "Option 1|option_one;Option 2|option_two;Option 3|option_three",
+                      "value": "option_one"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+{% endtab %}
+
+{% tab title="YAML" %}
+```yaml
+skillMetadata:
+   sections:
+      - name: Select Field Example
+        fields:
+          - name: my_selected_option
+            type: select
+            label: Select an option
+            options: Option 1|option_one;Option 2|option_two;Option 3|option_three
+            value: option_one
+```
+{% endtab %}
+{% endtabs %}
