@@ -20,15 +20,15 @@ Check that the Skill installs using voice commands. Mycroft will get the user to
 > Install method:  
 > Output:
 >
-> ```text
+> \```text
 >
-> ```
+> \```
 >
 > Checking that STT transcribes correctly:
 >
-> ```text
+> \```text
 >
-> ```
+> \```
 
 * [ ] **Settings**  
 
