@@ -6,6 +6,7 @@ description: >-
 
 # Information Review Template
 
+```
 ## Meta
 
 * Who: [@your-github-handle](https://github.com/your-github-handle) / @your-mycroft-chat-handle  
@@ -63,4 +64,4 @@ This review checks the README for completeness - does it follow the README templ
 ### Actions Required
 
 \*
-
+```
