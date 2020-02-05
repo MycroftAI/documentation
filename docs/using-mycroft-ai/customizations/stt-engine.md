@@ -304,7 +304,7 @@ To our existing configuration values we will add the following:
 
 ## Yandex SpeechKit STT
 
-A natural langauge platform owned by Facebook.
+Yandex is one of the largest cloud platforms in Russia.
 
 #### Account Setup
 
