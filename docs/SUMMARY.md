@@ -26,7 +26,8 @@
   * [mycroft.conf](using-mycroft-ai/customizations/mycroft-conf.md)
   * [Languages](using-mycroft-ai/customizations/languages.md)
   * [Using a Custom Wake Word](using-mycroft-ai/customizations/wake-word.md)
-  * [Speech-To-Text Engines](using-mycroft-ai/customizations/stt-engine.md)
+  * [Speech-To-Text](using-mycroft-ai/customizations/stt-engine.md)
+  * [Text-To-Speech](using-mycroft-ai/customizations/tts-engine.md)
 * [Troubleshooting](using-mycroft-ai/troubleshooting/README.md)
   * [General Troubleshooting](using-mycroft-ai/troubleshooting/general-troubleshooting.md)
   * [Audio Troubleshooting](using-mycroft-ai/troubleshooting/audio-troubleshooting.md)
@@ -89,4 +90,3 @@
 * [Mycroft Skills Kit](mycroft-technologies/mycroft-skills-kit.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
-
