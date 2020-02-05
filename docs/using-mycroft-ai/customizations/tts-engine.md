@@ -1,7 +1,8 @@
 ---
 description: >-
   Text-To-Speech (TTS) is the process of synthesizing audio from text. Mycroft
-  uses our own TTS engine but also support a range of third party services.
+  uses our own TTS engines by default, however we also support a range of third
+  party services.
 ---
 
 # Text-To-Speech
