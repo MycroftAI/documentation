@@ -14,22 +14,23 @@ If you are running your own services, your Mycroft installation can be directed 
 
 ## How fast can Mycroft respond?
 
-The speed of Mycroft's responses depends on a number of factors.
+By default, to answer a request Mycroft: 
 
-By default, to answer a request Mycroft:
-1. Detects the wakeword
-2. Records 3 - 10 seconds of audio
-3. Sends this audio to a cloud-based STT service
-4. Transcribes the audio and returns the text transcription
-5. Parses the text to understand the intent
-6. Sends the text to the intent handler with the highest confidence
-7. Allows the Skill to perform some action and provide the text to be spoken
-8. Synthesizes audio from the given text, either locally or remotely, depending on the STT engine in use
+1. Detects the wake word 
+2. Records 3 - 10 seconds of audio 
+3. Sends this audio to a cloud-based speech-to-text \(STT\) service 
+4. Transcribes the audio and returns the text transcription 
+5. Parses the text to understand the intent 
+6. Sends the text to the intent handler with the highest confidence 
+7. Allows the Skill to perform some action and provide the text to be spoken 
+8. Synthesizes audio from the given text, either locally or remotely, depending on the text-to-speech \(TTS\) engine in use 
 9. Plays the synthesized spoken audio.
 
-There's also a number of other factors that can come into play:
-- System resources - more processing power and memory never hurts!
-- Network latency - as it is not yet possible to perform everything on device, network latency and connection speed can play a significant role in slowing down response times.
-- Streaming STT - we have been experimenting with the use of streaming services. This transcribes audio as it's received rather than waiting for the entire utterance to be finished and sending the resulting audio file to a server to be processed in its entirety. It is possible to switch to a streaming STT service however at present this is not available by default and requires a paid 3rd party service. See [Switching STT Engines](../using-mycroft-ai/customizations/stt-engine.md) for a list of options available.
-- Dialog structure - a long sentence will always take more time to synthesize than a short one. For this reason Mycroft breaks up longer dialog into chunks and returns one to speak whilst the next is being generated. Skill developers can help provide quicker response times by considering the structure of their dialog and breaking that dialog up using punctuation in approprate places.
-- TTS Caching - synthesized audio is cached meaning common recently generated phrases don't need to be generated, they can be returned immediately.
+Through this process there are a number of factors that can affect the perceived speed of Mycroft's responses:
+
+* System resources - more processing power and memory never hurts!
+* Network latency - as it is not yet possible to perform everything on device, network latency and connection speed can play a significant role in slowing down response times.
+* Streaming STT - we have been experimenting with the use of streaming services. This transcribes audio as it's received rather than waiting for the entire utterance to be finished and sending the resulting audio file to a server to be processed in its entirety. It is possible to switch to a streaming STT service however at present this is not available by default and requires a paid 3rd party service. See [Switching STT Engines](../using-mycroft-ai/customizations/stt-engine.md) for a list of options available.
+* Dialog structure - a long sentence will always take more time to synthesize than a short one. For this reason Mycroft breaks up longer dialog into chunks and returns one to speak whilst the next is being generated. Skill developers can help provide quicker response times by considering the structure of their dialog and breaking that dialog up using punctuation in appropriate places.
+* TTS Caching - synthesized audio is cached meaning common recently generated phrases don't need to be generated, they can be returned immediately.
+
