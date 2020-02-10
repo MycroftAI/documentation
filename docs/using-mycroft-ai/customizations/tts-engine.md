@@ -23,7 +23,7 @@ Currently:
 - British Male is Mimic 1
 - American Female is Mimic 1
 - American Male is Mimic 2
-- Google Voice is the Google Cloud TTS service.
+- Google Voice uses the Google Translate TTS API.
 
 As Mimic 1 voices can be synthesized on device, the British Male voice will be used anytime the device cannot reach your preferred TTS service. This allows Mycroft to continue to speak even if it is not connected to a network.
 
