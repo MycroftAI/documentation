@@ -10,34 +10,22 @@ See a [list of all variables available within `mycroft.conf`](https://github.com
 
 ## What is `mycroft.conf`?
 
-`mycroft.conf` is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft **Device**, such as Picroft or Mark 1. `mycroft-conf` contains information about the **Device** itself, like what type of **Device** and **Enclosure** it is, as well as information about user preferences. If you haven't specified preferences, then `mycroft.conf` will contain some default values. Your **Device**, and **Skills** installed on your **Device**, use `mycroft.conf` to provide additional functionality.
+`mycroft.conf` is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. `mycroft-conf` contains information about the Device itself, like what type of Device and Enclosure it is, as well as information about user preferences. If you haven't specified preferences, then `mycroft.conf` will contain some default values. Your Device, and Skills installed on your Device, use `mycroft.conf` to provide additional functionality.
 
-## What is `mycroft_web_cache.json`?
+## Where are the `mycroft.conf` files stored?
 
-`mycroft_web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft **Device**, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ \(which determines _Time Zone_\), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
+The `mycroft.conf` files are stored in four possible locations:
 
-Both of these files are regularly used in troubleshooting, so it's useful to know what information they hold, and where they are stored on your **Device**.
+1. Default - mycroft-core/mycroft/configuration/mycroft.conf
+2. Remote (from Home.Mycroft.ai) - /var/tmp/mycroft_web_cache.json
+3. System - /etc/mycroft/mycroft.conf
+4. User - $HOME/.mycroft/mycroft.conf
 
-## How are `mycroft.conf` and `mycroft_web_cache.json` updated?
-
-When you update settings at [home.mycroft.ai](https://home.mycroft.ai), your **Device** will periodically pull them down. However, this may not be fast enough to do what you want to do. To refresh your `mycroft.conf` from [home.mycroft.ai](https://home.mycroft.ai), Speak:
-
-> Hey Mycroft, update config
-
-Mycroft will then pull the files down to your **Device**.
-
-## Where is the `mycroft.conf` file stored?
-
-The `mycroft.conf` file is stored in different locations on different **Devices**, including:
-
-* `/etc/mycroft/mycroft.conf`
-* `~/.mycroft/mycroft.conf`
-
-Mycroft implements an order of precedence; settings at a User level override those at a System level.
+Mycroft implements an order of precedence; settings defined at a User level override those at a System level. If the file does not exist, Mycroft moves to the following level.
 
 ## A look at the inside of `mycroft.conf`
 
-Here is an example System level `mycroft.conf` from a Mark 1 **Device**:
+Here is an example System level `mycroft.conf` from a Mark 1 Device:
 
 ```text
 pi@mark_1:/etc/mycroft $ cat mycroft.conf
@@ -63,19 +51,70 @@ pi@mark_1:/etc/mycroft $ cat mycroft.conf
 See a [list of all variables available within `mycroft.conf`](https://github.com/MycroftAI/mycroft-core/blob/master/mycroft/configuration/mycroft.conf)\`\`
 {% endhint %}
 
-## Where is the `mycroft_web_cache.json` file stored?
+
+## `mycroft_web_cache.json`
+
+`mycroft_web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ \(which determines _Time Zone_\), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
+
+Both of these files are regularly used in troubleshooting, so it's useful to know what information they hold, and where they are stored on your Device.
+
+### Where is the `mycroft_web_cache.json` file stored?
 
 This file is stored at:
 
 `/var/tmp/mycroft_web_cache.json`
 
-on the **Device**.
+on the Device.
 
-## A look at the inside of `mycroft_web_cache.json`
+### How is `mycroft_web_cache.json` updated?
 
-Here is an example `mycroft_web_cache.json`. _NOTE: Your settings will be different._
+When you update settings at [home.mycroft.ai](https://home.mycroft.ai), your Device will periodically pull them down.
+In normal circumstances any change should be reflected on the device within 1-2 minutes. You can also instruct your device to pull down the latest configuration, by saying:
 
-```text
+> Hey Mycroft, update configuration
+
+Mycroft will respond in one of two ways:
+
+* If your configuration was out of date, and has been pulled down again, Mycroft will respond:
+
+> Configuration updated
+
+* If your configuration was the same on your device as on home.mycroft.ai, Mycroft will respond:
+
+> Your device has been configured
+
+### Reading values directly from `mycroft_web_cache.json`
+
+To see the city location value:
+
+`jq ".location.city" < /var/tmp/mycroft_web_cache.json`
+
+To see the latitude and longitude coordinates of your location:
+
+`jq ".location.coordinate" < /var/tmp/mycroft_web_cache.json`
+
+To see the timezone setting:
+
+`jq ".location.timezone" < /var/tmp/mycroft_web_cache.json`
+
+To see the listener setting:
+
+`jq ".listener" < /var/tmp/mycroft_web_cache.json`
+
+To see the Speech to Text \(STT\) settings:
+
+`jq ".stt" < /var/tmp/mycroft_web_cache.json`
+
+To see the Text to Speech \(TTS\) settings:
+
+`jq ".tts" < /var/tmp/mycroft_web_cache.json`
+
+### A look at the inside of `mycroft_web_cache.json`
+
+Here is an example `mycroft_web_cache.json`.  
+_NOTE: Your settings will be different._
+
+```json
 {
   "date_format": "DMY",
   "tts": {
@@ -212,4 +251,3 @@ Here is an example `mycroft_web_cache.json`. _NOTE: Your settings will be differ
   "system_unit": "metric"
 }
 ```
-
