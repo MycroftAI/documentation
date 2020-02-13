@@ -69,29 +69,7 @@ If you are looking for a low-cost option to try out Picroft, we can recommend th
 | PlayStation | Eye \(PS3 Eye\) | Working | Mic and camera | An excellent introductory model if you are just checking Picroft out. |
 | Seeed Studio | Mic Array 2.0 | Working | Mic array | Premium microphone array |
 
-### Troubleshooting USB audio devices
-
-If Mycroft audio output fails \(No speech or audio\) when using some sort of USB sound card for output it might be worth trying to reset the play command lines used by Mycroft.
-
-To accomplish this, from your Terminal edit the System level configuration using the [Configuration Manager](../customizations/config-manager.md) by running:
-
-```
-mycroft-config edit system
-```
-
-This file can also be edited directly at `/etc/mycroft/mycroft.conf`.
-
-In this configuration file, set the following values as such:
-
-```json
-{
-  "play_wav_cmdline": "aplay %1",
-  "play_mp3_cmdline": "mpg123 %1",
-  [...]
-}
-```
-
-If you continue to experience audio problems, please see the general [Audio Troubleshooting Guide](../troubleshooting/audio-troubleshooting.md).
+If you experience any audio problems, please see the [Audio Troubleshooting Guide](../troubleshooting/audio-troubleshooting.md).
 
 {% page-ref page="../troubleshooting/audio-troubleshooting.md" %}
 
@@ -224,80 +202,9 @@ The guided setup will then do a microphone test to ensure your chosen microphone
 
 #### What can I do if the guided setup doesn't set my audio input or output device correctly?
 
-There are a few tricks that we know of to get your audio input or output device working correctly - however, these are somewhat technical and will require typing commands on the Linux command line interface \(CLI\).
+If you experience any audio problems, please see the [Audio Troubleshooting Guide](../troubleshooting/audio-troubleshooting.md).
 
-**Alsamixer**
-
-`alsamixer` is a utility provided by the ALSA sound system on Raspbian Stretch that allows you to select an audio playback \(output\) and input \(capture\) device.
-
-To run `alsamixer`, type `Ctrl +C` to exit the guided setup and you will be at the Linux command line. Type `alsamixer` as shown below:
-
-```bash
-(.venv) pi@picroft:~ $ alsamixer
-```
-
-You will see a screen similar to the one below, and may have different options depending on which audio devices you have connected.
-
-![Picroft alsamixer initial screen](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-12.png)
-
-Different devices will have a different command key for choosing 'Capture' devices, in this case it is `F4`.
-
-If you do not see any capture devices, as shown below, then you may need to select a different sound card.
-
-![Picroft alsamixer no audio capture device](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-25.png)
-
-To select a different sound card, follow the instructions on your version of `alsamixer`. In this case, the command key for choosing 'Select sound card' is `F6`. Use the arrow keys on your keyboard to navigate up and down the list to choose your preferred soundcard.
-
-![Picroft alsamixer select sound card](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-52.png)
-
-`alsamixer` usually has an option to see **all** capture and playback devices. In this case, the command key to see all devices is `F5`.
-
-![Picroft alsamixer show all audio capture and playback devices](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-06-09.png)
-
-**pulseaudio**
-
-If `alsamixer` does not work for you, then you may have some success with `pulseaudio`. We've recently updated the Picroft repo to include `pulseaudio`, but if you haven't updated for a little while then you may need to manually install it.
-
-```bash
-(.venv) pi@picroft:~ $ sudo apt-get install pulseaudio
-Reading package lists... Done
-Building dependency tree
-Reading state information... Done
-The following additional packages will be installed:
-  fontconfig-config fonts-dejavu-core libasound2-plugins libavcodec57
-  libavresample3 libavutil55 libcairo2 libdrm-amdgpu1 libdrm-freedreno1
-  libdrm-nouveau2 libdrm-radeon1 libfontconfig1 libgl1-mesa-dri
-  libgl1-mesa-glx libglapi-mesa libgsm1 libllvm3.9 libmp3lame0 libopenjp2-7
-  libopus0 liborc-0.4-0 libpixman-1-0 libpulsedsp libsensors4 libshine3
-  libsnappy1v5 libsoxr0 libspeex1 libspeexdsp1 libswresample2 libtdb1
-  libtheora0 libtwolame0 libtxc-dxtn-s2tc libva-drm1 libva-x11-1 libva1
-  libvdpau-va-gl1 libvdpau1 libvpx4 libwavpack1 libwebp6 libwebpmux2
-  libwebrtc-audio-processing1 libx264-148 libx265-95 libxcb-dri2-0
-  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shm0
-  libxcb-sync1 libxdamage1 libxfixes3 libxrender1 libxshmfence1 libxvidcore4
-  libxxf86vm1 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers
-  pulseaudio-utils rtkit va-driver-all vdpau-driver-all
-Suggested packages:
-  opus-tools lm-sensors speex pavumeter pavucontrol paman paprefs
-The following NEW packages will be installed:
-  fontconfig-config fonts-dejavu-core libasound2-plugins libavcodec57
-  libavresample3 libavutil55 libcairo2 libdrm-amdgpu1 libdrm-freedreno1
-  libdrm-nouveau2 libdrm-radeon1 libfontconfig1 libgl1-mesa-dri
-  libgl1-mesa-glx libglapi-mesa libgsm1 libllvm3.9 libmp3lame0 libopenjp2-7
-  libopus0 liborc-0.4-0 libpixman-1-0 libpulsedsp libsensors4 libshine3
-  libsnappy1v5 libsoxr0 libspeex1 libspeexdsp1 libswresample2 libtdb1
-  libtheora0 libtwolame0 libtxc-dxtn-s2tc libva-drm1 libva-x11-1 libva1
-  libvdpau-va-gl1 libvdpau1 libvpx4 libwavpack1 libwebp6 libwebpmux2
-  libwebrtc-audio-processing1 libx264-148 libx265-95 libxcb-dri2-0
-  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shm0
-  libxcb-sync1 libxdamage1 libxfixes3 libxrender1 libxshmfence1 libxvidcore4
-  libxxf86vm1 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers
-  pulseaudio pulseaudio-utils rtkit va-driver-all vdpau-driver-all
-0 upgraded, 68 newly installed, 0 to remove and 0 not upgraded.
-Need to get 30.2 MB of archives.
-After this operation, 221 MB of additional disk space will be used.
-Do you want to continue? [Y/n] Y
-```
+{% page-ref page="../troubleshooting/audio-troubleshooting.md" %}
 
 ### Pairing the Picroft
 
@@ -465,4 +372,3 @@ You also need to install some additional packages:
 `sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
 
 This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill.
-

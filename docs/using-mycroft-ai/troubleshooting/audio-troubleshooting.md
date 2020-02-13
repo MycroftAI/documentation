@@ -4,41 +4,142 @@ description: Having trouble with your microphone or audio output?
 
 # Audio Troubleshooting
 
-## Troubleshooting Audio
+## Mycroft's audio system
+Mycroft utilizes pulseaudio for sound input and output.
 
-Mycroft utilizes pulseaudio for sound input and output. Mark 1 and Picroft devices have pulseaudio set up correctly for the mycroft user. On picroft, any mic or speakers you add to it may need to be configured as Mycroft uses the default input and output from pulse. Systems without pulseaudio installed will likely also not function as expected. Systems with both jack and pulseaudio may need additional configuration to work correctly.
+Mark 1 and Picroft devices have pulseaudio set up correctly for the `mycroft` user. On picroft, any mic or speakers you add to it may need to be configured as Mycroft uses the default input and output from pulse.
 
-#### Missing pulseaudio
+Systems without pulseaudio installed are not likely to function as expected. Systems with both jack and pulseaudio may need additional configuration to work correctly.
 
-If you see an issue in the logs with `Popen(play_wav_cmd)` and `OSError: [Errno 2] No such file or directory` this usually indicates that mycroft can't find pulseaudio. Make sure it's installed and mycroft is able to access it.
+## Device compatibility
 
-#### Microphone can't hear me or CLI show no change in meter while speaking
+We are often asked, "will my {very specific audio device} work?"
 
-If no audio is picked up by mycroft, check the mic to verify it's working. If the mictest is successful, verify that pulse has your device as the default source.
+The answer is generally, maybe. However there is no way for us to test all of the hardware variations everytime we make a change to the code.
 
-**Dev instance audio test**
+Most USB mics and speakers are usable with pulseaudio. In general, if your OS can recognize the device as an audio endpoint pulse will be able to connect it. A variety of microphones and speakers have been used successfully.
 
-`start-mycroft.sh audiotest` will attempt to record, then play back a short audio clip using the default source and sink.
+If you have the device on hand, try it out and see. If the information on this page isn't able to get it going, try asking in the [Community Chat](https://chat.mycroft.ai) or [Forum](https://community.mycroft.ai).
 
-**Test your speakers**
+## Microphone - Audio Input
 
-To test a WAV file, you can use: `aplay $WAVfile`
+> The microphone can't hear me or the CLI shows no change in the input meter while speaking.
 
-For an MP3/OGG format: `mpg123 $mp3file`
+### 1. Test if Mycroft is receiving mic input
 
-**Test your mic**
+The simplest way to visualize the audio input being received by Mycroft is to run the CLI. On your device you can view the CLI by running:
 
-The following command will start recording for ten seconds on the default input device when run: `arecord -d 10 -o test.wav`
+```
+mycroft-cli-client
+```
 
-You can play it back to hear what is recorded with `aplay test.wav`
+If Mycroft was not already running you can start Mycroft and the CLI together using:
 
-#### Microphone working but Mycroft does not trigger on Wake Word
+```
+mycroft-start debug
+```
 
-If the microphone has been verified to be working using the audiotest. It may be that the mic level is set too high. Reduce the mic level between 25-50% and attempt to speak again.
+![Picroft basic commands](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-21-04-21-07.png)
+
+The terminal window will then be filled by the CLI as pictured here. In the lower right-hand corner is a "Mic level". If no mic input is being received by Mycroft, this area will be blank. In this case please proceed to the next test.
+
+On the other hand, if an audio stream is being received, the lines and the number here should jump around, and spike when you speak directly into the microphone. In this case we can be fairly sure that the microphone is working. It may be the Wake Word that is not responding.
+
+{% page-ref page="wake-word-troubleshooting.md" %}
+
+### 2. Test your mic outside of Mycroft
+
+To see why the microphone is not working we first want to test it outside of Mycroft.
+
+To do this we will record ten seconds of audio on the default input device and write it to the file `test.wav`. From the commandline on the device run:
+```
+arecord -d 10 -o test.wav
+```
+
+You can now play it back to hear what is recorded with:
+```
+aplay test.wav
+```
+
+If successful continue to the next test - 3. Mycroft Audio Test.
+
+#### System does not recognize device
+
+If the first test was not successful, your device is not installed correctly. If your operating system cannot use the device, then Mycroft will not be able to access it either.
+
+See the PulseAudio section for help in configuring audio devices with the system.
+
+### 3. Mycroft Audio Test
+
+Mycroft comes with a built-in audio test. This tool will attempt to record, then play back a short audio clip using the default microphone (source) and speakers (sink). To start the test run:
+```
+mycroft-start audiotest
+```
+
+If the test is successful and you hear the recorded audio back, it should be possible for Mycroft to use the intended microphone.
+
+#### Specifying an input device
+
+By default Mycroft will use the system default device for all audio. In most cases this provides a more consistent, flexible and reliable experience. If however other methods do not work, we can specify the exact input device Mycroft should use in our `mycroft.conf` file. For information on this configuration file, see [https://mycroft.ai/documentation/mycroft-conf/](https://mycroft.ai/documentation/mycroft-conf/).
+
+We first need to know the device name. This can be found by running the audio test with the `-l` flag
+```
+mycroft-start audiotest -l
+```
+
+As well as running the test, a list of audio devices will be displayed. The output we need looks like:
+
+```text
+====================== Audio Devices ======================
+ Index    Device Name
+  4:       HDA Intel PCH: ALC269VB Analog (hw:1,0)
+  6:       pulse
+  7:       default
+```
+
+A specific device can be added to your user level configuration file using the [Configuration Manager](config-manager.md) by running:
+```bash
+mycroft-config set listener.device_name "DEVICE_NAME"
+```
+
+Where "DEVICE\_NAME" is taken from the audio device output. Note the "(hw:1,0)" is not required.
+
+Using the output from the audiotest example above, if we wanted to use the device at Index 4, we would run:
+```bash
+mycroft-config set listener.device_name "HDA Intel PCH: ALC269VB Analog"
+```
+
+#### Set the default device in pulseaudio
+
+The other option is to set the default device in pulseaudio. See the PulseAudio section further down this page for more details.
+
+## Speakers - Audio Output
+
+### USB audio devices
+
+If Mycroft audio output fails \(No speech or audio\) when using a USB sound card or output device, you can modify the play command lines used by Mycroft to use a different program.
+
+To accomplish this, from your Terminal edit the System level configuration using the [Configuration Manager](../customizations/config-manager.md) by running:
+
+```
+mycroft-config edit system
+```
+
+This file can also be edited directly at `/etc/mycroft/mycroft.conf`.
+
+In this configuration file, set the following values as such:
+
+```json
+{
+  "play_wav_cmdline": "aplay %1",
+  "play_mp3_cmdline": "mpg123 %1",
+  [...]
+}
+```
 
 ## Pulseaudio settings
 
-**Show current settings and info**
+### Show current settings and info
 
 `pactl info`
 
@@ -63,7 +164,7 @@ For mycroft, the lines most relevant are the Default Source: and Default Sink:.
   Cookie: ab8a:0b4d
 ```
 
-**List available output devices**
+### List available output devices
 
 Use `pactl list sinks short` to list output devices available to the current user:
 
@@ -72,7 +173,7 @@ picroft:~$ pactl list sinks short
 1       alsa_output.pci-0000_00_1b.0.analog-stereo      module-alsa-card.c      s16le 2ch 44100Hz       SUSPENDED
 ```
 
-**List available input devices**
+### List available input devices
 
 `pactl list sources short` will list input devices available to the current user:
 
@@ -82,7 +183,7 @@ picroft:~$ pactl list sources short
 2       alsa_input.pci-0000_00_1b.0.analog-stereo       module-alsa-card.c      s16le 2ch 44100Hz       SUSPENDED
 ```
 
-**Changing pulseaudio input and output**
+### Changing pulseaudio input and output
 
 If you need to adjust the device you're using for input or output, first determine the number of the source or sink you wish to set it to. Then use `pactl set-default-source` \(for input\) or `pactl set-default-sink` \(for output\) to update:
 
@@ -93,7 +194,7 @@ $ pactl set-default-sink 1
 
 This would set the default input to be device 2 and the default output device to be 1. Your numbers will vary. A succsessful change will not have any additional output listed. Verify with `pactl info`
 
-**Echo cancellation**
+### Echo cancellation
 
 Pulseaudio has an echo cancellation module that can be loaded.
 
@@ -103,7 +204,7 @@ $ pactl load-module echo-cancellation
 
 This is system wide. If not previously enabled, you will need to restart any applications using pulse. For documentation, see [https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/\#index45h3](https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#index45h3) Additional usage and tips can be found [https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting](https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting)
 
-**Pulseaudio modules**
+### Pulseaudio modules
 
 Find out what modules are installed:
 
@@ -113,31 +214,41 @@ $ pactl list modules short
 
 For more information like usage counts and properties, remove the `short`.
 
-## Specifying an input device
+### Missing pulseaudio
 
-By default Mycroft will use the system default device for all audio. In most cases this provides a more consistent, flexible and reliable experience. If however other methods do not work, we can specify the exact input device Mycroft should use in our `mycroft.conf` file. For information on this configuration file, see [https://mycroft.ai/documentation/mycroft-conf/](https://mycroft.ai/documentation/mycroft-conf/).
+If you see an issue in the logs with `Popen(play_wav_cmd)` and `OSError: [Errno 2] No such file or directory` this usually indicates that mycroft cannot find pulseaudio. Make sure it's installed and mycroft is able to access it. On Debian based systems like Ubuntu you can install the package by running:
 
-We first need to know the device name. Assuming your `mycroft-core` directory is located in the current users home directory. This can be found by running: `$ ~/mycroft-core/start-mycroft.sh audiotest -l`
-
-This will output a list of audio devices, before it runs the mic-test. The output we need looks like:
-
-```text
-====================== Audio Devices ======================
- Index    Device Name
-  4:       HDA Intel PCH: ALC269VB Analog (hw:1,0)
-  6:       pulse
-  7:       default
+```
+sudo apt-get install pulseaudio
 ```
 
-This can be added to your user level configuration file - `~/.mycroft/mycroft.conf` by adding the following lines:
+## Alsamixer
 
-```text
-"listener": {
-    "device_name": "DEVICE_NAME"
-  },
+`alsamixer` is a utility provided by the ALSA sound system on Raspbian Stretch that allows you to select an audio playback \(output\) and input \(capture\) device.
+
+To run `alsamixer`, type `Ctrl +C` to exit the guided setup and you will be at the Linux command line. Type `alsamixer` as shown below:
+
+```bash
+(.venv) pi@picroft:~ $ alsamixer
 ```
 
-Where "DEVICE\_NAME" is taken from the audio device output. As this file is written in JSON, we must be careful that each entry except the last one ends with a comma after the curly bracket. If this is the last entry in the file, delete the comma.
+You will see a screen similar to the one below, and may have different options depending on which audio devices you have connected.
+
+![Picroft alsamixer initial screen](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-12.png)
+
+Different devices will have a different command key for choosing 'Capture' devices, in this case it is `F4`.
+
+If you do not see any capture devices, as shown below, then you may need to select a different sound card.
+
+![Picroft alsamixer no audio capture device](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-25.png)
+
+To select a different sound card, follow the instructions on your version of `alsamixer`. In this case, the command key for choosing 'Select sound card' is `F6`. Use the arrow keys on your keyboard to navigate up and down the list to choose your preferred soundcard.
+
+![Picroft alsamixer select sound card](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-52.png)
+
+`alsamixer` usually has an option to see **all** capture and playback devices. In this case, the command key to see all devices is `F5`.
+
+![Picroft alsamixer show all audio capture and playback devices](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-06-09.png)
 
 ## Other useful commands
 
@@ -154,10 +265,3 @@ Where "DEVICE\_NAME" is taken from the audio device output. As this file is writ
 `pavucontrol` is a GUI mixer client for X.
 
 `pacmd` is an interactive shell version of `pactl`. Use `help` to see more once in the shell.
-
-### Will my device work
-
-Maybe.
-
-Most USB mics and speakers are usable with pulseaudio. In general, if your OS can recognize the device as an audio endpoint pulse will be able to connect it. A variety of mics including the PS3 Eye, Blue snowballs, Jabra 410, various web cams, the movo mc1000, gaming headsets, and even the AIY hat have been used successfully. If you have the device on hand, try it out and see. If the information above isn't able to get it going, try asking on the chat server or the forum. Always check the volume levels if everything else seems to be set correctly.
-
