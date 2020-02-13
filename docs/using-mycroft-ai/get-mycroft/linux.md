@@ -200,7 +200,7 @@ cd ~/mycroft-core # or the path to your mycroft-core installation
 This does not remove the cloned `mycroft-core` project directory. If cloned directly into the home directory, this can be removed with:
 
 ```text
-rm -rf ~/mycroft-core 
+rm -rf ~/mycroft-core
 ```
 
 {% hint style="danger" %}
@@ -222,34 +222,6 @@ rm -rf "$HOME/mycroft-core" # Mycroft-core installation
 Depending on your system, you may need to run the commands with `sudo`
 {% endhint %}
 
-## Common issues with Mycroft for Linux
+## Troubleshooting
 
-### Removing and rebuilding your virtual environment
-
-If your CLI won't run, it is highly likely to be an issue with the Mycroft virtual environment. The easiest solution we've found has been to remove and reinstall the virtual environment.
-
-First, delete the existing virtual environment:
-
-```bash
-sudo rm -r ~/mycroft-core/.venv/
-```
-
-Next, we run the setup script again:
-
-```bash
-mycroft-core$ ./dev_setup.sh
-```
-
-This will rebuild your virtual environment.
-
-### Installation warns about bad interpreter
-
-When running `dev_setup.sh`, if you encounter a warning about a "bad interpreter", it is likely from having a space in the installation path:
-
-```text
-./dev_setup.sh: /opt/test path/mycroft-core/.venv/bin/pip: "/opt/test: bad interpreter: No such file or directory
-Warning: Failed to install all requirements. Continue? y/N
-```
-
-If you can't install to a path without spaces, you will have to manually verify the `requirements.txt` entries are installed to your virtual environment.
-
+{% page-ref page="../troubleshooting/README.md" %}

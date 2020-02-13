@@ -46,7 +46,7 @@ To obtain your devices IP address you can say:
 
 Alternatively you can get the IP address from your router, or by scanning the network using a tool like nmap. Running `nmap` with the no port scan flag `-sn` returns the IP and MAC addresses, as well as the vendor name. A Mark 1 will display as "Raspberry Pi Foundation".
 
-## Troubleshooting Mark 1
+## Mark 1
 
 ### Yellow Eyes
 
@@ -85,9 +85,7 @@ PORT   STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 19.56 seconds
 ```
 
-## Troubleshooting Picroft
-
-## Troubleshooting Linux
+## Linux
 
 ### AttributeError: '\_curses.window' object has no attribute 'get\_wch' \(with a custom Python installation\)
 
@@ -111,7 +109,36 @@ pyenv install <python-version>
 
 It will ask for confirmation that you want to rebuild the Python version. After confirming the rebuild, your new Python installation should no longer show the above error when running the Mycroft terminal client.
 
-## Troubleshooting Skills development
+### Removing and rebuilding your virtual environment
+
+If your CLI won't run, it is highly likely to be an issue with the Mycroft virtual environment. The easiest solution we've found has been to remove and reinstall the virtual environment.
+
+First, delete the existing virtual environment:
+
+```bash
+sudo rm -r ~/mycroft-core/.venv/
+```
+
+Next, we run the setup script again:
+
+```bash
+mycroft-core$ ./dev_setup.sh
+```
+
+This will rebuild your virtual environment.
+
+### Installation warns about bad interpreter
+
+When running `dev_setup.sh`, if you encounter a warning about a "bad interpreter", it is likely from having a space in the installation path:
+
+```text
+./dev_setup.sh: /opt/test path/mycroft-core/.venv/bin/pip: "/opt/test: bad interpreter: No such file or directory
+Warning: Failed to install all requirements. Continue? y/N
+```
+
+If you can't install to a path without spaces, you will have to manually verify the `requirements.txt` entries are installed to your virtual environment.
+
+## Skills development
 
 ### Skill fails on first run with `ERROR - Failed to load skill`
 
