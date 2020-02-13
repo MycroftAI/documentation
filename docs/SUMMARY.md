@@ -31,6 +31,7 @@
 * [Troubleshooting](using-mycroft-ai/troubleshooting/README.md)
   * [General Troubleshooting](using-mycroft-ai/troubleshooting/general-troubleshooting.md)
   * [Audio Troubleshooting](using-mycroft-ai/troubleshooting/audio-troubleshooting.md)
+  * [Wake Word Troubleshooting](using-mycroft-ai/troubleshooting/wake-word-troubleshooting.md)
   * [Log Files](using-mycroft-ai/troubleshooting/log-files.md)
   * [Support Skill](using-mycroft-ai/troubleshooting/support-skill.md)
   * [Getting more support](using-mycroft-ai/troubleshooting/getting-more-support.md)
@@ -90,4 +91,3 @@
 * [Mycroft Skills Kit](mycroft-technologies/mycroft-skills-kit.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
-
