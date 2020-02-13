@@ -1,5 +1,5 @@
 ---
-description: Having trouble with your microphone or audio output?
+description: Having trouble with your audio?
 ---
 
 # Audio Troubleshooting
@@ -18,6 +18,8 @@ We are often asked, "will my {very specific audio device} work?"
 The answer is generally, maybe. However there is no way for us to test all of the hardware variations everytime we make a change to the code.
 
 Most USB mics and speakers are usable with pulseaudio. In general, if your OS can recognize the device as an audio endpoint pulse will be able to connect it. A variety of microphones and speakers have been used successfully.
+
+A [list of tested hardware](https://mycroft-ai.gitbook.io/docs/using-mycroft-ai/get-mycroft/picroft#tested-hardware) is maintained by the Community in the Picroft documentation.
 
 If you have the device on hand, try it out and see. If the information on this page isn't able to get it going, try asking in the [Community Chat](https://chat.mycroft.ai) or [Forum](https://community.mycroft.ai).
 
