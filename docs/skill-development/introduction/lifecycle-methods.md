@@ -49,12 +49,11 @@ If the utterance is handled by the converse method, we return `True` to indicate
 In the following example, we check that utterances is not empty, and if the utterance matches vocabulary from `understood.voc`. If the user has understood we speak a line from `great.dialog` and return `True` to indicate the utterance has been handled. If the vocabulary does not match then we return `False` as the utterance should be passed to the normal intent matching service.
 
 ```text
-    def converse(self, utterances, lang):
+    def converse(self, utterances, lang=None):
         if utterances and self.voc_match(utterances[0], 'understood'):
             self.speak_dialog('great')
             return True
-        else:
-            return False
+        return False
 ```
 
 ## Stop
