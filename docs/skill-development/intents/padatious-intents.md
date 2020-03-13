@@ -171,7 +171,7 @@ There is no performance benefit to using parantheses expansion. When used approp
 
 ## Using it in a Skill
 
-The `intent_handler\(\)` _decorator_ can be used to create a Padatious intent handler by passing in the filename of the `.intent` file as a string.
+The `intent_handler()` _decorator_ can be used to create a Padatious intent handler by passing in the filename of the `.intent` file as a string.
 
 From our first example above, we created a file `vocab/en-us/what.is.a.tomato.intent`. To register an intent using this file we can use:
 
