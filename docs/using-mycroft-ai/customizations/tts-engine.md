@@ -109,7 +109,7 @@ mycroft-config set tts.module "google"
 
 ### Account Setup
 Create an account at [IBM.com/cloud](https://www.ibm.com/cloud/watson-text-to-speech).
-You can find a list of available voices at [Languages and Voices](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-voices#neuralVoices). For example, "en-US_MichaelV3Voice". Please note that IBM keeps a log of all requests in the lite plan unless you turn it explicitly.
+You can find a list of available voices at [Languages and Voices](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-voices#neuralVoices). For example, "en-US_MichaelV3Voice". Please note that IBM keeps a log of all requests in the lite plan unless you turn it off explicitly by setting "X-Watson-Learning-Opt-Out" to true.
 
 
 ### Mycroft Configuration
@@ -124,7 +124,8 @@ To our existing configuration values we will add the following:
   "module": "watson",
   "watson": {
     "voice":"PREFERRED_VOICE",
-    "api_key": "YOUR_API_KEY",
+    "apikey": "YOUR_API_KEY",
+    "X-Watson-Learning-Opt-Out": "true"
     "username": "YOUR_USERNAME", # Not needed if api_key is set
     "password": "YOUR_PASSWORD"  # Not needed if api_key is set
   }
