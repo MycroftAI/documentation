@@ -39,3 +39,26 @@ The most obvious change is the new block of `Examples`. This is a table of data 
 To use this data, we must first explicitly change from using a `Scenario` to using a `Scenario Outline`. We are then able to use the `Examples` data in our Steps by including the Column Heading surrounding by angle brackets. In this case we have added `<current local weather>` to the `When` Step on line 4.
 
 Running the above Scenario Outline will test three versions of this Scenario - "tell me the weather", "what's the weather like", and "current weather". It is important to note that "current local weather" is a heading, not a value, and it will not be tested.
+
+## Multiple dependent variables
+
+So far we have only used the Scenario Outline to take in a list of utterances. The same format can be used with tables of data.
+
+```YAML
+Feature: Pokemon abilities
+  Scenario Outline: list abilities
+    Given an english speaking user
+     When the user says "What abilities does <Name> have"
+     Then "pokemon.retrodaredevil" should reply with "<Name> has <Abilities>"
+
+   Examples: Pokemon data                          # Table heading
+        | Name       | Abilities                |  # Column heading
+        | Bulbasaur  | chlorophyll and overgrow |  # First value
+        | Charmander | solar-power and blaze    |  # Second value
+        | Squirtle   | rain-dish and torrent    |  # Third value
+```
+
+In our new `Examples` block, you can see we have expanded this into a two-column table containing the names of some Pokemon and the abilities they have. Using this data we have done two things.
+
+1. With the Pokemon `Name`, we have used this in both the question and the response.
+2. The Abilities that are reported back are directly related to the Name from the same table row. If a user was to say "What abilities does Bulbasaur have", and Mycroft replied with "Bulbasaur has solar-power and blaze", then the Scenario would be considered a fail.
