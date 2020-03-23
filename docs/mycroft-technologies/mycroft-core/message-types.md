@@ -2096,7 +2096,7 @@ A Skill has been loaded
 {
     "id": <skill ID>,
     "name": <skill name>,
-    "folder": <skill directory>,
+    "path": <skill directory>,
     "modified": <modified time>
 }
 ```
