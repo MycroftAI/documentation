@@ -19,7 +19,7 @@ Request to speak utterance
 
 **Data:**
 
-```JSON
+```javascript
 {
     "utterance": <words to be spoken>,
     "lang": <language code, e.g. en-us>
@@ -62,7 +62,7 @@ python3 -m mycroft.messagebus.send 'speak' '{ "utterance": <words to be spoken>,
 
 ### mycroft.internet.connected
 
-Internet connection is now available (only generated on initial connection)
+Internet connection is now available \(only generated on initial connection\)
 
 **Usage:**
 
@@ -100,24 +100,9 @@ python3 -m mycroft.messagebus.send 'mycroft.internet.connected'
 
 Sent by start-up sequence when everything is ready for user interaction
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>skills/padatious_service.py</code></p>
-      </td>
-      <td style="text-align:left">
-        <p>Pairing Skill</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `skills/padatious_service.py` | Pairing Skill |
 
 **Usage:**
 
@@ -153,7 +138,7 @@ python3 -m mycroft.messagebus.send 'mycroft.ready'
 
 ### mycroft.stop
 
-Stop command (e.g. button pressed)
+Stop command \(e.g. button pressed\)
 
 **Usage:**
 
@@ -205,14 +190,10 @@ Start the pairing process when this event is emitted.
         <p>Weather Skill</p>
         <p>Wolfram Alpha Skill</p>
       </td>
-      <td style="text-align:left">
-        <p>Pairing Skill</p>
-      </td>
+      <td style="text-align:left">Pairing Skill</td>
     </tr>
   </tbody>
-</table>
-
-**Usage:**
+</table>**Usage:**
 
 {% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
@@ -257,20 +238,20 @@ Pairing has completed
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">Pairing Skill</td>
       <td style="text-align:left">
-        <p>Pairing Skill</p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/skill_manager.py</code></p>
-        <p><code>enclosure/mark1/__init__.py</code></p>
-        <p><code>enclosure/generic/__init__.py</code></p>
-        <p><code>client/speech/__main__.py</code></p>
+        <p><code>skills/skill_manager.py</code>
+        </p>
+        <p><code>enclosure/mark1/__init__.py</code>
+        </p>
+        <p><code>enclosure/generic/__init__.py</code>
+        </p>
+        <p><code>client/speech/__main__.py</code>
+        </p>
       </td>
     </tr>
   </tbody>
-</table>
-
-**Usage:**
+</table>**Usage:**
 
 {% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
@@ -340,19 +321,13 @@ python3 -m mycroft.messagebus.send 'mycroft.awoken'
 
 ### mycroft.debug.log
 
-log level can be:
-   "CRITICAL"
-   "ERROR"
-   "WARNING"
-   "INFO"
-   "DEBUG"
-These correspond to the Python logging object.
+log level can be: "CRITICAL" "ERROR" "WARNING" "INFO" "DEBUG" These correspond to the Python logging object.
 
 The "bus" parameter allows turning the logging of all bus messages on/off.
 
 **Data:**
 
-```JSON
+```javascript
 {
    "level" : <log level>,
    "bus": <True/False>
@@ -394,7 +369,7 @@ python3 -m mycroft.messagebus.send 'mycroft.debug.log' '{   "level" : <log level
 {% endtab %}
 {% endtabs %}
 
-### complete_intent_failure
+### complete\_intent\_failure
 
 Intent processing failed
 
@@ -468,38 +443,22 @@ python3 -m mycroft.messagebus.send 'configuration.updated'
 
 ## Recognizer
 
-### recognizer_loop:wakeword
+### recognizer\_loop:wakeword
 
 Wakeword was heard
 
 **Data:**
 
-```JSON
+```javascript
 {
     "utterance": <wakeword heard>,
     "session": <session ID>,
 }
-
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>client/speech/main.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `client/speech/main.py` |  |
 
 **Usage:**
 
@@ -536,28 +495,13 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:wakeword' '{ "utterance": <w
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:record_begin
+### recognizer\_loop:record\_begin
 
 Recording has started
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>client/speech/main.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `client/speech/main.py` |  |
 
 **Usage:**
 
@@ -591,28 +535,13 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:record_begin'
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:record_end
+### recognizer\_loop:record\_end
 
 Recording has ended
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>client/speech/main.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `client/speech/main.py` |  |
 
 **Usage:**
 
@@ -646,13 +575,13 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:record_end'
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:utterance
+### recognizer\_loop:utterance
 
 STT has detected the given text or text was injected as an utterance via the CLI.
 
 **Data:**
 
-```JSON
+```javascript
 {
     "utterances": [text],
     "lang": self.stt.lang,
@@ -670,22 +599,26 @@ STT has detected the given text or text was injected as an utterance via the CLI
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p><code>client/speech/__main__.py</code></p>
-        <p><code>client/speech/listener.py</code></p>
-        <p><code>client/text/text_client.py</code></p>
-        <p><code>skills/__main__.py</code></p>
+        <p><code>client/speech/__main__.py</code>
+        </p>
+        <p><code>client/speech/listener.py</code>
+        </p>
+        <p><code>client/text/text_client.py</code>
+        </p>
+        <p><code>skills/__main__.py</code>
+        </p>
       </td>
       <td style="text-align:left">
-        <p><code>client/text/text_client.py</code></p>
-        <p><code>messagebus/client/client.py</code></p>
-        <p><code>skills/intent_service.py</code></p>
-        <p></p>
+        <p><code>client/text/text_client.py</code>
+        </p>
+        <p><code>messagebus/client/client.py</code>
+        </p>
+        <p><code>skills/intent_service.py</code>
+        </p>
       </td>
     </tr>
   </tbody>
-</table>
-
-**Usage:**
+</table>**Usage:**
 
 {% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
@@ -720,28 +653,13 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:utterance' '{ "utterances": 
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:audio_output_start
+### recognizer\_loop:audio\_output\_start
 
-Text output (TTS) has begun
+Text output \(TTS\) has begun
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>audio/speech.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `audio/speech.py` |  |
 
 **Usage:**
 
@@ -775,28 +693,13 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:audio_output_start'
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:audio_output_end
+### recognizer\_loop:audio\_output\_end
 
-Text output (TTS) has ended
+Text output \(TTS\) has ended
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>audio/speech.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `audio/speech.py` |  |
 
 **Usage:**
 
@@ -830,9 +733,9 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:audio_output_end'
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:sleep
+### recognizer\_loop:sleep
 
-Go into "sleep" mode.  Everything except "Hey Mycroft, wake up" will be ignored.
+Go into "sleep" mode. Everything except "Hey Mycroft, wake up" will be ignored.
 
 **Usage:**
 
@@ -866,7 +769,7 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:sleep'
 {% endtab %}
 {% endtabs %}
 
-### recognizer_loop:wake_up
+### recognizer\_loop:wake\_up
 
 Come out of "sleep" mode.
 
@@ -904,28 +807,13 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:wake_up'
 
 ## Enclosure
 
-### enclosure.notify.no_internet
+### enclosure.notify.no\_internet
 
 Detetected a connection error during STT
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>audio/speech.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `audio/speech.py` |  |
 
 **Usage:**
 
@@ -959,22 +847,13 @@ python3 -m mycroft.messagebus.send 'enclosure.notify.no_internet'
 {% endtab %}
 {% endtabs %}
 
-### enclosure.mouth.viseme_list
+### enclosure.mouth.viseme\_list
 
-start: timestamp for audio starts (unix epoch)
-END_TIME: time in seconds from "start" until the end of the viseme
-CODE can be
-0 = shape for sounds like 'y' or 'aa'
-1 = shape for sounds like 'aw'
-2 = shape for sounds like 'uh' or 'r'
-3 = shape for sounds like 'th' or 'sh'
-4 = neutral shape for no sound
-5 = shape for sounds like 'f' or 'v'
-6 = shape for sounds like 'oy' or 'ao'
+start: timestamp for audio starts \(unix epoch\) END\_TIME: time in seconds from "start" until the end of the viseme CODE can be 0 = shape for sounds like 'y' or 'aa' 1 = shape for sounds like 'aw' 2 = shape for sounds like 'uh' or 'r' 3 = shape for sounds like 'th' or 'sh' 4 = neutral shape for no sound 5 = shape for sounds like 'f' or 'v' 6 = shape for sounds like 'oy' or 'ao'
 
 **Data:**
 
-```JSON
+```javascript
 {
   "start": timestamp,
   "visemes": [[CODE,END_TIME],...]
@@ -1020,24 +899,9 @@ python3 -m mycroft.messagebus.send 'enclosure.mouth.viseme_list' '{  "start": ti
 
 Change eyes to default color
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p>mycroft-mark-1</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | mycroft-mark-1 |
 
 **Usage:**
 
@@ -1111,26 +975,11 @@ python3 -m mycroft.messagebus.send 'mycroft.mic.listen'
 
 ### mycroft.mic.mute
 
-Turn off the mic (no wakeword or STT processing)
+Turn off the mic \(no wakeword or STT processing\)
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p>Pairing Skill</p>
-      </td>
-      <td style="text-align:left">
-        <p><code>client/speech/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| Pairing Skill | `client/speech/main.py` |
 
 **Usage:**
 
@@ -1166,26 +1015,11 @@ python3 -m mycroft.messagebus.send 'mycroft.mic.mute'
 
 ### mycroft.mic.unmute
 
-Turn on the mic (enable wakeword and STT processing)
+Turn on the mic \(enable wakeword and STT processing\)
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p>Pairing Skill</p>
-      </td>
-      <td style="text-align:left">
-        <p><code>client/speech/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| Pairing Skill | `client/speech/main.py` |
 
 **Usage:**
 
@@ -1235,17 +1069,15 @@ Start playback of tracklist
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p><code>skills/audioservice.py</code></p>
+        <p><code>skills/audioservice.py</code>
+        </p>
         <p>playback-control</p>
       </td>
-      <td style="text-align:left">
-        <p><code>audio/main.py</code></p>
+      <td style="text-align:left"><code>audio/main.py</code>
       </td>
     </tr>
   </tbody>
-</table>
-
-**Usage:**
+</table>**Usage:**
 
 {% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
@@ -1291,17 +1123,15 @@ Stop playback
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p><code>skills/audioservice.py</code></p>
+        <p><code>skills/audioservice.py</code>
+        </p>
         <p>playback-control</p>
       </td>
-      <td style="text-align:left">
-        <p><code>audio/main.py</code></p>
+      <td style="text-align:left"><code>audio/main.py</code>
       </td>
     </tr>
   </tbody>
-</table>
-
-**Usage:**
+</table>**Usage:**
 
 {% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
@@ -1335,7 +1165,7 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.stop'
 
 ### mycroft.audio.service.pause
 
-Pause playback (if supported)
+Pause playback \(if supported\)
 
 <table>
   <thead>
@@ -1347,17 +1177,15 @@ Pause playback (if supported)
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p><code>skills/audioservice.py</code></p>
+        <p><code>skills/audioservice.py</code>
+        </p>
         <p>playback-control</p>
       </td>
-      <td style="text-align:left">
-        <p><code>audio/main.py</code></p>
+      <td style="text-align:left"><code>audio/main.py</code>
       </td>
     </tr>
   </tbody>
-</table>
-
-**Usage:**
+</table>**Usage:**
 
 {% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
@@ -1391,7 +1219,7 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.pause'
 
 ### mycroft.audio.service.resume
 
-Resume playback (if supported by backend)
+Resume playback \(if supported by backend\)
 
 <table>
   <thead>
@@ -1403,17 +1231,15 @@ Resume playback (if supported by backend)
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p><code>skills/audioservice.py</code></p>
+        <p><code>skills/audioservice.py</code>
+        </p>
         <p>playback-control</p>
       </td>
-      <td style="text-align:left">
-        <p><code>audio/main.py</code></p>
+      <td style="text-align:left"><code>audio/main.py</code>
       </td>
     </tr>
   </tbody>
-</table>
-
-**Usage:**
+</table>**Usage:**
 
 {% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
@@ -1459,17 +1285,15 @@ Skip to next track
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p><code>skills/audioservice.py</code></p>
+        <p><code>skills/audioservice.py</code>
+        </p>
         <p>playback-control</p>
       </td>
-      <td style="text-align:left">
-        <p><code>audio/main.py</code></p>
+      <td style="text-align:left"><code>audio/main.py</code>
       </td>
     </tr>
   </tbody>
-</table>
-
-**Usage:**
+</table>**Usage:**
 
 {% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
@@ -1515,17 +1339,15 @@ Skip to previous track
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p><code>skills/audioservice.py</code></p>
+        <p><code>skills/audioservice.py</code>
+        </p>
         <p>playback-control</p>
       </td>
-      <td style="text-align:left">
-        <p><code>audio/main.py</code></p>
+      <td style="text-align:left"><code>audio/main.py</code>
       </td>
     </tr>
   </tbody>
-</table>
-
-**Usage:**
+</table>**Usage:**
 
 {% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
@@ -1557,7 +1379,7 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.prev'
 {% endtab %}
 {% endtabs %}
 
-### mycroft.audio.service.track_info
+### mycroft.audio.service.track\_info
 
 Request track info from audio service
 
@@ -1571,17 +1393,15 @@ Request track info from audio service
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p><code>skills/audioservice.py</code></p>
+        <p><code>skills/audioservice.py</code>
+        </p>
         <p>playback-control</p>
       </td>
-      <td style="text-align:left">
-        <p><code>audio/main.py</code></p>
+      <td style="text-align:left"><code>audio/main.py</code>
       </td>
     </tr>
   </tbody>
-</table>
-
-**Usage:**
+</table>**Usage:**
 
 {% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
@@ -1613,28 +1433,13 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.track_info'
 {% endtab %}
 {% endtabs %}
 
-### mycroft.audio.service.track_info_reply
+### mycroft.audio.service.track\_info\_reply
 
 Reply to track info request
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>audio/main.py</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/audioservice.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `audio/main.py` | `skills/audioservice.py` |
 
 **Usage:**
 
@@ -1668,28 +1473,13 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.track_info_reply'
 {% endtab %}
 {% endtabs %}
 
-### mycroft.audio.service.list_backends
+### mycroft.audio.service.list\_backends
 
 Returns list of available backends.
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>skills/audioservice.py</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>audio/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `skills/audioservice.py` | `audio/main.py` |
 
 **Usage:**
 
@@ -1731,28 +1521,13 @@ Enclosure Volume up
 
 **Data:**
 
-```JSON
+```javascript
 {"play_sound": True}
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>client/enclosure/__init__.py</code></p>
-      </td>
-      <td style="text-align:left">
-        <p>Volume Skill</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `client/enclosure/__init__.py` | Volume Skill |
 
 **Usage:**
 
@@ -1793,28 +1568,13 @@ Enclosure Volume down
 
 **Data:**
 
-```JSON
+```javascript
 {"play_sound": True}
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>client/enclosure/__init__.py</code></p>
-      </td>
-      <td style="text-align:left">
-        <p>Volume Skill</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `client/enclosure/__init__.py` | Volume Skill |
 
 **Usage:**
 
@@ -1855,28 +1615,13 @@ Enclosure Volume muted
 
 **Data:**
 
-```JSON
+```javascript
 {"speak_message": True}
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p>skill-naptime</p>
-      </td>
-      <td style="text-align:left">
-        <p>Volume Skill</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| skill-naptime | Volume Skill |
 
 **Usage:**
 
@@ -1917,28 +1662,13 @@ Enclosure Volume unmuted
 
 **Data:**
 
-```JSON
+```javascript
 {"speak_message": True}
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p>skill-naptime</p>
-      </td>
-      <td style="text-align:left">
-        <p>Volume Skill</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| skill-naptime | Volume Skill |
 
 **Usage:**
 
@@ -1975,32 +1705,17 @@ python3 -m mycroft.messagebus.send 'mycroft.volume.unmute' '{"speak_message": Tr
 
 ### mycroft.volume.set
 
-Set enclosure volume (0.0 = no output, 1.0 = loudest possible)
+Set enclosure volume \(0.0 = no output, 1.0 = loudest possible\)
 
 **Data:**
 
-```JSON
+```javascript
 {"percent": float}
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p>Volume Skill</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | Volume Skill |
 
 **Usage:**
 
@@ -2073,35 +1788,18 @@ python3 -m mycroft.messagebus.send 'mycroft.volume.get'
 
 ### mycroft.volume.get.response
 
-
-
 **Data:**
 
-```JSON
+```javascript
 {
     "percent": <volume percentage>,
     "muted": <true/false>
 }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p>Enclosure (skill-mark-2)</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | Enclosure \(skill-mark-2\) |
 
 **Usage:**
 
@@ -2141,24 +1839,9 @@ python3 -m mycroft.messagebus.send 'mycroft.volume.get.response' '{ "percent": <
 
 Reduce the volume level temporarilly
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p>Enclosure (skill-mark-2)</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | Enclosure \(skill-mark-2\) |
 
 **Usage:**
 
@@ -2196,24 +1879,9 @@ python3 -m mycroft.messagebus.send 'mycroft.volume.duck'
 
 Restore the volume level
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p>Enclosure (skill-mark-2)</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | Enclosure \(skill-mark-2\) |
 
 **Usage:**
 
@@ -2251,11 +1919,9 @@ python3 -m mycroft.messagebus.send 'mycroft.volume.unduck'
 
 ### mycroft.skill.handler.start
 
-
-
 **Data:**
 
-```JSON
+```javascript
 {handler: class/function name}
 ```
 
@@ -2294,8 +1960,6 @@ python3 -m mycroft.messagebus.send 'mycroft.skill.handler.start' '{handler: clas
 
 ### mycroft.skill.handler.complete
 
-
-
 **Usage:**
 
 {% tabs %}
@@ -2328,34 +1992,19 @@ python3 -m mycroft.messagebus.send 'mycroft.skill.handler.complete'
 {% endtab %}
 {% endtabs %}
 
-### mycroft.skill.enable_intent
+### mycroft.skill.enable\_intent
 
 Enable disabled intent
 
 **Data:**
 
-```JSON
+```javascript
 {"intent_name": "name"}
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft/skills/core.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `mycroft/skills/core.py` |
 
 **Usage:**
 
@@ -2390,34 +2039,19 @@ python3 -m mycroft.messagebus.send 'mycroft.skill.enable_intent' '{"intent_name"
 {% endtab %}
 {% endtabs %}
 
-### mycroft.skill.disable_intent
+### mycroft.skill.disable\_intent
 
 Disable intent
 
 **Data:**
 
-```JSON
+```javascript
 {"intent_name": "name"}
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft/skills/core.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `mycroft/skills/core.py` |
 
 **Usage:**
 
@@ -2458,7 +2092,7 @@ A Skill has been loaded
 
 **Data:**
 
-```JSON
+```javascript
 {
     "id": <skill ID>,
     "name": <skill name>,
@@ -2467,24 +2101,9 @@ A Skill has been loaded
 }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft/skills/intent_service.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `skills/main.py` | `mycroft/skills/intent_service.py` |
 
 **Usage:**
 
@@ -2522,37 +2141,22 @@ python3 -m mycroft.messagebus.send 'mycroft.skills.loaded' '{ "id": <skill ID>, 
 {% endtab %}
 {% endtabs %}
 
-### mycroft.skills.loading_failure
+### mycroft.skills.loading\_failure
 
 A Skill has failed to load
 
 **Data:**
 
-```JSON
+```javascript
 {
     "id": <skill ID>,
     "folder": <skill directory>
 }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `skills/main.py` |  |
 
 **Usage:**
 
@@ -2594,31 +2198,16 @@ A Skill has shutdown
 
 **Data:**
 
-```JSON
+```javascript
 {
     "id": <skill ID>,
     "folder": <skill directory>
 }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `skills/main.py` |  |
 
 **Usage:**
 
@@ -2658,24 +2247,9 @@ python3 -m mycroft.messagebus.send 'mycroft.skills.shutdown' '{ "id": <skill ID>
 
 Upon startup, all skills have been loaded
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>mycroft/skills/skill_manager.py</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft/skills/padatious_service.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `mycroft/skills/skill_manager.py` | `mycroft/skills/padatious_service.py` |
 
 **Usage:**
 
@@ -2711,32 +2285,17 @@ python3 -m mycroft.messagebus.send 'mycroft.skills.initialized'
 
 ### mycroft.skills.list
 
-List of loaded skills (response to 'skillmanager.list')
+List of loaded skills \(response to 'skillmanager.list'\)
 
 **Data:**
 
-```JSON
+```javascript
 {"skills": [<list of skill IDs>] }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `skills/main.py` |  |
 
 **Usage:**
 
@@ -2775,24 +2334,9 @@ python3 -m mycroft.messagebus.send 'mycroft.skills.list' '{"skills": [<list of s
 
 Pull new skill settings from the server
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p>Configuration Skill</p>
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft/skills/settings.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| Configuration Skill | `mycroft/skills/settings.py` |
 
 **Usage:**
 
@@ -2826,30 +2370,15 @@ python3 -m mycroft.messagebus.send 'mycroft.skills.settings.update'
 {% endtab %}
 {% endtabs %}
 
-## Mycroft Skill Manager (MSM)
+## Mycroft Skill Manager \(MSM\)
 
 ### msm.updating
 
 MSM install has begun
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>msm.sh</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `msm.sh` | `skills/main.py` |
 
 **Usage:**
 
@@ -2887,24 +2416,9 @@ python3 -m mycroft.messagebus.send 'msm.updating'
 
 MSM update has begun
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>msm.sh</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `msm.sh` | `skills/main.py` |
 
 **Usage:**
 
@@ -2944,28 +2458,13 @@ MSM install succeeded for given skill
 
 **Data:**
 
-```JSON
+```javascript
 { "skill" : <skill name> }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>msm.sh</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `msm.sh` | `skills/main.py` |
 
 **Usage:**
 
@@ -3006,31 +2505,16 @@ MSM install failed for given skill
 
 **Data:**
 
-```JSON
+```javascript
 {
     "skill" : <skill name>,
     "error": <error code>
 }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>msm.sh</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `msm.sh` | `skills/main.py` |
 
 **Usage:**
 
@@ -3070,24 +2554,9 @@ python3 -m mycroft.messagebus.send 'msm.install.failed' '{ "skill" : <skill name
 
 MSM install is complete
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>msm.sh</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `msm.sh` | `skills/main.py` |
 
 **Usage:**
 
@@ -3125,24 +2594,9 @@ python3 -m mycroft.messagebus.send 'msm.installed'
 
 MSM update is complete
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>msm.sh</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `msm.sh` | `skills/main.py` |
 
 **Usage:**
 
@@ -3180,24 +2634,9 @@ python3 -m mycroft.messagebus.send 'msm.updated'
 
 MSM remove has begun
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>msm.sh</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `msm.sh` | `skills/main.py` |
 
 **Usage:**
 
@@ -3237,28 +2676,13 @@ MSM remove succeeded for given skill
 
 **Data:**
 
-```JSON
+```javascript
 { "skill" : <skill name> }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>msm.sh</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `msm.sh` | `skills/main.py` |
 
 **Usage:**
 
@@ -3299,31 +2723,16 @@ MSM remove failed for given skill
 
 **Data:**
 
-```JSON
+```javascript
 {
     "skill" : <skill name>,
     "error": <error code>
 }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>msm.sh</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `msm.sh` | `skills/main.py` |
 
 **Usage:**
 
@@ -3363,24 +2772,9 @@ python3 -m mycroft.messagebus.send 'msm.remove.failed' '{ "skill" : <skill name>
 
 MSM remove is complete
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>msm.sh</code></p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `msm.sh` | `skills/main.py` |
 
 **Usage:**
 
@@ -3418,32 +2812,17 @@ python3 -m mycroft.messagebus.send 'msm.removed'
 
 ### skillmanager.deactivate
 
-Deactivate a skill.  Activate by typing ":deactivate <skill>" in the CLI
+Deactivate a skill. Activate by typing ":deactivate " in the CLI
 
 **Data:**
 
-```JSON
+```javascript
 {'skill': <skill directory name>}
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p>CLI (<code>client/text/main.py</code>)</p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/skill_manager.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| CLI \(`client/text/main.py`\) | `skills/skill_manager.py` |
 
 **Usage:**
 
@@ -3480,26 +2859,11 @@ python3 -m mycroft.messagebus.send 'skillmanager.deactivate' '{'skill': <skill d
 
 ### skillmanager.list
 
-List installed skills.  Activate by typing ":list" in the CLI
+List installed skills. Activate by typing ":list" in the CLI
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p>CLI (<code>client/text/main.py</code>)</p>
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/skill_manager.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| CLI \(`client/text/main.py`\) | `skills/skill_manager.py` |
 
 **Usage:**
 
@@ -3537,24 +2901,9 @@ python3 -m mycroft.messagebus.send 'skillmanager.list'
 
 Request immediate update of all skills
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>skills/main.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `skills/main.py` |
 
 **Usage:**
 
@@ -3594,24 +2943,9 @@ python3 -m mycroft.messagebus.send 'skillmanager.update'
 
 websocket connection has closed
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>messagebus\client\ws.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `messagebus\client\ws.py` |  |
 
 **Usage:**
 
@@ -3649,24 +2983,9 @@ python3 -m mycroft.messagebus.send 'open'
 
 websocket connection was lost, reconnecting
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>messagebus\client\ws.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `messagebus\client\ws.py` |  |
 
 **Usage:**
 
@@ -3704,24 +3023,9 @@ python3 -m mycroft.messagebus.send 'close'
 
 websocket connection has opened
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p><code>messagebus\client\ws.py</code></p>
-      </td>
-      <td style="text-align:left">
-
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+| `messagebus\client\ws.py` |  |
 
 **Usage:**
 
@@ -3761,24 +3065,9 @@ python3 -m mycroft.messagebus.send 'reconnecting'
 
 Kick off a a wifi-setup session
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `mycroft-wifi-setup: mycroft_admin_service.py` |
 
 **Usage:**
 
@@ -3816,24 +3105,9 @@ python3 -m mycroft.messagebus.send 'system.wifi.setup'
 
 Clear the saved wifi settings
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `mycroft-wifi-setup: mycroft_admin_service.py` |
 
 **Usage:**
 
@@ -3871,24 +3145,9 @@ python3 -m mycroft.messagebus.send 'system.wifi.reset'
 
 Force the system clock to synchronize with NTP servers
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `mycroft-wifi-setup: mycroft_admin_service.py` |
 
 **Usage:**
 
@@ -3926,24 +3185,9 @@ python3 -m mycroft.messagebus.send 'system.ntp.sync'
 
 Configure system to allow SSH connections
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `mycroft-wifi-setup: mycroft_admin_service.py` |
 
 **Usage:**
 
@@ -3981,24 +3225,9 @@ python3 -m mycroft.messagebus.send 'system.ssh.enable'
 
 Configure system to block SSH connections
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `mycroft-wifi-setup: mycroft_admin_service.py` |
 
 **Usage:**
 
@@ -4036,24 +3265,9 @@ python3 -m mycroft.messagebus.send 'system.ssh.disable'
 
 Force a Linux reboot
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `mycroft-wifi-setup: mycroft_admin_service.py` |
 
 **Usage:**
 
@@ -4091,24 +3305,9 @@ python3 -m mycroft.messagebus.send 'system.reboot'
 
 Force a Linux shutdown
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `mycroft-wifi-setup: mycroft_admin_service.py` |
 
 **Usage:**
 
@@ -4144,26 +3343,11 @@ python3 -m mycroft.messagebus.send 'system.shutdown'
 
 ### system.update
 
- Force an apt-get update on 'mycroft-mark-1' or 'mycroft-picroft' package (as appropriate)
+Force an apt-get update on 'mycroft-mark-1' or 'mycroft-picroft' package \(as appropriate\)
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-
-      </td>
-      <td style="text-align:left">
-        <p><code>mycroft-wifi-setup: mycroft_admin_service.py</code></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Producer | Consumer |
+| :--- | :--- |
+|  | `mycroft-wifi-setup: mycroft_admin_service.py` |
 
 **Usage:**
 
@@ -4201,11 +3385,9 @@ python3 -m mycroft.messagebus.send 'system.update'
 
 ### play:query
 
-
-
 **Data:**
 
-```JSON
+```javascript
 { "phrase": <something to be played> }
 ```
 
@@ -4247,11 +3429,12 @@ python3 -m mycroft.messagebus.send 'play:query' '{ "phrase": <something to be pl
 There are three responses to a `play:query`. These are not intended to be consumed directly by a Skill, see the methods available in the CommonPlaySkill Class.
 
 #### Confirm Search
+
 The initial response confirms that a search is being attempted. It also extends the Skill timeout while it looks for a match.
 
 **Data:**
 
-```JSON
+```javascript
 {
   "phrase": search_phrase,
   "skill_id": self.skill_id,
@@ -4260,11 +3443,12 @@ The initial response confirms that a search is being attempted. It also extends 
 ```
 
 #### Search Result
+
 Emitted if a result is found. Responses from the Play services must be received within 1 second to be included.
 
 **Data:**
 
-```JSON
+```javascript
 {
     "phrase": phrase,
     "skill_id":  self.skill_id,
@@ -4274,25 +3458,28 @@ Emitted if a result is found. Responses from the Play services must be received 
 }
 ```
 
-- `phrase` - the phrase that was queried for this response
-- `id` - uniquely identifies the skill, normally the Skill's `self.skill_id`
-- `callback_data` - optional data structure to return in `play:start`
-- `service_name` - the name of the service returning the highest confidence in a speakable format
-- `conf` - the confidence it can handle the request, between 0.0 and 1.0
+* `phrase` - the phrase that was queried for this response
+* `id` - uniquely identifies the skill, normally the Skill's `self.skill_id`
+* `callback_data` - optional data structure to return in `play:start`
+* `service_name` - the name of the service returning the highest confidence in a speakable format
+* `conf` - the confidence it can handle the request, between 0.0 and 1.0
 
 Confidence guidelines:
-- 1.0 = exact command match, e.g. "play npr news"
-- >0.9 = multi-key match for database entry, e.g. "play madonna's lucky star" or "play artist madona"  (matches "artist" and "madonna"). For each additional key over 2, add 0.1 to the confidence, so "play madonna's lucky star on spotify" would be 0.91 for three keywords
-- >0.8 = single-key match for database title entry, e.g. "play lucky star"
-- >0.7 = single-key match for database artist or group, e.g. "play madonna"
-- >0.6 = single-key match for database genre or category, e.g. "play reggae"
-- >0.5 = generic match, e.g. "play some music" or "play a movie"
+
+* 1.0 = exact command match, e.g. "play npr news"
+* &gt;0.9 = multi-key match for database entry, e.g. "play madonna's lucky star" or "play artist madona" \(matches "artist" and "madonna"\). For each additional key over 2, add 0.1 to the confidence, so "play madonna's lucky star on spotify" would be 0.91 for three keywords
+* &gt;0.8 = single-key match for database title entry, e.g. "play lucky star"
+* &gt;0.7 = single-key match for database artist or group, e.g. "play madonna"
+* &gt;0.6 = single-key match for database genre or category, e.g. "play reggae"
+* &gt;0.5 = generic match, e.g. "play some music" or "play a movie"
 
 #### Search Failed
+
 No suitable result was found.
 
 **Data:**
-```JSON
+
+```javascript
 {
   "phrase": search_phrase,
   "skill_id": self.skill_id,
@@ -4302,13 +3489,13 @@ No suitable result was found.
 
 ### play:start
 
-- skill_id -- the unique ID of the skill that is being invoked
-- phrase -- the original phrase user said, e.g. "some thing" from utterance "play some thing"
-- callback_data -- (optional) data the skill can use to start playback
+* skill\_id -- the unique ID of the skill that is being invoked
+* phrase -- the original phrase user said, e.g. "some thing" from utterance "play some thing"
+* callback\_data -- \(optional\) data the skill can use to start playback
 
 **Data:**
 
-```JSON
+```javascript
 {
     "skill_id": <skill_id>,
      "phrase": phrase,
@@ -4320,11 +3507,9 @@ No suitable result was found.
 
 ### question:query
 
-
-
 **Data:**
 
-```JSON
+```javascript
 {"phrase": "complete question"}
 ```
 
@@ -4363,15 +3548,15 @@ python3 -m mycroft.messagebus.send 'question:query' '{"phrase": "complete questi
 
 ### question:query.response
 
-- skill_id -- the unique ID of the skill that is being invoked
-- phrase -- the original phrase user said, e.g. "some thing" from utterance "how tall was abraham lincoln"
-- conf -- confidence level of answers validity
-- callback_data -- (optional) data the skill can use for any additional actions (such as image url or similar)
-- searching -- true if more time is needed to complete the search, otherwise false
+* skill\_id -- the unique ID of the skill that is being invoked
+* phrase -- the original phrase user said, e.g. "some thing" from utterance "how tall was abraham lincoln"
+* conf -- confidence level of answers validity
+* callback\_data -- \(optional\) data the skill can use for any additional actions \(such as image url or similar\)
+* searching -- true if more time is needed to complete the search, otherwise false
 
 **Data:**
 
-```JSON
+```javascript
 {
     "phrase": phrase,
     "skill_id": <skill_id>,
@@ -4422,9 +3607,9 @@ python3 -m mycroft.messagebus.send 'question:query.response' '{ "phrase": phrase
 
 ### question:action
 
-- skill_id -- the unique ID of the skill that is being invoked
-- phrase -- the original phrase user said, e.g. "some thing" from utterance "how tall was abraham lincoln"
-- callback_data -- (optional) data the skill can use to take additional actions
+* skill\_id -- the unique ID of the skill that is being invoked
+* phrase -- the original phrase user said, e.g. "some thing" from utterance "how tall was abraham lincoln"
+* callback\_data -- \(optional\) data the skill can use to take additional actions
 
 **Usage:**
 
@@ -4460,13 +3645,13 @@ python3 -m mycroft.messagebus.send 'question:action'
 
 ## Mycroft Alarm Skill
 
-### private.mycroftai.has_alarm
+### private.mycroftai.has\_alarm
 
-Count of running alarms (0 == no alarms)
+Count of running alarms \(0 == no alarms\)
 
 **Data:**
 
-```JSON
+```javascript
 {"active_alarms": COUNT }
 ```
 
@@ -4505,9 +3690,9 @@ python3 -m mycroft.messagebus.send 'private.mycroftai.has_alarm' '{"active_alarm
 
 ## PROPOSED
 
-### skill.namespace.*
+### skill.namespace.\*
 
-e.g. "skill.mycroft.noftify.alarm_changed" or "skill.jaguar.notify.car_stopped"
+e.g. "skill.mycroft.noftify.alarm\_changed" or "skill.jaguar.notify.car\_stopped"
 
 **Usage:**
 
@@ -4541,9 +3726,9 @@ python3 -m mycroft.messagebus.send 'skill.namespace.*'
 {% endtab %}
 {% endtabs %}
 
-### private.github_username.*
+### private.github\_username.\*
 
-for private (not intended to be used by anyone else)
+for private \(not intended to be used by anyone else\)
 
 **Usage:**
 
@@ -4576,3 +3761,4 @@ python3 -m mycroft.messagebus.send 'private.github_username.*'
 ```
 {% endtab %}
 {% endtabs %}
+

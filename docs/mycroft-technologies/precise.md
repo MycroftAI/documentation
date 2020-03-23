@@ -82,3 +82,4 @@ An instructional overview is available on the [Precise repository on Github](htt
 ## Additional Support
 
 If you have questions, you can reach out to others in the Community via the [Troubleshooting channel in Chat](https://chat.mycroft.ai/community/channels/troubleshooting).
+

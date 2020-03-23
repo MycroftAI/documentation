@@ -11,7 +11,7 @@ description: >-
 To complete this tutorial, you should have some basic knowledge of the Python programming language, and be comfortable executing commands on a Linux command line.
 
 {% hint style="info" %}
-If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development > Intents](../../skill-development/intents/README.md)
+If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development &gt; Intents](../../skill-development/intents/)
 {% endhint %}
 
 ## Step 1 - Sample Intent
@@ -135,3 +135,4 @@ print(json.dumps(intent, indent=4))
 ```
 
 Of course, you don't just have to output the **Intent** to `stdout` - you can use it to build all sorts of tools.
+

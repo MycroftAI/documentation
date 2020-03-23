@@ -2,7 +2,7 @@
 description: Having trouble triggering the wake word?
 ---
 
-# Troubleshooting the Wake Word engine
+# Wake Word Troubleshooting
 
 > The microphone is working but Mycroft does not trigger when I say the Wake Word
 
@@ -16,18 +16,19 @@ If your response is successfully transcribed, it is most likely the Wake Word en
 
 ### Check for AVX support on your device
 
-Our Precise wake word engine also relies upon TensorFlow. For x86 Intel processors this requires the AVX (Advanced Vector Extensions) instruction set. To ensure your system supports AVX open a terminal and run:
-```
+Our Precise wake word engine also relies upon TensorFlow. For x86 Intel processors this requires the AVX \(Advanced Vector Extensions\) instruction set. To ensure your system supports AVX open a terminal and run:
+
+```text
 grep avx /proc/cpuinfo
 ```
 
 AVX should be listed under the flags for each CPU core. If nothing is returned it is most likely that your system does not support AVX.
 
-The ARM architecture has a similar requirement called SIMD (Single Instruction, Multiple Data). This has been available since ARMv7 which includes the Cortex A53 used by the RaspberryPi and the Cortex A7 from the OrangePi.
+The ARM architecture has a similar requirement called SIMD \(Single Instruction, Multiple Data\). This has been available since ARMv7 which includes the Cortex A53 used by the RaspberryPi and the Cortex A7 from the OrangePi.
 
 #### Resolution
 
-If your device does not have AVX or SIMD support then our Precise wake word engine will not work. Technical users may be able to build an older version of TensorFlow (1.13) from source using the instructions provided on their website that does not have this requirement.
+If your device does not have AVX or SIMD support then our Precise wake word engine will not work. Technical users may be able to build an older version of TensorFlow \(1.13\) from source using the instructions provided on their website that does not have this requirement.
 
 You may still use Mycroft with the PocketSphinx wake word engine. See [Using a custom wake word](../customizations/wake-word.md) to see how to configure this.
 
@@ -36,6 +37,7 @@ You may still use Mycroft with the PocketSphinx wake word engine. See [Using a c
 The Wake Word engine can have trouble detecting the specified term if the mic level is set too high.
 
 #### Resolution
+
 Reduce the mic level roughly 25-50% and attempt to speak again.
 
 If you are on a laptop this can be done in your systems sound settings or volume control panel. Alternatively you can use `alsamixer` on the commandline.
@@ -61,3 +63,4 @@ PocketSphinx is an attractive option for a custom wake word as a new term. Whils
 ## Further Information and Support
 
 You're welcome to post questions and queries to the [Mycroft Forum](https://community.mycroft.ai/c/Help-with-Mycroft-related-issues) or join our [Wake Word channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/wake-word) to connect with others in the Community.
+

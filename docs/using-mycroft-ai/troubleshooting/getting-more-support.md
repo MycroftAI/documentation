@@ -35,7 +35,7 @@ The best place to post most support questions is the [Community Forums](https://
 
 #### Community Chat
 
-The Community also has a real-time Chat service. This is useful to have direct discussion about your issue. Please be mindful that we are a global Community and someone may not respond immediately to your message. Be sure to provide enough detail so that when someone does come online they can understand what is happening. 
+The Community also has a real-time Chat service. This is useful to have direct discussion about your issue. Please be mindful that we are a global Community and someone may not respond immediately to your message. Be sure to provide enough detail so that when someone does come online they can understand what is happening.
 
 [Join the Troubleshooting channel in Chat.](https://chat.mycroft.ai/community/channels/troubleshooting)
 
@@ -48,3 +48,4 @@ If you have discovered a technical issue and are aware of which Mycroft componen
 Where needed, the Mycroft Team are happy to help. You can email queries to support@mycroft.ai and a team member will respond when available.
 
 Please note that we are a small team and our primary focus is on improving Mycroft for everyone's benefit. It may take time for us to respond to an email.
+

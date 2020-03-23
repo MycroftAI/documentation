@@ -224,4 +224,5 @@ Depending on your system, you may need to run the commands with `sudo`
 
 ## Troubleshooting
 
-{% page-ref page="../troubleshooting/README.md" %}
+{% page-ref page="../troubleshooting/" %}
+

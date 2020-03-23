@@ -188,7 +188,7 @@ In our current HelloWorldSkill we can see two different styles.
        self.speak_dialog("welcome")
    ```
 
-1. A Padatious intent handler, triggered using a list of sample phrases.
+2. A Padatious intent handler, triggered using a list of sample phrases.
 
    ```python
    @intent_file_handler('HowAreYou.intent')

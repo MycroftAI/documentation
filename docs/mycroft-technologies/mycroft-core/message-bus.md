@@ -61,7 +61,8 @@ The [Mycroft MessageBus Client](https://github.com/MycroftAI/mycroft-messagebus-
 The module is available through [PyPI.org](https://pypi.org/project/mycroft-messagebus-client/) or directly [on Github](https://github.com/MycroftAI/mycroft-messagebus-client).
 
 You can install it in your Mycroft Virtual Environment using:
-```
+
+```text
 mycroft-pip install mycroft-messagebus-client
 ```
 
@@ -179,3 +180,4 @@ See all the Message types that are currently used by the MessageBus.
 ## Additional Support
 
 If you have further questions, then the best place to ask them is our [Community Forum](https://community.mycroft.ai) or in the [~dev Channel](https://chat.mycroft.ai/community/channels/dev) on Mycroft Chat.
+

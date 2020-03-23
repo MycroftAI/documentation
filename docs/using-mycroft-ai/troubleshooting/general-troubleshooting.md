@@ -28,7 +28,7 @@ Mycroft will respond in one of two ways:
 
 ### Check settings on my device
 
-To see the settings that your device is using requires access to the devices shell (terminal). You can do this by SSHing into your device, or connecting a keyboard and monitor.
+To see the settings that your device is using requires access to the devices shell \(terminal\). You can do this by SSHing into your device, or connecting a keyboard and monitor.
 
 The configuration values in use by the system can be obtained using the Configuration Managers `get` command.
 
@@ -176,3 +176,4 @@ If your permissions are different to those shown above, change them by running t
 cd /opt/mycroft/skills/
 sudo chown mycroft:mycroft -R your-skill-name
 ```
+

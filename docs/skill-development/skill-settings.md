@@ -59,7 +59,7 @@ Notice that the value of `false` is surrounded by "quotation marks". This is bec
 
 Both of these files would result in the same settings block.
 
-![Date Time Skill Settings](../.gitbook/assets/date-time-settings.png)
+![Date Time Skill Settings](https://github.com/MycroftAI/documentation/tree/cd9d3095c33a305decd6295eb0a57fc97d471c18/docs/.gitbook/assets/date-time-settings.png)
 
 It is up to your personal preference which syntax you choose.
 
@@ -79,11 +79,11 @@ Each section must contain a `name` attribute that is used as the heading for tha
 
 Each section has one or more `fields`. Each field is a setting available to the user. Each field takes four properties:
 
-* `name`    \(String\)  
+* `name` \(String\)
 
   The `name` of the `field` is used by the Skill to get and set the value of the `field`. It will not usually be displayed to the user, unless the `label` property has not been set.
 
-* `type`    \(Enum\)  
+* `type` \(Enum\)
 
   The data type of this field. The supported types are:
 
@@ -95,11 +95,11 @@ Each section has one or more `fields`. Each field is a setting available to the 
   * `select`: a drop-down menu of options
   * `label`: special field to display text for information purposes only. No name or value is required for a `label` field.
 
-* `label`    \(String\)  
+* `label` \(String\)
 
   The text to be displayed above the setting field.
 
-* `value`    \(String\)
+* `value` \(String\)
 
   The initial value of the field.
 
@@ -405,7 +405,6 @@ skillMetadata:
 {% endtab %}
 {% endtabs %}
 
-
 ### Select
 
 {% tabs %}
@@ -446,3 +445,4 @@ skillMetadata:
 ```
 {% endtab %}
 {% endtabs %}
+

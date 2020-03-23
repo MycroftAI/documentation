@@ -17,7 +17,7 @@ See a [list of all variables available within `mycroft.conf`](https://github.com
 The `mycroft.conf` files are stored in four possible locations:
 
 1. Default - mycroft-core/mycroft/configuration/mycroft.conf
-2. Remote (from Home.Mycroft.ai) - /var/tmp/mycroft_web_cache.json
+2. Remote \(from Home.Mycroft.ai\) - /var/tmp/mycroft\_web\_cache.json
 3. System - /etc/mycroft/mycroft.conf
 4. User - $HOME/.mycroft/mycroft.conf
 
@@ -51,7 +51,6 @@ pi@mark_1:/etc/mycroft $ cat mycroft.conf
 See a [list of all variables available within `mycroft.conf`](https://github.com/MycroftAI/mycroft-core/blob/master/mycroft/configuration/mycroft.conf)\`\`
 {% endhint %}
 
-
 ## `mycroft_web_cache.json`
 
 `mycroft_web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ \(which determines _Time Zone_\), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
@@ -68,8 +67,7 @@ on the Device.
 
 ### How is `mycroft_web_cache.json` updated?
 
-When you update settings at [home.mycroft.ai](https://home.mycroft.ai), your Device will periodically pull them down.
-In normal circumstances any change should be reflected on the device within 1-2 minutes. You can also instruct your device to pull down the latest configuration, by saying:
+When you update settings at [home.mycroft.ai](https://home.mycroft.ai), your Device will periodically pull them down. In normal circumstances any change should be reflected on the device within 1-2 minutes. You can also instruct your device to pull down the latest configuration, by saying:
 
 > Hey Mycroft, update configuration
 
@@ -114,7 +112,7 @@ To see the Text to Speech \(TTS\) settings:
 Here is an example `mycroft_web_cache.json`.  
 _NOTE: Your settings will be different._
 
-```json
+```javascript
 {
   "date_format": "DMY",
   "tts": {
@@ -251,3 +249,4 @@ _NOTE: Your settings will be different._
   "system_unit": "metric"
 }
 ```
+

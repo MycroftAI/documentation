@@ -5,6 +5,7 @@ description: Having trouble with your audio?
 # Audio Troubleshooting
 
 ## Mycroft's audio system
+
 Mycroft utilizes pulseaudio for sound input and output.
 
 Mark 1 and Picroft devices have pulseaudio set up correctly for the `mycroft` user. On picroft, any mic or speakers you add to it may need to be configured as Mycroft uses the default input and output from pulse.
@@ -31,13 +32,13 @@ If you have the device on hand, try it out and see. If the information on this p
 
 The simplest way to visualize the audio input being received by Mycroft is to run the CLI. On your device you can view the CLI by running:
 
-```
+```text
 mycroft-cli-client
 ```
 
 If Mycroft was not already running you can start Mycroft and the CLI together using:
 
-```
+```text
 mycroft-start debug
 ```
 
@@ -54,12 +55,14 @@ On the other hand, if an audio stream is being received, the lines and the numbe
 To see why the microphone is not working we first want to test it outside of Mycroft.
 
 To do this we will record ten seconds of audio on the default input device and write it to the file `test.wav`. From the commandline on the device run:
-```
+
+```text
 arecord -d 10 -o test.wav
 ```
 
 You can now play it back to hear what is recorded with:
-```
+
+```text
 aplay test.wav
 ```
 
@@ -73,8 +76,9 @@ See the PulseAudio section for help in configuring audio devices with the system
 
 ### 3. Mycroft Audio Test
 
-Mycroft comes with a built-in audio test. This tool will attempt to record, then play back a short audio clip using the default microphone (source) and speakers (sink). To start the test run:
-```
+Mycroft comes with a built-in audio test. This tool will attempt to record, then play back a short audio clip using the default microphone \(source\) and speakers \(sink\). To start the test run:
+
+```text
 mycroft-start audiotest
 ```
 
@@ -85,7 +89,8 @@ If the test is successful and you hear the recorded audio back, it should be pos
 By default Mycroft will use the system default device for all audio. In most cases this provides a more consistent, flexible and reliable experience. If however other methods do not work, we can specify the exact input device Mycroft should use in our `mycroft.conf` file. For information on this configuration file, see [https://mycroft.ai/documentation/mycroft-conf/](https://mycroft.ai/documentation/mycroft-conf/).
 
 We first need to know the device name. This can be found by running the audio test with the `-l` flag
-```
+
+```text
 mycroft-start audiotest -l
 ```
 
@@ -99,14 +104,16 @@ As well as running the test, a list of audio devices will be displayed. The outp
   7:       default
 ```
 
-A specific device can be added to your user level configuration file using the [Configuration Manager](config-manager.md) by running:
+A specific device can be added to your user level configuration file using the [Configuration Manager](https://github.com/MycroftAI/documentation/tree/e748d423ec989cfec706621f52debf8e2d6e639e/docs/using-mycroft-ai/troubleshooting/config-manager.md) by running:
+
 ```bash
 mycroft-config set listener.device_name "DEVICE_NAME"
 ```
 
-Where "DEVICE\_NAME" is taken from the audio device output. Note the "(hw:1,0)" is not required.
+Where "DEVICE\_NAME" is taken from the audio device output. Note the "\(hw:1,0\)" is not required.
 
 Using the output from the audiotest example above, if we wanted to use the device at Index 4, we would run:
+
 ```bash
 mycroft-config set listener.device_name "HDA Intel PCH: ALC269VB Analog"
 ```
@@ -123,7 +130,7 @@ If Mycroft audio output fails \(No speech or audio\) when using a USB sound card
 
 To accomplish this, from your Terminal edit the System level configuration using the [Configuration Manager](../customizations/config-manager.md) by running:
 
-```
+```text
 mycroft-config edit system
 ```
 
@@ -131,7 +138,7 @@ This file can also be edited directly at `/etc/mycroft/mycroft.conf`.
 
 In this configuration file, set the following values as such:
 
-```json
+```javascript
 {
   "play_wav_cmdline": "aplay %1",
   "play_mp3_cmdline": "mpg123 %1",
@@ -220,7 +227,7 @@ For more information like usage counts and properties, remove the `short`.
 
 If you see an issue in the logs with `Popen(play_wav_cmd)` and `OSError: [Errno 2] No such file or directory` this usually indicates that mycroft cannot find pulseaudio. Make sure it's installed and mycroft is able to access it. On Debian based systems like Ubuntu you can install the package by running:
 
-```
+```text
 sudo apt-get install pulseaudio
 ```
 
@@ -267,3 +274,4 @@ To select a different sound card, follow the instructions on your version of `al
 `pavucontrol` is a GUI mixer client for X.
 
 `pacmd` is an interactive shell version of `pactl`. Use `help` to see more once in the shell.
+

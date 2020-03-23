@@ -7,7 +7,7 @@ description: >-
 # Adapt Examples
 
 {% hint style="info" %}
-If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development > Intents](../../skill-development/intents/README.md)
+If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development &gt; Intents](../../skill-development/intents/)
 {% endhint %}
 
 ## Single intent Parser
@@ -29,3 +29,4 @@ This sample **Intent Parser** uses multiple **Intents**, and disambiguates betwe
 This sample **Intent Parser** uses a regular expression entity to extract location from a query. This type of **Intent Parser** is useful where a parameter needs to be extracted from a query and it takes a form that can be expressed in regex. Other parameters that are often expressed in regex are IP address, names of people and colors.
 
 ...
+

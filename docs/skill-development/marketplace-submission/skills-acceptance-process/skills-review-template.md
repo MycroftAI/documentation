@@ -25,7 +25,7 @@ Each post back to a PR must contain:
 
 Each test starts with a checkbox. To mark a test successful, add an 'x' to the markdown checkbox like so:
 
-```
+```text
 * [ ] Test that has not yet been conducted, or is not considered passed  
 * [x] Test that has been completed and passed  
 
@@ -35,7 +35,8 @@ _Action Required: For any actions required by the Skill Author, please use this 
 ```
 
 ## Template
-```
+
+```text
 ## Meta
 
 * Platform:  
@@ -202,3 +203,4 @@ A short list of any _Actions Required_. It is also great to provide a short stat
 
 Once you have completed any updates, you can update this pull request by running `mycroft-msk submit /path/to/skill/directory`
 ```
+
