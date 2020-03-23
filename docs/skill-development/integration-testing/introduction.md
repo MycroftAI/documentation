@@ -21,7 +21,7 @@ To see it in action let's look at a short example for a Weather Skill.
 
 ```YAML
 Feature: current-weather
-  Scenario Outline: current local weather
+  Scenario: current local weather
     Given an English speaking user
      When the user says "tell me the weather"
      Then "my-weather-skill" should reply with "Right now, it's overcast clouds and 32 degrees."
@@ -36,8 +36,6 @@ When this specific test is run with the provided Steps, the system will:
 1. Ensure that it is in the appropriate state awaiting an utterance in English.
 2. Send the given utterance to Mycroft as if it had been spoken by a user.
 3. Observe Mycroft's response and check that the correct Skill responded with appropriate dialog.
-
-It's important to note that the response dialog given in the `Then` step of this example test is one possible response to the utterance. Many Skills provide multiple possible responses to the same query by adding additional responses to the dialog file. The Voight Kampff test framework has been designed to handle this situation. The test will be successful if the both the intended and actual responses are contained within the same dialog file, even if they do not match directly. We will go into more detail on this when we cover all the options available.
 
 ### File location
 Each `Feature` we define for our Skills test suite should be placed in it's own file inside the `test/behave` directory of our Skill. For this example we will save the Feature file in:
