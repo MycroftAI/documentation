@@ -4244,22 +4244,23 @@ python3 -m mycroft.messagebus.send 'play:query' '{ "phrase": <something to be pl
 
 ### play:query.response
 
-phrase -- the phrase this response is regarding
-id -- uniquely identifies the skill, so normally the skill's self.skill_id
-conf -- the confidence it can handle the request, between 0.0 and 1.0
-     Confidence guidelines:
-          1.0 = exact command match, e.g. "play npr news"
-        >0.9 = multi-key match for database entry, e.g. "play madonna's lucky star" or
-                   "play artist madona"  (matches "artist" and "madonna").
-                   For each additional key over 2, add 0.1 to the confidence, so
-                   "play madonna's lucky star on spotify" would be 0.91 for three keywords
-        >0.8 = single-key match for database title entry, e.g. "play lucky star"
-        >0.7 = single-key match for database artist or group, e.g. "play madonna"
-        >0.6 = single-key match for database genre or category, e.g. "play reggae"
-        >0.5 = generic match, e.g. "play some music" or "play a movie"
-callback_data -- optional data structure to return in play:start
+There are three responses to a `play:query`. These are not intended to be consumed directly by a Skill, see the methods available in the CommonPlaySkill Class.
 
-NOTE: Must be received within 1 second.  If longer is needed, see the "searching" response below.
+#### Confirm Search
+The initial response confirms that a search is being attempted. It also extends the Skill timeout while it looks for a match.
+
+**Data:**
+
+```JSON
+{
+  "phrase": search_phrase,
+  "skill_id": self.skill_id,
+  "searching": True
+}
+```
+
+#### Search Result
+Emitted if a result is found. Responses from the Play services must be received within 1 second to be included.
 
 **Data:**
 
@@ -4267,99 +4268,43 @@ NOTE: Must be received within 1 second.  If longer is needed, see the "searching
 {
     "phrase": phrase,
     "skill_id":  self.skill_id,
-    "conf": confidence,
-    "callback_data": data
+    "callback_data": data,
+    "service_name": self.spoken_name,
+    "conf": confidence
 }
 ```
 
-**Usage:**
+- `phrase` - the phrase that was queried for this response
+- `id` - uniquely identifies the skill, normally the Skill's `self.skill_id`
+- `callback_data` - optional data structure to return in `play:start`
+- `service_name` - the name of the service returning the highest confidence in a speakable format
+- `conf` - the confidence it can handle the request, between 0.0 and 1.0
 
-{% tabs %}
-{% tab title="Message handler in MycroftSkill" %}
-```python
-...
-def initialize(self):
-    self.add_event('play:query.response',
-                   self.handler_query_response)
+Confidence guidelines:
+- 1.0 = exact command match, e.g. "play npr news"
+- >0.9 = multi-key match for database entry, e.g. "play madonna's lucky star" or "play artist madona"  (matches "artist" and "madonna"). For each additional key over 2, add 0.1 to the confidence, so "play madonna's lucky star on spotify" would be 0.91 for three keywords
+- >0.8 = single-key match for database title entry, e.g. "play lucky star"
+- >0.7 = single-key match for database artist or group, e.g. "play madonna"
+- >0.6 = single-key match for database genre or category, e.g. "play reggae"
+- >0.5 = generic match, e.g. "play some music" or "play a movie"
 
-def handler_query_response(self, message):
-    # code to excecute when play:query.response message detected...
-...
-```
-{% endtab %}
-
-{% tab title="Generating Message from MycroftSkill" %}
-```python
-...
-def some_method(self):
-    self.emitter.emit(Message('play:query.response',
-                              {"phrase": phrase,
-                               "skill_id":  self.skill_id,
-                               "conf": confidence,
-                               "callback_data": data}))
-...
-```
-{% endtab %}
-
-{% tab title="Command line invocation" %}
-```bash
-python3 -m mycroft.messagebus.send 'play:query.response' '{ "phrase": phrase, "skill_id":  self.skill_id, "conf": confidence, "callback_data": data}'
-```
-{% endtab %}
-{% endtabs %}
-
-###
-
-Request a timeout extension while performing a search
+#### Search Failed
+No suitable result was found.
 
 **Data:**
-
 ```JSON
 {
-    "phrase": phrase,
-    "searching":  true
+  "phrase": search_phrase,
+  "skill_id": self.skill_id,
+  "searching": False
 }
 ```
-
-**Usage:**
-
-{% tabs %}
-{% tab title="Message handler in MycroftSkill" %}
-```python
-...
-def initialize(self):
-    self.add_event('',
-                   self.handler_)
-
-def handler_(self, message):
-    # code to excecute when  message detected...
-...
-```
-{% endtab %}
-
-{% tab title="Generating Message from MycroftSkill" %}
-```python
-...
-def some_method(self):
-    self.emitter.emit(Message('',
-                              {"phrase": phrase,
-                               "searching":  true}))
-...
-```
-{% endtab %}
-
-{% tab title="Command line invocation" %}
-```bash
-python3 -m mycroft.messagebus.send '' '{ "phrase": phrase, "searching":  true}'
-```
-{% endtab %}
-{% endtabs %}
 
 ### play:start
 
-skill_id -- the unique ID of the skill that is being invoked
-phrase -- the original phrase user said, e.g. "some thing" from utterance "play some thing"
-callback_data -- (optional) data the skill can use to start playback
+- skill_id -- the unique ID of the skill that is being invoked
+- phrase -- the original phrase user said, e.g. "some thing" from utterance "play some thing"
+- callback_data -- (optional) data the skill can use to start playback
 
 **Data:**
 
@@ -4370,41 +4315,6 @@ callback_data -- (optional) data the skill can use to start playback
      "callback_data": optional_data
 }
 ```
-
-**Usage:**
-
-{% tabs %}
-{% tab title="Message handler in MycroftSkill" %}
-```python
-...
-def initialize(self):
-    self.add_event('play:start',
-                   self.handler_start)
-
-def handler_start(self, message):
-    # code to excecute when play:start message detected...
-...
-```
-{% endtab %}
-
-{% tab title="Generating Message from MycroftSkill" %}
-```python
-...
-def some_method(self):
-    self.emitter.emit(Message('play:start',
-                              {"skill_id": <skill_id>,
-                                "phrase": phrase,
-                                "callback_data": optional_data}))
-...
-```
-{% endtab %}
-
-{% tab title="Command line invocation" %}
-```bash
-python3 -m mycroft.messagebus.send 'play:start' '{ "skill_id": <skill_id>,  "phrase": phrase,  "callback_data": optional_data}'
-```
-{% endtab %}
-{% endtabs %}
 
 ## Common Query System
 
@@ -4453,12 +4363,11 @@ python3 -m mycroft.messagebus.send 'question:query' '{"phrase": "complete questi
 
 ### question:query.response
 
-skill_id -- the unique ID of the skill that is being invoked
-phrase -- the original phrase user said, e.g. "some thing" from utterance "how tall was abraham lincoln"
-answer - the returned answer from the skill
-conf -- confidence level of answers validity
-callback_data -- (optional) data the skill can use for any additional actions (such as image url or similar)
-searching -- true if more time is needed to complete the search, otherwise false
+- skill_id -- the unique ID of the skill that is being invoked
+- phrase -- the original phrase user said, e.g. "some thing" from utterance "how tall was abraham lincoln"
+- conf -- confidence level of answers validity
+- callback_data -- (optional) data the skill can use for any additional actions (such as image url or similar)
+- searching -- true if more time is needed to complete the search, otherwise false
 
 **Data:**
 
@@ -4513,9 +4422,9 @@ python3 -m mycroft.messagebus.send 'question:query.response' '{ "phrase": phrase
 
 ### question:action
 
-skill_id -- the unique ID of the skill that is being invoked
-phrase -- the original phrase user said, e.g. "some thing" from utterance "how tall was abraham lincoln"
-callback_data -- (optional) data the skill can use to take additional actions
+- skill_id -- the unique ID of the skill that is being invoked
+- phrase -- the original phrase user said, e.g. "some thing" from utterance "how tall was abraham lincoln"
+- callback_data -- (optional) data the skill can use to take additional actions
 
 **Usage:**
 
