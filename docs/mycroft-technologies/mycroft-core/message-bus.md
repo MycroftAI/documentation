@@ -60,6 +60,11 @@ The [Mycroft MessageBus Client](https://github.com/MycroftAI/mycroft-messagebus-
 
 The module is available through [PyPI.org](https://pypi.org/project/mycroft-messagebus-client/) or directly [on Github](https://github.com/MycroftAI/mycroft-messagebus-client).
 
+You can install it in your Mycroft Virtual Environment using:
+```
+mycroft-pip install mycroft-messagebus-client
+```
+
 #### MycroftBusClient\(\)
 
 The `MycroftBusClient()` object can be setup to connect to any host and port as well as any endpont on that host. this makes it quite versitile and will work on the main bus as well as on a gui bus. If no arguments are provided it will try to connect to a local instance of mycroftr core on the default endpoint and port.
@@ -174,4 +179,3 @@ See all the Message types that are currently used by the MessageBus.
 ## Additional Support
 
 If you have further questions, then the best place to ask them is our [Community Forum](https://community.mycroft.ai) or in the [~dev Channel](https://chat.mycroft.ai/community/channels/dev) on Mycroft Chat.
-
