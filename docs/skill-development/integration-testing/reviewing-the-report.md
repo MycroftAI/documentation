@@ -1,7 +1,7 @@
 # Reviewing the Report
 
 ## Test Output
-The details of each test scenario is printed to stdout as it is run, and at the end of our test a summary is printed.
+The details of each test scenario is printed to the terminal (stdout) as it is run, and at the end of our test a summary is printed.
 
 ```text
 Failing scenarios:
@@ -53,4 +53,4 @@ The test results are also written to JSON files that can be used with [Allure](h
 ## Help
 For further assistance with Skill testing, please post your question on the [Community Forums](https://community.mycroft.ai/) or in the [Skills channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
 
-See our tips for how to ask the best questions. This helps you get a more complete response faster.
+See our [tips for how to ask the best questions](../../using-mycroft-ai/troubleshooting/getting-more-support.md). This helps you get a more complete response faster.

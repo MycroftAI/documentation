@@ -8,11 +8,13 @@ description: >-
 
 In our introduction to integration testing we looked at a simple example based on a custom Weather Skill. A Skill could be well tested using only that simple structure, however there are many more options available.
 
+Here we outline the Steps available in the base implementation. We are actively looking for suggestions for other Steps to include. You can also write your own custom Steps for your Skill.
+
 ## Given Steps
 `Given` Steps define the state of the Scenario.
 
 ### Set language
-**Given an english speaking user**
+`Given an english speaking user`
 
 You can set the language of a test using its common name.
 
@@ -20,7 +22,7 @@ You can set the language of a test using its common name.
 `When` Steps describe actions that are taken.
 
 ### User says something
-**When the user says "some utterance"**
+`When the user says "some utterance"`
 
 
 ## Then Steps
@@ -29,7 +31,7 @@ You can set the language of a test using its common name.
 ### Spoken Response
 
 #### Reply with dialog file
-**Then "my-skill" should reply with dialog from "my.dialog.file"**
+`Then "my-skill" should reply with dialog from "my.dialog.file"`
 
 ```YAML
 Feature: current-weather
@@ -40,7 +42,7 @@ Feature: current-weather
 ```
 
 #### Reply with example phrase
-**Then "my-skill" should reply with "an example dialog response"**
+`Then "my-skill" should reply with "an example dialog response"`
 The response dialog given is one possible response to the utterance.
 
 ```YAML
@@ -54,7 +56,7 @@ Feature: current-weather
 Many Skills provide multiple possible responses to the same query by adding additional responses to the dialog file. The Voight Kampff test framework has been designed to handle this situation. The test will be successful if the both the intended and actual responses are contained within the same dialog file, even if they do not match directly.
 
 #### Reply with exact dialog
-**Then "my-skill" should reply with exactly "some response"**
+`Then "my-skill" should reply with exactly "some response"`
 Test that the dialog spoken in response, exactly matches a string of text.
 
 ```YAML
@@ -66,7 +68,7 @@ Feature: current-weather
 ```
 
 #### Reply with anything
-**Then "my-skill" should reply with anything**
+`Then "my-skill" should reply with anything`
 Test only that a specific Skill handles the response, and that any dialog was spoken in response.
 
 ```YAML
@@ -78,7 +80,7 @@ Feature: current-weather
 ```
 
 #### Reply should contain
-**Then mycroft reply should contain "something"**
+`Then mycroft reply should contain "something"`
 Test that the response includes some string of text.
 
 ```YAML
@@ -90,7 +92,7 @@ Feature: current-weather
 ```
 
 ### Message Type sent
-**Then mycroft should send the message "{message_type}"**
+`Then mycroft should send the message "{message_type}"`
 
 Tests that a particular [Message Type](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/message-types) was emitted to the [MessageBus](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/message-bus).
 

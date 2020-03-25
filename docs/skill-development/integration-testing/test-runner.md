@@ -3,7 +3,7 @@
 ## Setup the tests
 Voight Kampff is designed to test not only your Skill in isolation, but also ensuring Skills operate as expected when co-existing with different sets of Skills from the Marketplace.
 
-Parameters for this testing can be set through a YAML configuration or using flags when running the tests.
+Parameters for this testing can be set through a YAML configuration or using commandline flags at run-time.
 
 ### YAML Configuration
 The configuration of these tests consists of three main settings:
@@ -31,7 +31,7 @@ You can specify an alternate file when running the tests using the `-c` flag. As
 
 
 ### Manually running the Test Setup
-This step will happen automatically when you run the tests. However if you want to trigger this independently, you can call the Python Module from within the Mycroft virtual environment.
+The setup process will happen automatically when you run the tests. However if you want to trigger this independently, you can call the Python Module from within the Mycroft virtual environment.
 ```bash
 cd ~/mycroft-core
 source .venv/bin/activate
@@ -101,3 +101,5 @@ You can alternatively run the test suite using the provided Shell script:
 cd ~/mycroft-core/test/integrationtests/voight_kampff
 ./run_test_suite.sh
 ```
+
+This does not perform any setup process and all commandline arguments are passed to `behave`.

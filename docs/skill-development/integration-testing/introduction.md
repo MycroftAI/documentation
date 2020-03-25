@@ -1,7 +1,7 @@
 ---
 description: >-
-  Ensure your Skill works as expected when it is running inside Mycroft along
-  with all the default Skills.
+  Integration testing ensures your Skill works as expected when it is running
+  inside Mycroft in a realistic environment alongside other Skills.
 ---
 
 # Integration Testing
@@ -11,11 +11,10 @@ Mycroft has recently adopted a new [Behavior Driven Development (BDD)](https://e
 ## Why have integration tests
 Writing tests for your Skill has benefits for both you and Mycroft as a whole. For the project it allows us to automatically check that the Skill is working as intended, and that no other Skill is causing a conflict.
 
-Test-driven development also allows you to work more efficiently and find bugs faster.
-
+Test-driven development also allows you to work more efficiently and find bugs faster. We are currently working on a Skill Design Guide that outlines the process we go through to design new voice Skills.
 
 ## Test Format
-Behave tests are split into `Features`. Each `Feature` may have one or more `Scenarios`, and each `Scenario` will have multiple `Steps`.
+Voight Kampff tests are split into `Features`. Each `Feature` may have one or more `Scenarios`, and each `Scenario` will have multiple `Steps`.
 
 To see it in action let's look at a short example for a Weather Skill.
 
