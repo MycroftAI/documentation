@@ -120,8 +120,11 @@ mycroft-config set tts.module "google"
 
 ### Account Setup
 
-Create an account at [IBM.com/cloud](https://www.ibm.com/cloud/watson-text-to-speech).
-You can find a list of available voices at [Languages and Voices](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-voices#neuralVoices). For example, "en-US_MichaelV3Voice". Please note that IBM keeps a log of all requests in the lite plan unless you turn it off explicitly by setting "X-Watson-Learning-Opt-Out" to true.
+Create an account at [IBM.com/cloud](https://www.ibm.com/cloud/watson-text-to-speech). Once you add the TTS service to your account, you will receive an API key and unique API url.
+
+You can find a list of available voices at [Languages and Voices](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-voices#neuralVoices). For example, "en-US_MichaelV3Voice".
+
+IBM keeps a log of all requests in the lite plan unless you turn it off explicitly by setting "X-Watson-Learning-Opt-Out" to true. We have set Mycroft to Opt-Out by default, so if you want to share data with IBM then you must set this to false.
 
 
 ### Mycroft Configuration
@@ -140,6 +143,7 @@ To our existing configuration values we will add the following:
   "watson": {
     "voice":"PREFERRED_VOICE",
     "apikey": "YOUR_API_KEY",
+    "url": "YOUR_API_URL"
     "X-Watson-Learning-Opt-Out": "true",
     "username": "YOUR_USERNAME", # Not needed if api_key is set
     "password": "YOUR_PASSWORD"  # Not needed if api_key is set
@@ -252,4 +256,3 @@ To our existing configuration values we will add the following:
   }
 }
 ```
-
