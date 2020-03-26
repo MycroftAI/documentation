@@ -143,10 +143,8 @@ To our existing configuration values we will add the following:
   "watson": {
     "voice":"PREFERRED_VOICE",
     "apikey": "YOUR_API_KEY",
-    "url": "YOUR_API_URL"
-    "X-Watson-Learning-Opt-Out": "true",
-    "username": "YOUR_USERNAME", # Not needed if api_key is set
-    "password": "YOUR_PASSWORD"  # Not needed if api_key is set
+    "url": "YOUR_API_URL",
+    "X-Watson-Learning-Opt-Out": "true"
   }
 }
 ```
