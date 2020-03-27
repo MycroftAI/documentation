@@ -244,6 +244,10 @@ To our existing configuration values we will add the following:
 
 ## IBM Watson
 
+{% hint style="warning" %}
+This interface is not currently operational as IBM have changed their authentication mechanism. [Contributions](https://github.com/MycroftAI/mycroft-core/issues/2516) to get this fixed up are welcomed.
+{% endhint %}
+
 Speech-to-text using the IBM Watson cloud.
 
 ### Account Setup
@@ -364,4 +368,3 @@ To our existing configuration values we will add the following:
   "module": "yandex"
 }
 ```
-
