@@ -10,7 +10,7 @@ description: >-
 
 ### Alarms
 
-> Hey Mycroft, set an alarm for two hours 
+> Hey Mycroft, set an alarm for two hours
 >
 > Hey Mycroft, set an alarm for 3pm
 
@@ -24,7 +24,7 @@ description: >-
 
 ### DuckDuckGo
 
-> Hey Mycroft, what is Frankenstein? 
+> Hey Mycroft, what is Frankenstein?
 >
 > Hey Mycroft, who is Kathryn Johnson?
 
@@ -63,10 +63,6 @@ description: >-
 ### Support information
 
 > Create a support ticket 
->
-> You're not working! 
->
-> Send me debug info
 
 ### Version checker
 
@@ -74,7 +70,7 @@ description: >-
 
 ### Volume
 
-> Hey Mycroft, increase volume 
+> Hey Mycroft, increase volume
 >
 > Hey Mycroft, decrease volume
 
@@ -84,7 +80,7 @@ description: >-
 
 ### Wikipedia
 
-> Hey Mycroft, tell me about artificial intelligence 
+> Hey Mycroft, tell me about artificial intelligence
 >
 > Hey Mycroft, tell me about Grace Hopper
 
@@ -96,13 +92,12 @@ To install new **Skills** onto Mycroft, speak:
 
 For example:
 
-> install coinflip 
+> install coinflip
 >
-> install easter eggs 
+> install easter eggs
 >
 > install home assistant
 
 ## More information on Skills
 
 For more information on Skills, please see the [Skills section](http://mycroft.ai/documentation/skills/)
-
