@@ -175,7 +175,7 @@ Precise is likely appropriate for most users, however on legacy hardware PocketS
 
 {% hint style="info" %}
 **Troubleshooting a broken listener?**  
-You can type the speak command into the CLI (`start-mycroft.sh cli`).
+You can type the speak command into the CLI (`./start-mycroft.sh cli` or `mycroft-cli-client`).
 {% endhint %}
 
 To change the Wake Word Listener to PocketSphinx, speak:
