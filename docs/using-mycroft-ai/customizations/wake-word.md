@@ -173,9 +173,10 @@ As per the [Technology Overview](https://mycroft-ai.gitbook.io/docs/mycroft-tech
 
 Precise is likely appropriate for most users, however on legacy hardware PocketSphinx may be desired.
 
-{% hint style="tip" %}
+{% hint style="info" %}
 **Troubleshooting a broken listener?**  
 You can type the speak command into the CLI (`start-mycroft.sh cli`).
+{% endhint %}
 
 To change the Wake Word Listener to PocketSphinx, speak:
 
