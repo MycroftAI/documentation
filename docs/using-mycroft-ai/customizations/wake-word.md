@@ -167,11 +167,18 @@ mycroft-config reload
 
 ## Switching Wake Word Listeners
 
-To change the Wake Word Listener to PocketSphinx if it has been set to Precise, Speak:
+As per the [Technology Overview](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/overview#wake-word-detection), there are two available listeners:
+1. Precise (default)
+2. PocketSphinx
 
-> Hey Mycroft, set the Listener to default
+Precise is likely appropriate for most users, however on legacy hardware PocketSphinx may be desired.
 
-or
+{% hint style="info" %}
+**Troubleshooting a broken listener?**  
+You can type the speak command into the CLI (`./start-mycroft.sh cli` or `mycroft-cli-client`).
+{% endhint %}
+
+To change the Wake Word Listener to PocketSphinx, speak:
 
 > Hey Mycroft, set the listener to PocketSphinx
 
@@ -180,6 +187,10 @@ Mycroft will respond
 `"I've set the Listener to PocketSphinx"`
 
 To return to Precise, speak:
+
+> Hey Mycroft, set the Listener to default
+
+or
 
 > Hey Mycroft, set the Listener to Precise
 
