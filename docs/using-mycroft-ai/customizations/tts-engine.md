@@ -104,6 +104,54 @@ To our existing configuration values we will add the following:
   }
 ```
 
+## Amazon Polly
+
+[Amazon Polly's](https://aws.amazon.com/polly/) text-to-speech service.
+
+### Account Setup
+
+[Create an AWS account](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=default&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start) and add the Polly service.
+
+You will need to take note of your private "Access Key ID" and "Secret Access Key".
+
+### Mycroft Configuration
+
+First, check the [list of available voices and languages](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html). Note that Polly does not provide a separate `langauge` attribute like other TTS options. The language is determined by which voice is chosen.
+
+Then, install the `boto3` python module in the Mycroft virtual environment:
+```bash
+mycroft-pip install boto3
+```
+or
+```bash
+cd ~/mycroft-core
+source .venv/bin/activate
+pip3 install boto3
+deactivate
+```
+
+Finally, using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
+
+```bash
+mycroft-config edit user
+```
+
+To our existing configuration values we will add the following:
+
+```javascript
+"tts": {
+  "module": "polly",
+  "polly": {
+    "voice": "Matthew",
+    "region": "us-east-1",
+    "access_key_id": "YOUR_ACCESS_KEY_ID",
+    "secret_access_key": "YOUR_SECRET_ACCESS_KEY"
+  }
+}
+```
+
+If the `voice` and `region` attributes are ommitted the defaults of `Matthew` and `us-east-1` will be used. This is an English (US) voice.
+
 ## Google TTS
 
 Google Translate's text-to-speech API.
