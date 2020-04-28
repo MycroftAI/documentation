@@ -1,7 +1,7 @@
 ---
 description: >-
-  Picroft is a ready-made way to run Mycroft on a Raspberry Pi 3 or Raspberry Pi
-  3B+ and is provided as a disk image that you can burn to a Micro SD card.
+  Picroft is a ready-made way to run Mycroft on a Raspberry Pi 3, 3B+ or 4 and
+  is provided as a disk image that you can burn to a Micro SD card.
 ---
 
 # Picroft
@@ -40,7 +40,7 @@ As well as a Raspberry Pi, you will also need:
 
 * Micro SD card, 8GB or larger _highly_ recommended
 * Power adapter with micro USB for your country. [The Raspberry Pi Foundation has some excellent recommendations](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
-* An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi 3 _or_ a USB Speaker  \(_Bluetooth on Picroft is difficult to get working and is not recommended_\)
+* An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi _or_ a USB Speaker  \(_Bluetooth on Picroft is difficult to get working and is not recommended_\)
 * USB Microphone
 
 Installing Picroft may be easier if you also have:
@@ -357,9 +357,9 @@ This script will update both `mycroft-core` and the **Skills** on your Picroft d
 
 The Picroft image building instructions can now be found on GitHub at; [https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image\_recipe.md](https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image_recipe.md)
 
-### Using the GPIO pins on the Raspberry Pi 3
+### Using the GPIO pins on the Raspberry Pi
 
-One common question we get is - "Can I use the [general purpose input output pins \(GPIO\)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi 3 with Picroft?".
+One common question we get is - "Can I use the [general purpose input output pins \(GPIO\)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi with Picroft?".
 
 The answer is 'Yes' - but this requires some additional configuration.
 
@@ -372,4 +372,3 @@ You also need to install some additional packages:
 `sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
 
 This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill.
-
