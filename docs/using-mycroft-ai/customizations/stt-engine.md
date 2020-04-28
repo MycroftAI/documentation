@@ -244,15 +244,11 @@ To our existing configuration values we will add the following:
 
 ## IBM Watson
 
-{% hint style="warning" %}
-This interface is not currently operational as IBM have changed their authentication mechanism. [Contributions](https://github.com/MycroftAI/mycroft-core/issues/2516) to get this fixed up are welcomed.
-{% endhint %}
-
-Speech-to-text using the IBM Watson cloud.
+Speech-to-text using the IBM cloud.
 
 ### Account Setup
 
-Create an account at [IBM.com/cloud](https://www.ibm.com/cloud/watson-speech-to-text).
+Create an account at [IBM.com/cloud](https://www.ibm.com/cloud/watson-speech-to-text). Once you add the STT service to your account, you will receive an API key and unique API url.
 
 ### Mycroft Configuration
 
@@ -267,8 +263,10 @@ To our existing configuration values we will add the following:
 ```javascript
 "stt": {
   "ibm": {
-    "username": "xxxxx",
-    "password": "xxxxx"
+    "credential": {
+      "token": "YOUR_API_KEY"
+    },
+    "url": "URL_FROM_SERVICE"
   },
   "module": "ibm"
 }
