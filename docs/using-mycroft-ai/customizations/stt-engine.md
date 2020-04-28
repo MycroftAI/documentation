@@ -242,13 +242,17 @@ To our existing configuration values we will add the following:
 }
 ```
 
-## IBM Watson
+## IBM Cloud
 
-Speech-to-text using the IBM cloud.
+IBM Cloud - Watson Speech to Text is a cloud-based deep-learning speech-to-text service offered on top of the IBM Watson platform.
 
 ### Account Setup
 
-Create an account at [IBM.com/cloud](https://www.ibm.com/cloud/watson-speech-to-text). Once you add the STT service to your account, you will receive an API key and unique API url.
+Create an account at [IBM.com/cloud](https://www.ibm.com/cloud/watson-speech-to-text), then:
+
+* Create a New Resource from your dashboard
+  * Select "Speech to Text" as the product
+* Retrieve the `API Key` and `URL` from the Services section of your dashboard
 
 ### Mycroft Configuration
 
@@ -266,7 +270,7 @@ To our existing configuration values we will add the following:
     "credential": {
       "token": "YOUR_API_KEY"
     },
-    "url": "URL_FROM_SERVICE"
+    "url": "YOUR_URL"
   },
   "module": "ibm"
 }
