@@ -59,6 +59,7 @@
   * [Scenario Outlines](skill-development/integration-testing/scenario-outlines.md)
   * [Test Runner](skill-development/integration-testing/test-runner.md)
   * [Reviewing the Report](skill-development/integration-testing/reviewing-the-report.md)
+  * [Adding Custom Steps](skill-development/integration-testing/custom-steps.md)
 * [Other Testing](skill-development/testing/README.md)
   * [Automatic Testing](skill-development/testing/automatic-testing.md)
 * [Skill Types](skill-development/skill-types/README.md)

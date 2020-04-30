@@ -121,3 +121,8 @@ Feature: current-weather
 ```
 
 The two terms are exactly the same, they both operate as the Step that comes immediately before them.
+
+## Adding custom Steps
+Some Skills require their own unique Steps to test functionality specific to that Skill. These can be added to your Skills repository under the `test/behave/steps` directory. For more detail see:
+
+{% page-ref page="custom-steps.md" %}
