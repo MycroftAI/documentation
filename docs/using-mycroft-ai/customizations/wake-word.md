@@ -157,6 +157,11 @@ For the `Yo Mike` example we started with, an example `~/.mycroft/mycroft.conf` 
 }
 ```
 
+{% hint style="danger" %}
+Warning: By default, Mycroft only provides an English language model for PocketSphinx.   
+You will get an error attempting to use PocketSphinx if you have set your language attribute to anything other than "en-us".
+{% endhint %}
+
 ## Applying new settings
 
 Mycroft doesn't automatically apply new settings when the `mycroft.conf` file is modified. You must restart Mycroft by rebooting the device, or using the command:
