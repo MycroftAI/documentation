@@ -12,7 +12,7 @@ The Mycroft Timer Skill for example provides [test/behave/steps/timer.py](https:
 
 Let's use an example from this Skill to see how we can define our own custom Steps.
 
-```
+```Python
 from behave import given
 
 from test.integrationtests.voight_kampff import wait_for_dialog, emit_utterance
@@ -30,7 +30,7 @@ def given_set_timer_length(context, timer_length):
 ## Imports
 First we import some packages.
 
-```
+```Python
 from behave import given
 
 from test.integrationtests.voight_kampff import wait_for_dialog, emit_utterance
@@ -43,19 +43,19 @@ Like any Python script, you can import other packages from Mycroft or externally
 
 ## Decorators
 Now we can use the `@given()` decorator on our function definition.
-```
+```Python
 @given('a {timer_length} timer is set')
 @given('a timer is set for {timer_length}')
 def given_set_timer_length(context, timer_length):
 ```
 
 This decorator tells the system that we are creating a `Given` Step. It takes a string as it's first argument which defines what phrase we can use in our tests. So using the first decorator above means that in our tests we can then write `Given` Steps like:
-```
+```text
 Given a 10 minute timer is set
 ```
 
 A handy feature of decorators is that they can be stacked. In this example we have two stacked decorators applied to the same function. This allows us to use variations of natural language, and both versions will achieve the same result. So now we could write another Step phrased differently:
-```
+```text
 Given a timer is set for 10 minutes
 ```
 
@@ -64,14 +64,14 @@ Either way, it will ensure a 10 minute timer exists before running the test Scen
 
 ## Function arguments
 When we define a Step function, the first argument will always be a [Behave `Context` Object](https://behave.readthedocs.io/en/latest/api.html#behave.runner.Context). All remaining arguments will map to variables defined in the decorators.
-```
+```Python
 @given('a {timer_length} timer is set')
 @given('a timer is set for {timer_length}')
 def given_set_timer_length(context, timer_length):
 ```
 
 In our current example, we have only one variable "`timer_length`". This corresponds to the second argument of our function. Additional variables can be added to the argument list such as:
-```
+```Python
 @given('a timer named {timer_name} is set for {timer_length}')
 def given_set_timer_named(context, timer_name, timer_length):
 ```
@@ -86,7 +86,7 @@ The first argument of each Step function is always a [Behave `Context` Object](h
 
 ## Step logic
 Now we have the structure of our Step function in place, it's time to look at what that Step does.
-```
+```Python
 def given_set_timer_length(context, timer_length):
     emit_utterance(context.bus, 'set a timer for {}'.format(timer_length))
     wait_for_dialog(context.bus, ['started.timer'])
