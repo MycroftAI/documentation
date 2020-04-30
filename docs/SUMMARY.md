@@ -54,7 +54,7 @@
 * [Displaying information](skill-development/displaying-information/README.md)
   * [GUI Framework](skill-development/displaying-information/mycroft-gui.md)
   * [Mark 1 Display](skill-development/displaying-information/mark-1-display.md)
-* [Voight Kampff Integration Tests](skill-development/integration-testing/introduction.md)
+* [Voight Kampff Integration Tests](skill-development/integration-testing/voight-kampff.md)
   * [Test Steps](skill-development/integration-testing/test-steps.md)
   * [Scenario Outlines](skill-development/integration-testing/scenario-outlines.md)
   * [Test Runner](skill-development/integration-testing/test-runner.md)
