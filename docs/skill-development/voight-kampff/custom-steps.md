@@ -27,7 +27,7 @@ def given_set_timer_length(context, timer_length):
     context.bus.clear_messages()
 ```
 
-## Imports
+## Packages
 
 First we import some packages.
 
@@ -40,6 +40,64 @@ from test.integrationtests.voight_kampff import wait_for_dialog, emit_utterance
 From `behave` we can get the behave decorators - `given`, `when`, or `then`. For this Step we also need some helper functions from the Voight Kampff module.
 
 Like any Python script, you can import other packages from Mycroft or externally as needed.
+
+### Voight Kampff Tools
+
+The `test.integrationtests.voight_kampff` module provides a number of common tools that may be useful when creating Step files. 
+
+#### then\_wait\(msg\_type, criteria\_func, context, timeout=10\)
+
+Wait for a specified time for criteria to be fulfilled.
+
+Arguments:
+
+`msg_type` - Message type to watch  
+`criteria_func` - Function to determine if a message fulfilling the test case has been found.  
+`context` - Behave context object  
+`timeout` - Time allowance for a message fulfilling the criteria, defaults to 10 sec
+
+Returns:
+
+`tuple (bool, str)` - test status, debug output
+
+**mycroft\_responses\(context\)**
+
+Collect and format mycroft responses from context.
+
+Arguments:
+
+`context` - Behave context to extract messages from.
+
+Returns: 
+
+`(str)` - Mycroft responses including skill and dialog file
+
+#### emit\_utterance\(bus, utt\)
+
+Emit an utterance on the bus.
+
+Arguments:
+
+`bus (InterceptAllBusClient)` - Bus instance to listen on  
+`dialogs (list)` - List of acceptable dialogs
+
+Returns:
+
+`None`
+
+#### wait\_for\_dialog\(bus, dialogs, timeout=10\)
+
+Wait for one of the dialogs given as argument.
+
+Arguments:
+
+`bus (InterceptAllBusClient)` - Bus instance to listen on  
+`dialogs (list)` - list of acceptable dialogs  
+`timeout (int)` - Time allowance to wait, defaults to 10 sec
+
+Returns:
+
+`None`
 
 ## Decorators
 
