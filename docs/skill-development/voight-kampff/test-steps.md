@@ -11,29 +11,34 @@ In our introduction to integration testing we looked at a simple example based o
 Here we outline the Steps available in the base implementation. We are actively looking for suggestions for other Steps to include. You can also write your own custom Steps for your Skill.
 
 ## Given Steps
+
 `Given` Steps define the state of the Scenario.
 
 ### Set language
+
 `Given an english speaking user`
 
 You can set the language of a test using its common name.
 
 ## When Steps
+
 `When` Steps describe actions that are taken.
 
 ### User says something
+
 `When the user says "some utterance"`
 
-
 ## Then Steps
+
 `Then` Steps observe the outcome of the test.
 
 ### Spoken Response
 
 #### Reply with dialog file
+
 `Then "my-skill" should reply with dialog from "my.dialog.file"`
 
-```YAML
+```yaml
 Feature: current-weather
   Scenario: Temperature in paris
     Given an english speaking user
@@ -42,10 +47,10 @@ Feature: current-weather
 ```
 
 #### Reply with example phrase
-`Then "my-skill" should reply with "an example dialog response"`
-The response dialog given is one possible response to the utterance.
 
-```YAML
+`Then "my-skill" should reply with "an example dialog response"` The response dialog given is one possible response to the utterance.
+
+```yaml
 Feature: current-weather
   Scenario: current local weather
     Given an English speaking user
@@ -56,10 +61,10 @@ Feature: current-weather
 Many Skills provide multiple possible responses to the same query by adding additional responses to the dialog file. The Voight Kampff test framework has been designed to handle this situation. The test will be successful if the both the intended and actual responses are contained within the same dialog file, even if they do not match directly.
 
 #### Reply with exact dialog
-`Then "my-skill" should reply with exactly "some response"`
-Test that the dialog spoken in response, exactly matches a string of text.
 
-```YAML
+`Then "my-skill" should reply with exactly "some response"` Test that the dialog spoken in response, exactly matches a string of text.
+
+```yaml
 Feature: current-weather
   Scenario: current local weather
     Given an English speaking user
@@ -68,10 +73,10 @@ Feature: current-weather
 ```
 
 #### Reply with anything
-`Then "my-skill" should reply with anything`
-Test only that a specific Skill handles the response, and that any dialog was spoken in response.
 
-```YAML
+`Then "my-skill" should reply with anything` Test only that a specific Skill handles the response, and that any dialog was spoken in response.
+
+```yaml
 Feature: current-weather
   Scenario: current local weather
     Given an English speaking user
@@ -80,10 +85,10 @@ Feature: current-weather
 ```
 
 #### Reply should contain
-`Then mycroft reply should contain "something"`
-Test that the response includes some string of text.
 
-```YAML
+`Then mycroft reply should contain "something"` Test that the response includes some string of text.
+
+```yaml
 Feature: current-weather
   Scenario: Temperature in paris
     Given an english speaking user
@@ -92,14 +97,16 @@ Feature: current-weather
 ```
 
 ### Message Type sent
+
 `Then mycroft should send the message "{message_type}"`
 
 Tests that a particular [Message Type](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/message-types) was emitted to the [MessageBus](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/message-bus).
 
 ## And, But
+
 You can include several Steps of the same type in a single Scenario. For example:
 
-```YAML
+```yaml
 Feature: current-weather
   Scenario: Temperature in paris
     Given an english speaking user
@@ -110,7 +117,8 @@ Feature: current-weather
 ```
 
 To make this easier to read, you can instead use the terms `And` or `But`
-```YAML
+
+```yaml
 Feature: current-weather
   Scenario: Temperature in paris
     Given an english speaking user
@@ -123,6 +131,8 @@ Feature: current-weather
 The two terms are exactly the same, they both operate as the Step that comes immediately before them.
 
 ## Adding custom Steps
+
 Some Skills require their own unique Steps to test functionality specific to that Skill. These can be added to your Skills repository under the `test/behave/steps` directory. For more detail see:
 
 {% page-ref page="custom-steps.md" %}
+

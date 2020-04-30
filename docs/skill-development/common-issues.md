@@ -16,7 +16,7 @@ description: Having trouble with your Skill? Here are a few things that we somet
 
 The utterance string received from the speech-to-text engine is received all lowercase. As such any string matching you are trying to do should also be converted to lowercase. For example:
 
-```Python
+```python
 @intent_file_handler('example.intent')
 def handle_example(self, message):
     utterance = message.data.get('utterance')
@@ -25,6 +25,8 @@ def handle_example(self, message):
 ```
 
 ## Need more help?
+
 If something isn't working as expected, please join us in the [~Skills channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
 
 It's also really helpful for us if you add an issue to our [documentation repo](https://github.com/MycroftAI/documentation/issues). This means we can make sure it gets covered for all developers in the future.
+

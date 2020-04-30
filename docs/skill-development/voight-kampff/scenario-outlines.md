@@ -8,9 +8,9 @@ description: >-
 
 We can do this using Scenario Outlines. Think of these as a template that we setup and can then feed data into to run multiple tests.
 
-Let's revisit the example from the [previous page](../introduction.md).
+Let's revisit the example from the [previous page](https://github.com/MycroftAI/documentation/tree/384c23ed6db63685b60d97645b47e1ff882cefba/docs/skill-development/introduction.md).
 
-```YAML
+```yaml
 Feature: current-weather
   Scenario: current local weather
     Given an English speaking user
@@ -20,7 +20,7 @@ Feature: current-weather
 
 In this Scenario, when the user says "tell me weather", then our Weather Skill should reply with an appropriate dialog. However we know that there are many ways to ask about the weather. Rather than copy and pasting this Scenario for each utterance, we can instead use a `Scenario Outline`.
 
-```YAML
+```yaml
 Feature: current-weather
   Scenario Outline: current local weather
     Given an english speaking user
@@ -44,7 +44,7 @@ Running the above Scenario Outline will test three versions of this Scenario - "
 
 So far we have only used the Scenario Outline to take in a list of utterances. The same format can be used with tables of data.
 
-```YAML
+```yaml
 Feature: Pokemon abilities
   Scenario Outline: list abilities
     Given an english speaking user
@@ -62,3 +62,4 @@ In our new `Examples` block, you can see we have expanded this into a two-column
 
 1. With the Pokemon `Name`, we have used this in both the question and the response.
 2. The Abilities that are reported back are directly related to the Name from the same table row. If a user was to say "What abilities does Bulbasaur have", and Mycroft replied with "Bulbasaur has solar-power and blaze", then the Scenario would be considered a fail.
+

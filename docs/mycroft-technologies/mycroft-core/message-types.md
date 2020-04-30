@@ -176,26 +176,23 @@ python3 -m mycroft.messagebus.send 'mycroft.stop'
 
 Start the pairing process when this event is emitted.
 
+| Producer | Consumer |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
+      <th style="text-align:left">
         <p>Pairing Skill</p>
         <p>Weather Skill</p>
         <p>Wolfram Alpha Skill</p>
-      </td>
-      <td style="text-align:left">Pairing Skill</td>
+      </th>
+      <th style="text-align:left">Pairing Skill</th>
     </tr>
-  </tbody>
-</table>**Usage:**
-
-{% tabs %}
+  </thead>
+  <tbody></tbody>
+</table>{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -229,17 +226,15 @@ python3 -m mycroft.messagebus.send 'mycroft.not.paired'
 
 Pairing has completed
 
+| Producer | Consumer |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Pairing Skill</td>
-      <td style="text-align:left">
+      <th style="text-align:left">Pairing Skill</th>
+      <th style="text-align:left">
         <p><code>skills/skill_manager.py</code>
         </p>
         <p><code>enclosure/mark1/__init__.py</code>
@@ -248,12 +243,11 @@ Pairing has completed
         </p>
         <p><code>client/speech/__main__.py</code>
         </p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>**Usage:**
-
-{% tabs %}
+  </thead>
+  <tbody></tbody>
+</table>{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -589,16 +583,14 @@ STT has detected the given text or text was injected as an utterance via the CLI
 }
 ```
 
+| Producer | Consumer |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
+      <th style="text-align:left">
         <p><code>client/speech/__main__.py</code>
         </p>
         <p><code>client/speech/listener.py</code>
@@ -607,20 +599,19 @@ STT has detected the given text or text was injected as an utterance via the CLI
         </p>
         <p><code>skills/__main__.py</code>
         </p>
-      </td>
-      <td style="text-align:left">
+      </th>
+      <th style="text-align:left">
         <p><code>client/text/text_client.py</code>
         </p>
         <p><code>messagebus/client/client.py</code>
         </p>
         <p><code>skills/intent_service.py</code>
         </p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>**Usage:**
-
-{% tabs %}
+  </thead>
+  <tbody></tbody>
+</table>{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1059,27 +1050,24 @@ python3 -m mycroft.messagebus.send 'mycroft.mic.unmute'
 
 Start playback of tracklist
 
+| Producer | Consumer |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
+      <th style="text-align:left">
         <p><code>skills/audioservice.py</code>
         </p>
         <p>playback-control</p>
-      </td>
-      <td style="text-align:left"><code>audio/main.py</code>
-      </td>
+      </th>
+      <th style="text-align:left"><code>audio/main.py</code>
+      </th>
     </tr>
-  </tbody>
-</table>**Usage:**
-
-{% tabs %}
+  </thead>
+  <tbody></tbody>
+</table>{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1113,27 +1101,24 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.play'
 
 Stop playback
 
+| Producer | Consumer |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
+      <th style="text-align:left">
         <p><code>skills/audioservice.py</code>
         </p>
         <p>playback-control</p>
-      </td>
-      <td style="text-align:left"><code>audio/main.py</code>
-      </td>
+      </th>
+      <th style="text-align:left"><code>audio/main.py</code>
+      </th>
     </tr>
-  </tbody>
-</table>**Usage:**
-
-{% tabs %}
+  </thead>
+  <tbody></tbody>
+</table>{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1167,27 +1152,24 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.stop'
 
 Pause playback \(if supported\)
 
+| Producer | Consumer |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
+      <th style="text-align:left">
         <p><code>skills/audioservice.py</code>
         </p>
         <p>playback-control</p>
-      </td>
-      <td style="text-align:left"><code>audio/main.py</code>
-      </td>
+      </th>
+      <th style="text-align:left"><code>audio/main.py</code>
+      </th>
     </tr>
-  </tbody>
-</table>**Usage:**
-
-{% tabs %}
+  </thead>
+  <tbody></tbody>
+</table>{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1221,27 +1203,24 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.pause'
 
 Resume playback \(if supported by backend\)
 
+| Producer | Consumer |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
+      <th style="text-align:left">
         <p><code>skills/audioservice.py</code>
         </p>
         <p>playback-control</p>
-      </td>
-      <td style="text-align:left"><code>audio/main.py</code>
-      </td>
+      </th>
+      <th style="text-align:left"><code>audio/main.py</code>
+      </th>
     </tr>
-  </tbody>
-</table>**Usage:**
-
-{% tabs %}
+  </thead>
+  <tbody></tbody>
+</table>{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1275,27 +1254,24 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.resume'
 
 Skip to next track
 
+| Producer | Consumer |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
+      <th style="text-align:left">
         <p><code>skills/audioservice.py</code>
         </p>
         <p>playback-control</p>
-      </td>
-      <td style="text-align:left"><code>audio/main.py</code>
-      </td>
+      </th>
+      <th style="text-align:left"><code>audio/main.py</code>
+      </th>
     </tr>
-  </tbody>
-</table>**Usage:**
-
-{% tabs %}
+  </thead>
+  <tbody></tbody>
+</table>{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1329,27 +1305,24 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.next'
 
 Skip to previous track
 
+| Producer | Consumer |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
+      <th style="text-align:left">
         <p><code>skills/audioservice.py</code>
         </p>
         <p>playback-control</p>
-      </td>
-      <td style="text-align:left"><code>audio/main.py</code>
-      </td>
+      </th>
+      <th style="text-align:left"><code>audio/main.py</code>
+      </th>
     </tr>
-  </tbody>
-</table>**Usage:**
-
-{% tabs %}
+  </thead>
+  <tbody></tbody>
+</table>{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1383,27 +1356,24 @@ python3 -m mycroft.messagebus.send 'mycroft.audio.service.prev'
 
 Request track info from audio service
 
+| Producer | Consumer |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Producer</th>
-      <th style="text-align:left">Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
+      <th style="text-align:left">
         <p><code>skills/audioservice.py</code>
         </p>
         <p>playback-control</p>
-      </td>
-      <td style="text-align:left"><code>audio/main.py</code>
-      </td>
+      </th>
+      <th style="text-align:left"><code>audio/main.py</code>
+      </th>
     </tr>
-  </tbody>
-</table>**Usage:**
-
-{% tabs %}
+  </thead>
+  <tbody></tbody>
+</table>{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...

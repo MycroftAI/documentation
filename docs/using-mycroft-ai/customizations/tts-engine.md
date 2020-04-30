@@ -119,10 +119,13 @@ You will need to take note of your private "Access Key ID" and "Secret Access Ke
 First, check the [list of available voices and languages](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html). Note that Polly does not provide a separate `langauge` attribute like other TTS options. The language is determined by which voice is chosen.
 
 Then, install the `boto3` python module in the Mycroft virtual environment:
+
 ```bash
 mycroft-pip install boto3
 ```
+
 or
+
 ```bash
 cd ~/mycroft-core
 source .venv/bin/activate
@@ -150,7 +153,7 @@ To our existing configuration values we will add the following:
 }
 ```
 
-If the `voice` and `region` attributes are ommitted the defaults of `Matthew` and `us-east-1` will be used. This is an English (US) voice.
+If the `voice` and `region` attributes are ommitted the defaults of `Matthew` and `us-east-1` will be used. This is an English \(US\) voice.
 
 ## Google TTS
 
@@ -170,10 +173,9 @@ mycroft-config set tts.module "google"
 
 Create an account at [IBM.com/cloud](https://www.ibm.com/cloud/watson-text-to-speech). Once you add the TTS service to your account, you will receive an API key and unique API url.
 
-You can find a list of available voices at [Languages and Voices](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-voices#neuralVoices). For example, "en-US_MichaelV3Voice".
+You can find a list of available voices at [Languages and Voices](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-voices#neuralVoices). For example, "en-US\_MichaelV3Voice".
 
 IBM keeps a log of all requests in the lite plan unless you turn it off explicitly by setting "X-Watson-Learning-Opt-Out" to true. We have set Mycroft to Opt-Out by default, so if you want to share data with IBM then you must set this to false.
-
 
 ### Mycroft Configuration
 
@@ -302,3 +304,4 @@ To our existing configuration values we will add the following:
   }
 }
 ```
+

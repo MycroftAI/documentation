@@ -62,7 +62,7 @@ description: >-
 
 ### Support information
 
-> Create a support ticket 
+> Create a support ticket
 
 ### Version checker
 
@@ -101,3 +101,4 @@ For example:
 ## More information on Skills
 
 For more information on Skills, please see the [Skills section](http://mycroft.ai/documentation/skills/)
+

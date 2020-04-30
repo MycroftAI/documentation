@@ -6,7 +6,7 @@ description: >-
 
 # Using a Custom Wake Word
 
-Like its name suggests, a Wake Word Listener's job is to continually listen to sounds and speech around the Device, and activate when the sounds or speech match a Wake Word. 
+Like its name suggests, a Wake Word Listener's job is to continually listen to sounds and speech around the Device, and activate when the sounds or speech match a Wake Word.
 
 Mycroft provides an open source Wake Word Listener called Precise. However we also provide native support for PocketSphinx, and other technologies can be added and utilized. Here we will look at how to use custom Wake Words using Precise and PocketSphinx.
 
@@ -107,33 +107,33 @@ The period \(or full stop\) indicates the end of a word.
 
 Other settings are available to further tune how sensitive the Speech to Text \(STT\) engine is in recognizing the Wake Word. These are added to the `listener` block of your `mycroft.conf`.
 
-* **Sample rate \(Hz\)**  
+* **Sample rate \(Hz\)**
 
   The rate at which the audio stream is sampled. The default is 16KHz. You shouldn't need to change this, unless the microphone you are using needs a much higher or lower sample rate.
 
-* **Channels**  
+* **Channels**
 
   The audio channel that should be sampled for the Wake Word. The default is 1, and you shouldn't have to change this unless your microphone is not operating on audio channel 1.
 
-* **Wake Word**  
+* **Wake Word**
 
   In plain English text, the Wake Word that Mycroft should listen for.
 
-* **Phonemes**  
+* **Phonemes**
 
   The phonemes corresponding to the Wake Word. If your Wake Word phrase is more than one word, remember to include a period \(.\) at the end of each phoneme.
 
-* **Threshold \(scientific notation\)**  
+* **Threshold \(scientific notation\)**
 
   The level of sensitivity at which the Wake Word should trigger Mycroft to respond. To _increase_ the sensitivity, _reduce_ the Threshold. The Threshold is given in [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation). Use this [handy converter](http://www.easysurf.cc/scintd.htm) to convert between decimal and scientific notation.
 
-* **Threshold multiplier \(float\)**  
+* **Threshold multiplier \(float\)**
 
   This multiplier acts on the Threshold, and may be an easier way to make adjustments rather than scientific notation.
 
-* **Dynamic Energy Ratio \(float\)**  
+* **Dynamic Energy Ratio \(float\)**
 
-  Dynamic Energy Ratio \(DER\) is one signal feature used in [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) to identify characteristics of audio, such as whether a person has stopped or started speaking. DER is similar to signal-to-noise-ratio. A high ratio indicates a high difference in signal between speech and no speech, and a low ratio indicates a small difference in signal between speech and no speech.  
+  Dynamic Energy Ratio \(DER\) is one signal feature used in [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) to identify characteristics of audio, such as whether a person has stopped or started speaking. DER is similar to signal-to-noise-ratio. A high ratio indicates a high difference in signal between speech and no speech, and a low ratio indicates a small difference in signal between speech and no speech.
 
   If Mycroft is being _too sensitive_, reduce this value. If Mycroft _is not being sensitive enough_, increase this value.
 
@@ -167,15 +167,13 @@ mycroft-config reload
 
 ## Switching Wake Word Listeners
 
-As per the [Technology Overview](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/overview#wake-word-detection), there are two available listeners:
-1. Precise (default)
-2. PocketSphinx
+As per the [Technology Overview](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/overview#wake-word-detection), there are two available listeners: 1. Precise \(default\) 2. PocketSphinx
 
 Precise is likely appropriate for most users, however on legacy hardware PocketSphinx may be desired.
 
 {% hint style="info" %}
 **Troubleshooting a broken listener?**  
-You can type the speak command into the CLI (`./start-mycroft.sh cli` or `mycroft-cli-client`).
+You can type the speak command into the CLI \(`./start-mycroft.sh cli` or `mycroft-cli-client`\).
 {% endhint %}
 
 To change the Wake Word Listener to PocketSphinx, speak:

@@ -370,3 +370,4 @@ To our existing configuration values we will add the following:
   "module": "yandex"
 }
 ```
+
