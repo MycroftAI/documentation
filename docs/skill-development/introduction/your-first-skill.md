@@ -159,10 +159,10 @@ This method is the _constructor_. It is called when the Skill is first construct
 An example `__init__` method might be:
 
 ```python
-def __init__(self):
-    super().__init__()
-    self.already_said_hello = False
-    self.be_friendly = True
+    def __init__(self):
+        super().__init__()
+        self.already_said_hello = False
+        self.be_friendly = True
 ```
 
 #### initialize\(\)
@@ -170,8 +170,8 @@ def __init__(self):
 Perform any final setup needed for the skill here. This function is invoked after the skill is fully constructed and registered with the system. Intents will be registered and Skill settings will be available.
 
 ```python
-def initialize(self):
-    my_setting = self.settings.get('my_setting')
+    def initialize(self):
+        my_setting = self.settings.get('my_setting')
 ```
 
 #### Intent handlers
@@ -183,17 +183,17 @@ In our current HelloWorldSkill we can see two different styles.
 1. An Adapt handler, triggered by a keyword defined in a `ThankYouKeyword.voc` file.
 
    ```python
-   @intent_handler(IntentBuilder('ThankYouIntent').require('ThankYouKeyword'))
-   def handle_thank_you_intent(self, message):
-       self.speak_dialog("welcome")
+       @intent_handler(IntentBuilder('ThankYouIntent').require('ThankYouKeyword'))
+       def handle_thank_you_intent(self, message):
+           self.speak_dialog("welcome")
    ```
 
 2. A Padatious intent handler, triggered using a list of sample phrases.
 
    ```python
-   @intent_file_handler('HowAreYou.intent')
-   def handle_how_are_you_intent(self, message):
-    self.speak_dialog("how.are.you")
+       @intent_file_handler('HowAreYou.intent')
+       def handle_how_are_you_intent(self, message):
+           self.speak_dialog("how.are.you")
    ```
 
 In both cases, the function receives two _parameters_:
@@ -210,8 +210,8 @@ You will usually also have a `stop()` method.
 This tells Mycroft what your Skill should do if a stop intent is detected.
 
 ```python
-def stop(self):
-    pass
+    def stop(self):
+        pass
 ```
 
 In the above code block, the [`pass` statement](https://docs.python.org/3/reference/simple_stmts.html#the-pass-statement) is used as a placeholder; it doesn't actually have any function. However, if the Skill had any active functionality, the stop\(\) method would terminate the functionality, leaving the Skill in a known good state.
@@ -221,8 +221,8 @@ In the above code block, the [`pass` statement](https://docs.python.org/3/refere
 The final code block in our Skill is the `create_skill` function that returns our new Skill:
 
 ```python
-def create_skill():
-    return HelloWorldSkill()
+    def create_skill():
+        return HelloWorldSkill()
 ```
 
 This is required by Mycroft and is responsible for actually creating an instance of your Skill that Mycroft can load.
