@@ -228,6 +228,10 @@ To our existing configuration values we will add the following:
 
 ## Responsive Voice
 
+{% hint style="warning" %}
+The API for this service may have significantly changed. As such this TTS option may not be available. Contributions to restore the service are warmly welcomed. Please direct any development questions to the [~Dev channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/dev).
+{% endhint %}
+
 Lifelike human digital voices from [ResponsiveVoice.org](https://responsivevoice.org).
 
 ### Mycroft Configuration
