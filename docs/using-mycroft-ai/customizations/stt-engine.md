@@ -82,9 +82,9 @@ To our existing configuration values we will add the following:
   }
 ```
 
-## GoVivaci
+## GoVivace
 
-[GoVivaci](https://www.govivace.com/) is a for-profit company that has a [proprietary STT engine](https://www.govivace.com/products/automatic-speech-recognition-asr/).
+[GoVivace](https://www.govivace.com/) is a for-profit company that has a [proprietary STT engine](https://www.govivace.com/products/automatic-speech-recognition-asr/).
 
 ### Account Setup
 
@@ -110,11 +110,11 @@ To our existing configuration values we will add the following:
       "token": "xxxxx"
     }
   },
-  "module": "govivaci"
+  "module": "govivace"
 }
 ```
 
-The credential token will be provided to you by GoVivaci.
+The credential token will be provided to you by GoVivace.
 
 ## Google Cloud
 
