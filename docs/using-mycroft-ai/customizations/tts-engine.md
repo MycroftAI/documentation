@@ -28,11 +28,21 @@ Currently:
 
 As Mimic 1 voices can be synthesized on device, the British Male voice will be used anytime the device cannot reach your preferred TTS service. This allows Mycroft to continue to speak even if it is not connected to a network.
 
-## ESpeak
+## eSpeak
+
+A multi-lingual software speech synthesizer for Linux and Windows.
+
+[eSpeak](http://espeak.sourceforge.net/) uses a "formant synthesis" method. This allows many languages to be provided in a small size. The speech is clear, and can be used at high speeds, but is not as natural or smooth as larger synthesizers which are based on human speech recordings.
 
 ### Mycroft Configuration
 
-Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
+First, ensure that the espeak package is installed on your system.
+
+```bash
+sudo apt-get install espeak
+```
+
+Then, using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
 
 ```bash
 mycroft-config edit user
