@@ -1,16 +1,23 @@
 ---
-description: What is an Intent? What is an Intent parser?
+description: >-
+  An intent is the task the user intends to accomplish when they say something.
+  The role of the intent parser is to extract from the user's speech key data
+  elements that specify their intent.
 ---
 
 # Intents
 
-In speech recognition and voice assistance, an intent is the task the user _intends_ to accomplish. A user can accomplish the same task by expressing their intent in multiple ways. The role of the intent parser is to extract from the user's speech key data elements that specify their intent in more detail. This data can then be passed to other services, such as Skills to help the user accomplish their intended task.
+A user can accomplish the same task by expressing their intent in multiple ways. The role of the intent parser is to extract from the user's speech key data elements that specify their intent in more detail. This data can then be passed to other services, such as Skills to help the user accomplish their intended task.
 
 _Example_: Julie wants to know about today's weather in her current location, which is Melbourne, Australia.
 
-> "hey mycroft, what's today's weather like?" "hey mycroft, what's the weather like in Melbourne?" "hey mycroft, weather"
+> "hey mycroft, what's today's weather like?" 
+>
+> "hey mycroft, what's the weather like in Melbourne?" 
+>
+> "hey mycroft, weather"
 
-Each of these examples has very similar _intent_. The role of an intent parser is to determine what this intent is.
+Even though these are three different expressions, for most of us they probably have roughly the same meaning. In each case we would assume the user expects Mycroft to respond with today's weather for their current location. The role of an intent parser is to determine what this intent is.
 
 In the example above, we might extract data elements like:
 
