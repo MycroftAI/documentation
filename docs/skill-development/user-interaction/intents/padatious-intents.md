@@ -10,7 +10,7 @@ Padatious has a number of key benefits over other intent parsing technologies.
 * Intents run independently of each other. This allows quickly installing new skills without retraining all other skill intents.
 * With Padatious, you can easily extract entities and then use these in Skills. For example, "Find the nearest gas station" -&gt; `{ "place":"gas station"}`
 
-{% page-ref page="../../mycroft-technologies/padatious.md" %}
+{% page-ref page="../../../mycroft-technologies/padatious.md" %}
 
 ## Creating Intents
 
@@ -221,4 +221,24 @@ def create_skill():
 {% hint style="info" %}
 See a Padatious intent handler example in the [Hello World Skill](https://github.com/MycroftAI/skill-hello-world/blob/67a972792a07da7e3406bf7f94acd54aa2674829/__init__.py#L42)
 {% endhint %}
+
+## Common Problems
+
+### I am unable to match against the utterance string
+
+The utterance string received from the speech-to-text engine is received all lowercase. As such any string matching you are trying to do should also be converted to lowercase. For example:
+
+```python
+@intent_file_handler('example.intent')
+def handle_example(self, message):
+    utterance = message.data.get('utterance')
+    if 'Proper Noun'.lower() in utterance:
+        self.speak('Found it')
+```
+
+## Need more help?
+
+If something isn't working as expected, please join us in the [~Skills channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
+
+It's also really helpful for us if you add an issue to our [documentation repo](https://github.com/MycroftAI/documentation/issues). This means we can make sure it gets covered for all developers in the future.
 

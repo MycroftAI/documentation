@@ -4,7 +4,7 @@ description: >-
   inside Mycroft in a realistic environment alongside other Skills.
 ---
 
-# Voight Kampff Integration Tests
+# Integration Tests
 
 Mycroft has recently adopted a new [Behavior Driven Development \(BDD\)](https://en.wikipedia.org/wiki/Behavior_Driven_Development) framework called [Behave](https://behave.readthedocs.io/) for integration testing. Mycroft's implementation has been code-named Voight Kampff.
 

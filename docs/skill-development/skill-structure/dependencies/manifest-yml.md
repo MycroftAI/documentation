@@ -34,7 +34,7 @@ dependencies:
 
 When a Skill with this `manifest.yml` file is being installed, Mycroft would check for, and if required install, both packages from [PyPI](https://pypi.org/) using the PIP installer.
 
-There is no limit to the number of packages you can install, however these are reviewed during the [Skills Acceptance Process](../marketplace-submission/skills-acceptance-process/) to ensure they are appropriate for the Skill being installed.
+There is no limit to the number of packages you can install, however these are reviewed during the [Skills Acceptance Process](../../marketplace-submission/skills-acceptance-process/) to ensure they are appropriate for the Skill being installed.
 
 ### Linux System Packages
 

@@ -14,7 +14,7 @@ Precise is based on a neural network that is trained on _sound patterns_ rather 
 
 [PocketSphinx](https://github.com/cmusphinx/pocketsphinx) is an alternative to Precise. Unlike Precise, PocketSphinx recognizes **Wake Words** based on the [CMU Flite dictionary of sounds](http://www.speech.cs.cmu.edu/cgi-bin/cmudict).
 
-Precise is the default **Wake Word** Listener for the "Hey Mycroft" wake word, PocketSphinx provides a fallback to this if Precise is unavailable. 
+Precise is the default **Wake Word** Listener for the "Hey Mycroft" wake word, PocketSphinx provides a fallback to this if Precise is unavailable.
 
 ### How do I change the **Wake Word Listener** to PocketSphinx
 

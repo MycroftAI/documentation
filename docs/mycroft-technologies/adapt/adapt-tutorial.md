@@ -11,7 +11,7 @@ description: >-
 To complete this tutorial, you should have some basic knowledge of the Python programming language, and be comfortable executing commands on a Linux command line.
 
 {% hint style="info" %}
-If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development &gt; Intents](../../skill-development/intents/)
+If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development &gt; Intents](../../skill-development/user-interaction/intents/)
 {% endhint %}
 
 ## Step 1 - Sample Intent

@@ -4,7 +4,7 @@ description: >-
   to create meaningful and engaging voice interactions.
 ---
 
-# Introduction to Skill Development
+# Development Setup
 
 Mycroft Skills are the voice applications that provide different functionality for users. To create a Skill requires at least basic technical experience, a Mycroft installation or device, and an idea of what your Skill will do, and how people will use it.
 
@@ -14,7 +14,7 @@ Mycroft Skills are the voice applications that provide different functionality f
 
 Skills for Mycroft are written using the [Python programming language](https://www.python.org/). A simple Skill can be a great way for new developers to try Python out in a real project, whilst experienced programmers will quickly see the powerful possibilities available in a well crafted Skill.
 
-If you aren't familiar with the basics of Python, check out our [list of Python tutorials and resources](../python-resources.md) to get you started. If you've programmed in other object-oriented languages, like Javascript or C\#, then you'll be able to pick it up, but if you're totally new to programming, you might want to look at an [introductory programming course](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11).
+If you aren't familiar with the basics of Python, check out our [list of Python tutorials and resources](python-resources.md) to get you started. If you've programmed in other object-oriented languages, like Javascript or C\#, then you'll be able to pick it up, but if you're totally new to programming, you might want to look at an [introductory programming course](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11).
 
 ### Github account
 
@@ -33,6 +33,10 @@ Good Skills meet one or more of the user's needs. Popular Skills are popular bec
 ### Having an easy to use voice interface
 
 Just like a web page with a thoughtfully-designed interface is much more pleasant to use, a Skill with a well designed voice interface is a delight, not a chore, to use. You should anticipate the task the user is trying to accomplish, and how to make that as straightforward as possible.
+
+If you haven't already, be sure to read our Voice User Interface Design Guidelines:
+
+{% page-ref page="../voice-user-interface-design-guidelines/" %}
 
 If you have an idea for a Skill, it's a great idea to join [Mycroft Chat](https://chat.mycroft.ai), specifically the [~skills](https://chat.mycroft.ai/community/channels/skills) channel, and share what your plans are. You'll be able to get constructive and helpful feedback on your Skill from an experienced community.
 

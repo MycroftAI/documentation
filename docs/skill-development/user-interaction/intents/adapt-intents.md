@@ -5,7 +5,7 @@ Adapt is a keyword based intent parser. It determines user intent based on a lis
 {% embed url="https://www.youtube.com/watch?v=zR9xvPtM6Ro" caption="" %}
 
 {% hint style="info" %}
-For technical details or usage of Adapt outside of a Mycroft Skill, see the [Adapt documentation](../../mycroft-technologies/adapt/).
+For technical details or usage of Adapt outside of a Mycroft Skill, see the [Adapt documentation](../../../mycroft-technologies/adapt/).
 {% endhint %}
 
 ## Defining keywords and entities
@@ -175,5 +175,31 @@ You can [download this entire Potato Skill from Github](https://github.com/krisg
 
 ## Common Problems
 
+### More vocab!
+
 One of the most common mistakes when getting started with Skills is that the vocab file doesn't include all of the keywords or terms that a User might use to trigger the intent. It is important to map out your Skill and test the interactions with others to see how they might ask questions differently.
+
+### I have added new phrases in the .voc file, but Mycroft isn't recognizing them
+
+1. Compound words like "don't", "won't", "shouldn't" etc. are normalized by Mycroft - so they become "do not", "will not", "should not". You should use the normalized words in your `.voc` files. Similarly, definite articles like the word "the" are removed in the normalization process, so avoid using them in your `.voc` or `.rx` files as well.
+2. Tab != 4 Spaces, sometimes your text editor or IDE automatically replaces tabs with spaces or vice versa. This may lead to an indentation error. So make sure there's no extra tabs and that your editor doesn't replace your spaces!
+3. Wrong order of files directories is a very common mistake. You have to make a language sub-folder inside the dialog, vocab or locale folders such as `skill-dir/locale/en-us/somefile.dialog`. So make sure that your `.voc` files and `.dialog` files inside a language subfolder.
+
+### I am unable to match against the utterance string
+
+The utterance string received from the speech-to-text engine is received all lowercase. As such any string matching you are trying to do should also be converted to lowercase. For example:
+
+```python
+@intent_file_handler('example.intent')
+def handle_example(self, message):
+    utterance = message.data.get('utterance')
+    if 'Proper Noun'.lower() in utterance:
+        self.speak('Found it')
+```
+
+## Need more help?
+
+If something isn't working as expected, please join us in the [~Skills channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
+
+It's also really helpful for us if you add an issue to our [documentation repo](https://github.com/MycroftAI/documentation/issues). This means we can make sure it gets covered for all developers in the future.
 

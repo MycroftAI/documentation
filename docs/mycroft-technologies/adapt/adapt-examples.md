@@ -7,7 +7,7 @@ description: >-
 # Adapt Examples
 
 {% hint style="info" %}
-If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development &gt; Intents](../../skill-development/intents/)
+If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development &gt; Intents](../../skill-development/user-interaction/intents/)
 {% endhint %}
 
 ## Single intent Parser

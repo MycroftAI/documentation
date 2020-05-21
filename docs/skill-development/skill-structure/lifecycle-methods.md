@@ -26,7 +26,7 @@ In the following example we assign a variable `learning` to be `True`. The varia
 
 The `initialize` method is called after the Skill is fully constructed and registered with the system. It is used to perform any final setup for the Skill including accessing Skill settings.
 
-In the following example we access the `my_setting` value, that would have been defined in the Skill's [`settingsmeta.json`](../skill-settings.md). We use the `get` method in case the variable `my_setting` is undefined.
+In the following example we access the `my_setting` value, that would have been defined in the Skill's [`settingsmeta.json`](skill-settings.md). We use the `get` method in case the variable `my_setting` is undefined.
 
 ```python
     def initialize(self):
@@ -35,7 +35,7 @@ In the following example we access the `my_setting` value, that would have been 
 
 ## Converse
 
-The `converse` method can be used to handle follow up utterances prior to the normal intent handling process. It can be useful for handling utterances from a User that do not make sense as a standalone [intent](../intents/).
+The `converse` method can be used to handle follow up utterances prior to the normal intent handling process. It can be useful for handling utterances from a User that do not make sense as a standalone [intent](../user-interaction/intents/).
 
 The method receives two arguments:
 
@@ -48,7 +48,7 @@ If the utterance is handled by the converse method, we return `True` to indicate
 
 In the following example, we check that utterances is not empty, and if the utterance matches vocabulary from `understood.voc`. If the user has understood we speak a line from `great.dialog` and return `True` to indicate the utterance has been handled. If the vocabulary does not match then we return `False` as the utterance should be passed to the normal intent matching service.
 
-```text
+```python
     def converse(self, utterances, lang):
         if utterances and self.voc_match(utterances[0], 'understood'):
             self.speak_dialog('great')
@@ -63,7 +63,7 @@ The `stop` method is called anytime a User says "Stop" or a similar command. It 
 
 In the following example, we call a method `stop_beeping` to end a notification that our Skill has created.
 
-```text
+```python
     def stop(self):
         self.stop_beeping()
 ```

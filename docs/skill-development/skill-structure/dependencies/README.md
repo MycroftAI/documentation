@@ -32,7 +32,7 @@ There are three files that we can use to define these dependencies.
 
 Which ever file you choose to use, it must be located in the root directory of your Skill.
 
-There is no limit to the number of packages you can install, however these are reviewed during the [Skills Acceptance Process](../marketplace-submission/skills-acceptance-process/) to ensure they are appropriate for the Skill being installed and do not pose a security concern for Users.
+There is no limit to the number of packages you can install, however these are reviewed during the [Skills Acceptance Process](../../marketplace-submission/skills-acceptance-process/) to ensure they are appropriate for the Skill being installed and do not pose a security concern for Users.
 
 ## Manual installation
 

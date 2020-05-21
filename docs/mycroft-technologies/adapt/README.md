@@ -42,7 +42,7 @@ Applications - or Mycroft Skills - can then parse the JSON data take appropriate
 ## Is Adapt right for me or my use cases?
 
 {% hint style="info" %}
-If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development &gt; Intents](../../skill-development/intents/)
+If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development &gt; Intents](../../skill-development/user-interaction/intents/)
 {% endhint %}
 
 Adapt is useful for determining user intent quickly and accurately from natural language. It is particularly beneficial for applications with limited vocabularies - that is, where the User will only issue a small number of **Utterances**.

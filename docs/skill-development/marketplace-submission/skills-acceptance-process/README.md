@@ -32,7 +32,7 @@ Before submitting your Skill we assume you have:
 * Personally tested your Skills functionality to ensure it is working as expected. For a detailed testing overview, see stage three below.
 * It is also a great idea to post a link to you Skill in the [Skill Feedback category of the Forums](https://community.mycroft.ai/c/skill-feedback) to let others test your Skill on different platforms. This is encouraged but not required to submit your Skill to the Marketplace.
 * Ensure any Python or other packages required to run your Skill are included in your requirements.txt or equivalent.
-* Run the [automated testing](../../testing/automatic-testing.md) on your own machine using the command:
+* Run the [automated testing](../../voight-kampff/automatic-testing.md) on your own machine using the command:
 
   `mycroft-skill-testrunner /opt/mycroft/skills/your-skill-directory`
 
@@ -40,7 +40,7 @@ When you are satisfied your Skill is ready, submit it for formal review by runni
 
 ### 2. Automatic Testing of Skills
 
-We have developed an Integration Test Runner that assists you in writing tests that can be executed at both an **Intent** and a **Skill** level. [Learn more about Automatic Testing of your Mycroft Skill](../../testing/automatic-testing.md).
+We have developed an Integration Test Runner that assists you in writing tests that can be executed at both an **Intent** and a **Skill** level. [Learn more about Automatic Testing of your Mycroft Skill](../../voight-kampff/automatic-testing.md).
 
 This automated testing is run as soon as you submit your Skill to the Mycroft-Skills repo, and with each major release of Mycroft-core.
 

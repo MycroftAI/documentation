@@ -143,7 +143,7 @@ Directly referencing the value may throw a KeyError if the setting has not yet b
 
 It is also important to note that the `settings` dictionary will not be available in your Skills `__init__` method as this is setting up your Skills Class. You should instead use an `initialize` method which is called after the Skill is fully constructed and registered with the system. More detail is available at:
 
-{% page-ref page="introduction/lifecycle-methods.md" %}
+{% page-ref page="lifecycle-methods.md" %}
 
 ### Handling settings changes
 
