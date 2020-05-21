@@ -10,9 +10,11 @@ Like its name suggests, a Wake Word Listener's job is to continually listen to s
 
 ## Precise vs PocketSphinx
 
-Precise has been the default **Wake Word Listener** for each Mycroft Device since mid-March 2018. Precise is based on a neural network that is trained on _sound patterns_ rather than _word patterns_. This reduces the dependence it has on particular languages or accents.
+Precise is based on a neural network that is trained on _sound patterns_ rather than _word patterns_. This reduces the dependence it has on particular languages or accents.
 
 [PocketSphinx](https://github.com/cmusphinx/pocketsphinx) is an alternative to Precise. Unlike Precise, PocketSphinx recognizes **Wake Words** based on the [CMU Flite dictionary of sounds](http://www.speech.cs.cmu.edu/cgi-bin/cmudict).
+
+Precise is the default **Wake Word** Listener for the "Hey Mycroft" wake word, PocketSphinx provides a fallback to this if Precise is unavailable. 
 
 ### How do I change the **Wake Word Listener** to PocketSphinx
 

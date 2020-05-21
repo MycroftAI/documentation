@@ -26,7 +26,7 @@ There are two technologies that Mycroft.AI currently uses for **Wake Word** dete
 
 Because PocketSphinx is trained on English speech, your **Wake Word** currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well.
 
-* [Precise](https://mycroft.ai/documentation/precise): Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what _words_ you want to use for your **Wake Word**. Instead, you train it on _sounds_. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise has been the default **Wake Word** Listener for each Mycroft Device since mid-March 2018. Prior to this date, PocketSphinx was the default.
+* [Precise](https://mycroft.ai/documentation/precise): Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what _words_ you want to use for your **Wake Word**. Instead, you train it on _sounds_. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise is the default **Wake Word** Listener for the "Hey Mycroft" wake word, PocketSphinx provides a fallback to this if Precise is unavailable.
 
 ### Speech to Text \(STT\)
 
