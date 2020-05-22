@@ -1,5 +1,5 @@
 ---
-description: Troubleshooting tips and known errors
+description: Troubleshooting tips and tricks
 ---
 
 # General Troubleshooting
@@ -8,58 +8,55 @@ This section is grouped by Device to help you quickly find the information you n
 
 ## All Devices
 
-### I've made changes to my settings on home.mycroft.ai, but these are not reflected on my **Device**
+### I've made changes to my settings on home.mycroft.ai, but these are not reflected on my device
 
-Have you recently updated your _Location_ or your measurement preferences \(ie. kilometers vs miles\) in home.mycroft.ai, but these are not reflected on your **Device**?
+Your Mycroft device will sync settings with the home.mycroft.ai server regularly. In normal circumstances any change should be reflected on the device within 1-2 minutes.
 
-All **Devices** pull down a local copy of configuration settings from home.mycroft.ai. You may need to instruct your **Device** to pull down your configuration again. To do this, Speak
+You can also instruct your device to pull down the latest configuration, by saying:
 
-`hey Mycroft, configuration update`
+> Hey Mycroft, update configuration
 
 Mycroft will respond in one of two ways:
 
-* If your configuration was out of date, and has been pulled down again, Mycroft will respond `Your device has been configured`.
-* If your configuration was the same on your **Device** as on home.mycroft.ai, Mycroft will respond `Updated configuration`.
+* If your configuration was out of date, and has been pulled down again, Mycroft will respond:
 
-If you're comfortable SSHing into your device, SSH in and then run the following commands to see what configuration values are stored locally.
+> Configuration updated
 
-To see the city location value:
+* If your configuration was the same on your device as on home.mycroft.ai, Mycroft will respond:
 
-`jq ".location.city" < /var/tmp/mycroft_web_cache.json`
+> Your device has been configured
 
-To see the latitude and longitude coordinates of your location:
+### Check settings on my device
 
-`jq ".location.coordinate" < /var/tmp/mycroft_web_cache.json`
+To see the settings that your device is using requires access to the devices shell \(terminal\). You can do this by SSHing into your device, or connecting a keyboard and monitor.
 
-To see the timezone setting:
+The configuration values in use by the system can be obtained using the Configuration Managers `get` command.
 
-`jq ".location.timezone" < /var/tmp/mycroft_web_cache.json`
+{% page-ref page="../customizations/config-manager.md" %}
 
-To see the listener setting:
+The settings values that have been retrieved from home.mycroft.ai can also be read directly from `/var/tmp/mycroft_web_cache.json`. See [mycroft.conf](../customizations/mycroft-conf.md) for more details.
 
-`jq ".listener" < /var/tmp/mycroft_web_cache.json`
+{% page-ref page="../customizations/mycroft-conf.md" %}
 
-To see the Speech to Text \(STT\) settings:
+### Find the IP address of my device
 
-`jq ".stt" < /var/tmp/mycroft_web_cache.json`
+To obtain your devices IP address you can say:
 
-To see the Text to Speech \(TTS\) settings:
+> Hey Mycroft, what is your IP?
 
-`jq ".tts" < /var/tmp/mycroft_web_cache.json`
+Alternatively you can get the IP address from your router, or by scanning the network using a tool like nmap. Running `nmap` with the no port scan flag `-sn` returns the IP and MAC addresses, as well as the vendor name. A Mark 1 will display as "Raspberry Pi Foundation".
 
-We also have [more information available on `mycroft.conf` and `mycroft_web_cache.json` files](https://mycroft.ai/documentation/mycroft-conf/).
-
-## Troubleshooting Mark 1
+## Mark 1
 
 ### Yellow Eyes
 
-Mark 1 attempts to update its software around every hour or so. Yellow Eyes, part of the [Mark 1 boot sequence](https://mycroft.ai/documentation/mark-1/#mark-1-boot-sequence), occurs when either the software for the Mark 1 or the **Skills** on the **Device** did not update properly. Generally the solution for Yellow Eyes is to "hard reboot" the Mark 1 - that is, remove the power cable, wait at least 30 seconds, then plug the **Device** back in.
+Mark 1 attempts to update its software around every hour or so. Yellow Eyes, part of the [Mark 1 boot sequence](https://mycroft.ai/documentation/mark-1/#mark-1-boot-sequence), occurs when either the software for the Mark 1 or the Skills on the device did not update properly. Generally the solution for Yellow Eyes is to "hard reboot" the Mark 1 - that is, remove the power cable, wait at least 30 seconds, then plug the device back in.
 
 It may take several "hard reboots" to clear the Yellow Eyes symptom.
 
 ### HDMI output is not displayed
 
-If you have connected Mark 1 to a HDMI output, and nothing is showing on the HDMI screen, reboot the Mark 1. Mark 1 needs to reboot before it can output to a HDMI screen.
+If you have connected Mark 1 to a HDMI output, and nothing is showing on the HDMI screen, reboot the Mark 1. The Mark 1 needs to reboot before it can output to a HDMI screen.
 
 ### Not connected to the internet
 
@@ -69,7 +66,7 @@ If your Mark 1 has previously been connected to the internet, and loses internet
 
 ### Cannot `ssh` into Mark 1
 
-If you `ssh` into Mark 1, \(instructions [here](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh)\), and have recently reset the **Device** to factory defaults, then you will need to re-enable `ssh`.
+If you `ssh` into Mark 1, \(instructions [here](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh)\), and have recently reset the device to factory defaults, then you will need to re-enable `ssh`.
 
 Press the Mark 1's top button and turn it to `SSH`, then press the button. Select `ENABLE` then press the button again to enable `ssh`.
 
@@ -88,15 +85,64 @@ PORT   STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 19.56 seconds
 ```
 
-## Troubleshooting Picroft
+## Linux
 
-## Troubleshooting Linux
+### AttributeError: '\_curses.window' object has no attribute 'get\_wch' \(with a custom Python installation\)
 
-## Troubleshooting Skills development
+Some custom installations of Python \(with systems such as [pyenv](https://github.com/pyenv/pyenv/)\) may get this error when running the interactive Mycroft terminal client. This error occurs because `curses` wide character support hasn't been fully built into the custom Python installation.
+
+The following explanation and instructions are specific to Ubuntu Linux \(where [this issue](https://github.com/MycroftAI/mycroft-core/issues/2426) was found\) but can be used as a general guide for other distributions as needed.
+
+To resolve this issue, make sure that the following packages are installed:
+
+```text
+sudo apt install libncursesw5 libncursesw5-dev
+```
+
+These packages provide "shared libraries for terminal handling \(wide character support\)".
+
+After these packages are installed, recompile your Python installation. For pyenv, the command would be:
+
+```text
+pyenv install <python-version>
+```
+
+It will ask for confirmation that you want to rebuild the Python version. After confirming the rebuild, your new Python installation should no longer show the above error when running the Mycroft terminal client.
+
+### Removing and rebuilding your virtual environment
+
+If your CLI won't run, it is highly likely to be an issue with the Mycroft virtual environment. The easiest solution we've found has been to remove and reinstall the virtual environment.
+
+First, delete the existing virtual environment:
+
+```bash
+sudo rm -r ~/mycroft-core/.venv/
+```
+
+Next, we run the setup script again:
+
+```bash
+mycroft-core$ ./dev_setup.sh
+```
+
+This will rebuild your virtual environment.
+
+### Installation warns about bad interpreter
+
+When running `dev_setup.sh`, if you encounter a warning about a "bad interpreter", it is likely from having a space in the installation path:
+
+```text
+./dev_setup.sh: /opt/test path/mycroft-core/.venv/bin/pip: "/opt/test: bad interpreter: No such file or directory
+Warning: Failed to install all requirements. Continue? y/N
+```
+
+If you can't install to a path without spaces, you will have to manually verify the `requirements.txt` entries are installed to your virtual environment.
+
+## Skills development
 
 ### Skill fails on first run with `ERROR - Failed to load skill`
 
-If you're developing a **Skill**, and run it for the first time, you may encounter an error similar to the below:
+If you're developing a Skill, and run it for the first time, you may encounter an error similar to the below:
 
 ```bash
 12:30:32.158 - mycroft.skills.core:load_skill:142 - INFO - First run of mycroft-skill-cat-facts
@@ -109,7 +155,7 @@ Traceback (most recent call last):
 IOError: [Errno 13] Permission denied: '/opt/mycroft/skills/mycroft-skill-cat-facts/settings.json'
 ```
 
-The error here is that the file system permission on the **Skill**'s directory are incorrect. The directory should have owner and group permissions of `mycroft:mycroft` as per the below.
+The error here is that the file system permission on the Skill's directory are incorrect. The directory should have owner and group permissions of `mycroft:mycroft` as per the below.
 
 ```bash
 4 drwxr-xr-x  4 mycroft mycroft  4096 Nov 24 14:34 .

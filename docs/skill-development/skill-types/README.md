@@ -1,2 +1,2 @@
-# Skill Types
+# Advanced Skill Types
 

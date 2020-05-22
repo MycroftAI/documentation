@@ -34,3 +34,9 @@ Search for the string `priority` in the file. Then, edit the line below to inclu
 
 You can find documentation on Mycroft functions and helper methods at the [Mycroft Core API documentation](https://mycroft-core.readthedocs.io/en/master/)
 
+## Need more help?
+
+If something isn't working as expected, please join us in the [~Skills channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
+
+It's also really helpful for us if you add an issue to our [documentation repo](https://github.com/MycroftAI/documentation/issues). This means we can make sure it gets covered for all developers in the future.
+

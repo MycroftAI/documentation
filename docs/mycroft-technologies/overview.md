@@ -26,7 +26,7 @@ There are two technologies that Mycroft.AI currently uses for **Wake Word** dete
 
 Because PocketSphinx is trained on English speech, your **Wake Word** currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well.
 
-* [Precise](https://mycroft.ai/documentation/precise): Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what _words_ you want to use for your **Wake Word**. Instead, you train it on _sounds_. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise has been the default **Wake Word** Listener for each Mycroft Device since mid-March 2018. Prior to this date, PocketSphinx was the default.
+* [Precise](https://mycroft.ai/documentation/precise): Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what _words_ you want to use for your **Wake Word**. Instead, you train it on _sounds_. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise is the default **Wake Word** Listener for the "Hey Mycroft" wake word, PocketSphinx provides a fallback to this if Precise is unavailable.
 
 ### Speech to Text \(STT\)
 
@@ -38,7 +38,7 @@ DeepSpeech is not yet ready for production use and Mycroft currently uses [Googl
 
 Mycroft also supports other STT engines that can be configured using the [Configuration Manager](../using-mycroft-ai/customizations/config-manager.md):
 
-* [IBM Watson Speech to Text](https://www.ibm.com/watson/services/speech-to-text/) \(username and password required\)
+* [IBM Watson Speech to Text](https://www.ibm.com/watson/services/speech-to-text/) \(IBM API key required\)
 * [wit.ai Speech to Text](https://wit.ai/blog/2014/02/12/speech-api) \(wit.ai API key required\)
 
 ### Intent parser
@@ -58,14 +58,14 @@ An **intent parser** can then match the _intent_ with a suitable **Skill** to ha
 
 Text to Speech \(TTS\) software takes written text, such as text files on a computer, and uses a _voice_ to _speak_ the text. Text to Speech can have different voices, depending on the TTS engine used.
 
-* [Mimic](https://github.com/MycroftAI/mimic): Mycroft's default text to speech \(TTS\) engine, based on CMU's Flite \(Festival Lite\)
+* [Mimic](https://github.com/MycroftAI/mimic): Mycroft's default local text to speech \(TTS\) engine, based on CMU's Flite \(Festival Lite\)
+* [Mimic2](https://github.com/MycroftAI/mimic2): Mycroft's own cloud based text to speech \(TTS\) engine, based on Tacotron providing a much better voice quality.
 
-In your home.mycroft.ai account, you can select several other TTS engines if you don't wish to use Mimic.
+In your home.mycroft.ai account, you can select voices from these as well as
 
-* [eSpeak](http://espeak.sourceforge.net/): you need to choose which [voice](http://espeak.sourceforge.net/voices.html) to use
-* [MaryTTS](http://mary.dfki.de/): you need to choose which voice to use
 * [Google TTS](https://play.google.com/store/apps/details?id=com.google.android.tts): you need to choose which voice to use
-* FATTS: you need to choose which voice to use
+
+even more tts engines are available but require manual configuration.
 
 ### Middleware
 
@@ -78,7 +78,7 @@ The Mycroft middleware has two components:
 
 [Mycroft Skills](https://github.com/MycroftAI/mycroft-skills) are like 'add-ons' or 'plugins' that provide additional functionality. **Skills** can be developed by Mycroft Developers, or by Community Developers, and vary in their functionality and maturity.
 
-[Mycroft Skills Management \(msm\)](https://github.com/MycroftAI/msm) is a set of helper scripts that assist in the installation and management of **Skills**.
+[Mycroft Skills Management \(msm\)](https://github.com/MycroftAI/mycroft-skills-kit) is a tool assisting with the installation and management of **Skills**.
 
 ### Devices and Enclosures
 

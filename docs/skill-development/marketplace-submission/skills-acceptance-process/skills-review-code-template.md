@@ -4,6 +4,7 @@ description: Template for the Code Review component of the Skills Acceptance Pro
 
 # Code Review Template
 
+```text
 ## Meta
 
 * Platform:  
@@ -61,4 +62,5 @@ Are all automated tests passing?
 ### Actions Required:
 
 \*
+```
 

@@ -4,6 +4,7 @@ description: Template for the Functional Review component of the Skills Acceptan
 
 # Functional Review Template
 
+```text
 ## Meta
 
 * Who: [@your-github-handle](https://github.com/your-github-handle) / @your-mycroft-chat-handle  
@@ -19,15 +20,11 @@ Check that the Skill installs using voice commands. Mycroft will get the user to
 > Install method:  
 > Output:
 >
-> ```text
->
-> ```
+> 
 >
 > Checking that STT transcribes correctly:
 >
-> ```text
 >
-> ```
 
 * [ ] **Settings**  
 
@@ -74,4 +71,5 @@ For each function of the Skill add a new checkbox with the utterance used to inv
 ### Actions Required
 
 A short list of any _Actions Required_. It is also great to provide a short statement of your impressions from using the Skill. \*
+```
 

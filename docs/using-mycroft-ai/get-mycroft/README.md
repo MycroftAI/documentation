@@ -33,6 +33,12 @@ However you can run Mycroft on MacOS and Windows inside a virtual machine using 
 
 {% page-ref page="macos-and-windows-with-virtualbox.md" %}
 
+### Mycroft for Docker
+
+Run Mycroft in a Docker container. This can be installed using our [pre-built image from Docker Hub](https://hub.docker.com/r/mycroftai/docker-mycroft/), or by building the image manually.
+
+{% page-ref page="docker.md" %}
+
 ### Mycroft for Android
 
 Build Mycroft in Android Studio and deploy to your Android devices. We have source code available if you’re comfortable with Android Studio and have the skill set to compile this into an .apk and load onto an Android device.

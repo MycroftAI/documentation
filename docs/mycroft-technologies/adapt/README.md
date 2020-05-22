@@ -41,6 +41,10 @@ Applications - or Mycroft Skills - can then parse the JSON data take appropriate
 
 ## Is Adapt right for me or my use cases?
 
+{% hint style="info" %}
+If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development &gt; Intents](../../skill-development/user-interaction/intents/)
+{% endhint %}
+
 Adapt is useful for determining user intent quickly and accurately from natural language. It is particularly beneficial for applications with limited vocabularies - that is, where the User will only issue a small number of **Utterances**.
 
 Adapt has a number of features.
@@ -71,34 +75,23 @@ Adapt Intent Parser was developed at Mycroft.AI by a team led by [Sean Fitzgeral
 
 ### Requirements
 
-Adapt Intent Parser requires Python 2.7.
+Adapt Intent Parser requires Python 2.7 or above.
 
 ### `pip` installation
 
-`pip` is a package manager used to install and manage software packages in Python. To use `pip` you first need to install it.
+`pip` is a package manager used to install and manage software packages in Python. To use `pip` you first need to [install it](https://pip.pypa.io/en/stable/installing/).
 
-#### Installing `pip` for Ubuntu / Debian based Linux
-
-`$ sudo apt-get install python-pip python-dev`
-
-#### Installing `pip` for Fedora / RPM based Linux
-
-`$ sudo dnf install python-pip python-devel`
-
-### Installing Adapt Intent Parser
-
-_NOTE: For development on Adapt and Mycroft we use the sandboxing tool `virtualenv` to isolate Adapt from other software. This allows for dependencies to be configured just for Adapt, rather than installing them globally. This approach prevents conflicts between Adapt and other software._
-
-#### Installing Adapt for Ubuntu, Debian or Raspbian
-
-Install Adapt via `pip` into your project's `virtualenv`:
+Adapt is available on the [Python Package Index \(PyPI\)](https://pypi.org/project/adapt-parser/) making it easily installable using `pip`.
 
 ```bash
-$ sudo apt-get install virtualenv
-$ virtualenv myvirtualenv
-$ . myvirtualenv/bin/activate
-$ pip install -e git+https://github.com/mycroftai/adapt#egg=adapt-parser
+pip install adapt-parser
 ```
+
+_NOTE: We recommend the use of virtual environments for development on Adapt and Mycroft. This allows for dependencies to be configured just for Adapt and your project, rather than installing them globally. This approach prevents conflicts between Adapt and other software._
+
+### Github installation
+
+You can also get the source code directly from the [Adapt Github repository](https://github.com/MycroftAI/adapt#adapt-intent-parser).
 
 ## How do I contribute to Adapt Intent Parser?
 

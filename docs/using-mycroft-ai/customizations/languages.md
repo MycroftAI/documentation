@@ -14,33 +14,30 @@ Adding support for a new language is a significant undertaking. It is complex an
 
 ## Overview
 
-For Mycroft to be usable in a language we need to look at six components. 
+For Mycroft to be usable in a language we need to look at six components.
 
-1. [Language setting](languages.md#1-language-setting): To inform each of the following components which language we are using, we must set our overall language setting. 
-2. [Wake Word](languages.md#2-wake-word): When you Speak 'Hey Mycroft, do something', you are invoking a Wake Word. To change your Wake Word to another language, you need to change the Wake Word phrase that is used. 
-3. [Speech to Text](languages.md#3-speech-to-text-stt): Mycroft is designed to be modular, so you can choose which Speech to Text engine you use. You need to find and configure a Speech to Text engine for your language. 
-4. [Text to Speech](languages.md#4-text-to-speech-tts): Again, Mycroft is designed to be modular, so you can choosen which Text to Speech engine you use. You need to find and configure a Text to Speech engine for your language. 
-5. [Skills](languages.md#5-skills): To support a language, a Skill must have `vocab` and `dialog` entries for that language. 
+1. [Language setting](languages.md#1-language-setting): To inform each of the following components which language we are using, we must set our overall language setting.
+2. [Wake Word](languages.md#2-wake-word): When you Speak 'Hey Mycroft, do something', you are invoking a Wake Word. To change your Wake Word to another language, you need to change the Wake Word phrase that is used.
+3. [Speech to Text](languages.md#3-speech-to-text-stt): Mycroft is designed to be modular, so you can choose which Speech to Text engine you use. You need to find and configure a Speech to Text engine for your language.
+4. [Text to Speech](languages.md#4-text-to-speech-tts): Again, Mycroft is designed to be modular, so you can choosen which Text to Speech engine you use. You need to find and configure a Text to Speech engine for your language.
+5. [Skills](languages.md#5-skills): To support a language, a Skill must have `vocab` and `dialog` entries for that language.
 6. [Mycroft Core](languages.md#6-mycroft-core-lingua-franca-library): To support a new language, `mycroft-core` needs to have supporting files added to the [Lingua Franca library](https://github.com/MycroftAI/lingua-franca).
 
 ## 1. Language setting
 
-Your primary language is set within your `mycroft.conf` file. Setting this at the user level `~/.mycroft/mycroft.conf` file might look like:
+Your primary language is set within your `mycroft.conf` file. Using the [Configuration Manager](config-manager.md) we can set the language by running:
 
-```javascript
-{
-  "max_allowed_core_version": 19.2,
-  "lang": "it-it"
-}
+```bash
+mycroft-config set lang "it-it"
 ```
-
-_Please note that all configuration changes must result in a valid JSON file. If a change to your config does not seem to be working or you are unsure, please check the contents of your `mycroft.conf` file with one of the many JSON validators available online. A single misplaced comma can cause hours of frustration._
 
 ## 2. Wake Word
 
 Changing your wake word is not necessary, however may be desirable in order to wake the device with a phrase that is more appropriate or relevant in your language. By default, Mycroft will continue to be awoken by the phrase _"Hey Mycroft"_.
 
-[See our documentation on changing your Wake Word, and select a Wake Word that suits your language](https://mycroft.ai/documentation/home-mycroft-ai-pairing/#changing-your-wake-word).
+[See our documentation on changing your Wake Word, and select a Wake Word that suits your language](https://mycroft.ai/documentation/home-mycroft-ai-pairing/#changing-your-wake-word). Alternatively you can create a custom wake word:
+
+{% page-ref page="wake-word.md" %}
 
 ## 3. Speech to Text \(STT\)
 
@@ -52,89 +49,19 @@ In order to support a new language, a Speech to Text engine \(STT engine\) must 
 
 STT engines are made available by different vendors, and they each have different licenses and usage restrictions.
 
-* [List of languages supported by Google STT](https://stackoverflow.com/questions/14257598/what-are-language-codes-in-chromes-implementation-of-the-html5-speech-recogniti)
-* [List of languages supported by IBM Watson Bluemix](https://www.ibm.com/watson/developercloud/speech-to-text/api/v1/#sessionless_methods)
+* [List of languages supported by Google STT](https://cloud.google.com/speech-to-text/docs/languages)
+* [List of languages supported by IBM Watson](https://cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-models#models)
 * [List of languages supported by Wit.AI](https://wit.ai/faq)
 
-Once you've found an STT engine for your language, you will need to configure Mycroft to use it. This is done through the [mycroft.conf](https://mycroft.ai/documentation/mycroft-conf/) file.
+See the full range of supported STT engines and how to configure Mycroft to use them:
+
+{% page-ref page="stt-engine.md" %}
 
 #### What if there isn't an STT engine available for my language?
 
 Unfortunately, STT engines aren't available for every language in the world.
 
 We recommend that you request your language at [Mozilla's Common Voice project](https://voice.mozilla.org/en/languages).
-
-### Setting your STT engine
-
-Locate your `mycroft.conf` file, and open it for editing on the Linux command line, using a tool like `vi` or `nano`.
-
-```javascript
-{
-  “stt”: {
-  “module”: “google_cloud”,    <- this should be set to the name of your STT provider (ie "google_cloud", "wit" etc)
-  “google_cloud”: {            <- this should be set to the name of your STT provider (ie "google_cloud", "wit" etc)
-    “lang”: “hi-in”,           <- the IETF BCP-47 language code for your language (shown is Hindi as spoken in India)
-    “credential”: {            <- some STT engines require credentials - check the documentation for the STT engine
-      “json”: {
-      }
-    }
-  }
-}
-```
-
-To obtain the google\_cloud credential json data, you must first have a Google API Console project. You make a Google API Console project like this:
-
-* Select or create a GCP project - [link](https://console.cloud.google.com/cloud-resource-manager)
-* Make sure that billing is enabled for your project - [link](https://cloud.google.com/billing/docs/how-to/modify-project)
-* Enable the Cloud Text-to-Speech API - [link](https://console.cloud.google.com/apis/dashboard)
-* Set up authentication:
-  * Go to the Create service account key page in the GCP Console - [link](https://console.cloud.google.com/apis/credentials/serviceaccountkey)
-  * From the Service account drop-down list, select New service account.
-  * Enter a name into the Service account name field.
-  * Don't select a value from the Role drop-down list. No role is required to access this service.
-  * Click Create. A note appears, warning that this service account has no role.
-  * Click Create without role. A JSON file that contains your key downloads to your computer.
-
-Remember to activate the API - [link](https://console.developers.google.com/apis/library/speech.googleapis.com?)
-
-the JSON configuration should look like this:
-
-```javascript
-"stt": {
-  "module": "google_cloud",
-  "google_cloud": {
-    "lang": "hi-in",
-    "credential": {
-      "json": {
-        "type": "service_account",
-        "project_id": "xxxxxxxxxx",
-        "private_key_id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "private_key": "-----BEGIN PRIVATE KEY-----nxxxxxxxxxxxxxxxxn-----END PRIVATE KEY-----n",
-        "client_email": "xxxx@xxxx.iam.gserviceaccount.com",
-        "client_id": "xxxxxxxxxxxxxxxxxxxxx",
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://oauth2.googleapis.com/token",
-        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/xxxxxx.iam.gserviceaccount.com"
-      }
-    }
-  }
-},
-```
-
-The STT options you can select from are;
-
-* `"mycroft"`
-* `"google"`
-* `"google_cloud"`
-* `"wit"`
-* `"ibm"`
-* `"kaldi"`
-* `"bing"`
-* `"govivace"`
-* `"houndify"`
-* `"deepspeech_server"`
-* `"mycroft_deepspeech"`
 
 ## 4. Text to Speech \(TTS\)
 
@@ -159,7 +86,13 @@ If you would like to build a TTS for your language, then we recommend you check 
 
 ### Setting your TTS engine
 
-Locate your `mycroft.conf` file, and open it for editing on the Linux command line, using a tool like `vi` or `nano`.
+Using the [Configuration Manager](config-manager.md) we can edit the User-level `mycroft.conf` file by running:
+
+```bash
+mycroft-config edit user
+```
+
+We can then add our TTS configuration values.
 
 ```javascript
   "tts": {
@@ -195,7 +128,7 @@ You can modify the individual `dialog` and `vocab` files for a Skill on your own
 
 In addition to the above, `mycroft-core` also requires localization, in particular to extract dates and numbers.
 
-[For more information, have a look at the `lang` directory within `mycroft/util` in `mycroft-core`](https://github.com/MycroftAI/mycroft-core/tree/dev/mycroft/util/lang). This is also maintained as a stand-alone repository called [Lingua Franca](https://github.com/MycroftAI/lingua-franca).
+For more information, see the [Lingua Franca Github repository](https://github.com/MycroftAI/lingua-franca).
 
 Some common files for each language are:
 

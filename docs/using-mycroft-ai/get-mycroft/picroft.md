@@ -1,7 +1,7 @@
 ---
 description: >-
-  Picroft is a ready-made way to run Mycroft on a Raspberry Pi 3 or Raspberry Pi
-  3B+ and is provided as a disk image that you can burn to a Micro SD card.
+  Picroft is a ready-made way to run Mycroft on a Raspberry Pi 3, 3B+ or 4 and
+  is provided as a disk image that you can burn to a Micro SD card.
 ---
 
 # Picroft
@@ -16,7 +16,7 @@ description: >-
 
 ## About Picroft
 
-Picroft is based on [Raspbian Stretch Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
+Picroft is based on [Raspbian Buster Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
 
 Picroft is entirely open source, and PRs and Issues are warmly welcomed on the [Picroft GitHub repo](https://github.com/MycroftAI/enclosure-picroft).
 
@@ -28,7 +28,7 @@ In order to set up Picroft, you will need to have a basic understanding of the L
 
 | Model | Level of support |
 | :--- | :--- |
-| Pi4 | [Not yet supported](https://community.mycroft.ai/t/will-picroft-work-with-the-new-raspberry-pi-4/6847/) |
+| Pi4 | Supported |
 | Pi3 B+ | Supported |
 | Pi3 B | Supported |
 | Pi 2 | Functions very slowly, limited wifi support |
@@ -40,7 +40,7 @@ As well as a Raspberry Pi, you will also need:
 
 * Micro SD card, 8GB or larger _highly_ recommended
 * Power adapter with micro USB for your country. [The Raspberry Pi Foundation has some excellent recommendations](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
-* An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi 3 _or_ a USB Speaker  \(_Bluetooth on Picroft is difficult to get working and is not recommended_\)
+* An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi _or_ a USB Speaker  \(_Bluetooth on Picroft is difficult to get working and is not recommended_\)
 * USB Microphone
 
 Installing Picroft may be easier if you also have:
@@ -69,25 +69,7 @@ If you are looking for a low-cost option to try out Picroft, we can recommend th
 | PlayStation | Eye \(PS3 Eye\) | Working | Mic and camera | An excellent introductory model if you are just checking Picroft out. |
 | Seeed Studio | Mic Array 2.0 | Working | Mic array | Premium microphone array |
 
-### Troubleshooting USB audio devices
-
-If Mycroft audio output fails \(No speech or audio\) when using some sort of USB sound card for output it might be worth trying to reset the play command lines used by Mycroft.
-
-To accomplish this, from your Terminal add two configuration values using the [Configuration Manager](../customizations/config-manager.md).
-
-```bash
-mycroft-config set play_wav_cmdline "aplay %1"
-mycroft-config set play_mp3_cmdline "mpg123 %1"
-```
-
-You can check that these have been set correctly using `mycroft-config get`
-
-```bash
-mycroft-config get play_wav_cmdline "aplay %1"
-mycroft-config get play_mp3_cmdline "mpg123 %1"
-```
-
-If you continue to experience audio problems, please see the general [Audio Troubleshooting Guide](../troubleshooting/audio-troubleshooting.md).
+If you experience any audio problems, please see the [Audio Troubleshooting Guide](../troubleshooting/audio-troubleshooting.md).
 
 {% page-ref page="../troubleshooting/audio-troubleshooting.md" %}
 
@@ -220,80 +202,9 @@ The guided setup will then do a microphone test to ensure your chosen microphone
 
 #### What can I do if the guided setup doesn't set my audio input or output device correctly?
 
-There are a few tricks that we know of to get your audio input or output device working correctly - however, these are somewhat technical and will require typing commands on the Linux command line interface \(CLI\).
+If you experience any audio problems, please see the [Audio Troubleshooting Guide](../troubleshooting/audio-troubleshooting.md).
 
-**Alsamixer**
-
-`alsamixer` is a utility provided by the ALSA sound system on Raspbian Stretch that allows you to select an audio playback \(output\) and input \(capture\) device.
-
-To run `alsamixer`, type `Ctrl +C` to exit the guided setup and you will be at the Linux command line. Type `alsamixer` as shown below:
-
-```bash
-(.venv) pi@picroft:~ $ alsamixer
-```
-
-You will see a screen similar to the one below, and may have different options depending on which audio devices you have connected.
-
-![Picroft alsamixer initial screen](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-12.png)
-
-Different devices will have a different command key for choosing 'Capture' devices, in this case it is `F4`.
-
-If you do not see any capture devices, as shown below, then you may need to select a different sound card.
-
-![Picroft alsamixer no audio capture device](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-25.png)
-
-To select a different sound card, follow the instructions on your version of `alsamixer`. In this case, the command key for choosing 'Select sound card' is `F6`. Use the arrow keys on your keyboard to navigate up and down the list to choose your preferred soundcard.
-
-![Picroft alsamixer select sound card](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-05-52.png)
-
-`alsamixer` usually has an option to see **all** capture and playback devices. In this case, the command key to see all devices is `F5`.
-
-![Picroft alsamixer show all audio capture and playback devices](https://mycroft.ai/wp-content/uploads/2018/12/Screenshot-from-2018-12-27-23-06-09.png)
-
-**pulseaudio**
-
-If `alsamixer` does not work for you, then you may have some success with `pulseaudio`. We've recently updated the Picroft repo to include `pulseaudio`, but if you haven't updated for a little while then you may need to manually install it.
-
-```bash
-(.venv) pi@picroft:~ $ sudo apt-get install pulseaudio
-Reading package lists... Done
-Building dependency tree
-Reading state information... Done
-The following additional packages will be installed:
-  fontconfig-config fonts-dejavu-core libasound2-plugins libavcodec57
-  libavresample3 libavutil55 libcairo2 libdrm-amdgpu1 libdrm-freedreno1
-  libdrm-nouveau2 libdrm-radeon1 libfontconfig1 libgl1-mesa-dri
-  libgl1-mesa-glx libglapi-mesa libgsm1 libllvm3.9 libmp3lame0 libopenjp2-7
-  libopus0 liborc-0.4-0 libpixman-1-0 libpulsedsp libsensors4 libshine3
-  libsnappy1v5 libsoxr0 libspeex1 libspeexdsp1 libswresample2 libtdb1
-  libtheora0 libtwolame0 libtxc-dxtn-s2tc libva-drm1 libva-x11-1 libva1
-  libvdpau-va-gl1 libvdpau1 libvpx4 libwavpack1 libwebp6 libwebpmux2
-  libwebrtc-audio-processing1 libx264-148 libx265-95 libxcb-dri2-0
-  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shm0
-  libxcb-sync1 libxdamage1 libxfixes3 libxrender1 libxshmfence1 libxvidcore4
-  libxxf86vm1 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers
-  pulseaudio-utils rtkit va-driver-all vdpau-driver-all
-Suggested packages:
-  opus-tools lm-sensors speex pavumeter pavucontrol paman paprefs
-The following NEW packages will be installed:
-  fontconfig-config fonts-dejavu-core libasound2-plugins libavcodec57
-  libavresample3 libavutil55 libcairo2 libdrm-amdgpu1 libdrm-freedreno1
-  libdrm-nouveau2 libdrm-radeon1 libfontconfig1 libgl1-mesa-dri
-  libgl1-mesa-glx libglapi-mesa libgsm1 libllvm3.9 libmp3lame0 libopenjp2-7
-  libopus0 liborc-0.4-0 libpixman-1-0 libpulsedsp libsensors4 libshine3
-  libsnappy1v5 libsoxr0 libspeex1 libspeexdsp1 libswresample2 libtdb1
-  libtheora0 libtwolame0 libtxc-dxtn-s2tc libva-drm1 libva-x11-1 libva1
-  libvdpau-va-gl1 libvdpau1 libvpx4 libwavpack1 libwebp6 libwebpmux2
-  libwebrtc-audio-processing1 libx264-148 libx265-95 libxcb-dri2-0
-  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shm0
-  libxcb-sync1 libxdamage1 libxfixes3 libxrender1 libxshmfence1 libxvidcore4
-  libxxf86vm1 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers
-  pulseaudio pulseaudio-utils rtkit va-driver-all vdpau-driver-all
-0 upgraded, 68 newly installed, 0 to remove and 0 not upgraded.
-Need to get 30.2 MB of archives.
-After this operation, 221 MB of additional disk space will be used.
-Do you want to continue? [Y/n] Y
-```
+{% page-ref page="../troubleshooting/audio-troubleshooting.md" %}
 
 ### Pairing the Picroft
 
@@ -403,10 +314,10 @@ For more help or ideas, consider joining our [Picroft channel on Mycroft Chat](h
 
 There are several commands that are packaged into Picroft to help you with advanced functionality:
 
-* `mycroft-cli=client`: This command will start the Mycroft CLI client if you are on the Linux command line
+* `mycroft-cli-client`: This command will start the Mycroft CLI client if you are on the Linux command line
 * `mycroft-help`: This command brings up help information
 * `mycroft-mic-test`: This command re-runs the microphone test from the guided setup
-* `mycroft-msk`: This command runs the [Mycroft Skills Kit](../../skill-development/next-steps/mycroft-skills-kit.md)
+* `mycroft-msk`: This command runs the [Mycroft Skills Kit](../../mycroft-technologies/mycroft-skills-kit.md)
 * `mycroft-msm`: This command runs the [Mycroft Skills Manager](../../mycroft-technologies/mycroft-core/msm.md)
 * `mycroft-pip`: This command runs `pip` within the Mycroft Python `virtual environment` \(`venv`\). This is useful if you are installing dependencies for **Skills**.
 * `mycroft-say-to`:  This command sends a command to Picroft, just like you had 'spoken' a command. This is useful if your microphone is not working.
@@ -446,9 +357,9 @@ This script will update both `mycroft-core` and the **Skills** on your Picroft d
 
 The Picroft image building instructions can now be found on GitHub at; [https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image\_recipe.md](https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image_recipe.md)
 
-### Using the GPIO pins on the Raspberry Pi 3
+### Using the GPIO pins on the Raspberry Pi
 
-One common question we get is - "Can I use the [general purpose input output pins \(GPIO\)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi 3 with Picroft?".
+One common question we get is - "Can I use the [general purpose input output pins \(GPIO\)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi with Picroft?".
 
 The answer is 'Yes' - but this requires some additional configuration.
 

@@ -6,6 +6,10 @@ description: >-
 
 # Adapt Examples
 
+{% hint style="info" %}
+If you are looking to use Adapt in a Mycroft Skill, please see [Skill Development &gt; Intents](../../skill-development/user-interaction/intents/)
+{% endhint %}
+
 ## Single intent Parser
 
 [See the Single Intent Parser code on GitHub](https://github.com/MycroftAI/adapt/blob/master/examples/single_intent_parser.py)

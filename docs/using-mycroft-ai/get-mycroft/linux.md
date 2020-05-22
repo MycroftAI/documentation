@@ -13,7 +13,7 @@ Currently, there are builds and/or instructions for installing Mycroft on:
 * Debian / Ubuntu
 * Arch
 * Mint
-* [KDE Plasma 5 Supported Distributions For Plasma-Mycroft Widget](https://mycroft.ai/documentation/plasma)
+* KDE Plasma 5 Supported Distributions including for the [Plasma-Mycroft Widget](https://github.com/KDE/plasma-mycroft)
 
 ## Prerequisites
 
@@ -29,13 +29,18 @@ This section of documentation assumes the following:
 
 Whilst Mycroft runs on a Raspberry Pi 3B or above, this is achieved through a custom release of Raspbian Lite significantly reducing the system overhead by not running a desktop environment and other unnecessary processes. Mycroft will run on older hardware however your experience may vary significantly.
 
-Our [Precise wake word engine](https://github.com/MycroftAI/mycroft-precise#mycroft-precise) also relies upon TensorFlow. For x86 Intel processors this requires the AVX \(Advanced Vector Extensions\) instruction set. To ensure your system supports AVX open a terminal and run: `grep avx /proc/cpuinfo`. AVX should be listed under the flags for each CPU core. If nothing is returned it is most likely that your system does not support AVX. Technical users may be able to build an older version of TensorFlow \(1.13\) from source using the [instructions provided on their website](https://www.tensorflow.org/install/source). Alternatively you may use Mycroft with the PocketSphinx wake word engine.
+Our [Precise wake word engine](https://github.com/MycroftAI/mycroft-precise#mycroft-precise) also relies upon TensorFlow. For x86 Intel processors this requires the AVX \(Advanced Vector Extensions\) instruction set. To ensure your system supports AVX open a terminal and run: `grep avx /proc/cpuinfo`. AVX should be listed under the flags for each CPU core. If nothing is returned it is most likely that your system does not support AVX. Technical users may be able to build an older version of TensorFlow \(1.13\) from source using the [instructions provided on their website](https://www.tensorflow.org/install/source). Alternatively you may use Mycroft with the PocketSphinx wake word engine; see \(Switching Wake Word Listeners\)\[../customizations/wake-word\#switching-wake-word-listeners\].
 
 The ARM architecture has a similar requirement called SIMD \(Single Instruction, Multiple Data\). This has been available since ARMv7 which includes the Cortex A53 used by the RaspberryPi and the Cortex A7 from the OrangePi.
 
 ## Getting Started
 
 There are multiple ways to install Mycroft for Linux.
+
+{% hint style="warning" %}
+**Snap install is currently not working.**  
+A Mycroft Snap package is available through official repositories for a number of distributions. This package was contributed by a Community member, however is currently not working. We are keen to restore this as an installation option. If you have experience with creating and maintaining Snaps, we welcome all assistance through the [Github repository](https://github.com/diddlesnaps/mycroft).
+{% endhint %}
 
 ### Installing via git clone
 
@@ -185,52 +190,39 @@ Keeping your `mycroft-core` installation up to date is simple.
 
 ## Removing Mycroft for Linux from your system
 
-If you have installed `mycroft-core` using the `git-clone` method, then removing it requires a couple of steps.
-
-_NOTE: depending on your system, you may need to run the commands below with `sudo`_
-
-* Remove the `mycroft-core` directory from wherever you installed it:
-
-`rm -R ~/yourpath/to/mycroft-core`
-
-* Next, remove the **Skills** directories:
-
-`rm -R /opt/mycroft`
-
-* Next, remove the Mycroft settings:
-
-`rm -R ~/.mycroft`
-
-## Common issues with Mycroft for Linux
-
-### Removing and rebuilding your `virtualenv`
-
-If your CLI won't run, it is highly likely to be an issue with the Mycroft virtual environment. The easiest solution we've found has been to remove and reinstall the virtual environment.
-
-First, delete the existing virtual environment:
+If you have installed `mycroft-core` using the `git-clone` method, you can remove all files and directories that have been created by Mycroft using the `--clean` flag:
 
 ```bash
-sudo rm -R ~/.virtualenvs/mycroft
+cd ~/mycroft-core # or the path to your mycroft-core installation
+./dev_setup --clean
 ```
 
-Next, we run the setup script again:
-
-```bash
-mycroft-core$ ./dev_setup.sh
-```
-
-This will rebuild your
-
-`virtualenv`
-
-### Installation warns about bad interpreter
-
-When running `dev_setup.sh`, if you encounter a warning about a "bad interpreter", it is likely from having a space in the installation path:
+This does not remove the cloned `mycroft-core` project directory. If cloned directly into the home directory, this can be removed with:
 
 ```text
-./dev_setup.sh: /opt/test path/mycroft-core/.venv/bin/pip: "/opt/test: bad interpreter: No such file or directory
-Warning: Failed to install all requirements. Continue? y/N
+rm -rf ~/mycroft-core
 ```
 
-If you can't install to a path without spaces, you will have to manually verify the `requirements.txt` entries are installed to your virtual environment.
+{% hint style="danger" %}
+**Warning: always be very careful when running `rm -rf` commands. Running this command on the wrong directory can delete your entire filesystem. Run `rm --help` for more details.**
+{% endhint %}
+
+Alternatively you can manually remove these files using the following commands:
+
+```bash
+sudo rm -rf /var/log/mycroft # Log files
+rm -f /var/tmp/mycroft_web_cache.json # Configuration from Home.mycroft.ai
+rm -rf "${TMPDIR:-/tmp}/mycroft" # Temp files
+rm -rf "$HOME/.mycroft" # User level configuration
+sudo rm -rf /opt/mycroft # Mycroft Skills directory
+rm -rf "$HOME/mycroft-core" # Mycroft-core installation
+```
+
+{% hint style="info" %}
+Depending on your system, you may need to run the commands with `sudo`
+{% endhint %}
+
+## Troubleshooting
+
+{% page-ref page="../troubleshooting/" %}
 
