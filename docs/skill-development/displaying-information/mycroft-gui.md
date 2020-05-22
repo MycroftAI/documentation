@@ -7,13 +7,9 @@ description: >-
 
 # GUI Framework
 
-**Draft Version: 0.1 \| Document Author: Aditya Mehra \| Status: Incomplete \| Last Modified: 23rd August 2019**
-
 In the age of information visualization is eminently essential to grab attention and create a promising communication strategy. Visual content that supports your spoken content can make it easier to present information well and more engaging for your audience and users.
 
 ![](https://images.theconversation.com/files/205921/original/file-20180212-58348-1sbutu2.jpg?ixlib=rb-1.1.0&rect=0%2C604%2C3994%2C1994&q=45&auto=format&w=1356&h=668&fit=crop)
-
-\(Image to be replaced by original artwork..\)
 
 ### INTRODUCTION TO MYCROFT-GUI
 
@@ -25,15 +21,7 @@ Mycroft is an open source voice assistant that can be extended and expanded to t
 
 Want Mycroft to do something new? Teach Mycroft a skill, share it, and improve the experience for tens of thousands of people all over the world. This guide aims to provide you with resources to create familiar and consistent visual experiences with your expanding and innovative skills.
 
-The Mycroft GUI Visual Skill Development Guide is divided into two sections:
 
-#### Visual Skill Development API Foundation
-
-* Learn and familiarize yourself with the basics of expanding your voice only skills with the Visual Skill Development API for devices that support displays..\(Learn More Link\)
-
-#### Visual Skill Development Human Interface Guidelines
-
-* Learn about the best practices and design philosophy to creating consistent visual experiences..\(Learn More Link\)
 
 ## VISUAL SKILL DEVELOPMENT API FOUNDATION
 
@@ -58,8 +46,6 @@ A collection of resources to familiarize you with QML and Kirigami Framework.
 #### Building your skill to support display
 
 Skills for Mycroft AI are written in Python, using the skills development guide available [here](https://mycroft.ai/documentation/skills/developing-skills/)
-
-### Recipes Skill Example
 
 Let's walk you through some basics of writing your QML user interface, this section is divided into 5 parts:
 
@@ -112,7 +98,7 @@ This provides a QML `Item` to render Adobe® After Effects™ animations exporte
 
 When you design your skill with QML, Mycroft-GUI frameworks provides you with some base delegates you should use when designing your GUI skill. The base delegates provide you with a basic presentation layer for your skill with some property assignments that can help you setup background images, background dim, timeout and grace time properties to give you the control you need for rendering an experience. In your GUI Skill you can use:
 
-* Mycroft.Delegate: _Needs Description_
+* Mycroft.Delegate: A basic and simple page based on Kirigami.Page
 
   Simple display Image and Text Example using Mycroft.Delegate
 
@@ -139,7 +125,7 @@ When you design your skill with QML, Mycroft-GUI frameworks provides you with so
   }
   ```
 
-* Mycroft.ScrollableDelegate: _Needs Description_
+* Mycroft.ScrollableDelegate:  A delegate that displays skill visuals in a scroll enabled Kirigami Page. 
 
   Example of using Mycroft.ScrollableDelegate
 
@@ -226,7 +212,7 @@ self.gui.show_image("https://source.unsplash.com/1920x1080/?+autumn")
 ...
 ```
 
-**HTML Url Example**
+**HTML URL Example**
 
 ```python
 ...
@@ -629,6 +615,32 @@ Mycroft.Delegate {
         id: fooRect
         anchors.fill: parent
         color: "#fff"
+    }
+}
+```
+
+#### Using VideoPlayer Component To Play Video Files / Video Streaming
+
+VideoPlayer component is a custom wrapper around Qt Multimedia MediaPlayer, that gives the Skill Authors a basic responsive design video player they can plug into their skills.
+
+```text
+import QtQuick 2.4
+import QtQuick.Controls 2.2
+import QtQuick.Layouts 1.4
+import org.kde.kirigami 2.4 as Kirigami
+import Mycroft 1.0 as Mycroft
+
+Mycroft.Delegate {
+    id: root
+    skillBackgroundSource: sessionData.videoThumbnail
+
+    Mycroft.VidioPlayer {
+        id: examplePlayer
+        anchors.fill: parent
+        source: sessionData.videoSource        //Set URL of video file
+        nextAction: "author.example-player.next" //Event to drive next button action in skill
+        previousAction: "author.example-player.previous" //Event to drive previous button action in skill
+        status: sessionData.status             //Current status of playing video
     }
 }
 ```
