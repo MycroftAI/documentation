@@ -74,7 +74,7 @@ TTS engines are made available by different vendors, and they each have differen
 * [List of languages supported by eSpeak TTS](http://espeak.sourceforge.net/)
 * [List of languages supported by Google Cloud TTS](https://cloud.google.com/text-to-speech/docs/voices)
 * [List of languages supported by MaryTTS](http://mary.dfki.de/)
-* [List of languages supported by BingTTS](https://docs.microsoft.com/en-us/azure/cognitive-services/speech/api-reference-rest/s)
+* [List of languages supported by BingTTS](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#text-to-speech)
 
 Once you've found an TTS engine for your language, you will need to configure Mycroft to use it. This is done through the [mycroft.conf](https://mycroft.ai/documentation/mycroft-conf/) file.
 
