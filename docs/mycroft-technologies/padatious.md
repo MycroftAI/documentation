@@ -125,7 +125,7 @@ The `register_intent_file(intent_file, handler)` methods arguments are:
 
 The corresponding decorator is also available:
 
-`@intent_file_handler()`
+`@intent_handler()`
 
 In the handler method the wild card words can be fetched from the message using
 

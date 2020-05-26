@@ -190,11 +190,11 @@ One of the most common mistakes when getting started with Skills is that the voc
 The utterance string received from the speech-to-text engine is received all lowercase. As such any string matching you are trying to do should also be converted to lowercase. For example:
 
 ```python
-@intent_file_handler('example.intent')
-def handle_example(self, message):
-    utterance = message.data.get('utterance')
-    if 'Proper Noun'.lower() in utterance:
-        self.speak('Found it')
+    @intent_handler(IntentBuilder('Example').require('Example').require('Intent'))
+    def handle_example(self, message):
+        utterance = message.data.get('utterance')
+        if 'Proper Noun'.lower() in utterance:
+            self.speak('Found it')
 ```
 
 ## Need more help?

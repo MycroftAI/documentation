@@ -87,7 +87,7 @@ Let's take a look:
 
 ```python
 from adapt.intent import IntentBuilder
-from mycroft import MycroftSkill, intent_file_handler, intent_handler
+from mycroft import MycroftSkill, intent_handler
 ```
 
 This section of code imports the required _libraries_. Some libraries will be required on every Skill, and your skill may need to import additional libraries.
@@ -128,7 +128,7 @@ def initialize(self):
 
 #### Intent handlers
 
-Previously the `initialize` function was used to register intents, however our new `@intent_handler` and `@intent_file_handler` decorators are a cleaner way to achieve this. We will learn all about the different [Intents](https://github.com/MycroftAI/documentation/tree/156204fdccf839a4d5c57bf46f38c17ac1fee4eb/docs/skill-development/intents.md) shortly.
+Previously the `initialize` function was used to register intents, however our new `@intent_handler` decorator is a cleaner way to achieve this. We will learn all about the different [Intents](../intents.md) shortly. You may also see the `@intent_file_handler` decorator used in Skills. This has been deprecated and you can now replace any instance of this with the simpler `@intent_handler` decorator.
 
 In our current HelloWorldSkill we can see two different styles.
 
@@ -143,7 +143,7 @@ In our current HelloWorldSkill we can see two different styles.
 2. A Padatious intent handler, triggered using a list of sample phrases.
 
    ```python
-   @intent_file_handler('HowAreYou.intent')
+   @intent_handler('HowAreYou.intent')
    def handle_how_are_you_intent(self, message):
     self.speak_dialog("how.are.you")
    ```
