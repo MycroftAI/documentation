@@ -104,7 +104,7 @@ As well as running the test, a list of audio devices will be displayed. The outp
   7:       default
 ```
 
-A specific device can be added to your user level configuration file using the [Configuration Manager](https://github.com/MycroftAI/documentation/tree/e748d423ec989cfec706621f52debf8e2d6e639e/docs/using-mycroft-ai/troubleshooting/config-manager.md) by running:
+A specific device can be added to your user level configuration file using the [Configuration Manager](../customizations/config-manager.md) by running:
 
 ```bash
 mycroft-config set listener.device_name "DEVICE_NAME"
