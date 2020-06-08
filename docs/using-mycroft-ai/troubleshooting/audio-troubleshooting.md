@@ -4,6 +4,17 @@ description: Having trouble with your audio?
 
 # Audio Troubleshooting
 
+Before troubleshooting it is a good idea to restart Mycroft's services and see if the problem is still present. You can do this by running:
+
+```
+mycroft-start restart all
+```
+
+Of if the helper commands aren't available:
+```
+~/mycroft-core/start-mycroft.sh restart all
+```
+
 ## Mycroft's audio system
 
 Mycroft utilizes pulseaudio for sound input and output.
