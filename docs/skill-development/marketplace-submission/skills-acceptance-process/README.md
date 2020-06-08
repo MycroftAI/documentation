@@ -47,7 +47,7 @@ source ~/mycroft-core/.venv/bin/activate
 msk submit /opt/mycroft/skills/your-skill-directory
 ```
 
-This will upload the Skill to Github if it isn’t already, and generate a pull request to add your Skill as a submodule to the [Mycroft Skills Repo](https://github.com/MycroftAI/mycroft-skills).
+This will upload the Skill to Github if it isn’t already, and generate a pull request to add your Skill as a [Git submodule](https://gist.github.com/gitaarik/8735255) to the [Mycroft Skills Repo](https://github.com/MycroftAI/mycroft-skills).
 
 ### 2. Automatic Testing of Skills
 
