@@ -36,7 +36,18 @@ Before submitting your Skill we assume you have:
 
   `mycroft-skill-testrunner /opt/mycroft/skills/your-skill-directory`
 
-When you are satisfied your Skill is ready, submit it for formal review by running: `mycroft-msk submit /opt/mycroft/skills/your-skill-directory` This will upload the Skill to Github if it isn’t already, and generate a pull request to add your Skill as a submodule to the [Mycroft Skills Repo](https://github.com/MycroftAI/mycroft-skills).
+When you are satisfied your Skill is ready, submit it for formal review by running: 
+```
+mycroft-msk submit /opt/mycroft/skills/your-skill-directory
+``` 
+
+If you don't have the mycroft-msk command available, you can manually activate the Mycroft virtual environment and run `msk`
+```
+source ~/mycroft-core/.venv/bin/activate
+msk submit /opt/mycroft/skills/your-skill-directory
+```
+
+This will upload the Skill to Github if it isn’t already, and generate a pull request to add your Skill as a submodule to the [Mycroft Skills Repo](https://github.com/MycroftAI/mycroft-skills).
 
 ### 2. Automatic Testing of Skills
 
