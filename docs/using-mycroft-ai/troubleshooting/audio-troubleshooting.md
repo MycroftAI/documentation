@@ -57,7 +57,7 @@ To see why the microphone is not working we first want to test it outside of Myc
 To do this we will record ten seconds of audio on the default input device and write it to the file `test.wav`. From the commandline on the device run:
 
 ```text
-arecord -d 10 -o test.wav
+arecord -d 10 test.wav
 ```
 
 You can now play it back to hear what is recorded with:
