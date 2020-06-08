@@ -28,30 +28,39 @@ _NOTE: We can only currently assist you in writing Skills in Python, so if you c
 ### Connecting Message handlers
 
 ```python
-...  
-def initialize(self):  
-    self.add_event('recognizer_loop:record_begin',  
-                   self.handle_listener_started)  
-    self.add_event('recognizer_loop:record_end',  
-                   self.handle_listener_ended)
+from mycroft import MycroftSkill
 
-def handle_listener_started(self, message):  
-    # code to excecute when active listening begins...
+class ListenForMessageSkill(MycroftSkill):
+  def initialize(self):  
+      self.add_event('recognizer_loop:record_begin',  
+                    self.handle_listener_started)  
+      self.add_event('recognizer_loop:record_end',  
+                    self.handle_listener_ended)
 
-def handle_listener_ended(self, message):  
-    # code to excecute when active listening begins...  
-...
+  def handle_listener_started(self, message):  
+      # code to excecute when active listening begins...
+
+  def handle_listener_ended(self, message):  
+      # code to excecute when active listening begins...  
+
+def create_skill():
+    return ListenForMessageSkill()
 ```
 
 ### Generating Messages
 
 ```python
-...  
-def some_method(self):  
-    self.emitter.emit(Message("recognizer_loop:utterance",  
-                              {'utterances': ["inject a user utterance"],  
-                               'lang': 'en-us'}))  
-...
+from mycroft import MycroftSkill
+from mycroft.messagebus import Message
+
+class GenerateMessageSkill(MycroftSkill):
+  def some_method(self):  
+    self.bus.emit(Message("recognizer_loop:utterance",  
+                          {'utterances': ["the injected utterance"],  
+                            'lang': 'en-us'}))  
+
+def create_skill():
+    return GenerateMessageSkill()
 ```
 
 ## Mycroft MessageBus Client

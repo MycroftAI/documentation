@@ -46,7 +46,7 @@ def handler_speak(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('speak',
+    self.bus.emit(Message('speak',
                               {"utterance": <words to be spoken>,
                                "lang": <language code, e.g. en-us>}))
 ...
@@ -84,7 +84,7 @@ def handler_mycroft_internet_connected(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.internet.connected'))
+    self.bus.emit(Message('mycroft.internet.connected'))
 ...
 ```
 {% endtab %}
@@ -124,7 +124,7 @@ def handler_mycroft_ready(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.ready'))
+    self.bus.emit(Message('mycroft.ready'))
 ...
 ```
 {% endtab %}
@@ -160,7 +160,7 @@ def handler_mycroft_stop(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.stop'))
+    self.bus.emit(Message('mycroft.stop'))
 ...
 ```
 {% endtab %}
@@ -210,7 +210,7 @@ def handler_mycroft_not_paired(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.not.paired'))
+    self.bus.emit(Message('mycroft.not.paired'))
 ...
 ```
 {% endtab %}
@@ -265,7 +265,7 @@ def handler_mycroft_paired(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.paired'))
+    self.bus.emit(Message('mycroft.paired'))
 ...
 ```
 {% endtab %}
@@ -301,7 +301,7 @@ def handler_mycroft_awoken(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.awoken'))
+    self.bus.emit(Message('mycroft.awoken'))
 ...
 ```
 {% endtab %}
@@ -348,7 +348,7 @@ def handler_mycroft_debug_log(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.debug.log',
+    self.bus.emit(Message('mycroft.debug.log',
                               {
    "level" : <log level>,
    "bus": <True/False>}))
@@ -387,7 +387,7 @@ def handler_complete_intent_failure(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('complete_intent_failure'))
+    self.bus.emit(Message('complete_intent_failure'))
 ...
 ```
 {% endtab %}
@@ -423,7 +423,7 @@ def handler_configuration_updated(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('configuration.updated'))
+    self.bus.emit(Message('configuration.updated'))
 ...
 ```
 {% endtab %}
@@ -474,7 +474,7 @@ def handler_wakeword(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('recognizer_loop:wakeword',
+    self.bus.emit(Message('recognizer_loop:wakeword',
                               {"utterance": <wakeword heard>,
                                "session": <session ID>,}
 ))
@@ -517,7 +517,7 @@ def handler_record_begin(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('recognizer_loop:record_begin'))
+    self.bus.emit(Message('recognizer_loop:record_begin'))
 ...
 ```
 {% endtab %}
@@ -557,7 +557,7 @@ def handler_record_end(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('recognizer_loop:record_end'))
+    self.bus.emit(Message('recognizer_loop:record_end'))
 ...
 ```
 {% endtab %}
@@ -629,7 +629,7 @@ def handler_utterance(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('recognizer_loop:utterance',
+    self.bus.emit(Message('recognizer_loop:utterance',
                               {"utterances": [text],
                                "lang": self.stt.lang,
                                "session": session_id}))
@@ -672,7 +672,7 @@ def handler_audio_output_start(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('recognizer_loop:audio_output_start'))
+    self.bus.emit(Message('recognizer_loop:audio_output_start'))
 ...
 ```
 {% endtab %}
@@ -712,7 +712,7 @@ def handler_audio_output_end(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('recognizer_loop:audio_output_end'))
+    self.bus.emit(Message('recognizer_loop:audio_output_end'))
 ...
 ```
 {% endtab %}
@@ -748,7 +748,7 @@ def handler_sleep(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('recognizer_loop:sleep'))
+    self.bus.emit(Message('recognizer_loop:sleep'))
 ...
 ```
 {% endtab %}
@@ -784,7 +784,7 @@ def handler_wake_up(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('recognizer_loop:wake_up'))
+    self.bus.emit(Message('recognizer_loop:wake_up'))
 ...
 ```
 {% endtab %}
@@ -826,7 +826,7 @@ def handler_enclosure_notify_no_internet(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('enclosure.notify.no_internet'))
+    self.bus.emit(Message('enclosure.notify.no_internet'))
 ...
 ```
 {% endtab %}
@@ -871,7 +871,7 @@ def handler_enclosure_mouth_viseme_list(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('enclosure.mouth.viseme_list',
+    self.bus.emit(Message('enclosure.mouth.viseme_list',
                               {
   "start": timestamp,
   "visemes": [[CODE,END_TIME],...]}))
@@ -914,7 +914,7 @@ def handler_mycroft_eyes_default(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.eyes.default'))
+    self.bus.emit(Message('mycroft.eyes.default'))
 ...
 ```
 {% endtab %}
@@ -952,7 +952,7 @@ def handler_mycroft_mic_listen(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.mic.listen'))
+    self.bus.emit(Message('mycroft.mic.listen'))
 ...
 ```
 {% endtab %}
@@ -992,7 +992,7 @@ def handler_mycroft_mic_mute(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.mic.mute'))
+    self.bus.emit(Message('mycroft.mic.mute'))
 ...
 ```
 {% endtab %}
@@ -1032,7 +1032,7 @@ def handler_mycroft_mic_unmute(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.mic.unmute'))
+    self.bus.emit(Message('mycroft.mic.unmute'))
 ...
 ```
 {% endtab %}
@@ -1085,7 +1085,7 @@ def handler_mycroft_audio_service_play(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.audio.service.play'))
+    self.bus.emit(Message('mycroft.audio.service.play'))
 ...
 ```
 {% endtab %}
@@ -1136,7 +1136,7 @@ def handler_mycroft_audio_service_stop(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.audio.service.stop'))
+    self.bus.emit(Message('mycroft.audio.service.stop'))
 ...
 ```
 {% endtab %}
@@ -1187,7 +1187,7 @@ def handler_mycroft_audio_service_pause(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.audio.service.pause'))
+    self.bus.emit(Message('mycroft.audio.service.pause'))
 ...
 ```
 {% endtab %}
@@ -1238,7 +1238,7 @@ def handler_mycroft_audio_service_resume(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.audio.service.resume'))
+    self.bus.emit(Message('mycroft.audio.service.resume'))
 ...
 ```
 {% endtab %}
@@ -1289,7 +1289,7 @@ def handler_mycroft_audio_service_next(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.audio.service.next'))
+    self.bus.emit(Message('mycroft.audio.service.next'))
 ...
 ```
 {% endtab %}
@@ -1340,7 +1340,7 @@ def handler_mycroft_audio_service_prev(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.audio.service.prev'))
+    self.bus.emit(Message('mycroft.audio.service.prev'))
 ...
 ```
 {% endtab %}
@@ -1391,7 +1391,7 @@ def handler_mycroft_audio_service_track_info(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.audio.service.track_info'))
+    self.bus.emit(Message('mycroft.audio.service.track_info'))
 ...
 ```
 {% endtab %}
@@ -1431,7 +1431,7 @@ def handler_mycroft_audio_service_track_info_reply(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.audio.service.track_info_reply'))
+    self.bus.emit(Message('mycroft.audio.service.track_info_reply'))
 ...
 ```
 {% endtab %}
@@ -1471,7 +1471,7 @@ def handler_mycroft_audio_service_list_backends(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.audio.service.list_backends'))
+    self.bus.emit(Message('mycroft.audio.service.list_backends'))
 ...
 ```
 {% endtab %}
@@ -1519,7 +1519,7 @@ def handler_mycroft_volume_increase(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.volume.increase',
+    self.bus.emit(Message('mycroft.volume.increase',
                               {"play_sound": True}))
 ...
 ```
@@ -1566,7 +1566,7 @@ def handler_mycroft_volume_decrease(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.volume.decrease',
+    self.bus.emit(Message('mycroft.volume.decrease',
                               {"play_sound": True}))
 ...
 ```
@@ -1613,7 +1613,7 @@ def handler_mycroft_volume_mute(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.volume.mute',
+    self.bus.emit(Message('mycroft.volume.mute',
                               {"speak_message": True}))
 ...
 ```
@@ -1660,7 +1660,7 @@ def handler_mycroft_volume_unmute(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.volume.unmute',
+    self.bus.emit(Message('mycroft.volume.unmute',
                               {"speak_message": True}))
 ...
 ```
@@ -1707,7 +1707,7 @@ def handler_mycroft_volume_set(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.volume.set',
+    self.bus.emit(Message('mycroft.volume.set',
                               {"percent": float}))
 ...
 ```
@@ -1744,7 +1744,7 @@ def handler_mycroft_volume_get(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.volume.get'))
+    self.bus.emit(Message('mycroft.volume.get'))
 ...
 ```
 {% endtab %}
@@ -1791,7 +1791,7 @@ def handler_mycroft_volume_get_response(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.volume.get.response',
+    self.bus.emit(Message('mycroft.volume.get.response',
                               {"percent": <volume percentage>,
                                "muted": <true/false>}))
 ...
@@ -1833,7 +1833,7 @@ def handler_mycroft_volume_duck(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.volume.duck'))
+    self.bus.emit(Message('mycroft.volume.duck'))
 ...
 ```
 {% endtab %}
@@ -1873,7 +1873,7 @@ def handler_mycroft_volume_unduck(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.volume.unduck'))
+    self.bus.emit(Message('mycroft.volume.unduck'))
 ...
 ```
 {% endtab %}
@@ -1915,7 +1915,7 @@ def handler_mycroft_skill_handler_start(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.skill.handler.start',
+    self.bus.emit(Message('mycroft.skill.handler.start',
                               {handler: class/function name}))
 ...
 ```
@@ -1950,7 +1950,7 @@ def handler_mycroft_skill_handler_complete(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.skill.handler.complete'))
+    self.bus.emit(Message('mycroft.skill.handler.complete'))
 ...
 ```
 {% endtab %}
@@ -1996,7 +1996,7 @@ def handler_mycroft_skill_enable_intent(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.skill.enable_intent',
+    self.bus.emit(Message('mycroft.skill.enable_intent',
                               {"intent_name": "name"}))
 ...
 ```
@@ -2043,7 +2043,7 @@ def handler_mycroft_skill_disable_intent(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.skill.disable_intent',
+    self.bus.emit(Message('mycroft.skill.disable_intent',
                               {"intent_name": "name"}))
 ...
 ```
@@ -2095,7 +2095,7 @@ def handler_mycroft_skills_loaded(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.skills.loaded',
+    self.bus.emit(Message('mycroft.skills.loaded',
                               {"id": <skill ID>,
                                "name": <skill name>,
                                "folder": <skill directory>,
@@ -2148,7 +2148,7 @@ def handler_mycroft_skills_loading_failure(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.skills.loading_failure',
+    self.bus.emit(Message('mycroft.skills.loading_failure',
                               {"id": <skill ID>,
                                "folder": <skill directory>}))
 ...
@@ -2199,7 +2199,7 @@ def handler_mycroft_skills_shutdown(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.skills.shutdown',
+    self.bus.emit(Message('mycroft.skills.shutdown',
                               {"id": <skill ID>,
                                "folder": <skill directory>}))
 ...
@@ -2241,7 +2241,7 @@ def handler_mycroft_skills_initialized(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.skills.initialized'))
+    self.bus.emit(Message('mycroft.skills.initialized'))
 ...
 ```
 {% endtab %}
@@ -2287,7 +2287,7 @@ def handler_mycroft_skills_list(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.skills.list',
+    self.bus.emit(Message('mycroft.skills.list',
                               {"skills": [<list of skill IDs>] }))
 ...
 ```
@@ -2328,7 +2328,7 @@ def handler_mycroft_skills_settings_update(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('mycroft.skills.settings.update'))
+    self.bus.emit(Message('mycroft.skills.settings.update'))
 ...
 ```
 {% endtab %}
@@ -2370,7 +2370,7 @@ def handler_msm_updating(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('msm.updating'))
+    self.bus.emit(Message('msm.updating'))
 ...
 ```
 {% endtab %}
@@ -2410,7 +2410,7 @@ def handler_msm_installing(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('msm.installing'))
+    self.bus.emit(Message('msm.installing'))
 ...
 ```
 {% endtab %}
@@ -2456,7 +2456,7 @@ def handler_msm_install_succeeded(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('msm.install.succeeded',
+    self.bus.emit(Message('msm.install.succeeded',
                               { "skill" : <skill name> }))
 ...
 ```
@@ -2506,7 +2506,7 @@ def handler_msm_install_failed(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('msm.install.failed',
+    self.bus.emit(Message('msm.install.failed',
                               {"skill" : <skill name>,
                                "error": <error code>}))
 ...
@@ -2548,7 +2548,7 @@ def handler_msm_installed(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('msm.installed'))
+    self.bus.emit(Message('msm.installed'))
 ...
 ```
 {% endtab %}
@@ -2588,7 +2588,7 @@ def handler_msm_updated(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('msm.updated'))
+    self.bus.emit(Message('msm.updated'))
 ...
 ```
 {% endtab %}
@@ -2628,7 +2628,7 @@ def handler_msm_removing(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('msm.removing'))
+    self.bus.emit(Message('msm.removing'))
 ...
 ```
 {% endtab %}
@@ -2674,7 +2674,7 @@ def handler_msm_remove_succeeded(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('msm.remove.succeeded',
+    self.bus.emit(Message('msm.remove.succeeded',
                               { "skill" : <skill name> }))
 ...
 ```
@@ -2724,7 +2724,7 @@ def handler_msm_remove_failed(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('msm.remove.failed',
+    self.bus.emit(Message('msm.remove.failed',
                               {"skill" : <skill name>,
                                "error": <error code>}))
 ...
@@ -2766,7 +2766,7 @@ def handler_msm_removed(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('msm.removed'))
+    self.bus.emit(Message('msm.removed'))
 ...
 ```
 {% endtab %}
@@ -2814,7 +2814,7 @@ def handler_skillmanager_deactivate(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('skillmanager.deactivate',
+    self.bus.emit(Message('skillmanager.deactivate',
                               {'skill': <skill directory name>}))
 ...
 ```
@@ -2855,7 +2855,7 @@ def handler_skillmanager_list(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('skillmanager.list'))
+    self.bus.emit(Message('skillmanager.list'))
 ...
 ```
 {% endtab %}
@@ -2895,7 +2895,7 @@ def handler_skillmanager_update(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('skillmanager.update'))
+    self.bus.emit(Message('skillmanager.update'))
 ...
 ```
 {% endtab %}
@@ -2937,7 +2937,7 @@ def handler_open(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('open'))
+    self.bus.emit(Message('open'))
 ...
 ```
 {% endtab %}
@@ -2977,7 +2977,7 @@ def handler_close(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('close'))
+    self.bus.emit(Message('close'))
 ...
 ```
 {% endtab %}
@@ -3017,7 +3017,7 @@ def handler_reconnecting(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('reconnecting'))
+    self.bus.emit(Message('reconnecting'))
 ...
 ```
 {% endtab %}
@@ -3059,7 +3059,7 @@ def handler_system_wifi_setup(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.wifi.setup'))
+    self.bus.emit(Message('system.wifi.setup'))
 ...
 ```
 {% endtab %}
@@ -3099,7 +3099,7 @@ def handler_system_wifi_reset(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.wifi.reset'))
+    self.bus.emit(Message('system.wifi.reset'))
 ...
 ```
 {% endtab %}
@@ -3139,7 +3139,7 @@ def handler_system_ntp_sync(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.ntp.sync'))
+    self.bus.emit(Message('system.ntp.sync'))
 ...
 ```
 {% endtab %}
@@ -3179,7 +3179,7 @@ def handler_system_ssh_enable(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.ssh.enable'))
+    self.bus.emit(Message('system.ssh.enable'))
 ...
 ```
 {% endtab %}
@@ -3219,7 +3219,7 @@ def handler_system_ssh_disable(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.ssh.disable'))
+    self.bus.emit(Message('system.ssh.disable'))
 ...
 ```
 {% endtab %}
@@ -3259,7 +3259,7 @@ def handler_system_reboot(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.reboot'))
+    self.bus.emit(Message('system.reboot'))
 ...
 ```
 {% endtab %}
@@ -3299,7 +3299,7 @@ def handler_system_shutdown(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.shutdown'))
+    self.bus.emit(Message('system.shutdown'))
 ...
 ```
 {% endtab %}
@@ -3339,7 +3339,7 @@ def handler_system_update(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('system.update'))
+    self.bus.emit(Message('system.update'))
 ...
 ```
 {% endtab %}
@@ -3381,7 +3381,7 @@ def handler_query(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('play:query',
+    self.bus.emit(Message('play:query',
                               { "phrase": <something to be played> }))
 ...
 ```
@@ -3503,7 +3503,7 @@ def handler_query(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('question:query',
+    self.bus.emit(Message('question:query',
                               {"phrase": "complete question"}))
 ...
 ```
@@ -3557,7 +3557,7 @@ def handler_query_response(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('question:query.response',
+    self.bus.emit(Message('question:query.response',
                               {"phrase": phrase,
                                "skill_id": <skill_id>,
                                "answer": "answer string",
@@ -3601,7 +3601,7 @@ def handler_action(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('question:action'))
+    self.bus.emit(Message('question:action'))
 ...
 ```
 {% endtab %}
@@ -3645,7 +3645,7 @@ def handler_private_mycroftai_has_alarm(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('private.mycroftai.has_alarm',
+    self.bus.emit(Message('private.mycroftai.has_alarm',
                               {"active_alarms": COUNT }))
 ...
 ```
@@ -3684,7 +3684,7 @@ def handler_skill_namespace_*(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('skill.namespace.*'))
+    self.bus.emit(Message('skill.namespace.*'))
 ...
 ```
 {% endtab %}
@@ -3720,7 +3720,7 @@ def handler_private_github_username_*(self, message):
 ```python
 ...
 def some_method(self):
-    self.emitter.emit(Message('private.github_username.*'))
+    self.bus.emit(Message('private.github_username.*'))
 ...
 ```
 {% endtab %}
