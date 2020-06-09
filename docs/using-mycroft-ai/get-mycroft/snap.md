@@ -1,11 +1,9 @@
 ---
 description: >-
-  Install the Mycroft Snap, a self-contained all-inclusive package for Linux.
+  Install the Mycroft Snap, a self-contained all-inclusive package for a broad range of Linux distributions.
 ---
 
 # Snap install
-
-Mycroft is now available as a Snap package. Providing a simple and secure means of installing Mycroft on a broad range of Linux distributions.
 
 {% hint style="info" %}
 The Snap package is considered an Alpha release. It is being actively developed however a number of known issues are listed below.
@@ -52,7 +50,8 @@ Alternatively you may start with a template Skill like [Hello World](https://git
 ### File locations
 As the Snaps are contained and cannot access the normal filesystem, the location of some files differ from a traditional Mycroft installation. 
 
-Skills are installed in `~/snap/mycroft/common/mycroft-data/skills/`
+Skills are installed in `~/snap/mycroft/common/mycroft-data/skills/`  
+
 Logs for the Snap will show in the CLI or can be accessed directly at `~/snap/mycroft/common/logs/`
 
 Once the Mycroft Snap is up and running, adding a Skill to the correct directory, or modifying a Skill that's already there will automatically reload the Skill allowing you to quickly iterate on your code.
