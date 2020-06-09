@@ -21,7 +21,7 @@ Picroft is specifically packaged to run on a Raspberry Pi 3 or 3B+. It is built 
 
 ### Mycroft for Linux
 
-If you are a technical user, run Mycroft on your favorite Linux distro, including Ubuntu/Debian, Arch, Fedora. Install it using either a shell script or a standalone installer. There are some installers available for specific platforms, like KDE Plasma.
+If you are a technical user, run Mycroft on your favorite Linux distro, including Ubuntu/Debian, Arch, Fedora. Install it using either a shell script or a standalone installer.
 
 {% page-ref page="linux.md" %}
 
