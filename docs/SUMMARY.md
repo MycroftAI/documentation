@@ -15,6 +15,7 @@
   * [Mark 1](using-mycroft-ai/get-mycroft/mark-1.md)
   * [Picroft](using-mycroft-ai/get-mycroft/picroft.md)
   * [Linux](using-mycroft-ai/get-mycroft/linux.md)
+  * [Snap Package](using-mycroft-ai/get-mycroft/snap.md)
   * [Mac OS and Windows with VirtualBox](using-mycroft-ai/get-mycroft/macos-and-windows-with-virtualbox.md)
   * [Docker](using-mycroft-ai/get-mycroft/docker.md)
   * [Android](using-mycroft-ai/get-mycroft/android.md)
