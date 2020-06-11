@@ -9,13 +9,13 @@ description: >-
 
 ## Introduction
 
-Similarly to the common play framework the common query framework handles the common use case "general information" or question answering. Many skills may implement handlers for "what is X" or "when did Y", this allows all these skills be queried and a single "best" answer to be selected.
+The Common Query Framework handles the common use case of "general information" or question answering. Many Skills may implement handlers for "what is X" or "when did Y", the Common Query Framework allows all these Skills be queried and a single "best" answer to be selected. This is similar to the Common Play Framework that handles the common use of "playing" music or other media. 
 
-The common query skill system is lead by the *fallback_query skill*. This skill handles queries matching a question pattern such as "What is the height of the Eiffle Tower" and "When is lunch". A matched question will be sent to all skills based upon the `CommonQuerySkill` base class. The skills will return wether they can answer the query along with an answer when applicable. The "best" match will be selected and spoken to the user.
+The Common Query Skill System is led by the [Query Fallback Skill](https://github.com/MycroftAI/skill-query). This Skill handles queries matching a question pattern such as "What is the height of the Eiffle Tower" and "When is lunch". A matched question will be sent to all Skills based upon the `CommonQuerySkill` base class. The Skills will return wether they can answer the query along with an answer when applicable. The "best" match will be selected and spoken to the user.
 
 ## CommonQuerySkill
 
-A skill interfacing with the common query framework inherits from the the `CommonQuerySkill` and needs to define a method `CQS_match_query_phrase()` taking an utterance as argument.
+A Skill interfacing with the Common Query Framework inherits from the the `CommonQuerySkill` and needs to define a method `CQS_match_query_phrase()` taking an utterance as argument.
 
 The general structure is:
 
@@ -43,14 +43,14 @@ The input query is returned to map the query to the answer.
 CQSMatchLevel is an Enum with the possible values
 
 
-- `CQSMatchLevel.EXACT`: The skill is very confident that it has the precise answer the user is looking for. Category match and a known entity is referenced.
-- `CQSMatchLevel.CATEGORY`: The skill could determine that the type of question matches a category that the skill is good at finding.
-- `CQSMatchLevel.GENERAL`: This skill tries to answer all questions and found an answer. 
+- `CQSMatchLevel.EXACT`: The Skill is very confident that it has the precise answer the user is looking for. There was a category match and a known entity is referenced.
+- `CQSMatchLevel.CATEGORY`: The Skill could determine that the type of question matches a category that the Skill is good at finding.
+- `CQSMatchLevel.GENERAL`: This Skill tries to answer all questions and found an answer. 
 
 
 ## An Example
 
-Let's make a simple skill that tells us the age of the various Monty Python members. A quick draft looks like this. (You can find the complete code [here](https://github.com/forslund/common-query-tutorial))
+Let's make a simple Skill that tells us the age of the various Monty Python members. A quick draft looks like this. (You can find the complete code [here](https://github.com/forslund/common-query-tutorial))
 
 
 ```python
@@ -58,7 +58,7 @@ from mycroft.skills.common_query_skill import CommonQuerySkill, CQSMatchLevel
 
                                                                                 
                                                                                 
-# Dict mapping python members to their age and wether they're alive or dead     
+# Dict mapping python members to their age and whether they're alive or dead     
 PYTHONS = {
     'eric idle': (77,'alive'),
     'michael palin': (77, 'alive'),
@@ -120,9 +120,9 @@ def create_skill():
     return PythonAgeSkill()
 ```
 
-As seen above the `CQS_match_query_phrase()` checks if this is an age related utterance and if the utterance contains the name of a Monty Python member. If both criterias are met it returns a match with a `CQSMatchLevel.CATEGORY` confidence together with a rendereded dialog with the answer.
+As seen above the `CQS_match_query_phrase()` checks if this is an age related utterance and if the utterance contains the name of a Monty Python member. If both criteria are met it returns a match with a `CQSMatchLevel.CATEGORY` confidence together with a rendered dialog containing the answer.
 
-If both criterias aren't fulfilled the method will return None indicating that it can't answer the query.
+If both criteria are not fulfilled the method will return `None` indicating that it can't answer the query.
 
 This will be able to provide answers to queries such as
 
@@ -130,13 +130,13 @@ This will be able to provide answers to queries such as
 
 > "what's Eric Idle's age"
 
-To make this more exact we can add support for checking for the words "monty python", and if present return the highest confidence
+To make this more exact we can add support for checking for the words "monty python", and if present return the highest confidence.
 
-The method for parsing the example is quite simplistic but there are many different toolkits out there for doing the question parsing. [Adapt](https://pypi.org/project/adapt-parser/), [little questions](https://pypi.org/project/little-questions/), [padaos](https://pypi.org/project/padaos/) and may more!
+The method for parsing the example is quite simplistic but there are many different toolkits out there for doing the question parsing. [Adapt](https://pypi.org/project/adapt-parser/), [little questions](https://pypi.org/project/little-questions/), [padaos](https://pypi.org/project/padaos/) and many more!
 
 
 ## Better matching
-If we want to make sure this skill is used if the user explicitly states it's the age of a Monty Python member, a slight modification to the skill can be made:
+If we want to make sure this Skill is used when the user explicitly states it's the age of a Monty Python member, a slight modification to the Skill can be made:
 
 We'll change the end of the `CQS_match_query_phrase()` method to
 
@@ -149,12 +149,12 @@ We'll change the end of the `CQS_match_query_phrase()` method to
             return (utt, confidence, self.format_answer(python))
 ```
 
-So if the utterance contains the phrase "monty python" the confidence will be set to `CQSMatchLevel.EXACT` making the skill very very likely to be chosen to answer the query.
+So if the utterance contains the phrase "monty python" the confidence will be set to `CQSMatchLevel.EXACT` making the Skill very very likely to be chosen to answer the query.
 
 
 ## CQS_action()
 
-In some cases the skill should do additional operations when selected as the best match. It could be prepare for follow-up questions or show an image on the screen. The `CQS_action()` method allows for this, when a skill is selected this method will be called.
+In some cases the Skill should do additional operations when selected as the best match. It could be prepared for follow-up questions or show an image on the screen. The `CQS_action()` method allows for this, when a Skill is selected this method will be called.
 
 The full signature is 
 
@@ -166,14 +166,14 @@ where `phrase` is the same phrase that were sent to `CQS_match_query_phrase()` a
 
 ### Example
 
-Let's make our python age skill gloat that it was selected by adding a `CQS_action()` method like this:
+Let's make our Python Age Skill gloat that it was selected by adding a `CQS_action()` method like this:
 
 ```python
     def CQS_action(self, utt, data):
-        self.log.info('I got selected! What you say about that Wolfram Alpha skill!?!?')
+        self.log.info('I got selected! What you say about that Wolfram Alpha Skill!?!?')
 ```
 
-Now each time the skill is called the above message will be added to the log! No useful you say? Hmm, yes... let's add something useful, like show the age on the Mark-1 display.
+Now each time the Skill is called the above message will be added to the log! Not very useful you say? Hmm, yes... let's add something useful, like show the age on the Mark-1 display.
 
 To accomplish this we need to get the age into the `CQS_action()` method in some way. we could store last age in as an internal variable but the more elegant way is to send data as part of the match tuple. To do this we must extend the returned match tuple from `CQS_match_query_phrase()` with a data entry. So the return statement becomes
 
@@ -188,7 +188,7 @@ The data structure declared here will be sent to the `CQS_Action()`method and we
 
 ```python
     def CQS_action(self, utt, data):
-        self.log.info('I got selected! What you say about that Wolfram Alpha skill!?!?')
+        self.log.info('I got selected! What you say about that Wolfram Alpha Skill!?!?')
         age = data.get('age')
         if age:
             self.log.info('Showing the age {}'.format(age))
