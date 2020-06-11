@@ -1,7 +1,5 @@
 # Test Runner
 
-## Setup the tests
-
 Voight Kampff is designed to test not only your Skill in isolation, but also ensuring Skills operate as expected when co-existing with different sets of Skills from the Marketplace.
 
 Parameters for this testing can be set using commandline flags or through a YAML configuration file.
