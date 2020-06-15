@@ -70,7 +70,12 @@ PYTHONS = {
 
 
 def python_in_utt(utterance):
-    """Check if one of the members of monty python
+    """Find a monty python member in the utterance.
+    Arguments:
+        utterance (str): Sentence to check for Monty Python members
+    Returns:
+        (str) name of Monty Python member or None
+    """
     for key in PYTHONS:
         if key in utterance.lower():
             # Return the found python
