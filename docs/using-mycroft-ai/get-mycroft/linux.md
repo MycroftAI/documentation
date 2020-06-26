@@ -43,8 +43,6 @@ Mycroft is now available as a Snap package. Providing a simple and secure means 
 
 The Snap package is currently considered an Alpha release. Find out more:
 
-{% page-ref page="snap.md" %}
-
 ### Installing via git clone
 
 The simplest way to install Mycroft for Linux is to clone the `mycroft-core` repo to your system and run a shell script, which will install all dependencies, and [Mycroft components](http://mycroft.ai/documentation/mycroft-software-hardware/).

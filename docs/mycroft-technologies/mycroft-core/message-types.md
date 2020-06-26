@@ -192,7 +192,9 @@ Start the pairing process when this event is emitted.
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -247,7 +249,9 @@ Pairing has completed
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -611,7 +615,9 @@ STT has detected the given text or text was injected as an utterance via the CLI
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1067,7 +1073,9 @@ Start playback of tracklist
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1118,7 +1126,9 @@ Stop playback
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1169,7 +1179,9 @@ Pause playback \(if supported\)
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1220,7 +1232,9 @@ Resume playback \(if supported by backend\)
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1271,7 +1285,9 @@ Skip to next track
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1322,7 +1338,9 @@ Skip to previous track
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...
@@ -1373,7 +1391,9 @@ Request track info from audio service
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="Message handler in MycroftSkill" %}
 ```python
 ...

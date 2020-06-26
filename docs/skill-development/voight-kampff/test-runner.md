@@ -21,6 +21,7 @@ mycroft-skill-testrunner vktest -t skill-to-test
 ```
 
 So to test the Mycroft Weather Skill we can run:
+
 ```bash
 mycroft-skill-testrunner vktest -t mycroft-weather
 ```
@@ -29,7 +30,7 @@ mycroft-skill-testrunner vktest -t mycroft-weather
 
 If the helper commands are unavailable you can run this directly from your mycroft-core installation:
 
-```bash 
+```bash
 cd ~/mycroft-core
 ./start-mycroft.sh vktest -t skill-to-test
 ```
@@ -108,16 +109,18 @@ mycroft-skill-testrunner vktests -c /path/to/your/configuration.yml
 
 ## Stacking test runs
 
-Voight Kampff has been designed to allow test runs to be stacked. 
+Voight Kampff has been designed to allow test runs to be stacked.
 
 When you execute a test run the files for that test will be copied into `mycroft-core/test/integrationtests/voight_kampff/features/`
 
 The test files will remain there until cleared, or overwritten. As such each test you run will also execute all previous tests. For example running:
+
 ```bash
 mycroft-start vktest -t mycroft-weather
 ```
 
 Will test only the Weather Skill. However if we then run:
+
 ```bash
 mycroft-start vktest -t mycroft-timer
 ```
@@ -127,8 +130,10 @@ Then both the Weather and Timer Skill will be tested.
 ## Clearing the test files
 
 To avoid this, or to clean up your system after running tests, we can clear all existing test files:
+
 ```bash
 mycroft-start vktest clear
 ```
 
 This will remove all of the Feature and custom Step files that have been transferred during our previous test runs.
+

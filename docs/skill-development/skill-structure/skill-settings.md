@@ -33,7 +33,7 @@ To see it in action, lets look at a simple example from the [Mycroft Date-Time S
                         "name": "show_time",
                         "type": "checkbox",
                         "label": "Show digital clock when idle",
-                        "value": "false"
+                        "value": "true"
                     }
                 ]
             }
@@ -52,14 +52,14 @@ skillMetadata:
           - name: show_time
             type: checkbox
             label: Show digital clock when idle
-            value: "false"
+            value: "true"
 ```
 
 Notice that the value of `false` is surrounded by "quotation marks". This is because Mycroft expects a string of `"true"` or `"false"` rather than a Boolean.
 
 Both of these files would result in the same settings block.
 
-![Date Time Skill Settings](https://github.com/MycroftAI/documentation/tree/cd9d3095c33a305decd6295eb0a57fc97d471c18/docs/.gitbook/assets/date-time-settings.png)
+![](../../.gitbook/assets/Date-Time-Settings.png)
 
 It is up to your personal preference which syntax you choose.
 

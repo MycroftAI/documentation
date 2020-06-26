@@ -9,7 +9,7 @@ description: >-
 
 ## Introduction
 
-The Common Query Framework handles the common use case of "general information" or question answering. Many Skills may implement handlers for "what is X" or "when did Y", the Common Query Framework allows all these Skills be queried and a single "best" answer to be selected. This is similar to the Common Play Framework that handles the common use of "playing" music or other media. 
+The Common Query Framework handles the common use case of "general information" or question answering. Many Skills may implement handlers for "what is X" or "when did Y", the Common Query Framework allows all these Skills be queried and a single "best" answer to be selected. This is similar to the Common Play Framework that handles the common use of "playing" music or other media.
 
 The Common Query Skill System is led by the [Query Fallback Skill](https://github.com/MycroftAI/skill-query). This Skill handles queries matching a question pattern such as "What is the height of the Eiffle Tower" and "When is lunch". A matched question will be sent to all Skills based upon the `CommonQuerySkill` base class. The Skills will return wether they can answer the query along with an answer when applicable. The "best" match will be selected and spoken to the user.
 
@@ -42,22 +42,19 @@ The input query is returned to map the query to the answer.
 
 CQSMatchLevel is an Enum with the possible values
 
-
-- `CQSMatchLevel.EXACT`: The Skill is very confident that it has the precise answer the user is looking for. There was a category match and a known entity is referenced.
-- `CQSMatchLevel.CATEGORY`: The Skill could determine that the type of question matches a category that the Skill is good at finding.
-- `CQSMatchLevel.GENERAL`: This Skill tries to answer all questions and found an answer. 
-
+* `CQSMatchLevel.EXACT`: The Skill is very confident that it has the precise answer the user is looking for. There was a category match and a known entity is referenced.
+* `CQSMatchLevel.CATEGORY`: The Skill could determine that the type of question matches a category that the Skill is good at finding.
+* `CQSMatchLevel.GENERAL`: This Skill tries to answer all questions and found an answer. 
 
 ## An Example
 
-Let's make a simple Skill that tells us the age of the various Monty Python members. A quick draft looks like this. (You can find the complete code [here](https://github.com/forslund/common-query-tutorial))
-
+Let's make a simple Skill that tells us the age of the various Monty Python members. A quick draft looks like this. \(You can find the complete code [here](https://github.com/forslund/common-query-tutorial)\)
 
 ```python
 from mycroft.skills.common_query_skill import CommonQuerySkill, CQSMatchLevel
 
-                                                                                
-                                                                                
+
+
 # Dict mapping python members to their age and whether they're alive or dead     
 PYTHONS = {
     'eric idle': (77,'alive'),
@@ -132,15 +129,15 @@ If both criteria are not fulfilled the method will return `None` indicating that
 This will be able to provide answers to queries such as
 
 > "how old is Graham Chapman"
-
+>
 > "what's Eric Idle's age"
 
 To make this more exact we can add support for checking for the words "monty python", and if present return the highest confidence.
 
 The method for parsing the example is quite simplistic but there are many different toolkits out there for doing the question parsing. [Adapt](https://pypi.org/project/adapt-parser/), [little questions](https://pypi.org/project/little-questions/), [padaos](https://pypi.org/project/padaos/) and many more!
 
-
 ## Better matching
+
 If we want to make sure this Skill is used when the user explicitly states it's the age of a Monty Python member, a slight modification to the Skill can be made:
 
 We'll change the end of the `CQS_match_query_phrase()` method to
@@ -156,12 +153,11 @@ We'll change the end of the `CQS_match_query_phrase()` method to
 
 So if the utterance contains the phrase "monty python" the confidence will be set to `CQSMatchLevel.EXACT` making the Skill very very likely to be chosen to answer the query.
 
-
-## CQS_action()
+## CQS\_action\(\)
 
 In some cases the Skill should do additional operations when selected as the best match. It could be prepared for follow-up questions or show an image on the screen. The `CQS_action()` method allows for this, when a Skill is selected this method will be called.
 
-The full signature is 
+The full signature is
 
 ```python
     def CQS_action(self, utt, data):
@@ -187,9 +183,7 @@ To accomplish this we need to get the age into the `CQS_action()` method in some
             return (utt, confidence, self.format_answer(python), data)
 ```
 
-
-The data structure declared here will be sent to the `CQS_Action()`method and we can update the method to 
-
+The data structure declared here will be sent to the `CQS_Action()`method and we can update the method to
 
 ```python
     def CQS_action(self, utt, data):
@@ -199,3 +193,4 @@ The data structure declared here will be sent to the `CQS_Action()`method and we
             self.log.info('Showing the age {}'.format(age))
             self.enclosure.mouth_text(str(age))
 ```
+

@@ -21,8 +21,6 @@ Mycroft is an open source voice assistant that can be extended and expanded to t
 
 Want Mycroft to do something new? Teach Mycroft a skill, share it, and improve the experience for tens of thousands of people all over the world. This guide aims to provide you with resources to create familiar and consistent visual experiences with your expanding and innovative skills.
 
-
-
 ## VISUAL SKILL DEVELOPMENT API FOUNDATION
 
 Mycroft enabled devices with displays such as the Mark II, KDE Plasmoid provide skill developers the opportunity to create skills that can be empowered by both voice and screen interaction. The display interaction technology is based on the QML user interface markup language that gives you complete freedom to create in-depth innovative interactions without boundaries or provide you with simple templates within the Mycroft GUI framework that allow minimalistic display of text and images based on your skill development specifics and preferences.
@@ -125,7 +123,7 @@ When you design your skill with QML, Mycroft-GUI frameworks provides you with so
   }
   ```
 
-* Mycroft.ScrollableDelegate:  A delegate that displays skill visuals in a scroll enabled Kirigami Page. 
+* Mycroft.ScrollableDelegate: A delegate that displays skill visuals in a scroll enabled Kirigami Page.
 
   Example of using Mycroft.ScrollableDelegate
 

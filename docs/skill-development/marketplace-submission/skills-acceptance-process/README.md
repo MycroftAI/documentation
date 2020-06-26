@@ -36,13 +36,15 @@ Before submitting your Skill we assume you have:
 
   `mycroft-skill-testrunner /opt/mycroft/skills/your-skill-directory`
 
-When you are satisfied your Skill is ready, submit it for formal review by running: 
-```
+When you are satisfied your Skill is ready, submit it for formal review by running:
+
+```text
 mycroft-msk submit /opt/mycroft/skills/your-skill-directory
-``` 
+```
 
 If you don't have the mycroft-msk command available, you can manually activate the Mycroft virtual environment and run `msk`
-```
+
+```text
 source ~/mycroft-core/.venv/bin/activate
 msk submit /opt/mycroft/skills/your-skill-directory
 ```

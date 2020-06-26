@@ -128,7 +128,7 @@ def initialize(self):
 
 #### Intent handlers
 
-Previously the `initialize` function was used to register intents, however our new `@intent_handler` decorator is a cleaner way to achieve this. We will learn all about the different [Intents](../intents.md) shortly. You may also see the `@intent_file_handler` decorator used in Skills. This has been deprecated and you can now replace any instance of this with the simpler `@intent_handler` decorator.
+Previously the `initialize` function was used to register intents, however our new `@intent_handler` decorator is a cleaner way to achieve this. We will learn all about the different [Intents](https://github.com/MycroftAI/documentation/tree/6d83da34d06c9587d90bf7d68a42ab842c4835fe/docs/skill-development/intents.md) shortly. You may also see the `@intent_file_handler` decorator used in Skills. This has been deprecated and you can now replace any instance of this with the simpler `@intent_handler` decorator.
 
 In our current HelloWorldSkill we can see two different styles.
 
