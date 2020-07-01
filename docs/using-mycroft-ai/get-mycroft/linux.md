@@ -6,15 +6,6 @@ description: >-
 
 # Linux
 
-Mycroft is available for Linux, and can be installed via several methods.
-
-Currently, there are builds and/or instructions for installing Mycroft on:
-
-* Debian / Ubuntu
-* Arch
-* Mint
-* KDE Plasma 5 Supported Distributions including for the [Plasma-Mycroft Widget](https://github.com/KDE/plasma-mycroft)
-
 ## Prerequisites
 
 This section of documentation assumes the following:
