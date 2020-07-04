@@ -127,6 +127,31 @@ $ ./stop-mycroft.sh
 Stopping all mycroft-core services
 ```
 
+## Start Mycroft on boot
+
+You could create a mycroft service to get Mycroft automatic started on boot.
+
+For this create a file named `/etc/systemd/system/mycroft.service` with the following content:
+
+```text
+[Unit]
+Description=Mycroft AI
+After=pulseaudio.service
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/
+ExecStart=/home/pi/mycroft-core/bin/mycroft-start all && 
+ExecStop=/home/pi/mycroft-core/bin/mycroft-stop
+Type=forking
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
+```
+
+And enable the new created service with `sudo systemctl enable mycroft.service` .
+
 ## Pairing Mycroft for Linux
 
 Once successfully installed, you will need to **pair** your Mycroft for Linux **Device** with your [home.mycroft.ai](https://home.mycroft.ai) account.
