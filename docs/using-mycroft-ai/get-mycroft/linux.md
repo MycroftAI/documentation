@@ -150,7 +150,8 @@ Restart=no
 WantedBy=multi-user.target
 ```
 
-And enable the new created service with `sudo systemctl enable mycroft.service` .
+And enable the new created service with `sudo systemctl enable mycroft.service` . You could start Mycroft by running
+`service mycroft start` stop it by `service mycroft stop` and get the status by typing `service mycroft status`.
 
 ## Pairing Mycroft for Linux
 
