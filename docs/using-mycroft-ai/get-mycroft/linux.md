@@ -141,7 +141,7 @@ After=pulseaudio.service
 [Service]
 User=pi
 WorkingDirectory=/home/pi/
-ExecStart=/home/pi/mycroft-core/bin/mycroft-start all && 
+ExecStart=/home/pi/mycroft-core/bin/mycroft-start all
 ExecStop=/home/pi/mycroft-core/bin/mycroft-stop
 Type=forking
 Restart=no
@@ -150,8 +150,8 @@ Restart=no
 WantedBy=multi-user.target
 ```
 
-And enable the new created service with `sudo systemctl enable mycroft.service` . You could start Mycroft by running
-`service mycroft start` stop it by `service mycroft stop` and get the status by typing `service mycroft status`.
+Please modify `WorkingDirectory` and `User` to your needs. Enable the new created service with `sudo systemctl enable mycroft.service` . 
+You could start Mycroft by running `service mycroft start` stop it by `service mycroft stop` and get the status by typing `service mycroft status`.
 
 ## Pairing Mycroft for Linux
 
