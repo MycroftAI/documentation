@@ -74,6 +74,12 @@ If you experience any audio problems, please see the [Audio Troubleshooting Guid
 
 {% page-ref page="../troubleshooting/audio-troubleshooting.md" %}
 
+### Bluetooth devices
+
+Bluetooth audio devices are notoriously difficult and are not supported by default. At the time of writing, [this thread on the Community Forums](https://community.mycroft.ai/t/bluetooth-hsp-hfp/8199) is a good starting point. 
+
+If you have had success using Bluetooth devices with Picroft please contribute your experience and help us update this documentation for a more positive wireless future.
+
 ## Getting started with Picroft
 
 ### Downloading the disk image
