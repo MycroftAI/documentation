@@ -104,13 +104,7 @@ You can exit out of this `docker log` command by hitting Ctrl + C. The `--follow
 
 ## CLI Access
 
-You can interact with the CLI of the container by running the following command, this will connect you to the running container via bash:
-
-```bash
-docker exec -it mycroft /bin/bash
-```
-
-#### Accessing Mycroft CLI
+### Accessing Mycroft CLI
 
 You can interact with the CLI of the container by running the following command. This will connect you to the running container via `bash`:
 
