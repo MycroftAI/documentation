@@ -18,15 +18,15 @@ Mycroft is modular. Some components can be easily 'swapped out' for others:
 
 ### Wake Word detection
 
-A Wake Word is a phrase you use to tell Mycroft you're about to issue a command. By default, this is `Hey Mycroft`, but you can configure your own **Wake Word** in your [Mycroft Home](https://home.mycroft.ai) account.
+A Wake Word is a phrase you use to tell Mycroft you're about to issue a command. By default, this is `Hey Mycroft`, but you can configure your own Wake Word in your [Mycroft Home](https://home.mycroft.ai) account.
 
-There are two technologies that Mycroft.AI currently uses for **Wake Word** detection:
+There are two technologies that Mycroft.AI currently uses for Wake Word detection:
 
 * [PocketSphinx](https://github.com/cmusphinx/pocketsphinx): PocketSphinx is part of the broader [CMUSphinx package](https://cmusphinx.github.io/), developed by [Carnegie Mellon University](https://www.cmu.edu). PocketSphinx is a lightweight speech recognition engine, specifically tuned for handheld and mobile devices.
 
-Because PocketSphinx is trained on English speech, your **Wake Word** currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well.
+Because PocketSphinx is trained on English speech, your Wake Word currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well.
 
-* [Precise](https://mycroft.ai/documentation/precise): Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what _words_ you want to use for your **Wake Word**. Instead, you train it on _sounds_. The downside is that Precise needs to be trained on your chosen **Wake Word**. Precise is the default **Wake Word** Listener for the "Hey Mycroft" wake word, PocketSphinx provides a fallback to this if Precise is unavailable.
+* [Precise](https://mycroft.ai/documentation/precise): Unlike PocketSphinx, which is based on Speech to Text technology, Precise is a neural network that is trained on audio data. It doesn't matter what _words_ you want to use for your Wake Word. Instead, you train it on _sounds_. The downside is that Precise needs to be trained on your chosen Wake Word. Precise is the default Wake Word Listener for the "Hey Mycroft" wake word, PocketSphinx provides a fallback to this if Precise is unavailable.
 
 ### Speech to Text \(STT\)
 
@@ -43,13 +43,13 @@ Mycroft also supports other STT engines that can be configured using the [Config
 
 ### Intent parser
 
-An **intent parser** is software which identifies what the user's _intent_ is based on their speech. An **intent parser** usually takes the output of a Speech to Text \(STT\) engine as an input.
+An intent parser is software which identifies what the user's _intent_ is based on their speech. An intent parser usually takes the output of a Speech to Text \(STT\) engine as an input.
 
 For example, Julie Speaks the following to Mycroft: `Hey Mycroft, tell me about the weather`
 
 Julie's _intent_ is to find out about the weather \(probably in her current location\).
 
-An **intent parser** can then match the _intent_ with a suitable **Skill** to handle the _intent_.
+An intent parser can then match the _intent_ with a suitable Skill to handle the _intent_.
 
 * [Adapt intent parser](https://github.com/MycroftAI/adapt): Adapt is the default intent parser for all Mycroft platforms. Adapt was developed by Mycroft and is available under an open source license.
 * [Padatious](https://github.com/MycroftAI/padatious): Padatious is a neural network based intent parser. Padatious is currently under active development by Mycroft and is available under an open source license. It is likely that some Mycroft platforms will switch to using Padatious in the future instead of Adapt.
@@ -71,20 +71,27 @@ even more tts engines are available but require manual configuration.
 
 The Mycroft middleware has two components:
 
-* [Mycroft Core](https://github.com/MycroftAI/mycroft-core): this code, written in Python, is the core software that provides the 'glue' between other modules. Mycroft Core is available under an open source license.
-* [Mycroft Home and Mycroft API](https://home.mycroft.ai): this is the platform where data on **Users** and **Devices** is held. This platform provides abstraction services, such as storing API keys that are used to access third-party services to provide **Skill** functionality. The code for this platform is not publicly available.
+* [Mycroft Core](https://github.com/MycroftAI/mycroft-core): this code, written in Python, is the core software that provides the 'glue' between other modules. Mycroft Core is available under an Apache 2.0 open source license.
+* [Mycroft Home and Mycroft API](https://home.mycroft.ai): this is the platform where data on Users and Devices is held. This platform provides abstraction services, such as storing API keys that are used to access third-party services to provide Skill functionality. The code for this platform is available under an AGPL 3.0 open source license.
 
 ### Mycroft Skills
 
-[Mycroft Skills](https://github.com/MycroftAI/mycroft-skills) are like 'add-ons' or 'plugins' that provide additional functionality. **Skills** can be developed by Mycroft Developers, or by Community Developers, and vary in their functionality and maturity.
+[Mycroft Skills](https://github.com/MycroftAI/mycroft-skills) are like 'add-ons' or 'plugins' that provide additional functionality. Skills can be developed by Mycroft Developers, or by Community Developers, and vary in their functionality and maturity.
 
-[Mycroft Skills Management \(msm\)](https://github.com/MycroftAI/mycroft-skills-kit) is a tool assisting with the installation and management of **Skills**.
+[Mycroft Skills Kit (MSK)](https://github.com/mycroftai/mycroft-skills-kit) is a Python-based utility that has been created to make it easier for Skill Authors to create, test and submit Skills to the [Skills Marketplace](https://market.mycroft.ai).
+
+{% page-ref page="mycroft-skills-kit.md" %}
+
+[Mycroft Skills Manager (MSM)](https://github.com/mycroftai/mycroft-skills-manager) is a command line tool used to add, manage and remove Skills on any Mycroft installation.
+
+{% page-ref page="msm.md" %}
 
 ### Devices and Enclosures
 
-Mycroft is designed to run on many different platforms - called **Devices**, with different hardware, called **Enclosures**.
+Mycroft is designed to run on many different platforms. Each dedicated platform is called a device, these include:
 
-* **Mark 1** - a software image of Mycroft designed to be installed on the Mycroft Mark 1 - a reference hardware device
-* **Picroft** - a software image of Mycroft designed to be installed on Raspberry Pi 3
-* **Android** - a software image of Mycroft designed to be installed on Android devices
+* **Mark 1** - our first reference hardware device using a dedicated software image.
+* **Mark 2** - our latest reference hardware device using a dedicated software image.
+* **Picroft** - any Raspberry Pi 3 or 4 that is running the Picroft software image.
 
+The enclosure refers to the specific code that is required for that device. It might define unique functionality such as the eyes on the Mark 1, or a specific way of interacting with the hardware, such as controlling the volume levels at a hardware level via i2c.

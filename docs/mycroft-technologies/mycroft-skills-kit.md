@@ -6,7 +6,7 @@ description: >-
 
 # Mycroft Skills Kit
 
-The Mycroft Skills Kit - `msk` - is a Python-based utility that has been created to make it easier for **Skill** Authors to create, test and submit **Skills** to the [Mycroft Skills Repo](https://github.com/mycroftai/mycroft-skills). We hope this utility helps to shorten the development cycle, and remove some of the tedious parts of **Skill** creation.
+The Mycroft Skills Kit - `msk` - is a Python-based utility that has been created to make it easier for **Skill** Authors to create, test and submit **Skills** to the [Skills Marketplace](https://market.mycroft.ai). We hope this utility helps to shorten the development cycle, and remove some of the tedious parts of **Skill** creation.
 
 `msk` currently supports the following features:
 

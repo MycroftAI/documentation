@@ -1,14 +1,14 @@
 ---
 description: >-
-  Mycroft Skills Manager \(msm\) is a command line tool used to add, manage and
+  Mycroft Skills Manager (msm) is a command line tool used to add, manage and
   remove Skills on any Mycroft installation.
 ---
 
 # Mycroft Skills Manager
 
-Mycroft Skills Manager \(msm\) is a command line tool used to add, manage and remove **Skills** on any Mycroft installation. It can install any **Skill** listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills). `msm` is a handy tool for Developers and those who may frequently reconfigure, install and uninstall **Skills**.
+Mycroft Skills Manager \(MSM\) is a command line tool used to add, manage and remove Skills on any Mycroft installation. It can install any Skill listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills) or from any Github repository. `msm` is a handy tool for Developers and those who may frequently reconfigure, install and uninstall Skills.
 
-## Using Mycroft Skills Manager - msm
+## Using Mycroft Skills Manager
 
 `msm` has recently been rewritten in Python \(`msm` was previously a `bash` script\). In order to use `msm`, you will first need to enter the Mycroft _virtual environment_, `venv`, using the following command:
 
@@ -16,7 +16,7 @@ Mycroft Skills Manager \(msm\) is a command line tool used to add, manage and re
 
 `(.venv) kathyreid@kathyreid-N76VZ:~/mycroft-core$`
 
-If you are using a Picroft or Mark 1 **Device**, you can activate the `.venv` using the command:
+If you are using a Picroft or Mark 1 Device, you can activate the `.venv` using the command:
 
 `mycroft-core$ source /opt/venvs/mycroft-core/bin/activate`
 
@@ -56,15 +56,15 @@ Examples:
   msm install https://github.com/penrods/Wink.git
 ```
 
-For instance to see information on a **Skill**, type:
+For instance to see information on a Skill, type:
 
 `msm info mycroft-mark-1`
 
-To list all available **Skills**, type:
+To list all available Skills, type:
 
 `msm list`
 
-This will show available **Skills**, and indicate which ones you have installed:
+This will show available Skills, and indicate which ones you have installed:
 
 ```text
 rss-skill
@@ -74,14 +74,14 @@ skill-autogui
 skill-caffeinewiz
 ```
 
-Search is very handy functionality if you're looking for a particular **Skill**:
+Search is very handy functionality if you're looking for a particular Skill:
 
 ```text
 pi@mark_1:/opt/mycroft/skills $ msm search twitter
 Possible match: twitter-skill
 ```
 
-Update is very handy for updating all the **Skills** on your **Device**:
+Update is very handy for updating all the Skills on your Device:
 
 `msm update`
 
@@ -110,7 +110,7 @@ Here are some common errors, what they mean, and how to resolve them.
 ERROR - Error running update_skill on skill-radio-rne: GitException(Git command failed: GitCommandError(['git', 'fetch'], 128, b"remote: Invalid username or password.nfatal: Authentication failed for 'https://github.com/ChrisFernandez/skill-radio-rne/'", b''))
 ```
 
-This error usually means that the GitHub repository for the **Skill** no longer exists, or has moved. Remove the **Skill** using `msm remove [Skill Name]` and then install a new **Skill**.
+This error usually means that the GitHub repository for the Skill no longer exists, or has moved. Remove the Skill using `msm remove [Skill Name]` and then install a new Skill.
 
 ### Uncommitted changes
 
@@ -120,7 +120,7 @@ ERROR - Error running update_skill on TranslateSkill: SkillModified(Uncommitted 
 )
 ```
 
-This error usually means that there is a difference between the **Skill** on the **Device** and the **Skill's** GitHub repo. Try re-installing the **Skill**.
+This error usually means that there is a difference between the Skill on the Device and the Skill's GitHub repo. Try re-installing the Skill.
 
 ### Git command error - not something we can merge
 
@@ -128,7 +128,7 @@ This error usually means that there is a difference between the **Skill** on the
 ERROR - Error running update_skill on skill-malibu-stacy: GitException(Git command failed: GitCommandError(['git', 'merge', '--ff-only', 'origin/HEAD'], 1, b'merge: origin/HEAD - not something we can merge', b''))
 ```
 
-This error usually means that there is no `remote url` defined for the Git repoository \(ie. named `origin` - which is the default name of a `remote url`\). This often happens during **Skill** development when `git init` is run _without_ defining a `remote url`. To resolve this error, add a `remote url` using the command `git remote add origin https://github.com/yourGitHubUsername/yourrepo.git`.
+This error usually means that there is no `remote url` defined for the Git repoository \(ie. named `origin` - which is the default name of a `remote url`\). This often happens during Skill development when `git init` is run _without_ defining a `remote url`. To resolve this error, add a `remote url` using the command `git remote add origin https://github.com/yourGitHubUsername/yourrepo.git`.
 
 ### Git command error - failed to update repo
 
@@ -177,13 +177,13 @@ total 48
 
 If you're still running into trouble with dependencies, which can happen during Skill Authoring, there are some other techniques available.
 
-To trigger a `pip` re-installing **Skill** dependencies, do the following:
+To trigger a `pip` re-installing Skill dependencies, do the following:
 
 * Remove the `/home/mycroft/.mycroft/.mycroft-skill` file
 * Remove the `/opt/mycroft/skills/.msm` file
 * Restart the `mycroft-skills` service by using the command `sudo service mycroft-skills restart`
 
-This will force both a **Skills** update and the re-installation of dependencies when the `mycroft-skills` service is re-started.
+This will force both a Skills update and the re-installation of dependencies when the `mycroft-skills` service is re-started.
 
-You can also use the utility `mycroft-pip` which will install dependencies into the Mycroft _virtual environment_ without activation \(ie. the 'activate' command\). Use `mycroft-pip` as you would regular `pip` for installing Python libraries on which your **Skill** depends.
+You can also use the utility `mycroft-pip` which will install dependencies into the Mycroft _virtual environment_ without activation \(ie. the 'activate' command\). Use `mycroft-pip` as you would regular `pip` for installing Python libraries on which your Skill depends.
 
