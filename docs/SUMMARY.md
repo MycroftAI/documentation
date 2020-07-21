@@ -98,7 +98,6 @@
   * [Audio Service](mycroft-technologies/mycroft-core/audio-service.md)
   * [MessageBus](mycroft-technologies/mycroft-core/message-bus.md)
   * [Message Types](mycroft-technologies/mycroft-core/message-types.md)
-  * [Mycroft Skills Manager](mycroft-technologies/mycroft-core/msm.md)
   * [Roadmap](mycroft-technologies/mycroft-core/mycroft-roadmap.md)
   * [Legacy Repo](mycroft-technologies/mycroft-core/legacy-repo.md)
 * [Adapt](mycroft-technologies/adapt/README.md)
@@ -108,6 +107,7 @@
 * [Mimic](mycroft-technologies/mimic-overview/README.md)
   * [Mimic Recording Studio](mycroft-technologies/mimic-overview/mimic-recording-studio.md)
 * [Mycroft Skills Kit](mycroft-technologies/mycroft-skills-kit.md)
+* [Mycroft Skills Manager](mycroft-technologies/mycroft-core/msm.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
 
