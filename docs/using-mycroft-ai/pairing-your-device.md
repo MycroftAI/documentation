@@ -76,7 +76,7 @@ Once you have your Registration Code, you can then go to home.mycroft.ai -&gt; A
 
 Use your Pairing Code, and provide a meaningful name and location for the Device. This will help you in the future if you have multiple devices. All other options will be pre-filled from your [default device settings](pairing-your-device.md#defaults), but can be changed for each individual device.
 
-!\[Adding a new Device\]\([https://mycroft.ai/wp-content/uploads/2019/06/Add-device.png](https://mycroft.ai/wp-content/uploads/2019/06/Add-device.png)"\)
+![Adding a new Device](https://mycroft.ai/wp-content/uploads/2019/06/Add-device.png)
 
 Once complete, click 'NEXT' to pair the Device. Wait a few seconds, and then you'll be taken to a new screen confirming your Pairing has been successfully completed.
 
