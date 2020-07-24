@@ -86,8 +86,7 @@ Let's take a look:
 #### Importing libraries
 
 ```python
-from adapt.intent import IntentBuilder
-from mycroft import MycroftSkill, intent_handler
+from mycroft import MycroftSkill, intent_file_handler
 ```
 
 This section of code imports the required _libraries_. Some libraries will be required on every Skill, and your skill may need to import additional libraries.
