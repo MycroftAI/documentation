@@ -95,9 +95,12 @@
 
 * [Technology Overview](mycroft-technologies/overview.md)
 * [Mycroft Core](mycroft-technologies/mycroft-core/README.md)
-  * [Audio Service](mycroft-technologies/mycroft-core/audio-service.md)
   * [MessageBus](mycroft-technologies/mycroft-core/message-bus.md)
   * [Message Types](mycroft-technologies/mycroft-core/message-types.md)
+  * [Skills Service](mycroft-technologies/mycroft-core/skills-service.md)
+  * [Audio Service](mycroft-technologies/mycroft-core/audio-service.md)
+  * [Voice Service](mycroft-technologies/mycroft-core/voice-service.md)
+  * [Enclosure](mycroft-technologies/mycroft-core/enclosures.md)
   * [Roadmap](mycroft-technologies/mycroft-core/mycroft-roadmap.md)
   * [Legacy Repo](mycroft-technologies/mycroft-core/legacy-repo.md)
 * [Adapt](mycroft-technologies/adapt/README.md)
