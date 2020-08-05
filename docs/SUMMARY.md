@@ -100,7 +100,7 @@
   * [Skills Service](mycroft-technologies/mycroft-core/skills-service.md)
   * [Audio Service](mycroft-technologies/mycroft-core/audio-service.md)
   * [Voice Service](mycroft-technologies/mycroft-core/voice-service.md)
-  * [Enclosure](mycroft-technologies/mycroft-core/enclosures.md)
+  * [Enclosure](mycroft-technologies/mycroft-core/enclosure.md)
   * [Roadmap](mycroft-technologies/mycroft-core/mycroft-roadmap.md)
   * [Legacy Repo](mycroft-technologies/mycroft-core/legacy-repo.md)
 * [Adapt](mycroft-technologies/adapt/README.md)
@@ -110,7 +110,7 @@
 * [Mimic](mycroft-technologies/mimic-overview/README.md)
   * [Mimic Recording Studio](mycroft-technologies/mimic-overview/mimic-recording-studio.md)
 * [Mycroft Skills Kit](mycroft-technologies/mycroft-skills-kit.md)
-* [Mycroft Skills Manager](mycroft-technologies/mycroft-core/msm.md)
+* [Mycroft Skills Manager](mycroft-technologies/mycroft-skills-manager.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
 

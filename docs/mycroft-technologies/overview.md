@@ -78,13 +78,11 @@ The Mycroft middleware has two components:
 
 [Mycroft Skills](https://github.com/MycroftAI/mycroft-skills) are like 'add-ons' or 'plugins' that provide additional functionality. Skills can be developed by Mycroft Developers, or by Community Developers, and vary in their functionality and maturity.
 
-[Mycroft Skills Kit (MSK)](https://github.com/mycroftai/mycroft-skills-kit) is a Python-based utility that has been created to make it easier for Skill Authors to create, test and submit Skills to the [Skills Marketplace](https://market.mycroft.ai).
+[Mycroft Skills Kit \(MSK\)](https://github.com/mycroftai/mycroft-skills-kit) is a Python-based utility that has been created to make it easier for Skill Authors to create, test and submit Skills to the [Skills Marketplace](https://market.mycroft.ai).
 
 {% page-ref page="mycroft-skills-kit.md" %}
 
-[Mycroft Skills Manager (MSM)](https://github.com/mycroftai/mycroft-skills-manager) is a command line tool used to add, manage and remove Skills on any Mycroft installation.
-
-{% page-ref page="msm.md" %}
+[Mycroft Skills Manager \(MSM\)](https://github.com/mycroftai/mycroft-skills-manager) is a command line tool used to add, manage and remove Skills on any Mycroft installation.
 
 ### Devices and Enclosures
 
@@ -95,3 +93,4 @@ Mycroft is designed to run on many different platforms. Each dedicated platform 
 * **Picroft** - any Raspberry Pi 3 or 4 that is running the Picroft software image.
 
 The enclosure refers to the specific code that is required for that device. It might define unique functionality such as the eyes on the Mark 1, or a specific way of interacting with the hardware, such as controlling the volume levels at a hardware level via i2c.
+

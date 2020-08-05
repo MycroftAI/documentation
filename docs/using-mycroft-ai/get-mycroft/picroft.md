@@ -57,8 +57,8 @@ If you are looking for a low-cost option to try out Picroft, we can recommend th
 
 | Brand | Model | Status | Type | Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| AmazonBasics | 	LJ-USM-001 | Working | USB Conference Microphone |
-| Andrea Electronics | C1-1028100-3 | Working | USB Dongle (Mic array & Speaker 3.5mm) | Superbeam Array Microphone Bundle SUMA (`08a8:0016`) |
+| AmazonBasics | LJ-USM-001 | Working | USB Conference Microphone |  |
+| Andrea Electronics | C1-1028100-3 | Working | USB Dongle \(Mic array & Speaker 3.5mm\) | Superbeam Array Microphone Bundle SUMA \(`08a8:0016`\) |
 | Blue | Snowball iCE | Working | Microphone |  |
 | Creative | VF0790 | Working | Mic and camera |  |
 | Google | AIY v1 | Working | Mic and speaker |  |
@@ -77,7 +77,7 @@ If you experience any audio problems, please see the [Audio Troubleshooting Guid
 
 ### Bluetooth devices
 
-Bluetooth audio devices are notoriously difficult and are not supported by default. At the time of writing, [this thread on the Community Forums](https://community.mycroft.ai/t/bluetooth-hsp-hfp/8199) is a good starting point. 
+Bluetooth audio devices are notoriously difficult and are not supported by default. At the time of writing, [this thread on the Community Forums](https://community.mycroft.ai/t/bluetooth-hsp-hfp/8199) is a good starting point.
 
 If you have had success using Bluetooth devices with Picroft please contribute your experience and help us update this documentation for a more positive wireless future.
 
@@ -326,7 +326,7 @@ There are several commands that are packaged into Picroft to help you with advan
 * `mycroft-help`: This command brings up help information
 * `mycroft-mic-test`: This command re-runs the microphone test from the guided setup
 * `mycroft-msk`: This command runs the [Mycroft Skills Kit](../../mycroft-technologies/mycroft-skills-kit.md)
-* `mycroft-msm`: This command runs the [Mycroft Skills Manager](../../mycroft-technologies/mycroft-core/msm.md)
+* `mycroft-msm`: This command runs the [Mycroft Skills Manager](https://github.com/MycroftAI/documentation/tree/e8cae1dda59b6054c57fdbe60599e3a1a623dcbc/docs/mycroft-technologies/mycroft-core/msm.md)
 * `mycroft-pip`: This command runs `pip` within the Mycroft Python `virtual environment` \(`venv`\). This is useful if you are installing dependencies for **Skills**.
 * `mycroft-say-to`:  This command sends a command to Picroft, just like you had 'spoken' a command. This is useful if your microphone is not working.
 * `mycroft-setup-wizard`: This command re-runs the guided setup
