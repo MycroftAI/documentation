@@ -1,9 +1,9 @@
 ---
 Description: TTS plugins handles converting Text to Speech
 ---
-## Creating a Mycroft TTS
+# Creating a Mycroft TTS
 
-All mycroft TTS plugins need to define a class based on the TTS base class from mycroft.tts
+All Mycroft TTS plugins need to define a class based on the TTS base class from mycroft.tts
 
 ```python
 from mycroft.tts import TTS
@@ -16,14 +16,14 @@ class myTTS(TTS):
 
 ```
 
-The `super()` call does some setup adding specific options to how mycroft will preprocess the sentence.
+The `super()` call does some setup adding specific options to how Mycroft will preprocess the sentence.
 
-- `audio_ext`: filetype of output, possible options 'wav' and 'mp3'
-- `phonetec_spelling`, True if Mycroft should preprocess some difficult to pronounce words (ex spotify) or provide the raw text to the tts.
-- `ssml_tags`: list of valid SSML tags for the TTS if any, otherwise None
-- validator a special class that verifies that the TTS is working in the current configuration.
+- `audio_ext`: filetype of output, possible options 'wav' and 'mp3'.
+- `phonetec_spelling`, True if Mycroft should preprocess some difficult to pronounce words (eg spotify) or provide the raw text to the TTS.
+- `ssml_tags`: list of valid SSML tags for the TTS if any, otherwise None.
+- `validator`: a special class that verifies that the TTS is working in the current configuration.
 
-It also regisers the module's config from the mycroft configuration in `self.config` as well as the current language in `self.lang`
+It also registers the module's config from the [Mycroft configuration](../../../using-mycroft-ai/customizations/config-manager.md) in `self.config` as well as the current language in `self.lang`
 
 For the following config snippet
 
@@ -40,17 +40,19 @@ Mycroft will register the `"example_tts"` part in the TTS's `self.config`
 
 ### `get_tts()`
 
-The `get_tts()` method will be called by Mycroft to generate audio and (optionally) phonemes. This is the main method that the plugin creator needs to implement.
+The `get_tts()` method will be called by Mycroft to generate audio and (optionally) phonemes. This is the main method that the plugin creator needs to implement. It is called with:
+- `sentence` (str): a piece of text to turn into audio.
+- `wav_file` (str): path to where Mycroft should store the generated audio data.
 
-It's called with a `sentence`, a piece of text to turn into audio, and a `wav_file` an path to where Mycroft would like to store the generated audio data.
+This method should generate audio data and return a Tuple:
+- path to written data (generally the input argument)
+- viseme list for synthesized audio
 
-This method should generate audio data and return a Tuple (path to written data (generally the input argument), phoneme list).
-
-As an example see the [get_tts for mimic2](https://github.com/MycroftAI/mycroft-core/blob/dev/mycroft/tts/mimic2_tts.py#L225)
+As an example see the [`get_tts` method for Mimic2](https://github.com/MycroftAI/mycroft-core/blob/dev/mycroft/tts/mimic2_tts.py#L225).
 
 ### TTS Validator
 
-To check if the TTS can be used a validator class is needed, this should inherit from `mycroft.tts.TTSValidaor`. It will be called with the TTS class as argument and will store it in `self.tts`.
+To check if the TTS can be used, a validator class is needed. This should inherit from `mycroft.tts.TTSValidaor`. It will be called with the TTS class as argument and will store it in `self.tts`.
 
 The following is the bare minimum implementation:
 
@@ -78,4 +80,4 @@ setup([...],
       )
 ```
 
-Where example_tts is is the TTS module name for the plugin, my_tts is the python module and myTTS is the class in the module to return.
+Where `example_tts` is is the TTS module name for the plugin, `my_tts` is the Python module and `myTTS` is the class in the module to return.
