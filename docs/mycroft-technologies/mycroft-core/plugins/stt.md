@@ -1,7 +1,8 @@
 ---
 Description: STT plugins handle converting Speech to Text.
 ---
-# Speech To Text Plugin
+
+# STT Plugins
 
 All Mycroft STT Plugins need to provide a class derived from the STT base class in `mycroft.stt`.
 
@@ -9,7 +10,7 @@ When the `__init__()` method of the base class is run the config for that module
 
 For example, the following [Mycroft configuration](../../../using-mycroft-ai/customizations/config-manager.md):
 
-```json
+```javascript
   "stt": {
     "module": "example_stt",
     "example_stt": {
@@ -21,17 +22,16 @@ For example, the following [Mycroft configuration](../../../using-mycroft-ai/cus
 
 will load the `"example_stt"` structure from the `"stt"` section and provide that in `self.config`.
 
-## execute()
+## execute\(\)
 
 Each STT plugin class needs to define the `execute()` method taking two arguments:
 
-- `audio` ([AudioData](https://github.com/Uberi/speech_recognition/blob/master/reference/library-reference.rst#audiodataframe_data-bytes-sample_rate-int-sample_width-int---audiodata) object) - the audio data to be transcribed.  
-- `lang` (str) - _optional_ - the BCP-47 language code (currently not used in core).
+* `audio` \([AudioData](https://github.com/Uberi/speech_recognition/blob/master/reference/library-reference.rst#audiodataframe_data-bytes-sample_rate-int-sample_width-int---audiodata) object\) - the audio data to be transcribed.  
+* `lang` \(str\) - _optional_ - the BCP-47 language code \(currently not used in core\).
 
 The bare minimum STT class will look something like
 
 ```python
-
 class MySTT(STT):
     def execute(audio, language=None):
         # Handle audio data and return transcribed text
@@ -63,4 +63,5 @@ setup([...],
       )
 ```
 
-Where `example_stt` is is the STT module name for the plugin, my_stt is the Python module and mySTT is the class in the module to return.
+Where `example_stt` is is the STT module name for the plugin, my\_stt is the Python module and mySTT is the class in the module to return.
+
