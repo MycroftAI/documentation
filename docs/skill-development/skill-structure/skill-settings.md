@@ -109,7 +109,7 @@ Examples for each type of field are provided in JSON and YAML at the end of this
 
 Once settings have been defined using a `settingsmeta` file, they will be presented to the user on their personal [Skill Settings page](https://home.mycroft.ai/skills).
 
-When settings are fetched from the Mycroft server, they are saved into a `settings.json` file, also in the Skills root directory. This file is automatically created when a Skill is loaded even if the Skill does not have any settings. Your Skill then accesses the settings from this file.
+When settings are fetched from the Mycroft server, they are saved into a `settings.json` file, in the Skill's configuration directory (usually `~/congig/mycroft/skills/`). This file is automatically created when a Skill is loaded even if the Skill does not have any settings. Your Skill then accesses the settings from this file.
 
 ### Reading settings
 
