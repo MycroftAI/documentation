@@ -806,7 +806,7 @@ python3 -m mycroft.messagebus.send 'recognizer_loop:wake_up'
 
 ### enclosure.notify.no\_internet
 
-Detetected a connection error during STT
+Detected a connection error during STT
 
 | Producer | Consumer |
 | :--- | :--- |
@@ -1827,7 +1827,7 @@ python3 -m mycroft.messagebus.send 'mycroft.volume.get.response' '{ "percent": <
 
 ### mycroft.volume.duck
 
-Reduce the volume level temporarilly
+Reduce the volume level temporarily
 
 | Producer | Consumer |
 | :--- | :--- |

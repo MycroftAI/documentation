@@ -98,7 +98,7 @@ Mycroft: Raining and 14 degrees...
 
 ## Using context to enable **Intents**
 
-To make sure certain **Intents** can't be triggered unless some previous stage in aconversation has occured. Context can be used to create "bubbles" of available intent handlers.
+To make sure certain **Intents** can't be triggered unless some previous stage in a conversation has occured. Context can be used to create "bubbles" of available intent handlers.
 
 ```text
 User: Hey Mycroft, bring me some Tea

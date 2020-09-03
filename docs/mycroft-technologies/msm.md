@@ -128,7 +128,7 @@ This error usually means that there is a difference between the Skill on the Dev
 ERROR - Error running update_skill on skill-malibu-stacy: GitException(Git command failed: GitCommandError(['git', 'merge', '--ff-only', 'origin/HEAD'], 1, b'merge: origin/HEAD - not something we can merge', b''))
 ```
 
-This error usually means that there is no `remote url` defined for the Git repoository \(ie. named `origin` - which is the default name of a `remote url`\). This often happens during Skill development when `git init` is run _without_ defining a `remote url`. To resolve this error, add a `remote url` using the command `git remote add origin https://github.com/yourGitHubUsername/yourrepo.git`.
+This error usually means that there is no `remote url` defined for the Git repository \(ie. named `origin` - which is the default name of a `remote url`\). This often happens during Skill development when `git init` is run _without_ defining a `remote url`. To resolve this error, add a `remote url` using the command `git remote add origin https://github.com/yourGitHubUsername/yourrepo.git`.
 
 ### Git command error - failed to update repo
 

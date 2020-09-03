@@ -72,7 +72,7 @@ and so on.
         self.enclosure.mouth_display(img_code="HIAAAAAAAAAAAAAA", x=24, refresh=False)
 ```
 
-The code above clears the image by sending a string consisting of `HI` wich stands for a Width of 7 and a height of 8 and each A stands for a segment of 4 pixels in the off state.
+The code above clears the image by sending a string consisting of `HI` which stands for a Width of 7 and a height of 8 and each A stands for a segment of 4 pixels in the off state.
 
 @TODO I kinda get this, but I think we really need a grid image here to show how it works - to make it easier to understand.
 

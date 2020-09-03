@@ -213,7 +213,7 @@ $ pactl set-default-source 2
 $ pactl set-default-sink 1
 ```
 
-This would set the default input to be device 2 and the default output device to be 1. Your numbers will vary. A succsessful change will not have any additional output listed. Verify with `pactl info`
+This would set the default input to be device 2 and the default output device to be 1. Your numbers will vary. A successful change will not have any additional output listed. Verify with `pactl info`
 
 ### Echo cancellation
 
