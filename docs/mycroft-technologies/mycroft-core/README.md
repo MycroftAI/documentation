@@ -66,7 +66,7 @@ Each process tracks its state as one of:
 
 These states are defined in a comparable order. This means if a Process has the state `ALIVE`, then it must also be `STARTED`. Likewise, if a Process is `READY`, it must also be `ALIVE` and `STARTED`.
 
-These states can be set by calling the relevent method from the ProcessStatus class we initialized above:
+These states can be set by calling the relevant method from the ProcessStatus class we initialized above:
 
 * `status.set_started()`
 * `status.set_error()`

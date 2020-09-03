@@ -312,7 +312,7 @@ _NOTE: Picroft cannot connect to WiFi networks that operate on Channels 12 or 13
 
 ## Next steps
 
-Congratulations! You now have a fully functional Picroft, and can start exploring all the options you now have. Consider using it as a stand-alone voice assistant, or connect it to a monitor and keyboard, and develop straight away. If you don't have a monitor and keybaord, SSH is enabled by default so you can remotely connect to it straight away.
+Congratulations! You now have a fully functional Picroft, and can start exploring all the options you now have. Consider using it as a stand-alone voice assistant, or connect it to a monitor and keyboard, and develop straight away. If you don't have a monitor and keyboard, SSH is enabled by default so you can remotely connect to it straight away.
 
 Picroft uses a Raspbian Stretch Lite image under the hood - with Mycroft pre-installed - so everything you can do with Raspbian, you can do with Picroft. You can download other packages, get it running as a server - or more!
 

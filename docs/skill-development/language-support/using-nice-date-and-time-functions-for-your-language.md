@@ -131,7 +131,7 @@ The string '969' is used, and matches the first (and only) list entry. `{x_in_x0
 
 The result of the hundreds format is `{formatted_hundreds}`, that can be used as a component in other formats.
 
-In the hundreds format, we are only interested in how to pronounce the first digit of the houndreds, we use the `year_format` to put together the decade, hundreds and thousand formats laster.
+In the hundreds format, we are only interested in how to pronounce the first digit of the hundreds, we use the `year_format` to put together the decade, hundreds and thousand formats laster.
 
 
 ##### Components in the hundreds format
@@ -163,7 +163,7 @@ The thousand format will work on the four rightmost digits of the year. For `en-
 The first list entry handles thousands and the first decade (year 0-9) of a thousand, e.g. 3004, or 2000.
 
 The second list entry handles the hundreds in range 1100 to 1900 (e.g. 1800), and the third entry handles the hundreds above 1900, e.g. 2100.
-Note that since the first entry caught whole thousands, like 2000, the thrid entry will only catch the thousand with a century, like 2100.
+Note that since the first entry caught whole thousands, like 2000, the third entry will only catch the thousand with a century, like 2100.
 
 The fourth list entry handles whatever was not handled before, and are either below 2000, or before the first century of a thousand, e.g. 1864 or 3021.
 
@@ -221,7 +221,7 @@ The fourth entry handles years that are multiples of 100, e.g. 2000 (two thousan
 The fifth entry handles the first decade of a millennia, e.g. 2001 (two thousand one).
 The sixth entry handles the first decade of other years than millennia (millennia was caught earlier), e.g. 2101 (twenty one oh one).
 
-The sevneth entry handles the rest, e.g. 2018 (twenty eighteen).
+The seventh entry handles the rest, e.g. 2018 (twenty eighteen).
 
 The default entry is used if the year is larger than 9999.
 

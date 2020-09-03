@@ -74,7 +74,7 @@ From these three utterances, what will the extracted `Type` be:
 2. `deep fried`  
 3. `mashed`
 
-This `Type` will be available to use in your Skill's Intent Handler on the `message` obect. We can access this using:
+This `Type` will be available to use in your Skill's Intent Handler on the `message` object. We can access this using:
 
 ```text
 message.data.get('Type')

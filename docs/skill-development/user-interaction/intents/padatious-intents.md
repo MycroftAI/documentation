@@ -167,7 +167,7 @@ Look for {object}
 Find {object}
 ```
 
-There is no performance benefit to using parantheses expansion. When used appropriately, this syntax can be much clearer to read. However more complex structures should be broken down into multiple lines to aid readability and reduce false utterances being included in the model. Overuse can even result in the model training timing out, rendering the Skill unusable.
+There is no performance benefit to using parentheses expansion. When used appropriately, this syntax can be much clearer to read. However more complex structures should be broken down into multiple lines to aid readability and reduce false utterances being included in the model. Overuse can even result in the model training timing out, rendering the Skill unusable.
 
 ## Using it in a Skill
 

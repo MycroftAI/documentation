@@ -25,7 +25,7 @@ If the audio backend that is implemented plays media on another device than the 
 
 An audioservice can instantiate a number of backend objects so an instantiation function called `load_service()` needs to exist in the module. It will be called with the Mycroft audio configuration and a connection to the messagebus. The method should return a tuple with audio backends included in the file.
 
-The `load_service()` function can also be used to scan the local network for things like chromecasts and create an audioservice backend for each found device.
+The `load_service()` function can also be used to scan the local network for things like chromecast and create an audioservice backend for each found device.
 
 The basic layout of an Audioservice Plugin will be:
 
@@ -45,7 +45,7 @@ Example Audioservices can be found [here](https://github.com/MycroftAI/mycroft-c
 
 ### Entry point
 
-To make the audioservice detectable as an Audioserice Backend Plugin, the package needs to provide an entry point under the `mycroft.plugin.audioservice` namespace.
+To make the audioservice detectable as an Audioservice Backend Plugin, the package needs to provide an entry point under the `mycroft.plugin.audioservice` namespace.
 
 ```python
 setup([...],

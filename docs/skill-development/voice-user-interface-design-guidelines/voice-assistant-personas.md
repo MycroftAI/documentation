@@ -37,7 +37,7 @@ If your skill fits in this criteria it’s best to use the Mycroft Assistant Per
 
 Is your skill more unique and could benefit from its own personality?
 
-* A Branded Experience for example “Hello, I’m Mr. Peanutbutter and welcome to Hollywoo Stars and Celebrities: What Do They Know? Do They Know Things?? Let's Find Out!!”
+* A Branded Experience for example “Hello, I’m Mr. Peanutbutter and welcome to Hollywood Stars and Celebrities: What Do They Know? Do They Know Things?? Let's Find Out!!”
 * Trivia game or other game skill
 * Joke Skill
 * Storytelling Skill

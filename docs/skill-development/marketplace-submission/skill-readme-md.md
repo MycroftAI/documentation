@@ -64,7 +64,7 @@ This is the best option if you are unsure about what the final text should look 
 **2. Write a clear and concise issue message**
 
 * The title of an issue should be a very brief overview of the changes you are suggesting. If the changes are limited to a specific section or for a particular reason, say that here. An example might be, "Suggested changes to description for readability".  
-* In the main comment area, please detail the changes you are suggesting, and try to be descriptive about which section you are referring to. Instead of "there's a typo in skill", we might write "In the first intent example there is a typo, sklil should be skill."  
+* In the main comment area, please detail the changes you are suggesting, and try to be descriptive about which section you are referring to. Instead of "there's a typo in skill", we might write "In the first intent example there is a typo, skill should be skill."  
 * If you are proposing multiple changes, consider grouping them under headings.  
 * If you are proposing a block of text, consider using the 'quote' formatting to highlight it.
 

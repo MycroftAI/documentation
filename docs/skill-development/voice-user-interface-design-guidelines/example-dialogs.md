@@ -45,7 +45,7 @@ Here is an example of a First Draft Interaction of a Moon Phase Skill.
 | **User** | _Hey Mycroft, what are the phases of the moon?_ |
 | **Mycroft** | _A lunar cycle lasts 29.53 days and consists of four principal phases, the new moon, first quarter, full moon and third quarter. Would you like to know more?_ |
 | **User** | _Yes_ |
-| **Mycroft** | _The apparent shape of the moon between New Moon and First Quarter is known as Waxing Crescent, the apparent shape between First Quarter and Full Moon is known as Waxing Gibbuous. The moon is half illuminated in both First Quarter and Third Quarter, the use of the word quarter indicates the period within the cycle and not the illumination._ |
+| **Mycroft** | _The apparent shape of the moon between New Moon and First Quarter is known as Waxing Crescent, the apparent shape between First Quarter and Full Moon is known as Waxing Gibbous. The moon is half illuminated in both First Quarter and Third Quarter, the use of the word quarter indicates the period within the cycle and not the illumination._ |
 
 |  | Example Dialog 8 |
 | :--- | :--- |
@@ -94,7 +94,7 @@ The next step in the process is organizing the first pass of dialogs into groups
 | **User** | _Hey Mycroft, what are the phases of the moon?_ |
 | **Mycroft** | _A lunar cycle lasts 29.53 days and consists of four principal phases, the new moon, first quarter, full moon and third quarter. Would you like to know more?_ |
 | **User** | _Yes_ |
-| **Mycroft** | _The apparent shape of the moon between New Moon and First Quarter is known as Waxing Crescent, the apparent shape between First Quarter and Full Moon is known as Waxing Gibbuous. The First Quarter is half illuminated and is growing in illumination toward a Full Moon. The Last Quarter is half illuminated and shrinking in illumination toward a New Moon. A New Moon is not illuminated and not therefore not visible to the naked eye._ |
+| **Mycroft** | _The apparent shape of the moon between New Moon and First Quarter is known as Waxing Crescent, the apparent shape between First Quarter and Full Moon is known as Waxing Gibbous. The First Quarter is half illuminated and is growing in illumination toward a Full Moon. The Last Quarter is half illuminated and shrinking in illumination toward a New Moon. A New Moon is not illuminated and not therefore not visible to the naked eye._ |
 
 | **Scenario** | When the user needs Help |
 | :--- | :--- |

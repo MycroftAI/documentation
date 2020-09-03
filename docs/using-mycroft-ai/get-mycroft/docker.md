@@ -28,7 +28,7 @@ The Mycroft for Docker image is updated on [dockerhub](https://hub.docker.com/r/
 docker pull mycroftai/docker-mycroft
 ```
 
-Then follow the instuctions below for running Mycroft for Docker.
+Then follow the instructions below for running Mycroft for Docker.
 
 ### Installing via building the Docker image
 

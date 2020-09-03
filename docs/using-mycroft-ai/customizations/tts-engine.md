@@ -126,7 +126,7 @@ You will need to take note of your private "Access Key ID" and "Secret Access Ke
 
 ### Mycroft Configuration
 
-First, check the [list of available voices and languages](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html). Note that Polly does not provide a separate `langauge` attribute like other TTS options. The language is determined by which voice is chosen.
+First, check the [list of available voices and languages](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html). Note that Polly does not provide a separate `language` attribute like other TTS options. The language is determined by which voice is chosen.
 
 Then, install the `boto3` python module in the Mycroft virtual environment:
 
