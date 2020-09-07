@@ -165,6 +165,11 @@ or
 python3 -m mycroft.messagebus.send xxx.yyy.zzz '{"name": "value"}'
 ```
 
+A simple message looks like this:
+```bash
+python3 -m mycroft.messagebus.send speak '{"utterance" : "I am good"}'
+```
+
 ## Guidelines for Message Usage
 
 Private messages can be placed on the Messagebus following these naming conventions:  
