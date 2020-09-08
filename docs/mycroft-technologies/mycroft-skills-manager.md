@@ -1,5 +1,3 @@
-# Mycroft Skills Manager
-
 ---
 description: >-
   Mycroft Skills Manager (msm) is a command line tool used to add, manage and
