@@ -8,7 +8,7 @@ description: >-
 # Glossary of terms
 
 * **Device** - the platform you have Mycroft installed on. This might be using an **Enclosure**, like the Mark 1, or on a Raspberry Pi, or it might be on a Linux desktop. Each **Device** needs to be **Paired** with your Mycroft Home account before it can be used.
-* **Enclosure** - a hardware implmentation of Mycroft. Examples include the Mark 1 and Picroft.
+* **Enclosure** - a hardware implementation of Mycroft. Examples include the Mark 1 and Picroft.
 * **Fallback** - a **Skill** that is designated to be a 'catch-all' when Mycroft cannot interpret the **Intent** from an **Utterance**.
 * **Intent** - when a user speaks an **Utterance** to Mycroft, Mycroft tries to interpret the **Intent** of the **Utterance**, and match the **Intent** will a **Skill**.
 * **Mark 1** - The Mark 1 device is an **Enclosure** for Mycroft, based on Raspberry Pi. It is designed as a reference hardware device, and is able to be easily modified, hacked and extended.

@@ -77,7 +77,7 @@ mycroft-pip install mycroft-messagebus-client
 
 #### MycroftBusClient\(\)
 
-The `MycroftBusClient()` object can be setup to connect to any host and port as well as any endpont on that host. this makes it quite versitile and will work on the main bus as well as on a gui bus. If no arguments are provided it will try to connect to a local instance of mycroftr core on the default endpoint and port.
+The `MycroftBusClient()` object can be setup to connect to any host and port as well as any endpoint on that host. this makes it quite versatile and will work on the main bus as well as on a gui bus. If no arguments are provided it will try to connect to a local instance of Mycroft-core on the default endpoint and port.
 
 #### Message\(\)
 

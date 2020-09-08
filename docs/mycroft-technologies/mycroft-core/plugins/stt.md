@@ -49,7 +49,7 @@ The base STT, this handles the audio in "batch mode" taking a complete audio fil
 
 ### `StreamingSTT`
 
-A more advanced STT class for streaming data to the STT. This will recieve chunks of audio data as they become available and they are streamed to an STT engine.
+A more advanced STT class for streaming data to the STT. This will receive chunks of audio data as they become available and they are streamed to an STT engine.
 
 The plugin author needs to implement the `create_streaming_thread()` method creating a thread for handling data sent through `self.queue`. The thread this method creates should be based on the [StreamThread class](https://github.com/MycroftAI/mycroft-core/blob/dev/mycroft/stt/__init__.py#L325). `handle_audio_data()` method also needs to be implemented.
 

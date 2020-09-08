@@ -9,7 +9,7 @@ description: >-
 In this file we can include Python packages, Linux applications or other Mycroft skills that are required for our own Skill to function properly.
 
 {% hint style="info" %}
-[YAML](https://en.wikipedia.org/wiki/YAML) is a language commonly used for configuration files. It uses indentation rather than brackets or parantheses to define the structure or hierarchy of its contents.
+[YAML](https://en.wikipedia.org/wiki/YAML) is a language commonly used for configuration files. It uses indentation rather than brackets or parentheses to define the structure or hierarchy of its contents.
 {% endhint %}
 
 ## File contents
