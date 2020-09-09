@@ -75,6 +75,7 @@
     * [Adapt Intents](skill-development/user-interaction/intents/adapt-intents.md)
   * [Statements](skill-development/user-interaction/statements.md)
   * [Prompts](skill-development/user-interaction/prompts.md)
+  * [Parsing Utterances](skill-development/user-interaction/parsing.md)
   * [Confirmations](skill-development/user-interaction/confirmations.md)
   * [Conversational Context](skill-development/user-interaction/conversational-context.md)
   * [Converse](skill-development/user-interaction/converse.md)

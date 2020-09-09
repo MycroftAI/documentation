@@ -24,6 +24,12 @@ If you need to prompt the User for information, you can use a range of methods t
 
 {% page-ref page="prompts.md" %}
 
+## Parsing Utterances
+
+A common process within a Skill is to parse the contents of an utterance. Mycroft provides a range of easy to use methods for this task.
+
+{% page-ref page="parsing.md" %}
+
 ## Confirmations
 
 Confirmations are used to verify that the input from the User was understood correctly. These may be verbal or non-verbal.
