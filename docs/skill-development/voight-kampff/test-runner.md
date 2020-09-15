@@ -139,7 +139,7 @@ This will remove all of the Feature and custom Step files that have been transfe
 
 ## Disabling audio output during testing
 
-If you don't want audio output whilst the tests are running, the following adjustment can be made to `.mycroft/mycroft.conf`. This change also has the benefit of speeding up testing, as the framework doesn't have to wait for Mycroft to stop talking. Note, that to have audio output during normal debugging the config change should be reverted.
+If you don't want audio output whilst the tests are running, the following adjustment can be made to `.mycroft/mycroft.conf`.
 
 ```json
 {
@@ -148,4 +148,6 @@ If you don't want audio output whilst the tests are running, the following adjus
   }
 }
 ```
+
+This change also has the benefit of speeding up testing, as the framework doesn't have to wait for Mycroft to stop talking. Note, that to have audio output during normal debugging the config change should be reverted.
 
