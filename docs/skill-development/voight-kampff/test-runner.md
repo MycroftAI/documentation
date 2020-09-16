@@ -139,6 +139,20 @@ This will remove all of the Feature and custom Step files that have been transfe
 
 ## Disabling audio output during testing
 
+This change also has the benefit of speeding up testing, as the framework doesn't have to wait for Mycroft to stop talking. Note, that to have audio output during normal debugging the config change should be reverted.
+
+### Using `mycroft-config`
+
+To enable the dummy tts setting and disable audio for tests run the following command:
+
+`mycroft-config set tts.module "dummy"`
+
+To reset the tts settings to default run:
+
+`mycroft-config set tts.module "mimic2"`
+
+### Editing `mycroft.conf`
+
 If you don't want audio output whilst the tests are running, the following adjustment can be made to `.mycroft/mycroft.conf`.
 
 ```json
@@ -148,6 +162,3 @@ If you don't want audio output whilst the tests are running, the following adjus
   }
 }
 ```
-
-This change also has the benefit of speeding up testing, as the framework doesn't have to wait for Mycroft to stop talking. Note, that to have audio output during normal debugging the config change should be reverted.
-
