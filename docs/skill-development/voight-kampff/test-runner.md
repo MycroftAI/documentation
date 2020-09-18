@@ -137,3 +137,35 @@ mycroft-start vktest clear
 
 This will remove all of the Feature and custom Step files that have been transferred during our previous test runs.
 
+## Disabling audio output during testing
+
+If you don't want audio output whilst the tests are running, you can switch this off temporarily through your device configuration.
+
+This change also has the benefit of speeding up testing, as the framework doesn't have to wait for Mycroft to stop talking. Note, that to have audio output during normal debugging the config change should be reverted.
+
+### Using `mycroft-config`
+
+To enable the dummy tts setting and disable audio for tests run the following command:
+
+`mycroft-config set tts.module "dummy"`
+
+To reset the tts settings to default run:
+
+`mycroft-config set tts.module "mimic2"`
+
+### Editing `mycroft.conf`
+
+You can also make the adjustment by editing the config file directly `~/.mycroft/mycroft.conf`.
+
+```json
+{
+  "tts": {
+    "module": "dummy"
+  }
+}
+```
+
+To edit the file we recommend using the Mycroft Configuration tool as it will validate your changes on save, warning you about any errors you may have made.
+```
+mycroft-config edit user
+```
