@@ -88,5 +88,5 @@ Anything listed in this section will be passed to the [Mycroft Skills Manager](h
 
 A complete `manifest.yml` example can be found in the [official Template Skill on Github](https://github.com/MycroftAI/mycroft-skills/blob/19.08/00__skill_template/manifest.yml).
 
-A simple example from a real Skill can be found in the [Desktop Launcher Skill](https://github.com/MycroftAI/skill-desktop-launcher/blob/19.02/manifest.yml).
+A simple example from a real Skill can be found in the [Desktop Launcher Skill](https://github.com/MycroftAI/skill-desktop-launcher/blob/19.08/manifest.yml).
 
