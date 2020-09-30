@@ -42,7 +42,7 @@ or with a list of tracks
         self.audio_service.play(['file:///path/to/my/track.mp3', 'http://tracks-online.com/my/track.mp3'])
 ```
 
-see the [AudioServicePlugins](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/plugins/audioservice#audiobackend) for information about supported uris
+see the [AudioServicePlugins](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/plugins/audioservice#audiobackend) for information about configuring supported uris.
 
 The play method has an optional second argument to further process the user's **Utterance**. Currently this can only be used to select backend \(where you want to send the audio\) but in the future it will be able to handle requests like
 
