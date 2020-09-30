@@ -36,13 +36,13 @@ Once the `AudioService` instance is created, you can start playback by simply ca
         self.audio_service.play('file:///path/to/my/track.mp3')
 ```
 
-@TODO what URI schemas are supported?
-
 or with a list of tracks
 
 ```python
         self.audio_service.play(['file:///path/to/my/track.mp3', 'http://tracks-online.com/my/track.mp3'])
 ```
+
+see the [AudioServicePlugins](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/plugins/audioservice#audiobackend) for information about supported uris
 
 The play method has an optional second argument to further process the user's **Utterance**. Currently this can only be used to select backend \(where you want to send the audio\) but in the future it will be able to handle requests like
 
