@@ -113,7 +113,7 @@ Feature: current-weather
     Given user is located in Paris
      When the user says "how hot will it be today"
      Then "mycroft-weather" should reply with dialog from "current.high.temperature.dialog"
-     Then the reply should not include "London"
+     Then mycroft reply should contain "Paris"
 ```
 
 To make this easier to read, you can instead use the terms `And` or `But`
@@ -125,7 +125,7 @@ Feature: current-weather
       And user is located in Paris
      When the user says "how hot will it be today"
      Then "mycroft-weather" should reply with dialog from "current.high.temperature.dialog"
-      But the reply should not include "London"
+      But mycroft reply should contain "Paris"
 ```
 
 The two terms are exactly the same, they both operate as the Step that comes immediately before them.
