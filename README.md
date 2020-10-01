@@ -5,6 +5,7 @@ Mycroft Documentation
 [![CLA Required](https://img.shields.io/badge/CLA%3F-Required-blue.svg)](https://mycroft.ai/cla)
 ==========
 
+Mycroft is an open source privacy-focused voice assistant. It can be installed on Linux, Raspberry Pi, our reference devices, or your own custom hardware.
 Head to https://mycroft.ai/documentation for all public facing documentation.
 The website is automatically updated from this repo.
 
