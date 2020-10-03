@@ -102,6 +102,76 @@ Feature: current-weather
 
 Tests that a particular [Message Type](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/message-types) was emitted to the [MessageBus](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/message-bus).
 
+### Setting a configuration
+
+`Given the user's {config} is {value}`
+
+The test can specify a certain configuration using a given step and a configuration specification.
+
+```cucumber
+  Given an english speaking user
+  And the user's unit system is metric
+  When the user says "how tall is the eiffel tower"
+  Then mycroft reply should contain "meters"
+```
+
+#### Configuration specification
+The configuration and values are setup in a json file in the test/behave folder of the skill, named as the feature file but with the extension `.config.json` so if the feature file is `myskill.feature` the config specification file should be called `myskill.config.json`.
+
+The file is organized in a config name->config value name->config patch structure.
+
+```json
+{
+    "config": {
+        "value": PATCH
+    }
+}
+```
+
+where config and value keys can be inserted in the Given line resulting in patching the config with the contents of PATCH.
+
+A real life example file with the configs "unit system" and "location"
+
+```json
+{
+  "unit system": {
+    "metric": {"system_unit": "metric"},
+    "imperial": {"system_unit": "imperial"}
+  },
+  "location": {
+    "stockholm": {
+      "location": {
+        "city": {
+          "name": "Stockholm",
+          "state": {
+            "code": "SE.18",
+            "country": {
+              "code": "SE",
+              "name": "Sweden"
+            },
+            "name": "Stockholm"
+          }
+        },
+        "coordinate": {
+          "latitude": 59.38306,
+          "longitude": 16.66667
+        },
+        "timezone": {
+          "code": "Europe/Stockholm",
+          "dst_offset": 7200000,
+          "name": "Europe/Stockholm",
+          "offset": 3600000
+        }
+      }
+    }
+  }
+}
+```
+
+In the above example the "unit system" patches a single key while the location can be set to "stockholm" patching the config with an entire structure.
+
+If no file config specification a common config specification is included with mycroft-core in the file `mycroft/res/{lang}/configurations.json` containing some commonly used configuration options.
+
 ## And, But
 
 You can include several Steps of the same type in a single Scenario. For example:
