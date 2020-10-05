@@ -1,6 +1,6 @@
 ---
 description: >-
-  Dies ist eine Anleitung wie Sie Mycroft in Deutsch nutzen kannst
+  Dies ist eine Anleitung wie Sie Mycroft in Deutsch nutzen können.
 ---
 
 # Mycroft in Deutsch
@@ -10,11 +10,7 @@ description: >-
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich daher sollten sie Mycroft bereits unter 
 "lang": "en-us" verbunden und eingerichtet haben.
 
-Erstellen Sie danach eine eigene `mycroft.conf` Konfigurationsdatei. Bei Mycroft für Linux ist dies hier gespeichert:
-
-`~/.mycroft/mycroft.conf`
-
-Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
+Erstellen oder ändern Sie die eigene `~/.mycroft/mycroft.conf` Konfigurationsdatei wie folgt.
  
 **Data:**
 
@@ -28,9 +24,10 @@ Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
       }
   }
 ```
-##Alternativ mit espeak mbrola
+## Alternativ mit espeak mbrola
 
-Installieren Sie espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
+für Rasberry kanst du mbrola hier herunterladen `wget 'http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb`.
+Installieren Sie nun espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
 
 **Data:**
 
@@ -46,12 +43,12 @@ Installieren Sie espeak mbrola über `sudo apt install espeak espeak-data mbrola
    }
 }
 ```
-Mycroft sollte nach einem neustart auf deutsch hören und sprechen.
-Das **Wake Word** (z.b. hey mycroft) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
+Mycroft sollte nach einem neustart auf deutsch hören und sprechen. Viele Skills sind bereits Übersetzt und können sofort genutut werden.
+Das **Wake Word** (z.b. hey mycroft, Christopher, Hey Ezra, Hey Jarvis) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
 
-### Ändern Sie das **Wake Word** nach Deutsch
+# Ändern Sie das **Wake Word** auf ein Deutsches Word
 
-Mycroft verwendet PocketSphinx als **Wake Word**-Mechanismus. Das Standard **Wake Word** auf Englisch ist `Hey Mycroft`.
+Mycroft verwendet [PocketSphinx](https://github.com/cmusphinx/pocketsphinx) oder [Precise](https://mycroft.ai/documentation/precise) als **Wake Word**-Mechanismus. Das Standard **Wake Word** auf Englisch ist `Hey Mycroft`.
 
 Um das **Wake Word** nach Deutsch zu ändern müssen Sie das deutsche Wörterbuch und das deutsche akustische Modell herunterladen, danach trainieren Sie mit dem neusten `sphinxtrain`.
 
@@ -175,9 +172,7 @@ Wenn das gewählte **Wake Word** oder Phrase nicht in der `de.dict` Datei ist, d
 
 ### Konfigurieren Sie Mycroft für die Verwendung der deutschen Sprache und des deutschen **Wake Words** 
 
-`~/.mycroft/mycroft.conf`
-
-Bearbeiten Sie die Konfigurationsdatei mit folgenden Änderungen:
+Bearbeiten Sie die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änderungen:
 
 **Data:**
 
@@ -227,6 +222,79 @@ Wählen Sie als nächstes ein Text-to-Speech-Modul aus und konfigurieren Sie es,
       }
     }
 ```
+
+# Mozilla Deepspeech STT
+
+Mycroft unterstützt auch Deepspeech STT hierfür muss ein deutsches Modell auf einem deepspeech-server eirichten. [Aashish Agarwal](https://github.com/AASHISHAG/deepspeech-german) hat dazu ein entsprechendes [Modell](https://drive.google.com/drive/folders/1PFSIdmi4Ge8EB75cYh2nfYOXlCIgiMEL?usp=sharing) unter Deepspeech V7.4 veröffentlicht.
+
+## Installation
+
+* Entpacke die heruntergeladenen Ordner und wechsle hinein.
+* aktiviere in venv `source ~/mycroft-core/.venv/bin/activate`.
+* Installiere Deepspeech mit `pip install deepspeech==0.7.4` oder `pip install deepspeech-gpu==0.7.4`.
+* Installiere Deepspeech Server `pip install deepspeech-server`.
+
+### Erstelle eine Server Konfiguration
+
+Erstelle eine Konfiguationsdatei `config.json`.
+
+**Data:**
+
+```javascript
+  "deepspeech": {
+    "model" :"output_graph.pb", ### unter Raspberry output_graph.tflite
+    "scorer" :"kenlm.scorer",
+    "beam_width": 1024,
+    "lm_alpha": 0.931289039105002,
+    "lm_beta": 1.1834137581510284
+  },
+  "server": {
+    "http": {
+      "host": "0.0.0.0",
+      "port": 8080,
+      "request_max_size": 2048576
+    }
+  },
+  "log": {
+    "level": [
+      { "logger": "deepspeech_server", "level": "DEBUG"}
+    ]
+  }
+}
+```
+### Start
+
+* Starte Deepspeech Server `deepspeech-server --config config.json`
+* erstelle Testdatei `arecord test.wav`.
+* sende Testdatei `curl -X POST --data-binary @test.wav http://localhost:8080/stt`
+
+Antwort sollte nun `test ist ein zwei drei test(.venv) pi@picroft:~/release_v0.7.4$` lauten.
+
+### Start Deepspeech Server on boot
+
+Füge folgendes in Startup Datei `/etc/rc.local`.
+
+```
+/home/pi/mycroft-core/.venv/bin/deepspeech-server --config /home/pi/release_v0.7.4/config.json
+```
+
+### Konfigurieren Sie Mycroft für die Verwendung von Deepspeech 
+
+Bearbeiten Sie die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änderungen:
+
+**Data:**
+
+```javascript
+},
+"stt": {
+  "deepspeech_server": {
+     "uri": "http://localhost:8080/stt"
+   },
+  "module": "deepspeech_server"
+},
+```
+
+###
 
 Es gibt noch einige Quellcodeänderungen, die erforderlich sind, um eine Sprachänderung zu handhaben, und sie erfordern eine manuelle Änderung des Quellcodes, da sie noch nicht in `mycroft-core` einbezogen wurden.
 
