@@ -181,44 +181,12 @@ Bearbeiten Sie die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden �
       "lang": "de-de",
 
       "listener": {
-
         "wake_word": "hallo",
         "phonemes": "HH AE L AX UU",
         "threshold": 1e-10,
         "standup_word": "hallo",
         "standup_phonemes": "HH AE L AX UU",
         "standup_threshold": 1e-10
-      }
-    }
-```
-
-## Wählen und konfigurieren Sie eine STT-Engine (Speak to Text) mit deutscher Unterstützung
-
-Wenn die Sprache-zu-Text-Engine, die Sie verwenden, bereits Deutsch unterstützt, müssen Sie nichts tun - dies ist beispielsweise bei der standardmäßigen Mycroft-Engine der Fall.
-
-Alternativ können Sie PocketSphinx verwenden, das auf Ihrem lokalen Computer ausgeführt wird. Um PocketSphinx als STT-Engine zu verwenden, fügen Sie folgendes zu Ihrer `~/.mycroft/mycroft.conf` Datei hinzu:
-
-**Data:**
-
-```javascript
-    "listener": {
-       "producer": "pocketsphinx",
-       "grammar": "lm"
-       }
-```
-
-## Wählen und konfigurieren Sie eine TTS-Engine (Text to Speech) mit deutscher Unterstützung
-
-Wählen Sie als nächstes ein Text-to-Speech-Modul aus und konfigurieren Sie es, sodass es Deutsch unterstützt. Beispielsweise hat `espeak` unterschiedliche deutsche Stimmen.
-
-**Data:**
-
-```javascript
-    "tts": {
-      "module": "espeak",
-      "espeak": {
-        "lang": "german-mbrola-7",
-        "voice": "german-mbrola-7"
       }
     }
 ```
