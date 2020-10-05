@@ -259,7 +259,7 @@ Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änder
      "uri": "http://localhost:8080/stt"
    },
   "module": "deepspeech_server"
-},
+}
 ```
 
 ###
