@@ -236,7 +236,7 @@ Erstelle eine Konfiguationsdatei `config.json`.
 * Erstelle Testdatei `arecord test.wav`.
 * Sende Testdatei `curl -X POST --data-binary @test.wav http://localhost:8080/stt`
 
-Antwort sollte nun `test ist ein zwei drei test(.venv) pi@picroft:~/release_v0.7.4$` lauten.
+Antwort sollte nun `test ein zwei drei test(.venv) pi@picroft:~/release_v0.7.4$` lauten.
 
 ### Start Deepspeech Server wärend dem booten
 
