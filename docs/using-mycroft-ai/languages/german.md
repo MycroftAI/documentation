@@ -26,7 +26,7 @@ Erstelle oder ändere die eigene `~/.mycroft/mycroft.conf` Konfigurationsdatei w
 ```
 ## Alternativ mit espeak mbrola
 
-Für Rasberry kann mbrola hier herunterladen werden mit `wget 'http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb` und `dpkg -i mbrola3.0.1h_armhf.deb`.
+Für Rasberry kann mbrola hier herunterladen werden mit `wget 'http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb` und `sudo dpkg -i mbrola3.0.1h_armhf.deb`.
 Installiere nun espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
 
 **Data:**
