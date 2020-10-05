@@ -1,6 +1,6 @@
 ---
 description: >-
-  Dies ist eine Anleitung wie Sie Mycroft in Deutsch nutzen können.
+  Dies ist eine Anleitung wie Sie Mycroft in Deutsch nutzen können. Diese Seite beinhaltet auch eine Kurtzanleitung.
 ---
 
 # Mycroft in Deutsch
@@ -26,7 +26,7 @@ Erstellen oder ändern Sie die eigene `~/.mycroft/mycroft.conf` Konfigurationsda
 ```
 ## Alternativ mit espeak mbrola
 
-für Rasberry kanst du mbrola hier herunterladen `wget 'http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb`.
+für Rasberry kanst du mbrola hier herunterladen `wget 'http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb` und `dpkg -i mbrola3.0.1h_armhf.deb`.
 Installieren Sie nun espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
 
 **Data:**
@@ -43,7 +43,7 @@ Installieren Sie nun espeak mbrola über `sudo apt install espeak espeak-data mb
    }
 }
 ```
-Mycroft sollte nach einem neustart auf deutsch hören und sprechen. Viele Skills sind bereits Übersetzt und können sofort genutut werden.
+Mycroft sollte nach einem Neustart auf deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutut werden.
 Das **Wake Word** (z.b. hey mycroft, Christopher, Hey Ezra, Hey Jarvis) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
 
 # Ändern Sie das **Wake Word** auf ein Deutsches Word
@@ -193,12 +193,12 @@ Bearbeiten Sie die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden �
 
 # Mozilla Deepspeech STT
 
-Mycroft unterstützt auch Deepspeech STT hierfür muss ein deutsches Modell auf einem deepspeech-server eirichten. [Aashish Agarwal](https://github.com/AASHISHAG/deepspeech-german) hat dazu ein entsprechendes [Modell](https://drive.google.com/drive/folders/1PFSIdmi4Ge8EB75cYh2nfYOXlCIgiMEL?usp=sharing) unter Deepspeech V7.4 veröffentlicht.
+Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf einem Deepspeech Server einrichten. [Aashish Agarwal](https://github.com/AASHISHAG/deepspeech-german) hat dazu ein entsprechendes [Modell](https://drive.google.com/drive/folders/1PFSIdmi4Ge8EB75cYh2nfYOXlCIgiMEL?usp=sharing) unter Deepspeech V7.4 veröffentlicht. Das Modell ist aktuell noch etwas Empfindlich was leise oder fremde Geräusche angeht.
 
 ## Installation
 
-* Entpacke die heruntergeladenen Ordner und wechsle hinein.
-* aktiviere in venv `source ~/mycroft-core/.venv/bin/activate`.
+* Entpacke die heruntergeladenen Ordner und wechsle hinein. `cd release_v0.7.4`
+* Aktiviere venv `source ~/mycroft-core/.venv/bin/activate`.
 * Installiere Deepspeech mit `pip install deepspeech==0.7.4` oder `pip install deepspeech-gpu==0.7.4`.
 * Installiere Deepspeech Server `pip install deepspeech-server`.
 
