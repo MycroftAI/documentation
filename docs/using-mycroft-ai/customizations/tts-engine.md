@@ -157,13 +157,14 @@ To our existing configuration values we will add the following:
   "polly": {
     "voice": "Matthew",
     "region": "us-east-1",
+    "engine": "standard",
     "access_key_id": "YOUR_ACCESS_KEY_ID",
     "secret_access_key": "YOUR_SECRET_ACCESS_KEY"
   }
 }
 ```
 
-If the `voice` and `region` attributes are ommitted the defaults of `Matthew` and `us-east-1` will be used. This is an English \(US\) voice.
+If the `voice`, `region`, and `engine` attributes are ommitted the defaults of `Matthew`, `us-east-1` and `standard` will be used. This is an English \(US\) voice.
 
 ## Google TTS
 
