@@ -160,7 +160,7 @@ Falls mit `ln` gearbeitet wird, müssen die folgenden Verzeichnisse, Dateien und
 
 ### Ein deutsches **Wake Word** wählen
 
-Wähle ein deutsches **Wake Word** oder Wake Phrase auf Deutsch und stelle sicher, dass es in der `cmusphinx-voxforge-de.dic`-Datei des Sprachmodells enthalten ist. Die Erfahrung zeigt, dass die beste Wahl ein einzelnes Wort mit drei oder mehr Phonemen ist.
+Wähle ein deutsches **Wake Word** oder Wake Phrase auf Deutsch und stelle sicher, dass es in der `cmusphinx-voxforge-de.dic` Datei des Sprachmodells enthalten ist. Die Erfahrung zeigt, dass die beste Wahl ein einzelnes Wort mit drei oder mehr [Phonemen](https://de.wikipedia.org/wiki/Phonem) ist.
 
 Überprüfen Sie zum Beispiel, ob das Wort 'hallo' existiert:
 
@@ -168,7 +168,7 @@ Wähle ein deutsches **Wake Word** oder Wake Phrase auf Deutsch und stelle siche
 
 `hallo HH AE L AX UU`
 
-Wenn das gewählte **Wake Word** oder Phrase nicht in der `de.dict` Datei ist, dann wählen Sie entweder ein anderes **Wake Word** oder ändern Sie die `de.dict`-Datei, um es hinzuzufügen.
+Wenn das gewählte **Wake Word** oder Phrase nicht in der `de.dict` Datei ist, dann wählen Sie entweder ein anderes **Wake Word** oder ändern Sie die `de.dict`Datei, um es hinzuzufügen.
 
 ### Konfiguriere Mycroft für die Verwendung der deutschen Sprache und des deutschen **Wake Words** 
 
