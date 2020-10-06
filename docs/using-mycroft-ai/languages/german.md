@@ -1,5 +1,7 @@
 ---
- <sub>Dies ist eine Anleitung wie Sie Mycroft in deutsch nutzen können. Diese Seite beinhaltet auch eine Kurzanleitung.</sub>
+ <sub><sub>Dies ist eine Anleitung wie Sie Mycroft in deutsch nutzen können. Diese Seite beinhaltet auch eine Kurzanleitung.</sub></sub>
+---
+ <sub><sub>TTS = Sprachoutput  / STT = Sprachinput    / WakeWord = Initiierung </sub></sub>
 ---
 
 # Mycroft auf deutsch
@@ -10,6 +12,8 @@
 "lang": "en-us" verbunden und eingerichtet haben.
 
 Zuerst, [verbinden Sie sich mit ihrem Gerät (z.B. SSH)](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
+
+## Text-to-Speech (TTS) über Google
 
 Erstellen oder ändern Sie die eigene `~/.mycroft/mycroft.conf` Konfigurationsdatei wie folgt.
 
@@ -26,9 +30,9 @@ Erstellen oder ändern Sie die eigene `~/.mycroft/mycroft.conf` Konfigurationsda
  },
  ...
 ```
-## Alternativ mit espeak mbrola
+## TTS Alternativ mit espeak mbrola
 
-für Rasberry kannst du mbrola hier herunterladen `wget 'http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb` und `dpkg -i mbrola3.0.1h_armhf.deb`.
+für Raspberry kannst du mbrola hier herunterladen `wget 'http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb` und `dpkg -i mbrola3.0.1h_armhf.deb`.
 Installieren Sie nun espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
 
 **Data:**
@@ -45,6 +49,8 @@ Installieren Sie nun espeak mbrola über `sudo apt install espeak espeak-data mb
    },
    ...
 ```
+Myvroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de/), [responsive_voice](https://responsivevoice.org/), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird.
+
 Mycroft sollte nach einem Neustart auf deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutut werden.
 Das **Wake Word** (z.b. hey mycroft, Christopher, Hey Ezra, Hey Jarvis) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
 
