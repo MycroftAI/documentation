@@ -43,7 +43,7 @@ Installiere nun espeak mbrola über `sudo apt install espeak espeak-data mbrola 
    }
 }
 ```
-Mycroft sollte nach einem Neustart auf Deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutut werden.
+Mycroft sollte nach einem Neustart auf Deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutzt werden.
 Das **Wake Word** (z.b. hey mycroft, Christopher, Hey Ezra, Hey Jarvis) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
 
 # Ändere das **Wake Word** auf ein Deutsches Word
