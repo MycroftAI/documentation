@@ -208,10 +208,10 @@ Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf
 
 ## Installation
 
-* Entpacke die heruntergeladenen Ordner und wechsle hinein. `cd release_v0.7.4`
-* Aktiviere venv durch `source ~/mycroft-core/.venv/bin/activate`.
-* Installiere Deepspeech mit `pip install deepspeech==0.7.4` oder `pip install deepspeech-gpu==0.7.4`.
-* Installiere Deepspeech Server `pip install deepspeech-server`.
+1. Entpacke die heruntergeladenen Ordner und wechsle hinein. `cd release_v0.7.4`
+2. Aktiviere venv durch `source ~/mycroft-core/.venv/bin/activate`.
+3. Installiere Deepspeech mit `pip install deepspeech==0.7.4` oder `pip install deepspeech-gpu==0.7.4`.
+4. Installiere Deepspeech Server `pip install deepspeech-server`.
 
 ### Erstelle eine Server Konfiguration
 
@@ -243,9 +243,9 @@ Erstelle eine Konfiguationsdatei `config.json`.
 ```
 ### Start
 
-* Starte Deepspeech Server `deepspeech-server --config config.json`
-* Erstelle Testdatei `arecord test.wav`.
-* Sende Testdatei `curl -X POST --data-binary @test.wav http://localhost:8080/stt`
+1. Starte Deepspeech Server `deepspeech-server --config config.json`
+2. Erstelle Testdatei `arecord test.wav`.
+3. Sende Testdatei `curl -X POST --data-binary @test.wav http://localhost:8080/stt`
 
 Antwort sollte nun `test ein zwei drei test(.venv) pi@picroft:~/release_v0.7.4$` lauten.
 
