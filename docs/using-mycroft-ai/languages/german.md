@@ -216,7 +216,7 @@ Erstelle eine Konfiguationsdatei `config.json`.
 **Data:**
 
 ```javascript
-  ...
+{
   "deepspeech": {
     "model" :"output_graph.pb", ### unter Raspberry output_graph.tflite
     "scorer" :"kenlm.scorer",
@@ -235,8 +235,8 @@ Erstelle eine Konfiguationsdatei `config.json`.
     "level": [
       { "logger": "deepspeech_server", "level": "DEBUG"}
     ]
-  },
-  ...
+  }
+}
 ```
 ### Start
 
