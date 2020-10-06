@@ -2,29 +2,40 @@
 description: >-
   Dies ist eine Anleitung wie Mycroft in Deutsch eingerichtet werden kann. Diese Seite beinhaltet auch eine Kurzanleitung.
 ---
+   <sub><sub>TTS = Sprachoutput  / STT = Sprachinput    / WakeWord = Initiierung </sub></sub>
+---
 
-# Mycroft in Deutsch
+# Mycroft auf deutsch
 
-## Erster Einstig
+## Erster Einstieg
 
-!!!Aktuell ist das paaren von Mycroft noch nicht vollständig in Deutsch möglich daher sollte Mycroft bereits unter 
-"lang": "en-us" verbunden und eingerichtet werden.
+!!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich, daher sollten sie Mycroft bereits unter
+"lang": "en-us" verbunden und eingerichtet haben.
+
+Zuerst, [verbinden Sie sich mit ihrem Gerät (z.B. SSH)](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
+
+Folgend wird an den Beispielen Google/Mbrola der Sprachoutput (TTS) auf deutsch gesetzt. Mycroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de/), [responsive_voice](https://responsivevoice.org/), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird.
+
+## Text-to-Speech (TTS) über Google
+
 
 Erstelle oder ändere die eigene `~/.mycroft/mycroft.conf` Konfigurationsdatei wie folgt.
- 
+
 **Data:**
 
  ```javascript
- {
+ ...
  "lang": "de-de",
  "tts": {
      "module": "google",
       "google": {
-        "lang": "de" 
+        "lang": "de"
       }
-  }
+ },
+ ...
 ```
-## Alternativ mit espeak mbrola
+
+## TTS Alternativ mit espeak mbrola
 
 Für Rasberry kann mbrola hier herunterladen werden mit `wget 'http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb` und `sudo dpkg -i mbrola3.0.1h_armhf.deb`.
 Installiere nun espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
@@ -32,7 +43,7 @@ Installiere nun espeak mbrola über `sudo apt install espeak espeak-data mbrola 
 **Data:**
 
 ```javascript
-{
+   ...
    "lang": "de-de",
    "tts": {
      "module": "espeak",
@@ -40,23 +51,27 @@ Installiere nun espeak mbrola über `sudo apt install espeak espeak-data mbrola 
         "lang": "german-mbrola-7",
         "voice": "german-mbrola-7"
      }
-   }
-}
+   },
+   ...
 ```
-Mycroft sollte nach einem Neustart auf Deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutut werden.
+
+Mycroft sollte nach einem Neustart auf deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutut werden.
+
 Das **Wake Word** (z.b. hey mycroft, Christopher, Hey Ezra, Hey Jarvis) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
 
-# Ändere das **Wake Word** auf ein Deutsches Word
+# Ändern des **Wake Words** in ein deutsches Wort
 
-Mycroft verwendet [PocketSphinx](https://github.com/cmusphinx/pocketsphinx) oder [Precise](https://mycroft.ai/documentation/precise) als **Wake Word**-Mechanismus. Das Standard **Wake Word** auf Englisch ist `Hey Mycroft`.
+Mycroft verwendet [Precise](https://mycroft.ai/documentation/precise) und [PocketSphinx](https://github.com/cmusphinx/pocketsphinx) als **Wake Word**-Mechanismus. Das Standard **Wake Word** auf englisch ist `Hey Mycroft` und nutzt Precise und - falls Precise es nicht erkennt - Pocketsphinx.
 
-Um das **Wake Word** nach Deutsch zu ändern müss das deutsche Wörterbuch und das deutsche akustische Modell herunterladen werden, danach trainiere mit dem neusten `sphinxtrain`.
+Diese Anleitung bezieht sich insbesodere auf Pocketsphinx. Weiterführende Informationen zu Precise findet man [hier](https://mycroft-ai.gitbook.io/docs/using-mycroft-ai/customizations/wake-word#precise) (englisch)
+
+Um das **Wake Word** (in ein deutsch klingendes) zu ändern muss das deutsche Wörterbuch und das deutsche akustische Modell herunterladen werden, danach trainiere es mit dem neusten `sphinxtrain`.
 
 Zuerst erstelle ein Verzeichnis für die `pocketsphinx`-Dateien:
 
 `sudo mkdir -p /usr/local/share/pocketsphinx/model/de/de`
 
-### Lade das deutsche Wörterbuch herunter und installiere es
+### Laden des deutsche Wörterbuchs und Installation
 
 Als nächstes lade das deutsche Wörterbuch aus dem CMUSphinx-Projekt auf SourceForge herunter_ [cmusphinx-voxforge-de.dic](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-voxforge-de.dic/download).
 
@@ -68,7 +83,7 @@ Dann installiere das Wörterbuch in das neu erstellte Verzeichnis.
 
 ### Laden des akustischen Modells und Installation
 
-Als Nächstes lade das _acoustic model_ [cmusphinx-de-ptm-voxforge-5.2.tar.gz](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-de-ptm-voxforge-5.2.tar.gz/download) aus dem CMUSphinx-Projekt auf SourceForge.
+Als nächstes laden das _acoustic model_ [cmusphinx-de-ptm-voxforge-5.2.tar.gz](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-de-ptm-voxforge-5.2.tar.gz/download) aus dem CMUSphinx-Projekt auf SourceForge.
 
 `wget https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-de-ptm-voxforge-5.2.tar.gz/download -O cmusphinx-de-ptm-voxforge-5.2.tar.gz`
 
@@ -84,7 +99,7 @@ sudo mv * /usr/local/share/pocketsphinx/model/de/de
 cd ..
 ```
 
-### Lade das deutsche Sprachmodell herunter und installieren es
+### Laden des deutschen Sprachmodells und Installation
 
 Als nächstes lade das _German language model_ [cmusphinx-voxforge-de.lm.gz](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-voxforge-de.lm.gz/download) aus dem CMUSphinx-Projekt auf SourceForge.
 
@@ -98,7 +113,7 @@ Dann verschieben es in das PocketSphinx-Verzeichnis
 
 `sudo mv cmusphinx-voxforge-de.lm /usr/local/share/pocketsphinx/model/de/de.lm`
 
-### Überprüfen Sie die installierten Dateien
+### Überprüfen Sie die Dateien
 
 Überprüfe, ob die folgenden Dateien existieren:
 
@@ -116,20 +131,16 @@ Dann verschieben es in das PocketSphinx-Verzeichnis
 * `/usr/local/share/pocketsphinx/model/de/de/transition_matrices`
 * `/usr/local/share/pocketsphinx/model/de/de/variances`
 
-### Installiere die Sprache in den Mycroft-Verzeichnissen
 
-Nachdem die PocketSphinx-Dateien für Deutsch installiert sind, muss Deutsch in den Mycroft-Verzeichnissen installiert werden.
+### Verlinken/Kopieren Sie Modell und Wörterbuch in die Mycroft-Verzeichnisse
 
-Zuerst, [SSH into your device](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
-
-
-Navigiere zum Mycroft-Sprachenmodellverzeichnis.
+Navigieren Sie dazu zum Mycroft-Sprachenmodellverzeichnis.
 
 Zum Beispiel, auf `mycroft-core` für Linux, navigiere zu
 
 `~/mycroft-core/mycroft/client/speech/recognizer/model`
 
-es sollten die folgenden Dateien in diesem Verzeichnis sein:
+Es sollten die folgenden Verzeichnise zu sehen sein:
 
 ```bash
 $ ls -las
@@ -141,7 +152,7 @@ total 24
 
 _HINWEIS: Beachte, dass es nur einen Modellordner gibt - `en-us` für American English_
 
-Erstelle hier ein neues Verzeichnis für Deutsch, und verlinke es anschließend mit dem `pocketsphinx` Verzeichnis.
+Erstelle hier ein neues Verzeichnis für deutsch, und verlinke es anschließend mit dem `pocketsphinx` Verzeichnis.
 
 ```bash
 mkdir de
@@ -160,7 +171,7 @@ Falls mit `ln` gearbeitet wird, müssen die folgenden Verzeichnisse, Dateien und
 
 ### Ein deutsches **Wake Word** wählen
 
-Wähle ein deutsches **Wake Word** oder Wake Phrase auf Deutsch und stelle sicher, dass es in der `cmusphinx-voxforge-de.dic`-Datei des Sprachmodells enthalten ist. Die Erfahrung zeigt, dass die beste Wahl ein einzelnes Wort mit drei oder mehr Phonemen ist.
+Wähle ein deutsches **Wake Word** oder Wake Phrase auf deutsch und stelle sicher, dass es in der `cmusphinx-voxforge-de.dic`-Datei des Sprachmodells enthalten ist. Die Erfahrung zeigt, dass die beste Wahl ein einzelnes Wort mit drei oder mehr [Phonemen](https://de.wikipedia.org/wiki/Phonem) ist.
 
 Überprüfen Sie zum Beispiel, ob das Wort 'hallo' existiert:
 
@@ -168,16 +179,16 @@ Wähle ein deutsches **Wake Word** oder Wake Phrase auf Deutsch und stelle siche
 
 `hallo HH AE L AX UU`
 
-Wenn das gewählte **Wake Word** oder Phrase nicht in der `de.dict` Datei ist, dann wählen Sie entweder ein anderes **Wake Word** oder ändern Sie die `de.dict`-Datei, um es hinzuzufügen.
+Wenn das gewählte **Wake Word** oder Phrase nicht in der `de.dict` Datei ist, dann wählen Sie entweder ein anderes **Wake Word** oder ändern Sie die `de.dict`Datei, um es hinzuzufügen.
 
-### Konfiguriere Mycroft für die Verwendung der deutschen Sprache und des deutschen **Wake Words** 
+### Konfiguriere Mycroft für die Verwendung eines deutsch ausgesprochenen **Wake Words** 
 
 Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änderungen:
 
 **Data:**
 
 ```javascript
-    {
+      ...
       "lang": "de-de",
 
       "listener": {
@@ -187,8 +198,8 @@ Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änder
         "standup_word": "hallo",
         "standup_phonemes": "HH AE L AX UU",
         "standup_threshold": 1e-10
-      }
-    }
+      },
+      ...
 ```
 
 # Mozilla Deepspeech STT
@@ -209,6 +220,7 @@ Erstelle eine Konfiguationsdatei `config.json`.
 **Data:**
 
 ```javascript
+{
   "deepspeech": {
     "model" :"output_graph.pb", ### unter Raspberry output_graph.tflite
     "scorer" :"kenlm.scorer",
@@ -228,7 +240,6 @@ Erstelle eine Konfiguationsdatei `config.json`.
       { "logger": "deepspeech_server", "level": "DEBUG"}
     ]
   }
-}
 ```
 ### Start
 
@@ -253,7 +264,7 @@ Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änder
 **Data:**
 
 ```javascript
-},
+...
 "stt": {
   "deepspeech_server": {
      "uri": "http://localhost:8080/stt"
@@ -264,6 +275,4 @@ Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änder
 
 ###
 
-Es gibt noch einige Quellcodeänderungen, die erforderlich sind, um eine Sprachänderung zu handhaben, und sie erfordern eine manuelle Änderung des Quellcodes, die noch nicht in `mycroft-core` einbezogen wurden.
-
-Wenn Sie sich für fremdsprachige Übersetzungen von Mycroft interessieren, würden wir uns freuen, von Ihnen zu hören. Bitte besuche uns im [Languages channel on Mycroft chat](https://chat.mycroft.ai/community/channels/languages)
+Für weitergehende Fragen besuche [den deutschen channel auf Mycroft chat](https://chat.mycroft.ai/community/channels/language-de).
