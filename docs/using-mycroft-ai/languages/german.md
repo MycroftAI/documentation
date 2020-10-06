@@ -24,6 +24,7 @@ Erstellen oder ändern Sie die eigene `~/.mycroft/mycroft.conf` Konfigurationsda
       "google": {
         "lang": "de"
       }
+ },
  ...
 ```
 ## Alternativ mit espeak mbrola
@@ -42,7 +43,7 @@ Installieren Sie nun espeak mbrola über `sudo apt install espeak espeak-data mb
         "lang": "german-mbrola-7",
         "voice": "german-mbrola-7"
      }
-   }
+   },
    ...
 ```
 Mycroft sollte nach einem Neustart auf deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutut werden.
@@ -58,7 +59,7 @@ Zuerst erstellen Sie ein Verzeichnis für die `pocketsphinx`-Dateien:
 
 `sudo mkdir -p /usr/local/share/pocketsphinx/model/de/de`
 
-### Laden Sie das deutsche Wörterbuch herunter und installieren Sie es
+### Laden des deutsche Wörterbuchs und Installation
 
 Als nächstes laden Sie das deutsche Wörterbuch aus dem CMUSphinx-Projekt auf SourceForge herunter_ [cmusphinx-voxforge-de.dic](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-voxforge-de.dic/download).
 
@@ -86,7 +87,7 @@ sudo mv * /usr/local/share/pocketsphinx/model/de/de
 cd ..
 ```
 
-### Laden Sie das deutsche Sprachmodell herunter und installieren Sie es
+### Laden des deutschen Sprachmodells und Installation
 
 Als nächstes laden Sie das _German language model_ [cmusphinx-voxforge-de.lm.gz](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/German/cmusphinx-voxforge-de.lm.gz/download) aus dem CMUSphinx-Projekt auf SourceForge.
 
@@ -184,7 +185,7 @@ Bearbeiten Sie die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden �
         "standup_word": "hallo",
         "standup_phonemes": "HH AE L AX UU",
         "standup_threshold": 1e-10
-      }
+      },
       ...
 ```
 
@@ -225,7 +226,7 @@ Erstelle eine Konfiguationsdatei `config.json`.
     "level": [
       { "logger": "deepspeech_server", "level": "DEBUG"}
     ]
-  }
+  },
   ...
 ```
 ### Start
