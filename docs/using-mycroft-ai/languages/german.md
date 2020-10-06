@@ -237,7 +237,6 @@ Erstelle eine Konfiguationsdatei `config.json`.
       { "logger": "deepspeech_server", "level": "DEBUG"}
     ]
   }
-}
 ```
 ### Start
 
@@ -262,7 +261,6 @@ Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änder
 **Data:**
 
 ```javascript
-},
 "stt": {
   "deepspeech_server": {
      "uri": "http://localhost:8080/stt"
