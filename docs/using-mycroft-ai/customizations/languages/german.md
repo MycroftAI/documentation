@@ -24,15 +24,16 @@ Erstelle oder ändere die eigene `~/.mycroft/mycroft.conf` Konfigurationsdatei w
 **Data:**
 
  ```javascript
- ...
- "lang": "de-de",
- "tts": {
-     "module": "google",
-      "google": {
-        "lang": "de"
-      }
- },
- ...
+{
+  "lang": "de-de",
+  "tts": {
+    "module": "google",
+    "google": {
+      "lang": "de"
+    }
+  }
+}
+
 ```
 
 ## TTS Alternativ mit espeak mbrola
@@ -43,17 +44,18 @@ Installiere nun espeak mbrola über `sudo apt install espeak espeak-data mbrola 
 **Data:**
 
 ```javascript
-   ...
-   "lang": "de-de",
-   "tts": {
-     "module": "espeak",
-     "espeak": {
-        "lang": "german-mbrola-7",
-        "voice": "german-mbrola-7"
-     }
-   },
-   ...
+{
+  "lang": "de-de",
+  "tts": {
+    "module": "espeak",
+    "espeak": {
+      "lang": "german-mbrola-7",
+      "voice": "german-mbrola-7"
+    }
+  }
+}
 ```
+_HINWEIS: Die Stimme 7 kann auch durch eine andere Stimme ersetzt werden. Dabei sind alle geraden Zahlen männlich und alle ungeraden Stimmen weiblich.
 
 Mycroft sollte nach einem Neustart auf deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutut werden.
 
@@ -117,7 +119,7 @@ Dann verschieben es in das PocketSphinx-Verzeichnis
 
 Überprüfe, ob die folgenden Dateien existieren:
 
-```bash
+```
 /usr/local/share/pocketsphinx/model/de
 /usr/local/share/pocketsphinx/model/de/de.dict
 /usr/local/share/pocketsphinx/model/de/de.lm
@@ -165,7 +167,7 @@ _Hinweis: Der `cp`-Befehl könnte durch `ln`-Befehl ersetzt werden um Speicherpl
 
 Falls mit `ln` gearbeitet wird, müssen die folgenden Verzeichnisse, Dateien und symbolische Verknüpft werden:
 
-```bash
+```
 ~/mycroft/client/speech/recognizer/model/de
 ~/mycroft-core/client/speech/recognizer/model/de/hmm
 ~/mycroft-core/client/speech/recognizer/model/de/de.dict
@@ -191,18 +193,17 @@ Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änder
 **Data:**
 
 ```javascript
-      ...
-      "lang": "de-de",
-
-      "listener": {
-        "wake_word": "hallo",
-        "phonemes": "HH AE L AX UU",
-        "threshold": 1e-10,
-        "standup_word": "hallo",
-        "standup_phonemes": "HH AE L AX UU",
-        "standup_threshold": 1e-10
-      },
-      ...
+...
+"lang": "de-de",
+"listener": {
+  "wake_word": "hallo",
+  "phonemes": "HH AE L AX UU",
+  "threshold": 1e-10,
+  "standup_word": "hallo",
+  "standup_phonemes": "HH AE L AX UU",
+  "standup_threshold": 1e-10
+},
+...
 ```
 
 # Mozilla Deepspeech STT
