@@ -4,7 +4,7 @@
 
 # Mycroft auf deutsch
 
-## Erster Einstig
+## Erster Einstieg
 
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich, daher sollten sie Mycroft bereits unter
 "lang": "en-us" verbunden und eingerichtet haben.
