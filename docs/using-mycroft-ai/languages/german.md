@@ -5,6 +5,8 @@
 description: >-
   Dies ist eine Anleitung wie Mycroft in Deutsch eingerichtet werden kann. Diese Seite beinhaltet auch eine Kurzanleitung.
 ---
+   <sub><sub>TTS = Sprachoutput  / STT = Sprachinput    / WakeWord = Initiierung </sub></sub>
+---
 
 # Mycroft auf deutsch
 
@@ -18,6 +20,13 @@ Zuerst, [verbinden Sie sich mit ihrem Gerät (z.B. SSH)](https://mycroft.ai/docu
 Folgend wird an den Beispielen Google/Mbrola der Sprachoutput (TTS) auf deutsch gesetzt. Mycroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de/), [responsive_voice](https://responsivevoice.org/), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird.
 
 ## Text-to-Speech (TTS) über Google
+
+Zuerst, [verbinden Sie sich mit ihrem Gerät (z.B. SSH)](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
+
+Folgend wird an den Beispielen Google/Mbrola der Sprachoutput (TTS) auf deutsch gesetzt. Mycroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de/), [responsive_voice](https://responsivevoice.org/), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird.
+
+## Text-to-Speech (TTS) über Google
+
 
 Erstelle oder ändere die eigene `~/.mycroft/mycroft.conf` Konfigurationsdatei wie folgt.
 
@@ -56,6 +65,7 @@ Installiere nun espeak mbrola über `sudo apt install espeak espeak-data mbrola 
 ```
 
 Mycroft sollte nach einem Neustart auf deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutut werden.
+
 Das **Wake Word** (z.b. hey mycroft, Christopher, Hey Ezra, Hey Jarvis) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
 
 # Ändern des **Wake Words** in ein deutsches Wort
@@ -178,7 +188,7 @@ Wähle ein deutsches **Wake Word** oder Wake Phrase auf deutsch und stelle siche
 
 `hallo HH AE L AX UU`
 
-Wenn das gewählte **Wake Word** oder Phrase nicht in der `de.dict` Datei ist, dann wählen Sie entweder ein anderes **Wake Word** oder ändern Sie die `de.dict`-Datei, um es hinzuzufügen.
+Wenn das gewählte **Wake Word** oder Phrase nicht in der `de.dict` Datei ist, dann wählen Sie entweder ein anderes **Wake Word** oder ändern Sie die `de.dict`Datei, um es hinzuzufügen.
 
 ### Konfiguriere Mycroft für die Verwendung eines deutsch ausgesprochenen **Wake Words** 
 
@@ -239,7 +249,6 @@ Erstelle eine Konfiguationsdatei `config.json`.
       { "logger": "deepspeech_server", "level": "DEBUG"}
     ]
   }
-}
 ```
 ### Start
 
