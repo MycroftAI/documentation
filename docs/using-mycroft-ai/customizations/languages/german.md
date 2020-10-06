@@ -117,20 +117,21 @@ Dann verschieben es in das PocketSphinx-Verzeichnis
 
 Überprüfe, ob die folgenden Dateien existieren:
 
-* `/usr/local/share/pocketsphinx/model/de`
-* `/usr/local/share/pocketsphinx/model/de/de.dict`
-* `/usr/local/share/pocketsphinx/model/de/de.lm`
-* `/usr/local/share/pocketsphinx/model/de/de`
-* `/usr/local/share/pocketsphinx/model/de/de/feat.params`
-* `/usr/local/share/pocketsphinx/model/de/de/mdef`
-* `/usr/local/share/pocketsphinx/model/de/de/means`
-* `/usr/local/share/pocketsphinx/model/de/de/mixture_weights`
-* `/usr/local/share/pocketsphinx/model/de/de/noisedict`
-* `/usr/local/share/pocketsphinx/model/de/de/README`
-* `/usr/local/share/pocketsphinx/model/de/de/sendump`
-* `/usr/local/share/pocketsphinx/model/de/de/transition_matrices`
-* `/usr/local/share/pocketsphinx/model/de/de/variances`
-
+```bash
+/usr/local/share/pocketsphinx/model/de
+/usr/local/share/pocketsphinx/model/de/de.dict
+/usr/local/share/pocketsphinx/model/de/de.lm
+/usr/local/share/pocketsphinx/model/de/de
+/usr/local/share/pocketsphinx/model/de/de/feat.params
+/usr/local/share/pocketsphinx/model/de/de/mdef
+/usr/local/share/pocketsphinx/model/de/de/means
+/usr/local/share/pocketsphinx/model/de/de/mixture_weights
+/usr/local/share/pocketsphinx/model/de/de/noisedict
+/usr/local/share/pocketsphinx/model/de/de/README
+/usr/local/share/pocketsphinx/model/de/de/sendump
+/usr/local/share/pocketsphinx/model/de/de/transition_matrices
+/usr/local/share/pocketsphinx/model/de/de/variances
+```
 
 ### Verlinken/Kopieren Sie Modell und Wörterbuch in die Mycroft-Verzeichnisse
 
@@ -164,10 +165,12 @@ _Hinweis: Der `cp`-Befehl könnte durch `ln`-Befehl ersetzt werden um Speicherpl
 
 Falls mit `ln` gearbeitet wird, müssen die folgenden Verzeichnisse, Dateien und symbolische Verknüpft werden:
 
-* `~/mycroft/client/speech/recognizer/model/de`
-* `~/mycroft-core/client/speech/recognizer/model/de/hmm`
-* `~/mycroft-core/client/speech/recognizer/model/de/de.dict`
-* `~/mycroft-core/client/speech/recognizer/model/de/de.lm`
+```bash
+~/mycroft/client/speech/recognizer/model/de
+~/mycroft-core/client/speech/recognizer/model/de/hmm
+~/mycroft-core/client/speech/recognizer/model/de/de.dict
+~/mycroft-core/client/speech/recognizer/model/de/de.lm
+```
 
 ### Ein deutsches **Wake Word** wählen
 
