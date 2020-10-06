@@ -12,6 +12,13 @@ description: >-
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in Deutsch möglich daher sollte Mycroft bereits unter 
 "lang": "en-us" verbunden und eingerichtet werden.
 
+Zuerst, [verbinden Sie sich mit ihrem Gerät (z.B. SSH)](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
+
+Folgend wird an den Beispielen Google/Mbrola der Sprachoutput (TTS) auf deutsch gesetzt. Mycroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de/), [responsive_voice](https://responsivevoice.org/), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird.
+
+## Text-to-Speech (TTS) über Google
+
+
 Erstelle oder ändere die eigene `~/.mycroft/mycroft.conf` Konfigurationsdatei wie folgt.
  
 **Data:**
