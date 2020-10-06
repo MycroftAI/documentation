@@ -1,5 +1,5 @@
 ---
-  Dies ist eine Anleitung wie Sie Mycroft in deutsch nutzen können. Diese Seite beinhaltet auch eine Kurzanleitung.
+ <sub>Dies ist eine Anleitung wie Sie Mycroft in deutsch nutzen können. Diese Seite beinhaltet auch eine Kurzanleitung.</sub>
 ---
 
 # Mycroft auf deutsch
