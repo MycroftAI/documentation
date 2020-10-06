@@ -1,7 +1,3 @@
----
- <sub><sub>Dies ist eine Anleitung wie Sie Mycroft in deutsch nutzen können. Diese Seite beinhaltet auch eine Kurzanleitung.</sub></sub>
----
- <sub><sub>TTS = Sprachoutput  / STT = Sprachinput    / WakeWord = Initiierung </sub></sub>
 description: >-
   Dies ist eine Anleitung wie Mycroft in Deutsch eingerichtet werden kann. Diese Seite beinhaltet auch eine Kurzanleitung.
 ---
@@ -14,12 +10,6 @@ description: >-
 
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich, daher sollten sie Mycroft bereits unter
 "lang": "en-us" verbunden und eingerichtet haben.
-
-Zuerst, [verbinden Sie sich mit ihrem Gerät (z.B. SSH)](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
-
-Folgend wird an den Beispielen Google/Mbrola der Sprachoutput (TTS) auf deutsch gesetzt. Mycroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de/), [responsive_voice](https://responsivevoice.org/), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird.
-
-## Text-to-Speech (TTS) über Google
 
 Zuerst, [verbinden Sie sich mit ihrem Gerät (z.B. SSH)](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
 
