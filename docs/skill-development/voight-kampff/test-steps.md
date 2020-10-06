@@ -106,7 +106,7 @@ Tests that a particular [Message Type](https://mycroft-ai.gitbook.io/docs/mycrof
 
 `Given the user's {config} is {value}`
 
-The test can specify a certain configuration using a given step and a configuration specification.
+The test can specify a certain configuration using a Given Step and a configuration specification.
 
 ```cucumber
   Given an english speaking user
@@ -118,7 +118,7 @@ The test can specify a certain configuration using a given step and a configurat
 #### Configuration specification
 The configuration and values are setup in a json file in the test/behave folder of the skill, named as the feature file but with the extension `.config.json` so if the feature file is `myskill.feature` the config specification file should be called `myskill.config.json`.
 
-The file is organized in a config name->config value name->config patch structure.
+The file is organized in a config name -> config value name -> config patch structure.
 
 ```json
 {
@@ -128,9 +128,9 @@ The file is organized in a config name->config value name->config patch structur
 }
 ```
 
-where config and value keys can be inserted in the Given line resulting in patching the config with the contents of PATCH.
+The `config` and `value` keys from this JSON object can then be inserted in the Given Step. The Mycroft configuration will then be patched with the contents of `PATCH`.
 
-A real life example file with the configs "unit system" and "location"
+Let's look at a real life example file with the configs "unit system" and "location"
 
 ```json
 {
@@ -168,9 +168,9 @@ A real life example file with the configs "unit system" and "location"
 }
 ```
 
-In the above example the "unit system" patches a single key while the location can be set to "stockholm" patching the config with an entire structure.
+In the above example the "unit system" patches a single key and has two simple variations, `metric` or `imperial`. This is used in the test example above. Using this configuration specification, the `location` could also be set to `stockholm` patching the config with the entire object structure needed by Mycroft.
 
-If no file config specification a common config specification is included with mycroft-core in the file `mycroft/res/{lang}/configurations.json` containing some commonly used configuration options.
+If no file config specification is found in the Skill, a common config specification is included with mycroft-core in the file `mycroft/res/{lang}/configurations.json` containing some commonly used configuration options.
 
 ## And, But
 
