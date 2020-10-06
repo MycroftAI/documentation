@@ -3,7 +3,7 @@ description: >-
   Dies ist eine Anleitung wie Sie Mycroft in deutsch nutzen können. Diese Seite beinhaltet auch eine Kurzanleitung.
 ---
 
-# Mycroft in deutsch
+# Mycroft auf deutsch
 
 ## Erster Einstig
 
