@@ -55,7 +55,7 @@ Installiere nun espeak mbrola über `sudo apt install espeak espeak-data mbrola 
   }
 }
 ```
-_HINWEIS: Die Stimme 7 kann auch durch eine andere Stimme ersetzt werden. Dabei sind alle geraden Zahlen männlich und alle ungeraden Stimmen weiblich.
+_HINWEIS: Die Stimme 7 kann auch durch eine andere Stimme ersetzt werden. Dabei sind alle geraden Zahlen männlich und alle ungeraden Stimmen weiblich._
 
 Mycroft sollte nach einem Neustart auf deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutut werden.
 
@@ -163,7 +163,7 @@ ln -s /usr/local/share/pocketsphinx/model/de/de de/hmm
 cp /usr/local/share/pocketsphinx/model/de/de.lm de/de.lm
 cp /usr/local/share/pocketsphinx/model/de/de.dict de/de.dict
 ```
-_Hinweis: Der `cp`-Befehl könnte durch `ln`-Befehl ersetzt werden um Speicherplatz zu sparen. Es ist jedoch möglich, Wörter zu `de.dict` hinzuzufügen; `cp` bedeutet, dass die Originaldatei unverändert bleibt und mit einer Kopie gearbeitet wird._
+_HINWEIS: Der `cp`-Befehl könnte durch `ln`-Befehl ersetzt werden um Speicherplatz zu sparen. Es ist jedoch möglich, Wörter zu `de.dict` hinzuzufügen; `cp` bedeutet, dass die Originaldatei unverändert bleibt und mit einer Kopie gearbeitet wird._
 
 Falls mit `ln` gearbeitet wird, müssen die folgenden Verzeichnisse, Dateien und symbolische Verknüpft werden:
 
@@ -217,7 +217,7 @@ Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf
 3. Installiere Deepspeech mit `pip install deepspeech==0.7.4` oder `pip install deepspeech-gpu==0.7.4`.
 4. Installiere Deepspeech Server `pip install deepspeech-server`.
 
-_HINWEIS: Bei der installation von Deepspeech Server auf einem Rasberry PI sollte über 1 GB RAM Verfügbar sein. Sonst entsprechend über Swap erweitern.
+_HINWEIS: Bei der installation von Deepspeech Server auf einem Rasberry PI sollte über 1 GB RAM Verfügbar sein. Sonst entsprechend über Swap erweitern._
 
 ### Erstelle eine Server Konfiguration
 
