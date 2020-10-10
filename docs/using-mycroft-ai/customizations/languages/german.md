@@ -217,6 +217,8 @@ Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf
 3. Installiere Deepspeech mit `pip install deepspeech==0.7.4` oder `pip install deepspeech-gpu==0.7.4`.
 4. Installiere Deepspeech Server `pip install deepspeech-server`.
 
+_HINWEIS: Bei der installation von Deepspeech Server auf einem Rasberry PI sollte über 1 GB RAM Verfügbar sein. Sonst entsprechend über Swap erweitern.
+
 ### Erstelle eine Server Konfiguration
 
 Erstelle eine Konfiguationsdatei `config.json`.
