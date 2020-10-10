@@ -215,7 +215,8 @@ Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf
 1. Entpacke die heruntergeladenen Ordner und wechsle hinein. `cd release_v0.7.4`
 2. Aktiviere venv durch `source ~/mycroft-core/.venv/bin/activate`.
 3. Installiere Deepspeech mit `pip install deepspeech==0.7.4` oder `pip install deepspeech-gpu==0.7.4`.
-4. Installiere Deepspeech Server `pip install deepspeech-server`.
+4. Auf Raspberry installiere noch einige Pakete mit `sudo apt-get install gfortran libopenblas-dev liblapack-dev`
+5. Installiere Deepspeech Server `pip install deepspeech-server`.
 
 _HINWEIS: Bei der installation von Deepspeech Server auf einem Rasberry PI sollte über 1 GB RAM Verfügbar sein. Sonst entsprechend über Swap erweitern._
 
