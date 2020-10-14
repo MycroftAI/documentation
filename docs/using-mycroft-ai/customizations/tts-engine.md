@@ -237,6 +237,37 @@ To our existing configuration values we will add the following:
 }
 ```
 
+## Mozilla TTS
+
+### Server Setup
+
+Instructions for setting up a Mozilla TTS server are [available on the projects wiki](https://github.com/mozilla/TTS/wiki/Build-instructions-for-server).
+
+### Mycroft Configuration
+
+Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
+
+```bash
+mycroft-config edit user
+```
+
+To our existing configuration values we will add the following:
+
+```javascript
+"tts": {
+  "module": "mozilla",
+  "mozilla": {
+    "url": "http://my-mozilla-tts-server/api/tts"
+  }
+}
+```
+
+By default the `url` is set to the localhost: [`http://0.0.0.0:5002/api/tts`](http://0.0.0.0:5002/api/tts) So if you are running the server on the same machine as your Mycroft instance, only the `module` attribute needs to be set. This can also be done with a single command:
+
+```bash
+mycroft-config set tts.module mozilla
+```
+
 ## Responsive Voice
 
 {% hint style="warning" %}
