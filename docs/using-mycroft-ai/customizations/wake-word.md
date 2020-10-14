@@ -30,15 +30,20 @@ An instructional overview is available on the [Precise repository on Github](htt
 
 ### Configuring Your Precise Wake Word
 
+For this example we shall use a pre-trained model named `computer-en`. Each model consists of two files:
+
+* `computer-en.pb` - the model itself; and
+* `computer-en.pb.params` - a small configuration file containing the parameters for that model.
+
+The two files must be consistently named as they are in the example above. They must also be stored in the same directory, however it does not matter where on the file system this directory is as we will point Mycroft to them. By default Mycroft stores these in your home directory at `~/.mycroft/precise`. Multiple models can be on your system at any given time so we can leave any existing model files there.
+
 Once you have your Wake Word model, you must tell Mycroft which model you want to use in your [`mycroft.conf`](mycroft-conf.md) file. This is best done using the [Configuration Manager](config-manager.md). To edit your User level configuration run:
 
 ```bash
 mycroft-config edit user
 ```
 
-For this example we shall use a pre-trained model `computer-en.pb`.
-
-We will first define our Wake Word and any attributes we want to give it. Each hotword is declared as it's own block under the `hotwords` key. The name of this block defines the name of the Wake Word. For this example, we will call our Wake Word `computer`. Each Precise Wake Word settings block must include at least the Wake Word `module` being used \(in our case `precise`\), and the location of the model file on the device.
+We will then define our Wake Word and any attributes we want to give it. Each hotword is declared as it's own block under the `hotwords` key. The name of this block defines the name of the Wake Word. For this example, we will call our Wake Word `computer`. Each Precise Wake Word settings block must include at least the Wake Word `module` being used \(in our case `precise`\), and the location of the model files on the device.
 
 ```javascript
 "hotwords": {
@@ -59,24 +64,44 @@ To define which Wake Word will be active, under `listener` we must add a `wake_w
 }
 ```
 
+#### Optional Attributes
+
+There are two optional attributes for Precise Wake Words:
+
+* `sensitivity` \(default 0.5\)
+* `trigger_level` \(default 3\)
+
+The sensitivity value is a float and ranges between 0.0 - 1.0 with sensitivity increasing as the value increases. A value of 0.1 will minimize false positives while a value of 0.9 will recognize almost anything. The default value is 0.5.
+
+The trigger level relates to consecutive positive samples and is an integer between 1 - infinity with practical values ranging betwen 1 and 10. The higher the value the less likely Mycroft is to activate unintentionally. However high values will make it less likely to intentionally activate Mycroft. The default value is 3.
+
 #### Example Configuration
 
 Putting the example above together in an otherwise unmodified User level `mycroft.conf`, would be:
 
 ```javascript
 {
-  "max_allowed_core_version": 19.8,
+  "max_allowed_core_version": 20.8,
   "listener": {
     "wake_word": "computer"
   },
   "hotwords": {
     "computer": {
         "module": "precise",
-        "local_model_file": "/home/user/.mycroft/precise/computer-en.pb"
+        "local_model_file": "/home/user/.mycroft/precise/computer-en.pb",
+        "sensitivity": 0.1,
+        "trigger_level": 7
     }
   }
 }
 ```
+
+{% hint style="info" %}
+Remember in the example above, there must be two files for the model to operate:
+
+* `/home/user/.mycroft/precise/computer-en.pb`
+* `/home/user/.mycroft/precise/computer-en.pb.params`
+{% endhint %}
 
 ## PocketSphinx
 

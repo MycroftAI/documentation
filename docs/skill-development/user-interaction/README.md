@@ -10,7 +10,7 @@ description: >-
 
 The initial interactions with your Skill will start with a general utterance from the User. Your Skill must register intents that it can handle and Mycroft will then determine which Skill can respond to the Users request.
 
-{% page-ref page="intents/README.md" %}
+{% page-ref page="intents/" %}
 
 ## Statements
 
@@ -47,3 +47,4 @@ For more complex cases, a Skill can add context to the Intent Parser to create m
 Converse allows a recently active Skill to inspect utterances before the normal intent handling process.
 
 {% page-ref page="converse.md" %}
+

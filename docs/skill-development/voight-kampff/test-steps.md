@@ -108,7 +108,7 @@ Tests that a particular [Message Type](https://mycroft-ai.gitbook.io/docs/mycrof
 
 The test can specify a certain configuration using a Given Step and a configuration specification.
 
-```cucumber
+```text
   Given an english speaking user
   And the user's unit system is metric
   When the user says "how tall is the eiffel tower"
@@ -116,11 +116,12 @@ The test can specify a certain configuration using a Given Step and a configurat
 ```
 
 #### Configuration specification
+
 The configuration and values are setup in a json file in the test/behave folder of the skill, named as the feature file but with the extension `.config.json` so if the feature file is `myskill.feature` the config specification file should be called `myskill.config.json`.
 
-The file is organized in a config name -> config value name -> config patch structure.
+The file is organized in a config name -&gt; config value name -&gt; config patch structure.
 
-```json
+```javascript
 {
     "config": {
         "value": PATCH
@@ -132,7 +133,7 @@ The `config` and `value` keys from this JSON object can then be inserted in the 
 
 Let's look at a real life example file with the configs "unit system" and "location"
 
-```json
+```javascript
 {
   "unit system": {
     "metric": {"system_unit": "metric"},

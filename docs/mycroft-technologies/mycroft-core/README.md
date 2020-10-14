@@ -24,13 +24,14 @@ If you have thoughts or comments on the following status proposals, please [let 
 
 ### Status/Watchdog Service
 
-The status/watchdog service would be a new systemd service running on devices that run Mycroft-core.  The functionality of this service could include, but would not be limited to:
-- Monitoring various aspects of the health of each core service (is service running, healthy, ready, etc.).  
-- Heartbeats could be emitted from each service, or the new service could check the pulse of each service on regular intervals.  
-- Actions could be taken if a service becomes unhealthy, such as attempting to restart a crashed service.  
-- Specific checks, such as the existing microphone watchdog, could be included in this service. 
-- Responsible for restarting services on a daily basis.  
-- If a user opts in to data sharing, information about exceptions or crashes could be sent to Mycroft for diagnostic purposes.
+The status/watchdog service would be a new systemd service running on devices that run Mycroft-core. The functionality of this service could include, but would not be limited to:
+
+* Monitoring various aspects of the health of each core service \(is service running, healthy, ready, etc.\).  
+* Heartbeats could be emitted from each service, or the new service could check the pulse of each service on regular intervals.  
+* Actions could be taken if a service becomes unhealthy, such as attempting to restart a crashed service.  
+* Specific checks, such as the existing microphone watchdog, could be included in this service. 
+* Responsible for restarting services on a daily basis.  
+* If a user opts in to data sharing, information about exceptions or crashes could be sent to Mycroft for diagnostic purposes.
 
 ### Process Status
 
@@ -43,13 +44,13 @@ status = ProcessStatus(name, bus, on_started=None, on_alive=None, on_ready=None,
               on_stopping=None, on_error=None)
 ```
 
-**Arguments** 
+**Arguments**
 
-`name` \(str\): process name, will be used to create the messagebus messagetype "mycroft.{name}..."   
+`name` \(str\): process name, will be used to create the messagebus messagetype "mycroft.{name}..."  
 `bus` \(MessageBusClient\): connection to the Mycroft messagebus.  
-`on_started` \(callable\): callback to execute when process is started   
-`on_alive` \(callable\): callback to execute when minimum operation is reached.   
-`on_ready` \(callable\): callback to execute when loading is 100 % complete.   
+`on_started` \(callable\): callback to execute when process is started  
+`on_alive` \(callable\): callback to execute when minimum operation is reached.  
+`on_ready` \(callable\): callback to execute when loading is 100 % complete.  
 `on_stopping` \(callable\): callback to execute when shutdown of process starts.  
 `on_error` \(callable\): callback to execute when an unrecoverable error renders the process unusable.
 
