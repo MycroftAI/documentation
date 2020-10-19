@@ -21,12 +21,14 @@ Mycroft supports plugins for:
 * [Speech to Text \(STT\)](stt.md)
 * [Text to Speech \(TTS\)](tts.md)
 * [Audioservice backends](audioservice.md)
+* [Wake word engines](wake-word-plugins.md)
 
 These are accessible at through the following entry point types:
 
 * STT Plugin: `mycroft.plugin.stt`
 * TTS Plugin: `mycroft.plugin.tts`
 * Audioservice Plugin `mycroft.plugin.audioservice`
+* Wake Word Plugin `mycroft.plugin.wake_word`
 
 ### Plugin setup.py
 
