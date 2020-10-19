@@ -37,7 +37,7 @@ A pip installable package always contain a `setup.py` file with install instruct
 To make a plugin discoverable an `entry_point` must be added to the setup call in `setup.py`.
 
 ```python
-entry_ponts={'entrypointtype': 'my_plugin_name' = 'my_module.myPluginClass'
+entry_points={'entrypointtype': 'my_plugin_name = my_module.myPluginClass'
 ```
 
 `my_plugin_name` will be the module identifier that can be used in the Mycroft configuration to reference a plugin. That plugin name will refer to the class \(or module\) specified by the string to the right of the equal sign. In the example above it will refer to the `myPluginClass` in the module `my_module`.
