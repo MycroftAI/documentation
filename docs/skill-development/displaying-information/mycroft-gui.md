@@ -47,11 +47,11 @@ Skills for Mycroft AI are written in Python, using the skills development guide 
 
 Let's walk you through some basics of writing your QML user interface, this section is divided into 5 parts:
 
-* [Importing Modules](mycroft-gui.md#Importing-Modules)
-* [Using Mycroft-GUI Framework Base Delegates](mycroft-gui.md#Using-Mycroft-GUI-Framework)
-* [Using Mycroft Framework Components](mycroft-gui.md#Using-Mycroft-Framework-Components)
-* [Event Handling](mycroft-gui.md#Event-Handling)
-* [Resting Faces](mycroft-gui.md#Resting-Faces)
+* [Importing Modules](mycroft-gui.md#importing-modules)
+* [Using Mycroft-GUI Framework Base Delegates](mycroft-gui.md#using-mycroft-gui-framework-base-delegates)
+* [Using Mycroft Framework Components](mycroft-gui.md#using-mycroft-framework-components)
+* [Event Handling](mycroft-gui.md#event-handling)
+* [Resting Faces](mycroft-gui.md#resting-faces)
 
 #### Importing Modules
 
