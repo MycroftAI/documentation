@@ -208,7 +208,7 @@ Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änder
 
 # Mozilla Deepspeech STT
 
-Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf einem Deepspeech Server einrichten. [Aashish Agarwal](https://github.com/AASHISHAG/deepspeech-german) hat dazu entsprechende [Modell Files](https://drive.google.com/drive/folders/1L7ILB-TMmzL8IDYi_GW8YixAoYWjDMn1) unter Deepspeech V9.0 veröffentlicht. Das Modell ist aktuell noch etwas Empfindlich was leise oder fremde Geräusche angeht.
+Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf einem Deepspeech Server einrichten. [Aashish Agarwal](https://github.com/AASHISHAG/deepspeech-german) hat dazu entsprechende [Modell Files](https://drive.google.com/drive/folders/1L7ILB-TMmzL8IDYi_GW8YixAoYWjDMn1) unter Deepspeech V9.0 veröffentlicht.
 
 ## Installation
 
