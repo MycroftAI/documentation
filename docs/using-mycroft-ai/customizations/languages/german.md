@@ -251,7 +251,7 @@ Erstelle eine Konfiguationsdatei `config.json`.
 ### Start
 
 1. Starte Deepspeech Server `deepspeech-server --config config.json`
-2. Erstelle Testdatei `arecord test.wav`.
+2. Erstelle Testdatei `arecord -f S16_LE -r 16000 test.wav`.
 3. Sende Testdatei `curl -X POST --data-binary @test.wav http://localhost:8080/stt`
 
 Antwort sollte nun `test ein zwei drei test(.venv) pi@picroft:~/release_v0.9.0$` lauten.
