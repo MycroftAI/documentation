@@ -208,13 +208,13 @@ Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änder
 
 # Mozilla Deepspeech STT
 
-Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf einem Deepspeech Server einrichten. [Aashish Agarwal](https://github.com/AASHISHAG/deepspeech-german) hat dazu ein entsprechendes [Modell](https://drive.google.com/drive/folders/1PFSIdmi4Ge8EB75cYh2nfYOXlCIgiMEL?usp=sharing) unter Deepspeech V7.4 veröffentlicht. Das Modell ist aktuell noch etwas Empfindlich was leise oder fremde Geräusche angeht.
+Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf einem Deepspeech Server einrichten. [Aashish Agarwal](https://github.com/AASHISHAG/deepspeech-german) hat dazu entsprechende [Modell Files](https://drive.google.com/drive/folders/1L7ILB-TMmzL8IDYi_GW8YixAoYWjDMn1) unter Deepspeech V9.0 veröffentlicht. Das Modell ist aktuell noch etwas Empfindlich was leise oder fremde Geräusche angeht.
 
 ## Installation
 
-1. Entpacke die heruntergeladenen Ordner und wechsle hinein. `cd release_v0.7.4`
+1. Entpacke die heruntergeladenen Ordner und wechsle hinein. `cd release_v0.9.0`
 2. Aktiviere venv durch `source ~/mycroft-core/.venv/bin/activate`.
-3. Installiere Deepspeech mit `pip install deepspeech==0.7.4` oder `pip install deepspeech-gpu==0.7.4`.
+3. Installiere Deepspeech mit `pip install deepspeech==0.9.0` oder `pip install deepspeech-gpu==0.9.0`.
 4. Auf Raspberry installiere noch einige Pakete mit `sudo apt-get install gfortran libopenblas-dev liblapack-dev`
 5. Installiere Deepspeech Server `pip install deepspeech-server`.
 
@@ -254,14 +254,14 @@ Erstelle eine Konfiguationsdatei `config.json`.
 2. Erstelle Testdatei `arecord test.wav`.
 3. Sende Testdatei `curl -X POST --data-binary @test.wav http://localhost:8080/stt`
 
-Antwort sollte nun `test ein zwei drei test(.venv) pi@picroft:~/release_v0.7.4$` lauten.
+Antwort sollte nun `test ein zwei drei test(.venv) pi@picroft:~/release_v0.9.0$` lauten.
 
 ### Start Deepspeech Server wärend dem booten
 
 Füge folgendes in Startup Datei `/etc/rc.local`.
 
 ```
-/home/pi/mycroft-core/.venv/bin/deepspeech-server --config /home/pi/release_v0.7.4/config.json
+/home/pi/mycroft-core/.venv/bin/deepspeech-server --config /home/pi/release_v0.9.0/config.json
 ```
 
 ### Konfiguriere Mycroft für die Verwendung von Deepspeech 
