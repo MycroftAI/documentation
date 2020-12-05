@@ -6,8 +6,20 @@ description: >-
 
 # Roadmap
 
-{% hint style="warning" %}
-Warning: these Roadmaps have not been updated recently.
+A new [Master Roadmap 2020](https://docs.google.com/document/d/1XCSdcszcuWhZsIHpkVrmHhFGHLdx7xqvd_BYELcXqTY/edit) has been created. This should always start with the highest priority project followed by individual roadmaps for secondary priorities.
+
+Each individual Roadmap will include the following sections:
+
+* Next - Work that is needed most urgently.
+* Longer term - Work that is needed but can wait until “Next” items are finished.
+* Nice to have - Features that can be added at any time but will not be prioritized by the internal Mycroft team. 
+
+The Roadmaps themselves may either be collaborative documents like the [Master Roadmap](https://docs.google.com/document/d/1XCSdcszcuWhZsIHpkVrmHhFGHLdx7xqvd_BYELcXqTY/edit?usp=sharing), or where it directly relates to a single technology hosted as a Github project board. Each of the collaborative documents are set to allow comments so please jump in and have your say on the direction of Mycroft.
+
+## Archive
+
+{% hint style="info" %}
+The following Roadmaps have been kept for archive purposes only.
 {% endhint %}
 
 We now have both a **Master Roadmap**, and associated voice stack Roadmaps to help you see where Mycroft's technology is headed. Your comments are warmly welcomed in the below documents:

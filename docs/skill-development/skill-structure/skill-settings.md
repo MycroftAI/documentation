@@ -59,7 +59,7 @@ Notice that the value of `false` is surrounded by "quotation marks". This is bec
 
 Both of these files would result in the same settings block.
 
-![](../../.gitbook/assets/Date-Time-Settings.png)
+![](../../.gitbook/assets/Date-Time-Settings%20%281%29.png)
 
 It is up to your personal preference which syntax you choose.
 
@@ -109,7 +109,7 @@ Examples for each type of field are provided in JSON and YAML at the end of this
 
 Once settings have been defined using a `settingsmeta` file, they will be presented to the user on their personal [Skill Settings page](https://home.mycroft.ai/skills).
 
-When settings are fetched from the Mycroft server, they are saved into a `settings.json` file. This file is automatically created when a Skill is loaded even if the Skill does not have any settings. Your Skill then accesses the settings from this file. Nowadays the file is located in the Skill's XDG_CONFIG_DIR (usually `~/config/mycroft/skills/<skillname>`), however if a `settings.json` file already exists in the Skill's root directory (the deprecated location) that location is used for compatibility.
+When settings are fetched from the Mycroft server, they are saved into a `settings.json` file. This file is automatically created when a Skill is loaded even if the Skill does not have any settings. Your Skill then accesses the settings from this file. Nowadays the file is located in the Skill's XDG\_CONFIG\_DIR \(usually `~/config/mycroft/skills/<skillname>`\), however if a `settings.json` file already exists in the Skill's root directory \(the deprecated location\) that location is used for compatibility.
 
 ### Reading settings
 

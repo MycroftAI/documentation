@@ -100,6 +100,7 @@
 ## Mycroft Technologies
 
 * [Technology Overview](mycroft-technologies/overview.md)
+* [Roadmap](mycroft-technologies/mycroft-roadmap.md)
 * [Mycroft Core](mycroft-technologies/mycroft-core/README.md)
   * [MessageBus](mycroft-technologies/mycroft-core/message-bus.md)
   * [Message Types](mycroft-technologies/mycroft-core/message-types.md)
@@ -108,10 +109,10 @@
   * [Voice Service](mycroft-technologies/mycroft-core/voice-service.md)
   * [Enclosure](mycroft-technologies/mycroft-core/enclosure.md)
   * [Plugins](mycroft-technologies/mycroft-core/plugins/README.md)
+    * [Audioservice Plugins](mycroft-technologies/mycroft-core/plugins/audioservice.md)
     * [STT Plugins](mycroft-technologies/mycroft-core/plugins/stt.md)
     * [TTS Plugins](mycroft-technologies/mycroft-core/plugins/tts.md)
-    * [Audioservice Plugins](mycroft-technologies/mycroft-core/plugins/audioservice.md)
-  * [Roadmap](mycroft-technologies/mycroft-core/mycroft-roadmap.md)
+    * [Wake Word Plugins](mycroft-technologies/mycroft-core/plugins/wake-word-plugins.md)
   * [Legacy Repo](mycroft-technologies/mycroft-core/legacy-repo.md)
 * [Adapt](mycroft-technologies/adapt/README.md)
   * [Adapt Examples](mycroft-technologies/adapt/adapt-examples.md)
