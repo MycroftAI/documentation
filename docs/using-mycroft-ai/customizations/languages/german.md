@@ -35,6 +35,7 @@ Erstelle oder ändere die eigene `~/.mycroft/mycroft.conf` Konfigurationsdatei w
 }
 
 ```
+_HINWEIS: Sollte sich die standard Aussprache von mycroft in deutsch melden kann hilft eventuell das updaten mit `mycroft-pip install --upgrade gtts` oder `mycroft-pip install --upgrade gtts-token`._
 
 ## TTS Alternativ mit espeak mbrola
 
