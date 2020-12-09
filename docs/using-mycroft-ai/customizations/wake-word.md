@@ -240,3 +240,38 @@ If you are using Precise, Mycroft will respond:
 
 `"The current Listener is Precise"`
 
+## Porcupine
+
+  A range of pre-trained models are available from .
+
+### Setup
+1. Install the `pvporcupine` package 
+  ```shell
+  mycroft-pip install pvporcupine
+  ```
+
+2. Download a keyword file from [the Picovoice Github repository](https://github.com/Picovoice/porcupine/tree/master/resources/keyword_files) onto the device running Mycroft.
+
+3. Update your Mycroft configuration using the Configuration Manager 
+  ```shell
+  mycroft-config edit user
+  ```
+  Using the blueberry wake word as an example, we would add:
+  ```json
+    "listener": {
+      "wake_word": "blueberry"
+    },
+    "hotwords": {
+      "blueberry": {
+        "module": "porcupine",
+        "keyword_file_path": "/PATH/TO/BLUEBERRY.ppn"
+      }
+    }
+  ```
+
+_Note: Be sure to add a comma to the line before this is added._
+
+4. Restart the Mycroft Voice Service to ensure the configuration is updated:
+  ```shell
+  mycroft-start restart voice
+  ```
