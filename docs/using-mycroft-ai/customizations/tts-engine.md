@@ -210,7 +210,38 @@ To our existing configuration values we will add the following:
 }
 ```
 
-## Microsoft Azure
+## Microsoft Azure Cognitive Service
+
+_Note: This is a Community provided TTS plugin and is not controlled by Mycroft AI. Updates for this plugin may not have been reviewed by the Mycroft team. We strongly recommend reviewing any code you intend to install from outside Mycroft's official channels._
+
+### Installation
+
+```bash
+mycroft-pip install mycroft-tts-plugin-azure
+```
+
+### Account Setup
+
+This TTS service requires a subscription to Microsoft Azure and the creation of a Speech resource (https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview#create-the-azure-resource)
+The free plan is more than able to handle domestic usage (5 million character per month, or 0.5 million with neural TTS voice)
+
+### Mycroft Configuration
+
+You can choose your voice here in the column "voice name" (https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#text-to-speech)
+Neural voices are much better, but cost more.
+
+```javascript
+"tts": {
+  "module": "azure",
+  "azure": {
+    "api_key": "insert_your_key_here",
+    "voice": "en-US-JennyNeural", # optional, default "en-US-Guy24kRUS"
+    "region": "westus" # optional, if your region is westus
+  }
+}
+```
+
+## Microsoft Bing
 
 ### Account Setup
 
