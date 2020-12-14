@@ -212,9 +212,13 @@ To our existing configuration values we will add the following:
 
 ## Microsoft Azure Cognitive Service
 
+_Note: This is a Community provided TTS plugin and is not controlled by Mycroft AI. Updates for this plugin may not have been reviewed by the Mycroft team. We strongly recommend reviewing any code you intend to install from outside Mycroft's official channels._
+
 ### Installation
 
+```bash
 mycroft-pip install mycroft-tts-plugin-azure
+```
 
 ### Account Setup
 
