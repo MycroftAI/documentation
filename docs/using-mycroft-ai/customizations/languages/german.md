@@ -19,7 +19,7 @@ Folgend wird an den Beispielen Google/Mbrola der Sprachoutput (TTS) auf deutsch 
 ## Text-to-Speech (TTS) über Google
 
 
-Erstelle oder ändere die eigene `~/.mycroft/mycroft.conf` Konfigurationsdatei wie folgt.
+Ändere oder ersetze die eigene Konfiguration `mycroft-config edit user` mit folgendem Inhalt.
 
 **Data:**
 
@@ -60,9 +60,9 @@ _HINWEIS: Die Stimme 7 kann auch durch eine andere Stimme ersetzt werden. Dabei 
 
 Mycroft sollte nach einem Neustart auf deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutut werden.
 
-Das **Wake Word** (z.b. hey mycroft, Christopher, Hey Ezra, Hey Jarvis) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
+Das **Wake Word** (z.b. Hey Mycroft, Christopher, Hey Ezra, Hey Jarvis) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
 
-# Ändern des **Wake Words** in ein deutsches Wort
+## Ändern des **Wake Words** in ein deutsches Wort
 
 Mycroft verwendet [Precise](https://mycroft.ai/documentation/precise) und [PocketSphinx](https://github.com/cmusphinx/pocketsphinx) als **Wake Word**-Mechanismus. Das Standard **Wake Word** auf englisch ist `Hey Mycroft` und nutzt Precise und - falls Precise es nicht erkennt - Pocketsphinx.
 
@@ -189,7 +189,7 @@ Wenn das gewählte **Wake Word** oder Phrase nicht in der `de.dict` Datei ist, d
 
 ### Konfiguriere Mycroft für die Verwendung eines deutsch ausgesprochenen **Wake Words** 
 
-Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änderungen:
+Ändere oder ersetze die eigene Konfiguration `mycroft-config edit user` mit folgendem Inhalt.
 
 **Data:**
 
@@ -207,11 +207,11 @@ Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änder
 ...
 ```
 
-# Mozilla Deepspeech STT
+## Mozilla Deepspeech STT
 
 Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf einem Deepspeech Server einrichten. [Aashish Agarwal](https://github.com/AASHISHAG/deepspeech-german) hat dazu entsprechende [Modell Files](https://drive.google.com/drive/folders/1L7ILB-TMmzL8IDYi_GW8YixAoYWjDMn1) unter Deepspeech V9.0 veröffentlicht.
 
-## Installation
+### Installation
 
 1. Entpacke die heruntergeladenen Ordner und wechsle hinein. `cd release_v0.9.0`
 2. Aktiviere venv durch `source ~/mycroft-core/.venv/bin/activate`.
@@ -267,7 +267,7 @@ Füge folgendes in Startup Datei `/etc/rc.local`.
 
 ### Konfiguriere Mycroft für die Verwendung von Deepspeech 
 
-Bearbeite die Konfigurationsdatei `~/.mycroft/mycroft.conf` mit folgenden Änderungen:
+Ändere oder ergänze die eigene Konfiguration `mycroft-config edit user` mit folgendem Inhalt.
 
 **Data:**
 
