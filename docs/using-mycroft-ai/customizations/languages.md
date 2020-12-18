@@ -137,7 +137,7 @@ Some common files for each language are:
 
 As of mid-2019, the languages supported by `mycroft-core` are:
 
-* German \(`de`\)
+* [German](languages/german.md) \(`de`\)
 * French \(`fr`\)
 * Hungarian \(`hu`\)
 * Italian \(`it`\)
