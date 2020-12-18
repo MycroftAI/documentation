@@ -214,6 +214,8 @@ To our existing configuration values we will add the following:
 
 _Note: This is a Community provided TTS plugin and is not controlled by Mycroft AI. Updates for this plugin may not have been reviewed by the Mycroft team. We strongly recommend reviewing any code you intend to install from outside Mycroft's official channels._
 
+_Plugins are currently only available on the `dev` channel of Mycroft. They will be available on all systems in the next minor release. If you're not sure what that means, [sign up to our newsletter](https://mycroft.ai/newsletters/) to get notified about the next release._
+
 ### Installation
 
 ```bash
