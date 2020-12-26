@@ -220,7 +220,7 @@ This would set the default input to be device 2 and the default output device to
 Pulseaudio has an echo cancellation module that can be loaded.
 
 ```text
-$ pactl load-module echo-cancellation
+$ pactl load-module module-echo-cancel
 ```
 
 This is system wide. If not previously enabled, you will need to restart any applications using pulse. For documentation, see [https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/\#index45h3](https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/#index45h3) Additional usage and tips can be found [https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting](https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting)
