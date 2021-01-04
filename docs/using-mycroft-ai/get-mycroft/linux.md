@@ -32,7 +32,7 @@ There are multiple ways to install Mycroft for Linux.
 
 Mycroft is now available as a Snap package. Providing a simple and secure means of installing Mycroft on a broad range of Linux distributions.
 
-The Snap package is currently considered an Alpha release. Find out more:
+The Snap package is currently considered an Alpha release and has a number of usability bugs that need to be addressed before it will be promoted to an installable channel. For now we recommend the git clone method below, but we welcome any help in improving Mycroft as a Snap:
 
 {% page-ref page="snap.md" %}
 
