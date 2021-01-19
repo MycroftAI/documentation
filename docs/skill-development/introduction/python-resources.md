@@ -44,3 +44,4 @@ Books and courses are great to get started but once you have the basics you ofte
 
 For an alternative view of this same documentation, try [DevDocs.io](https://devdocs.io/python~3.7/).
 
+If you're a little more visual, check out this [Python Cheat Sheet](https://websitesetup.org/python-cheat-sheet/) that covers all the basics.
