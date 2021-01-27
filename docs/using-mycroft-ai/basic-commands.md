@@ -9,7 +9,7 @@ You issue a command to Mycroft by Speaking the **Wake Word** (e.g. "Hey Mycroft"
 
 When you issue a command, you *intend* for Mycroft to react in a certain way.  Your **utterance** contains an **Intent**.  Mycroft uses natural language processing to compare the words in your **utterance** to expected phrases or keywords as supplied by the installed **Skills**.  When Mycroft determines that there is a *match* between your **utterance** and a specific expectation (the phrases/keywords), the **Skill** that supplied the matching expectation is notified so that it can respond to your command.
 
-Mycroft comes with a collection of **Skills** installed by default.  Each **Skill** supplies a set of **Intents**, and each **Intent** has a set of expected phrases or keywords.  Each of the default **Skills** is introduced below with a brief description, followed by a sampling of expected **utternances** (usually grouped by **Intent**). Additional **Skills** may be added to your Mycroft Device; please see [Installing New Skills](https://mycroft-ai.gitbook.io/docs/using-mycroft-ai/installing-new-skills).  
+Mycroft comes with a collection of **Skills** installed by default.  Each **Skill** supplies a set of **Intents**, and each **Intent** has a set of expected phrases or keywords.  Each of the default **Skills** is introduced below with a brief description, followed by a sampling of expected **utterances** (usually grouped by **Intent**). Additional **Skills** may be added to your Mycroft Device; please see [Installing New Skills](https://mycroft-ai.gitbook.io/docs/using-mycroft-ai/installing-new-skills).  
 
 Have fun exploring natural language processing by trying these commands with variations to the wording and phrasing. 
 
