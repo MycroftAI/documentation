@@ -150,7 +150,7 @@ Restart=no
 WantedBy=multi-user.target
 ```
 
-Please modify `WorkingDirectory` and `User` to your needs. Reload the unit files with `sudo systemctl daemon-reload `and then, enable the new created service with `sudo systemctl enable mycroft.service` . You could start Mycroft by running `sudo systemctl start mycroft.service` stop it by `sudo systemctl stop mycroft.service` and get the status by typing `sudo systemctl status mycroft.service`.
+Please modify `WorkingDirectory` and `User` to your needs. Reload the unit files with `sudo systemctl daemon-reload`and then, enable the new created service with `sudo systemctl enable mycroft.service` . You could start Mycroft by running `sudo systemctl start mycroft.service` stop it by `sudo systemctl stop mycroft.service` and get the status by typing `sudo systemctl status mycroft.service`.
 
 ## Pairing Mycroft for Linux
 

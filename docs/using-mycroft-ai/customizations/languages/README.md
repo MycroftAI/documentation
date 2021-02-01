@@ -16,16 +16,16 @@ Adding support for a new language is a significant undertaking. It is complex an
 
 For Mycroft to be usable in a language we need to look at six components.
 
-1. [Language setting](languages.md#1-language-setting): To inform each of the following components which language we are using, we must set our overall language setting.
-2. [Wake Word](languages.md#2-wake-word): When you Speak 'Hey Mycroft, do something', you are invoking a Wake Word. To change your Wake Word to another language, you need to change the Wake Word phrase that is used.
-3. [Speech to Text](languages.md#3-speech-to-text-stt): Mycroft is designed to be modular, so you can choose which Speech to Text engine you use. You need to find and configure a Speech to Text engine for your language.
-4. [Text to Speech](languages.md#4-text-to-speech-tts): Again, Mycroft is designed to be modular, so you can choose which Text to Speech engine you use. You need to find and configure a Text to Speech engine for your language.
-5. [Skills](languages.md#5-skills): To support a language, a Skill must have `vocab` and `dialog` entries for that language.
-6. [Mycroft Core](languages.md#6-mycroft-core-lingua-franca-library): To support a new language, `mycroft-core` needs to have supporting files added to the [Lingua Franca library](https://github.com/MycroftAI/lingua-franca).
+1. [Language setting](./#1-language-setting): To inform each of the following components which language we are using, we must set our overall language setting.
+2. [Wake Word](./#2-wake-word): When you Speak 'Hey Mycroft, do something', you are invoking a Wake Word. To change your Wake Word to another language, you need to change the Wake Word phrase that is used.
+3. [Speech to Text](./#3-speech-to-text-stt): Mycroft is designed to be modular, so you can choose which Speech to Text engine you use. You need to find and configure a Speech to Text engine for your language.
+4. [Text to Speech](./#4-text-to-speech-tts): Again, Mycroft is designed to be modular, so you can choose which Text to Speech engine you use. You need to find and configure a Text to Speech engine for your language.
+5. [Skills](./#5-skills): To support a language, a Skill must have `vocab` and `dialog` entries for that language.
+6. [Mycroft Core](./#6-mycroft-core-lingua-franca-library): To support a new language, `mycroft-core` needs to have supporting files added to the [Lingua Franca library](https://github.com/MycroftAI/lingua-franca).
 
 ## 1. Language setting
 
-Your primary language is set within your `mycroft.conf` file. Using the [Configuration Manager](config-manager.md) we can set the language by running:
+Your primary language is set within your `mycroft.conf` file. Using the [Configuration Manager](../config-manager.md) we can set the language by running:
 
 ```bash
 mycroft-config set lang "it-it"
@@ -37,7 +37,7 @@ Changing your wake word is not necessary, however may be desirable in order to w
 
 [See our documentation on changing your Wake Word, and select a Wake Word that suits your language](https://mycroft.ai/documentation/home-mycroft-ai-pairing/#changing-your-wake-word). Alternatively you can create a custom wake word:
 
-{% page-ref page="wake-word.md" %}
+{% page-ref page="../wake-word.md" %}
 
 ## 3. Speech to Text \(STT\)
 
@@ -55,7 +55,7 @@ STT engines are made available by different vendors, and they each have differen
 
 See the full range of supported STT engines and how to configure Mycroft to use them:
 
-{% page-ref page="stt-engine.md" %}
+{% page-ref page="../stt-engine.md" %}
 
 #### What if there isn't an STT engine available for my language?
 
@@ -86,7 +86,7 @@ If you would like to build a TTS for your language, then we recommend you check 
 
 ### Setting your TTS engine
 
-Using the [Configuration Manager](config-manager.md) we can edit the User-level `mycroft.conf` file by running:
+Using the [Configuration Manager](../config-manager.md) we can edit the User-level `mycroft.conf` file by running:
 
 ```bash
 mycroft-config edit user
@@ -137,7 +137,7 @@ Some common files for each language are:
 
 As of mid-2019, the languages supported by `mycroft-core` are:
 
-* [German](languages/german.md) \(`de`\)
+* [German](german.md) \(`de`\)
 * French \(`fr`\)
 * Hungarian \(`hu`\)
 * Italian \(`it`\)

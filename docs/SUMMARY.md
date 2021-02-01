@@ -25,7 +25,7 @@
 * [Customizations](using-mycroft-ai/customizations/README.md)
   * [Configuration Manager](using-mycroft-ai/customizations/config-manager.md)
   * [mycroft.conf](using-mycroft-ai/customizations/mycroft-conf.md)
-  * [Languages](using-mycroft-ai/customizations/languages.md)
+  * [Languages](using-mycroft-ai/customizations/languages/README.md)
     * [German](using-mycroft-ai/customizations/languages/german.md)
   * [Using a Custom Wake Word](using-mycroft-ai/customizations/wake-word.md)
   * [Speech-To-Text](using-mycroft-ai/customizations/stt-engine.md)

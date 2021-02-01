@@ -214,7 +214,7 @@ To our existing configuration values we will add the following:
 
 _Note: This is a Community provided TTS plugin and is not controlled by Mycroft AI. Updates for this plugin may not have been reviewed by the Mycroft team. We strongly recommend reviewing any code you intend to install from outside Mycroft's official channels._
 
-_Plugins are currently only available on the `dev` channel of Mycroft. They will be available on all systems in the next minor release. If you're not sure what that means, [sign up to our newsletter](https://mycroft.ai/newsletters/) to get notified about the next release._
+_Plugins are currently only available on the `dev` channel of Mycroft. They will be available on all systems in the next minor release. If you're not sure what that means,_ [_sign up to our newsletter_](https://mycroft.ai/newsletters/) _to get notified about the next release._
 
 ### Installation
 
@@ -224,13 +224,11 @@ mycroft-pip install mycroft-tts-plugin-azure
 
 ### Account Setup
 
-This TTS service requires a subscription to Microsoft Azure and the creation of a Speech resource (https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview#create-the-azure-resource)
-The free plan is more than able to handle domestic usage (5 million character per month, or 0.5 million with neural TTS voice)
+This TTS service requires a subscription to Microsoft Azure and the creation of a Speech resource \([https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview\#create-the-azure-resource](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview#create-the-azure-resource)\) The free plan is more than able to handle domestic usage \(5 million character per month, or 0.5 million with neural TTS voice\)
 
 ### Mycroft Configuration
 
-You can choose your voice here in the column "voice name" (https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#text-to-speech)
-Neural voices are much better, but cost more.
+You can choose your voice here in the column "voice name" \([https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support\#text-to-speech](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#text-to-speech)\) Neural voices are much better, but cost more.
 
 ```javascript
 "tts": {
