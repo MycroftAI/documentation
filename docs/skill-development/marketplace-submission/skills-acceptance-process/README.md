@@ -53,7 +53,7 @@ This will upload the Skill to Github if it isn’t already, and generate a pull 
 
 ### 2. Automatic Testing of Skills
 
-We have developed an Integration Test Runner that assists you in writing tests that can be executed at both an **Intent** and a **Skill** level. [Learn more about Automatic Testing of your Mycroft Skill](../../voight-kampff/automatic-testing.md).
+We have developed an Integration Test Runner that assists you in writing tests that can be executed at both an **Intent** and a **Skill** level. [Learn more about Automatic Testing of your Mycroft Skill](../../voight-kampff/).
 
 This automated testing is run as soon as you submit your Skill to the Mycroft-Skills repo, and with each major release of Mycroft-core.
 
