@@ -12,7 +12,7 @@ Mycroft Core includes four or more distinct Services:
 
 * [MessageBus](message-bus.md)
 * [Skills](https://github.com/MycroftAI/documentation/tree/4a8ffa3702e64c9411fb0ba4239a61d1cca506ab/docs/mycroft-technologies/mycroft-core/skills-service.md)
-* [Audio](audio-service.md)
+* [Audio](services/audio-service.md)
 * [Voice](https://github.com/MycroftAI/documentation/tree/4a8ffa3702e64c9411fb0ba4239a61d1cca506ab/docs/mycroft-technologies/mycroft-core/voice-service.md)
 * [Enclosure](https://github.com/MycroftAI/documentation/tree/4a8ffa3702e64c9411fb0ba4239a61d1cca506ab/docs/mycroft-technologies/mycroft-core/enclosures.md)
 
