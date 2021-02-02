@@ -139,8 +139,10 @@ class HelloWorldSkill(MycroftSkill):
         self.log.info("But I waited for you")
         
 def create_skill():
-    return HelloWorldSkill()     
+    return HelloWorldSkill()
 ```
+
+Here we have executed one line of code immediately. Our Skill will then wait for the `i.do.like.dialog` to be spoken before executing the final line of code.
 
 ## Using translatable resources
 
