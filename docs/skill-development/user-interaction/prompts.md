@@ -110,3 +110,32 @@ There are two optional arguments for this method.
 
 `min_conf` \(float\) defines the minimum confidence level for fuzzy matching the Users response against the list of options. `numeric` \(bool\) if set to True will speak the options as a numbered list eg "One, vanilla. Two, chocolate. Or three, mint"
 
+## Returning responses to the intent parser
+
+So far we have looked at ways to prompt the User, and return their response directly to our Skill. It is also possible to speak some dialog, and activate the listener, directing the response back to the standard intent parsing engine. We may do this to let the user trigger another Skill, or because we want to make use of our own intents to handle the response.
+
+To do this, we use the `expect_response` parameter of the `speak_dialog()` method.
+
+```python
+from mycroft import MycroftSkill, intent_handler
+
+
+class IceCreamSkill(MycroftSkill):
+    def __init__(self):
+        MycroftSkill.__init__(self)
+        self.flavors = ['vanilla', 'chocolate', 'mint']
+
+    @intent_handler('request.icecream.intent')
+    def handle_request_icecream(self):
+        self.speak_dialog('welcome')
+        selection = self.ask_selection(self.flavors, 'what.flavor')
+        self.speak_dialog('coming.right.up', {'flavor': selection})
+        self.speak_dialog('now.what', expect_response=True)
+
+
+def create_skill():
+    return IceCreamSkill()
+```
+
+Here we have added a new dialog after confirming the Users selection. We may use it to tell the User other things they can do with their Mycroft device while they enjoy their delicious ice cream.
+

@@ -284,12 +284,13 @@ If your Mark 1 Device is frozen, reboot it by:
 First please reboot the device. In case your device is processing a large update please give the device at least an hour to update before trying the next steps.
 
 If you have SSH access to the device you can trigger a reinstall of the Mark 1 software by switching to the development channel and back again. To do this run:
-```shell
+
+```text
 sudo mycroft-use unstable
 sudo mycroft-use stable
 ```
 
-If the above still doesn't work you will most likely need to [reimage the SD Card](#reimaging-steps). Note that SD Cards have a limited lifespan. As they age, sectors of the disk will become corrupted and cause "strange" behavior that is difficult to replicate. Using a new SD Card has solved many difficult problems and saved hours of frustrations.
+If the above still doesn't work you will most likely need to [reimage the SD Card](mark-1.md#reimaging-steps). Note that SD Cards have a limited lifespan. As they age, sectors of the disk will become corrupted and cause "strange" behavior that is difficult to replicate. Using a new SD Card has solved many difficult problems and saved hours of frustrations.
 
 ## Hardware Hacking your Mark 1 Device
 
