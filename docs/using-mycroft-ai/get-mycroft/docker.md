@@ -124,21 +124,19 @@ You can install **Skills** into the container by running the following:
 docker exec -it mycroft /opt/mycroft/msm/msm install github_url
 ```
 
-So to install the Basic Helper Skill:
+So to install the Hello World Skill:
 
 ```bash
-docker exec -it mycroft /opt/mycroft/msm/msm install https://github.com/btotharye/mycroft-skill-basichelp
+docker exec -it mycroft /opt/mycroft/msm/msm install https://github.com/MycroftAI/skill-hello-world
 ```
 
 ### Removing Skills on Docker Mycroft
 
-You can uninstall a **Skill** by removing the folder location for it.
+You can also uninstall a **Skill** using MSM with:
 
 ```bash
-docker exec -it mycroft rm -rf /opt/mycroft/skills/mycroft-skill-basichelp
+docker exec -it mycroft /opt/mycroft/msm/msm remove skill-hello-world
 ```
-
-This would remove the above Basic Helper Skill.
 
 ## Troubleshooting
 
