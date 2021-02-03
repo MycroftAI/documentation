@@ -12,7 +12,9 @@ These are created using the [`unittest`](https://docs.python.org/3/library/unitt
 
 ### Test runner
 
-A helper command is provided in `mycroft-core/bin` to enable quick and simple access to the test runner. It is assumed that this directory is on your `$PATH` . If that is not the case, prepend all `mycroft-*` commands with the path to your `mycroft-core/bin` directory or run the tests manually.
+A helper command is provided in `mycroft-core/bin` to enable quick and simple access to the test runner. It is assumed that this directory is on your `$PATH` . 
+
+If that is not the case, prepend all `mycroft-*` commands with the path to your `mycroft-core/bin` directory or run the tests manually. 
 
 #### Execute all tests
 
@@ -36,6 +38,18 @@ If I was working on the audio utilities, I might run:
 
 ```text
 mycroft-start singlueunittest test/unittests/audio/test_utils.py
+```
+
+#### Manually run tests
+
+The `mycroft-start` helper commands are a convenience wrapper. They activate the Python virtual environment and run pytest.
+
+The equivalent commands to run all tests would be:
+
+```shell
+cd ~/mycroft-core
+source .venv/bin/activate
+pytest
 ```
 
 ## Integration Tests
