@@ -155,7 +155,7 @@ To reset the tts settings to default run:
 
 ### Editing `mycroft.conf`
 
-You can also make the adjustment by editing the config file directly `~/.mycroft/mycroft.conf`.
+You can also make the adjustment by editing the config file directly `~/.config/mycroft/mycroft.conf`.
 
 ```javascript
 {

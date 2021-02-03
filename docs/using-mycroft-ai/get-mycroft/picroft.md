@@ -339,11 +339,11 @@ There are several commands that are packaged into Picroft to help you with advan
 
 If you plan to do **Skills** development work, or other development work with Picroft, you'll find knowing these file locations useful.
 
-* Skills - have a shortcut in `/home/pi` that points to `/opt/mycroft/skills`
+* Skills - have a shortcut in `/home/pi` that points to `/home/mycroft/.local/share/mycroft/skills`
 * `mycroft-core` - is located at `/home/pi/mycroft-core`
-* Logs - are located at `/var/log/mycroft/`
-* `mycroft.conf` - is located at `/home/mycroft/.mycroft/mycroft.conf`
-* Identity file \(do not share\) - is located at `/home/mycroft/.mycroft/identity/identity2.json`
+* Logs - are located at `/home/mycroft/.cache/mycroft/`
+* `mycroft.conf` - is located at `/home/mycroft/.config/mycroft/mycroft.conf`
+* Identity file \(do not share\) - is located at `/home/mycroft/.config/mycroft/identity/identity2.json`
 
 ### Maintaining your Picroft
 

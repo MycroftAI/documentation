@@ -41,6 +41,6 @@ When this specific test is run with the provided Steps, the system will: 1. Ensu
 Each `Feature` we define for our Skills test suite should be placed in it's own file inside the `test/behave` directory of our Skill. For this example we will save the Feature file in:
 
 ```text
-/opt/mycroft/skills/my-weather-skill/test/behave/current-weather.feature`
+$HOME/.local/share/mycroft/skills/my-weather-skill/test/behave/current-weather.feature`
 ```
 

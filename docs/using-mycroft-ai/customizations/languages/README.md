@@ -122,7 +122,7 @@ In order to support a new language, individual Skills must support that language
 
 To have a Skill support another language, the easiest way is to contribute to translating `dialog` and `vocab` files on the [Mycroft Translate](https://translate.mycroft.ai) platform. When significant progress has been made on a language in Mycroft Translate, the translations are automatically added to Skills.
 
-You can modify the individual `dialog` and `vocab` files for a Skill on your own device if you need to. Each Skill is in it's own directory on your device at `/opt/mycroft/skills/`.
+You can modify the individual `dialog` and `vocab` files for a Skill on your own device if you need to. Each Skill is in it's own directory on your device at `$HOME/.local/share/mycroft/skills/`.
 
 ## 6. Mycroft Core - Lingua Franca library
 

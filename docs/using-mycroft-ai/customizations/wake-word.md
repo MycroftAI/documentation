@@ -35,7 +35,7 @@ For this example we shall use a pre-trained model named `computer-en`. Each mode
 * `computer-en.pb` - the model itself; and
 * `computer-en.pb.params` - a small configuration file containing the parameters for that model.
 
-The two files must be consistently named as they are in the example above. They must also be stored in the same directory, however it does not matter where on the file system this directory is as we will point Mycroft to them. By default Mycroft stores these in your home directory at `~/.mycroft/precise`. Multiple models can be on your system at any given time so we can leave any existing model files there.
+The two files must be consistently named as they are in the example above. They must also be stored in the same directory, however it does not matter where on the file system this directory is as we will point Mycroft to them. By default Mycroft stores these in your home directory at `~/.local/share/mycroft/precise`. Multiple models can be on your system at any given time so we can leave any existing model files there.
 
 Once you have your Wake Word model, you must tell Mycroft which model you want to use in your [`mycroft.conf`](mycroft-conf.md) file. This is best done using the [Configuration Manager](config-manager.md). To edit your User level configuration run:
 
@@ -49,7 +49,7 @@ We will then define our Wake Word and any attributes we want to give it. Each ho
 "hotwords": {
   "computer": {
       "module": "precise",
-      "local_model_file": "/home/pi/.mycroft/precise/computer-en.pb",
+      "local_model_file": "/home/pi/.config/mycroft/precise/computer-en.pb",
   }
 }
 ```
@@ -88,7 +88,7 @@ Putting the example above together in an otherwise unmodified User level `mycrof
   "hotwords": {
     "computer": {
         "module": "precise",
-        "local_model_file": "/home/user/.mycroft/precise/computer-en.pb",
+        "local_model_file": "/home/user/.config/mycroft/precise/computer-en.pb",
         "sensitivity": 0.1,
         "trigger_level": 7
     }
@@ -99,8 +99,8 @@ Putting the example above together in an otherwise unmodified User level `mycrof
 {% hint style="info" %}
 Remember in the example above, there must be two files for the model to operate:
 
-* `/home/user/.mycroft/precise/computer-en.pb`
-* `/home/user/.mycroft/precise/computer-en.pb.params`
+* `/home/user/.config/mycroft/precise/computer-en.pb`
+* `/home/user/.config/mycroft/precise/computer-en.pb.params`
 {% endhint %}
 
 ## PocketSphinx
@@ -164,7 +164,7 @@ Other settings are available to further tune how sensitive the Speech to Text \(
 
 #### Adding PocketSphinx Settings to `mycroft.conf`
 
-For the `Yo Mike` example we started with, an example `~/.mycroft/mycroft.conf` file might look like:
+For the `Yo Mike` example we started with, an example `~/.config/mycroft/mycroft.conf` file might look like:
 
 ```javascript
 {

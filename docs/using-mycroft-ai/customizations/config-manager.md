@@ -11,10 +11,11 @@ description: >-
 
 Mycroft configurations are stored in [mycroft.conf](mycroft-conf.md) files. These exist in four locations:
 
-* Default - mycroft-core/mycroft/configuration/mycroft.conf
+* Default - `mycroft-core/mycroft/configuration/mycroft.conf`
 * Remote - Home.Mycroft.ai
-* System - /etc/mycroft/mycroft.conf
-* User - $HOME/.mycroft/mycroft.conf
+* System - `/etc/mycroft/mycroft.conf`
+* User - `$HOME/.config/mycroft/mycroft.conf`
+* Old user (deprecated) - `$HOME/.mycroft/mycroft.conf`
 
 When the configuration loader starts, it looks in these locations in this order, and loads **all** configurations. Keys that exist in multiple configuration files will be overridden by the last file to contain the value.
 

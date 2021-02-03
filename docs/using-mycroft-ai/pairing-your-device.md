@@ -86,7 +86,7 @@ Congratulations! Your Mycroft Device is now paired, and is ready to start accept
 
 Once you have paired your Mycroft Device, pairing information is stored in:
 
-`~/.mycroft/identity/identity2.json`
+`~/.config/mycroft/identity/identity2.json`
 
 DO NOT SHARE THIS INFORMATION WITH OTHERS - IT IS YOUR MYCROFT IDENTITY
 

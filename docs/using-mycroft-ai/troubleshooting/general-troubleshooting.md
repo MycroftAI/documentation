@@ -152,7 +152,7 @@ Traceback (most recent call last):
     skill.settings.store()
   File "/usr/local/lib/python2.7/site-packages/mycroft_core-0.9.7-py2.7.egg/mycroft/skills/settings.py", line 323, in store
     with open(self._settings_path, 'w') as f:
-IOError: [Errno 13] Permission denied: '/opt/mycroft/skills/mycroft-skill-cat-facts/settings.json'
+IOError: [Errno 13] Permission denied: '/home/mycroft/.local/share/mycroft/skills/mycroft-skill-cat-facts/settings.json'
 ```
 
 The error here is that the file system permission on the Skill's directory are incorrect. The directory should have owner and group permissions of `mycroft:mycroft` as per the below.
@@ -173,7 +173,7 @@ The error here is that the file system permission on the Skill's directory are i
 If your permissions are different to those shown above, change them by running the following commands:
 
 ```bash
-cd /opt/mycroft/skills/
+cd /home/mycroft/.local/share/mycroft/skills/
 sudo chown mycroft:mycroft -R your-skill-name
 ```
 

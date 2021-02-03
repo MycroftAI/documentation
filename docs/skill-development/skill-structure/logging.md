@@ -87,7 +87,7 @@ except ZeroDivisionError as e:
 
 ## Where do these messages get logged?
 
-Log messages from a Skill are displayed in the Mycroft CLI so that a User can see in real-time what is happening in the Skill. They are also written to the `skills.log` file located at: `/var/opt/mycroft/skills.log`
+Log messages from a Skill are displayed in the Mycroft CLI so that a User can see in real-time what is happening in the Skill. They are also written to the `skills.log` file located at: `$HOME/.cache/mycroft/skills.log`
 
 By default all info, warning, error and exception level messages will be logged. Debug level messages will be logged if the User explicitly requests it. This can be done by issuing the `:log level debug` command in the CLI, or changing the `log_level` attribute in the [mycroft configuration](../../using-mycroft-ai/customizations/config-manager.md).
 
