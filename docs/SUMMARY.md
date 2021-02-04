@@ -126,4 +126,5 @@
 * [Mycroft Skills Manager](mycroft-technologies/mycroft-skills-manager.md)
 * [Padatious](mycroft-technologies/padatious.md)
 * [Precise](mycroft-technologies/precise.md)
+* [Platforms](mycroft-technologies/platforms.md)
 
