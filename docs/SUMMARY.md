@@ -90,6 +90,8 @@
   * [Common Play Framework](skill-development/skill-types/common-play-framework.md)
   * [Common Query Framework](skill-development/skill-types/common-query-framework.md)
   * [Common IoT Framework](skill-development/skill-types/common-iot-framework.md)
+* [Mycroft Skills Manager](skill-development/mycroft-skills-manager/mycroft-skills-manager.md)
+  * [Troubleshooting](skill-development/mycroft-skills-manager/msm-troubleshooting.md)
 * [Marketplace Submission](skill-development/marketplace-submission/README.md)
   * [Skills Acceptance Process](skill-development/marketplace-submission/skills-acceptance-process/README.md)
     * [Information Review Template](skill-development/marketplace-submission/skills-acceptance-process/skills-review-information-template.md)

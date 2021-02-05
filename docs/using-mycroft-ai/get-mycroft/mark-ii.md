@@ -21,7 +21,5 @@ We have put together a detailed set of instructions to help get you setup. These
 
 You can find detailed information on all components of the Mark II hardware on [our Github](https://github.com/MycroftAI/hardware-mycroft-mark-II/tree/master/mark-II-Rpi-devkit).
 
-## Further information
-
-More details coming soon.
+## More details coming soon.
 
