@@ -51,9 +51,9 @@ Get a dedicated device, a voice assistant with no hassles. Plug in, connect to W
 
 ### Mark II
 
-Mark II is the next incarnation of Mycroft. It sports a 4-inch display to accompany the voice interaction with a visual interface. Microphone and speaker components have also been updated. Best for those who want a ‘works out of the box’ solution.
+The Mark II is our next-generation smart speaker designed for you and your family, whatever your level of technical expertise. At the same time, it is open hardware and software for developers, makers and hackers.
 
-You can [reserve your own Mark II](https://mycroft.ai/product/reserve-your-mark-ii-with-a-small-deposit/) with a small deposit.
+{% page-ref page="mark-ii.md" %}
 
 ### Mark 1
 
