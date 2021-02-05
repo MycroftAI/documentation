@@ -40,5 +40,7 @@ To remove a Skill run:
 mycroft-msm remove skill-name
 ```
 
+For more detail on command line usage see:
 
+{% page-ref page="../skill-development/mycroft-skills-manager/" %}
 
