@@ -12,9 +12,9 @@ These are created using the [`unittest`](https://docs.python.org/3/library/unitt
 
 ### Test runner
 
-A helper command is provided in `mycroft-core/bin` to enable quick and simple access to the test runner. It is assumed that this directory is on your `$PATH` . 
+A helper command is provided in `mycroft-core/bin` to enable quick and simple access to the test runner. It is assumed that this directory is on your `$PATH` .
 
-If that is not the case, prepend all `mycroft-*` commands with the path to your `mycroft-core/bin` directory or run the tests manually. 
+If that is not the case, prepend all `mycroft-*` commands with the path to your `mycroft-core/bin` directory or run the tests manually.
 
 #### Execute all tests
 
@@ -46,7 +46,7 @@ The `mycroft-start` helper commands are a convenience wrapper. They activate the
 
 The equivalent commands to run all tests would be:
 
-```shell
+```text
 cd ~/mycroft-core
 source .venv/bin/activate
 pytest
@@ -59,6 +59,4 @@ The Mycroft integration test suite is called Voight Kampff. Currently this does 
 For more detail on Voight Kampff see:
 
 {% page-ref page="../../skill-development/voight-kampff/" %}
-
-
 
