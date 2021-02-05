@@ -1,32 +1,34 @@
 ---
-description: >-
-  Troubleshooting guide for the Mycroft Skills Manager.
+description: Troubleshooting guide for the Mycroft Skills Manager.
 ---
 
-# MSM Troubleshooting
+# Troubleshooting
 
 ## mycroft-msm: command not found
 
 Mycroft provides helper commands for common utilities like MSM. On most systems MSM should be accessible using `mycroft-msm`. If this command is not available on your system then you have two options:
 
 1. Use the full path of the helper command:
-   ```shell
+
+   ```text
    /home/user/mycroft-core/bin/mycroft-msm
    ```
 
-2. Add `mycroft-core/bin` to your `$PATH`
-   To have it permanently added to your `$PATH`, add a new line to your `.bashrc` file. Assuming you installed mycroft-core in your home directory, from your terminal run:
-   ```shell
+2. Add `mycroft-core/bin` to your `$PATH` To have it permanently added to your `$PATH`, add a new line to your `.bashrc` file. Assuming you installed mycroft-core in your home directory, from your terminal run:
+
+   ```text
    echo "PATH=$PATH:$HOME/mycroft-core/bin" >> $HOME/.bashrc
    source $HOME/.bashrc
    ```
 
 3. Or activate Mycroft's virtual environment by running:
-   ```shell
+
+   ```text
    cd /home/user/mycroft-core
    source .venv/bin/activate
    ```
-## Git authentication failed
+
+   **Git authentication failed**
 
 ```bash
 ERROR - Error running update_skill on skill-radio-rne: GitException(Git command failed: GitCommandError(['git', 'fetch'], 128, b"remote: Invalid username or password.nfatal: Authentication failed for 'https://github.com/user/my-skill/'", b''))
@@ -42,7 +44,7 @@ ERROR - Error running update_skill on TranslateSkill: SkillModified(Uncommitted 
 )
 ```
 
-This error usually means that there is a difference between the Skill on the Device and the Skill's GitHub repo. 
+This error usually means that there is a difference between the Skill on the Device and the Skill's GitHub repo.
 
 If Mycroft detects that something has change in your Skill, it will stop updating to prevent loss of any work you are doing in that directory. If you are no longer making changes you can checkout the default branch of the Skill, or `git stash` any changes you've made to get it back to a clean state.
 
@@ -100,3 +102,4 @@ total 48
 ## Where to go for more assistance
 
 Join us in the [Skills Mycroft Chat room](https://chat.mycroft.ai/community/channels/skills) or join us in the [Mycroft Forum](https://community.mycroft.ai).
+

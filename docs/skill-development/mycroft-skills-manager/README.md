@@ -6,7 +6,7 @@ description: >-
 
 # Mycroft Skills Manager
 
-Mycroft Skills Manager (MSM) is a command line tool used to add, manage and remove Skills on any Mycroft installation. It can install any Skill listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills) or from any Github repository. It is a handy tool for Developers and those who may frequently reconfigure, install and uninstall Skills.
+Mycroft Skills Manager \(MSM\) is a command line tool used to add, manage and remove Skills on any Mycroft installation. It can install any Skill listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills) or from any Github repository. It is a handy tool for Developers and those who may frequently reconfigure, install and uninstall Skills.
 
 ## Information
 
@@ -14,7 +14,7 @@ Mycroft Skills Manager (MSM) is a command line tool used to add, manage and remo
 
 To list all Skills available in the Marketplace run:
 
-```shell
+```text
 mycroft-msm list
 ```
 
@@ -22,7 +22,7 @@ mycroft-msm list
 
 To search the available Skills run:
 
-```shell
+```text
 mycroft-msm search <name>
 ```
 
@@ -30,17 +30,17 @@ mycroft-msm search <name>
 
 To show all available information on a Skill you can use the name or repository url:
 
-```shell
+```text
 mycroft-msm info <name/url>
 ```
 
 ## Install
 
-### From the Marketplace 
+### From the Marketplace
 
 To install a Skill from the Mycroft Marketplace you can provide a rough title and MSM will return the most likely match.
 
-```shell
+```text
 mycroft-msm install cocktail
 ```
 
@@ -50,7 +50,7 @@ If you know the author of the Skill, particularly where multiple Skills with sim
 
 If I wanted a Dice Skill, but only if it was authored by Forslund, I would run:
 
-```shell
+```text
 mycroft-msm install dice forslund
 ```
 
@@ -70,7 +70,7 @@ Installing Skills from outside the Mycroft Marketplace is done at your own risk.
 
 To install a Skill that is not included in the Mycroft Marketplace use the url of the repository.
 
-```shell
+```text
 mycroft-msm install https://github.com/krisgesling/tea-skill
 ```
 
@@ -80,17 +80,17 @@ mycroft-msm install https://github.com/krisgesling/tea-skill
 
 To update all Skills installed on a device run:
 
-```shell
+```text
 mycroft-msm update
 ```
 
-Note that if Mycroft detects that any file in a Skill has been modified, it will not update that Skill. This is to prevent loss of any work you are doing in that directory. See [MSM Troubleshooting > Uncommitted Changes](msm-troubleshooting.md#uncommitted-changes) for tips to resolve this.
+Note that if Mycroft detects that any file in a Skill has been modified, it will not update that Skill. This is to prevent loss of any work you are doing in that directory. See [MSM Troubleshooting &gt; Uncommitted Changes](msm-troubleshooting.md#uncommitted-changes) for tips to resolve this.
 
 ### Install and update defaults
 
 To install all default Skills for the device, as well as update all Skills, run:
 
-```shell
+```text
 mycroft-msm default
 ```
 
@@ -98,17 +98,17 @@ mycroft-msm default
 
 To uninstall or remove any Skill from the device run:
 
-```shell
+```text
 mycroft-msm remove <name>
 ```
 
-Note that default Skills will be reinstalled by the system unless they are explicitly blacklisted. See ["How do I disable a Skill?"](../faq#how-do-i-disable-a-skill) for more info.
+Note that default Skills will be reinstalled by the system unless they are explicitly blacklisted. See ["How do I disable a Skill?"](https://github.com/MycroftAI/documentation/tree/46eacf9aa119b008902294bf2ead9a23d0bbd418/docs/skill-development/faq/README.md#how-do-i-disable-a-skill) for more info.
 
 ### Specifying author
 
 The `remove` command also has an optional `author` parameter that can be used to specify which Skill you intend to be uninstalled.
 
-```shell
+```text
 mycroft-msm remove <name> <author>
 ```
 
@@ -118,12 +118,13 @@ To show help information describing how to use MSM's different commands, use the
 
 For a complete overview run:
 
-```shell
+```text
 mycroft-msm -h
 ```
 
-Or for command specific information include the command. 
+Or for command specific information include the command.
 
-```shell
+```text
 mycroft-msm install -h
 ```
+
