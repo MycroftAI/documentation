@@ -18,21 +18,6 @@ Mycroft Core includes four or more distinct Services:
 
 Each of these is started in it's own process, and communicates with other processes by emitting and listening to messages on the MessageBus.
 
-## Proposed Changes
-
-If you have thoughts or comments on the following status proposals, please [let us know in the Community Forums](https://community.mycroft.ai/t/dev-sync-2020-08-18/9283/4).
-
-### Status/Watchdog Service
-
-The status/watchdog service would be a new systemd service running on devices that run Mycroft-core. The functionality of this service could include, but would not be limited to:
-
-* Monitoring various aspects of the health of each core service \(is service running, healthy, ready, etc.\).  
-* Heartbeats could be emitted from each service, or the new service could check the pulse of each service on regular intervals.  
-* Actions could be taken if a service becomes unhealthy, such as attempting to restart a crashed service.  
-* Specific checks, such as the existing microphone watchdog, could be included in this service. 
-* Responsible for restarting services on a daily basis.  
-* If a user opts in to data sharing, information about exceptions or crashes could be sent to Mycroft for diagnostic purposes.
-
 ### Process Status
 
 Each Service includes an instance of the ProcessStatus class. This provides a consistent interface to set and query the state of a Service.
@@ -95,3 +80,17 @@ The response message will include a `status` boolean in the data payload:
 {'status': True}
 ```
 
+## Proposed Addition
+
+If you have thoughts or comments on the following status proposals, please [let us know in the Community Forums](https://community.mycroft.ai/t/dev-sync-2020-08-18/9283/4).
+
+### Status/Watchdog Service
+
+The status/watchdog service would be a new systemd service running on devices that run Mycroft-core. The functionality of this service could include, but would not be limited to:
+
+* Monitoring various aspects of the health of each core service \(is service running, healthy, ready, etc.\).  
+* Heartbeats could be emitted from each service, or the new service could check the pulse of each service on regular intervals.  
+* Actions could be taken if a service becomes unhealthy, such as attempting to restart a crashed service.  
+* Specific checks, such as the existing microphone watchdog, could be included in this service. 
+* Responsible for restarting services on a daily basis.  
+* If a user opts in to data sharing, information about exceptions or crashes could be sent to Mycroft for diagnostic purposes.
