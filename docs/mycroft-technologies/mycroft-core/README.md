@@ -94,3 +94,4 @@ The status/watchdog service would be a new systemd service running on devices th
 * Specific checks, such as the existing microphone watchdog, could be included in this service. 
 * Responsible for restarting services on a daily basis.  
 * If a user opts in to data sharing, information about exceptions or crashes could be sent to Mycroft for diagnostic purposes.
+

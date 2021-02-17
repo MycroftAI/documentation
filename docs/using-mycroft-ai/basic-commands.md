@@ -110,6 +110,53 @@ Interacts with the Device configuration both locally and at home.mycroft.ai.
 > Hey Mycroft, enable the precise dev model   
 > Hey Mycroft, disable the new precise model
 
+### Date & Time
+
+Mycroft answers inquiries about Dates \(specific dates, relative dates, holidays, leap year, weekends, etc.\) and Time \(future or current, local or other location\).  Mycroft's response to a Date inquiry attempts to supply the 'missing information' and selectively includes: day-of-week, the calendar date, and the quantity of days from now. When answering inquiries about Time, Mycroft may optionally take advantage of the display on the enclosure.
+
+#### Query current time \(in location\)
+
+> Hey Mycroft, the time now please  
+> Hey Mycroft, what time is it in Paris?
+
+#### Query future time \(in location\)
+
+> Hey Mycroft, what time will it be in 2 hours?  
+> Hey Mycroft, tell me the time 6 hours from now in Paris?
+
+#### On some enclosures: Display the time \(in location\)
+
+> Hey Mycroft, display the time  
+> Hey Mycroft, display the time in Paris
+
+#### Query a holiday
+
+> Hey Mycroft, when is Labor Day?  
+> Hey  Mycroft, what day is Christmas in 2025?
+
+#### Query next leap year
+
+> Hey Mycroft, when is the next leap year?
+
+#### Query a specific date
+
+> Hey Mycroft, when in July 1st?
+
+#### Query a relative date
+
+> Hey Mycroft, what is today's date?  
+> Hey Mycroft, what is today?  
+> Hey Mycroft, when is next Tuesday?  
+> Hey Mycroft, what is 6 days from now?  
+> Hey Mycroft, when in next Friday?
+
+#### Query weekend dates
+
+> Hey Mycroft, what was last weekend?  
+> Hey Mycroft, what were the days last weekend?  
+> Hey Mycroft, what are the dates this weekend?  
+> Hey Mycroft, what are the days for next weekend?
+
 ### Hello World
 
 Hello World is a well-documented **Skill** that serves as a starting point for code development. Pleasantries with Mycroft are used as examples.
