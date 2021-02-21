@@ -20,20 +20,20 @@ When your Skill needs to store some data that will persist over time and cannot 
 
 This uses the standard Python `open()` method to read and write files. It takes two parameters:
 
-* filename \(str\) - a path relative to the namespace. subdirs not currently supported.
+* file_name \(str\) - a path relative to the namespace. subdirs not currently supported.
 * mode \(str\) – a file handle mode \[r, r+, w, w+, rb, rb+, wb+, a, ab, a+, ab+, x\]
 
 Example:
 
 ```python
-    def write_line_to_file(self, filename, line):
+    def write_line_to_file(self, file_name, line):
         """Write a single line to a file in the Skills persistent filesystem."""
-        with self.file_system.open(filename, "w") as my_file:
+        with self.file_system.open(file_name, "w") as my_file:
             my_file.write(line)
 
-    def read_file(self, filename):
+    def read_file(self, file_name):
         """Read the contents of a file in the Skills persistent filesystem."""
-        with self.file_system.open(filename, "r") as my_file:
+        with self.file_system.open(file_name, "r") as my_file:
             return my_file.read()
 ```
 
@@ -44,10 +44,10 @@ Quick method to see if some file exists in the namespaced directory.
 Example:
 
 ```python
-        filename = "example.txt"
-        with self.file_system.open(filename, "w") as my_file:
+        file_name = "example.txt"
+        with self.file_system.open(file_name, "w") as my_file:
             my_file.write("Hello world")
-        self.log.info(self.file_system.exists(filename))
+        self.log.info(self.file_system.exists(file_name))
         # True
         self.log.info(self.file_system.exists("new.txt"))
         # False
@@ -60,13 +60,40 @@ Example:
 Example:
 
 ```python
-from mycroft import MycroftSkill, intent_handler
+from mycroft import MycroftSkill
 
 class FileSystemSkill(MycroftSkill):
 
     def initialize(self):
         """Log the path of this Skills persistent namespace."""
         self.log.info(self.file_system.path)
+
+def create_skill():
+    return FileSystemSkill()
+```
+
+### Create subdirectories
+
+Now that we have the path of our namespaced filesystem, we can organize our files however we like within that directory. 
+
+In this example, we create a subdirectory called "cache", then write to a text file inside of it.
+
+```Python
+from os import mkdir
+from os.path import join
+
+from mycroft import MycroftSkill
+
+class FileSystemSkill(MycroftSkill):
+
+    def initialize(self):
+        """Create a cache subdirectory and write to a file inside it"""
+        cache_dir = "cache"
+        file_name = "example.txt"
+        mkdir(join(self.file_system.path, cache_dir))
+        with self.file_system.open(join(cache_dir, file_name), "w") as my_file:
+            my_file.write('hello')
+        
 
 def create_skill():
     return FileSystemSkill()
@@ -88,20 +115,20 @@ class FileSystemSkill(MycroftSkill):
         3. Check that our file exists.
         4. Read the contents of our file from disk.
         """
-        filename = "example.txt"
+        file_name = "example.txt"
         self.log.info(self.file_system.path)
-        self.write_line_to_file(filename, "hello world")
-        self.log.info(self.file_system.exists(filename))
-        self.log.info(self.read_file(filename))
+        self.write_line_to_file(file_name, "hello world")
+        self.log.info(self.file_system.exists(file_name))
+        self.log.info(self.read_file(file_name))
 
-    def write_line_to_file(self, filename, line):
+    def write_line_to_file(self, file_name, line):
         """Write a single line to a file in the Skills persistent filesystem."""
-        with self.file_system.open(filename, "w") as my_file:
+        with self.file_system.open(file_name, "w") as my_file:
             my_file.write(line)
 
-    def read_file(self, filename):
+    def read_file(self, file_name):
         """Read the contents of a file in the Skills persistent filesystem."""
-        with self.file_system.open(filename, "r") as my_file:
+        with self.file_system.open(file_name, "r") as my_file:
             return my_file.read()
 
 def create_skill():
