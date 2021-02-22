@@ -90,7 +90,8 @@ class FileSystemSkill(MycroftSkill):
         """Create a cache subdirectory and write to a file inside it"""
         cache_dir = "cache"
         file_name = "example.txt"
-        mkdir(join(self.file_system.path, cache_dir))
+        if not self.file_system.exists(cache_dir):
+            mkdir(join(self.file_system.path, cache_dir))
         with self.file_system.open(join(cache_dir, file_name), "w") as my_file:
             my_file.write('hello')
         
