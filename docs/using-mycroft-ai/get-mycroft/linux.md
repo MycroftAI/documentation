@@ -28,14 +28,6 @@ The ARM architecture has a similar requirement called SIMD \(Single Instruction,
 
 There are multiple ways to install Mycroft for Linux.
 
-### Snap Package
-
-Mycroft is now available as a Snap package. Providing a simple and secure means of installing Mycroft on a broad range of Linux distributions.
-
-The Snap package is currently considered an Alpha release and has a number of usability bugs that need to be addressed before it will be promoted to an installable channel. For now we recommend the git clone method below, but we welcome any help in improving Mycroft as a Snap:
-
-{% page-ref page="snap.md" %}
-
 ### Installing via git clone
 
 The simplest way to install Mycroft for Linux is to clone the `mycroft-core` repo to your system and run a shell script, which will install all dependencies, and [Mycroft components](http://mycroft.ai/documentation/mycroft-software-hardware/).
@@ -241,7 +233,14 @@ rm -rf "$HOME/mycroft-core" # Mycroft-core installation
 Depending on your system, you may need to run the commands with `sudo`
 {% endhint %}
 
+## Snap Package
+
+A pre-Alpha Snap package is available, with the aim to provide a simple and secure means of installing Mycroft on a broad range of Linux distributions.
+
+The Snap package currently has a number of major usability bugs that need to be addressed before it will be promoted to an installable channel. For now we recommend the git clone method above, but we welcome any help in improving Mycroft as a Snap:
+
+{% page-ref page="snap.md" %}
+
 ## Troubleshooting
 
 {% page-ref page="../troubleshooting/" %}
-
