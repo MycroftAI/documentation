@@ -68,3 +68,4 @@ For general troubleshooting information see:
 {% page-ref page="../troubleshooting/" %}
 
 You can also connect with the broader Mycroft Community to access additional support through the [Community Forums](https://community.mycroft.ai) or the [~Linux Packaging channel on Mycroft Chat](https://chat.mycroft.ai/community/channels/ubuntu-apt-packaging).
+

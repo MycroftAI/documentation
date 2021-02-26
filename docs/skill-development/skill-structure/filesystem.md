@@ -20,7 +20,7 @@ When your Skill needs to store some data that will persist over time and cannot 
 
 This uses the standard Python `open()` method to read and write files. It takes two parameters:
 
-* file_name \(str\) - a path relative to the namespace. subdirs not currently supported.
+* file\_name \(str\) - a path relative to the namespace. subdirs not currently supported.
 * mode \(str\) – a file handle mode \[r, r+, w, w+, rb, rb+, wb+, a, ab, a+, ab+, x\]
 
 Example:
@@ -74,11 +74,11 @@ def create_skill():
 
 ### Create subdirectories
 
-Now that we have the path of our namespaced filesystem, we can organize our files however we like within that directory. 
+Now that we have the path of our namespaced filesystem, we can organize our files however we like within that directory.
 
 In this example, we create a subdirectory called "cache", then write to a text file inside of it.
 
-```Python
+```python
 from os import mkdir
 from os.path import join
 
@@ -94,7 +94,7 @@ class FileSystemSkill(MycroftSkill):
             mkdir(join(self.file_system.path, cache_dir))
         with self.file_system.open(join(cache_dir, file_name), "w") as my_file:
             my_file.write('hello')
-        
+
 
 def create_skill():
     return FileSystemSkill()
