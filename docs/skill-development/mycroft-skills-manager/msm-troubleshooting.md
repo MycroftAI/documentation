@@ -6,7 +6,24 @@ description: Troubleshooting guide for the Mycroft Skills Manager.
 
 ## mycroft-msm: command not found
 
-Mycroft provides helper commands for common utilities like MSM. On most systems MSM should be accessible using `mycroft-msm`. If this command is not available on your system then you have two options:
+Mycroft provides helper commands for common utilities like MSM. On most systems MSM should be accessible using `mycroft-msm`. If this command is not found on your system then it has most likely not been added to your `$PATH` environment variable.
+
+On Linux, when you type a command into the terminal it uses the `$PATH` environment variable to know where on your system to look for executable files. If you are unfamiliar with this environment variable it's a good one to learn about for new Linux users.
+
+### Updating the `$PATH` variable
+
+The `mycroft-msm` script, along with all of Mycroft's executables, are contained in the `mycroft-core/bin` directory. If you installed Mycroft in your `$HOME` directory, it will be located at: `/home/username/mycroft-core/bin`.
+
+To permanently add this to our `$PATH` we will add a line to our `.bashrc` file that is executed each time we initialize an interactive shell, for example by launching the terminal application. 
+
+```text
+echo 'export PATH="$PATH:/home/username/mycroft-core/bin"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+### Other options:
+
+ If you do not wish to update your `$PATH` there are two other methods you can use.
 
 1. Use the full path of the helper command:
 
@@ -14,23 +31,11 @@ Mycroft provides helper commands for common utilities like MSM. On most systems 
    /home/user/mycroft-core/bin/mycroft-msm
    ```
 
-2. Add `mycroft-core/bin` to your `$PATH` To have it permanently added to your `$PATH`, add a new line to your `.bashrc` file. Assuming you installed mycroft-core in your home directory, from your terminal run:
-
-   ```text
-   echo "PATH=$PATH:$HOME/mycroft-core/bin" >> $HOME/.bashrc
-   source $HOME/.bashrc
-   ```
-
-3. Or activate Mycroft's virtual environment by running:
+2. Activate Mycroft's virtual environment  and execute `msm` directly:
 
    ```text
    cd /home/user/mycroft-core
    source .venv/bin/activate
-   ```
-
-   You can then run `msm` without the use of helper commands eg:
-
-   ```text
    msm install dice
    ```
 
