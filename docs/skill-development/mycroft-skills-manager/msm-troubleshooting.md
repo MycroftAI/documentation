@@ -28,7 +28,13 @@ Mycroft provides helper commands for common utilities like MSM. On most systems 
    source .venv/bin/activate
    ```
 
-   **Git authentication failed**
+   You can then run `msm` without the use of helper commands eg:
+
+   ```text
+   msm install dice
+   ```
+
+## **Git authentication failed**
 
 ```bash
 ERROR - Error running update_skill on skill-radio-rne: GitException(Git command failed: GitCommandError(['git', 'fetch'], 128, b"remote: Invalid username or password.nfatal: Authentication failed for 'https://github.com/user/my-skill/'", b''))

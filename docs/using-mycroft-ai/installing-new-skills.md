@@ -51,12 +51,14 @@ For more detail on command line usage see:
 On Linux, when you type a command into the terminal it uses the `$PATH` environment variable to know where on your system to look for executable files.
 
 You can see the current value of `$PATH`, by running:
-```shell
+
+```text
 echo $PATH
 ```
 
 It is a list of directories separated by colons, so it might return something like:
-```log
+
+```text
 /home/gez/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 ```
 
@@ -68,7 +70,7 @@ In the `$PATH` value that we output above, you can see that this directory is no
 
 We can add the `mycroft-core/bin` directory to the end of our `$PATH` using the command:
 
-```shell
+```text
 export PATH=$PATH:/home/username/mycroft-core/bin
 ```
 
@@ -76,6 +78,7 @@ _Note: the path of your directory will depend on where you installed mycroft-cor
 
 This will work in our current shell, but if we close and reopen the terminal window it will be lost. To export our new `$PATH` each time we run the terminal we must add this new line to the `.bashrc` file. This file is run each time we initialize an interactive shell, for example by launching the terminal application. You can open the file and manually add it, or run this command:
 
-```shell
+```text
 echo 'export PATH="$PATH:/home/username/mycroft-core/bin"' >> ~/.bashrc
 ```
+
