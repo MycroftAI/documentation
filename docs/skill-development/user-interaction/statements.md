@@ -16,83 +16,59 @@ To support multilingualism, the text that Mycroft speaks must come from a file. 
 
 By convention, the dialog filename is formed by _dot connected_ _words_ and must end with ".dialog".  The dialog filename should be descriptive of the contents as a whole.  Sometimes, the filename describes the question being answered, and other times, the filename describes the answer itself.  For the example above, the dialog filename might be: **how.are.you.dialog** or **i.am.fine.dialog**.
 
-Multilingualism is accomplished by translating the dialog files into other languages, and storing them in their own directory named for the country and language. The filenames remain the same.  Using the same filenames in separate language dependent directories allows the Skills to be language agnostic; no hard-coded text strings.  Adjust the language setting for your **Device** and Mycroft uses the corresponding set of dialog files.  If the desired file does not exist in the directory for that language, Mycroft will use the file from the USA English directory.
+Multilingualism is accomplished by translating the dialog files into other languages, and storing them in their own directory named for the country and language. The filenames remain the same.  Using the same filenames in separate language dependent directories allows the Skills to be language agnostic; no hard-coded text strings.  Adjust the language setting for your Device ****and Mycroft uses the corresponding set of dialog files.  If the desired file does not exist in the directory for that language, Mycroft will use the file from the USA English directory.
 
-As an example of the concept, the contents of how.are.you.dialog in the directory for the French language in France \(fr-fr\) might include the statement: "Je vais bien".
+As an example of the concept, the contents of **how.are.you.dialog** in the directory for the French language in France \(fr-fr\) might include the statement: "Je vais bien".
 
-### The Ice Cream Skill
+### The Tomato Skill Revisited
 
-The following mini-tutorial demonstrates multilingualism using the [`speak_dialog()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.speak_dialog) method.  The sample refers to an imaginary Ice Cream Skill that handles inquires about Mycroft's interest in ice cream. Mycroft likes ice cream, all kinds.
+To demonstrate the multilingualism design pattern, we examine the usage of the [`speak_dialog()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.speak_dialog) method in the [Tomato Skill](intents/padatious-intents.md) .  
 
-You are encouraged to experiment with this code. You can do so by creating a new Skill or you might find it easier to edit an existing skill, such as Hello World.
+The Tomato Skill has two Intents: one demonstrates simple, straightforward statements, and the other demonstrates the use of variables within a statement.
 
-Note: This Ice Cream Skill is similar to the Tomato Skill in [Padatious Intents](intents/padatious-intents.md).  Please refer to that section for more details on creating Padatious Intents.
+### Simple statement
 
-### Part 1 - Simple Statement
+The first Intent within the Tomato Skill, **what.is.a.tomato.intent**, handles inquiries about tomatoes, and the dialog file, **tomato.description.dialog**, provides the statements for Mycroft to speak in reply to that inquiry.
 
-When you design a Skill, it is suggested that you begin by defining **scenarios** of expected behavior. Satisfying the needs of the scenarios will guide the creation of Intents within the Skill.  Sometimes, more than one Intent is needed to handle the expected behavior of a scenario.  Other times, one Intent can handle more than one scenario.
-
-#### The scenario in words
-
-When asked if Mycroft likes ice cream, Mycroft shall answer in the affirmative
-
-#### The scenario as a feature file
-
-The Mycroft community uses a **feature** file to express scenarios.  The feature files are involved in the automated testing of Mycroft.  A new Skill cannot be made available in the Marketplace unless it works cooperatively with all of the other Skills. The automated testing confirms not only that your new Skill performs as expected, but that it does so while not interfering with the other Skills.
-
-```text
-	Feature: Mycroft and Ice Cream
-	  Scenario: Mycroft likes ice cream
-		Given an English speaking user
-		  When the User says "do you like ice cream"
-		  Then "ice-cream-skill" should reply with "I do like ice cream"
-```
-
-Notice the similarity with the scenario described in words above.  We are not going to write a feature file or use the testing mechanism for this sample.  
-
-#### Design the Intent
-
-You can imagine many _ways_ to answer in the affirmative. Each of those _ways_ is a statement. And, since they all mean the same thing, they can all exist in the same dialog file. Our descriptive filename for this dialog file shall be **i.do.like.dialog**.  Initially, let this dialog file have just one, simple, straightforward statement: "I do like ice cream"
-
-Now, consider the User **utterance**: "Do you like ice cream?" That phrase is very specific, with limited alternatives, maybe: "What do you think of ice cream?" or "Do you love ice cream?".  These **utterances** do not lend itself to keyword detection, but rather to whole phrase detection.  Whole phrase detection is best accomplished with a Padatious Intent.  Also, the Padatious Intent makes it easy to extract a portion of the **utterance** as needed in Part 2.  Our descriptive name for the Padatious Intent file shall be: **do.you.like.intent**
-
-Start the experiment with these two files, each with just one line:
+Sample contents of the Intent and dialog files:
 
 {% tabs %}
-{% tab title="do.you.like.intent" %}
-```python
-Do you like ice cream
+{% tab title="what.is.a.tomato.intent" %}
+```text
+what is a tomato
+what would you say a tomato is
+describe a tomato
+what defines a tomato
 ```
 {% endtab %}
 
-{% tab title="i.do.like.dialog" %}
-```python
-I do like ice cream
+{% tab title="tomato.description.dialog" %}
+```text
+The tomato is a fruit of the nightshade family
+A tomato is an edible berry of the plant Solanum lycopersicum
+A tomato is a fruit but nutrionists consider it a vegetable
 ```
 {% endtab %}
 {% endtabs %}
 
-The Skill code is:
+Observe the statements in the tomato.description.dialog file. They are all acceptable answers to the question: "What is a tomato?"  Providing more than one statement in a dialog file is one way to make Mycroft to seem less robotic, more natural. Mycroft will randomly select one of the statements.
+
+The Tomato Skill code snippet:
 
 ```python
-from mycroft import MycroftSkill, intent_handler
-
-class IceCreamSkill(MycroftSkill):
-
-    @intent_handler('do.you.like.intent')
-    def handle_do_you_like(self, message):
-        """Speaks a statement from the dialog file."""
-        self.speak_dialog('i.do.like')
-        
-def create_skill():
-    return IceCreamSkill()
+@intent_handler('what.is.a.tomato.intent')
+def handle_what_is(self, message):
+    """Speaks a statement from the dialog file."""
+    self.speak_dialog('tomato.description')
 ```
 
-After installation of the Ice Cream Skill, Mycroft is listening for the **utterance** "Do you like ice cream" as specified in the Intent file.  When the User says "Hey Mycroft, do you like ice cream?", the Intent handler method `handle_do_you_like()` will be called.
+With the Tomato Skill installed, if the User utters ****"Hey Mycroft, what is a tomato?", the Intent handler method `handle_what_is()` will be called.
 
-Inside `handle_do_you_like()`, we find: `self.speak_dialog('i.do.like')`  
+Inside `handle_what_is()`, we find: `self.speak_dialog('tomato.description')`  
 
-As you can probably guess, the parameter `'i.do.like'` is the dialog filename without the ".dialog". Calling this method opens the dialog file, selects one of the statements, and converts that text to speech. Mycroft will speak a statement from the dialog file.  In this example, Mycroft will say "I do like ice cream".  Remember, Mycroft has a language setting that determines from which directory to find the dialog file.
+As you can probably guess, the parameter `'tomato.description'` is the dialog filename without the ".dialog" extension. Calling this method opens the dialog file, selects one of the statements, and converts that text to speech. Mycroft will speak a statement from the dialog file.  In this example, Mycroft might say "The tomato is a fruit of the nightshade family".  
+
+Remember, Mycroft has a language setting that determines from which directory to find the dialog file.
 
 #### File locations
 
@@ -101,110 +77,59 @@ The [Skill Structure](../skill-structure/) section describes where to place the 
 1. Put both files in `locale/en-us`
 2. Put the dialog file in `dialog/en-us` , and put the Intent file in `vocab/en-us`
 
-#### Make Mycroft less robotic
+### Statements with variables
 
-Having more than one statement in the dialog file provides some variability in Mycroft's responses. Hopefully, this makes Mycroft seem less robotic. Mycroft is allowed to randomly speak any one of the statements from the dialog file.
+The second Padatious Intent, **do.you.like.intent**, demonstrates the use of variables in the Intent file and in one of the dialog files:
 
-Let's extend our `i.do.like.dialog` file to include a variation:
-
-```python
-I do like ice cream
-Yes, I love ice cream
-```
-
-Now, Mycroft will sometimes reply with "I do like ice cream", and other times with "Yes, I love ice cream".  Try it.
-
-### Part 2 - Adding variables
-
-Let's make the scenario more interesting by anticipating that the User might ask if Mycroft likes a specific flavor of ice cream. And, let's also expect for Mycroft to give a more complete answer by including the User specified flavor. Towards that end, let's allow for a flavor word or words just before "ice cream" in the **utterance**, and have those flavor word\(s\) inserted in Mycroft's statement.
-
+{% tabs %}
+{% tab title="do.you.like.intent" %}
 ```text
-Feature: Mycroft and Ice Cream
-	  Scenario: Mycroft likes ice cream
-		Given an English speaking user
-		  When the User says "do you like CHOCOLATE ice cream"
-		  Then "ice-cream-skill" should reply with "I do like CHOCOLATE ice cream"
-		
-Note: Above, CHOCOLATE, represents any word or words, i.e. the flavor
+do you like tomatoes
+do you like {type} tomatoes
 ```
+{% endtab %}
 
-{% hint style="info" %}
-If the _flavor words_ are actually a flavor of ice cream this works fine, but if not, then it may produce funny results. "Hey Mycroft, do you like _sitting on_ ice cream?"   Mycroft will obediently respond with "I do like _sitting on_ ice cream." There are ways to limit this hilarious behavior, but that is not the subject of this example. Please see [Padatious Intents](intents/padatious-intents.md) for more details.
-{% endhint %}
-
-To implement this scenario, first, modify the Intent file so that it expects and extracts the _flavor_ word or words between "do you like" and "ice cream". Edit the **do.you.like.intent** file to include a variable name surrounded by curly braces:
-
+{% tab title="like.tomato.type.dialog" %}
 ```text
-Do you like ({asked_flavor}|) ice cream
+I do like {type} tomatoes
+{type} tomatoes are my favorite
 ```
+{% endtab %}
 
-This example also demonstrates Parentheses Expansion.  The parentheses surround options for the parsing of the **utterance.**  Options are separated by the vertical line character '\|'.  Each option expands to its own line of text.  The option on the right is blank which results in the original line "do you like ice cream". 
+{% tab title="like.tomato.generic.dialog" %}
+```text
+I do like tomatoes
+tomatoes are my favorite
+```
+{% endtab %}
+{% endtabs %}
 
-The option of the left introduces a variable named **asked\_flavor**, and results in the line: "do you like {asked\_flavor} ice cream".  This line causes Mycroft to take the word or words found between "do you like" and "ice cream", and return them to the Intent handler assigned to a variable named **asked\_flavor**.
+Compare these two dialog files. The **like.tomato.generic.dialog** file contains only simple statements. The statements in the **like.tomato.type.dialog** file include a variable named `type`.  The variable is a placeholder in the statement specifying where text may be inserted. The `speak_dialog()` method accepts a dictionary as an optional parameter. If that dictionary contains an entry for a variable named in the statement, then the value from the dictionary will be inserted at the placeholder's location.
 
 {% hint style="info" %}
-For multi-line Intent files, be sure to include the **same** variable on **all** lines.  
-In Mycroft parlance, the curly braces are also known as a _mustache_.
-{% endhint %}
+Dialog file variables are formed by surrounding the variable's name with curly braces.  In Mycroft parlance, curly braces are known as a _mustache_.
 
-Second, modify the dialog file to indicate where the handler shall insert the _flavor_ text. Edit the dialog lines to include a variable name surrounded by curly braces at the desired insertion points.
-
-```python
-I do like {flavor} ice cream
-Yes, I love {flavor} ice cream
-```
-
-{% hint style="info" %}
 For multi-line dialog files, be sure to include the **same** variable on **all** lines.
 {% endhint %}
 
-Third, modify the Intent handler to acquire the asked\_flavor variable. Variables and their values are passed to the Intent inside the data dictionary in the message. The next line illustrates how to extract the value for **asked\_flavor** from the dictionary:
+The Tomato Skill code snippet:
 
 ```python
-asked_flavor = message.data.get('asked_flavor', '')
-```
-
-If the User did not utter any words between "do you like" and "ice cream", then there will not be a value for **asked\_flavor** in the dictionary. The code snippet above handles that situation by setting the variable to an empty string when **asked\_flavor** is not in the dictionary.
-
-Finally, pass the value from the **asked\_flavor** variable to the dialog via the data dictionary parameter. Assign the value to the variable name used in the dialog file:
-
-```python
-self.speak_dialog(i.do.like, data={'flavor':asked_flavor})
-```
-
-Now, the code looks like this:
-
-```python
-from mycroft import MycroftSkill, intent_handler
-
-class IceCreamSkill(MycroftSkill):
-
-    @intent_handler("do.you.like.intent")
+ @intent_handler('do.you.like.intent')
     def handle_do_you_like(self, message):
-        """Speaks a statement from the dialog file, inserting the
-           asked for flavor into the statement ."""
-        asked_flavor = message.data.get('asked_flavor', '')
-        self.speak_dialog('i.do.like', data={"flavor": asked_flavor})
-        
-def create_skill():
-    return IceCreamSkill()
+        tomato_type = message.data.get('type')
+        if tomato_type is not None:
+            self.speak_dialog('like.tomato.type',
+                              {'type': tomato_type})
+        else:
+            self.speak_dialog('like.tomato.generic')
 ```
 
-Try it.
+When the User utters "Hey Mycroft, do you like RED tomatoes?", the second of the two Intent lines "do you like {type} tomatoes" is recognized by Mycroft, and the value 'RED' is returned in the message dictionary assigned to the 'type' entry when `handle_do_you_like()` is called.  
 
-> Hey Mycroft, do you like strawberry ice cream?
+The line `tomato_type = message.data.get('type')` extracts the value from the dictionary for the entry 'type'.  In this case,  the variable `tomato_type` will receive the value 'RED', and `speak_dialog()`will be called with the 'like.tomato.type' dialog file, and a dictionary with 'RED' assigned to 'type'.   The statement "i do like {type} tomatoes" might be randomly selected, and after insertion of the value 'RED' for the placeholder variable {type}, Mycroft would say: "I do like RED tomatoes".
 
-#### Accepting more variation from the User
-
-To give more flexibility in what the User utters, add some equivalent alternatives to the Intent file:
-
-```text
-Do you like ({asked_flavor}|) ice cream
-Do you love ({asked_flavor}|) ice cream
-What do you think of ({asked_flavor}|) ice cream
-```
-
-Give it a try.
+Should the User utter "Hey Mycroft, do you like tomatoes?", the first line in the Intent file "do you like tomatoes" is recognized. The is no variable in this line, and when `handle_do_you_like()` is called, the dictionary in the message is empty. This means `tomato_type` is `None`,`speak_dialog('like.tomato.generic')` would be called, and Mycroft might reply with "Yes, I do like tomatoes".
 
 ## Waiting for speech
 
@@ -219,22 +144,13 @@ However there are times when we need to wait until the statement has been spoken
 We can pass a `wait=True` parameter to our `speak_dialog()` method. This makes the method blocking and no other code will execute until the statement has been spoken.
 
 ```python
-from mycroft import MycroftSkill, intent_handler
-
-class IceCreamSkill(MycroftSkill):
-
-    @intent_handler("do.you.like.intent")
-    def handle_do_you_like(self, message):
-        """Speaks a statement from the dialog file, inserting the
-           asked for flavor into the statement ."""
-        asked_flavor = message.data.get('asked_flavor', '')
-        self.speak_dialog("i.do.like", 
-                          data={"flavor": asked_flavor},
-                          wait=True)
-        self.log.info("I waited for you")
-        
-def create_skill():
-    return IceCreamSkill()     
+@intent_handler('what.is.a.tomato.intent')
+def handle_what_is(self, message):
+    """Speaks a statement from the dialog file.
+       Waits (i.e. blocks) within speak_dialog() until
+       the speaking has completed. """
+    self.speak_dialog('tomato.description', wait=True)
+    self.log.info("I waited for you")
 ```
 
 ### wait\_while\_speaking
@@ -242,27 +158,19 @@ def create_skill():
 The [`mycroft.audio.wait_while_speaking()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.audio.html#mycroft.audio.wait_while_speaking) method allows us to execute some code, then wait for Mycroft to finish speaking.
 
 ```python
-from mycroft import MycroftSkill, intent_handler
-from mycroft.audio import wait_while_speaking
-
-class IceCreamSkill(MycroftSkill):
-
-    @intent_handler("do.you.like.intent")
-    def handle_do_you_like(self, message):
-        """Speaks a statement from the dialog file, inserting the
-           asked for flavor into the statement ."""
-        asked_flavor = message.data.get('asked_flavor', '')
-        self.speak_dialog("i.do.like", 
-                          data={"flavor": asked_flavor})
-        self.log.info("I am executed immediately")
-        wait_while_speaking()
-        self.log.info("But I waited for you")
-        
-def create_skill():
-    return IceCreamSkill()
+@intent_handler('what.is.a.tomato.intent')
+def handle_what_is(self, message):
+    """Speaks a statement from the dialog file.
+       Returns from speak_dialog() before the
+       speaking has completed, and logs some info.
+       Then it, waits for the speech to complete. """
+    self.speak_dialog('tomato.description')
+    self.log.info("I am executed immediately")
+    wait_while_speaking()
+    self.log.info("But I waited for you") 
 ```
 
-Here we have executed one line of code immediately. Our Skill will then wait for the `i.do.like.dialog` to be spoken before executing the final line of code.
+Here we have executed one line of code immediately. Our Skill will then wait for the statement from `i.do.like.dialog` to be spoken before executing the final line of code.
 
 ## Using translatable resources
 
