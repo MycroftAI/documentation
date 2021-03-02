@@ -17,7 +17,34 @@ We have put together a detailed set of instructions to help get you setup. These
 
 ‌[https://www.instructables.com/Mycroft-Mark-II-Developer-Kit-Assembly/](https://www.instructables.com/Mycroft-Mark-II-Developer-Kit-Assembly/)
 
-### Hardware
+### Buttons
+
+The Mark II, including the Dev Kit, comes with 3 buttons and 1 switch. These are all located on the SJ201 board.
+
+1. Action - the button located in the center of the LED ring. This activates the listener if needed.
+2. Volume Up - the button on the front-right of the board when looking at the screen.
+3. Volume Down - the button in the front-center of the board.
+4. Mic hardware cut-off - a physical disconnect switch for the microphones. Switch left to disable the microphones, and right to re-enable them.
+
+### LEDs
+
+The SJ201 comes with 12 LEDs in a ring formation. 
+
+Currently there are two "dedicated" LED's for development purposes only \(these will change as we approach a general release\):
+
+* One led is green/red representing the current state of the microphone mute.
+* The second shows the general CPU temperature
+  * Blue = cold
+  * Magenta = warm
+  * Orange = hot 
+  * Red = very hot
+
+The LED ring has a number of states:
+
+* Blue and spinner - listener is activated such as when the wake word is detected.
+* Pulsing ring - device is thinking.
+
+### Further information
 
 You can find detailed information on all components of the Mark II hardware on [our Github](https://github.com/MycroftAI/hardware-mycroft-mark-II/tree/master/mark-II-Rpi-devkit).
 
@@ -35,11 +62,21 @@ Using a tool like the [Raspberry Pi Imager](https://www.raspberrypi.org/software
 
 ‌When you power on the device for the first time, Mycroft will walk you through setting up your WiFi and pairing the device to your Mycroft account. If you haven’t yet registered, you can create an account at [https://home.mycroft.ai](https://home.mycroft.ai).
 
+### Known Issues
+
+There are a number of known issues that we are working through at the moment. These include:
+
+* Cannot pair device if connected via ethernet. 
+  * Workaround - use WiFi, at least on first boot.
+* The Wifi Connect application does not yet support hidden SSID's. 
+  * Workaround - ensure your network SSID is visible.
+* Cannot poweroff the device. The system currently fails on shutdown and eventually reboots. 
+  * Workaround - select reboot / poweroff, then wait 5 seconds before unplugging the device.
+  * This also affects reboot, taking a long time to cycle - you can safely remove and re-insert the power cable after a 5 seconds to speed up the process.
+
 ## SSH Access
 
 To enable secure access to your device, we use public-key cryptography rather than a default username and password. 
-
-
 
 In short this means that you generate what’s known as a key-pair. The pair is made up of two files - a public key and a private key. The public key is transferred to your device, and only your private key will be able to log in to it. Your private key is like an extremely secure password and you should never share this with anyone. If you want to learn more about the details, start here.
 
@@ -193,6 +230,12 @@ In developer mode, the Pantavisor system provides an SSH bridge running on port 
 In previous devices like the Mark 1, we provided the ability to turn SSH on and off because they operated off a default username and password. Distributing an internet connected device with a default username and password providing shell access is a very big security risk. Hence the SSH service had to be disabled by default. 
 
 The use of a key-pair removes the need to disable the SSH server. Without a public key on the device, and the ability to connect to your device on port 8222, no one can SSH into it.
+
+### I used a different Raspberry Pi and it won't boot!?!
+
+First, we recommend using the Pi that ships with your device.
+
+If you need to switch this out, please note that there are some revision 1.4 Raspberry Pi's that ship with firmware that does not support USB boot. To update the firmware, you can flash the [Mark II image](https://mycroft.ai/to/mark-ii-stable) onto a Micro SD card. This will automatically update your firmware to a supported version on first boot. From then on you can boot from USB or continue using the Micro SD card.
 
 ## More questions?
 
