@@ -66,13 +66,14 @@ Using a tool like the [Raspberry Pi Imager](https://www.raspberrypi.org/software
 
 There are a number of known issues that we are working through at the moment. These include:
 
-* Cannot pair device if connected via ethernet. 
-  * Workaround - use WiFi, at least on first boot.
 * The Wifi Connect application does not yet support hidden SSID's. 
   * Workaround - ensure your network SSID is visible.
 * Cannot poweroff the device. The system currently fails on shutdown and eventually reboots. 
   * Workaround - select reboot / poweroff, then wait 5 seconds before unplugging the device.
   * This also affects reboot, taking a long time to cycle - you can safely remove and re-insert the power cable after a 5 seconds to speed up the process.
+* Additional settings in on screen menu not yet implemented: 
+  * Factory reset
+  * Update Device
 
 ## SSH Access
 
