@@ -174,6 +174,14 @@ Mycroft Skills Manager \(MSM\) is a command line tool used to add, manage and re
 
 {% page-ref page="../../skill-development/mycroft-skills-manager/" %}
 
+## Mycroft-Core Development
+
+Before making changes to `mycroft-core` on the Mark II Dev Kit it's recommended that you disable automatic updates in your [device settings](https://home.mycroft.ai/devices).
+
+To return to a production state, it is recommended that you flash a fresh image of the Mark II OS.
+
+Mycroft-core is installed at `/opt/mycroft/` 
+
 ## FAQ
 
 ### How are updates handled?
@@ -237,6 +245,12 @@ The use of a key-pair removes the need to disable the SSH server. Without a publ
 First, we recommend using the Pi that ships with your device.
 
 If you need to switch this out, please note that there are some revision 1.4 Raspberry Pi's that ship with firmware that does not support USB boot. To update the firmware, you can flash the [Mark II image](https://mycroft.ai/to/mark-ii-stable) onto a Micro SD card. This will automatically update your firmware to a supported version on first boot. From then on you can boot from USB or continue using the Micro SD card.
+
+### Where is \_\_\_\_\_\_\_\_ package?
+
+The Mark II is intended to be a device for consumers. As such we try to keep the system as lean as possible. How lean? Currently it is "no-installed-text-editor" lean!
+
+The `mycroft` container however is based on Ubuntu 20.04 so all of your standard tooling is available via the apt package manager. 
 
 ### Which GPIO pins are available?
 
