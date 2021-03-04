@@ -84,6 +84,7 @@
   * [Converse](skill-development/user-interaction/converse.md)
 * [Displaying information](skill-development/displaying-information/README.md)
   * [GUI Framework](skill-development/displaying-information/mycroft-gui.md)
+  * [Show Simple Content](skill-development/displaying-information/show-simple-content.md)
   * [Mark 1 Display](skill-development/displaying-information/mark-1-display.md)
 * [Advanced Skill Types](skill-development/skill-types/README.md)
   * [Fallback Skill](skill-development/skill-types/fallback-skill.md)
