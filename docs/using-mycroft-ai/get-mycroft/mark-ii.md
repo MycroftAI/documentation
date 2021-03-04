@@ -266,6 +266,12 @@ The Raspberry Pi GPIO pins 1, 12 and 13 are brought out to J9 on the SJ201. This
 
 ![ SJ201: J9 connector diagram](../../.gitbook/assets/gpio-pins.png)
 
+## Found a Bug? Or noticed something that should be added?
+
+The Mark II Dev Kit is an early release and still has a number known and unknown issues. 
+
+Please help us improve the Mark II by [opening a bug report or feature request](https://github.com/MycroftAI/hardware-mycroft-mark-II/issues/new/choose) for anything that doesn't seem right.
+
 ## More questions?
 
 Join us in [Mycroft Chat](https://chat.mycroft.ai/community/channels/mark2) or the [Community Forums](https://community.mycroft.ai/c/mark2/), we’re happy to answer any other questions you might have.
