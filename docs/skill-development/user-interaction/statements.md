@@ -129,7 +129,7 @@ When the User utters "Hey Mycroft, do you like RED tomatoes?", the second of the
 
 The line `tomato_type = message.data.get('type')` extracts the value from the dictionary for the entry 'type'.  In this case,  the variable `tomato_type` will receive the value 'RED', and `speak_dialog()`will be called with the 'like.tomato.type' dialog file, and a dictionary with 'RED' assigned to 'type'.   The statement "i do like {type} tomatoes" might be randomly selected, and after insertion of the value 'RED' for the placeholder variable {type}, Mycroft would say: "I do like RED tomatoes".
 
-Should the User utter "Hey Mycroft, do you like tomatoes?", the first line in the Intent file "do you like tomatoes" is recognized. The is no variable in this line, and when `handle_do_you_like()` is called, the dictionary in the message is empty. This means `tomato_type` is `None`,`speak_dialog('like.tomato.generic')` would be called, and Mycroft might reply with "Yes, I do like tomatoes".
+Should the User utter "Hey Mycroft, do you like tomatoes?", the first line in the Intent file "do you like tomatoes" is recognized. There is no variable in this line, and when `handle_do_you_like()` is called, the dictionary in the message is empty. This means `tomato_type` is `None`,`speak_dialog('like.tomato.generic')` would be called, and Mycroft might reply with "Yes, I do like tomatoes".
 
 ## Waiting for speech
 
