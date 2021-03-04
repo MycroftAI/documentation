@@ -174,6 +174,14 @@ Mycroft Skills Manager \(MSM\) is a command line tool used to add, manage and re
 
 {% page-ref page="../../skill-development/mycroft-skills-manager/" %}
 
+### Creating a custom idle screen
+
+The idle screen \(also called a Home screen\) on the Mark II is fully customizable. The default screen is provided by the [Time Date Skill](https://github.com/MycroftAI/skill-date-time/blob/b5b7ded3149c1929b46c2e294fc6980325416cf6/__init__.py#L85) but you can create your own. 
+
+Here we have a [simple example Skill](https://github.com/krisgesling/gez-homescreen-skill/) that allows the user to set their idle screen to be an image from a remote url through the Skill's settings. 
+
+To switch between the available screens, pull down from the top of your screen to access the on device menu and select Additional Settings &gt; Homescreen. As new options are added to Skills they will automatically show up in this list.
+
 ## Mycroft-Core Development
 
 Before making changes to `mycroft-core` on the Mark II Dev Kit it's recommended that you disable automatic updates in your [device settings](https://home.mycroft.ai/devices).
