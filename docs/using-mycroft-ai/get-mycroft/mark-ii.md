@@ -7,8 +7,6 @@ description: >-
 
 # Mark II
 
-You can [reserve your own Mark II](https://mycroft.ai/product/reserve-your-mark-ii-with-a-small-deposit/) with a small deposit.
-
 ## Constructing your Dev Kit
 
 Being a development kit, there's a small amount of construction required.
@@ -64,6 +62,8 @@ Using a tool like the [Raspberry Pi Imager](https://www.raspberrypi.org/software
 
 ### Known Issues
 
+The software on the Mark II Dev Kit is still an early release. Please help us improve the Mark II by [opening a bug report or feature request](https://github.com/MycroftAI/hardware-mycroft-mark-II/issues/new/choose) for anything that doesn't seem right.
+
 There are a number of known issues that we are working through at the moment. These include:
 
 * The Wifi Connect application does not yet support hidden SSID's. 
@@ -72,6 +72,7 @@ There are a number of known issues that we are working through at the moment. Th
   * Workaround - select reboot / poweroff, then wait 5 seconds before unplugging the device.
   * This also affects reboot, taking a long time to cycle - you can safely remove and re-insert the power cable after a 5 seconds to speed up the process.
 * Additional settings in on screen menu not yet implemented: 
+  * On screen Wifi setup
   * Factory reset
   * Update Device
 
@@ -265,12 +266,6 @@ The `mycroft` container however is based on Ubuntu 20.04 so all of your standard
 The Raspberry Pi GPIO pins 1, 12 and 13 are brought out to J9 on the SJ201. This is next to the volume up button on the front-right of the board if you are looking at the device face on. GPIO pin 0 is also not used.
 
 ![ SJ201: J9 connector diagram](../../.gitbook/assets/gpio-pins.png)
-
-## Found a Bug? Or noticed something that should be added?
-
-The Mark II Dev Kit is an early release and still has a number known and unknown issues. 
-
-Please help us improve the Mark II by [opening a bug report or feature request](https://github.com/MycroftAI/hardware-mycroft-mark-II/issues/new/choose) for anything that doesn't seem right.
 
 ## More questions?
 
