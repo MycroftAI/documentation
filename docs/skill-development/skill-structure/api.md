@@ -1,9 +1,9 @@
 ---
-description: How to make use the Skill API
+description: The Skill API offers a simple and convenient way to use other Skill's methods and export your own to help other Skill creators. 
 ---
 # Skill API
 
-The Skill API offers a simple and convenient way to use other Skill's methods and export your own to help other Skill creators. The Skill API uses the Mycroft Message Bus to communicate between Skills and wraps the interaction in simple Python objects making them easy to use.
+The Skill API uses the Mycroft Message Bus to communicate between Skills and wraps the interaction in simple Python objects making them easy to use.
 
 ## Making a method available through the Skill API
 
