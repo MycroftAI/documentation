@@ -1,6 +1,9 @@
 ---
-description: The Skill API offers a simple and convenient way to use other Skill's methods and export your own to help other Skill creators. 
+description: >-
+  The Skill API offers a simple and convenient way to use other Skill's methods
+  and export your own to help other Skill creators.
 ---
+
 # Skill API
 
 The Skill API uses the Mycroft Message Bus to communicate between Skills and wraps the interaction in simple Python objects making them easy to use.
@@ -20,7 +23,7 @@ The decorator will generate everything needed for accessing the method over the 
 
 ### Limitations
 
-The Skill API works over the Message Bus. This requires that the return values are json serializable. All common Python builtin types (such as List, String, None, etc.) work well, however custom classes are not currently supported.
+The Skill API works over the Message Bus. This requires that the return values are json serializable. All common Python builtin types \(such as List, String, None, etc.\) work well, however custom classes are not currently supported.
 
 ### Example
 
@@ -70,17 +73,17 @@ def create_skill():
     return NewRobberSkill()
 ```
 
-When the `NewRobberSkill` is initialized, it will assign the API from the Skill `robber-skill.forslund` to `self.robber`. We then run the exported method `robber_lang()` passing the argument `'hello world'`. 
+When the `NewRobberSkill` is initialized, it will assign the API from the Skill `robber-skill.forslund` to `self.robber`. We then run the exported method `robber_lang()` passing the argument `'hello world'`.
 
 Our `NewRobberSkill` will therefore speak something like "hoh e lol lol o wow o ror lol dod".
-
 
 ## Getting information on a Skill's exported API
 
 The Mycroft CLI has an `:api` command for exploring Skill APIs.
 
-```
+```text
 :api robber-lang.forslund
 ```
 
 will show any exported method from the `robber-lang.forslund` Skill. Each exported method's docstring will automatically be extracted and presented, providing information on how each method is intended to be used.
+

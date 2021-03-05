@@ -128,6 +128,8 @@
 * [Lingua Franca](mycroft-technologies/lingua-franca.md)
 * [Mimic](mycroft-technologies/mimic-overview/README.md)
   * [Mimic Recording Studio](mycroft-technologies/mimic-overview/mimic-recording-studio.md)
+* [Mycroft GUI](mycroft-technologies/mycroft-gui/README.md)
+  * [Remote STT and TTS](mycroft-technologies/mycroft-gui/remote-stt-and-tts.md)
 * [Mycroft Skills Kit](mycroft-technologies/mycroft-skills-kit.md)
 * [Mycroft Skills Manager](mycroft-technologies/mycroft-skills-manager.md)
 * [Padatious](mycroft-technologies/padatious.md)
