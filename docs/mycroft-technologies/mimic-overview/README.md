@@ -14,7 +14,7 @@ Mimic is a fast, light-weight [Text to Speech \(TTS\)](https://en.wikipedia.org/
 
 ## Why should I use Mimic instead of other open source TTS tools?
 
-Mimic is low-latency and has a small resource footprint. Its range of high quality voices also set it apart from othe open source text-to-speech projects. Apart from being used as the voice of Mycroft, Mimic's small resource footprint makes it an attractive choice for other embedded systems.
+Mimic is low-latency and has a small resource footprint. Its range of high quality voices also set it apart from other open source text-to-speech projects. Apart from being used as the voice of Mycroft, Mimic's small resource footprint makes it an attractive choice for other embedded systems.
 
 Mimic works on Linux, Android and Windows currently, and other platforms may be supported in the future. We also anticipate adding more languages to to enable many people to access realistic voices for the first time.
 

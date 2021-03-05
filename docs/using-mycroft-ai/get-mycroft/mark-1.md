@@ -64,7 +64,7 @@ The available menu options are:
 * TEST: This option will immediately run a test sequence on your Mark 1. This option may be required as part of troubleshooting measures. To move through each of the tests, press the top button. Continue pressing the top button to exit the test sequence.
 * SSH: This option allows you to enable [SSH](https://en.wikipedia.org/wiki/Secure_Shell) connections to the Mark 1 Device, or to block SSH if it's enabled.
 * LEARN: This option allows you to enable the Learn functionality within Mycroft. If you've also opted-in on home.mycroft.ai, and Learn functionality is enabled, then Mycroft will record your voice when Speaking the **Wake Word** and **Utterances**. This data is then used anonymously to _train_ Mycroft to better recognize the **Wake Word** and **Utterances**.
-* RESET: This option resets Mark 1 back to a factory default state. You may need to do this for troubleshooing, or if you're giving your Mark 1 to someone else. _NOTE: If you're resetting your Mark 1, remember to remove the Device from home.mycroft.ai so that the Pairing is removed also_
+* RESET: This option resets Mark 1 back to a factory default state. You may need to do this for troubleshooting, or if you're giving your Mark 1 to someone else. _NOTE: If you're resetting your Mark 1, remember to remove the Device from home.mycroft.ai so that the Pairing is removed also_
 * DEMO: If this option is selected, Mark 1 will provide a short demonstration of functionality, whilst channelling his secret desire to be Eminem :-\)
 
 ## Mark 1 boot sequence
@@ -278,6 +278,19 @@ If your Mark 1 Device is frozen, reboot it by:
 
 1. Pressing the top button for 2 seconds, scrolling the button to select REBOOT then pressing the top button again to reboot.
 2. If this does not work, disconnect your Mark 1 **Device** from the power source, wait 10 seconds, then plug the Mark 1 back into the power source.
+
+### Stuck on yellow or white eyes
+
+First please reboot the device. In case your device is processing a large update please give the device at least an hour to update before trying the next steps.
+
+If you have SSH access to the device you can trigger a reinstall of the Mark 1 software by switching to the development channel and back again. To do this run:
+
+```text
+sudo mycroft-use unstable
+sudo mycroft-use stable
+```
+
+If the above still doesn't work you will most likely need to [reimage the SD Card](mark-1.md#reimaging-steps). Note that SD Cards have a limited lifespan. As they age, sectors of the disk will become corrupted and cause "strange" behavior that is difficult to replicate. Using a new SD Card has solved many difficult problems and saved hours of frustrations.
 
 ## Hardware Hacking your Mark 1 Device
 

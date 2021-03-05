@@ -307,7 +307,7 @@ To our existing configuration values we will add the following:
 
 ## Wit.ai
 
-A natural langauge platform owned by Facebook.
+A natural language platform owned by Facebook.
 
 ### Account Setup
 

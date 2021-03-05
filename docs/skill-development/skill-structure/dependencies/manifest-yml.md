@@ -9,7 +9,7 @@ description: >-
 In this file we can include Python packages, Linux applications or other Mycroft skills that are required for our own Skill to function properly.
 
 {% hint style="info" %}
-[YAML](https://en.wikipedia.org/wiki/YAML) is a language commonly used for configuration files. It uses indentation rather than brackets or parantheses to define the structure or hierarchy of its contents.
+[YAML](https://en.wikipedia.org/wiki/YAML) is a language commonly used for configuration files. It uses indentation rather than brackets or parentheses to define the structure or hierarchy of its contents.
 {% endhint %}
 
 ## File contents
@@ -88,5 +88,5 @@ Anything listed in this section will be passed to the [Mycroft Skills Manager](h
 
 A complete `manifest.yml` example can be found in the [official Template Skill on Github](https://github.com/MycroftAI/mycroft-skills/blob/19.08/00__skill_template/manifest.yml).
 
-A simple example from a real Skill can be found in the [Desktop Launcher Skill](https://github.com/MycroftAI/skill-desktop-launcher/blob/19.02/manifest.yml).
+A simple example from a real Skill can be found in the [Desktop Launcher Skill](https://github.com/MycroftAI/skill-desktop-launcher/blob/19.08/manifest.yml).
 

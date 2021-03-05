@@ -7,7 +7,7 @@ description: >-
 # Snap Package
 
 {% hint style="info" %}
-The Snap package is considered an Alpha release. It is being actively developed however a number of known issues are listed below.
+The Snap package is considered a pre-Alpha release - in short it does not yet work. It has a number of known major usability issues listed below.
 {% endhint %}
 
 If your system already supports the Snap ecosystem, Mycroft will be available in your Software Store. You can also install it manually by running:

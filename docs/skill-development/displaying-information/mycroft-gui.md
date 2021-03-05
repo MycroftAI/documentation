@@ -11,11 +11,11 @@ In the age of information visualization is eminently essential to grab attention
 
 ![](https://images.theconversation.com/files/205921/original/file-20180212-58348-1sbutu2.jpg?ixlib=rb-1.1.0&rect=0%2C604%2C3994%2C1994&q=45&auto=format&w=1356&h=668&fit=crop)
 
-### INTRODUCTION TO MYCROFT-GUI
+### Introduction
 
 Mycroft-GUI is an open source visual and display framework for Mycroft running on top of KDE Plasma Technology and built using Kirigami a lightweight user interface framework for convergent applications which are empowered by Qt.
 
-### GETTING STARTED
+### Getting Started
 
 Mycroft is an open source voice assistant that can be extended and expanded to the limits of your imagination. Mycroft can run anywhere from your desktop to your automobiles or on smart devices that empower your home.
 
@@ -47,11 +47,11 @@ Skills for Mycroft AI are written in Python, using the skills development guide 
 
 Let's walk you through some basics of writing your QML user interface, this section is divided into 5 parts:
 
-* [Importing Modules](mycroft-gui.md#Importing-Modules)
-* [Using Mycroft-GUI Framework Base Delegates](mycroft-gui.md#Using-Mycroft-GUI-Framework)
-* [Using Mycroft Framework Components](mycroft-gui.md#Using-Mycroft-Framework-Components)
-* [Event Handling](mycroft-gui.md#Event-Handling)
-* [Resting Faces](mycroft-gui.md#Resting-Faces)
+* [Importing Modules](mycroft-gui.md#importing-modules)
+* [Using Mycroft-GUI Framework Base Delegates](mycroft-gui.md#using-mycroft-gui-framework-base-delegates)
+* [Using Mycroft Framework Components](mycroft-gui.md#using-mycroft-framework-components)
+* [Event Handling](mycroft-gui.md#event-handling)
+* [Resting Faces](mycroft-gui.md#resting-faces)
 
 #### Importing Modules
 
@@ -682,4 +682,8 @@ Mycroft.Delegate {
     }
 }
 ```
+
+
+
+
 

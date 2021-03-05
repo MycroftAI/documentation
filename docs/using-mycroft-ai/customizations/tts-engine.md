@@ -126,7 +126,7 @@ You will need to take note of your private "Access Key ID" and "Secret Access Ke
 
 ### Mycroft Configuration
 
-First, check the [list of available voices and languages](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html). Note that Polly does not provide a separate `langauge` attribute like other TTS options. The language is determined by which voice is chosen.
+First, check the [list of available voices and languages](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html). Note that Polly does not provide a separate `language` attribute like other TTS options. The language is determined by which voice is chosen.
 
 Then, install the `boto3` python module in the Mycroft virtual environment:
 
@@ -157,13 +157,14 @@ To our existing configuration values we will add the following:
   "polly": {
     "voice": "Matthew",
     "region": "us-east-1",
+    "engine": "standard",
     "access_key_id": "YOUR_ACCESS_KEY_ID",
     "secret_access_key": "YOUR_SECRET_ACCESS_KEY"
   }
 }
 ```
 
-If the `voice` and `region` attributes are ommitted the defaults of `Matthew` and `us-east-1` will be used. This is an English \(US\) voice.
+If the `voice`, `region`, and `engine` attributes are ommitted the defaults of `Matthew`, `us-east-1` and `standard` will be used. This is an English \(US\) voice.
 
 ## Google TTS
 
@@ -209,7 +210,38 @@ To our existing configuration values we will add the following:
 }
 ```
 
-## Microsoft Azure
+## Microsoft Azure Cognitive Service
+
+_Note: This is a Community provided TTS plugin and is not controlled by Mycroft AI. Updates for this plugin may not have been reviewed by the Mycroft team. We strongly recommend reviewing any code you intend to install from outside Mycroft's official channels._
+
+_Plugins are currently only available on the `dev` channel of Mycroft. They will be available on all systems in the next minor release. If you're not sure what that means,_ [_sign up to our newsletter_](https://mycroft.ai/newsletters/) _to get notified about the next release._
+
+### Installation
+
+```bash
+mycroft-pip install mycroft-tts-plugin-azure
+```
+
+### Account Setup
+
+This TTS service requires a subscription to Microsoft Azure and the creation of a Speech resource \([https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview\#create-the-azure-resource](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview#create-the-azure-resource)\) The free plan is more than able to handle domestic usage \(5 million character per month, or 0.5 million with neural TTS voice\)
+
+### Mycroft Configuration
+
+You can choose your voice here in the column "voice name" \([https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support\#text-to-speech](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#text-to-speech)\) Neural voices are much better, but cost more.
+
+```javascript
+"tts": {
+  "module": "azure",
+  "azure": {
+    "api_key": "insert_your_key_here",
+    "voice": "en-US-JennyNeural", # optional, default "en-US-Guy24kRUS"
+    "region": "westus" # optional, if your region is westus
+  }
+}
+```
+
+## Microsoft Bing
 
 ### Account Setup
 
@@ -234,6 +266,37 @@ To our existing configuration values we will add the following:
     "gender": "Male"
   }
 }
+```
+
+## Mozilla TTS
+
+### Server Setup
+
+Instructions for setting up a Mozilla TTS server are [available on the projects wiki](https://github.com/mozilla/TTS/wiki/Build-instructions-for-server).
+
+### Mycroft Configuration
+
+Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
+
+```bash
+mycroft-config edit user
+```
+
+To our existing configuration values we will add the following:
+
+```javascript
+"tts": {
+  "module": "mozilla",
+  "mozilla": {
+    "url": "http://my-mozilla-tts-server/api/tts"
+  }
+}
+```
+
+By default the `url` is set to the localhost: [`http://0.0.0.0:5002/api/tts`](http://0.0.0.0:5002/api/tts) So if you are running the server on the same machine as your Mycroft instance, only the `module` attribute needs to be set. This can also be done with a single command:
+
+```bash
+mycroft-config set tts.module mozilla
 ```
 
 ## Responsive Voice

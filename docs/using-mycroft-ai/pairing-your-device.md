@@ -30,7 +30,7 @@ You can [create a home.mycroft.ai account](https://home.mycroft.ai/#/signup) by 
 
 By default, Mycroft will not store your usage data or keep any recordings of your voice.
 
-When creating an account, you will be asked if you would like to Opt-In to the Open Dataset. If you chosee to Opt-In then Mycroft will record your voice when Speaking the Wake Word and Utterances. This data is de-identified and used anonymously to _train_ Mycroft to better recognize the Wake Word and Utterances. It will also be provided to key partners such as Mozilla, to assist in the development of speech recognition tools such as [DeepSpeech](https://github.com/mozilla/DeepSpeech).
+When creating an account, you will be asked if you would like to Opt-In to the Open Dataset. If you choose to Opt-In then Mycroft will record your voice when Speaking the Wake Word and Utterances. This data is de-identified and used anonymously to _train_ Mycroft to better recognize the Wake Word and Utterances. It will also be provided to key partners such as Mozilla, to assist in the development of speech recognition tools such as [DeepSpeech](https://github.com/mozilla/DeepSpeech).
 
 If you change your mind at any time, you can change your selection under the Agreements section of [your Profile](https://account.mycroft.ai/profile).
 

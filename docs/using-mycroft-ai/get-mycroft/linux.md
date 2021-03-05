@@ -28,14 +28,6 @@ The ARM architecture has a similar requirement called SIMD \(Single Instruction,
 
 There are multiple ways to install Mycroft for Linux.
 
-### Snap Package
-
-Mycroft is now available as a Snap package. Providing a simple and secure means of installing Mycroft on a broad range of Linux distributions.
-
-The Snap package is currently considered an Alpha release. Find out more:
-
-{% page-ref page="snap.md" %}
-
 ### Installing via git clone
 
 The simplest way to install Mycroft for Linux is to clone the `mycroft-core` repo to your system and run a shell script, which will install all dependencies, and [Mycroft components](http://mycroft.ai/documentation/mycroft-software-hardware/).
@@ -150,7 +142,7 @@ Restart=no
 WantedBy=multi-user.target
 ```
 
-Please modify `WorkingDirectory` and `User` to your needs. Enable the new created service with `sudo systemctl enable mycroft.service` . You could start Mycroft by running `service mycroft start` stop it by `service mycroft stop` and get the status by typing `service mycroft status`.
+Please modify `WorkingDirectory` and `User` to your needs. Reload the unit files with `sudo systemctl daemon-reload`and then, enable the new created service with `sudo systemctl enable mycroft.service` . You could start Mycroft by running `sudo systemctl start mycroft.service` stop it by `sudo systemctl stop mycroft.service` and get the status by typing `sudo systemctl status mycroft.service`.
 
 ## Pairing Mycroft for Linux
 
@@ -240,6 +232,14 @@ rm -rf "$HOME/mycroft-core" # Mycroft-core installation
 {% hint style="info" %}
 Depending on your system, you may need to run the commands with `sudo`
 {% endhint %}
+
+## Snap Package
+
+A pre-Alpha Snap package is available, with the aim to provide a simple and secure means of installing Mycroft on a broad range of Linux distributions.
+
+The Snap package currently has a number of major usability bugs that need to be addressed before it will be promoted to an installable channel. For now we recommend the git clone method above, but we welcome any help in improving Mycroft as a Snap:
+
+{% page-ref page="snap.md" %}
 
 ## Troubleshooting
 

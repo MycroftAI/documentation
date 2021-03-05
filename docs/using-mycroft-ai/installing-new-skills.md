@@ -26,19 +26,27 @@ To remove the Skill, you can say:
 
 ## Command Line
 
-If you prefer to use the command line, you can directly use the [Mycroft Skills Manager]().
+If you prefer to use the command line, you can directly use the [Mycroft Skills Manager](../skill-development/mycroft-skills-manager/).
 
 To install a Skill run:
 
 ```text
-$ msm install skill-name
+mycroft-msm install skill-name
 ```
 
 To remove a Skill run:
 
 ```text
-$ msm remove skill-name
+mycroft-msm remove skill-name
 ```
 
+For more detail on command line usage see:
 
+{% page-ref page="../skill-development/mycroft-skills-manager/" %}
+
+## Troubleshooting
+
+If you are having trouble using the Mycroft Skills Manager, or the `mycroft-msm` command cannot be found, see our dedicated troubleshooting guide:
+
+{% page-ref page="../skill-development/mycroft-skills-manager/msm-troubleshooting.md" %}
 

@@ -5,7 +5,7 @@ description: >-
 
 # Preparing your Skill for submission to the Mycroft Skills Repo
 
-**NOTE: To make Skill subsmission to the Mycroft Skills Repo a lot easier, we now recommend the [Mycroft Skills Kit](https://mycroft.ai/documentation/skills/msk)**
+**NOTE: To make Skill submission to the Mycroft Skills Repo a lot easier, we now recommend the [Mycroft Skills Kit](https://mycroft.ai/documentation/skills/msk)**
 
 _The following should only be used if absolutely necessary._
 

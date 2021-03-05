@@ -44,7 +44,7 @@ self.log.debug
 
 Debug messages are used for information that will help to diagnose problems. These are particularly useful if there is anything that has the potential to break in the future.
 
-By default these messages will not be logged unless the User has explicity turned on debug level logging.
+By default these messages will not be logged unless the User has explicitly turned on debug level logging.
 
 ### Info
 

@@ -4,7 +4,7 @@ After working on a list of jobs to be done creating Example Interactions is one 
 
 ## First Draft Interaction Scripts
 
-Begin by writing the example interactions of your skill from start to finish based on your Job Stories. At first don’t worry about organizing the interactions. Just try to write down as many examples as possible. If you skipped ahead and 
+Begin by writing the example interactions of your skill from start to finish based on your Job Stories. At first don’t worry about organizing the interactions. Just try to write down as many examples as possible. If you skipped ahead and
 
 Here is an example of a First Draft Interaction of a Moon Phase Skill.
 
@@ -45,7 +45,7 @@ Here is an example of a First Draft Interaction of a Moon Phase Skill.
 | **User** | _Hey Mycroft, what are the phases of the moon?_ |
 | **Mycroft** | _A lunar cycle lasts 29.53 days and consists of four principal phases, the new moon, first quarter, full moon and third quarter. Would you like to know more?_ |
 | **User** | _Yes_ |
-| **Mycroft** | _The apparent shape of the moon between New Moon and First Quarter is known as Waxing Crescent, the apparent shape between First Quarter and Full Moon is known as Waxing Gibbuous. The moon is half illuminated in both First Quarter and Third Quarter, the use of the word quarter indicates the period within the cycle and not the illumination._ |
+| **Mycroft** | _The apparent shape of the moon between New Moon and First Quarter is known as Waxing Crescent, the apparent shape between First Quarter and Full Moon is known as Waxing Gibbous. The moon is half illuminated in both First Quarter and Third Quarter, the use of the word quarter indicates the period within the cycle and not the illumination._ |
 
 |  | Example Dialog 8 |
 | :--- | :--- |
@@ -61,7 +61,7 @@ Here is an example of a First Draft Interaction of a Moon Phase Skill.
 
 ## Organized Interaction Scripts
 
-The next step in the process is organizing the first pass of dialogs into groups. You may already have a good idea of what these groups of similar interactions are based on your Job Stories from the beginning phase. You can also think of these as the features of the skill. In the Behave format these groups or features are called Scenarios. 
+The next step in the process is organizing the first pass of dialogs into groups. You may already have a good idea of what these groups of similar interactions are based on your Job Stories from the beginning phase. You can also think of these as the features of the skill. In the Behave format these groups or features are called Scenarios.
 
 | **Scenario** | **When a user asks for the current Moon Phase** |
 | :--- | :--- |
@@ -94,7 +94,7 @@ The next step in the process is organizing the first pass of dialogs into groups
 | **User** | _Hey Mycroft, what are the phases of the moon?_ |
 | **Mycroft** | _A lunar cycle lasts 29.53 days and consists of four principal phases, the new moon, first quarter, full moon and third quarter. Would you like to know more?_ |
 | **User** | _Yes_ |
-| **Mycroft** | _The apparent shape of the moon between New Moon and First Quarter is known as Waxing Crescent, the apparent shape between First Quarter and Full Moon is known as Waxing Gibbuous. The First Quarter is half illuminated and is growing in illumination toward a Full Moon. The Last Quarter is half illuminated and shrinking in illumination toward a New Moon. A New Moon is not illuminated and not therefore not visible to the naked eye._ |
+| **Mycroft** | _The apparent shape of the moon between New Moon and First Quarter is known as Waxing Crescent, the apparent shape between First Quarter and Full Moon is known as Waxing Gibbous. The First Quarter is half illuminated and is growing in illumination toward a Full Moon. The Last Quarter is half illuminated and shrinking in illumination toward a New Moon. A New Moon is not illuminated and not therefore not visible to the naked eye._ |
 
 | **Scenario** | When the user needs Help |
 | :--- | :--- |
@@ -147,7 +147,7 @@ Feature: mycroft-moon-phase
 
 ## Converting Example Interactions to Flows \(optional\)
 
-Some might think that creating the Flowcharts would be the first step in the process. After all the flowchart is abstract and doesn’t require full statements or prompts to be written. In a flowchart you just need to see the steps and decision points within the interaction. However, in practice the language used in the interaction can have such a great impact on the user’s input that is more important to start with Example Interactions and real statements and prompts first. 
+Some might think that creating the Flowcharts would be the first step in the process. After all the flowchart is abstract and doesn’t require full statements or prompts to be written. In a flowchart you just need to see the steps and decision points within the interaction. However, in practice the language used in the interaction can have such a great impact on the user’s input that is more important to start with Example Interactions and real statements and prompts first.
 
 In a flowchart it's easy to add several decision branches to a step, but in practice the dialog necessary to effectively make the decision might require multiple steps. It's always best to start with the dialog.
 
