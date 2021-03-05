@@ -65,6 +65,7 @@
     * [Manifest.yml](skill-development/skill-structure/dependencies/manifest-yml.md)
     * [Requirements files](skill-development/skill-structure/dependencies/requirements-files.md)
   * [Filesystem access](skill-development/skill-structure/filesystem.md)
+  * [Skill API](skill-development/skill-structure/api.md)
 * [Integration Tests](skill-development/voight-kampff/README.md)
   * [Test Steps](skill-development/voight-kampff/test-steps.md)
   * [Scenario Outlines](skill-development/voight-kampff/scenario-outlines.md)
