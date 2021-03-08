@@ -1,11 +1,13 @@
 ---
 description: >-
   The Mark II is our next-generation smart speaker designed for you and your
-  family, whatever your level of technical expertise. At the same time, it is
-  open hardware and software for developers, makers
+  family, whatever your level of technical expertise. The Dev Kit is open
+  hardware and software to enable development.
 ---
 
 # Mark II
+
+The Mark II Dev Kit is intended for Software Developers and Hardware Developers to develop on the Mycroft platform. 
 
 ## Constructing your Dev Kit
 
