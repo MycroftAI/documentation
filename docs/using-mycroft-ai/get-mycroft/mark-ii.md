@@ -162,6 +162,22 @@ ssh -p 8222 _pv_@$YOUR_IP
 
 There is also a BSP layer that can be mounted for inspection on another machine. This contains the kernel, modules and firmware.
 
+### Transfer files to or from your device
+
+Now that you have SSH access, you can transfer files to and from your device using `scp`.To do this, we also need to use the port 8222, however unlike `ssh` the `scp` command uses the uppercase `-P` flag 🤷 
+
+Lets transfer `my_file` from our computer, to the Mark II device:
+
+```bash
+scp -P 8222 my_file mycroft@$YOUR_IP:/destination/path/
+```
+
+We can also transfer files in the other direction. Let's grab all of the Mycroft log files in one command using the `-r` recursive flag:
+
+```bash
+scp -rP 8222 mycroft@$YOUR_IP:/var/log/mycroft /destination/path/
+```
+
 ## Skill Development
 
 ### Creating your first Skill
