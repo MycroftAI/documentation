@@ -66,17 +66,7 @@ Using a tool like the [Raspberry Pi Imager](https://www.raspberrypi.org/software
 
 The software on the Mark II Dev Kit is still an early release. Please help us improve the Mark II by [opening a bug report or feature request](https://github.com/MycroftAI/hardware-mycroft-mark-II/issues/new/choose) for anything that doesn't seem right.
 
-There are a number of known issues that we are working through at the moment. These include:
-
-* The Wifi Connect application does not yet support hidden SSID's. 
-  * Workaround - ensure your network SSID is visible.
-* Cannot poweroff the device. The system currently fails on shutdown and eventually reboots. 
-  * Workaround - select reboot / poweroff, then wait 5 seconds before unplugging the device.
-  * This also affects reboot, taking a long time to cycle - you can safely remove and re-insert the power cable after a 5 seconds to speed up the process.
-* Additional settings in on screen menu not yet implemented: 
-  * On screen Wifi setup
-  * Factory reset
-  * Update Device
+There are a number of known issues that we are working through at the moment. These are documented as [issues on this repository](https://github.com/MycroftAI/hardware-mycroft-mark-II/issues).
 
 ## SSH Access
 
