@@ -162,6 +162,15 @@ Other settings are available to further tune how sensitive the Speech to Text \(
 
   If Mycroft is being _too sensitive_, reduce this value. If Mycroft _is not being sensitive enough_, increase this value.
 
+```javascript
+{
+  "listener": {
+    "multiplier": 1.0,
+    "energy_ratio": 1.5
+  }
+}
+```
+
 #### Adding PocketSphinx Settings to `mycroft.conf`
 
 For the `Yo Mike` example we started with, an example `~/.mycroft/mycroft.conf` file might look like:
