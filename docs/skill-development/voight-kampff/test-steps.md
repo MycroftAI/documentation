@@ -20,6 +20,17 @@ Here we outline the Steps available in the base implementation. We are actively 
 
 You can set the language of a test using its common name.
 
+### Modify the timeout
+
+`Given a 20 second timeout  
+Given a 1 minute timeout`
+
+You can increase the timeout of a test. This might be necessary if relying on responses from external resources. 
+
+The default timeout is 10 seconds.
+
+As with all timeouts we want to provide adequate time for a test to complete, but not leave the tests running for longer than they should.
+
 ## When Steps
 
 `When` Steps describe actions that are taken.
