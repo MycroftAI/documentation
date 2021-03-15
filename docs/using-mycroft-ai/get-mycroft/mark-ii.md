@@ -9,6 +9,12 @@ description: >-
 
 The Mark II Dev Kit is intended for Software Developers and Hardware Developers to develop on the Mycroft platform. 
 
+### Known Issues
+
+The software on the Mark II Dev Kit is still an early release. Please help us improve the Mark II by [opening a bug report or feature request](https://github.com/MycroftAI/hardware-mycroft-mark-II/issues/new/choose) for anything that doesn't seem right.
+
+There are a number of known issues that we are working through at the moment. These are documented as [issues on this repository](https://github.com/MycroftAI/hardware-mycroft-mark-II/issues).
+
 ## Constructing your Dev Kit
 
 Being a development kit, there's a small amount of construction required.
@@ -61,12 +67,6 @@ Using a tool like the [Raspberry Pi Imager](https://www.raspberrypi.org/software
 ### First boot
 
 ‌When you power on the device for the first time, Mycroft will walk you through setting up your WiFi and pairing the device to your Mycroft account. If you haven’t yet registered, you can create an account at [https://home.mycroft.ai](https://home.mycroft.ai).
-
-### Known Issues
-
-The software on the Mark II Dev Kit is still an early release. Please help us improve the Mark II by [opening a bug report or feature request](https://github.com/MycroftAI/hardware-mycroft-mark-II/issues/new/choose) for anything that doesn't seem right.
-
-There are a number of known issues that we are working through at the moment. These are documented as [issues on this repository](https://github.com/MycroftAI/hardware-mycroft-mark-II/issues).
 
 ## SSH Access
 
