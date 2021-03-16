@@ -248,7 +248,7 @@ Device cloning would not be useful to perform on any end-users device. It is onl
 
 ### Are you monitoring my usage?
 
-Mycroft is opt-out by default. That means if you haven’t explicitly opted-in to share your data with us, then we do not keep it. Any queries sent to our back end services are processed and then deleted immediately.
+By default Mycroft does not retain your usage data. Unlike some other companies that we won't bother to name, you don't need to search through application settings to turn off data collection. If you haven’t explicitly opted-in to share your data with us, then we do not keep it. Any queries sent to our back end services are processed and then deleted immediately.
 
 General usage statistics, such as how many unique devices have connected to our servers in a given day are collected and kept in aggregate. This allows us to see general user trends, but again, if you haven’t opted-in we would not know whether any device from a specific account was even turned on any previous day.
 
