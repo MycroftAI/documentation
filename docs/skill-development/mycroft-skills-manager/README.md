@@ -102,7 +102,7 @@ To uninstall or remove any Skill from the device run:
 mycroft-msm remove <name>
 ```
 
-Note that default Skills will be reinstalled by the system unless they are explicitly blacklisted. See ["How do I disable a Skill?"](https://github.com/MycroftAI/documentation/tree/46eacf9aa119b008902294bf2ead9a23d0bbd418/docs/skill-development/faq/README.md#how-do-i-disable-a-skill) for more info.
+Note that default Skills will be reinstalled by the system unless they are explicitly blacklisted. See ["How do I disable a Skill?"](../faq.md#how-do-i-disable-a-skill) for more info.
 
 ### Specifying author
 
