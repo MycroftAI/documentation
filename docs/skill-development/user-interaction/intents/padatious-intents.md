@@ -54,7 +54,7 @@ Note the `{type}` in the above examples. These are wild-cards where matching con
 
 ### Specific Entities
 
-In the above example, `{type}` will match anything. While this makes the intent flexible, it will also match if we say something like Do you like eating tomatoes?. It would think the type of tomato is eating which doesn't make much sense. Instead, we can specify what type of things the {type} of tomato should be. We do this by defining the type entity file here:
+In the above example, `{type}` will match anything. While this makes the intent flexible, it will also match if we say something like Do you like eating tomatoes?. It would think the type of tomato is `"eating"` which doesn't make much sense. Instead, we can specify what type of things the {type} of tomato should be. We do this by defining the type entity file here:
 
 `vocab/en-us/type.entity`
 
@@ -72,7 +72,17 @@ unripe
 pale
 ```
 
-Now, we can say things like Do you like greenish red tomatoes? and it will tag type as: `greenish red`.
+This must be registered in the Skill before use - most commonly in the `initialize()` method:
+
+```Python
+from mycroft import MycroftSkill, intent_handler
+
+class TomatoSkill(MycroftSkill):
+    def initialize(self):
+        self.register_entity_file('type.entity')
+```
+
+Now, we can say things like "do you like greenish tomatoes?" and it will tag type as: `"greenish"`. However if we say "do you like eating tomatoes?" - the phrase will not match as `"eating"` is not included in our `type.entity` file.
 
 ### Number matching
 
@@ -197,8 +207,9 @@ Now we can create our Tomato Skill:
 from mycroft import MycroftSkill, intent_handler
 
 class TomatoSkill(MycroftSkill):
-    def __init__(self):
-        super().__init__()
+    
+    def initialize(self):
+        self.register_entity_file('type.entity')
 
     @intent_handler('what.is.a.tomato.intent')
     def handle_what_is(self, message):
