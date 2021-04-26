@@ -2,7 +2,7 @@
 
 ## How do I disable a Skill?
 
-During Skill development you may have reason to disable one or more Skills. Rather than constantly install or uninstall them via voice, or by adding and removing them from `/opt/mycroft/skills/`, you can disable them in [the `mycroft.conf` file](https://mycroft.ai/documentation/mycroft-conf/).
+During Skill development you may have reason to disable one or more Skills. Rather than constantly install or uninstall them via voice, or by adding and removing them from `$HOME/.local/share/mycroft/skills/`, you can disable them in [the `mycroft.conf` file](https://mycroft.ai/documentation/mycroft-conf/).
 
 First, identify the name of the Skill. The name of the Skill is the `path` attribute in the [`.gitmodules`](https://github.com/MycroftAI/mycroft-skills/blob/master/.gitmodules) file.
 

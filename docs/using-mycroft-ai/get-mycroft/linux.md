@@ -221,12 +221,20 @@ rm -rf ~/mycroft-core
 Alternatively you can manually remove these files using the following commands:
 
 ```bash
-sudo rm -rf /var/log/mycroft # Log files
-rm -f /var/tmp/mycroft_web_cache.json # Configuration from Home.mycroft.ai
+rm -rf $HOME/.cache/mycroft/ # Log files and remote configuration files
 rm -rf "${TMPDIR:-/tmp}/mycroft" # Temp files
-rm -rf "$HOME/.mycroft" # User level configuration
-sudo rm -rf /opt/mycroft # Mycroft Skills directory
+rm -rf "$HOME/.config/mycroft" # User level configuration
+rm -rf $HOME/.local/share/mycroft # Mycroft Skills directory
 rm -rf "$HOME/mycroft-core" # Mycroft-core installation
+```
+
+Previous versions of Mycroft also stored data at some other locations.
+If you have updated your Mycroft instsallation over time, these directories may still exist and can also be removed:
+
+```bash
+rm -r /opt/mycroft
+rm -r /var/log/mycroft
+rm -r $HOME/.mycroft
 ```
 
 {% hint style="info" %}

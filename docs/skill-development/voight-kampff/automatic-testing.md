@@ -43,7 +43,7 @@ The most interesting files from a Skill Author's perspective are:
 
 The `runner.py` can be copied to the Skill Author's working directory, where the **Skill's** `__init__.py` file exists or invoked directly with the skill path as argument. Running `runner.py` will test only the **Skills** it finds in the directory it is in, or, if it can’t find a **Skill**, it will search any subdirectory.
 
-The `discover_test.py` is the Python file that runs integration tests on all **Skills** in `/opt/mycroft/skills`. It is intended for debugging that all your tests are found by the test runner.
+The `discover_test.py` is the Python file that runs integration tests on all **Skills** in `$HOME/.local/share/mycroft/skills`. It is intended for debugging that all your tests are found by the test runner.
 
 The `message_tester.py` is a utility that can test a single message against the internal rule format used by the `skill_tester`. It is intended for debugging rules.
 
@@ -241,7 +241,7 @@ Each message event is tested by the rules. When all rules have succeeded, the te
 Test case output file:
 
 ```text
-/opt/mycroft/skills/skill-pairing/test/intent/sample1.intent.json
+$HOME/.local/share/mycroft/skills/skill-pairing/test/intent/sample1.intent.json
 Test case: {u'intent': {u'DevicePairingPhrase': u'pair my device'}, u'intent_type': u'PairingIntent', u'utterance': u"let's pair my device"}
 Rule created [['and', ['endsWith', 'intent_type', 'PairingIntent'], ['equal', 'DevicePairingPhrase', 'pair my device']]]
 Evaluating message: {'lang': 'en-us', 'skill_id': 1211234571, 'utterances': [u"let's pair my device"]}
@@ -302,10 +302,10 @@ else:
 > raise Exception('Skill couldn't be loaded')
 E Exception: Skill couldn't be loaded
 test/integrationtests/skills/skill_tester.py:198: Exception
-TestCase.test_skill[/opt/mycroft/skills/skill-alarm-/opt/mycroft/skills/skill-alarm/test/intent/sample7.intent.json]
+TestCase.test_skill[/home/username/.local/share/mycroft/skills/skill-alarm-/home/username/.local/share/mycroft/skills/skill-alarm/test/intent/sample7.intent.json]
 self =
-skill = '/opt/mycroft/skills/skill-alarm'
-example = '/opt/mycroft/skills/skill-alarm/test/intent/sample7.intent.json'
+skill = '/home/username/.local/share/mycroft/skills/skill-alarm'
+example = '/home/username/.local/share/mycroft/skills/skill-alarm/test/intent/sample7.intent.json'
 @pytest.mark.parametrize("skill,example", sum([
 [(skill, example) for example in tests[skill]]
 for skill in tests.keys()
@@ -321,7 +321,7 @@ The last section of the Integration Test Runner output shows the test coverage -
 ---------- coverage: platform linux2, python 2.7.12-final-0 ----------
 Name Stmts Miss Cover
 -----------------------------------------------------------------
-/opt/mycroft/skills/skill-alarm/__init__.py 293 290 1%
+/home/username/.local/share/mycroft/skills/skill-alarm/__init__.py 293 290 1%
 ```
 
 ## What should I do if the tests that are failing are not within my control?

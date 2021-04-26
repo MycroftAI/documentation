@@ -34,19 +34,19 @@ Before submitting your Skill we assume you have:
 * Ensure any Python or other packages required to run your Skill are included in your requirements.txt or equivalent.
 * Run the [automated testing](../../voight-kampff/automatic-testing.md) on your own machine using the command:
 
-  `mycroft-skill-testrunner /opt/mycroft/skills/your-skill-directory`
+  `mycroft-skill-testrunner $HOME/.local/share/mycroft/skills/your-skill-directory`
 
 When you are satisfied your Skill is ready, submit it for formal review by running:
 
 ```text
-mycroft-msk submit /opt/mycroft/skills/your-skill-directory
+mycroft-msk submit $HOME/.local/share/mycroft/skills/your-skill-directory
 ```
 
 If you don't have the mycroft-msk command available, you can manually activate the Mycroft virtual environment and run `msk`
 
 ```text
 source ~/mycroft-core/.venv/bin/activate
-msk submit /opt/mycroft/skills/your-skill-directory
+msk submit $HOME/.local/share/mycroft/skills/your-skill-directory
 ```
 
 This will upload the Skill to Github if it isn’t already, and generate a pull request to add your Skill as a [Git submodule](https://gist.github.com/gitaarik/8735255) to the [Mycroft Skills Repo](https://github.com/MycroftAI/mycroft-skills).

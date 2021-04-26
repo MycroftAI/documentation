@@ -58,18 +58,18 @@ The normal commands for `msk` are:
 
 ```bash
 msk create
-msk create-test /opt/mycroft/skills/myskill
-msk upload /opt/mycroft/skills/myskill
-msk upgrade /opt/mycroft/skills/myskill
+msk create-test $HOME/.local/share/mycroft/skills/myskill
+msk upload $HOME/.local/share/mycroft/skills/myskill
+msk upgrade $HOME/.local/share/mycroft/skills/myskill
 ```
 
 If using the built-in installation of `msk` with a Mycroft device or Mycroft git installation, use `mycroft-msk` in place of `msk`:
 
 ```bash
 mycroft-msk create
-mycroft-msk create-test /opt/mycroft/skills/myskill
-mycroft-msk upload /opt/mycroft/skills/myskill
-mycroft-msk upgrade /opt/mycroft/skills/myskill
+mycroft-msk create-test $HOME/.local/share/mycroft/skills/myskill
+mycroft-msk upload $HOME/.local/share/mycroft/skills/myskill
+mycroft-msk upgrade $HOME/.local/share/mycroft/skills/myskill
 ```
 
 ## Create
@@ -121,13 +121,13 @@ To https://github.com/YourGitHubUserName/feed-the-corgi-skill
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 Created GitHub repo: https://github.com/YourGitHubUserName/feed-the-corgi-skill
-Created skill at: /opt/mycroft/skills/feed-the-corgi-skill
+Created skill at: $HOME/.local/share/mycroft/skills/feed-the-corgi-skill
 ```
 
-Now, if you look in `/opt/mycroft/skills/` you will see that all the files required for the **Skill** have now been created, including the `.voc` files.
+Now, if you look in `$HOME/.local/share/mycroft/skills/` you will see that all the files required for the **Skill** have now been created, including the `.voc` files.
 
 ```bash
-$ ls -las /opt/mycroft/skills/feed-the-corgi-skill
+$ ls -las $HOME/.local/share/mycroft/skills/feed-the-corgi-skill
 total 36
 4 drwxrwxr-x   5 kathyreid kathyreid 4096 Jun  7 05:20 .
 4 drwxr-xr-x 103 kathyreid kathyreid 4096 Jun  7 05:18 ..
@@ -141,7 +141,7 @@ total 36
 ```
 
 ```bash
-$ ls -las /opt/mycroft/skills/feed-the-corgi-skill/vocab/en-us/
+$ ls -las $HOME/.local/share/mycroft/skills/feed-the-corgi-skill/vocab/en-us/
 total 12
 4 drwxrwxr-x 2 kathyreid kathyreid 4096 Jun  7 05:20 .
 4 drwxrwxr-x 3 kathyreid kathyreid 4096 Jun  7 05:20 ..
@@ -163,7 +163,7 @@ As before if the mycroft-core github installation is used make sure to use `mycr
 Next, we use the `msk create-test` function. You _must_ pass the **Skill** directory location to the command, or it will fail.
 
 ```bash
-$ msk create-test /opt/mycroft/skills/feed-the-corgi-skill/
+$ msk create-test $HOME/.local/share/mycroft/skills/feed-the-corgi-skill/
 
 Which intent would you like to test?
 1. corgi.the.feed.intent
@@ -179,13 +179,13 @@ Choose expected dialog (leave empty to skip).
 1. corgi.the.feed
 
 > 1
-Generated test file: /opt/mycroft/skills/feed-the-corgi-skill/test/intent/corgi.the.feed.intent.0.intent.json
+Generated test file: $HOME/.local/share/mycroft/skills/feed-the-corgi-skill/test/intent/corgi.the.feed.intent.0.intent.json
 ```
 
 If we have a look inside the `corgi.the.feed.intent.0.intent.json` file we can see that the test has been created for us.
 
 ```javascript
-$ cat /opt/mycroft/skills/feed-the-corgi-skill/test/intent/corgi.the.feed.intent.0.intent.json
+$ cat $HOME/.local/share/mycroft/skills/feed-the-corgi-skill/test/intent/corgi.the.feed.intent.0.intent.json
 {
     "intent_type": "corgi.the.feed",
     "expected_dialog": "corgi.the.feed",
@@ -210,7 +210,7 @@ You will now see that your `bash` prompt is prefixed with `(venv)`.
 Next, we use the `msk upload` command with the path to the **Skill**:
 
 ```bash
-$ msk upload /opt/mycroft/skills/feed-the-corgi-skill/
+$ msk upload $HOME/.local/share/mycroft/skills/feed-the-corgi-skill/
 === GitHub Credentials ===
 Username: YourGitHubUserName
 Password:
@@ -238,10 +238,10 @@ Before you can use `msk upgrade`, you must ensure:
 * That your **Skill** has already been merged with the `mycroft-skills` repo.
 * That you have made changes to your **Skill** and that these changes have been committed to the **Skill's** `git` repository.
 
-Once your changes are committed, you can then use `msk upgrade` by passing the location of the Skill folder. Generally we find it's easiest to be inside the Skill's folder in `/opt/mycroft/skills/SKILL-NAME` and then use the current directory symbol, period `.`
+Once your changes are committed, you can then use `msk upgrade` by passing the location of the Skill folder. Generally we find it's easiest to be inside the Skill's folder in `$HOME/.local/share/mycroft/skills/SKILL-NAME` and then use the current directory symbol, period `.`
 
 ```text
-(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
+(.venv) kathyreid@kathyreid-Oryx-Pro:$HOME/.local/share/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
 === GitHub Credentials ===
 Username: KathyReid
 Password:
@@ -275,16 +275,16 @@ Created PR at: https://github.com/MycroftAI/mycroft-skills/pull/661
 * If you try to run `msk upgrade` and your Skill has not yet been merged, you will receive the error:
 
 ```text
-(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
+(.venv) kathyreid@kathyreid-Oryx-Pro:$HOME/.local/share/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
 NotUploaded: The skill kathy-msk-test-skill has not yet been uploaded to the skill store
 ```
 
 * If have uncommitted items, you will receive the error:
 
 ```text
-(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
+(.venv) kathyreid@kathyreid-Oryx-Pro:$HOME/.local/share/mycroft/skills/kathy-msk-test-skill$ msk upgrade .
 AlreadyUpdated: The latest version of kathy-msk-test-skill is already uploaded to the skill repo
-(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ git status
+(.venv) kathyreid@kathyreid-Oryx-Pro:$HOME/.local/share/mycroft/skills/kathy-msk-test-skill$ git status
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -300,10 +300,10 @@ no changes added to commit (use "git add" and/or "git commit -a")
 You need to ensure that your changes are committed:
 
 ```text
-(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ git commit -a
+(.venv) kathyreid@kathyreid-Oryx-Pro:$HOME/.local/share/mycroft/skills/kathy-msk-test-skill$ git commit -a
 [master 6d0e355] test for msk
  1 file changed, 3 insertions(+)
-(.venv) kathyreid@kathyreid-Oryx-Pro:/opt/mycroft/skills/kathy-msk-test-skill$ git push -u origin master
+(.venv) kathyreid@kathyreid-Oryx-Pro:$HOME/.local/share/mycroft/skills/kathy-msk-test-skill$ git push -u origin master
 Username for 'https://github.com': KathyReid
 Password for 'https://KathyReid@github.com':
 Counting objects: 3, done.

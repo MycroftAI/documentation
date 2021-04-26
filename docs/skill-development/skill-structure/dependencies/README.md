@@ -70,7 +70,7 @@ deactivate               # to exit the virtual environment again
 If you have already defined your Python package dependencies, you can use the `pip -r` flag to install all of these at once:
 
 ```bash
-cd /opt/mycroft/skills/my-skill
+cd $HOME/.local/share/mycroft/skills/my-skill
 mycroft-pip install -r requirements.txt
 ```
 

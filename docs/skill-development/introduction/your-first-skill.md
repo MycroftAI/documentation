@@ -48,7 +48,7 @@ To create your first Skill, you will be asked for a:
 
 After inputting this data you will be asked if you would like a Github repo created for your Skill. This provides an easy way to store your Skill, and will be required if you choose to [publish your Skill in the Marketplace](../marketplace-submission/).
 
-If you have completed all of these steps, your Skill will have been created in the `/opt/mycroft/skills` directory on your device.
+If you have completed all of these steps, your Skill will have been created in the `$HOME/.local/share/mycroft/skills` directory on your device.
 
 In the next section, we will explore each component that makes up your Skill.
 

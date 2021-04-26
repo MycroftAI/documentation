@@ -16,10 +16,11 @@ See a [list of all variables available within `mycroft.conf`](https://github.com
 
 The `mycroft.conf` files are stored in four possible locations:
 
-1. Default - mycroft-core/mycroft/configuration/mycroft.conf
-2. Remote \(from Home.Mycroft.ai\) - /var/tmp/mycroft\_web\_cache.json
-3. System - /etc/mycroft/mycroft.conf
-4. User - $HOME/.mycroft/mycroft.conf
+* Default - `mycroft-core/mycroft/configuration/mycroft.conf`
+* Remote - Home.Mycroft.ai
+* System - `/etc/mycroft/mycroft.conf`
+* User - `$HOME/.config/mycroft/mycroft.conf`
+* Old user (deprecated) - `$HOME/.mycroft/mycroft.conf`
 
 Mycroft implements an order of precedence; settings defined at a User level override those at a System level. If the file does not exist, Mycroft moves to the following level.
 
@@ -51,21 +52,18 @@ pi@mark_1:/etc/mycroft $ cat mycroft.conf
 See a [list of all variables available within `mycroft.conf`](https://github.com/MycroftAI/mycroft-core/blob/master/mycroft/configuration/mycroft.conf)\`\`
 {% endhint %}
 
-## `mycroft_web_cache.json`
+## `web_cache.json`
 
-`mycroft_web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ \(which determines _Time Zone_\), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
+`web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1.
+`web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ \(which determines _Time Zone_\), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
 
 Both of these files are regularly used in troubleshooting, so it's useful to know what information they hold, and where they are stored on your Device.
 
-### Where is the `mycroft_web_cache.json` file stored?
+### Where is the `web_cache.json` file stored?
 
-This file is stored at:
+This file is stored on the device at `$HOME/.cache/mycroft/web_cache.json`.
 
-`/var/tmp/mycroft_web_cache.json`
-
-on the Device.
-
-### How is `mycroft_web_cache.json` updated?
+### How is `web_cache.json` updated?
 
 When you update settings at [home.mycroft.ai](https://home.mycroft.ai), your Device will periodically pull them down. In normal circumstances any change should be reflected on the device within 1-2 minutes. You can also instruct your device to pull down the latest configuration, by saying:
 
@@ -81,35 +79,35 @@ Mycroft will respond in one of two ways:
 
 > Your device has been configured
 
-### Reading values directly from `mycroft_web_cache.json`
+### Reading values directly from `web_cache.json`
 
 To see the city location value:
 
-`jq ".location.city" < /var/tmp/mycroft_web_cache.json`
+`jq ".location.city" < $HOME/.cache/mycroft/web_cache.json`
 
 To see the latitude and longitude coordinates of your location:
 
-`jq ".location.coordinate" < /var/tmp/mycroft_web_cache.json`
+`jq ".location.coordinate" < $HOME/.cache/mycroft/web_cache.json`
 
 To see the timezone setting:
 
-`jq ".location.timezone" < /var/tmp/mycroft_web_cache.json`
+`jq ".location.timezone" < $HOME/.cache/mycroft/web_cache.json`
 
 To see the listener setting:
 
-`jq ".listener" < /var/tmp/mycroft_web_cache.json`
+`jq ".listener" < $HOME/.cache/mycroft/web_cache.json`
 
 To see the Speech to Text \(STT\) settings:
 
-`jq ".stt" < /var/tmp/mycroft_web_cache.json`
+`jq ".stt" < $HOME/.cache/mycroft/web_cache.json`
 
 To see the Text to Speech \(TTS\) settings:
 
-`jq ".tts" < /var/tmp/mycroft_web_cache.json`
+`jq ".tts" < $HOME/.cache/mycroft/web_cache.json`
 
-### A look at the inside of `mycroft_web_cache.json`
+### A look at the inside of `web_cache.json`
 
-Here is an example `mycroft_web_cache.json`.  
+Here is an example `web_cache.json`.  
 _NOTE: Your settings will be different._
 
 ```javascript
@@ -154,8 +152,7 @@ _NOTE: Your settings will be different._
     "wake_word": "hey mycroft"
   },
   "time_format": "full",
-  "skills": {
-    "directory": "~/.mycroft/skills",
+  "skills": { 
     "created_at": 1504481866994,
     "updated_at": 1514794901226,
     "stop_threshold": 2
