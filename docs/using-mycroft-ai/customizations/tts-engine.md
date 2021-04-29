@@ -299,51 +299,62 @@ By default the `url` is set to the localhost: [`http://0.0.0.0:5002/api/tts`](ht
 mycroft-config set tts.module mozilla
 ```
 
-## Coqui TTS server
-The Coqui TTS server (*actively maintained fork of Mozilla TTS project*) can be run locally without internet connection.
+## Coqui TTS
+Coqui TTS is an actively maintained fork of the Mozilla TTS project. A Coqui TTS server can be run locally without internet connection.
 
-Pretrained TTS models are available based on open voice datasets (*eg. LJSpeech, LibriTTS, Thorsten-DE, Mai, ...*). [Coqui release page](https://github.com/coqui-ai/TTS/releases) shows a complete list of available TTS models. 
+Pretrained TTS models are available based on open voice datasets (*eg. LJSpeech, LibriTTS, Thorsten-DE, Mai, ...*). The [Coqui release page](https://github.com/coqui-ai/TTS/releases) shows a complete list of available TTS models. 
 
 ### Server Setup
-Coqui TTS is based on python3 so it's recommended to setup a new virtual environment (*venv*) for TTS.
+Coqui TTS is based on Python3 so it's recommended to setup a new virtual environment (*venv*) for the TTS server.
 
-```python
+```shell
 mkdir <TTS directory>
 cd <TTS directory>
 python3 -m venv .
 source ./bin/activate
+```
 
+Then within that environment install the TTS server.
+
+```shell
 pip install pip --upgrade
 pip install tts --upgrade
 ```
 
-Running `tts --list_models` within venv environment shows available models on command line.
+#### Running TTS server
+
+To run the server we need to know two things:
+
+1. Whether we have a CUDA enabled GPU. Synthesizing voice is significantly faster when run on a [CUDA](https://en.wikipedia.org/wiki/CUDA) enabled GPU compared to a CPU.
+2. Which TTS model to use.
+
+Running `tts --list_models` within the venv shows the TTS models available in the current release.
 
 Example output:
-```
+```text
 tts_models/en/ek1/tacotron2
 tts_models/es/mai/tacotron2-DDC
 tts_models/fr/mai/tacotron2-DDC
 tts_models/de/thorsten/tacotron2-DCA
 ...
 ```
-#### Running TTS server
 
-*Before running TTS server check if your system has CUDA support. Synthesizing voice is mostly running faster on GPU (CUDA enabled) as on CPU (CUDA not available).*
-
-Within your venv environment start TTS server by running:
-```bash
+Within the venv we can now start the TTS server by running:
+```shell
 tts-server --use_cuda=false/true --model_name *modelNameFromList* 
 ````
 
-* *English:*  tts-server --use_cuda=false/true --model_name tts_models/en/ek1/tacotron2
-* *German:*   tts-server --use_cuda=false/true --model_name tts_models/de/thorsten/tacotron2-DCA
+Example commands:
+* *English:*  `tts-server --use_cuda=true --model_name tts_models/en/ek1/tacotron2`
+* *German:*   `tts-server --use_cuda=true --model_name tts_models/de/thorsten/tacotron2-DCA`
 
-By default TTS server uses best vocoder for selected TTS model. But you can overwrite it by passing parameter --vocoder_name to the command line.
+By default a Coqui TTS server uses the best vocoder for the selected TTS model. However you can override the default using the `--vocoder_name` parameter when starting your server.
 
-Once TTS server is running you can test it by opening `http://localhost:5002` in your browser and try synthesizing a test sentence.
+Once the TTS server is running you can test it by opening `http://localhost:5002` in your browser and try synthesizing a test sentence.
 
-After your TTS server setup is finished you can [configure Mycroft](#mycroft-configuration-8) to use it in the same way as it's done for Mozilla TTS.
+### Mycroft Configuration
+
+After your TTS server setup is finished you can [configure Mycroft](#mycroft-configuration-8) to use it with the same configuration as Mozilla TTS.
 
 ## Responsive Voice
 
