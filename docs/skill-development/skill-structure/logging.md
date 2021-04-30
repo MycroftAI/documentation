@@ -12,7 +12,7 @@ To track events and data within your Skill we can use logging. If you are new to
 
 A logger is available through the `MycroftSkill` base class. This means that you can use it within a Skill without needing to import the `logging` package. You can simply call `self.log` from within the class of your Skill.
 
-Here is a quick example of an `info` level message used in a Skill. We will learn more about different levels shortly.
+Here is a quick example of an INFO level log message used in a Skill. We will learn more about the other levels shortly.
 
 ```python
 from adapt.intent import IntentBuilder
@@ -32,48 +32,73 @@ def create_skill():
     return LoggingSkill()
 ```
 
+### What is included in a log message?
+
+The above Skill would log an INFO level message each time the intent handler was triggered. The resulting log would look like this:
+
+```
+2021-03-19 16:06:43.731 | INFO     | 14745 | HelloWorldSkill | This is an info level log message.
+```
+
+From left to right, this consists of:
+* A timestamp identifying when the log was emitted.
+* The level of the log message
+* The Process ID (PID) of the system process where the log originated.
+* The origin of the log from within Mycroft. In the case of Skills the Class name is used.
+* The log message passed as an argument to the logger.
+
+### Where do these messages get logged?
+
+Log messages from a Skill are displayed in the Mycroft CLI so that a User can see in real-time what is happening in the Skill. They are also written to the `skills.log` file located at: `/var/log/mycroft/skills.log`
+
+By default all INFO, WARNING, ERROR, EXCEPTION and CRITICAL level messages will be logged. DEBUG level messages will be logged if the User explicitly requests it. This can be done by issuing the `:log level debug` command in the CLI, or changing the `log_level` attribute in the [mycroft configuration](../../using-mycroft-ai/customizations/config-manager.md).
+
+When you first turn on DEBUG level logging, you will quickly notice that there is a lot happening behind the scenes in Mycroft. If you are debugging a particular Skill it is very useful to limit the displayed log messages using the Class name of your Skill. For the HelloWorldSkill we would use the CLI command: `:find HelloWorldSkill`
+
+Finally to return to the default INFO level logging, you can issue the `:log level info` CLI command.
+
 ## Logging Levels
 
 There are five types of log messages available that are used for different purposes.
 
-### Debug
+### DEBUG
 
 ```python
-self.log.debug
+self.log.debug()
 ```
 
 Debug messages are used for information that will help to diagnose problems. These are particularly useful if there is anything that has the potential to break in the future.
 
 By default these messages will not be logged unless the User has explicitly turned on debug level logging.
 
-### Info
+### INFO
 
 ```python
-self.log.info
+self.log.info()
 ```
 
-Info messages provide general information when the Skill is running as expected. These messages will always be logged so are useful when actively developing a Skill, but should be used sparingly once a Skill is published for other people to use.
+Info messages provide general information when the Skill is running as expected. These messages will always be logged so are useful when actively developing a Skill. When preparing to publish a Skill to the Marketplace, you will likely want to convert many of these to the DEBUG level.
 
-### Warning
+### WARNING
 
 ```python
-self.log.warning
+self.log.warning()
 ```
 
 Warning messages are used to indicate that something has gone wrong, but the Skill will continue to function.
 
-### Error
+### ERROR
 
 ```python
-self.log.error
+self.log.error()
 ```
 
 Error messages indicate that a serious problem has occured and the Skill will not be able to function. In the Mycroft CLI these messages are shown in red to make them highly visible.
 
-### Exception
+### EXCEPTION
 
 ```python
-self.log.exception
+self.log.exception()
 ```
 
 Exception messages are an extended form of the `error` level message. These messages include a stack trace and should only be called from an exception handler. For example:
@@ -85,13 +110,13 @@ except ZeroDivisionError as e:
     self.log.exception("Cannot divide by zero")
 ```
 
-## Where do these messages get logged?
+### CRITICAL
 
-Log messages from a Skill are displayed in the Mycroft CLI so that a User can see in real-time what is happening in the Skill. They are also written to the `skills.log` file located at: `/var/opt/mycroft/skills.log`
+```python
+self.log.critical()
+```
 
-By default all info, warning, error and exception level messages will be logged. Debug level messages will be logged if the User explicitly requests it. This can be done by issuing the `:log level debug` command in the CLI, or changing the `log_level` attribute in the [mycroft configuration](../../using-mycroft-ai/customizations/config-manager.md).
-
-To return to normal logging, you can issue the `:log level info` CLI command.
+A more serious error, indicating that the Skill is unable to continue running.
 
 ## Using the logger outside the Skill class
 
@@ -108,7 +133,7 @@ from adapt.intent import IntentBuilder
 from mycroft import MycroftSkill, intent_handler
 from mycroft.util import LOG
 
-LOG.info("This is a logged info level message outside of the MycroftSkill class scope")
+LOG.info("This is a logged info level message outside of the MycroftSkill Class scope")
 
 def my_special_function():
   LOG.info("Another usage of LOG.")
