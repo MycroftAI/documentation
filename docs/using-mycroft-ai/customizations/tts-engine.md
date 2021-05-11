@@ -300,14 +300,16 @@ mycroft-config set tts.module mozilla
 ```
 
 ## Coqui TTS
+
 Coqui TTS is an actively maintained fork of the Mozilla TTS project. A Coqui TTS server can be run locally without internet connection.
 
-Pretrained TTS models are available based on open voice datasets (*eg. LJSpeech, LibriTTS, Thorsten-DE, Mai, ...*). The [Coqui release page](https://github.com/coqui-ai/TTS/releases) shows a complete list of available TTS models. 
+Pretrained TTS models are available based on open voice datasets \(_eg. LJSpeech, LibriTTS, Thorsten-DE, Mai, ..._\). The [Coqui release page](https://github.com/coqui-ai/TTS/releases) shows a complete list of available TTS models.
 
 ### Server Setup
-Coqui TTS is based on Python3 so it's recommended to setup a new virtual environment (*venv*) for the TTS server.
 
-```shell
+Coqui TTS is based on Python3 so it's recommended to setup a new virtual environment \(_venv_\) for the TTS server.
+
+```text
 mkdir <TTS directory>
 cd <TTS directory>
 python3 -m venv .
@@ -316,7 +318,7 @@ source ./bin/activate
 
 Then within that environment install the TTS server.
 
-```shell
+```text
 pip install pip --upgrade
 pip install tts --upgrade
 ```
@@ -331,6 +333,7 @@ To run the server we need to know two things:
 Running `tts --list_models` within the venv shows the TTS models available in the current release.
 
 Example output:
+
 ```text
 tts_models/en/ek1/tacotron2
 tts_models/es/mai/tacotron2-DDC
@@ -340,13 +343,16 @@ tts_models/de/thorsten/tacotron2-DCA
 ```
 
 Within the venv we can now start the TTS server by running:
-```shell
+
+```text
 tts-server --use_cuda=false/true --model_name *modelNameFromList* 
-````
+`
+```
 
 Example commands:
-* *English:*  `tts-server --use_cuda=true --model_name tts_models/en/ek1/tacotron2`
-* *German:*   `tts-server --use_cuda=true --model_name tts_models/de/thorsten/tacotron2-DCA`
+
+* _English:_  `tts-server --use_cuda=true --model_name tts_models/en/ek1/tacotron2`
+* _German:_   `tts-server --use_cuda=true --model_name tts_models/de/thorsten/tacotron2-DCA`
 
 By default a Coqui TTS server uses the best vocoder for the selected TTS model. However you can override the default using the `--vocoder_name` parameter when starting your server.
 
@@ -354,7 +360,7 @@ Once the TTS server is running you can test it by opening `http://localhost:5002
 
 ### Mycroft Configuration
 
-After your TTS server setup is finished you can [configure Mycroft](#mycroft-configuration-8) to use it with the same configuration as Mozilla TTS.
+After your TTS server setup is finished you can [configure Mycroft](tts-engine.md#mycroft-configuration-8) to use it with the same configuration as Mozilla TTS.
 
 ## Responsive Voice
 

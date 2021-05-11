@@ -74,7 +74,7 @@ pale
 
 This must be registered in the Skill before use - most commonly in the `initialize()` method:
 
-```Python
+```python
 from mycroft import MycroftSkill, intent_handler
 
 class TomatoSkill(MycroftSkill):
@@ -207,7 +207,7 @@ Now we can create our Tomato Skill:
 from mycroft import MycroftSkill, intent_handler
 
 class TomatoSkill(MycroftSkill):
-    
+
     def initialize(self):
         self.register_entity_file('type.entity')
 

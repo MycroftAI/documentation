@@ -140,11 +140,11 @@ If you can't install to a path without spaces, you will have to manually verify 
 
 ### UnicodeDecodeError during setup
 
-This most likely indicates that your unicode locale is not set. 
+This most likely indicates that your unicode locale is not set.
 
 If you are using Docker, ensure that you have a section in your Dockerfile setting up the locale such as:
 
-```Docker
+```text
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en

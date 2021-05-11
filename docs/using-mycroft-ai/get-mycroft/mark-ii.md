@@ -168,6 +168,24 @@ We can also transfer files in the other direction. Let's grab all of the Mycroft
 scp -rP 8222 mycroft@$YOUR_IP:/var/log/mycroft /destination/path/
 ```
 
+## Beta Testing
+
+The Mark II is currently only available as a development kit and we know that many of you are keen to get the latest software as soon as possible. There are two ways that you can help out by testing the latest software. 
+
+### Operating System 
+
+To get the latest version of the Mark II's OS, including updates to Mycroft-core on a daily basis - head to your [device settings on home.mycroft.ai](https://home.mycroft.ai/devices). Select your Mark II and under "Software release" select "Latest". 
+
+### Skills
+
+To test out the latest Skill updates before they are released to the public Marketplace - first SSH into your Mark II, then run:
+
+```bash
+mycroft-config set skills.msm.repo.branch dev
+```
+
+This command updates your Mycroft configuration to use the "dev" branch of the [mycroft-skills repository](https://github.com/mycroftAI/mycroft-skills).
+
 ## Skill Development
 
 ### Creating your first Skill
@@ -203,6 +221,40 @@ Before making changes to `mycroft-core` on the Mark II Dev Kit it's recommended 
 To return to a production state, it is recommended that you flash a fresh image of the Mark II OS.
 
 Mycroft-core is installed at `/opt/mycroft/` 
+
+The Mark II is currently using a feature branch of mycroft-core that includes all the hardware level compatibility code, and a few other tweaks that aren't ready to be merged into the mainline as they may impact other devices that run Mycroft.
+
+The HEAD of the mycroft-core git repo will be in a detached state. This does not change the code that is running. It means that the local repo is currently pointed to a specific commit \(eg "27cf725"\), rather than a branch pointer \(eg "feature/mark-2"\) which in turn points to a commit. You can "reattach" the HEAD by checking out the branch pointer rather than the commit. In short, run:
+
+```text
+git checkout feature/mark-2
+```
+
+If you are testing changes to mycroft-core, these will need to include the updates from that feature branch. Hence you can either branch off `feature/mark-2` 
+
+```text
+git checkout feature/mark-2 
+git checkout -b my-new-branch-name
+```
+
+or you can merge the changes from one branch onto the other:
+
+```text
+git checkout feature/mark-2
+git merge my-new-branch-name
+```
+
+Finally, any time you are making changes to Mycroft-core - whether that is on the device, or by copying files to a running instance \(eg via scp\) - it is recommended that you restart the relevant Mycroft service:
+
+```text
+mycroft-start restart <service-name>
+```
+
+You may also restart all services just to be safe:
+
+```text
+mycroft-start restart all
+```
 
 ## FAQ
 
