@@ -9,6 +9,10 @@ description: >-
 
 Each Skill may define a `converse()` method. This method will be called anytime the Skill has been recently active and a new utterance is processed. 
 
+The converse method expects a single argument which is a standard Mycroft Message object. This is the same object an intent handler receives.
+
+Converse methods must return a Boolean value. True if an utterance was handled, otherwise False.
+
 ### Basic usage
 
 Let's use a version of the Ice Cream Skill we've been building up and add a converse method to catch any brief statements of thanks that might directly follow an order.
