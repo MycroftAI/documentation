@@ -14,7 +14,7 @@ If you are running your own services, your Mycroft installation can be directed 
 
 ## How fast can Mycroft respond?
 
-By default, to answer a request Mycroft: 
+By default, to answer a request Mycroft:
 
 1. Detects the wake word 
 2. Records 3 - 10 seconds of audio 
@@ -38,10 +38,11 @@ Through this process there are a number of factors that can affect the perceived
 
 The best answer is provided by [@Thorsten](https://twitter.com/ThorstenVoice) who documented their journey to create a custom TTS model in German.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m-Uwb-Bg144" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% embed url="https://youtu.be/m-Uwb-Bg144" %}
 
 It is worth noting that it is a significant investment of time to train your own TTS model. We strongly recommend watching Thorsten's entire video before you get started. If a 1 hour video is too long, be warned that the process will take a minimum of weeks and more likely months.
 
 There are exciting new projects that may soon enable us to generate new voices based off minutes of recorded audio. However currently it requires 16+ hours of very consistent, high-quality audio, with the associated text metadata.
 
 To capture this training data we have the [Mimic Recording Studio](https://github.com/mycroftAI/mimic-recording-studio). Note that this generates audio files, which can be used to train TTS models using a range of technologies, not just Mycroft's Mimic.
+
