@@ -38,7 +38,7 @@ Through this process there are a number of factors that can affect the perceived
 
 The best answer is provided by [@Thorsten](https://twitter.com/ThorstenVoice) who documented their journey to create a custom TTS model in German.
 
-https://youtu.be/m-Uwb-Bg144
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m-Uwb-Bg144" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 It is worth noting that it is a significant investment of time to train your own TTS model. We strongly recommend watching Thorsten's entire video before you get started. If a 1 hour video is too long, be warned that the process will take a minimum of weeks and more likely months.
 
