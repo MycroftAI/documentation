@@ -34,3 +34,14 @@ Through this process there are a number of factors that can affect the perceived
 * Dialog structure - a long sentence will always take more time to synthesize than a short one. For this reason Mycroft breaks up longer dialog into chunks and returns one to speak whilst the next is being generated. Skill developers can help provide quicker response times by considering the structure of their dialog and breaking that dialog up using punctuation in appropriate places.
 * TTS Caching - synthesized audio is cached meaning common recently generated phrases don't need to be generated, they can be returned immediately.
 
+## How can I create my own TTS voice?
+
+The best answer is provided by [@Thorsten](https://twitter.com/ThorstenVoice) who documented their journey to create a custom TTS model in German.
+
+https://youtu.be/m-Uwb-Bg144
+
+It is worth noting that it is a significant investment of time to train your own TTS model. We strongly recommend watching Thorsten's entire video before you get started. If a 1 hour video is too long, be warned that the process will take a minimum of weeks and more likely months.
+
+There are exciting new projects that may soon enable us to generate new voices based off minutes of recorded audio. However currently it requires 16+ hours of very consistent, high-quality audio, with the associated text metadata.
+
+To capture this training data we have the [Mimic Recording Studio](https://github.com/mycroftAI/mimic-recording-studio). Note that this generates audio files, which can be used to train TTS models using a range of technologies, not just Mycroft's Mimic.
