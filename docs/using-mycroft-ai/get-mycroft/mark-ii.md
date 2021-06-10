@@ -186,6 +186,39 @@ mycroft-config set skills.msm.repo.branch dev
 
 This command updates your Mycroft configuration to use the "dev" branch of the [mycroft-skills repository](https://github.com/mycroftAI/mycroft-skills).
 
+## Troubleshooting
+
+If you are having problems with your device and would like to share the system logs with the Mycroft team you can enable remote logging. This includes your [Mycroft log files](../troubleshooting/log-files.md) that will include utterances spoken to the device and responses spoken by Mycroft.
+
+### Turn on remote logging
+
+1. Shutdown the device and plug the usb into a computer
+2. In the `pvboot` partition, edit `cmdline.txt`  change the final
+
+```text
+ph_log.push=0
+```
+
+to
+
+```text
+ph_log.push=1
+```
+
+### Find your Device ID
+
+The fastest way for us to find your device is by the `device-id`. To get this, login to the main mycroft container:
+
+```bash
+ssh -p 8222 mycroft@$IPADDRESS
+```
+
+Then print out your device-id using the following command:
+
+```bash
+sudo cat /pantavisor/device-id 
+```
+
 ## Skill Development
 
 ### Creating your first Skill
