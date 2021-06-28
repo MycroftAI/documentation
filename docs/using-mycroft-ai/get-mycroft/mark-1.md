@@ -150,7 +150,7 @@ Method
 * Remove the four rubber feet from the Mark 1, and put them in a safe place.
 * Gently remove the base of the Mark 1.
 * Gently unseat the Micro SD card.
-* Using Etcher, burn the disk image to the Micro SD card. Allow Etcher to complete verification.
+* Using a tool like the [Raspberry Pi Imager](https://www.raspberrypi.org/software/), burn the disk image to the Micro SD card.
 * Gently re-seat the Micro SD card in the Mark 1.
 * Gently place the base of the Mark 1 back, and screw in the four screws.
 * Replace the four rubber feet.
@@ -200,8 +200,8 @@ Method
 To reimage a Mark 1 **Device**, you will need:
 
 * A MicroSD card reader - whether this is built in to your computer or works via USB adapter.
-* You will need [Etcher](https://etcher.io/), a disk image writer, or equivalent software that writes disk images to a MicroSD card
-* A torque screwdriver to unscrew the torque screws on the Mark 1 **Device**
+* Software that writes disk images to a MicroSD card such as the [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
+* A torque screwdriver to unscrew the torque screws on the Mark 1 Device.
 
 #### Reimaging steps
 
@@ -210,7 +210,7 @@ To reimage a Mark 1 **Device**, you will need:
 * Using your torque screwdriver, take apart your Mark 1. If you need help, [this video from Geeked Out Solutions may be of assistance](https://www.youtube.com/watch?v=r76ObbB2EsA).
 * Remove the Micro SD card from the Raspberry Pi board on the back of the Mark 1 unit. It should come out easily, and should not need to be forced.
 * Insert the Micro SD card into the SD card slot on your computer. If your computer doesn't have a Micro SD card slot, you will need an external Micro SD card reader, or a SDHC card reader with a converter.
-* Open Etcher, and follow the steps to burn the Mark 1 disk image that you downloaded in the first step onto the Micro SD card.
+* Open your preferred image burning tool, and follow the steps to burn the Mark 1 disk image that you downloaded in the first step onto the Micro SD card.
 * Remove the Micro SD card from your computer / adapter and insert it into the Micro SD slot on the Raspberry Pi. Then, put the Mark 1 unit back together using the torque screws and screwdriver.
 * Connect the Mark 1 unit back to the power supply.
 * The Mark 1 unit should reboot and now be functioning correctly.

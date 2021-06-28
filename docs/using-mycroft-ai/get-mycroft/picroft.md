@@ -94,9 +94,7 @@ We also have a [Picroft disk image](https://mycroft.ai/to/picroft-unstable) avai
 
 Next, the disk image needs to be burnt to the Micro SD card.
 
-The [Raspberry Pi official documentation provides an excellent tutorial](https://www.raspberrypi.org/documentation/installation/installing-images/) on this, using Etcher software. We recommend that you burn the Picroft image to the Micro SD card using Etcher.
-
-![Etcher SD card image burning tool](https://mycroft.ai/wp-content/uploads/2017/12/etcher-screenshot.png)
+The [Raspberry Pi official documentation provides an excellent tutorial](https://www.raspberrypi.org/documentation/installation/installing-images/) on this.
 
 If you prefer to use the Linux command line tool `dd` to burn the disk image instead, follow these instructions:
 
@@ -350,7 +348,7 @@ If you plan to do **Skills** development work, or other development work with Pi
 
 #### How to reimage a Picroft Device
 
-To reimage a Picroft **Device**, [download the latest disk image](https://mycroft.ai/to/picroft-image). Burn that to a MicroSD card using Etcher, and insert the burned MicroSD card into the Raspberry Pi, then connect the Raspberry Pi to power.
+To reimage a Picroft **Device**, [download the latest disk image](https://mycroft.ai/to/picroft-image). Burn that to a MicroSD card using a tool like the [Raspberry Pi Imager](https://www.raspberrypi.org/software/), and insert the burned MicroSD card into the Raspberry Pi, then connect the Raspberry Pi to power.
 
 #### Keeping your Picroft updated
 
