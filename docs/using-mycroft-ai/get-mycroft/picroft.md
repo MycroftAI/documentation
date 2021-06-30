@@ -101,9 +101,9 @@ If you prefer to use the Linux command line tool `dd` to burn the disk image ins
 1. Download the [Picroft disk image](https://mycroft.ai/to/picroft-image)
 2. Insert the Micro SD card you wish to burn the image to. It must have a storage capacity of 8GB or higher.
 3. Identify the path where the MicroSD card is mounted by running the command `sudo fdisk -l`. You will be able to tell the path based on the storage size of the device.
-4. Keep a note of this - it will be something like `/dev/sdb1`
-5. Unmount the disk so that no other operation can write to the device while it is being imaged using the command `sudo umount /dev/sdb1`. Make sure to substitute for the location of your device.
-6. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb1 bs=20M`. Make sure to substitute the location of your device, and the path to the `.img` file you downloaded.
+4. Keep a note of this - it will be something like `/dev/sdb`. If you are not 100% sure about which disk you are flashing, safely eject the disk and rerun the command to make sure it is no longer reported by `fdisk`. Performing the following operations will delete the entire contents of the disk.
+5. Unmount all partitions on that disk so that no other operation can write to the device while it is being imaged using the command `sudo umount /dev/sdb*`. Make sure to substitute for the location of your device.
+6. Run the command `sudo dd if=path-to-your-image.img of=/dev/sdb bs=20M`. Make sure to substitute the path to the `.img` file you downloaded, and the location of your device.
 7. This will take several minutes to run. The command prompt will return if successful, otherwise an error message will be displayed on your terminal.
 
 ### Seeing the output from Picroft
