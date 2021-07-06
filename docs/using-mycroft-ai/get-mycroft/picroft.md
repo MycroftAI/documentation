@@ -57,6 +57,7 @@ If you are looking for a low-cost option to try out Picroft, we can recommend th
 
 | Brand | Model | Status | Type | Notes |
 | :--- | :--- | :--- | :--- | :--- |
+| Adafruit | [Voice Bonnet for RPi](https://www.adafruit.com/product/4757) | Working | Multi-mic hat | [specific configuration required](#adafruit-voice-Bonnet) |
 | AmazonBasics | LJ-USM-001 | Working | USB Conference Microphone |  |
 | Andrea Electronics | C1-1028100-3 | Working | USB Dongle \(Mic array & Speaker 3.5mm\) | Superbeam Array Microphone Bundle SUMA \(`08a8:0016`\) |
 | Blue | Snowball iCE | Working | Microphone |  |
@@ -75,6 +76,18 @@ If you are looking for a low-cost option to try out Picroft, we can recommend th
 If you experience any audio problems, please see the [Audio Troubleshooting Guide](../troubleshooting/audio-troubleshooting.md).
 
 {% page-ref page="../troubleshooting/audio-troubleshooting.md" %}
+
+#### Adafruit Voice Bonnet
+
+Community members have reported some minor modifications that are required for this device to function.
+
+In the file `/etc/pulse/default.pa`, uncomment or add the following lines:
+```
+load-module module-alsa-sink
+load-module module-alsa-source device=hw:1,0
+set-default-sink alsa_output.platform-soc_sound.stereo-fallback
+set-default-source alsa_input.hw_1_0 
+```
 
 ### Bluetooth devices
 
