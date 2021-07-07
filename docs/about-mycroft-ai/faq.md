@@ -46,3 +46,8 @@ There are exciting new projects that may soon enable us to generate new voices b
 
 To capture this training data we have the [Mimic Recording Studio](https://github.com/mycroftAI/mimic-recording-studio). Note that this generates audio files, which can be used to train TTS models using a range of technologies, not just Mycroft's Mimic.
 
+## The Mycroft AI Store
+
+### Do you cover VAT / GST / other import taxes?
+
+No. Purchases from Mycroft do not currently include any taxes or other importation fees. Unless otherwise stated, all products are shipped from the USA. This means that a product being shipped to another country may incur additional taxes and import fees. These are the sole responsibility of the customer and Mycroft will not reimburse any costs associated with these local fees and taxes.
