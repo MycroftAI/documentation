@@ -38,7 +38,7 @@ Through this process there are a number of factors that can affect the perceived
 
 The best answer is provided by [@Thorsten](https://twitter.com/ThorstenVoice) who documented their journey to create a custom TTS model in German.
 
-{% embed url="https://youtu.be/m-Uwb-Bg144" %}
+{% embed url="https://youtu.be/m-Uwb-Bg144" caption="" %}
 
 It is worth noting that it is a significant investment of time to train your own TTS model. We strongly recommend watching Thorsten's entire video before you get started. If a 1 hour video is too long, be warned that the process will take a minimum of weeks and more likely months.
 
@@ -51,3 +51,4 @@ To capture this training data we have the [Mimic Recording Studio](https://githu
 ### Do you cover VAT / GST / other import taxes?
 
 No. Purchases from Mycroft do not currently include any taxes or other importation fees. Unless otherwise stated, all products are shipped from the USA. This means that a product being shipped to another country may incur additional taxes and import fees. These are the sole responsibility of the customer and Mycroft will not reimburse any costs associated with these local fees and taxes.
+
