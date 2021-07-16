@@ -12,6 +12,24 @@ To achieve this we need to look at three key technologies: backend services prov
 
 If you are running your own services, your Mycroft installation can be directed to use those using the [mycroft.conf file](../using-mycroft-ai/customizations/mycroft-conf.md).
 
+## Why does Mycroft not recognize my voice?
+
+When you trigger a device using the wake word \(eg Hey Mycroft\), this is using one of two systems. [Precise](../mycroft-technologies/precise.md) is trained of samples of other people saying the same thing. Anytime it hears something, it then reports its confidence that it was the wake word.
+
+The training data we have has been collected from our existing community of users and a large proportion of these are adult males from the mid-west of the USA. Because of this bias in our data, there is also a bias in our wake word models. We are working to fix this, however currently it means that Mycroft has more difficulty hearing the wake word from women, children, and those with other accents.
+
+You can increase or decrease the likelihood that it will report a match, however this requires some experimentation. You may end up with a lot of false activations, or it may stop responding at all.
+
+{% page-ref page="../using-mycroft-ai/customizations/wake-word.md" %}
+
+If you are running Mycroft on older hardware, it's also possible that Precise is not supported and the system has fallen back to using [PocketSphinx](https://mycroft-ai.gitbook.io/docs/using-mycroft-ai/customizations/wake-word#pocketsphinx). This fallback system is not as accurate and results vary wildly. You can find out which system Mycroft is using by asking: 
+
+> Hey Mycroft, what is the active listener?
+
+If Mycroft never activates at all, there might be an issue with your microphone. For this, check out our audio troubleshooting guide:
+
+{% page-ref page="../using-mycroft-ai/troubleshooting/audio-troubleshooting.md" %}
+
 ## How fast can Mycroft respond?
 
 By default, to answer a request Mycroft:
