@@ -27,6 +27,8 @@ Once you've given these some thought, you can get started.
 
 ## Mycroft Skills Kit \(MSK\)
 
+{% embed url="https://www.youtube.com/watch?v=YNoWpRyx26A" caption="Video Tutorial: Mycroft Skills Kit" %}
+
 To setup the foundations of your Skill, we will use the [Mycroft Skills Kit \(MSK\)](../../mycroft-technologies/mycroft-skills-kit.md) that comes installed with Mycroft. If you chose the defaults during installation, you can run MSK from your Terminal using the command: `mycroft-msk`. Running this command without any arguments will provide a brief overview of what you can do with MSK.
 
 If you receive a "command not found", then you will need to run `msk` manually from your `mycroft-core` directory. Anytime you see `mycroft-msk` in our documentation you must replace this with:

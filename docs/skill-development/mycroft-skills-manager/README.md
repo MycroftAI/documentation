@@ -8,6 +8,10 @@ description: >-
 
 Mycroft Skills Manager \(MSM\) is a command line tool used to add, manage and remove Skills on any Mycroft installation. It can install any Skill listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills) or from any Github repository. It is a handy tool for Developers and those who may frequently reconfigure, install and uninstall Skills.
 
+## Video Tutorial
+
+{% embed url="https://www.youtube.com/watch?v=jJjLro140Go" caption="Video Tutorial: Mycroft Skills Manager" %}
+
 ## Information
 
 ### List all Skills

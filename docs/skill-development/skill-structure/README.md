@@ -4,6 +4,8 @@ description: Exploring the foundational components of a basic Mycroft Skill.
 
 # Skill Structure
 
+{% embed url="https://www.youtube.com/watch?v=y-znW4GZc1g" caption="Video Tutorial: Anatomy of a Skill" %}
+
 If we now navigate to our new Skill, we can see that it is made up of a number of files and folders.
 
 ```text

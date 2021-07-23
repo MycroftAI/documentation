@@ -14,6 +14,10 @@ There are three main categories of dependencies:
 
 Some of these may already be installed on a Users device, however some may not. To make sure a system has everything that your Skill needs, we can define the dependencies or requirements of the Skill. During installation the Mycroft Skills Manager will then check that they are installed, and if not attempt to do so.
 
+For more information on Python package management and Python virtual environments, see our general Python Resources:
+
+{% page-ref page="../../introduction/python-resources.md" %}
+
 There are three files that we can use to define these dependencies.
 
 ## Recommended

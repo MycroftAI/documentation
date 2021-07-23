@@ -8,6 +8,10 @@ description: >-
 
 To track events and data within your Skill we can use logging. If you are new to programming, this is a way to output a message that can tell you the state of your Skill at a particular point in time, details about an error that has occured, or simply noting that a program reached a particular point in the code.
 
+## Video Tutorial
+
+{% embed url="https://www.youtube.com/watch?v=1\_yX1JCCYoM" caption="Video Tutorial: Logging from Mycroft Skills" %}
+
 ## Basic Usage
 
 A logger is available through the `MycroftSkill` base class. This means that you can use it within a Skill without needing to import the `logging` package. You can simply call `self.log` from within the class of your Skill.

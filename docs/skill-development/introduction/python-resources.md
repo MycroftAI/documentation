@@ -12,6 +12,16 @@ Mycroft uses Python 3 and as of December 2019 supports Python 3.5-3.7.
 
 The following are a collection of resources recommended by members of our Community. If you know of other great resources please let us know in the [Dev channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/dev).
 
+## Video Tutorials
+
+### Python Virtual Environments
+
+{% embed url="https://www.youtube.com/watch?v=QXJZRDYjo7E" caption="Video Tutorial: Python Virtual Environments" %}
+
+### Python Package Management
+
+{% embed url="https://www.youtube.com/watch?v=noKRb5uoE-Q" caption="Video Tutorial: Python Package Management" %}
+
 ## Books
 
 ### Think Python
