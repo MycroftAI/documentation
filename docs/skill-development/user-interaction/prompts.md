@@ -42,6 +42,10 @@ The `get_response()` method also takes the following optional arguments:
 * `on_fail` \(function\) - returns a string that will be spoken if the validator returns False
 * `num_retries` \(int\) - number of times the system should repeat the question to get a successful result
 
+#### See it in action:
+
+{% embed url="https://www.youtube.com/watch?v=Ke7mRl-Qo-U" caption="Video Tutorial: Asking a question" %}
+
 ## Yes / No Questions
 
 [`ask_yesno()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.ask_yesno) checks if the response contains "yes" or "no" like phrases.
@@ -73,6 +77,10 @@ def create_skill():
 ```
 
 In this example we have asked the User if they like ice cream. We then speak different dialog whether they respond yes or no. We also speak some error dialog if neither yes or no are returned.
+
+#### See it in action:
+
+{% embed url="https://www.youtube.com/watch?v=vzQX8RocODs" caption="Video Tutorial: Asking a yes/no question" %}
 
 ## Providing a list of options
 
@@ -109,6 +117,10 @@ In this example we first speak some `welcome.dialog`. The list of flavors is the
 There are two optional arguments for this method.
 
 `min_conf` \(float\) defines the minimum confidence level for fuzzy matching the Users response against the list of options. `numeric` \(bool\) if set to True will speak the options as a numbered list eg "One, vanilla. Two, chocolate. Or three, mint"
+
+#### See it in action:
+
+{% embed url="https://youtu.be/TNezYhqcX\_4" caption="Video Tutorial: Asking the user to choose an option" %}
 
 ## Returning responses to the intent parser
 
