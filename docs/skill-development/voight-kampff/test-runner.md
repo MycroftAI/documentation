@@ -76,6 +76,51 @@ Commandline flags can be used to set or override configuration and runtime optio
         Display this help message
 ```
 
+## What Skill name to use?
+
+{% hint style="warning" %}
+There are currently a few ways that Mycroft refers to Skills. This is currently under review so that we can have a single universal Skill naming/reference convention, but in the meantime...
+{% endhint %}
+
+MSM does fuzzy matching on Skill names to determine which Skill you intended. So the majority of the time, writing something that reflects the name of your Skill will work. Using the Hello World Skill as an example any of the following should work:
+
+* hello-world
+* skill-hello-world
+* mycroft-hello-world
+* hey-world
+
+The last one might be a surprise, but remember we are fuzzy matching. 
+
+Super simple right? Well not quite. You might run into cases where your Skill does not match, or where two very closely named Skills cause issues. In that case we need to get more specific with our naming.
+
+### Skills in the Marketplace
+
+If the Skill you are testing has a version in the Marketplace, then [MSM's](../mycroft-skills-manager/) primary way of referencing it is the submodule path. You can find the submodule path for any Skill listed in the [`.gitmodules`](https://github.com/MycroftAI/mycroft-skills/blob/21.02/.gitmodules) file in the mycroft-skills repository. In the case of the Hello World Skill, we would find the following submodule definition:
+
+```text
+[submodule "mycroft-hello-world"]
+	path = skill-hello-world
+	url = https://github.com/mycroftai/skill-hello-world.git
+```
+
+From this we can see that the submodule path is `skill-hello-world` and so for this Skill, the best way to call the test runner is using:
+
+```text
+mycroft-start vktest -t skill-hello-world
+```
+
+### Skills not yet in the Marketplace
+
+If a Skill has not previously been added to the official Skills Marketplace, then the directory name will be used. 
+
+Imagine I create a "Hey World" Skill at `/opt/mycroft/skills/hey-world-skill`
+
+To guarantee that this Skill is chosen, I would then use:
+
+```text
+mycroft-start vktest -t hey-world-skill
+```
+
 ## YAML Configuration
 
 For more complex or repeatable testing configurations we can use a YAML file to define our test parameters. The configuration of these tests consists of three main settings:
