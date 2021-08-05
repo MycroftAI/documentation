@@ -205,7 +205,7 @@ to
 ph_log.push=1
 ```
 
-### Find your Device ID
+#### Find your Device ID
 
 The fastest way for us to find your device is by the `device-id`. To get this, login to the main mycroft container:
 
@@ -217,6 +217,16 @@ Then print out your device-id using the following command:
 
 ```bash
 sudo cat /pantavisor/device-id 
+```
+
+### GUI Debug Info
+
+To get debug information from the GUI process you must first SSH into the Mark II, then run:
+
+```bash
+eval $(cat /proc/$(pidof plasmashell.bin)/environ | tr '\0' '\n' | grep -v ^PS1= | awk '{ print "export " $1 }')
+killall plasmashell.bin
+plasmashell &
 ```
 
 ## Skill Development
