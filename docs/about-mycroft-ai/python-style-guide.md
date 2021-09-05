@@ -80,7 +80,7 @@ Occasionally useful.
 Has the potential to change module behavior during the import, because assignments to 
 global variables are done when the module is first imported.
 
-### 2.2.4 Decision
+#### 2.2.4 Decision
 Avoid global variables.
 
 While they are technically variables, module-level constants are permitted and encouraged. 
@@ -102,7 +102,7 @@ access to variables defined in enclosing scopes.
 Allows definition of utility functions that are only used inside a very limited 
 scope. Very ADT-y. Commonly used for implementing decorators.
 
-### 2.3.3 Cons
+#### 2.3.3 Cons
 Nested functions cannot be directly tested. Nesting can make the outer function 
 longer and less readable.
 
