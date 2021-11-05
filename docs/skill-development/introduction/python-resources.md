@@ -16,11 +16,15 @@ The following are a collection of resources recommended by members of our Commun
 
 ### Python Virtual Environments
 
-{% embed url="https://www.youtube.com/watch?v=QXJZRDYjo7E" caption="Video Tutorial: Python Virtual Environments" %}
+{% embed url="https://www.youtube.com/watch?v=QXJZRDYjo7E" %}
+Video Tutorial: Python Virtual Environments
+{% endembed %}
 
 ### Python Package Management
 
-{% embed url="https://www.youtube.com/watch?v=noKRb5uoE-Q" caption="Video Tutorial: Python Package Management" %}
+{% embed url="https://www.youtube.com/watch?v=noKRb5uoE-Q" %}
+Video Tutorial: Python Package Management
+{% endembed %}
 
 ## Books
 
@@ -32,7 +36,7 @@ The book is available to purchase through normal retailers, or to download for f
 
 ### Automate the Boring Stuff with Python
 
-"In [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/), you'll learn how to use Python to write programs that do in minutes what would take you hours to do by hand-no prior programming experience required. Once you've mastered the basics of programming, you'll create Python programs that effortlessly perform useful and impressive feats of automation."
+"In [Automate the Boring Stuff with Python](https://automatetheboringstuff.com), you'll learn how to use Python to write programs that do in minutes what would take you hours to do by hand-no prior programming experience required. Once you've mastered the basics of programming, you'll create Python programs that effortlessly perform useful and impressive feats of automation."
 
 ## Courses
 
@@ -42,7 +46,7 @@ The book is available to purchase through normal retailers, or to download for f
 
 ### LearnPython.org by DataCamp
 
-[The LearnPython.org interactive tutorial](https://www.learnpython.org/) walks you through all the basics of Python and provides interactive coding challenges to put it into practice.
+[The LearnPython.org interactive tutorial](https://www.learnpython.org) walks you through all the basics of Python and provides interactive coding challenges to put it into practice.
 
 ### TutorialsPoint Python Tutorial
 
@@ -52,7 +56,6 @@ The book is available to purchase through normal retailers, or to download for f
 
 Books and courses are great to get started but once you have the basics you often just need good documentation to point you in the right direction. The official Python documentation can be found at: [https://docs.python.org/3/](https://docs.python.org/3/)
 
-For an alternative view of this same documentation, try [DevDocs.io](https://devdocs.io/python~3.7/).
+For an alternative view of this same documentation, try [DevDocs.io](https://devdocs.io/python\~3.7/).
 
 If you're a little more visual, check out this [Python Cheat Sheet](https://websitesetup.org/python-cheat-sheet/) that covers all the basics.
-

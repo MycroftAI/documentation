@@ -8,24 +8,24 @@ The overall [Skills Acceptance Process](https://mycroft.ai/documentation/skills/
 
 This template is provided to make it easier for testers to complete the process and provide relevant feedback to Skill Authors. An example of the completed process can be found on [this Pull Request](https://github.com/MycroftAI/mycroft-skills/pull/844#issuecomment-460913234). If you have any other questions or comments, please raise them in the [Skill Testing Team Chat](https://chat.mycroft.ai/community/channels/skill-testing-team).
 
-The process has been split into three parts:  
-1. Code review - ensuring the code is stable and secure;  
-2. Information review - ensuring all info is accurate and understandable; and  
-3. Functional review - ensuring the experience of using the Skill is intuitive.
+The process has been split into three parts:\
+1\. Code review - ensuring the code is stable and secure;\
+2\. Information review - ensuring all info is accurate and understandable; and\
+3\. Functional review - ensuring the experience of using the Skill is intuitive.
 
-Testers can choose to conduct one or more of these reviews at a time, and once completed the review should be posted as a comment on the relevant [Pull Request \(PR\)](https://github.com/MycroftAI/mycroft-skills/pulls). Once all reviews are completed with no outstanding `Actions Required`, the Skill will be merged into the repo and automatically added to the [Mycroft Marketplace](https://market.mycroft.ai/skills).
+Testers can choose to conduct one or more of these reviews at a time, and once completed the review should be posted as a comment on the relevant [Pull Request (PR)](https://github.com/MycroftAI/mycroft-skills/pulls). Once all reviews are completed with no outstanding `Actions Required`, the Skill will be merged into the repo and automatically added to the [Mycroft Marketplace](https://market.mycroft.ai/skills).
 
 ## Instructions for use
 
 Each post back to a PR must contain:
 
-* Meta block - detail on the tester, and test environment  
-* One or more review blocks - 1. Code, 2. Information, and/or 3. Functional  
+* Meta block - detail on the tester, and test environment &#x20;
+* One or more review blocks - 1. Code, 2. Information, and/or 3. Functional &#x20;
 * Summary block - list of any _Actions Required_ and additional comments
 
 Each test starts with a checkbox. To mark a test successful, add an 'x' to the markdown checkbox like so:
 
-```text
+```
 * [ ] Test that has not yet been conducted, or is not considered passed  
 * [x] Test that has been completed and passed  
 
@@ -36,7 +36,7 @@ _Action Required: For any actions required by the Skill Author, please use this 
 
 ## Template
 
-```text
+```
 ## Meta
 
 * Platform:  
@@ -203,4 +203,3 @@ A short list of any _Actions Required_. It is also great to provide a short stat
 
 Once you have completed any updates, you can update this pull request by running `mycroft-msk submit /path/to/skill/directory`
 ```
-

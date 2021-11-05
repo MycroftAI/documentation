@@ -6,11 +6,13 @@ description: >-
 
 # Mycroft Skills Manager
 
-Mycroft Skills Manager \(MSM\) is a command line tool used to add, manage and remove Skills on any Mycroft installation. It can install any Skill listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills) or from any Github repository. It is a handy tool for Developers and those who may frequently reconfigure, install and uninstall Skills.
+Mycroft Skills Manager (MSM) is a command line tool used to add, manage and remove Skills on any Mycroft installation. It can install any Skill listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills) or from any Github repository. It is a handy tool for Developers and those who may frequently reconfigure, install and uninstall Skills.
 
 ## Video Tutorial
 
-{% embed url="https://www.youtube.com/watch?v=jJjLro140Go" caption="Video Tutorial: Mycroft Skills Manager" %}
+{% embed url="https://www.youtube.com/watch?v=jJjLro140Go" %}
+Video Tutorial: Mycroft Skills Manager
+{% endembed %}
 
 ## Information
 
@@ -18,7 +20,7 @@ Mycroft Skills Manager \(MSM\) is a command line tool used to add, manage and re
 
 To list all Skills available in the Marketplace run:
 
-```text
+```
 mycroft-msm list
 ```
 
@@ -26,7 +28,7 @@ mycroft-msm list
 
 To search the available Skills run:
 
-```text
+```
 mycroft-msm search <name>
 ```
 
@@ -34,7 +36,7 @@ mycroft-msm search <name>
 
 To show all available information on a Skill you can use the name or repository url:
 
-```text
+```
 mycroft-msm info <name/url>
 ```
 
@@ -44,7 +46,7 @@ mycroft-msm info <name/url>
 
 To install a Skill from the Mycroft Marketplace you can provide a rough title and MSM will return the most likely match.
 
-```text
+```
 mycroft-msm install cocktail
 ```
 
@@ -54,13 +56,13 @@ If you know the author of the Skill, particularly where multiple Skills with sim
 
 If I wanted a Dice Skill, but only if it was authored by Forslund, I would run:
 
-```text
+```
 mycroft-msm install dice forslund
 ```
 
 Such a Skill doesn't exist so MSM returns a list of alternative options from the same author:
 
-```text
+```
 INFO - building SkillEntry objects for all skills
 INFO - Best match (0.34): cocktails by forslund
 MultipleSkillMatches: cocktails, youtube-music-skill.forslund, mycroft-spotify, game-zork, fallback-aiml
@@ -74,7 +76,7 @@ Installing Skills from outside the Mycroft Marketplace is done at your own risk.
 
 To install a Skill that is not included in the Mycroft Marketplace use the url of the repository.
 
-```text
+```
 mycroft-msm install https://github.com/krisgesling/tea-skill
 ```
 
@@ -84,17 +86,17 @@ mycroft-msm install https://github.com/krisgesling/tea-skill
 
 To update all Skills installed on a device run:
 
-```text
+```
 mycroft-msm update
 ```
 
-Note that if Mycroft detects that any file in a Skill has been modified, it will not update that Skill. This is to prevent loss of any work you are doing in that directory. See [MSM Troubleshooting &gt; Uncommitted Changes](msm-troubleshooting.md#uncommitted-changes) for tips to resolve this.
+Note that if Mycroft detects that any file in a Skill has been modified, it will not update that Skill. This is to prevent loss of any work you are doing in that directory. See [MSM Troubleshooting > Uncommitted Changes](msm-troubleshooting.md#uncommitted-changes) for tips to resolve this.
 
 ### Install and update defaults
 
 To install all default Skills for the device, as well as update all Skills, run:
 
-```text
+```
 mycroft-msm default
 ```
 
@@ -102,7 +104,7 @@ mycroft-msm default
 
 To uninstall or remove any Skill from the device run:
 
-```text
+```
 mycroft-msm remove <name>
 ```
 
@@ -112,7 +114,7 @@ Note that default Skills will be reinstalled by the system unless they are expli
 
 The `remove` command also has an optional `author` parameter that can be used to specify which Skill you intend to be uninstalled.
 
-```text
+```
 mycroft-msm remove <name> <author>
 ```
 
@@ -122,13 +124,12 @@ To show help information describing how to use MSM's different commands, use the
 
 For a complete overview run:
 
-```text
+```
 mycroft-msm -h
 ```
 
 Or for command specific information include the command.
 
-```text
+```
 mycroft-msm install -h
 ```
-

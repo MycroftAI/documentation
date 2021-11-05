@@ -12,7 +12,7 @@ Here we look at how to implement the most common types of prompts. For more info
 
 Any Skill can request a response from the user - making a statement or asking a question before the microphone is activated to record the User's response.
 
-The base implementation of this is the [`get_response()` method](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.get_response).
+The base implementation of this is the [`get_response()` method](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.get\_response).
 
 To see it in action, let's create a simple Skill that asks the User what their favorite flavor of ice cream is.
 
@@ -37,20 +37,22 @@ In this Skill we have used `get_response()` and passed it the name of our dialog
 
 The `get_response()` method also takes the following optional arguments:
 
-* `data` \(dict\) - used to populate the dialog file, just like `speak_dialog()`
-* `validator` \(function\) - returns a boolean to define whether the response meets some criteria for success
-* `on_fail` \(function\) - returns a string that will be spoken if the validator returns False
-* `num_retries` \(int\) - number of times the system should repeat the question to get a successful result
+* `data` (dict) - used to populate the dialog file, just like `speak_dialog()`
+* `validator` (function) - returns a boolean to define whether the response meets some criteria for success
+* `on_fail` (function) - returns a string that will be spoken if the validator returns False
+* `num_retries` (int) - number of times the system should repeat the question to get a successful result
 
 #### See it in action:
 
-{% embed url="https://www.youtube.com/watch?v=Ke7mRl-Qo-U" caption="Video Tutorial: Asking a question" %}
+{% embed url="https://www.youtube.com/watch?v=Ke7mRl-Qo-U" %}
+Video Tutorial: Asking a question
+{% endembed %}
 
 ## Yes / No Questions
 
-[`ask_yesno()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.ask_yesno) checks if the response contains "yes" or "no" like phrases.
+[`ask_yesno()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.ask\_yesno) checks if the response contains "yes" or "no" like phrases.
 
-The vocab for this check is sourced from the Skills `yes.voc` and `no.voc` files \(if they exist\), as well as mycroft-cores defaults \(contained within `mycroft-core/res/text/en-us/yes.voc`\). A longer phrase containing the required vocab is considered successful eg both "yes" and "yeah that would be great thanks" would be considered a successful "yes".
+The vocab for this check is sourced from the Skills `yes.voc` and `no.voc` files (if they exist), as well as mycroft-cores defaults (contained within `mycroft-core/res/text/en-us/yes.voc`). A longer phrase containing the required vocab is considered successful eg both "yes" and "yeah that would be great thanks" would be considered a successful "yes".
 
 If "yes" or "no" responses are detected, then the method will return the string "yes" or "no". If the response does not contain "yes" or "no" vocabulary then the entire utterance will be returned. If no speech was detected indicating the User did not respond, then the method will return `None`.
 
@@ -80,11 +82,13 @@ In this example we have asked the User if they like ice cream. We then speak dif
 
 #### See it in action:
 
-{% embed url="https://www.youtube.com/watch?v=vzQX8RocODs" caption="Video Tutorial: Asking a yes/no question" %}
+{% embed url="https://www.youtube.com/watch?v=vzQX8RocODs" %}
+Video Tutorial: Asking a yes/no question
+{% endembed %}
 
 ## Providing a list of options
 
-[`ask_selection()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.ask_selection) provides a list of options to the User for them to select from. The User can respond with either the name of one of these options or select with a numbered ordinal eg "the third".
+[`ask_selection()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.ask\_selection) provides a list of options to the User for them to select from. The User can respond with either the name of one of these options or select with a numbered ordinal eg "the third".
 
 This method automatically manages fuzzy matching the users response against the list of options provided.
 
@@ -116,11 +120,13 @@ In this example we first speak some `welcome.dialog`. The list of flavors is the
 
 There are two optional arguments for this method.
 
-`min_conf` \(float\) defines the minimum confidence level for fuzzy matching the Users response against the list of options. `numeric` \(bool\) if set to True will speak the options as a numbered list eg "One, vanilla. Two, chocolate. Or three, mint"
+`min_conf` (float) defines the minimum confidence level for fuzzy matching the Users response against the list of options. `numeric` (bool) if set to True will speak the options as a numbered list eg "One, vanilla. Two, chocolate. Or three, mint"
 
 #### See it in action:
 
-{% embed url="https://youtu.be/TNezYhqcX\_4" caption="Video Tutorial: Asking the user to choose an option" %}
+{% embed url="https://youtu.be/TNezYhqcX_4" %}
+Video Tutorial: Asking the user to choose an option
+{% endembed %}
 
 ## Returning responses to the intent parser
 
@@ -150,4 +156,3 @@ def create_skill():
 ```
 
 Here we have added a new dialog after confirming the Users selection. We may use it to tell the User other things they can do with their Mycroft device while they enjoy their delicious ice cream.
-

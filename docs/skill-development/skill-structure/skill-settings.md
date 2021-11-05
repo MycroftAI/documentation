@@ -59,7 +59,7 @@ Notice that the value of `false` is surrounded by "quotation marks". This is bec
 
 Both of these files would result in the same settings block.
 
-![](../../.gitbook/assets/Date-Time-Settings%20%281%29.png)
+![](<../../../img/Date-Time-Settings (1).png>)
 
 It is up to your personal preference which syntax you choose.
 
@@ -79,29 +79,26 @@ Each section must contain a `name` attribute that is used as the heading for tha
 
 Each section has one or more `fields`. Each field is a setting available to the user. Each field takes four properties:
 
-* `name` \(String\)
+*   `name` (String)
 
-  The `name` of the `field` is used by the Skill to get and set the value of the `field`. It will not usually be displayed to the user, unless the `label` property has not been set.
+    The `name` of the `field` is used by the Skill to get and set the value of the `field`. It will not usually be displayed to the user, unless the `label` property has not been set.
+*   `type` (Enum)
 
-* `type` \(Enum\)
+    The data type of this field. The supported types are:
 
-  The data type of this field. The supported types are:
+    * `text`: any kind of text
+    * `email`: text validated as an email address
+    * `checkbox`: boolean, True or False
+    * `number`: text validated as a number
+    * `password`: text hidden from view by default
+    * `select`: a drop-down menu of options
+    * `label`: special field to display text for information purposes only. No name or value is required for a `label` field.
+*   `label` (String)
 
-  * `text`: any kind of text
-  * `email`: text validated as an email address
-  * `checkbox`: boolean, True or False
-  * `number`: text validated as a number
-  * `password`: text hidden from view by default
-  * `select`: a drop-down menu of options
-  * `label`: special field to display text for information purposes only. No name or value is required for a `label` field.
+    The text to be displayed above the setting field.
+*   `value` (String)
 
-* `label` \(String\)
-
-  The text to be displayed above the setting field.
-
-* `value` \(String\)
-
-  The initial value of the field.
+    The initial value of the field.
 
 Examples for each type of field are provided in JSON and YAML at the end of this page.
 
@@ -109,7 +106,7 @@ Examples for each type of field are provided in JSON and YAML at the end of this
 
 Once settings have been defined using a `settingsmeta` file, they will be presented to the user on their personal [Skill Settings page](https://home.mycroft.ai/skills).
 
-When settings are fetched from the Mycroft server, they are saved into a `settings.json` file. This file is automatically created when a Skill is loaded even if the Skill does not have any settings. Your Skill then accesses the settings from this file. Nowadays the file is located in the Skill's XDG\_CONFIG\_DIR \(usually `~/config/mycroft/skills/<skillname>`\), however if a `settings.json` file already exists in the Skill's root directory \(the deprecated location\) that location is used for compatibility.
+When settings are fetched from the Mycroft server, they are saved into a `settings.json` file. This file is automatically created when a Skill is loaded even if the Skill does not have any settings. Your Skill then accesses the settings from this file. Nowadays the file is located in the Skill's XDG\_CONFIG\_DIR (usually `~/config/mycroft/skills/<skillname>`), however if a `settings.json` file already exists in the Skill's root directory (the deprecated location) that location is used for compatibility.
 
 ### Reading settings
 
@@ -143,7 +140,9 @@ Directly referencing the value may throw a KeyError if the setting has not yet b
 
 It is also important to note that the `settings` dictionary will not be available in your Skills `__init__` method as this is setting up your Skills Class. You should instead use an `initialize` method which is called after the Skill is fully constructed and registered with the system. More detail is available at:
 
-{% page-ref page="lifecycle-methods.md" %}
+{% content-ref url="lifecycle-methods.md" %}
+[lifecycle-methods.md](lifecycle-methods.md)
+{% endcontent-ref %}
 
 ### Handling settings changes
 
@@ -445,4 +444,3 @@ skillMetadata:
 ```
 {% endtab %}
 {% endtabs %}
-

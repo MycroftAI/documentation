@@ -40,15 +40,19 @@ The `CQS_match_query_phrase()` method will parse the utterance and determine if 
 
 The input query is returned to map the query to the answer.
 
-CQSMatchLevel is an Enum with the possible values
+`CQSMatchLevel` is an Enum with the possible values
 
 * `CQSMatchLevel.EXACT`: The Skill is very confident that it has the precise answer the user is looking for. There was a category match and a known entity is referenced.
 * `CQSMatchLevel.CATEGORY`: The Skill could determine that the type of question matches a category that the Skill is good at finding.
-* `CQSMatchLevel.GENERAL`: This Skill tries to answer all questions and found an answer. 
+* `CQSMatchLevel.GENERAL`: This Skill tries to answer all questions and found an answer.
+
+There is also a directly equivalent `CQSVisualMatchLevel`  that provides a small confidence bonus on platforms that can display visual media. The intention being that if two answers are otherwise equal, if a device can also display an image, then the response with an image is preferred. `CQSVisualMatchLevel` is an exact copy of `CQSMatchLevel` and requires no other changes to use.
+
+To actual show the visuals, see the [`CQS_action()` method](common-query-framework.md#cqs\_action) below.
 
 ## An Example
 
-Let's make a simple Skill that tells us the age of the various Monty Python members. A quick draft looks like this. \(You can find the complete code [here](https://github.com/forslund/common-query-tutorial)\)
+Let's make a simple Skill that tells us the age of the various Monty Python members. A quick draft looks like this. (You can find the complete code [here](https://github.com/forslund/common-query-tutorial))
 
 ```python
 from mycroft.skills.common_query_skill import CommonQuerySkill, CQSMatchLevel
@@ -153,7 +157,7 @@ We'll change the end of the `CQS_match_query_phrase()` method to
 
 So if the utterance contains the phrase "monty python" the confidence will be set to `CQSMatchLevel.EXACT` making the Skill very very likely to be chosen to answer the query.
 
-## CQS\_action\(\)
+## CQS\_action()
 
 In some cases the Skill should do additional operations when selected as the best match. It could be prepared for follow-up questions or show an image on the screen. The `CQS_action()` method allows for this, when a Skill is selected this method will be called.
 
@@ -193,4 +197,3 @@ The data structure declared here will be sent to the `CQS_Action()`method and we
             self.log.info('Showing the age {}'.format(age))
             self.enclosure.mouth_text(str(age))
 ```
-

@@ -10,7 +10,9 @@ To track events and data within your Skill we can use logging. If you are new to
 
 ## Video Tutorial
 
-{% embed url="https://www.youtube.com/watch?v=1\_yX1JCCYoM" caption="Video Tutorial: Logging from Mycroft Skills" %}
+{% embed url="https://www.youtube.com/watch?v=1_yX1JCCYoM" %}
+Video Tutorial: Logging from Mycroft Skills
+{% endembed %}
 
 ## Basic Usage
 
@@ -40,7 +42,7 @@ def create_skill():
 
 The above Skill would log an INFO level message each time the intent handler was triggered. The resulting log would look like this:
 
-```text
+```
 2021-03-19 16:06:43.731 | INFO     | 14745 | HelloWorldSkill | This is an info level log message.
 ```
 
@@ -48,7 +50,7 @@ From left to right, this consists of:
 
 * A timestamp identifying when the log was emitted.
 * The level of the log message
-* The Process ID \(PID\) of the system process where the log originated.
+* The Process ID (PID) of the system process where the log originated.
 * The origin of the log from within Mycroft. In the case of Skills the Class name is used.
 * The log message passed as an argument to the logger.
 
@@ -157,4 +159,3 @@ class LoggingSkill(MycroftSkill):
 def create_skill():
     return LoggingSkill()
 ```
-

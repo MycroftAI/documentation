@@ -2,7 +2,7 @@
 
 Adapt is a keyword based intent parser. It determines user intent based on a list of keywords or entities contained within a users utterance.
 
-{% embed url="https://www.youtube.com/watch?v=zR9xvPtM6Ro" caption="" %}
+{% embed url="https://www.youtube.com/watch?v=zR9xvPtM6Ro" %}
 
 {% hint style="info" %}
 For technical details or usage of Adapt outside of a Mycroft Skill, see the [Adapt documentation](../../../mycroft-technologies/adapt/).
@@ -10,7 +10,7 @@ For technical details or usage of Adapt outside of a Mycroft Skill, see the [Ada
 
 ## Defining keywords and entities
 
-### Vocab \(.voc\) Files
+### Vocab (.voc) Files
 
 Vocab files define keywords that Adapt will look for in a Users utterance to determine their intent.
 
@@ -18,7 +18,7 @@ These files can be located in either the `vocab/lang-code/` or `locale/lang-code
 
 Consider a simple `Potato.voc`. Within this file we might include:
 
-```text
+```
 potato
 potatoes
 spud
@@ -38,15 +38,15 @@ or
 
 Mycroft will match this to any Adapt Intents that are using the `Potato` keyword.
 
-### Regular Expression \(.rx\) Files
+### Regular Expression (.rx) Files
 
-Regular expressions \(or regex\) allow us to capture entities based on the structure of an utterance.
+Regular expressions (or regex) allow us to capture entities based on the structure of an utterance.
 
 These files can be located in either the `regex/lang-code/` or `locale/lang-code/` directories of a Skill. They can have one or more lines to provide different ways that an entity may be referenced. Mycroft will execute these lines in the order they appear and return the first result as an entity to the Intent Handler.
 
 Let's consider a `type.rx` file to extract the type of potato we are interested in. Within this file we might include:
 
-```text
+```
 .* about (?P<Type>.*) potatoes
 .* (make|like) (?P<Type>.*) potato
 ```
@@ -69,14 +69,14 @@ or
 
 > How do I make _mashed potato_
 
-From these three utterances, what will the extracted `Type` be:  
-1. `sweet`  
-2. `deep fried`  
-3. `mashed`
+From these three utterances, what will the extracted `Type` be:\
+1\. `sweet`\
+2\. `deep fried`\
+3\. `mashed`
 
 This `Type` will be available to use in your Skill's Intent Handler on the `message` object. We can access this using:
 
-```text
+```
 message.data.get('Type')
 ```
 
@@ -97,10 +97,10 @@ We will also add some new `.voc` files:
 
 ### Creating the Intent Handler
 
-To construct an Adapt Intent, we use the intent_handler\(\) \_decorator_ and pass in the Adapt IntentBuilder.
+To construct an Adapt Intent, we use the intent_handler() \_decorator_ and pass in the Adapt IntentBuilder.
 
 {% hint style="info" %}
-[Learn more about _decorators_ in Python](https://en.wikipedia.org/wiki/Python_syntax_and_semantics#Decorators).
+[Learn more about _decorators_ in Python](https://en.wikipedia.org/wiki/Python\_syntax\_and\_semantics#Decorators).
 {% endhint %}
 
 Both of these must be imported before we can use them:
@@ -170,7 +170,7 @@ def create_skill():
 ```
 
 {% hint style="info" %}
-You can [download this entire Potato Skill from Github](https://github.com/krisgesling/dev-ex-adapt-intents-skill/blob/master/__init__.py), or see another Adapt intent handler example in the [Hello World Skill](https://github.com/MycroftAI/skill-hello-world/blob/f3eb89be6d80e1834637a64566c707d05fb8e3fa/__init__.py#L37)
+You can [download this entire Potato Skill from Github](https://github.com/krisgesling/dev-ex-adapt-intents-skill/blob/master/\_\_init\_\_.py), or see another Adapt intent handler example in the [Hello World Skill](https://github.com/MycroftAI/skill-hello-world/blob/f3eb89be6d80e1834637a64566c707d05fb8e3fa/\_\_init\_\_.py#L37)
 {% endhint %}
 
 ## Common Problems
@@ -199,7 +199,6 @@ The utterance string received from the speech-to-text engine is received all low
 
 ## Need more help?
 
-If something isn't working as expected, please join us in the [~Skills channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
+If something isn't working as expected, please join us in the [\~Skills channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/skills).
 
 It's also really helpful for us if you add an issue to our [documentation repo](https://github.com/MycroftAI/documentation/issues). This means we can make sure it gets covered for all developers in the future.
-

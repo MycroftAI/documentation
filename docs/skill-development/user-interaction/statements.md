@@ -12,17 +12,17 @@ Within a Skill's Intent handler, you may pass a string of text to Mycroft and My
 
 ### Multilingualism
 
-To support multilingualism, the text that Mycroft speaks must come from a file. That file is called a dialog file. The dialog file contains statements \(lines of text\) that a listener in a particular language would consider to be equivalent.  For instance, in USA English, the statements "I am okay" and "I am fine" are equivalent, and both of these statements might appear in a dialog file used for responding to the USA English question: "How are you?".
+To support multilingualism, the text that Mycroft speaks must come from a file. That file is called a dialog file. The dialog file contains statements (lines of text) that a listener in a particular language would consider to be equivalent.  For instance, in USA English, the statements "I am okay" and "I am fine" are equivalent, and both of these statements might appear in a dialog file used for responding to the USA English question: "How are you?".
 
-By convention, the dialog filename is formed by _dot connected_ _words_ and must end with ".dialog".  The dialog filename should be descriptive of the contents as a whole.  Sometimes, the filename describes the question being answered, and other times, the filename describes the answer itself.  For the example above, the dialog filename might be: **how.are.you.dialog** or **i.am.fine.dialog**.
+By convention, the dialog filename is formed by _dot connected_ _words _and must end with ".dialog".  The dialog filename should be descriptive of the contents as a whole.  Sometimes, the filename describes the question being answered, and other times, the filename describes the answer itself.  For the example above, the dialog filename might be:** how.are.you.dialog** or **i.am.fine.dialog**.
 
-Multilingualism is accomplished by translating the dialog files into other languages, and storing them in their own directory named for the country and language. The filenames remain the same.  Using the same filenames in separate language dependent directories allows the Skills to be language agnostic; no hard-coded text strings.  Adjust the language setting for your Device ****and Mycroft uses the corresponding set of dialog files.  If the desired file does not exist in the directory for that language, Mycroft will use the file from the USA English directory.
+Multilingualism is accomplished by translating the dialog files into other languages, and storing them in their own directory named for the country and language. The filenames remain the same.  Using the same filenames in separate language dependent directories allows the Skills to be language agnostic; no hard-coded text strings.  Adjust the language setting for your Device** **and Mycroft uses the corresponding set of dialog files.  If the desired file does not exist in the directory for that language, Mycroft will use the file from the USA English directory.
 
-As an example of the concept, the contents of **how.are.you.dialog** in the directory for the French language in France \(fr-fr\) might include the statement: "Je vais bien".
+As an example of the concept, the contents of **how.are.you.dialog** in the directory for the French language in France (fr-fr) might include the statement: "Je vais bien".
 
 ### The Tomato Skill Revisited
 
-To demonstrate the multilingualism design pattern, we examine the usage of the [`speak_dialog()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.speak_dialog) method in the [Tomato Skill](intents/padatious-intents.md) .  
+To demonstrate the multilingualism design pattern, we examine the usage of the [`speak_dialog()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.speak\_dialog) method in the [Tomato Skill](intents/padatious-intents.md) . &#x20;
 
 The Tomato Skill has two Intents: one demonstrates simple, straightforward statements, and the other demonstrates the use of variables within a statement.
 
@@ -34,7 +34,7 @@ Sample contents of the Intent and dialog files:
 
 {% tabs %}
 {% tab title="what.is.a.tomato.intent" %}
-```text
+```
 what is a tomato
 what would you say a tomato is
 describe a tomato
@@ -43,7 +43,7 @@ what defines a tomato
 {% endtab %}
 
 {% tab title="tomato.description.dialog" %}
-```text
+```
 The tomato is a fruit of the nightshade family
 A tomato is an edible berry of the plant Solanum lycopersicum
 A tomato is a fruit but nutrionists consider it a vegetable
@@ -62,11 +62,11 @@ def handle_what_is(self, message):
     self.speak_dialog('tomato.description')
 ```
 
-With the Tomato Skill installed, if the User utters ****"Hey Mycroft, what is a tomato?", the Intent handler method `handle_what_is()` will be called.
+With the Tomato Skill installed, if the User utters** **"Hey Mycroft, what is a tomato?", the Intent handler method `handle_what_is()` will be called.
 
-Inside `handle_what_is()`, we find: `self.speak_dialog('tomato.description')`  
+Inside `handle_what_is()`, we find: `self.speak_dialog('tomato.description')` &#x20;
 
-As you can probably guess, the parameter `'tomato.description'` is the dialog filename without the ".dialog" extension. Calling this method opens the dialog file, selects one of the statements, and converts that text to speech. Mycroft will speak a statement from the dialog file.  In this example, Mycroft might say "The tomato is a fruit of the nightshade family".  
+As you can probably guess, the parameter `'tomato.description'` is the dialog filename without the ".dialog" extension. Calling this method opens the dialog file, selects one of the statements, and converts that text to speech. Mycroft will speak a statement from the dialog file.  In this example, Mycroft might say "The tomato is a fruit of the nightshade family". &#x20;
 
 Remember, Mycroft has a language setting that determines from which directory to find the dialog file.
 
@@ -83,21 +83,21 @@ The second Padatious Intent, **do.you.like.intent**, demonstrates the use of var
 
 {% tabs %}
 {% tab title="do.you.like.intent" %}
-```text
+```
 do you like tomatoes
 do you like {type} tomatoes
 ```
 {% endtab %}
 
 {% tab title="like.tomato.type.dialog" %}
-```text
+```
 I do like {type} tomatoes
 {type} tomatoes are my favorite
 ```
 {% endtab %}
 
 {% tab title="like.tomato.generic.dialog" %}
-```text
+```
 I do like tomatoes
 tomatoes are my favorite
 ```
@@ -125,7 +125,7 @@ The Tomato Skill code snippet:
             self.speak_dialog('like.tomato.generic')
 ```
 
-When the User utters "Hey Mycroft, do you like RED tomatoes?", the second of the two Intent lines "do you like {type} tomatoes" is recognized by Mycroft, and the value 'RED' is returned in the message dictionary assigned to the 'type' entry when `handle_do_you_like()` is called.  
+When the User utters "Hey Mycroft, do you like RED tomatoes?", the second of the two Intent lines "do you like {type} tomatoes" is recognized by Mycroft, and the value 'RED' is returned in the message dictionary assigned to the 'type' entry when `handle_do_you_like()` is called. &#x20;
 
 The line `tomato_type = message.data.get('type')` extracts the value from the dictionary for the entry 'type'.  In this case,  the variable `tomato_type` will receive the value 'RED', and `speak_dialog()`will be called with the 'like.tomato.type' dialog file, and a dictionary with 'RED' assigned to 'type'.   The statement "i do like {type} tomatoes" might be randomly selected, and after insertion of the value 'RED' for the placeholder variable {type}, Mycroft would say: "I do like RED tomatoes".
 
@@ -133,9 +133,9 @@ Should the User utter "Hey Mycroft, do you like tomatoes?", the first line in th
 
 ## Waiting for speech
 
-By default, the `speak_dialog()` method is non-blocking. That is any code following the call to `speak_dialog()` will execute whilst Mycroft is talking. This is useful to allow your Skill to perform actions while it is speaking. 
+By default, the `speak_dialog()` method is non-blocking. That is any code following the call to `speak_dialog()` will execute whilst Mycroft is talking. This is useful to allow your Skill to perform actions while it is speaking.&#x20;
 
-Rather than telling the User that we are fetching some data, then going out to fetch it, we can do the two things simultaneously providing a better experience. 
+Rather than telling the User that we are fetching some data, then going out to fetch it, we can do the two things simultaneously providing a better experience.&#x20;
 
 However there are times when we need to wait until the statement has been spoken before doing something else. We have two options for this.
 
@@ -155,7 +155,7 @@ def handle_what_is(self, message):
 
 ### wait\_while\_speaking
 
-The [`mycroft.audio.wait_while_speaking()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.audio.html#mycroft.audio.wait_while_speaking) method allows us to execute some code, then wait for Mycroft to finish speaking.
+The [`mycroft.audio.wait_while_speaking()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.audio.html#mycroft.audio.wait\_while\_speaking) method allows us to execute some code, then wait for Mycroft to finish speaking.
 
 ```python
 @intent_handler('what.is.a.tomato.intent')
@@ -178,11 +178,10 @@ There may be a situation where the dialog file and the `speak_dialog()` method d
 
 The Mycroft Skill class provides four multilingual methods to address these needs.  Each method uses a file, and multilingualism is accomplished using the country/language directory system.
 
-The [`translate()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.translate) method returns a random string from a ".dialog" file \(modified by a data dictionary\).  
+The [`translate()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.translate) method returns a random string from a ".dialog" file (modified by a data dictionary). &#x20;
 
-The [`translate_list()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.translate_list) method returns a list of strings from a ".list" file \(each modified by the data dictionary\). Same as translate\_template\(\) just with a different file extension.
+The [`translate_list()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.translate\_list) method returns a list of strings from a ".list" file (each modified by the data dictionary). Same as translate\_template() just with a different file extension.
 
-The [`translate_namedvalue()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.translate_namedvalue) method returns a dictionary formed from CSV entries in a ".value" file.
+The [`translate_namedvalue()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.translate\_namedvalue) method returns a dictionary formed from CSV entries in a ".value" file.
 
-The [`translate_template()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.translate_template) method returns a list of strings from a ".template" file \(each modified by the data dictionary\). Same as translate\_list\(\) just with a different file extension.
-
+The [`translate_template()`](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.translate\_template) method returns a list of strings from a ".template" file (each modified by the data dictionary). Same as translate\_list() just with a different file extension.

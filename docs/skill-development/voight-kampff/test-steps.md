@@ -22,10 +22,10 @@ You can set the language of a test using its common name.
 
 ### Modify the timeout
 
-`Given a 20 second timeout  
-Given a 1 minute timeout`
+`Given a 20 second timeout`\
+`Given a 1 minute timeout`
 
-You can increase the timeout of a test. This might be necessary if relying on responses from external resources. 
+You can increase the timeout of a test. This might be necessary if relying on responses from external resources.&#x20;
 
 The default timeout is 10 seconds.
 
@@ -119,7 +119,7 @@ Tests that a particular [Message Type](https://mycroft-ai.gitbook.io/docs/mycrof
 
 The test can specify a certain configuration using a Given Step and a configuration specification.
 
-```text
+```
   Given an english speaking user
   And the user's unit system is metric
   When the user says "how tall is the eiffel tower"
@@ -130,7 +130,7 @@ The test can specify a certain configuration using a Given Step and a configurat
 
 The configuration and values are setup in a json file in the test/behave folder of the skill, named as the feature file but with the extension `.config.json` so if the feature file is `myskill.feature` the config specification file should be called `myskill.config.json`.
 
-The file is organized in a config name -&gt; config value name -&gt; config patch structure.
+The file is organized in a config name -> config value name -> config patch structure.
 
 ```javascript
 {
@@ -216,5 +216,6 @@ The two terms are exactly the same, they both operate as the Step that comes imm
 
 Some Skills require their own unique Steps to test functionality specific to that Skill. These can be added to your Skills repository under the `test/behave/steps` directory. For more detail see:
 
-{% page-ref page="custom-steps.md" %}
-
+{% content-ref url="custom-steps.md" %}
+[custom-steps.md](custom-steps.md)
+{% endcontent-ref %}

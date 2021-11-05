@@ -7,7 +7,7 @@ description: >-
 
 # Converse
 
-Each Skill may define a `converse()` method. This method will be called anytime the Skill has been recently active and a new utterance is processed. 
+Each Skill may define a `converse()` method. This method will be called anytime the Skill has been recently active and a new utterance is processed.&#x20;
 
 The converse method expects a single argument which is a standard Mycroft Message object. This is the same object an intent handler receives.
 
@@ -44,7 +44,7 @@ def create_skill():
 
 In this example:
 
-1. A User might request an ice cream which is handled by `handle_request_icecream()` 
+1. A User might request an ice cream which is handled by `handle_request_icecream()`&#x20;
 2. The Skill would be added to the system Active Skill list for up to 5 minutes.
 3. Any utterance received by Mycroft would trigger this Skills converse system whilst it is considered active.
 4. If the User followed up with a pleasantry such as "Hey Mycroft, thanks" - the converse method would match this vocab against the `Thankyou.voc` file in the Skill and speak the contents of the `you-are-welcome.dialog` file. The method would return `True` and the utterance would be consumed meaning the intent parsing service would never be triggered.
@@ -75,12 +75,11 @@ There are occasions where a Skill has not been triggered by the User but it shou
 In the case of our Ice Cream Skill - we might have a function that will execute when the customers order is ready. At this point, we also want to be responsive to the customers thanks, so we call `self.make_active()` to manually add our Skill to the front of the Active Skills List.
 
 {% hint style="warning" %}
-**Please note:** Any use of this method will be closely scrutinized during the Skills Marketplace submission process.
+**Please note: **Any use of this method will be closely scrutinized during the Skills Marketplace submission process.
 
 Skills that attempt to use the Converse method or the Active Skills List in ways that a normal user would not intend or appreciate, will not be approved.
 {% endhint %}
 
-### Further information 
+### Further information&#x20;
 
 See the [`converse()` method documentation](https://mycroft-core.readthedocs.io/en/latest/source/mycroft.html#mycroft.MycroftSkill.converse).
-
