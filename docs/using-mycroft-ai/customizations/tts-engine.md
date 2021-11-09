@@ -9,9 +9,11 @@ description: >-
 
 Mycroft has two open source TTS engines.
 
-Mimic 1 is a fast, light-weight engine based on [Carnegie Mellon University's FLITE software](http://cmuflite.org/). Whilst the original Mimic may sound more robotic, it is able to be synthesized on your device.
+Mimic 1 is a fast, light-weight engine based on [Carnegie Mellon University's FLITE software](http://cmuflite.org). Whilst the original Mimic may sound more robotic, it is able to be synthesized on your device.
 
-{% page-ref page="../../mycroft-technologies/mimic-overview/" %}
+{% content-ref url="../../mycroft-technologies/mimic-overview/" %}
+[mimic-overview](../../mycroft-technologies/mimic-overview/)
+{% endcontent-ref %}
 
 [Mimic 2](https://github.com/MycroftAI/mimic2#mimic2) is an implementation of Tacotron speech synthesis. It is a fork of [Keith Ito's project](https://github.com/keithito/tacotron) with additional tooling and code enhancements. Mimic 2 provides a much more natural sounding voice, however requires significant processing power to do so and is therefore cloud-based.
 
@@ -32,7 +34,7 @@ As Mimic 1 voices can be synthesized on device, the British Male voice will be u
 
 A multi-lingual software speech synthesizer for Linux and Windows.
 
-[eSpeak](http://espeak.sourceforge.net/) uses a "formant synthesis" method. This allows many languages to be provided in a small size. The speech is clear, and can be used at high speeds, but is not as natural or smooth as larger synthesizers which are based on human speech recordings.
+[eSpeak](http://espeak.sourceforge.net) uses a "formant synthesis" method. This allows many languages to be provided in a small size. The speech is clear, and can be used at high speeds, but is not as natural or smooth as larger synthesizers which are based on human speech recordings.
 
 ### Mycroft Configuration
 
@@ -58,6 +60,37 @@ To our existing configuration values we will add the following:
     "voice": "m1"
   }
 }
+```
+
+**Added in mycroft-core v21.2.2**
+
+Further customization of espeak voices is available through the following options:
+
+* Amplitude
+* Gap
+* Capital
+* Pitch
+* Speed
+
+For more information on these parameters see `espeak --help`
+
+Example Config:
+
+```json
+{
+  "max_allowed_core_version": 21.2,
+  "lang": "de-de",
+  "tts": {
+    "module": "espeak",
+    "espeak": {
+      "lang": "german-mbrola-5",
+      "voice": "german-mbrola-5",
+      "speed": "135",
+      "amplitude": "80",
+      "pitch": "20"
+    }
+  }
+}  
 ```
 
 ## Mary TTS
@@ -89,7 +122,7 @@ To our existing configuration values we will add the following:
 
 ## FA TTS
 
-Produced by [Mivoq](https://www.mivoq.it/), it is based off Mary TTS.
+Produced by [Mivoq](https://www.mivoq.it), it is based off Mary TTS.
 
 ### Server Setup
 
@@ -120,7 +153,7 @@ To our existing configuration values we will add the following:
 
 ### Account Setup
 
-[Create an AWS account](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=default&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start) and add the Polly service.
+[Create an AWS account](https://portal.aws.amazon.com/billing/signup?nc2=h\_ct\&src=default\&redirect\_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start) and add the Polly service.
 
 You will need to take note of your private "Access Key ID" and "Secret Access Key".
 
@@ -164,7 +197,7 @@ To our existing configuration values we will add the following:
 }
 ```
 
-If the `voice`, `region`, and `engine` attributes are ommitted the defaults of `Matthew`, `us-east-1` and `standard` will be used. This is an English \(US\) voice.
+If the `voice`, `region`, and `engine` attributes are ommitted the defaults of `Matthew`, `us-east-1` and `standard` will be used. This is an English (US) voice.
 
 ## Google TTS
 
@@ -224,11 +257,11 @@ mycroft-pip install mycroft-tts-plugin-azure
 
 ### Account Setup
 
-This TTS service requires a subscription to Microsoft Azure and the creation of a Speech resource \([https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview\#create-the-azure-resource](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview#create-the-azure-resource)\) The free plan is more than able to handle domestic usage \(5 million character per month, or 0.5 million with neural TTS voice\)
+This TTS service requires a subscription to Microsoft Azure and the creation of a Speech resource ([https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview#create-the-azure-resource](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview#create-the-azure-resource)) The free plan is more than able to handle domestic usage (5 million character per month, or 0.5 million with neural TTS voice)
 
 ### Mycroft Configuration
 
-You can choose your voice here in the column "voice name" \([https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support\#text-to-speech](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#text-to-speech)\) Neural voices are much better, but cost more.
+You can choose your voice here in the column "voice name" ([https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#text-to-speech](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#text-to-speech)) Neural voices are much better, but cost more.
 
 ```javascript
 "tts": {
@@ -303,13 +336,13 @@ mycroft-config set tts.module mozilla
 
 Coqui TTS is an actively maintained fork of the Mozilla TTS project. A Coqui TTS server can be run locally without internet connection.
 
-Pretrained TTS models are available based on open voice datasets \(_eg. LJSpeech, LibriTTS, Thorsten-DE, Mai, ..._\). The [Coqui release page](https://github.com/coqui-ai/TTS/releases) shows a complete list of available TTS models.
+Pretrained TTS models are available based on open voice datasets (_eg. LJSpeech, LibriTTS, Thorsten-DE, Mai, ..._). The [Coqui release page](https://github.com/coqui-ai/TTS/releases) shows a complete list of available TTS models.
 
 ### Server Setup
 
-Coqui TTS is based on Python3 so it's recommended to setup a new virtual environment \(_venv_\) for the TTS server.
+Coqui TTS is based on Python3 so it's recommended to setup a new virtual environment (_venv_) for the TTS server.
 
-```text
+```
 mkdir <TTS directory>
 cd <TTS directory>
 python3 -m venv .
@@ -318,7 +351,7 @@ source ./bin/activate
 
 Then within that environment install the TTS server.
 
-```text
+```
 pip install pip --upgrade
 pip install tts --upgrade
 ```
@@ -334,7 +367,7 @@ Running `tts --list_models` within the venv shows the TTS models available in th
 
 Example output:
 
-```text
+```
 tts_models/en/ek1/tacotron2
 tts_models/es/mai/tacotron2-DDC
 tts_models/fr/mai/tacotron2-DDC
@@ -344,7 +377,7 @@ tts_models/de/thorsten/tacotron2-DCA
 
 Within the venv we can now start the TTS server by running:
 
-```text
+```
 tts-server --use_cuda=false/true --model_name *modelNameFromList* 
 `
 ```
@@ -365,7 +398,7 @@ After your TTS server setup is finished you can [configure Mycroft](tts-engine.m
 ## Responsive Voice
 
 {% hint style="warning" %}
-The API for this service may have significantly changed. As such this TTS option may not be available. Contributions to restore the service are warmly welcomed. Please direct any development questions to the [~Dev channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/dev).
+The API for this service may have significantly changed. As such this TTS option may not be available. Contributions to restore the service are warmly welcomed. Please direct any development questions to the [\~Dev channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/dev).
 {% endhint %}
 
 Lifelike human digital voices from [ResponsiveVoice.org](https://responsivevoice.org).
@@ -394,7 +427,7 @@ To our existing configuration values we will add the following:
 
 ## SpdSay
 
-A common high-level interface to speech synthesis from [Free\(B\)Soft](https://freebsoft.org/speechd).
+A common high-level interface to speech synthesis from [Free(B)Soft](https://freebsoft.org/speechd).
 
 ### Software Setup
 
@@ -415,10 +448,9 @@ Speech services from Yandex, one of the largest cloud platforms in Russia.
 ### Account Setup
 
 1. Register an account at Yandex.
-2. Create billing account: [https://cloud.yandex.com/docs/billing/quickstart/\#create\_billing\_account](https://cloud.yandex.com/docs/billing/quickstart/#create_billing_account)
+2.  Create billing account: [https://cloud.yandex.com/docs/billing/quickstart/#create\_billing\_account](https://cloud.yandex.com/docs/billing/quickstart/#create\_billing\_account)
 
-   You can activate a free trial period in the console.
-
+    You can activate a free trial period in the console.
 3. Create first "folder" in cloud.
 4. Create service account for you Mycroft instance with role editor: [https://cloud.yandex.com/docs/iam/operations/sa/create](https://cloud.yandex.com/docs/iam/operations/sa/create)
 5. Create API key for service account: [https://cloud.yandex.com/docs/iam/operations/api-key/create](https://cloud.yandex.com/docs/iam/operations/api-key/create)
@@ -444,4 +476,3 @@ To our existing configuration values we will add the following:
   }
 }
 ```
-
