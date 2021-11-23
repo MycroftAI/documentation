@@ -12,6 +12,14 @@ See a [list of all variables available within `mycroft.conf`](https://github.com
 
 `mycroft.conf` is a [JSON](https://www.json.org)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. The `mycroft.conf` file contains information about the Device itself, like what type of Device and Enclosure it is, as well as information about user preferences. If you haven't specified preferences, then `mycroft.conf` will contain some default values. Your Device, and Skills installed on your Device, use `mycroft.conf` to provide additional functionality.
 
+You can edit your `mycroft.conf` files directly however be very aware that any small syntax error such as a missing comma will prevent the file from being read entirely. In these instances Mycroft may discard the file entirely and generate a fresh copy.
+
+It is recommended to instead use the Mycroft Configuration Manager to make these changes.
+
+{% content-ref url="config-manager.md" %}
+[config-manager.md](config-manager.md)
+{% endcontent-ref %}
+
 ## Where are the `mycroft.conf` files stored?
 
 The `mycroft.conf` files are stored in four possible locations:
