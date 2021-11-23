@@ -10,14 +10,14 @@ See a [list of all variables available within `mycroft.conf`](https://github.com
 
 ## What is `mycroft.conf`?
 
-`mycroft.conf` is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. `mycroft-conf` contains information about the Device itself, like what type of Device and Enclosure it is, as well as information about user preferences. If you haven't specified preferences, then `mycroft.conf` will contain some default values. Your Device, and Skills installed on your Device, use `mycroft.conf` to provide additional functionality.
+`mycroft.conf` is a [JSON](https://www.json.org)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. The `mycroft.conf` file contains information about the Device itself, like what type of Device and Enclosure it is, as well as information about user preferences. If you haven't specified preferences, then `mycroft.conf` will contain some default values. Your Device, and Skills installed on your Device, use `mycroft.conf` to provide additional functionality.
 
 ## Where are the `mycroft.conf` files stored?
 
 The `mycroft.conf` files are stored in four possible locations:
 
 1. Default - mycroft-core/mycroft/configuration/mycroft.conf
-2. Remote \(from Home.Mycroft.ai\) - /var/tmp/mycroft\_web\_cache.json
+2. Remote (from Home.Mycroft.ai) - /var/tmp/mycroft\_web\_cache.json
 3. System - /etc/mycroft/mycroft.conf
 4. User - $HOME/.mycroft/mycroft.conf
 
@@ -27,7 +27,7 @@ Mycroft implements an order of precedence; settings defined at a User level over
 
 Here is an example System level `mycroft.conf` from a Mark 1 Device:
 
-```text
+```
 pi@mark_1:/etc/mycroft $ cat mycroft.conf
 {
   "enclosure": {
@@ -53,7 +53,7 @@ See a [list of all variables available within `mycroft.conf`](https://github.com
 
 ## `mycroft_web_cache.json`
 
-`mycroft_web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ \(which determines _Time Zone_\), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
+`mycroft_web_cache.json` is is a [JSON](https://www.json.org)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ (which determines _Time Zone_), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
 
 Both of these files are regularly used in troubleshooting, so it's useful to know what information they hold, and where they are stored on your Device.
 
@@ -99,17 +99,17 @@ To see the listener setting:
 
 `jq ".listener" < /var/tmp/mycroft_web_cache.json`
 
-To see the Speech to Text \(STT\) settings:
+To see the Speech to Text (STT) settings:
 
 `jq ".stt" < /var/tmp/mycroft_web_cache.json`
 
-To see the Text to Speech \(TTS\) settings:
+To see the Text to Speech (TTS) settings:
 
 `jq ".tts" < /var/tmp/mycroft_web_cache.json`
 
 ### A look at the inside of `mycroft_web_cache.json`
 
-Here is an example `mycroft_web_cache.json`.  
+Here is an example `mycroft_web_cache.json`.\
 _NOTE: Your settings will be different._
 
 ```javascript
@@ -249,4 +249,3 @@ _NOTE: Your settings will be different._
   "system_unit": "metric"
 }
 ```
-
