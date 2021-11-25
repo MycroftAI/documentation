@@ -267,6 +267,14 @@ Here we have a [simple example Skill](https://github.com/krisgesling/gez-homescr
 
 To switch between the available screens, pull down from the top of your screen to access the on device menu and select Additional Settings > Homescreen. As new options are added to Skills they will automatically show up in this list.
 
+### Emulating the Mark II screen on desktop
+
+If you are developing a Skill on another computer and want to emulate the display of the Mark II, you can launch the [Mycroft GUI](https://github.com/mycroftAI/mycroft-gui) using the following arguments:
+
+```shell
+mycroft-gui-app --width=800 --height=480 --hideTextInput
+```
+
 ## Mycroft-Core Development
 
 Before making changes to `mycroft-core` on the Mark II Dev Kit it's recommended that you disable automatic updates in your [device settings](https://home.mycroft.ai/devices).
