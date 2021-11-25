@@ -265,8 +265,8 @@ You can choose your voice here in the column "voice name" ([https://docs.microso
 
 ```javascript
 "tts": {
-  "module": "azure",
-  "azure": {
+  "module": "azure_tts",
+  "azure_tts": {
     "api_key": "insert_your_key_here",
     "voice": "en-US-JennyNeural", # optional, default "en-US-Guy24kRUS"
     "region": "westus" # optional, if your region is westus
