@@ -245,9 +245,9 @@ To our existing configuration values we will add the following:
 
 ## Microsoft Azure Cognitive Service
 
+{% hint style="info" %}
 _Note: This is a Community provided TTS plugin and is not controlled by Mycroft AI. Updates for this plugin may not have been reviewed by the Mycroft team. We strongly recommend reviewing any code you intend to install from outside Mycroft's official channels._
-
-_Plugins are currently only available on the `dev` channel of Mycroft. They will be available on all systems in the next minor release. If you're not sure what that means,_ [_sign up to our newsletter_](https://mycroft.ai/newsletters/) _to get notified about the next release._
+{% endhint %}
 
 ### Installation
 
@@ -397,11 +397,17 @@ After your TTS server setup is finished you can [configure Mycroft](tts-engine.m
 
 ## Responsive Voice
 
-{% hint style="warning" %}
-The API for this service may have significantly changed. As such this TTS option may not be available. Contributions to restore the service are warmly welcomed. Please direct any development questions to the [\~Dev channel of Mycroft Chat](https://chat.mycroft.ai/community/channels/dev).
+{% hint style="info" %}
+_Note: This is a Community provided TTS plugin and is not controlled by Mycroft AI. The code in this plugin has not been reviewed by the Mycroft team. We strongly recommend reviewing any code you intend to install from outside Mycroft's official channels._
 {% endhint %}
 
 Lifelike human digital voices from [ResponsiveVoice.org](https://responsivevoice.org).
+
+### Installation
+
+```bash
+mycroft-pip install ovos-tts-plugin-responsivevoice
+```
 
 ### Mycroft Configuration
 
@@ -411,19 +417,9 @@ Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.co
 mycroft-config edit user
 ```
 
-To our existing configuration values we will add the following:
+See the plugin's Github repository for suggested configurations:
 
-```javascript
-"tts": {
-  "module": "responsive_voice",
-  "responsive_voice": {
-    "gender": "male",
-    "pitch": "0.5",
-    "rate": "0.5",
-    "vol": "1"
-  }
-}
-```
+[https://github.com/OpenVoiceOS/ovos-tts-plugin-responsivevoice#configuration](https://github.com/OpenVoiceOS/ovos-tts-plugin-responsivevoice#configuration)
 
 ## SpdSay
 
