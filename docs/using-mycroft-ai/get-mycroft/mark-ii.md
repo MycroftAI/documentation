@@ -195,6 +195,15 @@ This command updates your Mycroft configuration to use the "dev" branch of the [
 
 If you are having problems with your device and would like to share the system logs with the Mycroft team you can enable remote logging. This includes your [Mycroft log files](../troubleshooting/log-files.md) that will include utterances spoken to the device and responses spoken by Mycroft.
 
+### Fetching logs from the USB
+
+In the event that a device cannot boot or is otherwise inaccessible, you can get the logs by plugging the USB drive directly into your computer. There are two partitions on the disk:
+
+1. `pvboot`
+2. `pvroot`
+
+Within `pvroot` is a logs subdirectory. This contains log files for each of the containers on your device including your usual [Mycroft logs](../troubleshooting/log-files.md).
+
 ### Turn on remote logging
 
 1. Shutdown the device and plug the usb into a computer
@@ -223,6 +232,14 @@ Then print out your device-id using the following command:
 
 ```bash
 sudo cat /pantavisor/device-id 
+```
+
+#### Device ID from USB
+
+Plug the USB drive into your computer and find the `pvroot` partition - the path of this partition is represented below as `$PVROOT_MOUNT_POINT`. To get your device-id run:
+
+```
+sudo grep "creds.id" $PVROOT_MOUNT_POINT/logs/current/pantavisor/pantavisor.log
 ```
 
 ### GUI Debug Info
