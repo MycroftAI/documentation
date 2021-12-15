@@ -103,12 +103,7 @@ This includes three things:
 
 Now that you have your key-pair setup, you can add it to any of your Mycroft devices at: [https://home.mycroft.ai/devices](https://home.mycroft.ai/devices)
 
-If you need to add multiple public keys to a device, put each new key on a new line. For example:
-
-> ssh-rsa publickeystring gez@example\
-> ssh-rsa differentkeystring gez@example
-
-Your Mark II device will then fetch these public keys from your Mycroft account.
+Your Mark II device will then fetch this public key from your Mycroft account.
 
 ### SSH in to your device
 
