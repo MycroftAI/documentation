@@ -203,6 +203,10 @@ If the `voice`, `region`, and `engine` attributes are ommitted the defaults of `
 
 Google Translate's text-to-speech API.
 
+{% hint style="warning" %}
+The Google TTS module uses the gTTS Python package which interfaces with the Google Translate text-to-speech API. This is not intended for commercial or production usage. The service may break at any time, and you are subject to their Terms of Service that can be found at: [https://policies.google.com/terms](https://policies.google.com/terms)
+{% endhint %}
+
 ### Mycroft Configuration
 
 Using the [Configuration Manager](config-manager.md) we can edit the `mycroft.conf` file by running:
