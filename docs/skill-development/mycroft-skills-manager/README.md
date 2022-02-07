@@ -80,6 +80,22 @@ To install a Skill that is not included in the Mycroft Marketplace use the url o
 mycroft-msm install https://github.com/krisgesling/tea-skill
 ```
 
+### From a Marketplace branch
+
+To install a Skill from a different branch of the Mycroft-Skills Marketplace repository, use the `-b` flag:
+
+```
+mycroft-msm -b dev install weather
+```
+
+### From an Alternate Marketplace
+
+To install a Skill from an independently managed listing of Skills, you can specify the url for that Marketplace using the `-u` flag:
+
+```
+mycroft-msm -u https://github.com/krisgesling/mycroft-skills install cocktails
+```
+
 ## Updating
 
 ### All installed Skills
