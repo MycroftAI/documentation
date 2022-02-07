@@ -9,7 +9,7 @@ description: >-
 
 In the age of information visualization is eminently essential to grab attention and create a promising communication strategy. Visual content that supports your spoken content can make it easier to present information well and more engaging for your audience and users.
 
-![](https://images.theconversation.com/files/205921/original/file-20180212-58348-1sbutu2.jpg?ixlib=rb-1.1.0&rect=0%2C604%2C3994%2C1994&q=45&auto=format&w=1356&h=668&fit=crop)
+![](https://images.theconversation.com/files/205921/original/file-20180212-58348-1sbutu2.jpg?ixlib=rb-1.1.0\&rect=0%2C604%2C3994%2C1994\&q=45\&auto=format\&w=1356\&h=668\&fit=crop)
 
 ### Introduction
 
@@ -59,7 +59,7 @@ A QML module provides versioned types and JavaScript resources in a type namespa
 
 In the code snippet example below we will look at importing some of the common modules that provide the components required to get started with our Visual User Interface.
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -82,7 +82,7 @@ QtQuick Layouts are a set of QML types used to arrange items in a user interface
 
 **Kirigami Module:**
 
-[Kirigami](https://api.kde.org/frameworks/kirigami/html/index.html) is a set of QtQuick components for mobile and convergent applications. [Kirigami](https://api.kde.org/frameworks/kirigami/html/index.html) is a set of high level components to make the creation of applications that look and feel great on mobile as well as desktop devices and follow the [Kirigami Human Interface Guidelines](https://community.kde.org/KDE_Visual_Design_Group/KirigamiHIG)
+[Kirigami](https://api.kde.org/frameworks/kirigami/html/index.html) is a set of QtQuick components for mobile and convergent applications. [Kirigami](https://api.kde.org/frameworks/kirigami/html/index.html) is a set of high level components to make the creation of applications that look and feel great on mobile as well as desktop devices and follow the [Kirigami Human Interface Guidelines](https://community.kde.org/KDE\_Visual\_Design\_Group/KirigamiHIG)
 
 **Mycroft Module:**
 
@@ -96,93 +96,92 @@ This provides a QML `Item` to render Adobe® After Effects™ animations exporte
 
 When you design your skill with QML, Mycroft-GUI frameworks provides you with some base delegates you should use when designing your GUI skill. The base delegates provide you with a basic presentation layer for your skill with some property assignments that can help you setup background images, background dim, timeout and grace time properties to give you the control you need for rendering an experience. In your GUI Skill you can use:
 
-* Mycroft.Delegate: A basic and simple page based on Kirigami.Page
+*   Mycroft.Delegate: A basic and simple page based on Kirigami.Page
 
-  Simple display Image and Text Example using Mycroft.Delegate
+    Simple display Image and Text Example using Mycroft.Delegate
 
-  ```text
-  import Mycroft 1.0 as Mycroft
+    ```
+    import Mycroft 1.0 as Mycroft
 
-  Mycroft.Delegate {
-      skillBackgroundSource: sessionData.exampleImage
-      ColumnLayout {
-          anchors.fill: parent
-          Image {
-              id: imageId
-              Layout.fillWidth: true
-              Layout.preferredHeight: Kirigami.Units.gridUnit * 2
-              source: "https://source.unsplash.com/1920x1080/?+autumn"
-           }
-           Label {
-              id: labelId
-              Layout.fillWidth: true
-              Layout.preferredHeight: Kirigami.Units.gridUnit * 4
-              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."            
-          }
-      }
-  }
-  ```
+    Mycroft.Delegate {
+        skillBackgroundSource: sessionData.exampleImage
+        ColumnLayout {
+            anchors.fill: parent
+            Image {
+                id: imageId
+                Layout.fillWidth: true
+                Layout.preferredHeight: Kirigami.Units.gridUnit * 2
+                source: "https://source.unsplash.com/1920x1080/?+autumn"
+             }
+             Label {
+                id: labelId
+                Layout.fillWidth: true
+                Layout.preferredHeight: Kirigami.Units.gridUnit * 4
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."            
+            }
+        }
+    }
+    ```
+*   Mycroft.ScrollableDelegate: A delegate that displays skill visuals in a scroll enabled Kirigami Page.
 
-* Mycroft.ScrollableDelegate: A delegate that displays skill visuals in a scroll enabled Kirigami Page.
+    Example of using Mycroft.ScrollableDelegate
 
-  Example of using Mycroft.ScrollableDelegate
+    ```
+    import QtQuick 2.4
+    import QtQuick.Controls 2.2
+    import QtQuick.Layouts 1.4
+    import org.kde.kirigami 2.4 as Kirigami
+    import Mycroft 1.0 as Mycroft
 
-  ```text
-  import QtQuick 2.4
-  import QtQuick.Controls 2.2
-  import QtQuick.Layouts 1.4
-  import org.kde.kirigami 2.4 as Kirigami
-  import Mycroft 1.0 as Mycroft
+    Mycroft.ScrollableDelegate{
+        id: root
+        skillBackgroundSource: sessionData.background
+        property var sampleModel: sessionData.sampleBlob
 
-  Mycroft.ScrollableDelegate{
-      id: root
-      skillBackgroundSource: sessionData.background
-      property var sampleModel: sessionData.sampleBlob
-
-      Kirigami.CardsListView {
-          id: exampleListView
-          Layout.fillWidth: true
-          Layout.fillHeight: true
-          model: sampleModel.lorem
-          delegate: Kirigami.AbstractCard {
-              id: rootCard
-              implicitHeight: delegateItem.implicitHeight + Kirigami.Units.largeSpacing
-              contentItem: Item {
-                  implicitWidth: parent.implicitWidth
-                  implicitHeight: parent.implicitHeight
-                  ColumnLayout {
-                      id: delegateItem
-                      anchors.left: parent.left
-                      anchors.right: parent.right
-                      anchors.top: parent.top
-                      spacing: Kirigami.Units.largeSpacing
-                      Kirigami.Heading {
-                          id: restaurantNameLabel
-                          Layout.fillWidth: true
-                          text: modelData.text
-                          level: 2
-                          wrapMode: Text.WordWrap
-                      }
-                      Kirigami.Separator {
-                          Layout.fillWidth: true
-                      }
-                      Image {
-                          id: placeImage
-                          source: modelData.image
-                          Layout.fillWidth: true
-                          Layout.preferredHeight: Kirigami.Units.gridUnit * 3
-                          fillMode: Image.PreserveAspectCrop
-                      }
-                      Item {
-                          Layout.fillWidth: true
-                          Layout.preferredHeight: Kirigami.Units.gridUnit * 1
-                      }
-                  }
-              }
-          }
-      }
-  }
-  ```
+        Kirigami.CardsListView {
+            id: exampleListView
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            model: sampleModel.lorem
+            delegate: Kirigami.AbstractCard {
+                id: rootCard
+                implicitHeight: delegateItem.implicitHeight + Kirigami.Units.largeSpacing
+                contentItem: Item {
+                    implicitWidth: parent.implicitWidth
+                    implicitHeight: parent.implicitHeight
+                    ColumnLayout {
+                        id: delegateItem
+                        anchors.left: parent.left
+                        anchors.right: parent.right
+                        anchors.top: parent.top
+                        spacing: Kirigami.Units.largeSpacing
+                        Kirigami.Heading {
+                            id: restaurantNameLabel
+                            Layout.fillWidth: true
+                            text: modelData.text
+                            level: 2
+                            wrapMode: Text.WordWrap
+                        }
+                        Kirigami.Separator {
+                            Layout.fillWidth: true
+                        }
+                        Image {
+                            id: placeImage
+                            source: modelData.image
+                            Layout.fillWidth: true
+                            Layout.preferredHeight: Kirigami.Units.gridUnit * 3
+                            fillMode: Image.PreserveAspectCrop
+                        }
+                        Item {
+                            Layout.fillWidth: true
+                            Layout.preferredHeight: Kirigami.Units.gridUnit * 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ```
 
 #### Using Mycroft Framework Components
 
@@ -222,31 +221,18 @@ self.gui.show_url("https://mycroft.ai")
 
 **HTML Raw Example**
 
-```text
+```
 ...
 def handle_hello_world(self, message):
 ...
-rawhtmlexample = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+rawhtmlexample = """<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<meta charset="utf-8" />
+<title>Simple HTML Example</title>
+</head>
 <body>
-<h1> HTML Example </h1>
-<p> This is an example of an HTML webpage. </p>
-<p> <b>Tags</b> can be wrapped <i>inside other tags!</i> </p>
-
-<p>
-    HTML doesn't care about extra spaces, tabs or newlines,
-    so we can use indentation and spacing to keep everything
-    lined up nicely.
-</p>
-
-<ul>
-    <li> This is how you create a bulleted list! </li>
-    <li> Item 2 </li>
-    <li> Item 3 </li>
-</ul>
+<p>Hello World</p>
 </body>
 </html>
 """ 
@@ -262,7 +248,7 @@ You can use the `LottieAnimation` item just like any other `QtQuick` element, su
 
 **QML Example**
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -288,7 +274,7 @@ Contains an image that will slowly scroll in order to be shown completely
 
 **QML Example**
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -310,7 +296,7 @@ Takes a long text and breaks it down into pages that can be horizontally swiped
 
 **QML Example**
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -342,7 +328,7 @@ self.gui.show_page("foodplaces.qml")
 
 **QML Example**
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -429,7 +415,7 @@ Mycroft.Delegate{
 
 **QML Example**
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -463,7 +449,7 @@ Slideshow component lets you insert a slideshow with your custom delegate in any
 
 **QML Example**
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -513,7 +499,7 @@ AudioPlayer component is a custom wrapper around Qt Multimedia MediaPlayer, that
 
 **QML Example**
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -558,7 +544,7 @@ Mycroft GUI API provides an Event Handling Protocol between the skill and QML di
 
 **QML Example**
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -594,7 +580,7 @@ Mycroft.Delegate {
 
 **QML Example**
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -621,7 +607,7 @@ Mycroft.Delegate {
 
 VideoPlayer component is a custom wrapper around Qt Multimedia MediaPlayer, that gives the Skill Authors a basic responsive design video player they can plug into their skills.
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -651,7 +637,7 @@ The resting face API provides skill authors the ability to extend their skills t
 
 **Python Skill Example**
 
-```text
+```
 from mycroft.skills.core import resting_screen_handler
 ...
 @resting_screen_handler('NameOfIdleScreen')
@@ -664,7 +650,7 @@ def handle_idle(self, message):
 
 **QML Example**
 
-```text
+```
 import QtQuick 2.4
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.4
@@ -682,8 +668,6 @@ Mycroft.Delegate {
     }
 }
 ```
-
-
 
 
 
