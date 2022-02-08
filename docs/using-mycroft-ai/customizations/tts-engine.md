@@ -64,15 +64,7 @@ To our existing configuration values we will add the following:
 
 **Added in mycroft-core v21.2.2**
 
-Further customization of espeak voices is available through the following options:
-
-* Amplitude
-* Gap
-* Capital
-* Pitch
-* Speed
-
-For more information on these parameters see `espeak --help`
+You can further customize the amplitude, gap, capital, pitch and speed of espeak voices by adding them to your TTS configuration parameters.&#x20;
 
 Example Config:
 
@@ -92,6 +84,8 @@ Example Config:
   }
 }  
 ```
+
+For more information on the values for these parameters see `espeak --help`
 
 ## Mary TTS
 
