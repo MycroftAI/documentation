@@ -6,26 +6,25 @@ description: >-
 
 # German
 
-> ***ACHTUNG WICHTIG:**
-> Die in dieser Anleitung erwähnten Pfade `/usr/local/share` sind bei Manjaro / Arch-Linux - und ggf. auch bei anderen Linux-Distributionen - anders! Hier muss folgender Pfad gewählt werden: `/usr/share/pocketsphinx/` !!!*
-
+{% hint style="warning" %}
+_**ACHTUNG WICHTIG:** Die in dieser Anleitung erwähnten Pfade `/usr/local/share` sind bei Manjaro / Arch-Linux - und ggf. auch bei anderen Linux-Distributionen - anders! Hier muss folgender Pfad gewählt werden: `/usr/share/pocketsphinx/`_
+{% endhint %}
 
 ## Erster Einstieg
 
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich, daher sollten sie Mycroft bereits unter "lang": "en-us" verbunden und eingerichtet haben.
 
-Zuerst, [verbinden Sie sich mit ihrem Gerät \(z.B. SSH\)](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
+Zuerst, [verbinden Sie sich mit ihrem Gerät (z.B. SSH)](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
 
-Folgend wird an den Beispielen Google/Mbrola der Sprachoutput \(TTS\) auf deutsch gesetzt. Mycroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de/), [responsive\_voice](https://responsivevoice.org/), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird. Zudem arbeitet die deutsche Community aktuell an einer eigenen TTS Stimme auf [tacotron2](https://github.com/thorstenMueller/deep-learning-german-tts) Basis.
-
+Folgend wird an den Beispielen Google/Mbrola der Sprachoutput (TTS) auf deutsch gesetzt. Mycroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de), [responsive\_voice](https://responsivevoice.org), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird. Zudem arbeitet die deutsche Community aktuell an einer eigenen TTS Stimme auf [tacotron2](https://github.com/thorstenMueller/deep-learning-german-tts) Basis.
 
 ## Konfiguration editieren
-Um Mycroft zu konfigurieren,  führe in der CLI / Shell folgenden Befehl aus: `mycroft-config edit user`. 
-Dies öffnet die Config-Datei in einem Editor.
 
-## Text-to-Speech \(TTS\) über Google
+Um Mycroft zu konfigurieren, führe in der CLI / Shell folgenden Befehl aus: `mycroft-config edit user`. Dies öffnet die Config-Datei in einem Editor.
 
-Gehe vor wie zuvor unter *Konfiguration editieren* beschrieben, und passe die Konfiguration wie folgt an:
+## Text-to-Speech (TTS) über Google
+
+Gehe vor wie zuvor unter _Konfiguration editieren_ beschrieben, und passe die Konfiguration wie folgt an:
 
 **Data:**
 
@@ -41,12 +40,13 @@ Gehe vor wie zuvor unter *Konfiguration editieren* beschrieben, und passe die Ko
 }
 ```
 
-> *HINWEIS:*
-> Sollte sich die Standardausgabe von Mycroft in deutsch melden hilft eventuell das updaten mit `mycroft-pip install --upgrade gtts` oder `mycroft-pip install --upgrade gtts-token`.
-
+{% hint style="info" %}
+Sollte sich die Standardausgabe von Mycroft in deutsch melden hilft eventuell das updaten mit `mycroft-pip install --upgrade gtts` oder `mycroft-pip install --upgrade gtts-token`.
+{% endhint %}
 
 ## TTS Alternativ mit espeak mbrola
-Gehe vor wie zuvor unter *Konfiguration editieren* beschrieben, und passe die Konfiguration wie folgt an:
+
+Gehe vor wie zuvor unter _Konfiguration editieren_ beschrieben, und passe die Konfiguration wie folgt an:
 
 **Data:**
 
@@ -63,34 +63,33 @@ Gehe vor wie zuvor unter *Konfiguration editieren* beschrieben, und passe die Ko
 }
 ```
 
-> *HINWEIS:*
->  Die Stimme 7 kann auch durch eine andere Stimme ersetzt werden. Alle geraden Zahlen sind männliche und alle ungeraden Zahlen weibliche Stimmen.
+{% hint style="info" %}
+_HINWEIS:_ Die Stimme 7 kann auch durch eine andere Stimme ersetzt werden. Alle geraden Zahlen sind männliche und alle ungeraden Zahlen weibliche Stimmen.
+{% endhint %}
 
-
-> **TIPP:**
-> mbrola für Raspberry kann [hier](http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb) als Debian Package herunterladen werden.
-> Du kannst auch direkt auf dem Raspby `wget http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb` und `sudo dpkg -i mbrola3.0.1h_armhf.deb` ausführen. 
-> Dann espeak und mbrola via `sudo apt install espeak espeak-data mbrola mbrola-de7` installieren.
-
+{% hint style="info" %}
+**TIPP:** mbrola für Raspberry kann [hier](http://steinerdatenbank.de/software/mbrola3.0.1h\_armhf.deb) als Debian Package herunterladen werden. Du kannst auch direkt auf dem Raspby `wget http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb` und `sudo dpkg -i mbrola3.0.1h_armhf.deb` ausführen. Dann espeak und mbrola via `sudo apt install espeak espeak-data mbrola mbrola-de7` installieren.
+{% endhint %}
 
 Mycroft sollte nach einem Neustart auf deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutzt werden.
 
-Das **Wake Word** \(z.b. Hey Mycroft, Christopher, Hey Ezra, Hey Jarvis\) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
+Das **Wake Word** (z.b. Hey Mycroft, Christopher, Hey Ezra, Hey Jarvis) wird hierbei unter [Mycroft Home](https://home.mycroft.ai) eingerichtet.
 
 ## Ändern des **Wake Words** in ein deutsches Wort
 
 Mycroft verwendet [Precise](https://mycroft.ai/documentation/precise) und [PocketSphinx](https://github.com/cmusphinx/pocketsphinx) als **Wake Word**-Mechanismus. Das Standard **Wake Word** auf englisch ist `Hey Mycroft` und nutzt Precise und - falls Precise es nicht erkennt - Pocketsphinx.
 
-Diese Anleitung bezieht sich insbesodere auf Pocketsphinx. Weiterführende Informationen zu Precise findet man [hier](https://mycroft-ai.gitbook.io/docs/using-mycroft-ai/customizations/wake-word#precise) \(englisch\)
+Diese Anleitung bezieht sich insbesodere auf Pocketsphinx. Weiterführende Informationen zu Precise findet man [hier](https://mycroft-ai.gitbook.io/docs/using-mycroft-ai/customizations/wake-word#precise) (englisch)
 
-Um das **Wake Word** \(in ein deutsch klingendes\) zu ändern muss das deutsche Wörterbuch und das deutsche akustische Modell herunterladen werden, danach trainiere es mit dem neusten `sphinxtrain`.
+Um das **Wake Word** (in ein deutsch klingendes) zu ändern muss das deutsche Wörterbuch und das deutsche akustische Modell herunterladen werden, danach trainiere es mit dem neusten `sphinxtrain`.
 
 Zuerst erstelle ein Verzeichnis für die `pocketsphinx`-Dateien:
 
 `sudo mkdir -p /usr/local/share/pocketsphinx/model/de/de`
 
-> *HINWEIS:*
-> Für Manjaro-Linux, und wahrscheinlich auch für Arch-Linux und einige andere Linux-Distributionen ist der Pfad: `/usr/share/pocketsphinx`
+{% hint style="info" %}
+_HINWEIS:_ Für Manjaro-Linux, und wahrscheinlich auch für Arch-Linux und einige andere Linux-Distributionen ist der Pfad: `/usr/share/pocketsphinx`
+{% endhint %}
 
 ### Laden des deutsche Wörterbuchs und Installation
 
@@ -138,11 +137,11 @@ Dann verschieben es in das PocketSphinx-Verzeichnis
 
 Überprüfe, ob die folgenden Dateien existieren:
 
-> ***ACHTUNG**:
-> Bei Manjaro-Linux und anderen Linux-Distributionen ein anderer Pfad zu wählen: `/usr/share/pocketsphinx/` !!!
+{% hint style="warning" %}
+**ACHTUNG**: Bei Manjaro-Linux und anderen Linux-Distributionen ein anderer Pfad zu wählen: `/usr/share/pocketsphinx/`
+{% endhint %}
 
-
-```text
+```
 /usr/local/share/pocketsphinx/model/de
 /usr/local/share/pocketsphinx/model/de/de.dict
 /usr/local/share/pocketsphinx/model/de/de.lm
@@ -176,8 +175,9 @@ total 24
 8 drwxrwxr-x 3 kathyreid kathyreid 4096 Nov 24 00:08 en-us
 ```
 
-> _HINWEIS: 
-> Beachte, dass es nur einen Modellordner gibt - `en-us` für American English_
+{% hint style="info" %}
+_HINWEIS: Beachte, dass es nur einen Modellordner gibt - `en-us` für American English_
+{% endhint %}
 
 Erstelle hier ein neues Verzeichnis für deutsch, und verlinke es anschließend mit dem `pocketsphinx` Verzeichnis.
 
@@ -187,8 +187,8 @@ ln -s /usr/local/share/pocketsphinx/model/de/de de/hmm
 cp /usr/local/share/pocketsphinx/model/de/de.lm de/de.lm
 cp /usr/local/share/pocketsphinx/model/de/de/de.dict de/de.dict
 ```
-> _HINWEIS: 
-> Der `cp`-Befehl könnte durch `ln`-Befehl ersetzt werden um Speicherplatz zu sparen. Es ist jedoch möglich, Wörter zu `de.dict` hinzuzufügen; `cp` bedeutet, dass die Originaldatei unverändert bleibt und mit einer Kopie gearbeitet wird._
+
+> _HINWEIS: Der `cp`-Befehl könnte durch `ln`-Befehl ersetzt werden um Speicherplatz zu sparen. Es ist jedoch möglich, Wörter zu `de.dict` hinzuzufügen; `cp` bedeutet, dass die Originaldatei unverändert bleibt und mit einer Kopie gearbeitet wird._
 
 Falls mit `ln` gearbeitet wird, müssen die folgenden Verzeichnisse, Dateien und symbolische Verknüpft werden:
 
@@ -233,7 +233,7 @@ Wenn das gewählte **Wake Word** oder Phrase nicht in der `de.dict` Datei ist, d
 
 ## Mozilla Deepspeech STT
 
-Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf einem Deepspeech Server einrichten. [Aashish Agarwal](https://github.com/AASHISHAG/deepspeech-german) hat dazu entsprechende [Modell Files](https://drive.google.com/drive/folders/1L7ILB-TMmzL8IDYi_GW8YixAoYWjDMn1) unter Deepspeech V9.0 veröffentlicht.
+Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf einem Deepspeech Server einrichten. [Aashish Agarwal](https://github.com/AASHISHAG/deepspeech-german) hat dazu entsprechende [Modell Files](https://drive.google.com/drive/folders/1L7ILB-TMmzL8IDYi\_GW8YixAoYWjDMn1) unter Deepspeech V9.0 veröffentlicht.
 
 ### Installation
 
@@ -243,8 +243,9 @@ Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf
 4. Auf Raspberry installiere noch einige Pakete mit `sudo apt-get install gfortran libopenblas-dev liblapack-dev`
 5. Installiere Deepspeech Server `pip install deepspeech-server`.
 
-> _HINWEIS: 
-> Bei der installation von Deepspeech Server auf einem Rasberry PI sollte über 1 GB RAM Verfügbar sein. Sonst entsprechend über Swap erweitern._
+{% hint style="info" %}
+_HINWEIS: Bei der installation von Deepspeech Server auf einem Rasberry PI sollte über 1 GB RAM Verfügbar sein. Sonst entsprechend über Swap erweitern._
+{% endhint %}
 
 ### Erstelle eine Server Konfiguration
 
@@ -287,7 +288,7 @@ Antwort sollte nun `test ein zwei drei test(.venv) pi@picroft:~/release_v0.9.0$`
 
 Füge folgendes in Startup Datei `/etc/rc.local`.
 
-```text
+```
 /home/pi/mycroft-core/.venv/bin/deepspeech-server --config /home/pi/release_v0.9.0/config.json
 ```
 
@@ -308,4 +309,3 @@ Füge folgendes in Startup Datei `/etc/rc.local`.
 ```
 
 Für weitergehende Fragen besuche [den deutschen channel auf Mycroft chat](https://chat.mycroft.ai/community/channels/language-de).
-
