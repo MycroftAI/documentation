@@ -6,6 +6,10 @@ description: >-
 
 # German
 
+> ***ACHTUNG WICHTIG:**
+> Die in dieser Anleitung erwähnten Pfade `/usr/local/share` sind bei Manjaro / Arch-Linux - und ggf. auch bei anderen Linux-Distributionen - anders! Hier muss folgender Pfad gewählt werden: `/usr/share/pocketsphinx/` !!!*
+
+
 ## Erster Einstieg
 
 !!!Aktuell ist das paaren von Mycroft noch nicht vollständig in deutsch möglich, daher sollten sie Mycroft bereits unter "lang": "en-us" verbunden und eingerichtet haben.
@@ -14,9 +18,14 @@ Zuerst, [verbinden Sie sich mit ihrem Gerät \(z.B. SSH\)](https://mycroft.ai/do
 
 Folgend wird an den Beispielen Google/Mbrola der Sprachoutput \(TTS\) auf deutsch gesetzt. Mycroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de/), [responsive\_voice](https://responsivevoice.org/), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird. Zudem arbeitet die deutsche Community aktuell an einer eigenen TTS Stimme auf [tacotron2](https://github.com/thorstenMueller/deep-learning-german-tts) Basis.
 
+
+## Konfiguration editieren
+Um Mycroft zu konfigurieren,  führe in der CLI / Shell folgenden Befehl aus: `mycroft-config edit user`. 
+Dies öffnet die Config-Datei in einem Editor.
+
 ## Text-to-Speech \(TTS\) über Google
 
-Ändere oder ersetze die eigene Konfiguration `mycroft-config edit user` mit folgendem Inhalt.
+Gehe vor wie zuvor unter *Konfiguration editieren* beschrieben, und passe die Konfiguration wie folgt an:
 
 **Data:**
 
@@ -32,11 +41,12 @@ Folgend wird an den Beispielen Google/Mbrola der Sprachoutput \(TTS\) auf deutsc
 }
 ```
 
-_HINWEIS: Sollte sich die Standardausgabe von Mycroft in deutsch melden hilft eventuell das updaten mit `mycroft-pip install --upgrade gtts` oder `mycroft-pip install --upgrade gtts-token`._
+> *HINWEIS:*
+> Sollte sich die Standardausgabe von Mycroft in deutsch melden hilft eventuell das updaten mit `mycroft-pip install --upgrade gtts` oder `mycroft-pip install --upgrade gtts-token`.
+
 
 ## TTS Alternativ mit espeak mbrola
-
-Für Rasberry kann mbrola hier herunterladen werden mit `wget http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb` und `sudo dpkg -i mbrola3.0.1h_armhf.deb`. Installiere nun espeak mbrola über `sudo apt install espeak espeak-data mbrola mbrola-de7`.
+Gehe vor wie zuvor unter *Konfiguration editieren* beschrieben, und passe die Konfiguration wie folgt an:
 
 **Data:**
 
@@ -53,7 +63,15 @@ Für Rasberry kann mbrola hier herunterladen werden mit `wget http://steinerdate
 }
 ```
 
-_HINWEIS: Die Stimme 7 kann auch durch eine andere Stimme ersetzt werden. Dabei sind alle geraden Zahlen männlich und alle ungeraden Stimmen weiblich._
+> *HINWEIS:*
+>  Die Stimme 7 kann auch durch eine andere Stimme ersetzt werden. Alle geraden Zahlen sind männliche und alle ungeraden Zahlen weibliche Stimmen.
+
+
+> **TIPP:**
+> mbrola für Raspberry kann [hier](http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb) als Debian Package herunterladen werden.
+> Du kannst auch direkt auf dem Raspby `wget http://steinerdatenbank.de/software/mbrola3.0.1h_armhf.deb` und `sudo dpkg -i mbrola3.0.1h_armhf.deb` ausführen. 
+> Dann espeak und mbrola via `sudo apt install espeak espeak-data mbrola mbrola-de7` installieren.
+
 
 Mycroft sollte nach einem Neustart auf deutsch hören und sprechen. Viele Skills sind bereits übersetzt und können sofort genutzt werden.
 
@@ -70,6 +88,9 @@ Um das **Wake Word** \(in ein deutsch klingendes\) zu ändern muss das deutsche 
 Zuerst erstelle ein Verzeichnis für die `pocketsphinx`-Dateien:
 
 `sudo mkdir -p /usr/local/share/pocketsphinx/model/de/de`
+
+> *HINWEIS:*
+> Für Manjaro-Linux, und wahrscheinlich auch für Arch-Linux und einige andere Linux-Distributionen ist der Pfad: `/usr/share/pocketsphinx`
 
 ### Laden des deutsche Wörterbuchs und Installation
 
@@ -117,6 +138,10 @@ Dann verschieben es in das PocketSphinx-Verzeichnis
 
 Überprüfe, ob die folgenden Dateien existieren:
 
+> ***ACHTUNG**:
+> Bei Manjaro-Linux und anderen Linux-Distributionen ein anderer Pfad zu wählen: `/usr/share/pocketsphinx/` !!!
+
+
 ```text
 /usr/local/share/pocketsphinx/model/de
 /usr/local/share/pocketsphinx/model/de/de.dict
@@ -151,22 +176,23 @@ total 24
 8 drwxrwxr-x 3 kathyreid kathyreid 4096 Nov 24 00:08 en-us
 ```
 
-_HINWEIS: Beachte, dass es nur einen Modellordner gibt - `en-us` für American English_
+> _HINWEIS: 
+> Beachte, dass es nur einen Modellordner gibt - `en-us` für American English_
 
 Erstelle hier ein neues Verzeichnis für deutsch, und verlinke es anschließend mit dem `pocketsphinx` Verzeichnis.
 
 ```bash
-mkdir de
+mkdir de-de
 ln -s /usr/local/share/pocketsphinx/model/de/de de/hmm
 cp /usr/local/share/pocketsphinx/model/de/de.lm de/de.lm
-cp /usr/local/share/pocketsphinx/model/de/de.dict de/de.dict
+cp /usr/local/share/pocketsphinx/model/de/de/de.dict de/de.dict
 ```
-
-_HINWEIS: Der `cp`-Befehl könnte durch `ln`-Befehl ersetzt werden um Speicherplatz zu sparen. Es ist jedoch möglich, Wörter zu `de.dict` hinzuzufügen; `cp` bedeutet, dass die Originaldatei unverändert bleibt und mit einer Kopie gearbeitet wird._
+> _HINWEIS: 
+> Der `cp`-Befehl könnte durch `ln`-Befehl ersetzt werden um Speicherplatz zu sparen. Es ist jedoch möglich, Wörter zu `de.dict` hinzuzufügen; `cp` bedeutet, dass die Originaldatei unverändert bleibt und mit einer Kopie gearbeitet wird._
 
 Falls mit `ln` gearbeitet wird, müssen die folgenden Verzeichnisse, Dateien und symbolische Verknüpft werden:
 
-```text
+```bash
 ~/mycroft/client/speech/recognizer/model/de
 ~/mycroft-core/client/speech/recognizer/model/de/hmm
 ~/mycroft-core/client/speech/recognizer/model/de/de.dict
@@ -217,7 +243,8 @@ Mycroft unterstützt auch Deepspeech STT. Hierfür muss ein deutsches Modell auf
 4. Auf Raspberry installiere noch einige Pakete mit `sudo apt-get install gfortran libopenblas-dev liblapack-dev`
 5. Installiere Deepspeech Server `pip install deepspeech-server`.
 
-_HINWEIS: Bei der installation von Deepspeech Server auf einem Rasberry PI sollte über 1 GB RAM Verfügbar sein. Sonst entsprechend über Swap erweitern._
+> _HINWEIS: 
+> Bei der installation von Deepspeech Server auf einem Rasberry PI sollte über 1 GB RAM Verfügbar sein. Sonst entsprechend über Swap erweitern._
 
 ### Erstelle eine Server Konfiguration
 
