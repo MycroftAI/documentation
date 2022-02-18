@@ -197,7 +197,7 @@ In the event that a device cannot boot or is otherwise inaccessible, you can get
 1. `pvboot`
 2. `pvroot`
 
-Within `pvroot` is a logs subdirectory. This contains log files for each of the containers on your device including your usual [Mycroft logs](../troubleshooting/log-files.md).
+`pvroot/disks/perm/mycroft/lxc-overlay/upper` contains the modified file overlay for the mycroft container. This includes your usual [Mycroft logs](../troubleshooting/log-files.md).
 
 ### Turn on remote logging
 
