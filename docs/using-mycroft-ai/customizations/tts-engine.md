@@ -319,12 +319,12 @@ To our existing configuration values we will add the following:
 "tts": {
   "module": "mozilla",
   "mozilla": {
-    "url": "http://my-mozilla-tts-server/api/tts"
+    "url": "http://my-mozilla-tts-server"
   }
 }
 ```
 
-By default the `url` is set to the localhost: [`http://0.0.0.0:5002/api/tts`](http://0.0.0.0:5002/api/tts) So if you are running the server on the same machine as your Mycroft instance, only the `module` attribute needs to be set. This can also be done with a single command:
+By default the `url` is set to the localhost: [`http://0.0.0.0:5002`](http://0.0.0.0:5002) So if you are running the server on the same machine as your Mycroft instance, only the `module` attribute needs to be set. This can also be done with a single command:
 
 ```bash
 mycroft-config set tts.module mozilla
