@@ -349,8 +349,8 @@ source ./bin/activate
 
 Then within that environment install the TTS server.
 
-{% hint style="info" %}
-> Installatation of tts din't yet work with python 3.10 caused of missing support of pytorch in coqui-ai [see here ](https://github.com/coqui-ai/TTS/issues/1017)
+{% hint style="warning" %}
+> Insallation of the tts python package does not yet work with Python 3.10. [See the Coqui TTS issues page for more information](https://github.com/coqui-ai/TTS/issues/1017).
 {% endhint %}
 
 ```
