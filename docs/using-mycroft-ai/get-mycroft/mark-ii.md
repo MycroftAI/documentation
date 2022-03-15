@@ -7,7 +7,7 @@ description: >-
 
 # Mark II
 
-The Mark II Dev Kit is intended for Software Developers and Hardware Developers to develop on the Mycroft platform.&#x20;
+The Mark II Dev Kit is intended for Software Developers and Hardware Developers to develop on the Mycroft platform.
 
 ### Known Issues
 
@@ -34,7 +34,7 @@ The Mark II, including the Dev Kit, comes with 3 buttons and 1 switch. These are
 
 ### LEDs
 
-The SJ201 comes with 12 LEDs in a ring formation.&#x20;
+The SJ201 comes with 12 LEDs in a ring formation.
 
 Currently there are two "dedicated" LED's for development purposes only (these will change as we approach a general release):
 
@@ -42,7 +42,7 @@ Currently there are two "dedicated" LED's for development purposes only (these w
 * The second shows the general CPU temperature
   * Blue = cold
   * Magenta = warm
-  * Orange = hot&#x20;
+  * Orange = hot
   * Red = very hot
 
 The LED ring has a number of states:
@@ -70,7 +70,7 @@ Using a tool like the [Raspberry Pi Imager](https://www.raspberrypi.org/software
 
 ## SSH Access
 
-To enable secure access to your device, we use public-key cryptography rather than a default username and password.&#x20;
+To enable secure access to your device, we use public-key cryptography rather than a default username and password.
 
 In short this means that you generate what’s known as a key-pair. The pair is made up of two files - a public key and a private key. The public key is transferred to your device, and only your private key will be able to log in to it. Your private key is like an extremely secure password and you should never share this with anyone. If you want to learn more about the details, start here.
 
@@ -78,12 +78,12 @@ In short this means that you generate what’s known as a key-pair. The pair is 
 
 #### Linux
 
-1. Open your terminal and run:  \
+1. Open your terminal and run:\
    `ssh-keygen -t rsa`
 2. You will be asked where to save your new key-pair\
    Leave this blank if you would like to use the default location `/home/user/.ssh/id_rsa`
-3. You can optionally add a passphrase. \
-   This is an additional layer of security that will require you to enter your passphrase when using your private key.&#x20;
+3. You can optionally add a passphrase.\
+   This is an additional layer of security that will require you to enter your passphrase when using your private key.
 4. If you selected the default file path you will have two new files:\
    `/home/user/.ssh/id_rsa` is your private key - again do not share this.\
    `/home/user/.ssh/id_rsa.pub` is your public key - this can be shared.
@@ -154,7 +154,7 @@ There is also a BSP layer that can be mounted for inspection on another machine.
 
 ### Transfer files to or from your device
 
-Now that you have SSH access, you can transfer files to and from your device using `scp`.To do this, we also need to use the port 8222, however unlike `ssh` the `scp` command uses the uppercase `-P` flag 🤷&#x20;
+Now that you have SSH access, you can transfer files to and from your device using `scp`.To do this, we also need to use the port 8222, however unlike `ssh` the `scp` command uses the uppercase `-P` flag 🤷
 
 Lets transfer `my_file` from our computer, to the Mark II device:
 
@@ -170,11 +170,11 @@ scp -rP 8222 mycroft@$YOUR_IP:/var/log/mycroft /destination/path/
 
 ## Beta Testing
 
-The Mark II is currently only available as a development kit and we know that many of you are keen to get the latest software as soon as possible. There are two ways that you can help out by testing the latest software.&#x20;
+The Mark II is currently only available as a development kit and we know that many of you are keen to get the latest software as soon as possible. There are two ways that you can help out by testing the latest software.
 
-### Operating System&#x20;
+### Operating System
 
-To get the latest version of the Mark II's OS, including updates to Mycroft-core on a daily basis - head to your [device settings on home.mycroft.ai](https://home.mycroft.ai/devices). Select your Mark II and under "Software release" select "Latest".&#x20;
+To get the latest version of the Mark II's OS, including updates to Mycroft-core on a daily basis - head to your [device settings on home.mycroft.ai](https://home.mycroft.ai/devices). Select your Mark II and under "Software release" select "Latest".
 
 ### Skills
 
@@ -203,7 +203,7 @@ In the event that a device cannot boot or is otherwise inaccessible, you can get
 
 1. Shutdown the device and plug the usb into a computer
 2. In the `pvboot` partition, edit `cmdline.txt`\
-   &#x20;change the final
+   change the final
 
 ```
 ph_log.push=0
@@ -239,13 +239,7 @@ sudo grep "creds.id" $PVROOT_MOUNT_POINT/logs/current/pantavisor/pantavisor.log
 
 ### GUI Debug Info
 
-To get debug information from the GUI process you must first SSH into the Mark II, then run:
-
-```bash
-eval $(cat /proc/$(pidof plasmashell.bin)/environ | tr '\0' '\n' | grep -v ^PS1= | awk '{ print "export " $1 }')
-killall plasmashell.bin
-plasmashell &
-```
+The GUI logs are available in: `.local/share/sddm/wayland-session.log`
 
 ## Skill Development
 
@@ -265,7 +259,7 @@ Then see our detailed Skill development documentation:
 
 ### Installing Skills still in development
 
-Mycroft Skills Manager (MSM) is a command line tool used to add, manage and remove Skills on any Mycroft installation. It can install any Skill listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills) or from any Github repository.&#x20;
+Mycroft Skills Manager (MSM) is a command line tool used to add, manage and remove Skills on any Mycroft installation. It can install any Skill listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills) or from any Github repository.
 
 {% content-ref url="../../skill-development/mycroft-skills-manager/" %}
 [mycroft-skills-manager](../../skill-development/mycroft-skills-manager/)
@@ -273,9 +267,9 @@ Mycroft Skills Manager (MSM) is a command line tool used to add, manage and remo
 
 ### Creating a custom idle screen
 
-The idle screen (also called a Home screen) on the Mark II is fully customizable. The default screen is provided by the [Time Date Skill](https://github.com/MycroftAI/skill-date-time/blob/b5b7ded3149c1929b46c2e294fc6980325416cf6/\_\_init\_\_.py#L85) but you can create your own.&#x20;
+The idle screen (also called a Home screen) on the Mark II is fully customizable. The default screen is provided by the [Time Date Skill](https://github.com/MycroftAI/skill-date-time/blob/b5b7ded3149c1929b46c2e294fc6980325416cf6/\_\_init\_\_.py#L85) but you can create your own.
 
-Here we have a [simple example Skill](https://github.com/krisgesling/gez-homescreen-skill/) that allows the user to set their idle screen to be an image from a remote url through the Skill's settings.&#x20;
+Here we have a [simple example Skill](https://github.com/krisgesling/gez-homescreen-skill/) that allows the user to set their idle screen to be an image from a remote url through the Skill's settings.
 
 To switch between the available screens, pull down from the top of your screen to access the on device menu and select Additional Settings > Homescreen. As new options are added to Skills they will automatically show up in this list.
 
@@ -293,7 +287,7 @@ Before making changes to `mycroft-core` on the Mark II Dev Kit it's recommended 
 
 To return to a production state, it is recommended that you flash a fresh image of the Mark II OS.
 
-Mycroft-core is installed at `/opt/mycroft/`&#x20;
+Mycroft-core is installed at `/opt/mycroft/`
 
 The Mark II is currently using a feature branch of mycroft-core that includes all the hardware level compatibility code, and a few other tweaks that aren't ready to be merged into the mainline as they may impact other devices that run Mycroft.
 
@@ -303,7 +297,7 @@ The HEAD of the mycroft-core git repo will be in a detached state. This does not
 git checkout feature/mark-2
 ```
 
-If you are testing changes to mycroft-core, these will need to include the updates from that feature branch. Hence you can either branch off `feature/mark-2`&#x20;
+If you are testing changes to mycroft-core, these will need to include the updates from that feature branch. Hence you can either branch off `feature/mark-2`
 
 ```
 git checkout feature/mark-2 
@@ -335,15 +329,15 @@ mycroft-start restart all
 
 Automatic updates can be disabled or re-enabled from the [Device Settings in your Mycroft account](https://home.mycroft.ai/devices).
 
-By default, your Mark II checks for updates on a regular basis. When an update is available, it will apply it after a preset delay.&#x20;
+By default, your Mark II checks for updates on a regular basis. When an update is available, it will apply it after a preset delay.
 
 When requesting an update your device will fetch this directly from Pantacor’s servers. As we've always done, connections are initiated by the Mycroft Mark II. The server cannot initiate a connection with a device.
 
 ### **Who are Pantacor?**
 
-The Mycroft Mark II uses [Pantacor](https://pantacor.com) to provide system updates.&#x20;
+The Mycroft Mark II uses [Pantacor](https://pantacor.com) to provide system updates.
 
-Mycroft has partnered with Pantacor to provide a comprehensive and robust software life-cycle management solution. It is an open source solution that uses container technologies to securely and reliably maintain edge services on Linux devices.&#x20;
+Mycroft has partnered with Pantacor to provide a comprehensive and robust software life-cycle management solution. It is an open source solution that uses container technologies to securely and reliably maintain edge services on Linux devices.
 
 For the Mark II this provides a very stable and resilient operating system and update service. If something goes wrong on your Mark II, the device will automatically roll back to a previously working state.
 
@@ -351,7 +345,7 @@ The team at Pantacor share our commitment to open source, privacy and security. 
 
 ### Do I need an account with Pantacor?
 
-No, your Mycroft account handles everything and is the only account you need.&#x20;
+No, your Mycroft account handles everything and is the only account you need.
 
 ### What is pantavisor?
 
@@ -367,7 +361,7 @@ For further information on Pantacor check out:
 
 ### What is device cloning?
 
-Pantacor provides a method of cloning the configuration or “factory state” of a device, or any pristine update state that is available for a device. This is the configuration and other static assets used to generate or update an image. It does not, and cannot, clone the contents of your device. It cannot read your filesystem. A “clone” does not contain any of your Skills, Skill settings, data or other files.&#x20;
+Pantacor provides a method of cloning the configuration or “factory state” of a device, or any pristine update state that is available for a device. This is the configuration and other static assets used to generate or update an image. It does not, and cannot, clone the contents of your device. It cannot read your filesystem. A “clone” does not contain any of your Skills, Skill settings, data or other files.
 
 Device cloning would not be useful to perform on any end-users device. It is only useful during development to share modified system configurations with other developers.
 
@@ -383,7 +377,7 @@ Our [privacy policy](https://mycroft.ai/embed-privacy-policy/) outlines in great
 
 In developer mode, the Pantavisor system provides an SSH bridge running on port 8222. This bridge allows you to enter a shell session into any running container, regardless of whether that container is running an SSH server by itself. Due to the developer-friendly nature of the Mark II, this is enabled by default however no access is allowed until an SSH key is added to the Mycroft management panel.
 
-In previous devices like the Mark 1, we provided the ability to turn SSH on and off because they operated off a default username and password. Distributing an internet connected device with a default username and password providing shell access is a very big security risk. Hence the SSH service had to be disabled by default.&#x20;
+In previous devices like the Mark 1, we provided the ability to turn SSH on and off because they operated off a default username and password. Distributing an internet connected device with a default username and password providing shell access is a very big security risk. Hence the SSH service had to be disabled by default.
 
 The use of a key-pair removes the need to disable the SSH server. Without a public key on the device, and the ability to connect to your device on port 8222, no one can SSH into it.
 
@@ -397,13 +391,13 @@ If you need to switch this out, please note that there are some revision 1.4 Ras
 
 The Mark II is intended to be a device for consumers. As such we try to keep the system as lean as possible. How lean? Currently it is "no-installed-text-editor" lean!
 
-The `mycroft` container however is based on Ubuntu 20.04 so all of your standard tooling is available via the apt package manager.&#x20;
+The `mycroft` container however is based on Ubuntu 20.04 so all of your standard tooling is available via the apt package manager.
 
 ### Which GPIO pins are available?
 
 The Raspberry Pi GPIO pins 1, 12 and 13 are brought out to J9 on the SJ201. This is next to the volume up button on the front-right of the board if you are looking at the device face on. GPIO pin 0 is also not used.
 
-![ SJ201: J9 connector diagram](../../.gitbook/assets/gpio-pins.png)
+![SJ201: J9 connector diagram](../../.gitbook/assets/gpio-pins.png)
 
 ### How do I rotate the screen for my custom case?
 
