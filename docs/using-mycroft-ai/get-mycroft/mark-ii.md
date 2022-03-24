@@ -401,20 +401,9 @@ The Raspberry Pi GPIO pins 1, 12 and 13 are brought out to J9 on the SJ201. This
 
 ### How do I rotate the screen for my custom case?
 
-You can set the default rotation of your display in: `/usr/share/plasma/look-and-feel/org.mycroft.mark2/contents/defaults`
+You can set the default rotation of your display in this file:
 
-In this file you will find a range of settings defined. We want to find this section:
-
-```
-[kdeglobals][General]
-ColorScheme=MycroftMark2
-```
-
-and add a new value:
-
-```
-rotation=CW
-```
+[https://github.com/MycroftAI/mycroft-gui-mark-2/blob/master/lookandfeel/contents/plasmoidsetupscripts/org.kde.mycroft.mark2.js](https://github.com/MycroftAI/mycroft-gui-mark-2/blob/master/lookandfeel/contents/plasmoidsetupscripts/org.kde.mycroft.mark2.js)
 
 The available options are:
 
@@ -423,7 +412,7 @@ The available options are:
 * `CCW` = Counterclockwise (90 degrees)
 * `UD` = Upside down (180 degrees)
 
-Reboot your device to apply the changes.
+The `mycroft-gui-mark-2` package must then be recompiled for use.
 
 ## More questions?
 
