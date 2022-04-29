@@ -273,6 +273,6 @@ EOF
     mimic3 --ssml > output.wav
 ```
 
-## Feedback or questions? <a href="#more-questions" id="more-questions"></a>
+### Feedback or questions? <a href="#more-questions" id="more-questions"></a>
 
 Join us in [Mycroft Chat](https://chat.mycroft.ai/community/channels/mimic) or the [Community Forums](https://community.mycroft.ai).
