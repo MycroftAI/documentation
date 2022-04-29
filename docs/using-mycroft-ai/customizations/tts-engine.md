@@ -64,7 +64,7 @@ To our existing configuration values we will add the following:
 
 **Added in mycroft-core v21.2.2**
 
-You can further customize the amplitude, gap, capital, pitch and speed of espeak voices by adding them to your TTS configuration parameters.
+You can further customize the amplitude, gap, capital, pitch and speed of espeak voices by adding them to your TTS configuration parameters.&#x20;
 
 Example Config:
 
@@ -386,8 +386,8 @@ tts-server --use_cuda=false/true --model_name *modelNameFromList*
 
 Example commands:
 
-* _English:_ `tts-server --use_cuda=true --model_name tts_models/en/ek1/tacotron2`
-* _German:_ `tts-server --use_cuda=true --model_name tts_models/de/thorsten/tacotron2-DCA`
+* _English:_  `tts-server --use_cuda=true --model_name tts_models/en/ek1/tacotron2`
+* _German:_   `tts-server --use_cuda=true --model_name tts_models/de/thorsten/tacotron2-DCA`
 
 By default a Coqui TTS server uses the best vocoder for the selected TTS model. However you can override the default using the `--vocoder_name` parameter when starting your server.
 
