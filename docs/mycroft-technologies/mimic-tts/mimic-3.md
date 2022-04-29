@@ -4,7 +4,7 @@ description: A fast, privacy-focused, open-source, neural Text to Speech (TTS) e
 
 # Mimic 3
 
-<img src="https://mycroft.ai/wp-content/uploads/2020/10/Mimic_color.png" alt="Mimic logo" data-size="line">Mimic 3 is a neural text to speech engine that can run locally, even on low-end hardware like the Raspberry Pi 4.
+Mimic 3 is a neural text to speech engine that can run locally, even on low-end hardware like the Raspberry Pi 4.
 
 ### Voices
 
