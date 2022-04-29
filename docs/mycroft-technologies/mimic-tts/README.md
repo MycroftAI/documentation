@@ -13,5 +13,3 @@ You can hear samples from all three Mimic systems below, speaking the same [sent
 | [Mimic 1](../mimic-overview/) | [Mimic 1 sample](https://mycroft.ai/wp-content/uploads/2022/04/mimic1\_pangram.wav) | Yes   | [Festival Lite (flite)](http://www.festvox.org/flite)                                                       |
 | [Mimic 2](mimic-2.md)         | [Mimic 2 sample](https://mycroft.ai/wp-content/uploads/2022/04/mimic2\_pangram.wav) | No    | [Tacotron](https://github.com/keithito/tacotron)                                                            |
 | [Mimic 3](mimic-3.md)         | [Mimic 3 sample](https://mycroft.ai/wp-content/uploads/2022/04/mimic3\_pangram.wav) | Yes   | [VITS: Conditional Variational Autoencoder with Adversarial Learning](https://github.com/jaywalnut310/vits) |
-
-> The beige hue on the waters of the loch impressed all, including the French queen, before she heard that symphony again, just as young Arthur wanted.
