@@ -75,7 +75,7 @@ There are occasions where a Skill has not been triggered by the User but it shou
 In the case of our Ice Cream Skill - we might have a function that will execute when the customers order is ready. At this point, we also want to be responsive to the customers thanks, so we call `self.make_active()` to manually add our Skill to the front of the Active Skills List.
 
 {% hint style="warning" %}
-**Please note: **Any use of this method will be closely scrutinized during the Skills Marketplace submission process.
+**Please note:** Any use of this method will be closely scrutinized during the Skills Marketplace submission process.
 
 Skills that attempt to use the Converse method or the Active Skills List in ways that a normal user would not intend or appreciate, will not be approved.
 {% endhint %}

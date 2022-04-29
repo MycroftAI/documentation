@@ -11,8 +11,8 @@ Mycroft has two open source TTS engines.
 
 Mimic 1 is a fast, light-weight engine based on [Carnegie Mellon University's FLITE software](http://cmuflite.org). Whilst the original Mimic may sound more robotic, it is able to be synthesized on your device.
 
-{% content-ref url="../../mycroft-technologies/mimic-overview/" %}
-[mimic-overview](../../mycroft-technologies/mimic-overview/)
+{% content-ref url="../../mycroft-technologies/mimic-tts/mimic-overview.md" %}
+[mimic-overview.md](../../mycroft-technologies/mimic-tts/mimic-overview.md)
 {% endcontent-ref %}
 
 [Mimic 2](https://github.com/MycroftAI/mimic2#mimic2) is an implementation of Tacotron speech synthesis. It is a fork of [Keith Ito's project](https://github.com/keithito/tacotron) with additional tooling and code enhancements. Mimic 2 provides a much more natural sounding voice, however requires significant processing power to do so and is therefore cloud-based.
@@ -64,7 +64,7 @@ To our existing configuration values we will add the following:
 
 **Added in mycroft-core v21.2.2**
 
-You can further customize the amplitude, gap, capital, pitch and speed of espeak voices by adding them to your TTS configuration parameters.&#x20;
+You can further customize the amplitude, gap, capital, pitch and speed of espeak voices by adding them to your TTS configuration parameters.
 
 Example Config:
 
@@ -386,8 +386,8 @@ tts-server --use_cuda=false/true --model_name *modelNameFromList*
 
 Example commands:
 
-* _English:_  `tts-server --use_cuda=true --model_name tts_models/en/ek1/tacotron2`
-* _German:_   `tts-server --use_cuda=true --model_name tts_models/de/thorsten/tacotron2-DCA`
+* _English:_ `tts-server --use_cuda=true --model_name tts_models/en/ek1/tacotron2`
+* _German:_ `tts-server --use_cuda=true --model_name tts_models/de/thorsten/tacotron2-DCA`
 
 By default a Coqui TTS server uses the best vocoder for the selected TTS model. However you can override the default using the `--vocoder_name` parameter when starting your server.
 

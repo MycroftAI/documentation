@@ -279,7 +279,7 @@ Manages a collection of reminders. A Reminder is similar to an Alarm but instead
 > Hey Mycroft, add a reminder to **let the dog out** at **3pm** \
 > Hey Mycroft, remind me to **take out the trash** _<- - - Mycroft will ask WHEN_\
 > Hey Mycroft, remind me at **5pm** _<- - - - - - - - - Mycroft will ask FOR WHAT_ \
-> Hey Mycroft, set a reminder for me _<- - - Mycroft will ask WHEN and FOR WHAT _
+> Hey Mycroft, set a reminder for me _<- - - Mycroft will ask WHEN and FOR WHAT_&#x20;
 
 **Snooze the active reminder**
 
