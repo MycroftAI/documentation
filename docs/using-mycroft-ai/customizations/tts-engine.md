@@ -11,8 +11,8 @@ Mycroft has two open source TTS engines.
 
 Mimic 1 is a fast, light-weight engine based on [Carnegie Mellon University's FLITE software](http://cmuflite.org). Whilst the original Mimic may sound more robotic, it is able to be synthesized on your device.
 
-{% content-ref url="../../mycroft-technologies/mimic-tts/mimic-overview.md" %}
-[mimic-overview.md](../../mycroft-technologies/mimic-tts/mimic-overview.md)
+{% content-ref url="../../mycroft-technologies/mimic-overview/" %}
+[mimic-overview](../../mycroft-technologies/mimic-overview/)
 {% endcontent-ref %}
 
 [Mimic 2](https://github.com/MycroftAI/mimic2#mimic2) is an implementation of Tacotron speech synthesis. It is a fork of [Keith Ito's project](https://github.com/keithito/tacotron) with additional tooling and code enhancements. Mimic 2 provides a much more natural sounding voice, however requires significant processing power to do so and is therefore cloud-based.
