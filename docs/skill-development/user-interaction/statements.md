@@ -14,9 +14,9 @@ Within a Skill's Intent handler, you may pass a string of text to Mycroft and My
 
 To support multilingualism, the text that Mycroft speaks must come from a file. That file is called a dialog file. The dialog file contains statements (lines of text) that a listener in a particular language would consider to be equivalent.  For instance, in USA English, the statements "I am okay" and "I am fine" are equivalent, and both of these statements might appear in a dialog file used for responding to the USA English question: "How are you?".
 
-By convention, the dialog filename is formed by _dot connected_ _words _and must end with ".dialog".  The dialog filename should be descriptive of the contents as a whole.  Sometimes, the filename describes the question being answered, and other times, the filename describes the answer itself.  For the example above, the dialog filename might be:** how.are.you.dialog** or **i.am.fine.dialog**.
+By convention, the dialog filename is formed by _dot connected_ _words_ and must end with ".dialog".  The dialog filename should be descriptive of the contents as a whole.  Sometimes, the filename describes the question being answered, and other times, the filename describes the answer itself.  For the example above, the dialog filename might be: **how.are.you.dialog** or **i.am.fine.dialog**.
 
-Multilingualism is accomplished by translating the dialog files into other languages, and storing them in their own directory named for the country and language. The filenames remain the same.  Using the same filenames in separate language dependent directories allows the Skills to be language agnostic; no hard-coded text strings.  Adjust the language setting for your Device** **and Mycroft uses the corresponding set of dialog files.  If the desired file does not exist in the directory for that language, Mycroft will use the file from the USA English directory.
+Multilingualism is accomplished by translating the dialog files into other languages, and storing them in their own directory named for the country and language. The filenames remain the same.  Using the same filenames in separate language dependent directories allows the Skills to be language agnostic; no hard-coded text strings.  Adjust the language setting for your Device **** and Mycroft uses the corresponding set of dialog files.  If the desired file does not exist in the directory for that language, Mycroft will use the file from the USA English directory.
 
 As an example of the concept, the contents of **how.are.you.dialog** in the directory for the French language in France (fr-fr) might include the statement: "Je vais bien".
 
@@ -62,7 +62,7 @@ def handle_what_is(self, message):
     self.speak_dialog('tomato.description')
 ```
 
-With the Tomato Skill installed, if the User utters** **"Hey Mycroft, what is a tomato?", the Intent handler method `handle_what_is()` will be called.
+With the Tomato Skill installed, if the User utters **** "Hey Mycroft, what is a tomato?", the Intent handler method `handle_what_is()` will be called.
 
 Inside `handle_what_is()`, we find: `self.speak_dialog('tomato.description')` &#x20;
 
