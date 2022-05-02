@@ -2,7 +2,7 @@
 description: >-
   Mimic Recording Studio provides simplifies the collection of voice training
   data from individuals, by allowing you to speak and record phrases from a
-  _corpus_. The recordings can then be input into ma
+  corpus.
 ---
 
 # Mimic Recording Studio
