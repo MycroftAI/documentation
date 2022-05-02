@@ -4,7 +4,7 @@ description: Mimic is Mycroft AI's family of Text to Speech engines.
 
 # Mimic TTS
 
-![](../../.gitbook/assets/Mimic3-intro-banner\_v2.png)
+![](../../.gitbook/assets/Mimic3-intro-banner\_v2.1.png)
 
 Over the years, Mimic like other Mycroft components has gotten clearer, faster, and more flexible.
 
