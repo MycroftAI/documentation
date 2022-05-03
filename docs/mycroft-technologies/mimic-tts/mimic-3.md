@@ -31,13 +31,13 @@ The Mark 1 contains a Raspberry Pi 3B so Mimic 3 can run locally, however it wil
 If you have Mycroft installed, you can install the plugin with:
 
 ```
-mycroft-pip install plugin-tts-mimic3[all]
+mycroft-pip install mycroft-plugin-tts-mimic3[all]
 ```
 
 otherwise, you can use `pip` directly:
 
 ```
-pip install plugin-tts-mimic3[all]
+pip install mycroft-plugin-tts-mimic3[all]
 ```
 
 Language support can be selectively installed by replacing `all` with the two-character language group:
