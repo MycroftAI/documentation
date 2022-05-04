@@ -2,7 +2,11 @@
 description: A fast, privacy-focused, open-source, neural Text to Speech (TTS) engine.
 ---
 
-# Mimic 3
+# COMING SOON: Mimic 3
+
+{% hint style="warning" %}
+Mimic 3 is not yet released. Installation instructions on this page will not yet work.
+{% endhint %}
 
 Mimic 3 is a neural text to speech engine that can run locally, even on low-end hardware like the Raspberry Pi 4.
 
@@ -84,7 +88,7 @@ Additional options can be set in `mycroft.conf` like:
 
 where options are:
 
-* `voice` - [voice key](mimic-3.md#voices)
+* `voice` - [voice key](coming-soon-mimic-3.md#voices)
 * `preloaded_voices` - list of voice keys to load at startup
 * `length_scale` - speed of speaking (< 1 is faster, > 1 is slower)
 * `noise_scale` - volatility of speaker
@@ -108,7 +112,7 @@ With the web server running, clients can connect through the command line with t
 mimic3 --remote 'http://localhost:59125' 'Some text to speak.' > output.wav
 ```
 
-See below for [more command line examples](mimic-3.md#command-line-interface).
+See below for [more command line examples](coming-soon-mimic-3.md#command-line-interface).
 
 #### Mary TTS API <a href="#mary-tts-api" id="mary-tts-api"></a>
 
@@ -133,9 +137,9 @@ The Mimic 3 command line interface makes it easy to convert text into audio.
 mimic3 'Some text to speak.' > output.wav
 ```
 
-Loading voice models can be slow, so the [web server](mimic-3.md#web-server) is recommended for repeated usage.
+Loading voice models can be slow, so the [web server](coming-soon-mimic-3.md#web-server) is recommended for repeated usage.
 
-Many different voices are available in over twenty languages, with more already on the way. Specify the voice to use with the `--voice` flag and the relevant [Mimic 3 voice key](mimic-3.md#voices).
+Many different voices are available in over twenty languages, with more already on the way. Specify the voice to use with the `--voice` flag and the relevant [Mimic 3 voice key](coming-soon-mimic-3.md#voices).
 
 ```bash
 mimic3 --voice 'en_us/vctk_low' 'Using a different voice.' > output.wav
