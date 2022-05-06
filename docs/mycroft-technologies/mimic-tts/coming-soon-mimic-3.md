@@ -449,7 +449,15 @@ mimic3-server
 
 This will start a web server at [http://localhost:59125](http://localhost:59125)
 
-See `mimic3-server --debug` for more options.
+To access the web server from a different device, run `mimic3-server --host 0.0.0.0` (you can also change the port with `--port`).
+
+Some other useful arguments to `mimic3-server`:
+
+* `--preload-voice <VOICE_KEY>` - loads a voice model at startup instead of on first use
+* `--cache-dir <DIRECTORY>` - caches WAV files in `<DIRECTORY>` (uses system temporary directory if no `<DIRECTORY>`)
+* `--num-threads <THREADS>` - use more than one thread of inference, increasing throughput for multiple clients
+
+See `mimic3-server --help` for more options.
 
 
 #### Endpoints
