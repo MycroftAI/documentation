@@ -20,7 +20,7 @@ It is the default text to speech engine on the [Mark II](https://mycroft.ai/prod
 * [Learn how it works](#how-it-works)
 
 
-## Installation <a href="#installation" id="installation"></a>
+## Installation
 
 
 ### Hardware Requirements
@@ -29,19 +29,23 @@ Mimic 3 was designed to run on the Raspberry Pi 4 (64-bit OS), but will also run
 
 * `amd64`
     * AMD/Intel-based desktops/laptops
-    * Very fast on Ryzen 9 5950X, [RTF](#real-time-factor) less than 0.05
+    * Tested:
+        * Very fast on Ryzen 9 5950X, [RTF](#real-time-factor) less than 0.05
 * `arm64`
     * Raspberry Pi 3/4 and Zero 2 with [64-bit Pi OS](https://www.raspberrypi.com/news/raspberry-pi-os-64-bit/)
-    * Usable on Pi 4, [RTF](#real-time-factor) around 0.5
+    * Tested:
+        * Usable on Pi 4, [RTF](#real-time-factor) around 0.5
 * `armv7l`
     * Raspberry Pi 1/2/3/4 and Zero 2 with 32-bit Pi OS
-    * Slow on Pi 3, [RTF](#real-time-factor) around 2.5
+    * Tested:
+        * Slow on Pi 3, [RTF](#real-time-factor) around 2.5
 
 
 #### Real-Time Factor
 
 The performance of a text to speech system is often measured by its real-time factor (RTF). This is the ratio of how long it takes to generate audio to how long the audio is when spoken. 
 In general, **lower is better** for RTF.
+
 An RTF of 1 means that it took one second of compute time to generate one second of spoken audio. 
 An RTF of 0.5 is better than 1, however, since the same second of spoken audio now only took half a second to generate.
 
@@ -106,7 +110,7 @@ See the [plugin's documentation](https://github.com/MycroftAI/plugin-tts-mimic3)
 
 ### Docker Image
 
-A pre-built Docker image is available for `x86_64` as well as 32/64-bit ARM:
+A pre-built Docker image is available for AMD/Intel CPUs as well as 32/64-bit ARM:
 
 
 ``` sh
@@ -117,7 +121,7 @@ docker run \
        'mycroftai/mimic3'
 ```
 
-Visit the web page at http://localhost:59125
+Visit the web page at [http://localhost:59125](http://localhost:59125)
 
 The following convenience scripts are also available:
 
@@ -131,7 +135,7 @@ The following convenience scripts are also available:
 Grab the Debian package from the [latest release](https://github.com/mycroftAI/mimic3/releases) for your platform:
 
 * `mycroft-mimic3-tts_<version>_amd64.deb`
-    * For desktops and laptops (`x86_64` CPUs)
+    * For desktops and laptops (AMD/Intel CPUs)
 * `mycroft-mimic3-tts_<version>_arm64.deb`
     * For Raspberry 3/4 and Zero 2 with [64-bit Pi OS](https://www.raspberrypi.com/news/raspberry-pi-os-64-bit/)
 * `mycroft-mimic3-tts_<version>_armhf.deb`
@@ -198,7 +202,7 @@ Once installed, the following commands will be available in `.venv/bin`:
 ---
 
 
-## Usage <a href="#usage" id="usage"></a>
+## Usage
 
 There are many ways to use Mimic 3, including:
 
@@ -211,7 +215,7 @@ There are many ways to use Mimic 3, including:
 
 Voices in Mimic 3 are keyed by a name with specific parts. These parts include the voice's language, region, training dataset, quality level, and speaker.
 
-![Structure of a Mimic 3 voice key](https://mycroft-ai.gitbook.io/img/mimic3-voice_parts.png)
+![Structure of a Mimic 3 voice key](../../../img/mimic3-voice_parts.png)
 
 The default voice is `en_UK/apope_low`
 
@@ -430,11 +434,11 @@ If you have a GPU with support for CUDA, you can accelerate synthesis with the `
 Using [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) is highly recommended. See the `Dockerfile.gpu` file in the parent repository for an example of how to build a compatible container.
 
 
-### Web Server <a href="#web-server" id="web-server"></a>
+### Web Server
 
 A small HTTP server is available for serving multiple clients. This is faster than the command-line interface since voice models only need to be loaded once.
 
-![screenshot of web interface](https://mycroft-ai.gitbook.io/img/mimic3-server_screenshot.jpg)
+![screenshot of web interface](../../../img/mimic3-server_screenshot.jpg)
 
 
 #### Running the Server
@@ -443,7 +447,7 @@ A small HTTP server is available for serving multiple clients. This is faster th
 mimic3-server
 ```
 
-This will start a web server at `http://localhost:59125`
+This will start a web server at [http://localhost:59125](http://localhost:59125)
 
 See `mimic3-server --debug` for more options.
 
@@ -457,7 +461,7 @@ See `mimic3-server --debug` for more options.
 * `/api/voices`
     * Returns a JSON list of available voices
 
-An [OpenAPI](https://www.openapis.org/) test page is also available at `http://localhost:59125/openapi`
+An [OpenAPI](https://www.openapis.org/) test page is also available at [http://localhost:59125/openapi](http://localhost:59125/openapi)
 
 
 #### CUDA Acceleration
@@ -469,7 +473,7 @@ Using [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) is highly recomme
 
 #### Running the Client
 
-Assuming you have started `mimic3-server` and can access `http://localhost:59125`, then run:
+Assuming you have started `mimic3-server` and can access [http://localhost:59125](http://localhost:59125), then run:
 
 ``` sh
 mimic3 --remote --voice 'en_UK/apope_low' 'My hovercraft is full of eels.' > hovercraft_eels.wav
@@ -487,7 +491,7 @@ Use the Mimic 3 web server as a drop-in replacement for [MaryTTS](http://mary.df
 Make sure to use a Mimic 3 [voice key](#voice-keys) like `en_UK/apope_low` instead of a MaryTTS voice name.
 
 
-### Speech Dispatcher <a href="#speech-dispatcher" id="speech-dispatcher"></a>
+### Speech Dispatcher
 
 Mimic 3 can be used with the [Orca screen reader](https://help.gnome.org/users/orca/stable/) for Linux via [speech-dispatcher](https://github.com/brailcom/speechd).
 
@@ -565,10 +569,10 @@ If that's successful, ensure it starts at boot:
 systemctl --user enable mimic3
 ```
 
-Verify the web server is running by visiting http://localhost:59125
+Verify the web server is running by visiting [http://localhost:59125](http://localhost:59125)
 
 
-### Downloading Voices <a href="#downloading-voices" id="downloading-voices"></a>
+### Downloading Voices
 
 Mimic 3 automatically downloads voices when they're first used, but you can manually download them too with `mimic3-download`.
 
@@ -631,7 +635,7 @@ Mimic 3 uses the [VITS](https://arxiv.org/abs/2106.06103), a "Conditional Variat
 
 Our implementation is heavily based on [Jaehyeon Kim's PyTorch model](https://github.com/jaywalnut310/vits), with the addition of [Onnx runtime](https://onnxruntime.ai/) export for speed. 
 
-![mimic 3 architecture](img/mimic3-architecture.png)
+![mimic 3 architecture](../../../img/mimic3-architecture.png)
 
 
 ### Phoneme Ids
@@ -641,7 +645,7 @@ At a high level, Mimic 3 performs two important tasks:
 1. Converting raw text to numeric input for the VITS TTS model, and
 2. Using the model to transform numeric input into audio output
 
-The second step is the same for every voice, but the first step (text to numbers) varies. There are currently three implementations of step 1, described below.
+The second step is the same for every voice, but the first step (text to numbers) varies. There are currently four implementations of step 1, described below.
 
 
 ### gruut Phoneme-based Voices
@@ -700,6 +704,6 @@ Mimic 3 is available under the [AGPL v3 license](https://github.com/MycroftAI/mi
 ---
 
 
-## Feedback or questions? <a href="#more-questions" id="more-questions"></a>
+## Feedback or questions?
 
 Join us in [Mycroft Chat](https://chat.mycroft.ai/community/channels/mimic) or the [Community Forums](https://community.mycroft.ai).
