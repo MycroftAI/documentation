@@ -38,7 +38,7 @@ Mimic 3 was designed to run on the Raspberry Pi 4 (64-bit OS), but will also run
 * `armv7l`
     * Raspberry Pi 1/2/3/4 and Zero 2 with 32-bit Pi OS
     * Tested:
-        * Slow on Pi 3, [RTF](#real-time-factor) around 2.5
+        * Slow on Pi 3, [RTF](#real-time-factor) around 1.3
 
 
 #### Real-Time Factor
