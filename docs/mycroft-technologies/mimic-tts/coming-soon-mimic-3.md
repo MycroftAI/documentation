@@ -43,6 +43,14 @@ The performance of a text to speech system is often measured by its real-time fa
 
 An RTF of 1 means that it took one second of compute time to generate one second of spoken audio. An RTF of 0.5 is better than 1, however, since the same second of spoken audio now only took half a second to generate.
 
+#### Mycroft Devices
+
+| Device  | Supported       | Notes                                                                                                         |
+| ------- | --------------- | ------------------------------------------------------------------------------------------------------------- |
+| Mark II | Full support    | Default engine. Runs well locally.                                                                            |
+| Mark 1  | Partial support | Runs slower than real-time because the Mark 1 contains a Raspberry Pi 3B. It is not recommended at this time. |
+| Picroft | Variable        | Varies depending on the hardware. A Raspberry Pi 4 or better is recommended.                                  |
+
 ### Software Requirements
 
 * Linux
