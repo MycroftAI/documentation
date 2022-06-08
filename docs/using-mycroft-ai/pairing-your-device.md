@@ -7,7 +7,7 @@ description: >-
 
 # Pairing Your Device
 
-Each of your Mycroft **Device(s)** must be **Paired** with your [home.mycroft.ai](https://home.mycroft.ai) account.
+Each of your Mycroft **Device(s)** must be **Paired** with your [home.mycroft.ai](https://home.mycroft.ai) account. If you already have a Mycroft account, you can start pairing a new device by visiting: [home.mycroft.ai/pair](https://home.mycroft.ai/pair)
 
 Pairing makes information available to your Device to personalise your experience, such as which units of measurement you prefer, and your general location.
 
