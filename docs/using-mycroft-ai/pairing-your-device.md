@@ -7,7 +7,7 @@ description: >-
 
 # Pairing Your Device
 
-Each of your Mycroft **Device\(s\)** must be **Paired** with your [home.mycroft.ai](https://home.mycroft.ai) account.
+Each of your Mycroft **Device(s)** must be **Paired** with your [home.mycroft.ai](https://home.mycroft.ai) account.
 
 Pairing makes information available to your Device to personalise your experience, such as which units of measurement you prefer, and your general location.
 
@@ -42,7 +42,7 @@ To add a Device to your home.mycroft.ai account, you will need a 6-character **R
 
 After your device has connected to the internet, Mycroft will speak a unique six character code. For the Registration Code CKAMP7, Mycroft would say:
 
-```text
+```
 I'm connected to the internet and need to be registered. Go to home.mycroft.ai and use the Registration Code
 C for Charlie
 K for Kilo
@@ -58,7 +58,7 @@ Your pairing code will be different.
 
 After you have connected your Mark 1 to Wifi, Mycroft will speak a 6-character **Registration Code**. This code will also appear on Mycroft's LED screen.
 
-If you're stuck connecting to Wifi, please read the [Mark 1 Getting Started Guide \(PDF, 290Kb\)](https://mycroft.ai/wp-content/uploads/2017/06/Mark_1_User_Guide.pdf).
+If you're stuck connecting to Wifi, please read the [Mark 1 Getting Started Guide (PDF, 290Kb)](https://mycroft.ai/wp-content/uploads/2017/06/Mark\_1\_User\_Guide.pdf).
 
 #### Picroft
 
@@ -70,9 +70,9 @@ If you're stuck connecting to Wifi, please read the [Picroft documentation](http
 
 After your Mycroft for Linux installation is successfully installed, Mycroft will speak a 6-character **Registration Code**.
 
-### Pairing your Device\(s\) to your home.mycroft.ai account
+### Pairing your Device(s) to your home.mycroft.ai account
 
-Once you have your Registration Code, you can then go to home.mycroft.ai -&gt; Add Device.
+Once you have your Registration Code, you can then go to [home.mycroft.ai/pair](https://home.mycroft.ai/pair)
 
 Use your Pairing Code, and provide a meaningful name and location for the Device. This will help you in the future if you have multiple devices. All other options will be pre-filled from your [default device settings](pairing-your-device.md#defaults), but can be changed for each individual device.
 
@@ -112,10 +112,9 @@ Settings available:
 
 These allow you to choose your preferred:
 
-* Units of measurement
+*   Units of measurement
 
-  \(_NOTE: choosing Miles instead of Kilometers will also switch your temperature format to Fahrenheit instead of Celsius_\)
-
+    (_NOTE: choosing Miles instead of Kilometers will also switch your temperature format to Fahrenheit instead of Celsius_)
 * Time format
 * Date format
 
@@ -128,4 +127,3 @@ The Device Default settings define your base configuration and will be used for 
 ### Advanced settings
 
 Advanced users may configure additional options using an on-device configuration file. This includes setting an alternative speech-to-text engine, text-to-speech engine, or wake word listener. See the [`mycroft.conf` documentation](https://mycroft.ai/documentation/mycroft-conf/) for more detail.
-
