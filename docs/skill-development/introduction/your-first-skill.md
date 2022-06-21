@@ -10,7 +10,7 @@ description: >-
 
 If you haven't already, check out our [Introduction to Skill Development](./). This walk through assumes you:
 
-* Know some basic knowledge of [Python programming](https://www.python.org),
+* Know some basic knowledge of [Python programming](https://www.python.org/),
 * have an account on [Github.com](https://github.com), and
 * have a [working version of Mycroft](../../using-mycroft-ai/get-mycroft/).
 

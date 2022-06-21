@@ -36,7 +36,7 @@ The book is available to purchase through normal retailers, or to download for f
 
 ### Automate the Boring Stuff with Python
 
-"In [Automate the Boring Stuff with Python](https://automatetheboringstuff.com), you'll learn how to use Python to write programs that do in minutes what would take you hours to do by hand-no prior programming experience required. Once you've mastered the basics of programming, you'll create Python programs that effortlessly perform useful and impressive feats of automation."
+"In [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/), you'll learn how to use Python to write programs that do in minutes what would take you hours to do by hand-no prior programming experience required. Once you've mastered the basics of programming, you'll create Python programs that effortlessly perform useful and impressive feats of automation."
 
 ## Courses
 
@@ -46,7 +46,7 @@ The book is available to purchase through normal retailers, or to download for f
 
 ### LearnPython.org by DataCamp
 
-[The LearnPython.org interactive tutorial](https://www.learnpython.org) walks you through all the basics of Python and provides interactive coding challenges to put it into practice.
+[The LearnPython.org interactive tutorial](https://www.learnpython.org/) walks you through all the basics of Python and provides interactive coding challenges to put it into practice.
 
 ### TutorialsPoint Python Tutorial
 

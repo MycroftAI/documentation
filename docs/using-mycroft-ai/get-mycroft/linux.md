@@ -20,9 +20,9 @@ This section of documentation assumes the following:
 
 Whilst Mycroft runs on a Raspberry Pi 3B or above, this is achieved through a custom release of Raspbian Lite significantly reducing the system overhead by not running a desktop environment and other unnecessary processes. Mycroft will run on older hardware however your experience may vary significantly.
 
-Our [Precise wake word engine](https://github.com/MycroftAI/mycroft-precise#mycroft-precise) also relies upon TensorFlow. For x86 Intel processors this requires the AVX \(Advanced Vector Extensions\) instruction set. To ensure your system supports AVX open a terminal and run: `grep avx /proc/cpuinfo`. AVX should be listed under the flags for each CPU core. If nothing is returned it is most likely that your system does not support AVX. Technical users may be able to build an older version of TensorFlow \(1.13\) from source using the [instructions provided on their website](https://www.tensorflow.org/install/source). Alternatively you may use Mycroft with the PocketSphinx wake word engine; see [Switching Wake Word Listeners](../customizations/wake-word.md#switching-wake-word-listeners).
+Our [Precise wake word engine](https://github.com/MycroftAI/mycroft-precise#mycroft-precise) also relies upon TensorFlow. For x86 Intel processors this requires the AVX (Advanced Vector Extensions) instruction set. To ensure your system supports AVX open a terminal and run: `grep avx /proc/cpuinfo`. AVX should be listed under the flags for each CPU core. If nothing is returned it is most likely that your system does not support AVX. Technical users may be able to build an older version of TensorFlow (1.13) from source using the [instructions provided on their website](https://www.tensorflow.org/install/source). Alternatively you may use Mycroft with the PocketSphinx wake word engine; see [Switching Wake Word Listeners](../customizations/wake-word.md#switching-wake-word-listeners).
 
-The ARM architecture has a similar requirement called SIMD \(Single Instruction, Multiple Data\). This has been available since ARMv7 which includes the Cortex A53 used by the RaspberryPi and the Cortex A7 from the OrangePi.
+The ARM architecture has a similar requirement called SIMD (Single Instruction, Multiple Data). This has been available since ARMv7 which includes the Cortex A53 used by the RaspberryPi and the Cortex A7 from the OrangePi.
 
 ## Getting Started
 
@@ -36,7 +36,7 @@ The `mycroft-core` repo is at [https://github.com/MycroftAI/mycroft-core](https:
 
 The instructions below will install Mycroft in your HOME directory.
 
-```text
+```
 cd ~/
 git clone https://github.com/MycroftAI/mycroft-core.git
 cd mycroft-core
@@ -59,7 +59,7 @@ The Mycroft for Linux installation includes two scripts that you use to control 
 
 The usage of `start-mycroft.sh` is:
 
-```text
+```
 usage: start-mycroft.sh [command] [params]
 
 Services:
@@ -92,7 +92,7 @@ Examples:
 
 #### To start all Mycroft services at once
 
-```text
+```
 $ ./start-mycroft.sh all
 Starting all mycroft-core services
 Initializing...
@@ -106,7 +106,7 @@ Starting background service voice
 
 Services can also be started individually.
 
-```text
+```
 $ ./start-mycroft.sh audio
 Initializing...
 Starting background service audio
@@ -114,7 +114,7 @@ Starting background service audio
 
 ### Stopping Mycroft services
 
-```text
+```
 $ ./stop-mycroft.sh
 Stopping all mycroft-core services
 ```
@@ -145,7 +145,7 @@ _NOTE: In order to complete this step, you will need to know the `hostname` and 
 
 ## Using Mycroft behind a proxy without authentication
 
-If you are using Mycroft behind a proxy without authentication, add the following environment variables, changing the `proxy_hostname.com` and `proxy_port` for the values for your network. These commands are executed from the Linux command line interface \(CLI\).
+If you are using Mycroft behind a proxy without authentication, add the following environment variables, changing the `proxy_hostname.com` and `proxy_port` for the values for your network. These commands are executed from the Linux command line interface (CLI).
 
 ```bash
 $ export http_proxy=http://proxy_hostname.com:proxy_port
@@ -155,7 +155,7 @@ $ export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,0.0.0.0,::1
 
 ## Using Mycroft behind an authenticated proxy
 
-If you are behind a proxy which requires authentication, add the following environment variables, changing the `proxy_hostname.com` and `proxy_port` for the values for your network. These commands are executed from the Linux command line interface \(CLI\).
+If you are behind a proxy which requires authentication, add the following environment variables, changing the `proxy_hostname.com` and `proxy_port` for the values for your network. These commands are executed from the Linux command line interface (CLI).
 
 ```bash
 $ export http_proxy=http://user:password@proxy_hostname.com:proxy_port
@@ -185,7 +185,7 @@ cd ~/mycroft-core # or the path to your mycroft-core installation
 
 This does not remove the cloned `mycroft-core` project directory. If cloned directly into the home directory, this can be removed with:
 
-```text
+```
 rm -rf ~/mycroft-core
 ```
 
@@ -208,15 +208,8 @@ rm -rf "$HOME/mycroft-core" # Mycroft-core installation
 Depending on your system, you may need to run the commands with `sudo`
 {% endhint %}
 
-## Snap Package
-
-A pre-Alpha Snap package is available, with the aim to provide a simple and secure means of installing Mycroft on a broad range of Linux distributions.
-
-The Snap package currently has a number of major usability bugs that need to be addressed before it will be promoted to an installable channel. For now we recommend the git clone method above, but we welcome any help in improving Mycroft as a Snap:
-
-{% page-ref page="snap.md" %}
-
 ## Troubleshooting
 
-{% page-ref page="../troubleshooting/" %}
-
+{% content-ref url="../troubleshooting/" %}
+[troubleshooting](../troubleshooting/)
+{% endcontent-ref %}

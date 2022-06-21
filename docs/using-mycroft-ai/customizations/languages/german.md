@@ -4,7 +4,7 @@ description: >-
   Seite beinhaltet auch eine Kurzanleitung.
 ---
 
-# German
+# Deutsch (German)
 
 {% hint style="warning" %}
 _**ACHTUNG WICHTIG:** Die in dieser Anleitung erwähnten Pfade `/usr/local/share` sind bei Manjaro / Arch-Linux - und ggf. auch bei anderen Linux-Distributionen - anders! Hier muss folgender Pfad gewählt werden: `/usr/share/pocketsphinx/`_
@@ -16,7 +16,7 @@ _**ACHTUNG WICHTIG:** Die in dieser Anleitung erwähnten Pfade `/usr/local/share
 
 Zuerst, [verbinden Sie sich mit ihrem Gerät (z.B. SSH)](https://mycroft.ai/documentation/mark-1/#connecting-to-the-mark-1-via-ssh).
 
-Folgend wird an den Beispielen Google/Mbrola der Sprachoutput (TTS) auf deutsch gesetzt. Mycroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de), [responsive\_voice](https://responsivevoice.org), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird. Zudem arbeitet die deutsche Community aktuell an einer eigenen TTS Stimme auf [tacotron2](https://github.com/thorstenMueller/deep-learning-german-tts) Basis.
+Folgend wird an den Beispielen Google/Mbrola der Sprachoutput (TTS) auf deutsch gesetzt. Mycroft bietet weitere TTS-Möglichkeiten über [marytts](http://mary.dfki.de/), [responsive\_voice](https://responsivevoice.org/), [polly](https://aws.amazon.com/de/polly/), auf die hier jedoch nicht näher eingegangen wird. Zudem arbeitet die deutsche Community aktuell an einer eigenen TTS Stimme auf [tacotron2](https://github.com/thorstenMueller/deep-learning-german-tts) Basis.
 
 ## Konfiguration editieren
 

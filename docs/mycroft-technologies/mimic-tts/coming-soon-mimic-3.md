@@ -321,7 +321,7 @@ mimic3 --interactive < long.txt
 
 Each input line will be synthesized and played (see `--play-program`). By default, 5 sentences will be kept in an output queue, only blocking synthesis when the queue is full. You can adjust this value with `--result-queue-size`.
 
-If your long text is fixed-width with blank lines separating paragraphs like those from [Project Gutenberg](https://www.gutenberg.org), use the `--process-on-blank-line` option so that sentences will not be broken at line boundaries. For example, you can listen to "Alice in Wonderland" like this:
+If your long text is fixed-width with blank lines separating paragraphs like those from [Project Gutenberg](https://www.gutenberg.org/), use the `--process-on-blank-line` option so that sentences will not be broken at line boundaries. For example, you can listen to "Alice in Wonderland" like this:
 
 ```
 curl --output - 'https://www.gutenberg.org/files/11/11-0.txt' | \
@@ -444,7 +444,7 @@ See `mimic3-server --help` for more options.
 * `/api/voices`
   * Returns a JSON list of available voices
 
-An [OpenAPI](https://www.openapis.org) test page is also available at [http://localhost:59125/openapi](http://localhost:59125/openapi)
+An [OpenAPI](https://www.openapis.org/) test page is also available at [http://localhost:59125/openapi](http://localhost:59125/openapi)
 
 #### CUDA Acceleration
 
@@ -466,7 +466,7 @@ See `mimic3 --help` for more options.
 
 #### MaryTTS Compatibility
 
-Use the Mimic 3 web server as a drop-in replacement for [MaryTTS](http://mary.dfki.de), for example with [Home Assistant](https://www.home-assistant.io/integrations/marytts/).
+Use the Mimic 3 web server as a drop-in replacement for [MaryTTS](http://mary.dfki.de/), for example with [Home Assistant](https://www.home-assistant.io/integrations/marytts/).
 
 Make sure to use a Mimic 3 [voice key](coming-soon-mimic-3.md#voice-keys) like `en_UK/apope_low` instead of a MaryTTS voice name.
 
@@ -607,7 +607,7 @@ See `mimic3-download --help` for more options.
 
 Mimic 3 uses the [VITS](https://arxiv.org/abs/2106.06103), a "Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech". VITS is a combination of the [GlowTTS duration predictor](https://arxiv.org/abs/2005.11129) and the [HiFi-GAN vocoder](https://arxiv.org/abs/2010.05646).
 
-Our implementation is heavily based on [Jaehyeon Kim's PyTorch model](https://github.com/jaywalnut310/vits), with the addition of [Onnx runtime](https://onnxruntime.ai) export for speed.
+Our implementation is heavily based on [Jaehyeon Kim's PyTorch model](https://github.com/jaywalnut310/vits), with the addition of [Onnx runtime](https://onnxruntime.ai/) export for speed.
 
 ![mimic 3 architecture](../../../img/mimic3-architecture.png)
 

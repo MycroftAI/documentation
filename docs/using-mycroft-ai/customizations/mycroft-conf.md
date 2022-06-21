@@ -10,7 +10,7 @@ See a [list of all variables available within `mycroft.conf`](https://github.com
 
 ## What is `mycroft.conf`?
 
-`mycroft.conf` is a [JSON](https://www.json.org)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. The `mycroft.conf` file contains information about the Device itself, like what type of Device and Enclosure it is, as well as information about user preferences. If you haven't specified preferences, then `mycroft.conf` will contain some default values. Your Device, and Skills installed on your Device, use `mycroft.conf` to provide additional functionality.
+`mycroft.conf` is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. The `mycroft.conf` file contains information about the Device itself, like what type of Device and Enclosure it is, as well as information about user preferences. If you haven't specified preferences, then `mycroft.conf` will contain some default values. Your Device, and Skills installed on your Device, use `mycroft.conf` to provide additional functionality.
 
 You can edit your `mycroft.conf` files directly however be very aware that any small syntax error such as a missing comma will prevent the file from being read entirely. In these instances Mycroft may discard the file entirely and generate a fresh copy.
 
@@ -61,7 +61,7 @@ See a [list of all variables available within `mycroft.conf`](https://github.com
 
 ## `mycroft_web_cache.json`
 
-`mycroft_web_cache.json` is is a [JSON](https://www.json.org)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ (which determines _Time Zone_), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
+`mycroft_web_cache.json` is is a [JSON](https://www.json.org/)-formatted file that is saved locally on your Mycroft Device, such as Picroft or Mark 1. `mycroft_web_cache.json` is a cached copy of the settings on your [home.mycroft.ai](https://home.mycroft.ai) account, such as your _Location_ (which determines _Time Zone_), which _Voice_ you have selected and your preference for _Measurements_ such as temperature and distance.
 
 Both of these files are regularly used in troubleshooting, so it's useful to know what information they hold, and where they are stored on your Device.
 

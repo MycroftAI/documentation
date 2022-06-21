@@ -24,7 +24,7 @@ A Wake Word is a phrase you use to tell Mycroft you're about to issue a command.
 
 There are two technologies that Mycroft.AI currently uses for Wake Word detection:
 
-* [PocketSphinx](https://github.com/cmusphinx/pocketsphinx): PocketSphinx is part of the broader [CMUSphinx package](https://cmusphinx.github.io), developed by [Carnegie Mellon University](https://www.cmu.edu). PocketSphinx is a lightweight speech recognition engine, specifically tuned for handheld and mobile devices.
+* [PocketSphinx](https://github.com/cmusphinx/pocketsphinx): PocketSphinx is part of the broader [CMUSphinx package](https://cmusphinx.github.io/), developed by [Carnegie Mellon University](https://www.cmu.edu). PocketSphinx is a lightweight speech recognition engine, specifically tuned for handheld and mobile devices.
 
 Because PocketSphinx is trained on English speech, your Wake Word currently needs to be an English word, like `Hello Mike`, `Hi there Mickey` or `Hey Mike`. Wake Words in other languages, like Spanish, French or German, won't work as well.
 
@@ -34,7 +34,7 @@ Because PocketSphinx is trained on English speech, your Wake Word currently need
 
 Speech to Text (STT) software is used to take spoken words, and turn them into text phrases that can then be acted on.
 
-We are working with Mozilla to build [DeepSpeech](https://github.com/mozilla/DeepSpeech). A fully open source STT engine, based on Baidu’s Deep Speech architecture and implemented with Google’s [TensorFlow](https://www.tensorflow.org) framework.
+We are working with Mozilla to build [DeepSpeech](https://github.com/mozilla/DeepSpeech). A fully open source STT engine, based on Baidu’s Deep Speech architecture and implemented with Google’s [TensorFlow](https://www.tensorflow.org/) framework.
 
 DeepSpeech is not yet ready for production use and Mycroft currently uses [Google STT](https://cloud.google.com/speech/) as the default STT engine.
 
