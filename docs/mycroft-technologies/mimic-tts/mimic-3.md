@@ -465,6 +465,10 @@ Make sure to use a Mimic 3 [voice key](mimic-3.md#voice-keys) like `en_UK/apope_
 
 ### Speech Dispatcher
 
+{% hint style="warning" %}
+WORK IN PROGRESS: This has not been tested on a broad range of systems. Some debugging may be required.
+{% endhint %}
+
 Mimic 3 can be used with the [Orca screen reader](https://help.gnome.org/users/orca/stable/) for Linux via [speech-dispatcher](https://github.com/brailcom/speechd).
 
 After [installing Mimic 3](mimic-3.md#installation), start the [web server](mimic-3.md#server). Next, make sure you have `speech-dispatcher` installed:
@@ -477,7 +481,7 @@ Create the file `/etc/speech-dispatcher/modules/mimic3-generic.conf` with the co
 
 ```
 GenericExecuteSynth "printf %s \'$DATA\' | /path/to/mimic3 --remote --voice \'$VOICE\' --stdout | $PLAY_COMMAND"
-AddVoice "en-us" "MALE1" "en_UK/apope_low"
+AddVoice "en" "MALE1" "en_UK/apope_low"
 ```
 
 You will need `sudo` access to do this. Make sure to change `/path/to/mimic3` to wherever you installed Mimic 3. Note that the `--remote` option is used to connect to a local Mimic 3 web server (use `--remote <URL>` if your server is somewhere besides `localhost`).
@@ -489,6 +493,8 @@ Next, edit the existing file `/etc/speech-dispatcher/speechd.conf` and ensure th
 ```
 DefaultVoiceType  "MALE1"
 DefaultModule mimic3-generic
+DefaultLanguage "en"
+AudioOutputMethod "libao"
 ```
 
 Restart speech-dispatcher with:
