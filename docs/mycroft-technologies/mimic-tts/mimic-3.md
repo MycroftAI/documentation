@@ -72,6 +72,12 @@ On 32-bit ARM platforms (a.k.a. `armv7l` or `armhf`), you will also need some ex
 sudo apt-get install libatomic1 libgomp1 libatlas-base-dev
 ```
 
+Then, ensure that you're using the latest `pip`:
+
+```
+mycroft-pip install --upgrade pip
+```
+
 Next, install the TTS plugin in Mycroft:
 
 ```
