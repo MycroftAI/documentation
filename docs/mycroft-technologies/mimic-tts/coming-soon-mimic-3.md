@@ -2,14 +2,7 @@
 description: A fast, privacy-focused, open-source, neural Text to Speech (TTS) engine.
 ---
 
-# COMING SOON: Mimic 3
-
-{% hint style="warning" %}
-NOTE: Mimic 3 is not yet released and installation using these instructions is not yet possible.
-
-To be the first to find out when Mimic 3 launches register for updates here:\
-[https://mycroft.ai/blog/mark-ii-update/#mimic-3](https://mycroft.ai/blog/mark-ii-update/#mimic-3)
-{% endhint %}
+# Mimic 3
 
 Mimic 3 is a neural text to speech engine that can run locally, even on low-end hardware like the Raspberry Pi 4. It is the default text to speech engine on the [Mark II](https://mycroft.ai/product/mark-ii/).
 

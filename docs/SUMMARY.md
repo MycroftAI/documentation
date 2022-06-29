@@ -128,7 +128,7 @@
   * [Adapt Tutorial](mycroft-technologies/adapt/adapt-tutorial.md)
 * [Lingua Franca](mycroft-technologies/lingua-franca.md)
 * [Mimic TTS](mycroft-technologies/mimic-tts/README.md)
-  * [COMING SOON: Mimic 3](mycroft-technologies/mimic-tts/coming-soon-mimic-3.md)
+  * [Mimic 3](mycroft-technologies/mimic-tts/coming-soon-mimic-3.md)
   * [Mimic 2](mycroft-technologies/mimic-tts/mimic-2.md)
   * [Mimic 1](mycroft-technologies/mimic-overview/README.md)
   * [Mimic Recording Studio](mycroft-technologies/mimic-overview/mimic-recording-studio.md)
