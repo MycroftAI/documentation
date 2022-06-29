@@ -6,10 +6,10 @@ description: A fast, privacy-focused, open-source, neural Text to Speech (TTS) e
 
 Mimic 3 is a neural text to speech engine that can run locally, even on low-end hardware like the Raspberry Pi 4. It is the default text to speech engine on the [Mark II](https://mycroft.ai/product/mark-ii/).
 
-* [Install Mimic 3](coming-soon-mimic-3.md#installation)
+* [Install Mimic 3](mimic-3.md#installation)
 * [Listen to voice samples](https://mycroftai.github.io/mimic3-voices/)
-* [See example use cases](coming-soon-mimic-3.md#usage)
-* [Learn how it works](coming-soon-mimic-3.md#how-it-works)
+* [See example use cases](mimic-3.md#usage)
+* [Learn how it works](mimic-3.md#how-it-works)
 
 ## Installation
 
@@ -20,15 +20,15 @@ Mimic 3 was designed to run on the Raspberry Pi 4 (64-bit OS), but will also run
 * `amd64`
   * AMD/Intel-based desktops/laptops
   * Tested:
-    * Very fast on Ryzen 9 5950X, [RTF](coming-soon-mimic-3.md#real-time-factor) less than 0.05
+    * Very fast on Ryzen 9 5950X, [RTF](mimic-3.md#real-time-factor) less than 0.05
 * `arm64`
   * Raspberry Pi 3/4 and Zero 2 with [64-bit Pi OS](https://www.raspberrypi.com/news/raspberry-pi-os-64-bit/)
   * Tested:
-    * Usable on Pi 4, [RTF](coming-soon-mimic-3.md#real-time-factor) around 0.5
+    * Usable on Pi 4, [RTF](mimic-3.md#real-time-factor) around 0.5
 * `armv7l`
   * Raspberry Pi 1/2/3/4 and Zero 2 with 32-bit Pi OS
   * Tested:
-    * Slow on Pi 3, [RTF](coming-soon-mimic-3.md#real-time-factor) around 1.3
+    * Slow on Pi 3, [RTF](mimic-3.md#real-time-factor) around 1.3
 
 #### Real-Time Factor
 
@@ -188,9 +188,9 @@ Once installed, the following commands will be available in `.venv/bin`:
 
 There are many ways to use Mimic 3, including:
 
-* [From the command line](coming-soon-mimic-3.md#command-line-interface)
-* [As a web server](coming-soon-mimic-3.md#web-server)
-* [In a screen reader](coming-soon-mimic-3.md#speech-dispatcher)
+* [From the command line](mimic-3.md#command-line-interface)
+* [As a web server](mimic-3.md#web-server)
+* [In a screen reader](mimic-3.md#speech-dispatcher)
 
 ### Voice Keys
 
@@ -200,7 +200,7 @@ Voices in Mimic 3 are keyed by a name with specific parts. These parts include t
 
 The default voice is `en_UK/apope_low`
 
-Voice models are automatically downloaded from [Github](https://github.com/MycroftAI/mimic3-voices) and stored in `${HOME}/.local/share/mycroft/mimic3` (technically `${XDG_DATA_HOME}/mycroft/mimic3`). You can also [manually download them](coming-soon-mimic-3.md#downloading-voices).
+Voice models are automatically downloaded from [Github](https://github.com/MycroftAI/mimic3-voices) and stored in `${HOME}/.local/share/mycroft/mimic3` (technically `${XDG_DATA_HOME}/mycroft/mimic3`). You can also [manually download them](mimic-3.md#downloading-voices).
 
 ### Command-Line Interface
 
@@ -212,7 +212,7 @@ The `mimic3` command can be used to synthesize audio on the command line:
 mimic3 --voice <voice> "<text>" > output.wav
 ```
 
-where `<voice>` is a [voice key](coming-soon-mimic-3.md#voice-keys) like `en_UK/apope_low`. `<TEXT>` may contain multiple sentences, which will be combined in the final output WAV file. These can also be [split into separate WAV files](coming-soon-mimic-3.md#multiple-wav-output).
+where `<voice>` is a [voice key](mimic-3.md#voice-keys) like `en_UK/apope_low`. `<TEXT>` may contain multiple sentences, which will be combined in the final output WAV file. These can also be [split into separate WAV files](mimic-3.md#multiple-wav-output).
 
 #### SSML
 
@@ -274,7 +274,7 @@ The following SSML tags are supported:
   * `lang` - set language for sentence
 * `<w>` / `<token>` - word (disables automatic tokenization)
 * `<voice name="...">` - set voice of inner text
-  * `voice` - [voice key](coming-soon-mimic-3.md#voice-keys)
+  * `voice` - [voice key](mimic-3.md#voice-keys)
 * `<prosody attribute="value">` - change speaking attributes
   * Supported `attribute` names:
     * `volume` - speaking volume
@@ -431,9 +431,9 @@ See `mimic3-server --help` for more options.
 #### Endpoints
 
 * `/api/tts`
-  * `POST` text or [SSML](coming-soon-mimic-3.md#ssml) and receive WAV audio back
-  * Use `?voice=` to select a different [voice/speaker](coming-soon-mimic-3.md#voice-keys)
-  * Set `Content-Type` to `application/ssml+xml` (or use `?ssml=1`) for [SSML](coming-soon-mimic-3.md#ssml) input
+  * `POST` text or [SSML](mimic-3.md#ssml) and receive WAV audio back
+  * Use `?voice=` to select a different [voice/speaker](mimic-3.md#voice-keys)
+  * Set `Content-Type` to `application/ssml+xml` (or use `?ssml=1`) for [SSML](mimic-3.md#ssml) input
 * `/api/voices`
   * Returns a JSON list of available voices
 
@@ -461,13 +461,13 @@ See `mimic3 --help` for more options.
 
 Use the Mimic 3 web server as a drop-in replacement for [MaryTTS](http://mary.dfki.de/), for example with [Home Assistant](https://www.home-assistant.io/integrations/marytts/).
 
-Make sure to use a Mimic 3 [voice key](coming-soon-mimic-3.md#voice-keys) like `en_UK/apope_low` instead of a MaryTTS voice name.
+Make sure to use a Mimic 3 [voice key](mimic-3.md#voice-keys) like `en_UK/apope_low` instead of a MaryTTS voice name.
 
 ### Speech Dispatcher
 
 Mimic 3 can be used with the [Orca screen reader](https://help.gnome.org/users/orca/stable/) for Linux via [speech-dispatcher](https://github.com/brailcom/speechd).
 
-After [installing Mimic 3](coming-soon-mimic-3.md#installation), start the [web server](coming-soon-mimic-3.md#server). Next, make sure you have `speech-dispatcher` installed:
+After [installing Mimic 3](mimic-3.md#installation), start the [web server](mimic-3.md#server). Next, make sure you have `speech-dispatcher` installed:
 
 ```
 sudo apt-get install speech-dispatcher
