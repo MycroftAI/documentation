@@ -152,7 +152,7 @@ Once installed, the following commands will be available in `/usr/bin`:
 First, ensure that you're using the latest `pip`:
 
 ```
-mycroft-pip install --upgrade pip
+pip install --upgrade pip
 ```
 
 Then, install the package:
