@@ -149,7 +149,13 @@ Once installed, the following commands will be available in `/usr/bin`:
 
 ### Python Package
 
-Install the package:
+First, ensure that you're using the latest `pip`:
+
+```
+mycroft-pip install --upgrade pip
+```
+
+Then, install the package:
 
 ```
 pip install mycroft-mimic3-tts[all]
