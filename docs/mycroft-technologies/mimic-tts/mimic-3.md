@@ -475,7 +475,15 @@ See `mimic3 --help` for more options.
 
 Use the Mimic 3 web server as a drop-in replacement for [MaryTTS](http://mary.dfki.de/), for example with [Home Assistant](https://www.home-assistant.io/integrations/marytts/).
 
-Make sure to use a Mimic 3 [voice key](mimic-3.md#voice-keys) like `en_UK/apope_low` instead of a MaryTTS voice name.
+Make sure to use a Mimic 3 [voice key](mimic-3.md#voice-keys) like `en_UK/apope_low` instead of a MaryTTS voice name:
+
+```yaml
+tts:
+  - platform: marytts
+    host: "localhost"
+    port: 59125
+    voice: "en_UK/apope_low"
+```
 
 ### Speech Dispatcher
 
