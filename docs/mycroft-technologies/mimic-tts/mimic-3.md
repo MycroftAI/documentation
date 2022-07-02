@@ -109,6 +109,8 @@ See the [plugin's documentation](https://github.com/MycroftAI/plugin-tts-mimic3)
 A pre-built Docker image is available for AMD/Intel CPUs as well as 32/64-bit ARM:
 
 ```
+mkdir -p "${HOME}/.local/share/mycroft/mimic3"
+chmod a+rwx "${HOME}/.local/share/mycroft/mimic3"
 docker run \
        -it \
        -p 59125:59125 \
