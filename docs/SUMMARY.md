@@ -12,7 +12,8 @@
 ## Using Mycroft AI
 
 * [Get Mycroft](using-mycroft-ai/get-mycroft/README.md)
-  * [Mark II](using-mycroft-ai/get-mycroft/mark-ii.md)
+  * [Mark II](using-mycroft-ai/get-mycroft/mark-ii/README.md)
+    * [Mark II Dev Kit](using-mycroft-ai/get-mycroft/mark-ii/mark-ii-dev-kit.md)
   * [Mark 1](using-mycroft-ai/get-mycroft/mark-1.md)
   * [Picroft](using-mycroft-ai/get-mycroft/picroft.md)
   * [Linux](using-mycroft-ai/get-mycroft/linux.md)

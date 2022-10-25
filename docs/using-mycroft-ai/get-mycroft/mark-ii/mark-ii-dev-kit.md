@@ -1,13 +1,10 @@
 ---
 description: >-
-  The Mark II is our next-generation smart speaker designed for you and your
-  family, whatever your level of technical expertise. The Dev Kit is open
-  hardware and software to enable development.
+  The Mark II Dev Kit is intended for Software Developers and Hardware
+  Developers to develop on the Mycroft platform.
 ---
 
-# Mark II
-
-The Mark II Dev Kit is intended for Software Developers and Hardware Developers to develop on the Mycroft platform.
+# Mark II Dev Kit
 
 {% hint style="warning" %}
 The following documentaion is for the Mark II Dev Kit and the software that was initially distributed with those kits. For Mark II production units please see the dedicated documentation at:
@@ -129,12 +126,7 @@ You will now be logged in as the `mycroft` user, with the virtual environment ac
 (.venv) mycroft@localhost:~$
 ```
 
-From here you can interact with the device as you would any other Linux system. Mycroft's standard tooling is also available including:
-
-* `mycroft-cli-client` - a terminal based graphical interface for the system
-* `mycroft-msm` - Mycroft Skills Manager - for installing, removing, and updating Skills
-* `mycroft-msk` - Mycroft Skills Kit - for quickly generating new Skill templates
-* `mycroft-skill-testrunner` - for running Skill integration tests
+From here you can interact with the device as you would any other Linux system.&#x20;
 
 #### Multiple containers
 
@@ -194,7 +186,7 @@ This command updates your Mycroft configuration to use the "dev" branch of the [
 
 ## Troubleshooting
 
-If you are having problems with your device and would like to share the system logs with the Mycroft team you can enable remote logging. This includes your [Mycroft log files](../troubleshooting/log-files.md) that will include utterances spoken to the device and responses spoken by Mycroft.
+If you are having problems with your device and would like to share the system logs with the Mycroft team you can enable remote logging. This includes your [Mycroft log files](../../troubleshooting/log-files.md) that will include utterances spoken to the device and responses spoken by Mycroft.
 
 ### Fetching logs from the USB
 
@@ -203,7 +195,7 @@ In the event that a device cannot boot or is otherwise inaccessible, you can get
 1. `pvboot`
 2. `pvroot`
 
-`pvroot/disks/perm/mycroft/lxc-overlay/upper` contains the modified file overlay for the mycroft container. This includes your usual [Mycroft logs](../troubleshooting/log-files.md).
+`pvroot/disks/perm/mycroft/lxc-overlay/upper` contains the modified file overlay for the mycroft container. This includes your usual [Mycroft logs](../../troubleshooting/log-files.md).
 
 ### Turn on remote logging
 
@@ -259,16 +251,16 @@ mycroft-msk create
 
 Then see our detailed Skill development documentation:
 
-{% content-ref url="../../skill-development/voice-user-interface-design-guidelines/" %}
-[voice-user-interface-design-guidelines](../../skill-development/voice-user-interface-design-guidelines/)
+{% content-ref url="../../../skill-development/voice-user-interface-design-guidelines/" %}
+[voice-user-interface-design-guidelines](../../../skill-development/voice-user-interface-design-guidelines/)
 {% endcontent-ref %}
 
 ### Installing Skills still in development
 
 Mycroft Skills Manager (MSM) is a command line tool used to add, manage and remove Skills on any Mycroft installation. It can install any Skill listed on the [Mycroft Skills Repository](https://github.com/MycroftAI/mycroft-skills) or from any Github repository.
 
-{% content-ref url="../../skill-development/mycroft-skills-manager/" %}
-[mycroft-skills-manager](../../skill-development/mycroft-skills-manager/)
+{% content-ref url="../../../skill-development/mycroft-skills-manager/" %}
+[mycroft-skills-manager](../../../skill-development/mycroft-skills-manager/)
 {% endcontent-ref %}
 
 ### Creating a custom idle screen
@@ -403,7 +395,7 @@ The `mycroft` container however is based on Ubuntu 20.04 so all of your standard
 
 The Raspberry Pi GPIO pins 1, 12 and 13 are brought out to J9 on the SJ201. This is next to the volume up button on the front-right of the board if you are looking at the device face on. GPIO pin 0 is also not used.
 
-![SJ201: J9 connector diagram](../../.gitbook/assets/gpio-pins.png)
+![SJ201: J9 connector diagram](../../../.gitbook/assets/gpio-pins.png)
 
 ### How do I rotate the screen for my custom case?
 

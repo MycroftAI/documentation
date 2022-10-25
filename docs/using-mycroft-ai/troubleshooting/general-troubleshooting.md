@@ -54,8 +54,8 @@ Alternatively you can get the IP address from your router, or by scanning the ne
 
 If you are experiencing any issues with your Mark II or Mark II Dev Kit, troubleshooting information is available in the Mark II documentation:
 
-{% content-ref url="../get-mycroft/mark-ii.md" %}
-[mark-ii.md](../get-mycroft/mark-ii.md)
+{% content-ref url="../get-mycroft/mark-ii/" %}
+[mark-ii](../get-mycroft/mark-ii/)
 {% endcontent-ref %}
 
 ## Mark 1
