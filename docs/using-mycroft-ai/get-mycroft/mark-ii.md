@@ -9,6 +9,12 @@ description: >-
 
 The Mark II Dev Kit is intended for Software Developers and Hardware Developers to develop on the Mycroft platform.
 
+{% hint style="warning" %}
+The following documentaion is for the Mark II Dev Kit and the software that was initially distributed with those kits. For Mark II production units please see the dedicated documentation at:
+
+[https://mycroft-ai.gitbook.io/mark-ii/](https://mycroft-ai.gitbook.io/mark-ii/)
+{% endhint %}
+
 ### Known Issues
 
 The software on the Mark II Dev Kit is still an early release. Please help us improve the Mark II by [opening a bug report or feature request](https://github.com/MycroftAI/hardware-mycroft-mark-II/issues/new/choose) for anything that doesn't seem right.
