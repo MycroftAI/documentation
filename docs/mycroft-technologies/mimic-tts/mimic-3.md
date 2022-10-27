@@ -102,7 +102,30 @@ or you can manually add the following to `mycroft.conf` with `mycroft-config edi
 }
 ```
 
-See the [plugin's documentation](https://github.com/MycroftAI/plugin-tts-mimic3) for more options.
+#### Plugin Configuration Options
+
+A range of configuration options can be added to customize the Mimic 3 TTS output, for example:
+
+```json
+{
+  "tts": {
+    "module": "mimic3_tts_plug",
+    "mimic3_tts_plug": {
+      "voice": "en_US/cmu-arctic_low",  // voice key
+      "speaker": "fem",  // default speaker
+      "length_scale": 1.0,  // speaking rate
+      "noise_scale": 0.667,  // speaking variablility
+      "noise_w": 1.0  // phoneme duration variablility
+    }
+  }
+}
+```
+
+* `voice` - a [Voice Key](mimic-3.md#voice-keys) defining the TTS model to be used. You can find a [list of all available Voice Keys on Github](https://github.com/MycroftAI/mimic3-voices#mimic-3-voices).
+* `speaker` - for multi-speaker voice models, the default speaker to be used. To hear all the speakers see [https://mycroft.ai/mimic-3/](https://mycroft.ai/mimic-3/)
+* `length_scale` - controls how fast the voice speaks the text. A value of 1 is the speed of the training dataset. Less than 1 is faster, and more than 1 is slower.
+* `noise_scale` - the amount of noise added to the generated audio (0-1). Can help mask audio artifacts from the voice model. Multi-speaker models tend to sound better with a lower amount of noise than single speaker models.
+* `noise_w` - the amount of noise used to generate phoneme durations (0-1). Allows for variable speaking cadance, with a value closer to 1 being more variable. Multi-speaker models tend to sound better with a lower amount of phoneme variability than single speaker models.
 
 ### Docker Image
 
