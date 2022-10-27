@@ -61,9 +61,13 @@ You can find detailed information on all components of the Mark II hardware on [
 
 ### Installing the Operating System
 
-Download the latest version of the Mark II operating system from:
+Download the Mark II Dev Kit operating system from:
 
-[https://mycroft.ai/to/mark-ii-stable](https://mycroft.ai/to/mark-ii-stable)
+[https://mycroft.ai/to/mark-ii-dev-kit-stable](https://mycroft.ai/to/mark-ii-dev-kit-stable)
+
+To use the latest software distributed with the production Mark II's see the dedicated Mark II documentation:
+
+{% embed url="https://mycroft-ai.gitbook.io/mark-ii/" %}
 
 Using a tool like the [Raspberry Pi Imager](https://www.raspberrypi.org/software/), flash the downloaded image onto the USB drive provided with your Mark II Dev Kit. To get the most from this drive, be sure to plug it into the top left USB port which is blue indicating it is USB 3.0.
 
