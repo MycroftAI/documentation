@@ -6,6 +6,14 @@ description: >-
 
 # Picroft
 
+{% hint style="warning" %}
+**Note as at 2022-11-11:**\
+\
+The official Picroft image is not currently being actively maintained as our teams attention is firmly on the Mark II at the moment. Picroft is intended as a DIY development platform and requires basic knowledge of Linux and the commandline. \
+\
+If you need support with your Picroft please post in the Community Forums or Chat. Mycroft cannot provide technical support for Picroft and other DIY projects.
+{% endhint %}
+
 ## Quick links
 
 * [Picroft stable disk image](https://mycroft.ai/to/picroft-image)
@@ -16,66 +24,68 @@ description: >-
 
 ## About Picroft
 
-Picroft is based on [Raspbian Buster Lite](http://downloads.raspberrypi.org/raspbian_lite/images/).
+Picroft is based on [Raspbian Buster Lite](http://downloads.raspberrypi.org/raspbian\_lite/images/).
 
 Picroft is entirely open source, and PRs and Issues are warmly welcomed on the [Picroft GitHub repo](https://github.com/MycroftAI/enclosure-picroft).
 
 ## What do I need to run Picroft?
 
-In order to set up Picroft, you will need to have a basic understanding of the Linux \(Raspbian\) command line, be comfortable connecting devices to WiFi networks, and have a little patience when setting up audio devices.
+In order to set up Picroft, you will need to have a basic understanding of the Linux (Raspbian) command line, be comfortable connecting devices to WiFi networks, and have a little patience when setting up audio devices.
 
 ### Hardware requirements and compatibility chart
 
-| Model | Level of support |
-| :--- | :--- |
-| Pi4 | Supported |
-| Pi3 B+ | Supported |
-| Pi3 B | Supported |
-| Pi 2 | Functions very slowly, limited wifi support |
-| Pi B | Not supported |
-| Pi A+ | Not supported |
-| Pi Zero, Zero W, Zero WH | Not supported |
+| Model                    | Level of support                            |
+| ------------------------ | ------------------------------------------- |
+| Pi4                      | Supported                                   |
+| Pi3 B+                   | Supported                                   |
+| Pi3 B                    | Supported                                   |
+| Pi 2                     | Functions very slowly, limited wifi support |
+| Pi B                     | Not supported                               |
+| Pi A+                    | Not supported                               |
+| Pi Zero, Zero W, Zero WH | Not supported                               |
 
 As well as a Raspberry Pi, you will also need:
 
 * Micro SD card, 8GB or larger _highly_ recommended
 * Power adapter with micro USB for your country. [The Raspberry Pi Foundation has some excellent recommendations](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
-* An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi _or_ a USB Speaker  \(_Bluetooth on Picroft is difficult to get working and is not recommended_\)
+* An analog Speaker that can be plugged into the 3.5mm audio jack on the RPi _or_ a USB Speaker  (_Bluetooth on Picroft is difficult to get working and is not recommended_)
 * USB Microphone
 
 Installing Picroft may be easier if you also have:
 
 * USB keyboard
 * Monitor or TV connected via HDMI cable
-* Ethernet cable \(if not connecting via WiFi\)
+* Ethernet cable (if not connecting via WiFi)
 
 ### Tested hardware
 
 The following is a Community maintained list of hardware that has been used with Picroft. Whilst every effort is made to keep this list updated, upstream software changes may cause future problems with device compatibility. Mycroft can not guarantee that any specific hardware will work with Picroft.
 
-If you are looking for a low-cost option to try out Picroft, we can recommend the PlayStation Eye \(often called a PS3 Eye\).
+If you are looking for a low-cost option to try out Picroft, we can recommend the PlayStation Eye (often called a PS3 Eye).
 
-| Brand | Model | Status | Type | Notes |
-| :--- | :--- | :--- | :--- | :--- |
-| Adafruit | [Voice Bonnet for RPi](https://www.adafruit.com/product/4757) | Working | Multi-mic hat | [specific configuration required](picroft.md#adafruit-voice-bonnet) |
-| AmazonBasics | LJ-USM-001 | Working | USB Conference Microphone |  |
-| Andrea Electronics | C1-1028100-3 | Working | USB Dongle \(Mic array & Speaker 3.5mm\) | Superbeam Array Microphone Bundle SUMA \(`08a8:0016`\) |
-| Blue | Snowball iCE | Working | Microphone |  |
-| Creative | VF0790 | Working | Mic and camera |  |
-| Google | AIY v1 | Working | Mic and speaker |  |
-| Jabra | Speak 410 | [Problems reported](https://community.mycroft.ai/t/no-audio-output-on-picroft-with-jabra-410/3415) | Mic and speaker | Premium microphone and speaker combination |
-| Logitech | C270 | Working | Mic and camera |  |
-| Logitech | C525 | Working | Mic and camera |  |
-| Logitech | Webcam Pro 9000 | Working | Mic and camera |  |
-| Logitech | Z50 | Working | Speaker |  |
-| Matrix | Voice | Working | Mic array |  |
-| PlayStation | Eye \(PS3 Eye\) | Working | Mic and camera | An excellent introductory model if you are just checking Picroft out. |
-| Seeed Studio | Mic Array 2.0 | Working | Mic array | Premium microphone array |
-| YOTTO | B08VD5JZJD | Working | Mic | 360° Omnidirectional Conference Mic |
+| Brand              | Model                                                         | Status                                                                                             | Type                                   | Notes                                                                 |
+| ------------------ | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------- | --------------------------------------------------------------------- |
+| Adafruit           | [Voice Bonnet for RPi](https://www.adafruit.com/product/4757) | Working                                                                                            | Multi-mic hat                          | [specific configuration required](picroft.md#adafruit-voice-bonnet)   |
+| AmazonBasics       | LJ-USM-001                                                    | Working                                                                                            | USB Conference Microphone              |                                                                       |
+| Andrea Electronics | C1-1028100-3                                                  | Working                                                                                            | USB Dongle (Mic array & Speaker 3.5mm) | Superbeam Array Microphone Bundle SUMA (`08a8:0016`)                  |
+| Blue               | Snowball iCE                                                  | Working                                                                                            | Microphone                             |                                                                       |
+| Creative           | VF0790                                                        | Working                                                                                            | Mic and camera                         |                                                                       |
+| Google             | AIY v1                                                        | Working                                                                                            | Mic and speaker                        |                                                                       |
+| Jabra              | Speak 410                                                     | [Problems reported](https://community.mycroft.ai/t/no-audio-output-on-picroft-with-jabra-410/3415) | Mic and speaker                        | Premium microphone and speaker combination                            |
+| Logitech           | C270                                                          | Working                                                                                            | Mic and camera                         |                                                                       |
+| Logitech           | C525                                                          | Working                                                                                            | Mic and camera                         |                                                                       |
+| Logitech           | Webcam Pro 9000                                               | Working                                                                                            | Mic and camera                         |                                                                       |
+| Logitech           | Z50                                                           | Working                                                                                            | Speaker                                |                                                                       |
+| Matrix             | Voice                                                         | Working                                                                                            | Mic array                              |                                                                       |
+| PlayStation        | Eye (PS3 Eye)                                                 | Working                                                                                            | Mic and camera                         | An excellent introductory model if you are just checking Picroft out. |
+| Seeed Studio       | Mic Array 2.0                                                 | Working                                                                                            | Mic array                              | Premium microphone array                                              |
+| YOTTO              | B08VD5JZJD                                                    | Working                                                                                            | Mic                                    | 360° Omnidirectional Conference Mic                                   |
 
 If you experience any audio problems, please see the [Audio Troubleshooting Guide](../troubleshooting/audio-troubleshooting.md).
 
-{% page-ref page="../troubleshooting/audio-troubleshooting.md" %}
+{% content-ref url="../troubleshooting/audio-troubleshooting.md" %}
+[audio-troubleshooting.md](../troubleshooting/audio-troubleshooting.md)
+{% endcontent-ref %}
 
 #### Adafruit Voice Bonnet
 
@@ -83,7 +93,7 @@ Community members have reported some minor modifications that are required for t
 
 In the file `/etc/pulse/default.pa`, uncomment or add the following lines:
 
-```text
+```
 load-module module-alsa-sink
 load-module module-alsa-source device=hw:1,0
 set-default-sink alsa_output.platform-soc_sound.stereo-fallback
@@ -129,9 +139,9 @@ There are two ways to see the output from a Picroft **Device**:
 
 #### Connecting Picroft to a keyboard and monitor
 
-If you would like to see the output of Picroft on a monitor \(rather than SSH'ing in to Picroft\), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi.
+If you would like to see the output of Picroft on a monitor (rather than SSH'ing in to Picroft), you can plug a HDMI monitor in to the HDMI slot on the Raspberry Pi.
 
-If you would like to connect a keyboard or mouse \(rather than SSH'ing in to Picroft\), connect them via the USB slots on the Raspberry Pi.
+If you would like to connect a keyboard or mouse (rather than SSH'ing in to Picroft), connect them via the USB slots on the Raspberry Pi.
 
 In our experience, we've found most monitors, keyboards and mice are plug-and-play - ie. you shouldn't have to install any additional drivers.
 
@@ -162,7 +172,7 @@ If not, you will need to know what IP address your Picroft has. You may need to 
 * The default password is `mycroft`, so enter this when prompted.
 * If you have successfully logged in via SSH you will see a command prompt like the one below:
 
-```text
+```
 $ ssh pi@192.168.0.13                 <-- in this case, the IP address was 192.168.0.13, your IP address may vary
 pi@192.168.0.13's password:
 
@@ -196,7 +206,7 @@ The guided setup will then ask you to select your audio output device, as shown 
 
 Enter the number `1`, `2`, `3` or `4` corresponding to:
 
-```text
+```
 1) Speakers via 3.5mm output (aka 'audio jack' or 'headphone jack')
 2) HDMI audio (e.g. a TV or monitor with built-in speakers)
 3) USB audio (e.g. a USB soundcard or USB mic/speaker combo)
@@ -211,7 +221,7 @@ The final step of the guided setup is microphone configuration. You will be aske
 
 Enter the number `1`, `2`, `3` or `4` corresponding to:
 
-```text
+```
 1) PlayStation Eye (USB)
 2) Blue Snoball ICE (USB)
 3) Google AIY Voice HAT and microphone board (Voice Kit v1)
@@ -225,7 +235,9 @@ The guided setup will then do a microphone test to ensure your chosen microphone
 
 If you experience any audio problems, please see the [Audio Troubleshooting Guide](../troubleshooting/audio-troubleshooting.md).
 
-{% page-ref page="../troubleshooting/audio-troubleshooting.md" %}
+{% content-ref url="../troubleshooting/audio-troubleshooting.md" %}
+[audio-troubleshooting.md](../troubleshooting/audio-troubleshooting.md)
+{% endcontent-ref %}
 
 ### Pairing the Picroft
 
@@ -243,7 +255,7 @@ Once paired, you can then use [basic Skills](http://mycroft.ai/documentation/bas
 
 #### To connect to a wired network
 
-Simply plug the ethernet cable into the RJ45 \(ethernet\) socket on the RPi. Picroft will then attempt to connect to the network, and request a DHCP address.
+Simply plug the ethernet cable into the RJ45 (ethernet) socket on the RPi. Picroft will then attempt to connect to the network, and request a DHCP address.
 
 _You will need to connect to your router, or use other networking diagnostics, to identify what IP address your Picroft has been allocated on the network._
 
@@ -261,9 +273,9 @@ First, you need to be able to edit files on the filesystem of the Picroft. There
 Next, we edit the `wpa_supplicant.conf` file. This file controls WiFi connections for the Raspberry Pi.
 
 1. Type `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
-2. Using the down arrow key, navigate to the bottom of the file, and add credentials for your SSID. You may also need to add the relevant [two-character country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements).
+2. Using the down arrow key, navigate to the bottom of the file, and add credentials for your SSID. You may also need to add the relevant [two-character country code](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2#Officially\_assigned\_code\_elements).
 
-```text
+```
     country=US
     network={
             ssid="MyNetworkSSID"
@@ -282,22 +294,22 @@ If you are on an enterprise network, your network security might use WPA2 with M
 
 First, we need to generate a hash of your SSID's password.
 
-```text
+```
 echo -n your_password| iconv -t utf16le | openssl md4
 ```
 
-This will use the [NTLM hash](https://en.wikipedia.org/wiki/NT_LAN_Manager) which is a 16 bit MD4 hash. Make sure to copy this as we will need it for later steps.
+This will use the [NTLM hash](https://en.wikipedia.org/wiki/NT\_LAN\_Manager) which is a 16 bit MD4 hash. Make sure to copy this as we will need it for later steps.
 
 Next, run the following commands:
 
-```text
+```
 cd /etc/wpa_supplicant
 sudo nano wpa_supplicant.conf
 ```
 
 Add the following to the bottom of the `wpa_supplicant.conf` file, replacing `ssid` with your SSID name, `identity` with your username and `password` with the hash generated earlier. Type `Ctrl + O` to save, then `Ctrl + x` to exit.
 
-```text
+```
 network={
     ssid="ssid network name"
     priority=1
@@ -321,7 +333,7 @@ _You will need to connect to your router, or use other networking diagnostics, t
 
 _NOTE: Picroft cannot connect to WiFi networks that operate in the 5GHz band. You must select a WiFi network that operates in the 2.4GHz band._
 
-_NOTE: Picroft cannot connect to WiFi networks that operate on Channels 12 or 13 \(2467MHz and 2472MHz frequencies\). Please configure your SSID to use a different channel or frequency. These channels are often used in Germany and other European countries._
+_NOTE: Picroft cannot connect to WiFi networks that operate on Channels 12 or 13 (2467MHz and 2472MHz frequencies). Please configure your SSID to use a different channel or frequency. These channels are often used in Germany and other European countries._
 
 ## Next steps
 
@@ -340,7 +352,7 @@ There are several commands that are packaged into Picroft to help you with advan
 * `mycroft-mic-test`: This command re-runs the microphone test from the guided setup
 * `mycroft-msk`: This command runs the [Mycroft Skills Kit](../../mycroft-technologies/mycroft-skills-kit.md)
 * `mycroft-msm`: This command runs the [Mycroft Skills Manager](https://github.com/MycroftAI/documentation/tree/e8cae1dda59b6054c57fdbe60599e3a1a623dcbc/docs/mycroft-technologies/mycroft-core/msm.md)
-* `mycroft-pip`: This command runs `pip` within the Mycroft Python `virtual environment` \(`venv`\). This is useful if you are installing dependencies for **Skills**.
+* `mycroft-pip`: This command runs `pip` within the Mycroft Python `virtual environment` (`venv`). This is useful if you are installing dependencies for **Skills**.
 * `mycroft-say-to`:  This command sends a command to Picroft, just like you had 'spoken' a command. This is useful if your microphone is not working.
 * `mycroft-setup-wizard`: This command re-runs the guided setup
 * `mycroft-skill-testrunner`: This command runs the `testrunner` - used to run unit tests for a **Skill**. This is useful if you are doing **Skills** development with Mycroft
@@ -356,7 +368,7 @@ If you plan to do **Skills** development work, or other development work with Pi
 * `mycroft-core` - is located at `/home/pi/mycroft-core`
 * Logs - are located at `/var/log/mycroft/`
 * `mycroft.conf` - is located at `/home/mycroft/.mycroft/mycroft.conf`
-* Identity file \(do not share\) - is located at `/home/mycroft/.mycroft/identity/identity2.json`
+* Identity file (do not share) - is located at `/home/mycroft/.mycroft/identity/identity2.json`
 
 ### Maintaining your Picroft
 
@@ -376,11 +388,11 @@ This script will update both `mycroft-core` and the **Skills** on your Picroft d
 
 #### Building your own Picroft image
 
-The Picroft image building instructions can now be found on GitHub at; [https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image\_recipe.md](https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image_recipe.md)
+The Picroft image building instructions can now be found on GitHub at; [https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image\_recipe.md](https://github.com/MycroftAI/enclosure-picroft/blob/stretch/image\_recipe.md)
 
 ### Using the GPIO pins on the Raspberry Pi
 
-One common question we get is - "Can I use the [general purpose input output pins \(GPIO\)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi with Picroft?".
+One common question we get is - "Can I use the [general purpose input output pins (GPIO)](https://www.raspberrypi.org/documentation/usage/gpio/) on the Raspberry Pi with Picroft?".
 
 The answer is 'Yes' - but this requires some additional configuration.
 
@@ -392,5 +404,4 @@ You also need to install some additional packages:
 
 `sudo apt-get install python-rpi.gpio && sudo apt-get install python3-rpi.gpio`
 
-This [example GPIO Skill](https://github.com/MycroftAI/picroft_example_skill_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill.
-
+This [example GPIO Skill](https://github.com/MycroftAI/picroft\_example\_skill\_gpio) provides some good examples of how to use GPIO input and output in your Mycroft Skill.
