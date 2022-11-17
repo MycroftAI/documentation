@@ -62,17 +62,14 @@ You can find detailed information on all components of the Mark II hardware on [
 ### Installing the Operating System
 
 {% hint style="warning" %}
-WARNING: This is old software that was distributed with the Mark II Dev Kits when they were released in 2021. It is recommended to use the [latest production software](https://mycroft-ai.gitbook.io/mark-ii/mycroft-software) but the Dev Kit software remains available in case anyone specifically wants to use that.
+WARNING: The software that was distributed with the Mark II Dev Kits when they were released in 2021 should not be used on a production Mark II. It is recommended to use the [latest production software](https://mycroft-ai.gitbook.io/mark-ii/mycroft-software).
 
 Importantly:
 
 * The Dev Kit software **WILL NOT WORK** on a production Mark II.
 * The production software **WILL WORK** on Dev Kits as well as production Mark II's.
+* [Mycroft Sandbox images](https://mycroft-ai.gitbook.io/mark-ii/advanced/sandbox-images) **WILL WORK** on Dev Kits as well as production Mark II's.
 {% endhint %}
-
-Download the Mark II Dev Kit operating system from:
-
-[https://mycroft.ai/to/mark-ii-dev-kit-stable](https://mycroft.ai/to/mark-ii-dev-kit-stable)
 
 To use the latest software distributed with the production Mark II's see the dedicated Mark II documentation:
 
