@@ -20,7 +20,13 @@ Precise is based on a neural network that is trained on _sound patterns_ rather 
 
 ### Available Wake Word Models
 
-The Mycroft Community have started a repository of Precise training data and pre-trained models that can be used. These are available at: [https://github.com/MycroftAI/precise-community-data](https://github.com/MycroftAI/precise-community-data)
+Models produced by the Mycroft team are available at:
+
+{% embed url="https://github.com/MycroftAI/precise-data/tree/models" %}
+
+The Mycroft Community have started a repository of Precise training data and pre-trained models that can be used:
+
+{% embed url="https://github.com/MycroftAI/precise-community-data" %}
 
 ### Training a Wake Word Model
 
@@ -43,7 +49,7 @@ Once you have your Wake Word model, you must tell Mycroft which model you want t
 mycroft-config edit user
 ```
 
-We will then define our Wake Word and any attributes we want to give it. Each hotword is declared as it's own block under the `hotwords` key. The name of this block defines the name of the Wake Word. For this example, we will call our Wake Word `computer`. Each Precise Wake Word settings block must include at least the Wake Word `module` being used \(in our case `precise`\), and the location of the model files on the device.
+We will then define our Wake Word and any attributes we want to give it. Each hotword is declared as it's own block under the `hotwords` key. The name of this block defines the name of the Wake Word. For this example, we will call our Wake Word `computer`. Each Precise Wake Word settings block must include at least the Wake Word `module` being used (in our case `precise`), and the location of the model files on the device.
 
 ```javascript
 "hotwords": {
@@ -68,8 +74,8 @@ To define which Wake Word will be active, under `listener` we must add a `wake_w
 
 There are two optional attributes for Precise Wake Words:
 
-* `sensitivity` \(default 0.5\)
-* `trigger_level` \(default 3\)
+* `sensitivity` (default 0.5)
+* `trigger_level` (default 3)
 
 The sensitivity value is a float and ranges between 0.0 - 1.0 with sensitivity increasing as the value increases. A value of 0.1 will minimize false positives while a value of 0.9 will recognize almost anything. The default value is 0.5.
 
@@ -126,41 +132,35 @@ You can see the similarity when these words are written as phonemes:
 * `JH UW S .` = juice
 * `JH AY AH N T .` = giant
 
-The period \(or full stop\) indicates the end of a word.
+The period (or full stop) indicates the end of a word.
 
 ### Other Settings
 
-Other settings are available to further tune how sensitive the Speech to Text \(STT\) engine is in recognizing the Wake Word. These are added to the `listener` block of your `mycroft.conf`.
+Other settings are available to further tune how sensitive the Speech to Text (STT) engine is in recognizing the Wake Word. These are added to the `listener` block of your `mycroft.conf`.
 
-* **Sample rate \(Hz\)**
+*   **Sample rate (Hz)**
 
-  The rate at which the audio stream is sampled. The default is 16KHz. You shouldn't need to change this, unless the microphone you are using needs a much higher or lower sample rate.
+    The rate at which the audio stream is sampled. The default is 16KHz. You shouldn't need to change this, unless the microphone you are using needs a much higher or lower sample rate.
+*   **Channels**
 
-* **Channels**
+    The audio channel that should be sampled for the Wake Word. The default is 1, and you shouldn't have to change this unless your microphone is not operating on audio channel 1.
+*   **Wake Word**
 
-  The audio channel that should be sampled for the Wake Word. The default is 1, and you shouldn't have to change this unless your microphone is not operating on audio channel 1.
+    In plain English text, the Wake Word that Mycroft should listen for.
+*   **Phonemes**
 
-* **Wake Word**
+    The phonemes corresponding to the Wake Word. If your Wake Word phrase is more than one word, remember to include a period (.) at the end of each phoneme.
+*   **Threshold (scientific notation)**
 
-  In plain English text, the Wake Word that Mycroft should listen for.
+    The level of sensitivity at which the Wake Word should trigger Mycroft to respond. To _increase_ the sensitivity, _reduce_ the Threshold. The Threshold is given in [scientific notation](https://en.wikipedia.org/wiki/Scientific\_notation). Use this [handy converter](http://www.easysurf.cc/scintd.htm) to convert between decimal and scientific notation.
+*   **Threshold multiplier (float)**
 
-* **Phonemes**
+    This multiplier acts on the Threshold, and may be an easier way to make adjustments rather than scientific notation.
+*   **Dynamic Energy Ratio (float)**
 
-  The phonemes corresponding to the Wake Word. If your Wake Word phrase is more than one word, remember to include a period \(.\) at the end of each phoneme.
+    Dynamic Energy Ratio (DER) is one signal feature used in [speech recognition](https://en.wikipedia.org/wiki/Speech\_recognition) to identify characteristics of audio, such as whether a person has stopped or started speaking. DER is similar to signal-to-noise-ratio. A high ratio indicates a high difference in signal between speech and no speech, and a low ratio indicates a small difference in signal between speech and no speech.
 
-* **Threshold \(scientific notation\)**
-
-  The level of sensitivity at which the Wake Word should trigger Mycroft to respond. To _increase_ the sensitivity, _reduce_ the Threshold. The Threshold is given in [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation). Use this [handy converter](http://www.easysurf.cc/scintd.htm) to convert between decimal and scientific notation.
-
-* **Threshold multiplier \(float\)**
-
-  This multiplier acts on the Threshold, and may be an easier way to make adjustments rather than scientific notation.
-
-* **Dynamic Energy Ratio \(float\)**
-
-  Dynamic Energy Ratio \(DER\) is one signal feature used in [speech recognition](https://en.wikipedia.org/wiki/Speech_recognition) to identify characteristics of audio, such as whether a person has stopped or started speaking. DER is similar to signal-to-noise-ratio. A high ratio indicates a high difference in signal between speech and no speech, and a low ratio indicates a small difference in signal between speech and no speech.
-
-  If Mycroft is being _too sensitive_, reduce this value. If Mycroft _is not being sensitive enough_, increase this value.
+    If Mycroft is being _too sensitive_, reduce this value. If Mycroft _is not being sensitive enough_, increase this value.
 
 ```javascript
 {
@@ -192,7 +192,7 @@ For the `Yo Mike` example we started with, an example `~/.mycroft/mycroft.conf` 
 ```
 
 {% hint style="danger" %}
-Warning: By default, Mycroft only provides an English language model for PocketSphinx.   
+Warning: By default, Mycroft only provides an English language model for PocketSphinx. \
 You will get an error attempting to use PocketSphinx if you have set your language attribute to anything other than "en-us".
 {% endhint %}
 
@@ -206,13 +206,13 @@ mycroft-config reload
 
 ## Switching Wake Word Listeners
 
-As per the [Technology Overview](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/overview#wake-word-detection), there are two available listeners: 1. Precise \(default\) 2. PocketSphinx
+As per the [Technology Overview](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/overview#wake-word-detection), there are two available listeners: 1. Precise (default) 2. PocketSphinx
 
 Precise is likely appropriate for most users, however on legacy hardware PocketSphinx may be desired.
 
 {% hint style="info" %}
-**Troubleshooting a broken listener?**  
-You can type the speak command into the CLI \(`./start-mycroft.sh cli` or `mycroft-cli-client`\).
+**Troubleshooting a broken listener?**\
+You can type the speak command into the CLI (`./start-mycroft.sh cli` or `mycroft-cli-client`).
 {% endhint %}
 
 To change the Wake Word Listener to PocketSphinx, speak:
@@ -248,4 +248,3 @@ or
 If you are using Precise, Mycroft will respond:
 
 `"The current Listener is Precise"`
-
